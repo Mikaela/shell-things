@@ -105,6 +105,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+# End of default things. 
+# Start of my additions.
+
 # Uses nano as default editor.
 export EDITOR=nano
 
