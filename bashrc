@@ -121,7 +121,7 @@ source ~/.bash_aliases
 LC_ALL=C
 export LC_ALL
 
-# Sets correct timezone.
+# Sets correct timezone. NOTICE: You will probably want to change this, unless you live in Finland.
 export TZ="/usr/share/zoneinfo/Europe/Helsinki"
 
 # GEOIP lookup, copied from the ultimate bashrc http://goo.gl/qGK5j
