@@ -12,7 +12,7 @@ alias vim="nano"
 # Use htop instead of top, it's better. Requires htop.
 alias top="htop"
 
-# Automatic title to Youtube-dl
+# Automaticly adds title to Youtube-dl when downloading videos with it.
 alias youtube-dl="youtube-dl -t"
 
 # git specific. This is the command which I use when git asks me to commit something and says that I have modified files, even when I haven't.
