@@ -15,3 +15,5 @@ alias top="htop"
 # Automatic title to Youtube-dl
 alias youtube-dl="youtube-dl -t"
 
+# git specific. This is the command which I use when git asks me to commit something and says that I have modified files, even when I haven't.
+alias gdrop="git stash && git stash drop"
