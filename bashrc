@@ -1,6 +1,9 @@
 # This is ~/.bashrc file by Mika Suomalainen (Mkaysi)
 # This file also contains the default things.
-echo "You must comment line 3 in your bashrc and set correct timezone in line 126 (in case you don't live in Finland!"
+
+echo "You must comment lines 4, 5 and 6 in your ~/.bashrc and if you don't live in Finland, 
+you must set correct timezone in line 126. Otherwise you will notice that the "date" 
+command will give you the current time at Finland ;)"
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
