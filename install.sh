@@ -16,6 +16,11 @@ echo "bash_profile installed."
 echo "Installing bashrc."
 cat bashrc > ~/.bashrc
 echo "bashrc installed."
+echo "Sourcing bash_aliases..."
+source ~/.bash_aliases
 echo "Sourcing bashrc..."
 source ~/.bashrc
+# echo "Sourcing bash_profile..."
+# source bash_profile
+## The above is not required, because my bash_profile only sources bashrc.
 echo "Installation has completed."
