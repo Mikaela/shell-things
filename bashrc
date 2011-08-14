@@ -1,5 +1,6 @@
 # This is ~/.bashrc file by Mika Suomalainen (Mkaysi)
 # This file also contains the default things.
+echo "You must comment line 3 in your bashrc and set correct timezone in line 126 (in case you don't live in Finland!"
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
