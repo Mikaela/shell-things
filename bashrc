@@ -9,7 +9,7 @@
 ## file. Use this file with your own responsiblity!
 
 echo "You must comment lines 11, 12 and 13 in your ~/.bashrc and if you don't live in Finland, 
-you must set correct timezone in line 126. Otherwise you will notice that the 'date' 
+you must set correct timezone in line 136 (or comment it). Otherwise you will notice that the 'date' 
 command will give you the current time at Finland ;)"
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
