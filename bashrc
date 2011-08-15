@@ -1,7 +1,14 @@
 # This is ~/.bashrc file by Mika Suomalainen (Mkaysi)
 # This file also contains the default things.
 
-echo "You must comment lines 4, 5 and 6 in your ~/.bashrc and if you don't live in Finland, 
+# Feel free to redistribute and copy-paste parts of this bashrc, but if you can, please mention
+# where did you get this or part of this file. If it's originally copy-pasted from somewhere else
+# (The Ultimate bashrc), mention that original source (which is mentioned in this file).
+
+## WARNING! Author of this file is not responsible for any harms which might happen because of
+## file. Use this file with your own responsiblity!
+
+echo "You must comment lines 11, 12 and 13 in your ~/.bashrc and if you don't live in Finland, 
 you must set correct timezone in line 126. Otherwise you will notice that the 'date' 
 command will give you the current time at Finland ;)"
 

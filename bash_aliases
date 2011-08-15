@@ -1,5 +1,10 @@
 # This is ~/.bash_aliases file by Mika Suomalainen (Mkaysi)
 
+# Feel free to redistribute and copy-paste parts of this bash_aliases file, 
+# but if you can, please mention where did you get this or part of this file. 
+# If it's originally copy-pasted from somewhere else, mention that original source 
+# (which is mentioned in this file).
+
 # Moving between directories:
 alias ..="cd .."
 alias .="cd ."
