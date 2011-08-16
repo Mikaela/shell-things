@@ -13,4 +13,4 @@ export LC_ALL
 # Sets your timezone.
 export TZ="/usr/share/zoneinfo/Europe/Helsinki"
 echo "Please change your timezone in line 14 of ~/.bash_exports . It's currently set to Europe/Helsinki."
-echo "If you life in Finland, you can safely uncomment lines 15 and 16 without even looking at them."
+echo "If you life in Finland, you can safely comment lines 15 and 16 without even looking at them."
