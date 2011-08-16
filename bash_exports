@@ -1,4 +1,4 @@
-echo "Your ~/.bash_imports needs your attention. By the way, comment line 1 in it."
+echo "Your ~/.bash_exports needs your attention. By the way, comment line 1 in it."
 
 # Sets the default editor. Currently nano.
 export EDITOR=nano
