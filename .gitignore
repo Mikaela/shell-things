@@ -1,2 +1,2 @@
-# It seems at running install.sh causes <filename>~ files in this git repo.
+# It seems that running install.sh causes <filename>~ files in this git repo. They are lockfiles.
 *~
