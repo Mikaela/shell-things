@@ -1,6 +1,5 @@
 #!/bin/bash
-echo "If you are upgrading, press ctrl + c NOW! You have 15 seconds time to cancel this.
-re running this script will overwrite your backups and it makes uninstall.sh useless."
+echo "If you are upgrading, press ctrl + c NOW! You have 15 seconds time to cancel this. rerunning this script will overwrite your backups and it makes uninstall.sh useless."
 echo "Taking backups..."
 touch ~/.bashrc # Creates .bashrc if you don't have one.
 cat ~/.bashrc > ~/.bashrc.default.backup # Backups your current .bashrc

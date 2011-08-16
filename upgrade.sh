@@ -10,6 +10,5 @@ cat bash_exports > ~/.bash_exports
 cat bash_profile > ~/.bash_profile
 cat bash_aliases > ~/.bash_aliases
 cat bash_functions > ~/.bash_functions
-cat bashrc ~/.bashrc
-echo "Installation has been completed. You might now need to source your ~/.bashrc for changes to
-happen."
+cat bashrc > ~/.bashrc
+echo "Installation has been completed. You might now need to source your ~/.bashrc for changes to happen."
