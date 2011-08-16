@@ -1,16 +1,5 @@
-# This is ~/.bashrc file by Mika Suomalainen (Mkaysi)
-# This file also contains the default things.
-
-# Feel free to redistribute and copy-paste parts of this bashrc, but if you can, please mention
-# where did you get this or part of this file. If it's originally copy-pasted from somewhere else
-# (The Ultimate bashrc), mention that original source (which is mentioned in this file).
-
-## WARNING! Author of this file is not responsible for any harms which might happen because of
-## file. Use this file with your own responsiblity!
-
-echo "You must comment lines 11, 12 and 13 in your ~/.bashrc and if you don't live in Finland, 
-you must set correct timezone in line 136 (or comment it). Otherwise you will notice that the 'date' 
-command will give you the current time at Finland ;)"
+echo "Hi, thanks for using this bashrc. You must now comment lines 1 and 2 in ~/.bashrc
+WARNING: DO NOT BLINDLY APPLY THIS!"
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
@@ -119,68 +108,7 @@ fi
 # End of default things. 
 # Start of my additions.
 
-# Uses nano as default editor.
-export EDITOR=nano
-
-# Exports my user specifig PYTHONPATH
-export PYTHONPATH=$HOME/.packages/lib/python2.7/site-packages
-
-# Sources my aliases
+# Sources everything.
 source ~/.bash_aliases
-
-# Fixes locale problems when SSHing in with different locale.
-LC_ALL=C
-export LC_ALL
-
-# Sets correct timezone. NOTICE: You will probably want to change this, unless you live in Finland.
-export TZ="/usr/share/zoneinfo/Europe/Helsinki"
-
-# GEOIP lookup, copied from the ultimate bashrc http://goo.gl/qGK5j
-function geoip() {
-geoiplookup $1
-}
-
-# MYIP, copied from the ultimate bashrc http://goo.gl/qGK5j . I think that it requires lynx.
-function myip()
-{
-lynx -dump -hiddenlinks=ignore -nolist http://checkip.dyndns.org:8245/ | awk '{ print $4 }' | sed '/^$/d; s/^[ ]*//g; s/[ ]*$//g'
-}
-
-# Checks which package the command comes from. Copied from the ultimate bashrc http://goo.gl/qGK5j
-function cmdpkg() { PACKAGE=$(dpkg -S $(which $1) | cut -d':' -f1); echo "[${PACKAGE}]"; dpkg -s "${PACKAGE}" ;}
-
-# ROT13, copied from the ultimate bashrc http://goo.gl/qGK5j
-function rot13()
-{
-    if [ $# -lt 1 ] || [ $# -gt 1 ]; then
-        echo "Seriously?  You don't know what rot13 does?"
-    else
-        echo $@ | tr A-Za-z N-ZA-Mn-za-m
-    fi
-}
-
-# Down for everyone or just me? Copied from the ultimate bashrc http://goo.gl/qGK5j
-function downforme() {
-	RED='\e[1;31m'
-	GREEN='\e[1;32m'
-	YELLOW='\e[1;33m'
-	NC='\e[0m'
-	if [ $# = 0 ]
-	then
-		echo -e "${YELLOW}usage:${NC} downforme website_url"
-	else
-		JUSTYOUARRAY=(`lynx -dump http://downforeveryoneorjustme.com/$1 | grep -o "It's just you"`)
-		if [ ${#JUSTYOUARRAY} != 0 ]
-		then
-			echo -e "${RED}It's just you. \n${NC}$1 is up."
-		else
-			echo -e "${GREEN}It's not just you! \n${NC}$1 looks down from here."
-		fi
-	fi
-}
-
-# Topt10 commands, copied from the ultimate bashrc http://goo.gl/qGK5j
-function top10() {
-	# copyright 2007 - 2010 Christopher Bratusek
-	history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head
-}
+source ~/.bash_exports
+source ~/.bash_functions

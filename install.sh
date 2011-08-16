@@ -8,8 +8,8 @@ touch ~/.bash_aliases # Creates .bash_aliases if you don't have one.
 cat ~/.bash_aliases > ~/.bash_aliases.default.backup # Backups your current .bash_aliases
 touch ~/.bash_profile # Creates .bash_profile if you don't have it already.
 cat ~/.bash_profile > ~/.bash_profile.default.backup # Back ups your current bash_profile.
-touch ~/.bash_imports # Creates .bash_imports (this is my idea, I am surprised if you have it.)
-cat ~/.bash_imports > ~/.bash_imports.default.backup # Backs up .bash_import.
+touch ~/.bash_exports # Creates .bash_exports (this is my idea, I am surprised if you have it.)
+cat ~/.bash_exports > ~/.bash_exports.default.backup # Backs up .bash_exports.
 touch ~/.bash_functions # I am surprised if you have this, see above.
 cat ~/.bash_functions > ~/.bash_functions.default.backup # Backs up .bash_functions .
 echo "Done!"
@@ -21,11 +21,13 @@ cat bash_profile > ~/.bash_profile
 echo "bash_profile installed."
 echo "Installing bashrc."
 cat bashrc > ~/.bashrc
-echo "Installing bash_imports"
-cat bash_imports > ~/.bash_imports
+echo "bashrc installed."
+echo "Installing bash_exports"
+cat bash_exports > ~/.bash_exports
+echo "bash_exports installed."
 echo "Installing bash_functions"
 cat bash_functions > ~/.bash_functions
-echo "bashrc installed."
+echo "bash_functions installed."
 #echo "Sourcing bash_aliases..."
 #source ~/.bash_aliases
 #echo "Sourcing bashrc..."
@@ -33,4 +35,4 @@ echo "bashrc installed."
 # echo "Sourcing bash_profile..."
 # source bash_profile
 ## The above is not required, because my bash_profile only sources bashrc.
-echo "Installation has completed. Now run source ~/.bashrc to enable the new things."
+echo "Installation has completed. Now run 'source ~/.bashrc' to enable the new things."
