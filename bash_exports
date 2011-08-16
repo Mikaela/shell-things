@@ -1,0 +1,18 @@
+echo "Your ~/.bash_imports needs your attention."
+
+# Sets the default editor. Currently nano.
+export EDITOR=nano
+
+# Sets user specifig PYTHONPATH. Replace 2.X with your Python version. For example with Python 2.7 you replace X with 7.
+#export PYTHONPATH=$HOME/.packages/lib/python2.X/site-packages
+
+# Fixes locale problems (for example) when SSHing in with different locale.
+LC_ALL=C
+export LC_ALL
+
+# Sets your timezone.
+export TZ="/usr/share/zoneinfo/Europe/Helsinki"
+echo "Please change your timezone in line 14 of ~/.bash_exports . It's currently set to Europe/Helsinki."
+echo "If you life in Finland, you can safely uncomment lines 15 and 16 without even looking at them."
+
+
