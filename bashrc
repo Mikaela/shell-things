@@ -1,5 +1,4 @@
-echo "Hi, thanks for using this bashrc. You must now comment lines 1 and 2 in ~/.bashrc
-WARNING: DO NOT BLINDLY APPLY THIS!"
+echo "Please see the README file."
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
@@ -107,6 +106,9 @@ fi
 
 # End of default things. 
 # Start of my additions.
+
+#Shopt settings.
+shopt -s autocd
 
 # Sources everything.
 source ~/.bash_aliases

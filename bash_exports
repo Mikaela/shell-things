@@ -1,5 +1,3 @@
-echo "Your ~/.bash_exports needs your attention. By the way, comment line 1 in it."
-
 # Sets the default editor. Currently nano.
 export EDITOR=nano
 
@@ -12,5 +10,3 @@ export LC_ALL
 
 # Sets your timezone.
 export TZ="/usr/share/zoneinfo/Europe/Helsinki"
-echo "Please change your timezone in line 14 of ~/.bash_exports . It's currently set to Europe/Helsinki."
-echo "If you life in Finland, you can safely comment lines 15 and 16 without even looking at them."

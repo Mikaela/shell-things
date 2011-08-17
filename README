@@ -17,6 +17,8 @@ Notices:
 bashrc: I have uncommented line 42.
 bash_exports: The default editor is nano (line 4).
 bashrc_exports: Timezone is Europe/Helsinki, line 14.
+bashrc: autocd is enabled.
+bashrc: if you have read every notice, comment line 1 in your ~/.bashrc .
 
 DISCLAIMER:
 Author of this git repository is not responsible for any data loss or any other harms, which might be
