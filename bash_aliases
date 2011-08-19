@@ -22,3 +22,7 @@ alias time="date"
 
 # If I run nautilus, I want it to open in folder where I am.
 alias nautilus="nautilus ./"
+
+# I don't use terminal based IRC clietns, but usually when I test something, I use IRSSI, even if I want to use WeeChat.
+alias irssi="weechat-curses"
+#alias weechat="xchat" # Uncomment if you use XChat, like me ;)
