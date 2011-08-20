@@ -26,7 +26,7 @@ alias nautilus="nautilus ./"
 # Why I must write "weechat-curses" to start it?
 alias weechat="weechat-curses"
 
-#NMAP specific. WARNING: Some things might require root.
+#NMAP specific. WARNING: Some things might require root. Note: these are same things as those in Zenmap by default.
 alias nmap-intense="nmap -T4 -A -v -PE -PS22,25,80 -PA21,23,80,3389 "
 alias nmap-intense-udp="nmap -sS -sU -T4 -A -v -PE -PS22,25,80 -PA21,23,80,3389 "
 alias nmap-intense-all-tcp="nmap -p 1-65535 -T4 -A -v -PE -PS22,25,80 -PA21,23,80,3389 "
