@@ -25,3 +25,15 @@ alias nautilus="nautilus ./"
 
 # Why I must write "weechat-curses" to start it?
 alias weechat="weechat-curses"
+
+#NMAP specific. WARNING: Some things might require root.
+alias nmap-intense="nmap -T4 -A -v -PE -PS22,25,80 -PA21,23,80,3389 "
+alias nmap-intense-udp="nmap -sS -sU -T4 -A -v -PE -PS22,25,80 -PA21,23,80,3389 "
+alias nmap-intense-all-tcp="nmap -p 1-65535 -T4 -A -v -PE -PS22,25,80 -PA21,23,80,3389 "
+alias nmap-intense-no-ping="nmap -T4 -A -v -PN "
+alias nmap-ping="nmap -sP -PE -PA21,23,80,3389 "
+alias nmap-quick="nmap -T4 -F "
+alias nmap-quick-plus="nmap -sV -T4 -O -F --version-light "
+alias nmap-traceroute="nmap -sP -PE -PS22,25,80 -PA21,23,80,3389 -PU -PO --traceroute "
+alias nmap-regular="nmap "
+alias nmap-comprehensive="nmap -sS -sU -T4 -A -v -PE -PP -PS21,22,23,25,80,113,31339 -PA80,113,443,10042 -PO --script all " 
