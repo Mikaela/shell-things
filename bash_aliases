@@ -26,7 +26,7 @@ alias nautilus="nautilus ./"
 # Why I must write "weechat-curses" to start it?
 alias weechat="weechat-curses"
 
-#NMAP specific. All nmap things should be run as root, so it's probably best to copy these aliases to root's .bashrcs. Things which don't run without root ask for sudo password.
+#NMAP specific. All nmap things should be run as root, so it's probably best to copy these aliases to root's .bashrc. Things which don't run without root ask for sudo password.
 alias nmap-intense="nmap -T4 -A -v -PE -PS22,25,80 -PA21,23,80,3389 "
 alias nmap-intense-udp="sudo nmap -sS -sU -T4 -A -v -PE -PS22,25,80 -PA21,23,80,3389 "
 alias nmap-intense-all-tcp="nmap -p 1-65535 -T4 -A -v -PE -PS22,25,80 -PA21,23,80,3389 "
