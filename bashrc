@@ -108,7 +108,7 @@ fi
 # Start of my additions.
 
 #Shopt settings.
-shopt -s autocd
+#shopt -s autocd
 
 # Sources everything.
 source ~/.bash_aliases
