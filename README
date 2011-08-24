@@ -17,7 +17,7 @@ Notices:
 bashrc: I have uncommented line 42.
 bash_exports: The default editor is nano (line 4).
 bashrc_exports: Timezone is Europe/Helsinki, line 14.
-bashrc: autocd is enabled.
+bashrc: autocd is disabled (commented in near end of bashrc REASON: It√ doesn't seem to work with Mac OS X, and I have one MacBook running it here..
 bashrc: if you have read every notice, comment line 1 in your ~/.bashrc .
 
 DISCLAIMER:
