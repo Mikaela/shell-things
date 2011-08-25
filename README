@@ -13,6 +13,12 @@ chmod +x ./uninstall.sh
 WARNING! DO NOT USE INSTALL.SH TO UPDATE OR YOU WILL LOSE AUTOMATIC BACKUP, WHICH WAS TAKEN WHEN
 YOU RAN INSTALLATION SCRIPT.
 
+TESTED OPERATING SYSTEMS:
+Ubuntu 11.04 # Everything works
+Debian (Sid) # Everything seems to work.
+Mac OS X (Snow Leopard) # Everything seems to work after disabling autocd (disabled by default because of this.) Bash in Mac seems to have weird settings, because it looks so different when compared to Ubuntu or Debian.
+Arch Linux # Everything seems to work. Bash in Arch Linux seems to have weird default settings, because it looks so weird when compared to Ubuntu or Debian.
+
 Notices:
 bashrc: I have uncommented line 42.
 bash_exports: The default editor is nano (line 4).
