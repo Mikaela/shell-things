@@ -1,3 +1,5 @@
+# This file contains aliases which my bashrc uses. You might need to edit something (for example: if you use vi or don't have nmap).
+
 # Moving between directories:
 alias ..="cd .."
 alias .="cd ."

@@ -1,3 +1,5 @@
+# This file exports everything in my bashrc. You probably want to edit somethings here, like line 14, which sets timezone to Europe/Helsinki.
+
 # Sets the default editor. Currently nano.
 export EDITOR=nano
 

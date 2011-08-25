@@ -1,3 +1,5 @@
+# This file contains functions of my bashrc. You probably don't need to edit anything here.
+#
 # To disable function, just comment everything after description.
 
 # GEOIP lookup, copied from the ultimate bashrc http://goo.gl/qGK5j
