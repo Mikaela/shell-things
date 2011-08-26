@@ -1,4 +1,4 @@
 # It seems that running install.sh causes <filename>~ files in this git repo. They are lockfiles.
 *~
-# I am too lazy to push this to two places.
+# I am too lazy to push this to three places.
 push.sh
