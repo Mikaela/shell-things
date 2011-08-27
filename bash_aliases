@@ -56,3 +56,7 @@ alias proxyc-nmap="proxychains nmap"
 alias proxyc-nmapfe="proxychains nmapfe"
 alias proxyc-ping="nmap nping "
 alias proxyc-netcat="nmap ncat "
+
+# TOR (The Onion Router) specific.
+alias usewithtor="proxychains "
+alias torsocks="proxychains "
