@@ -16,4 +16,7 @@ cat bash_profile > ~/.bash_profile
 cat bash_aliases > ~/.bash_aliases
 cat bash_functions > ~/.bash_functions
 cat bashrc > ~/.bashrc
+touch ~/.bash_private_aliases
+echo "Not installing bash_private_aliases. See content of that file:"
+cat bash_private_aliases
 echo "Installation has been completed. You might now need to source your ~/.bashrc for changes to happen."
