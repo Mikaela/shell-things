@@ -60,3 +60,6 @@ alias proxyc-netcat="nmap ncat "
 # TOR (The Onion Router) specific.
 alias usewithtor="proxychains "
 alias torsocks="proxychains "
+
+# Because I have so many proxyc aliasses and some people want to access proxychains quickly.
+alias proxyc="proxychains "
