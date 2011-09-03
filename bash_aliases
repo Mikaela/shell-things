@@ -63,3 +63,6 @@ alias torsocks="proxychains "
 
 # Because I have so many proxyc aliasses and some people want to access proxychains quickly.
 alias proxyc="proxychains "
+
+# Downloads folder over SSH. Usage: rdownload <host>:<remotefolder> <local_destination> | TIP: use ~/ssh/config to configure hosts.
+alias rdownload="rsync -avz "
