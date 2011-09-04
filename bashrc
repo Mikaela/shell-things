@@ -118,3 +118,9 @@ source ~/.bash_private_aliases
 
 # To see time when bash starts :)
 date
+
+# To continue tmux session  whenever I SSH (or open tmux) in (required with PuTTY on Symbian S60 Series 3 by me).
+if [[ -z "$TMUX" ]]; then
+        tmux att 
+fi
+
