@@ -25,6 +25,7 @@ bash_exports: The default editor is nano (line 4).
 bashrc_exports: Timezone is Europe/Helsinki, line 14.
 bashrc: autocd is disabled (commented in near end of bashrc REASON: It√ doesn't seem to work with Mac OS X, and I have one MacBook running it here..
 bashrc: if you have read every notice, comment line 1 in your ~/.bashrc .
+bashrc: Lines 122-125 expect you to have tmux installed.
 
 DISCLAIMER:
 Author of this git repository is not responsible for any data loss or any other harms, which might be
