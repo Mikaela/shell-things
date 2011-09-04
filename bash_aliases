@@ -66,3 +66,7 @@ alias proxyc="proxychains "
 
 # Downloads folder over SSH. Usage: rdownload <host>:<remotefolder> <local_destination> | TIP: use ~/ssh/config to configure hosts.
 alias rdownload="rsync -avz "
+
+# TMUX specific
+alias attach="tmux attach"
+alias detach="tmux detach"
