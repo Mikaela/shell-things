@@ -70,3 +70,4 @@ alias rdownload="rsync -avz "
 # TMUX specific
 alias attach="tmux -u attach-session"
 alias detach="tmux -u detach"
+alias tmux="tmux -u"
