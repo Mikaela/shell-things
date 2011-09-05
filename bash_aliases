@@ -68,5 +68,5 @@ alias proxyc="proxychains "
 alias rdownload="rsync -avz "
 
 # TMUX specific
-alias attach="tmux attach"
-alias detach="tmux detach"
+alias attach="tmux -u attach-session"
+alias detach="tmux -u detach"
