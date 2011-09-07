@@ -74,3 +74,6 @@ alias tmux="tmux -u"
 
 # I am always typoing "aptitude" with my phone...
 alias aptitute="aptitude "
+
+# If I have vi(m) aliases to start nano, why to not have screen aliases to start tmux?
+alias screen="tmux -u "
