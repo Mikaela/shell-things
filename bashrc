@@ -119,8 +119,11 @@ source ~/.bash_private_aliases
 # To see time when bash starts :)
 date
 
-# To continue tmux session  whenever I SSH (or open tmux) in (required with PuTTY on Symbian S60 Series 3 by me).
-if [[ -z "$TMUX" ]]; then
-        tmux att 
+# To use tmux as "login shell" when you login with SSH. When you run logout, the connection is closed automatically and when you detach, the connection closes. (Copied from  http://william.shallum.net/random-notes/automatically-start-tmux-on-ssh-login )
+if [ "$PS1" != "" -a "${STARTED_TMUX:-x}" = x -a "${SSH_TTY:-x}" != x ]
+then
+        STARTED_TMUX=1; export STARTED_TMUX
+        sleep 1
+        ( (tmux has-session -t remote && tmux attach-session -t remote) || (tmux new-session -s remote) ) && exit 0
+        echo "tmux failed to start"
 fi
-
