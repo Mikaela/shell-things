@@ -71,3 +71,6 @@ alias rdownload="rsync -avz "
 alias attach="tmux -u attach-session"
 alias detach="tmux -u detach"
 alias tmux="tmux -u"
+
+# I am always typoing "aptitude" with my phone...
+alias aptitute="aptitude "
