@@ -119,11 +119,8 @@ source ~/.bash_private_aliases
 # To see time when bash starts :)
 date
 
-# To use tmux as "login shell" when you login with SSH. When you run logout, the connection is closed automatically and when you detach, the connection closes. (Copied from  http://william.shallum.net/random-notes/automatically-start-tmux-on-ssh-login )
-if [ "$PS1" != "" -a "${STARTED_TMUX:-x}" = x -a "${SSH_TTY:-x}" != x ]
+# Starts tmux always on start of bash, not only on SSH login, and quits from bash when tmux quits. WARNING: I DON'T KNOW WHAT HAPPENS IF YOU DON'T HAVE TMUX INSTALLED!
+if [[ $TERM != "screen" ]]
 then
-        STARTED_TMUX=1; export STARTED_TMUX
-        sleep 1
-        ( (tmux has-session -t remote && tmux attach-session -t remote) || (tmux new-session -s remote) ) && exit 0
-        echo "tmux failed to start"
+   tmux has-session -t 0 && tmux attach-session -t 0 || tmux new-session -s 0 && exit
 fi
