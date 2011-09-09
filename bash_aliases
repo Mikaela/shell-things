@@ -77,3 +77,6 @@ alias aptitute="aptitude "
 
 # If I have vi(m) aliases to start nano, why to not have screen aliases to start tmux?
 alias screen="tmux -u "
+
+# This is the checkinstall rule which I like to use.
+alias checkinstall="checkinstall -D --install=no "
