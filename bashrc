@@ -120,6 +120,7 @@ source ~/.bash_private_aliases
 date
 
 ## DO NOT PUT ANYTHING BELOW THIS LINE OR YOUR CHANGES MAY GET IGNORED BY BASH!
+sleep 3;
 
 # Gives three seconds time to press CTRL + C in case you want to prevent action by tmux.
 
