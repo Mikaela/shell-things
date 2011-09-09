@@ -119,6 +119,10 @@ source ~/.bash_private_aliases
 # To see time when bash starts :)
 date
 
+## DO NOT PUT ANYTHING BELOW THIS LINE OR YOUR CHANGES MAY GET IGNORED BY BASH!
+
+# Gives three seconds time to press CTRL + C in case you want to prevent action by tmux.
+
 # Starts tmux always on start of bash, not only on SSH login, and quits from bash when tmux quits. WARNING: I DON'T KNOW WHAT HAPPENS IF YOU DON'T HAVE TMUX INSTALLED!
 if [[ $TERM != "screen" ]]
 then
