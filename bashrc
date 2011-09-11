@@ -113,9 +113,6 @@ source ~/.bash_exports
 source ~/.bash_functions
 source ~/.bash_private_aliases
 
-# To see time when bash starts :)
-date
-
 ## DO NOT PUT ANYTHING BELOW THIS LINE OR YOUR CHANGES MAY GET IGNORED BY BASH!
 sleep 3;
 
