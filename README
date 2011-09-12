@@ -22,10 +22,11 @@ Arch Linux # Everything seems to work. Bash in Arch Linux seems to have weird de
 Notices:
 bashrc: I have uncommented line 42.
 bash_exports: The default editor is nano (line 4).
-bashrc_exports: Timezone is Europe/Helsinki, line 14.
-bashrc: autocd is disabled (commented in near end of bashrc REASON: It√ doesn't seem to work with Mac OS X, and I have one MacBook running it here..
+bash_exports: The default timezone is Europe/Helsinki, line 15. You probably want to change it.
+bashrc: autocd is disabled (commented in near end of bashrc REASON: It doesn't seem to work with Mac OS X, and I have one MacBook running it here..
+bashrc: Lines 123-125 expect you to have tmux installed.
+bash_exports: Line 11 makes C as locale. You MUST change this. See line 10 for information about how.
 bashrc: if you have read every notice, comment line 1 in your ~/.bashrc .
-bashrc: Lines 122-125 expect you to have tmux installed.
 
 DISCLAIMER:
 Author of this git repository is not responsible for any data loss or any other harms, which might be
