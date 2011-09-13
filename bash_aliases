@@ -25,8 +25,8 @@ alias time="date"
 # If I run nautilus, I want it to open in folder where I am.
 alias nautilus="nautilus ./"
 
-# I want to see Ä and Ö and other charters when I use IRC on Finnish channels.
-alias weechat="LC_ALL=fi_FI.UTF_8 && export LC_ALL && weechat-curses"
+# Why I must write "weechat-curses" to start it?
+alias weechat="weechat-curses"
 
 #NMAP specific. All nmap things should be run as root, so it's probably best to copy these aliases to root's .bashrc. Things which don't run without root ask for sudo password.
 alias nmap-intense="nmap -T4 -A -v -PE -PS22,25,80 -PA21,23,80,3389 "
