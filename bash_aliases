@@ -77,3 +77,7 @@ alias aptitute="aptitude "
 
 # This is the checkinstall rule which I like to use.
 alias checkinstall="sudo checkinstall -D --install=no "
+
+# The Battle for Wesnoth specific, http://wesnoth.org/
+# It seems to be an good idea to have debug logs on terminal.
+alias wesnoth="wesnoth-1.9 --debug"
