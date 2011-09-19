@@ -1,6 +1,6 @@
 # This file exports everything in my bashrc. You probably want to edit somethings here, like line 14, which sets timezone to Europe/Helsinki.
 
-# Sets the default editor. Currently nano.
+# Sets the default editor. I prefer nano to vim and so on, so I want it to be nano. If you don't like terminal based text editors, change "nano" to gedit (Gnome) or Kate (KDE).
 export EDITOR=nano
 
 # Sets user specifig PYTHONPATH. Replace 2.X with your Python version. For example with Python 2.7 you replace X with 7.
