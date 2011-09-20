@@ -118,7 +118,7 @@ sleep 3;
 
 # Gives three seconds time to press CTRL + C in case you want to prevent action by tmux.
 
-# Starts tmux always on start of bash, not only on SSH login, and quits from bash when tmux quits. WARNING: I DON'T KNOW WHAT HAPPENS IF YOU DON'T HAVE TMUX INSTALLED!
+# Starts tmux always on start of bash, not only on SSH login, and quits from bash when tmux quits. WARNING: I DON'T KNOW WHAT HAPPENS IF YOU DON'T HAVE TMUX INSTALLED! (Modified from Cubox's script and William Shallum's tmux on SSH login http://william.shallum.net/random-notes/automatically-start-tmux-on-ssh-login )
 if [[ $TERM != "screen" ]]
 then
    tmux has-session -t 0 && tmux attach-session -t 0 || tmux new-session -s 0 && exit
