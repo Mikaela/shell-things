@@ -114,7 +114,7 @@ source ~/.bash_functions
 source ~/.bash_private_aliases
 
 ## DO NOT PUT ANYTHING BELOW THIS LINE OR YOUR CHANGES MAY GET IGNORED BY BASH!
-sleep 3;
+sleep 1;
 
 # Gives three seconds time to press CTRL + C in case you want to prevent action by tmux.
 
