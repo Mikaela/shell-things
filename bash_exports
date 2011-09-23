@@ -15,5 +15,5 @@ export LC_ALL
 #export TZ="/usr/share/zoneinfo/Europe/Helsinki"
 
 # Sets PATH. To add another path, add :</path/to/new/path> to string below. 
-# Remember to uncomment it if you use it ;) Yes, I know that this isn't exporting, but I don't want PYTHONPATH to be alone here and PATH matches with nature of this file.
+# Yes, I know that this isn't exporting, but I don't want PYTHONPATH to be alone here and PATH matches with nature of this file.
 PATH=$PATH
