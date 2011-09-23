@@ -14,6 +14,6 @@ export LC_ALL
 # Sets your timezone. Set in format <Region/City>, or just timezone like UTC.
 #export TZ="/usr/share/zoneinfo/Europe/Helsinki"
 
-# Sets PATH. To add this, run "echo $PATH" in terminal and copy-paste the result below. To add another path, add :</path/to/new/path> to string below. 
+# Sets PATH. To add another path, add :</path/to/new/path> to string below. 
 # Remember to uncomment it if you use it ;) Yes, I know that this isn't exporting, but I don't want PYTHONPATH to be alone here and PATH matches with nature of this file.
-# PATH=
+PATH=$PATH
