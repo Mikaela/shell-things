@@ -79,5 +79,5 @@ alias aptitute="aptitude "
 alias checkinstall="sudo checkinstall -D --install=no "
 
 # The Battle for Wesnoth specific, http://wesnoth.org/
-# It seems to be an good idea to have debug logs on terminal.
-alias wesnoth="wesnoth-1.9 --debug"
+# It seems to be an good idea to have debug logs on terminal with svn version.
+alias wesnoth="wesnoth--debug"
