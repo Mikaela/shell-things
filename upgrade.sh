@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 echo "Backing up files..."
 touch ~/.bash_exports
 cat ~/.bash_exports > ~/.bash_exports.old.backup

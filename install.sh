@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 echo "If you are upgrading, press ctrl + c NOW! You have 15 seconds time to cancel this. rerunning this script will overwrite your backups and it makes uninstall.sh useless."
 sleep 15;
 echo "Taking backups..."

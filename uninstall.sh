@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 echo "Restoring default files..."
 cat ~/.bashrc.default.backup > ~/.bashrc
 cat ~/.bash_aliases.default.backup > ~/.bash_aliases
