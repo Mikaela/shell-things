@@ -20,9 +20,5 @@ touch ~/.bash_exports
 echo "--    Start of content of bash_exports    --"
 cat bash_exports
 echo "--    End of content of bash_exports      --"
-touch ~/.bash_private_aliases
-echo "Not installing bash_private_aliases. See content of that file:"
-echo "--    start of content of bash_private_aliases"
-cat bash_private_aliases
 echo "--    end of content of bash_private_aliases  --"
 echo "Installation has been completed. You might now need to source your ~/.bashrc for changes to happen."
