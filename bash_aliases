@@ -1,5 +1,8 @@
 # This file contains aliases which my bashrc uses. You might need to edit something (for example: if you use vi or don't have nmap).
 
+# To get sudo work with aliases.
+alias sudo="sudo "
+
 # Moving between directories:
 alias ..="cd .."
 alias .="cd ."
