@@ -1,2 +1,0 @@
-# This is file for private aliases (for example: SSH shortcuts). NOTICE: This file is not overwritten by upgrade.sh (every else file is).
-#alias home="ssh -p 22 user@ip"
