@@ -84,3 +84,21 @@ alias checkinstall="make install "
 # The Battle for Wesnoth specific, http://wesnoth.org/
 # It seems to be an good idea to have debug logs on terminal with svn version.
 alias wesnoth="wesnoth --debug"
+
+# Auto extension things, ( modified from https://wiki.archlinux.org/index.php/Zsh#Advanced_.zshrc_files )
+alias -s html=$BROWSER
+alias -s org=$BROWSER
+alias -s php=$BROWSER
+alias -s com=$BROWSER
+alias -s net=$BROWSER
+alias -s png="eog"
+alias -s jpg="eog"
+alias -s gif="eog"
+alias -s sxw="libreoffice --writer"
+alias -s doc="libreoffice --writer"
+alias -s gz='tar -xzvf'
+alias -s bz2='tar -xjvf'
+#alias -s java=$EDITOR
+alias -s txt=$EDITOR
+alias -s PKGBUILD=$EDITOR
+
