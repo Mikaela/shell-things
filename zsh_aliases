@@ -99,6 +99,8 @@ alias -s doc="libreoffice --writer"
 alias -s gz='tar -xzvf'
 alias -s bz2='tar -xjvf'
 #alias -s java=$EDITOR
-alias -s txt=$EDITOR
-alias -s PKGBUILD=$EDITOR
+#alias -s txt=$EDITOR
+#alias -s PKGBUILD=$EDITOR
 
+# For copy-pasting directly from somewhere
+alias %=" "

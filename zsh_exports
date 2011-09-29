@@ -17,3 +17,6 @@ export LC_ALL
 # Sets PATH. To add another path, add :</path/to/new/path> to string below. 
 # Yes, I know that this isn't exporting, but I don't want PYTHONPATH to be alone here and PATH matches with nature of this file.
 PATH=$PATH
+
+# Sets web-browser. Used for one alias.
+#export BROWSER=lynx
