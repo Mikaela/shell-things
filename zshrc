@@ -42,7 +42,7 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # Sources everything.
 source ~/.zsh_aliases
-source ~/.zsh_exports
+source ~/.zshenv
 source ~/.zsh_functions
 
 ## DO NOT PUT ANYTHING BELOW THIS LINE OR YOUR CHANGES MAY GET IGNORED BY BASH!
