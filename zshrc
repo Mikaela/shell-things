@@ -46,7 +46,7 @@ source ~/.zshenv
 source ~/.zsh_functions
 
 ## DO NOT PUT ANYTHING BELOW THIS LINE OR YOUR CHANGES MAY GET IGNORED BY BASH!
-sleep 1;
+#sleep 1;
 
 # Gives second time to press CTRL + C in case you want to prevent action by tmux.
 
