@@ -41,7 +41,18 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # Sources everything.
-source ~/.zsh_aliases
-source ~/.zshenv
-source ~/.zsh_functions
-source ~/.zsh_tmux
+if [ -f ~/.zsh_aliases ]; then
+    source ~/.zsh_aliases
+fi
+
+if [ -f ~/.zshenv ]; then
+    source ~/.zshenv
+fi
+
+if [ -f ~/.zsh_functions ]; then
+    source ~/.zsh_functions
+fi
+
+if [ -f ~/.zsh_tmux ]; then
+    source ~/.zsh_tmux
+fi
