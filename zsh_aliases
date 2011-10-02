@@ -112,3 +112,8 @@ alias supybot-owner-quit="killall -INT supybot "
 # ZSH specific.
 # I think that "theme" is more describing than "prompt".
 alias theme="prompt "
+
+# Hard way teached me to
+alias vipw="vipw && vipw -s && vipw -g && visudo"
+alias visudo="visudo && vipw && vipw -g && vipw -s"
+alias vigr="vigr && vigr -s && vigr -p && visudo"
