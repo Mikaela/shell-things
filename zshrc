@@ -56,3 +56,8 @@ fi
 if [ -f ~/.zsh_tmux ]; then
     source ~/.zsh_tmux
 fi
+
+if [ -f ~/.zsh_tmux ]; then
+    source ~/.zsh_custom
+    fi
+    
