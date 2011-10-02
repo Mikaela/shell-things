@@ -20,3 +20,7 @@ PATH=$PATH
 
 # Sets web-browser. Used for one alias.
 #export BROWSER=lynx
+
+# "Changes" home directory without root. Uncomment both lines below this.
+#export HOME=<path to new home>
+#cd
