@@ -57,7 +57,7 @@ if [ -f ~/.zsh_tmux ]; then
     source ~/.zsh_tmux
 fi
 
-if [ -f ~/.zsh_tmux ]; then
+if [ -f ~/.zsh_custom ]; then
     source ~/.zsh_custom
     fi
     
