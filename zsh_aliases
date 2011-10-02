@@ -94,6 +94,6 @@ alias supybot-owner-quit="killall -INT supybot "
 alias theme="prompt "
 
 # Hard way teached me to
-alias vipw="vipw && vipw -s && vipw -g && visudo"
-alias visudo="visudo && vipw && vipw -g && vipw -s"
-alias vigr="vigr && vigr -s && vigr -p && visudo"
+alias vipw="\vipw && \vipw -s && \vipw -g && \visudo"
+alias visudo="\visudo && \vipw && \vipw -g && \vipw -s"
+alias vigr="\vigr && \vigr -s && \vigr -p && \visudo"
