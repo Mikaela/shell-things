@@ -7,11 +7,6 @@ alias sudo="sudo "
 alias ..="cd .."
 alias .="cd ."
 
-# As you can see, I don't use/like Vi(m) :)
-alias editor="nano"
-alias vi="nano"
-alias vim="nano"
-
 # Use htop instead of top, it's better. Requires htop.
 alias top="htop"
 
