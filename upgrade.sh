@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 echo "Backing up files..."
 touch ~/.zshenv
 cat ~/.zshenv > ~/.zshenv.old.backup

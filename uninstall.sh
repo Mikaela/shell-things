@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 echo "Restoring default files..."
 cat ~/.zshrc.default.backup > ~/.zshrc
 cat ~/.zsh_aliases.default.backup > ~/.zsh_aliases
