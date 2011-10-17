@@ -119,3 +119,5 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # Copying command in Supybot (Internet.DNS)
 alias dns="nslookup "
+alias dns6="nslookup -type=AAAA "
+alias nslookup6="nslookup -type=AAAA "
