@@ -24,3 +24,6 @@ PATH=$PATH
 # "Changes" home directory without root. Uncomment both lines below this.
 #export HOME=<path to new home>
 #cd
+
+# Uses most as the default pager if you uncomment line below. (You will also get colourful manpages :D).
+#export PAGER=most
