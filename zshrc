@@ -8,7 +8,7 @@ autoload -Uz promptinit
 # Green for normal user and red for root. Thanks nyuszika7h :D
 promptinit
 PS1="%B%(!.%F{red}.%F{green})%n@%m %~
-%#%f%b "
+%#%f "
 
 setopt histignorealldups sharehistory
 
