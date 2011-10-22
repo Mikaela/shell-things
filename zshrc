@@ -6,7 +6,8 @@ echo "Please see the README file."
 
 autoload -Uz promptinit
 promptinit
-prompt adam1
+PS1="%B%F{green}%n@%m %~
+%# %f%b"
 
 setopt histignorealldups sharehistory
 
