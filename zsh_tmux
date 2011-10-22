@@ -12,6 +12,6 @@ if [ "$PS1" != "" -a "${STARTED_TMUX:-x}" = x -a "${SSH_TTY:-x}" != x ]
 then
         STARTED_TMUX=1; export STARTED_TMUX
         sleep 1
-        ( (tmux has-session -t 0 && tmux attach-session -t 0) || (tmux new-session -s 0) ) && exit 0
+        ( (\tmux has-session -t 0 && \tmux attach-session -t 0) || (\tmux new-session -s 0) ) && exit 0
         echo "tmux failed to start"
 fi
