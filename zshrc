@@ -5,9 +5,10 @@ echo "Please see the README file."
 # Set up the prompt
 
 autoload -Uz promptinit
+# Green for normal user and red for root. Thanks nyuszika7h :D
 promptinit
-PS1="%B%F{green}%n@%m %~
-%# %f%b"
+PS1="%B%(!.%F{red}.%F{green})%n@%m %~
+%#%f%b "
 
 setopt histignorealldups sharehistory
 
