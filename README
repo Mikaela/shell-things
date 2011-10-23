@@ -13,15 +13,6 @@ chmod +x ./uninstall.sh
 WARNING! DO NOT USE INSTALL.SH TO UPDATE OR YOU WILL LOSE AUTOMATIC BACKUP, WHICH WAS TAKEN WHEN
 YOU RAN INSTALLATION SCRIPT.
 
-Notices:
-zshrc: I have uncommented line 42.
-zshenv: The default editor is nano (line 4).
-zshenv: The default timezone is Europe/Helsinki, line 15. You probably want to change it.
-zshrc: autocd is disabled (commented in near end of zshrc REASON: It doesn't seem to work with Mac OS X, and I have one MacBook running it here..
-zshrc: Lines 123-125 expect you to have tmux installed.
-zshenv: Line 11 makes C as locale. You MUST change this. See line 10 for information about how.
-zshrc: if you have read every notice, comment line 1 in your ~/.zshrc .
-
 DISCLAIMER:
 Author of this git repository is not responsible for any data loss or any other harms, which might be
 because of these files.
