@@ -8,8 +8,7 @@ export EDITOR=nano
 
 # Fixes locale problems (for example) when SSHing in with different locale. (Another example: Hailo plugin for supybot gives locale errors, this fixes it.)
 # Replace "C" with your locale. You can get list of locales by running "locale -a". Replace "C" with your language. For example:  fi_FI.utf8 )
-LC_ALL=C
-export LC_ALL
+export LC_ALL=C
 
 # Sets your timezone. Set in format <Region/City>, or just timezone like UTC.
 #export TZ="/usr/share/zoneinfo/Europe/Helsinki"
