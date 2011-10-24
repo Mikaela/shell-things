@@ -53,3 +53,36 @@ function top10() {
 	# copyright 2007 - 2010 Christopher Bratusek
 	history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head
 }
+
+# ex command. Copied from zshrc of bioterror ( http://ricecows.org/configs/zsh/.zshrc ). Original comment below:
+## for unit193 ;)
+## use command "ex" to extract any archive files.
+## "ex package.zip" for example
+function ex ()
+
+{
+if [ -f "$1" ] ; then
+case "$1" in
+      *.tar)                tar xvf $1          ;;
+      *.tar.bz2 | *.tbz2 )  tar xjvf $1         ;;
+      *.tar.gz | *.tgz )    tar xzvf $1         ;;
+      *.bz2)                bunzip2 $1          ;;
+      *.rar)                unrar x $1          ;;
+      *.gz)                 gunzip $1           ;;
+      *.zip)                unzip $1            ;;
+      *.Z)                  uncompress $1       ;;
+      *.7z)                 7z x $1             ;;
+      *.xz)                 tar xJvf $1         ;;
+      *.deb)
+         DIR=${1%%_*.deb}
+         ar xv $1
+         mkdir ${DIR}
+         tar -C ${DIR} -xzvf data.tar.gz        ;;
+      *.rpm)               rpm2cpio $1 | cpio -vid  ;;
+      *)   echo ""${1}" cannot be extracted via extract()"
+;;
+    esac
+   else
+    echo ""${1}" is not a valid file"
+fi
+}
