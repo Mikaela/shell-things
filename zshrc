@@ -1,4 +1,4 @@
-echo "Please see the README file."
+echo "Do not apply any config files without reading them first! Comment line 1 in .zshrc . And by the way, you shouldn't have ever seen this message in zsh."
 
 # This is based on zshrc which came with Debian (Third option in wizard for new users.)
 
