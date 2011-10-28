@@ -128,3 +128,8 @@ alias nslookup6="nslookup -type=AAAA "
 
 # If I have nslookup6...
 alias dig6="dig AAAA "
+
+# SSHGuard specific
+alias sshguard-show-bans="sudo iptables -L sshguard --line-numbers"
+# Enter ban number as arguement. You can see ban numbers with previous command.
+alias sshguard-unban="sudo iptables -D sshguard "
