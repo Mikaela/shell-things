@@ -67,6 +67,7 @@ else
 fi
 unset color_prompt force_color_prompt
 
+# Red colour for root, thanks nyuszika7h :D
 # check if we're root
 if [[ $EUID == 0 ]]; then
     PS1='\033[1;31m\u@\h:\w\$\033[0m '
