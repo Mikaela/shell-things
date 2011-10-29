@@ -1,17 +1,4 @@
-zshrc file and other files which it depends on by Mika Suomalainen (Mkaysi).
-
-INSTALLATION:
-Move to folder of this git repo.
-chmod +x ./install.sh
-./install.sh
-
-UNINSTALLATION:
-Move to folder of this git repo.
-chmod +x ./uninstall.sh
-./uninstall.sh
-
-WARNING! DO NOT USE INSTALL.SH TO UPDATE OR YOU WILL LOSE AUTOMATIC BACKUP, WHICH WAS TAKEN WHEN
-YOU RAN INSTALLATION SCRIPT.
+zshrc by Mika Suomalainen (Mkaysi).
 
 DISCLAIMER:
 Author of this git repository is not responsible for any data loss or any other harms, which might be
