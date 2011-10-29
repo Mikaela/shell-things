@@ -1,4 +1,7 @@
-zshrc by Mika Suomalainen (Mkaysi).
+Shell things by Mika Suomalainen (Mkaysi).
+
+This repository contains some things which I always need with terminal.
+bashrc, zshrc and tmux config file.
 
 DISCLAIMER:
 Author of this git repository is not responsible for any data loss or any other harms, which might be
