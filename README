@@ -4,8 +4,7 @@ This repository contains some things which I always need with terminal.
 bashrc, zshrc and tmux config file.
 
 DISCLAIMER:
-Author of this git repository is not responsible for any data loss or any other harms, which might be
-because of these files.
+Author of this git repository is not responsible for any data loss or any other harms, which might happen because of these files.
 
 Author: Mika Suomalainen (Mkaysi).
 
@@ -14,5 +13,5 @@ There aren't any license, but please mention that I created this and where did y
 If something is copy-pasted here from somewhere, it reads in that file.
 
 Original sources:
-GitHub gist: (This first appeared here) https://gist.github.com/1248723
-GitHub: https://github.com/Mkaysi/zsh-things
+GitHub gist:
+GitHub: https://github.com/Mkaysi/shell-things
