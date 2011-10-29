@@ -7,6 +7,11 @@
 #   Functions                   ZGC5QQ
 #   Tmux (example)              4G2W9C
 
+# For Mac OS X + SSH sessions. bashrc must be sourced by hand at least once.
+echo "if [ -f ~/.bashrc ]; then
+    source ~/.bashrc
+fi" >> ~/.bash_profile
+
 #####   Defaults etc...             M0TZLS  #####
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
