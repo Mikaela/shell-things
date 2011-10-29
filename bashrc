@@ -139,11 +139,6 @@ if [ -f ~/.bash_environment ]; then
     source ~/.bash_environment
 fi
 
-# .bashenv (Yes, I know that this is sourced by every bash session even if this isn't here, but I just want to write it).
-if [ -f ~/.bashenv ]; then
-    source ~/.bashenv
-fi
-
 # Things after this are just examples and should be put to some other file, which issourced above.
 
 # Sets the default editor. I prefer nano to vim and so on, so I want it to be nano. If you don't like terminal based text editors, change "nano" to gedit (Gnome) or Kate (KDE).
