@@ -290,6 +290,9 @@ alias sshguard-show-bans="sudo iptables -L sshguard --line-numbers"
 # Enter ban number as arguement. You can see ban numbers with previous command.
 alias sshguard-unban="sudo iptables -D sshguard "
 
+# This needs something which makes it easy to remember.
+alias KILL="killall -KILL "
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
