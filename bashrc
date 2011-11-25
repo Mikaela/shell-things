@@ -10,7 +10,7 @@
 # For Mac OS X + SSH sessions. bashrc must be sourced by hand at least once.
 echo "if [ -f ~/.bashrc ]; then
     source ~/.bashrc
-fi" >> ~/.bash_profile
+fi" > ~/.bash_profile
 
 #####   Defaults etc...             M0TZLS  #####
 
