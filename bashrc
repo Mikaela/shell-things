@@ -7,6 +7,11 @@
 #   Functions                   ZGC5QQ
 #   Tmux (example)              4G2W9C
 
+# For Mac OS X + SSH sessions. bashrc must be sourced by hand at least once.
+echo "if [ -f ~/.bashrc ]; then
+    source ~/.bashrc
+fi" > ~/.bash_profile
+
 #####   Defaults etc...             M0TZLS  #####
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
@@ -137,11 +142,6 @@ fi
 # .bash_environment
 if [ -f ~/.bash_environment ]; then
     source ~/.bash_environment
-fi
-
-# .bashenv (Yes, I know that this is sourced by every bash session even if this isn't here, but I just want to write it).
-if [ -f ~/.bashenv ]; then
-    source ~/.bashenv
 fi
 
 # Things after this are just examples and should be put to some other file, which issourced above.
@@ -289,6 +289,9 @@ alias dig6="dig AAAA "
 alias sshguard-show-bans="sudo iptables -L sshguard --line-numbers"
 # Enter ban number as arguement. You can see ban numbers with previous command.
 alias sshguard-unban="sudo iptables -D sshguard "
+
+# This needs something which makes it easy to remember.
+alias KILL="killall -KILL "
 
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
