@@ -248,7 +248,7 @@ alias %=" "
 alias supybot-config-reload="killall -HUP supybot "
 alias supybot-owner-quit="killall -INT supybot "
 # Translating plugins in Limnoria
-alias supybot-generate-messages.pot="pygettext −−docstring config.py plugin.py"
+alias supybot-generate-messages.pot="pygettext −−docstrings config.py plugin.py"
 
 # bash specific.
 # I think that "theme" is more describing than "prompt".
