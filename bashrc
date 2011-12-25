@@ -294,6 +294,9 @@ alias sshguard-unban="sudo iptables -D sshguard "
 # This needs something which makes it easy to remember.
 alias KILL="killall -KILL "
 
+# For locally rsync copying folder1 to folder2.
+alias rsync-folder="rsync -azvv "
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
