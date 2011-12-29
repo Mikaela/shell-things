@@ -144,7 +144,13 @@ if [ -f ~/.bash_environment ]; then
     source ~/.bash_environment
 fi
 
-# Things after this are just examples and should be put to some other file, which issourced above.
+# More colours :D
+if [[ $TERM == 'xterm' ]]; then
+export TERM=xterm-256color
+fi
+
+
+# Things after this are just examples and should be put to some other file, which is sourced above.
 
 # Sets the default editor. I prefer nano to vim and so on, so I want it to be nano. If you don't like terminal based text editors, change "nano" to gedit (Gnome) or Kate (KDE).
 #export EDITOR=nano
