@@ -76,6 +76,10 @@ if [[ $TERM == 'xterm' ]]; then
 export TERM=xterm-256color
 fi
 
+if [[ $TERM == 'screen' ]]; then             
+export TERM=screen-256color              
+fi
+
 # Things after this are just examples and should be put to some other file, which is sourced above.
 
 # Sets the default editor. I prefer nano to vim and so on, so I want it to be nano. If you don't like terminal based text editors, change "nano" to gedit (Gnome) or Kate (KDE).
