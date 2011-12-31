@@ -156,8 +156,8 @@ fi
 
 # Things after this are just examples and should be put to some other file, which is sourced above.
 
-# Sets the default editor. I prefer nano to vim and so on, so I want it to be nano. If you don't like terminal based text editors, change "nano" to gedit (Gnome) or Kate (KDE).
-#export EDITOR=nano
+# Sets the default editor. I am vim user, so I want it to be vim. If you don't like terminal based text editors, change "" to gedit (Gnome) or Kate (KDE).
+#export EDITOR=vim
 
 # Sets user specifig PYTHONPATH. Replace 2.X with your Python version. For example with Python 2.7 you replace X with 7.
 #export PYTHONPATH=$HOME/.packages/lib/python2.X/site-packages
