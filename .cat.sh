@@ -3,3 +3,4 @@
 cat bashrc > ~/.bashrc
 cat tmux.conf > ~/.tmux.conf
 cat zshrc > ~/.zshrc
+#cat gitconfig > ~/.gitconfig # I usually do not want this to be overridden so much.
