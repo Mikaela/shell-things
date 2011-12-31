@@ -307,6 +307,9 @@ alias KILL="killall -KILL "
 # For locally rsync copying folder1 to folder2.
 alias rsync-folder="rsync -azvv "
 
+# SSHGuard seems to prefer users to run this always when connecting with keys in ssh-agent...
+alias ssh-add="\ssh-add -D && \ssh-add "
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
