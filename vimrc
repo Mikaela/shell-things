@@ -22,6 +22,8 @@ if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
+" end of copied from /usr/local/vim/vimrc
+
 " Copied from nyuszika7h http://nyuszika7h.dyndns.org/~nyuszika7h/.vimrc
 set number          " Show line numbers.
 
@@ -33,3 +35,30 @@ set background=dark " When set to "dark", Vim will try to use colors that look
                     " try to use colors that look good on a light background.
                     " Any other value is illegal.
 
+" end of copied from nyuszika7h
+
+"Use modelines!
+set modeline
+
+" Copied from http://vim.wikia.com/wiki/Modeline_magic
+" Append modeline after last line in buffer.
+" Use substitute() instead of printf() to handle '%%s' modeline in LaTeX
+" files.
+function! AppendModeline()
+  let l:modeline = printf(" vim: set ts=%d sw=%d tw=%d :",
+        \ &tabstop, &shiftwidth, &textwidth)
+  let l:modeline = substitute(&commentstring, "%s", l:modeline, "")
+  call append(line("$"), l:modeline)
+endfunction
+nnoremap <silent> <Leader>ml :call AppendModeline()<CR>
+
+"end of copied fron vimwiki.
+
+" copied from http://www.linuxquestions.org/questions/suse-novell-60/how-to-make-a-tab-is-4-spaces-width-in-vim-355658/
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+
+" end of copied fron linuxquestions.org
