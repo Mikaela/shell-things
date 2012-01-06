@@ -407,6 +407,12 @@ case "$1" in
 fi
 }
 
+# Given by nyuszika7h. Shortens GitHub URLs with git.io
+gitio () {                                         
+        curl -s -i http://git.io -F "url=$1" | grep
+        --color=never -P '^Location: ' | awk '{ print $2 }'
+        }                                                  
+
 #####   Tmux (example)              4G2W9C  #####
 
 # This should be put in .custom or .bash_custom
