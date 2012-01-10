@@ -160,7 +160,7 @@ alias torsocks="proxychains "
 alias proxychains="proxychains "
 
 # Downloads folder over SSH. Usage: rdownload <host>:<remotefolder> <local_destination> | TIP: use ~/ssh/config to configure hosts.
-alias rdownload="rsync -avz "
+alias rdownload="rsync -h --progress -avz "
 
 # TMUX specific
 alias attach="exec tmux -u attach-session"
@@ -248,7 +248,7 @@ alias sshguard-unban="sudo iptables -D sshguard "
 alias KILL="killall -KILL "
 
 # For locally rsync copying folder1 to folder2.
-alias rsync-folder="rsync -azvv "
+alias rsync-folder="rsync -h --progress -azvv "
 
 # SSHGuard seems to prefer users to run this always when connecting with keys in ssh-agent...
 alias ssh-add="\ssh-add -D && \ssh-add "
