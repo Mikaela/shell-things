@@ -265,11 +265,6 @@ alias supybot-generate-messages.pot-xgettext="xgettext --language=Python config.
 # I think that "theme" is more describing than "prompt".
 alias theme="prompt "
 
-# Hard way teached me to
-alias vipw="\vipw && \vipw -s && \vipw -g && \visudo"
-alias visudo="\visudo && \vipw && \vipw -g && \vipw -s"
-alias vigr="\vigr && \vigr -s && \vigr -p && \visudo"
-
 ## -- Start of aliases which are saved from Ubuntu default bashrc. --
 
 # enable color support of ls and also add handy aliases
