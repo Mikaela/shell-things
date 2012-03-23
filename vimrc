@@ -87,3 +87,8 @@ set title
 " Flash, do not beep!
 set visualbell
 " End of copied from http://items.sjbach.com/319/configuring-vim-right
+
+" gvim has light background
+if has('gui_running')
+    set background=light
+endif
