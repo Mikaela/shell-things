@@ -95,7 +95,7 @@ fi
 #export TZ="/usr/share/zoneinfo/Europe/Helsinki"
 
 # Sets PATH. To add another path, add :</path/to/new/path> to string below. 
-PATH=$PATH
+PATH=$PATH:$HOME/.local/bin
 
 # Sets web-browser.
 #export BROWSER=lynx
