@@ -308,6 +308,9 @@ alias ssh-add="\ssh-add -D && \ssh-add "
 # Usually aptitude is installed everywhere and if it's not, it can be unaliased in .aliases.
 alias apt-get=aptitude
 
+# Use GPG2 instead of GPG!
+alias gpg=gpg2
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
