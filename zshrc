@@ -253,6 +253,8 @@ alias apt-get=aptitude
 
 # Use GPG2 instead of GPG!
 alias gpg=gpg2
+# ZSH doesn't currently include automatic completion for GPG2, so use the GPG one, which works with GPG2 too. This is in aliases, because that above alias needs this and this will disappear when zsh gets GPG2 completion. See http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=666755
+compdef gpg2=gpg
 
 # Allow custom aliases to be put in .aliases or .zsh_aliases .
 
