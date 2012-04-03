@@ -1,1 +1,1 @@
-PATH=$HOME/.packages:$PATH
+PATH=$HOME/.local/bin:$PATH
