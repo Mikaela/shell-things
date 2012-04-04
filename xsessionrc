@@ -1,1 +1,8 @@
 PATH=$HOME/.local/bin:$PATH
+
+# Allow custom things to be put to ~/.xcustom
+if [ -f ~/.xcustom ]; then
+    . ~/.xcustom
+fi
+
+# vim: set ft=sh
