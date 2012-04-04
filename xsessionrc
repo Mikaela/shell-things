@@ -1,5 +1,8 @@
 PATH=$HOME/.local/bin:$PATH
 
+# Use gpg-agent
+eval $(gpg-agent --daemon)
+
 # Allow custom things to be put to ~/.xcustom
 if [ -f ~/.xcustom ]; then
     . ~/.xcustom
