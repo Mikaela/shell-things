@@ -114,7 +114,6 @@ alias sudo="sudo "
 
 # Moving between directories:
 alias ..="cd .."
-alias .="cd ."
 
 # Use htop instead of top, it's better. Requires htop.
 alias top="htop"
