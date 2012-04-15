@@ -257,7 +257,7 @@ alias %=" "
 alias supybot-config-reload="killall -HUP supybot "
 alias supybot-owner-quit="killall -INT supybot "
 # Translating plugins in Limnoria
-alias supybot-generate-messages.pot="pygettext −−docstrings config.py plugin.py"
+alias supybot-generate-messages.pot="pygettext --docstrings config.py plugin.py"
 alias supybot-generate-messages.pot-xgettext="xgettext --language=Python config.py plugin.py && mv -f messages.po messages.pot"
 
 # bash specific.
