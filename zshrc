@@ -56,6 +56,9 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # Source before mentioned locations if they exist.
 
+# Don't check for mail!
+unset MAILCHECK
+
 # .environment
 if [ -f ~/.environment ]; then
     source ~/.environment

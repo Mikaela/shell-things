@@ -134,6 +134,9 @@ fi
 
 # Source before mentioned locations if they exist.
 
+# Don't check for mail!
+unset MAILCHECK
+
 # .environment
 if [ -f ~/.environment ]; then
     source ~/.environment
