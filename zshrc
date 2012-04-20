@@ -128,9 +128,6 @@ alias youtube-dl="youtube-dl -t"
 alias gdrop="git stash && git stash drop"
 alias gitk="gitg" # Requires gitg . I just think that it looks nicer than gitk.
 
-# Usually when I run "time", I want to know the current time.
-alias time="date"
-
 # If I run nautilus, I want it to open in folder where I am.
 alias nautilus="nautilus ./"
 
