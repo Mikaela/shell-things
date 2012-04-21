@@ -162,9 +162,9 @@ alias proxychains="proxychains "
 alias rdownload="rsync -h --progress -avz "
 
 # TMUX specific
-alias attach="exec tmux -u attach-session"
+alias attach="tmux -u attach-session"
 alias detach="tmux -u detach"
-alias tmux="exec tmux -u"
+alias tmux="tmux -u"
 
 # I am always typoing "aptitude" with my phone...
 alias aptitute="aptitude "
