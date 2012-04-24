@@ -134,6 +134,9 @@ fi
 
 # Source before mentioned locations if they exist.
 
+# Don't check for mail!
+unset MAILCHECK
+
 # .environment
 if [ -f ~/.environment ]; then
     source ~/.environment
@@ -169,7 +172,7 @@ fi
 #export TZ="/usr/share/zoneinfo/Europe/Helsinki"
 
 # Sets PATH. To add another path, add :</path/to/new/path> to string below. 
-PATH=$PATH
+PATH=$HOME/.local/bin:$PATH
 
 # Sets web-browser.
 #export BROWSER=lynx
@@ -188,7 +191,6 @@ alias sudo="sudo "
 
 # Moving between directories:
 alias ..="cd .."
-alias .="cd ."
 
 # Use htop instead of top, it's better. Requires htop.
 alias top="htop"
@@ -199,9 +201,6 @@ alias youtube-dl="youtube-dl -t"
 # git specific. This is the command which I use when git asks me to commit something and says that I have modified files, even when I haven't.
 alias gdrop="git stash && git stash drop"
 alias gitk="gitg" # Requires gitg . I just think that it looks nicer than gitk.
-
-# Usually when I run "time", I want to know the current time.
-alias time="date"
 
 # If I run nautilus, I want it to open in folder where I am.
 alias nautilus="nautilus ./"
@@ -237,9 +236,9 @@ alias proxychains="proxychains "
 alias rdownload="rsync -h --progress -avz "
 
 # TMUX specific
-alias attach="exec tmux -u attach-session"
+alias attach="tmux -u attach-session"
 alias detach="tmux -u detach"
-alias tmux="exec tmux -u"
+alias tmux="tmux -u"
 
 # I am always typoing "aptitude" with my phone...
 alias aptitute="aptitude "
@@ -258,17 +257,12 @@ alias %=" "
 alias supybot-config-reload="killall -HUP supybot "
 alias supybot-owner-quit="killall -INT supybot "
 # Translating plugins in Limnoria
-alias supybot-generate-messages.pot="pygettext −−docstrings config.py plugin.py"
+alias supybot-generate-messages.pot="pygettext --docstrings config.py plugin.py"
 alias supybot-generate-messages.pot-xgettext="xgettext --language=Python config.py plugin.py && mv -f messages.po messages.pot"
 
 # bash specific.
 # I think that "theme" is more describing than "prompt".
 alias theme="prompt "
-
-# Hard way teached me to
-alias vipw="\vipw && \vipw -s && \vipw -g && \visudo"
-alias visudo="\visudo && \vipw && \vipw -g && \vipw -s"
-alias vigr="\vigr && \vigr -s && \vigr -p && \visudo"
 
 ## -- Start of aliases which are saved from Ubuntu default bashrc. --
 
@@ -309,6 +303,12 @@ alias rsync-folder="rsync -h --progress -azvv "
 
 # SSHGuard seems to prefer users to run this always when connecting with keys in ssh-agent...
 alias ssh-add="\ssh-add -D && \ssh-add "
+
+# Usually aptitude is installed everywhere and if it's not, it can be unaliased in .aliases.
+alias apt-get=aptitude
+
+# Use GPG2 instead of GPG!
+alias gpg=gpg2
 
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
