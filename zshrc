@@ -361,8 +361,7 @@ function mkcd() {
     if [[ $# -gt 1 ]]; then
         echo 'Warning: All directories will be created, but will change to first specified directory.' 1>&2
     fi
-    mkdir -p "$*"
-    cd "$1"
+    mkdir -p "$*" && cd "$1"
 }
 
 function gribble-gpg-everify() {
@@ -370,9 +369,14 @@ function gribble-gpg-everify() {
     # probably want to use gpg2 here.
     local gpg=gpg2
 
-    read -r -i 'Enter Bitcoin OTC URL: ' REPLY
-    echo -n ';;everify '
-    lynx -hiddenlinks=ignore -dump $REPLY | $gpg --decrypt
+    echo -n 'Enter Bitcoin OTC URL: '
+    read REPLY
+    lynx -hiddenlinks=ignore -dump $REPLY > bitcoin_otc.txt.asc
+    $gpg --decrypt-file bitcoin_otc.txt.asc
+    echo -en '\e[1;32m;;everify '
+    cat bitcoin_otc.txt
+    echo -e '\e[0m'
+    rm -rf bitcoin_otc.txt bitcoin_otc.txt.asc
 }
 
 #####   Tmux (example)              4G2W9C  #####
