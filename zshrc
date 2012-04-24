@@ -353,10 +353,27 @@ fi
 }
 
 # Given by nyuszika7h. Shortens GitHub URLs with git.io
-gitio () {
-        curl -s -i http://git.io -F "url=$1" | grep
-                --color=never -P '^Location: ' | awk '{ print $2 }'
-                        }
+function gitio() {
+    curl -s -i http://git.io -F "url=$1" | grep --color=never -P '^Location: ' | awk '{ print $2 }'
+}
+
+function mkcd() {
+    if [[ $# -gt 1 ]]; then
+        echo 'Warning: All directories will be created, but will change to first specified directory.' 1>&2
+    fi
+    mkdir -p "$*"
+    cd "$1"
+}
+
+function gribble-gpg-everify() {
+    # Set which command to use for gpg. You
+    # probably want to use gpg2 here.
+    local gpg=gpg2
+
+    read -r -i 'Enter Bitcoin OTC URL: ' REPLY
+    echo -n ';;everify '
+    lynx -hiddenlinks=ignore -dump $REPLY | $gpg --decrypt
+}
 
 #####   Tmux (example)              4G2W9C  #####
 
