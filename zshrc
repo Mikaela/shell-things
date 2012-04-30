@@ -5,7 +5,6 @@
 #   Environment                 7RS56S
 #   Aliases                     RJ706I
 #   Functions                   ZGC5QQ
-#   Tmux (example)              4G2W9C
 
 #####   Defaults etc...             M0TZLS  #####
 
@@ -83,32 +82,24 @@ if [[ $TERM == 'screen' ]]; then
 export TERM=screen-256color              
 fi
 
-# Things after this are just examples and should be put to some other file, which is sourced above.
-
-# Sets the default editor. I am vim user, so I want it to be vim. If you don't like terminal based text editors, change "vim" to gedit (Gnome) or Kate (KDE).
-#export EDITOR=vim
-
-# Sets user specifig PYTHONPATH. Replace 2.X with your Python version. For example with Python 2.7 you replace X with 7.
-#export PYTHONPATH=$HOME/.packages/lib/python2.X/site-packages
+# Sets the default editor.
+export EDITOR=vim
 
 # Sets locale. You can get list of locales with "locale -a" command. This should be something which ends to .utf8
-#export LC_ALL=fi_FI.utf8
+export LC_ALL=fi_FI.utf8
 
 # Sets your timezone. Set in format <Region/City>, or just timezone like UTC.
-#export TZ="/usr/share/zoneinfo/Europe/Helsinki"
+export TZ="/usr/share/zoneinfo/Europe/Helsinki"
 
 # Sets PATH. To add another path, add :</path/to/new/path> to string below. 
 PATH=$HOME/.local/bin:$PATH
-
-# Sets web-browser.
-#export BROWSER=lynx
 
 # "Changes" home directory without root. Uncomment both lines below this.
 #export HOME=<path to new home>
 #cd
 
 # Uses most as the default pager if you uncomment line below. (You will also get colourful manpages :D).
-#export PAGER=most
+export PAGER=most
 
 #####   Aliases                     RJ706I  #####
 
@@ -151,7 +142,7 @@ alias ping="nping "
 alias ping6="nping -6"
 alias netcat="ncat "
 
-# TOR (The Onion Router) specific.
+# Tor (The Onion Router) specific.
 alias usewithtor="proxychains "
 alias torsocks="proxychains "
 
@@ -196,12 +187,11 @@ alias -s bz2='tar -xjvf'
 # For copy-pasting directly from somewhere
 alias %=" "
 
-# SupyBot specifig. Why to write long command, if you can write short command?
+# Supybot specifig. Why to write long command, if you can write short command?
 alias supybot-config-reload="killall -HUP supybot "
 alias supybot-owner-quit="killall -INT supybot "
 # Translating plugins in Limnoria
 alias supybot-generate-messages.pot="pygettext --docstrings config.py plugin.py"
-alias supybot-generate-messages.pot-xgettext="xgettext --language=Python config.py plugin.py && mv -f messages.po messages.pot"
 
 # ZSH specific.
 # I think that "theme" is more describing than "prompt".
@@ -252,7 +242,11 @@ alias apt-get=aptitude
 
 # Use GPG2 instead of GPG!
 alias gpg=gpg2
-# ZSH doesn't currently include automatic completion for GPG2, so use the GPG one, which works with GPG2 too. This is in aliases, because that above alias needs this and this will disappear when zsh gets GPG2 completion. See http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=666755
+# ZSH doesn't currently include automatic completion for GPG2, 
+# so use the GPG one, which works with GPG2 too. This is in aliases, 
+# because that above alias needs this and this will disappear when zsh 
+# gets GPG2 completion. See 
+# http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=666755
 compdef gpg2=gpg
 
 # Allow custom aliases to be put in .aliases or .zsh_aliases .
@@ -378,21 +372,6 @@ function gribble-gpg-everify() {
     echo -e '\e[0m'
     rm -rf bitcoin_otc.txt bitcoin_otc.txt.asc
 }
-
-#####   Tmux (example)              4G2W9C  #####
-
-# This should be put in .custom or .zsh_custom
-
-# Starts tmux on SSH login. (From http://william.shallum.net/random-notes/automatically-start-tmux-on-ssh-login )
-#TIP: replace "0" with name of computer if you don't ever have direct (without SSH) access to computer where zsh is running on.
-
-#if [ "$PS1" != "" -a "${STARTED_TMUX:-x}" = x -a "${SSH_TTY:-x}" != x ]
-#then
-#        STARTED_TMUX=1; export STARTED_TMUX
-#        sleep 1
-#        ( (\tmux has-session -t 0 && \tmux attach-session -t 0) || (\tmux new-session -s 0) ) && exit 0
-#        echo "tmux failed to start"
-#fi
 
 # Source files for miscannellious modifications.
 
