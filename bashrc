@@ -1,11 +1,10 @@
-# bashrc by Mkaysi
+# bashrc of  Mkaysi
 
 # TOC
 #   Defaults etc...             M0TZLS
 #   Environment                 7RS56S
 #   Aliases                     RJ706I
 #   Functions                   ZGC5QQ
-#   Tmux (example)              4G2W9C
 
 # For Mac OS X + SSH sessions. bashrc must be sourced by hand at least once.
 echo "if [ -f ~/.bashrc ]; then
@@ -160,29 +159,23 @@ fi
 # Things after this are just examples and should be put to some other file, which is sourced above.
 
 # Sets the default editor. I am vim user, so I want it to be vim. If you don't like terminal based text editors, change "" to gedit (Gnome) or Kate (KDE).
-#export EDITOR=vim
-
-# Sets user specifig PYTHONPATH. Replace 2.X with your Python version. For example with Python 2.7 you replace X with 7.
-#export PYTHONPATH=$HOME/.packages/lib/python2.X/site-packages
+export EDITOR=vim
 
 # Sets locale. You can get list of locales with "locale -a" command. This should be something which ends to .utf8
-#export LC_ALL=fi_FI.utf8
+export LC_ALL=fi_FI.utf8
 
 # Sets your timezone. Set in format <Region/City>, or just timezone like UTC.
-#export TZ="/usr/share/zoneinfo/Europe/Helsinki"
+export TZ="/usr/share/zoneinfo/Europe/Helsinki"
 
 # Sets PATH. To add another path, add :</path/to/new/path> to string below. 
 PATH=$HOME/.local/bin:$PATH
-
-# Sets web-browser.
-#export BROWSER=lynx
 
 # "Changes" home directory without root. Uncomment both lines below this.
 #export HOME=<path to new home>
 #cd
 
 # Uses most as the default pager if you uncomment line below. (You will also get colourful manpages :D).
-#export PAGER=most
+export PAGER=most
 
 #####   Aliases                     RJ706I  #####
 
@@ -203,7 +196,7 @@ alias gdrop="git stash && git stash drop"
 alias gitk="gitg" # Requires gitg . I just think that it looks nicer than gitk.
 
 # If I run nautilus, I want it to open in folder where I am.
-alias nautilus="nautilus ./"
+#alias nautilus="nautilus ./"
 
 # Why I must write "weechat-curses" to start it?
 alias weechat="weechat-curses"
@@ -225,7 +218,7 @@ alias ping="nping "
 alias ping6="nping -6"
 alias netcat="ncat "
 
-# TOR (The Onion Router) specific.
+# Tor (The Onion Router) specific.
 alias usewithtor="proxychains "
 alias torsocks="proxychains "
 
@@ -278,7 +271,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 # Add an "alert" alias for long running commands.  Use like so:
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
                         
 ## -- End of aliases which are saved from Ubuntu default bashrc. --
 
@@ -433,23 +425,6 @@ function gribble-gpg-everify() {
     echo -e '\e[0m'
     rm -rf bitcoin_otc.txt bitcoin_otc.txt.asc
 }
-
-#####   Tmux (example)              4G2W9C  #####
-
-# This should be put in .custom or .bash_custom
-
-# Starts tmux on SSH login. (From http://william.shallum.net/random-notes/automatically-start-tmux-on-ssh-login )
-#TIP: replace "0" with name of computer if you don't ever have direct (without SSH) access to computer where bash is running on.
-
-#if [ "$PS1" != "" -a "${STARTED_TMUX:-x}" = x -a "${SSH_TTY:-x}" != x ]
-#then
-#        STARTED_TMUX=1; export STARTED_TMUX
-#        sleep 1
-#        ( (\tmux has-session -t 0 && \tmux attach-session -t 0) || (\tmux new-session -s 0) ) && exit 0
-#        echo "tmux failed to start"
-#fi
-
-# Source files for miscannellious modifications.
 
 # .custom
 if [ -f ~/.custom ]; then
