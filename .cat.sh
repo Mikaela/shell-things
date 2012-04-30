@@ -7,7 +7,6 @@ cat gitconfig > ~/.gitconfig
 cat vimrc > ~/.vimrc
 mkdir -p ~/.gnupg
 cat gnupg/gpg.conf > ~/.gnupg/gpg.conf
-cat gpg.conf > ~/.gnupg/gpg.conf
 cat xsessionrc > ~/.xsessionrc
 exec $SHELL
 
