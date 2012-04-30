@@ -15,3 +15,6 @@
 	showbranch = true
 	status = true
 	ui = true
+[user]
+	name = Mika Suomalainen
+	email = mika.henrik.mainio@hotmail.com
