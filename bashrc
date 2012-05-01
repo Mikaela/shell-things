@@ -168,7 +168,7 @@ export LC_ALL=fi_FI.utf8
 export TZ="/usr/share/zoneinfo/Europe/Helsinki"
 
 # Sets PATH. To add another path, add :</path/to/new/path> to string below. 
-PATH=$HOME/.local/bin:$PATH
+PATH=$HOME/.local/bin:$HOME/.local/games:$PATH
 
 # "Changes" home directory without root. Uncomment both lines below this.
 #export HOME=<path to new home>
