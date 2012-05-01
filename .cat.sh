@@ -8,6 +8,10 @@ cat vimrc > ~/.vimrc
 mkdir -p ~/.gnupg
 cat gnupg/gpg.conf > ~/.gnupg/gpg.conf
 cat xsessionrc > ~/.xsessionrc
+cat oidentd.conf > ~/.oidentd.conf
+chmod 644 ~/.oidentd.conf
+chmod 711 ~
+
 exec $SHELL
 
 # vim : set ft=sh :
