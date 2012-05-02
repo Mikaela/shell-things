@@ -9,7 +9,7 @@ echo "USE_VALIDATION_AGENT=true" >> ~/.monkeysphere/monkeysphere.conf
 
 # The environment was set to ~/.environment according to other files...
 if [ -f ~/.environment ]; then
-    source ~/.environment
+    . ~/.environment
 fi
 
 # Allow custom things to be put to ~/.xcustom
