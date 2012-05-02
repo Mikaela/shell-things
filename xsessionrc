@@ -7,6 +7,9 @@ eval $(gpg-agent --daemon)
 mkdir -p ~/.monkeysphere
 echo "USE_VALIDATION_AGENT=true" >> ~/.monkeysphere/monkeysphere.conf
 
+# Enable core files.
+ulimit -c unlimited
+
 # The environment was set to ~/.environment according to other files...
 if [ -f ~/.environment ]; then
     . ~/.environment
