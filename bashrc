@@ -136,6 +136,9 @@ fi
 # Don't check for mail!
 unset MAILCHECK
 
+# Enable core files.
+ulimit -c unlimited
+
 # .environment
 if [ -f ~/.environment ]; then
     source ~/.environment

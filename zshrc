@@ -58,6 +58,9 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 # Don't check for mail!
 unset MAILCHECK
 
+# Enable core files
+ulimit -c unlimited
+
 # .environment
 if [ -f ~/.environment ]; then
     source ~/.environment
