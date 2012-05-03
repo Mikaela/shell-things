@@ -305,6 +305,9 @@ alias apt-get=aptitude
 # Use GPG2 instead of GPG!
 alias gpg=gpg2
 
+# For userspecific installation of mosh on remote server.
+alias lmosh="mosh --server=~/.local/bin/mosh-server "
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases

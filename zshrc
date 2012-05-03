@@ -252,6 +252,9 @@ alias gpg=gpg2
 # http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=666755
 compdef gpg2=gpg
 
+# For locally installed mosh on remote server.
+alias lmosh="mosh --server=~/.local/bin/mosh-server "
+
 # Allow custom aliases to be put in .aliases or .zsh_aliases .
 
 # .aliases
