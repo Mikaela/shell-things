@@ -1,0 +1,3 @@
+# Put this to ~/.custom to remove some annoyances which might be caused by not being Mkaysi
+unset TZ
+unset LC_ALL
