@@ -308,6 +308,9 @@ alias gpg=gpg2
 # For userspecific installation of mosh on remote server.
 alias lmosh="mosh --server=~/.local/bin/mosh-server "
 
+# Secure cat
+alias scat="gpg --decrypt "
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases

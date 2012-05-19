@@ -257,6 +257,9 @@ alias lmosh="mosh --server=~/.local/bin/mosh-server "
 
 # Allow custom aliases to be put in .aliases or .zsh_aliases .
 
+# Secure cat
+alias scat="gpg --decrypt "
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
