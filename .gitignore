@@ -1,4 +1,4 @@
 # It seems that running install.sh causes <filename>~ files in this git repo. They are lockfiles.
 *~
-push.sh
-merge.sh
+*.swp
+pgprules.xml
