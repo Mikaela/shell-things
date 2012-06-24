@@ -311,6 +311,9 @@ alias lmosh="mosh --server=~/.local/bin/mosh-server "
 # Secure cat
 alias scat="gpg --decrypt "
 
+# To check are keys, which apt uses changed
+alias apt-key-refresh-keys="apt-key adv --keyserver pool.sks-keyservers.net --refresh-keys"
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
