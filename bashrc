@@ -314,6 +314,9 @@ alias scat="gpg --decrypt "
 # To check are keys, which apt uses changed
 alias apt-key-refresh-keys="apt-key adv --keyserver pool.sks-keyservers.net --refresh-keys"
 
+# To see which mirror http.debian.net puts you to. The file which has the latest update time is the mirror which you are using.
+alias http.debian.net="lynx http.debian.net/debian/project/trace/"
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
