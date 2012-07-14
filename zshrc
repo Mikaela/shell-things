@@ -399,3 +399,8 @@ if [ -f ~/.custom ]; then
 if [ -f ~/.zsh_custom ]; then
     source ~/.zsh_custom
     fi
+
+# Warnings
+if [ -f ~/.warnings ]; then
+    source ~/.warnings
+    fi

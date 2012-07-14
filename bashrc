@@ -450,3 +450,8 @@ if [ -f ~/.custom ]; then
 if [ -f ~/.bash_custom ]; then
     source ~/.bash_custom
     fi
+
+# Warnings
+if [ -f ~/.warnings ]; then
+    source ~/.warnings
+    fi
