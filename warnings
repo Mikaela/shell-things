@@ -13,3 +13,9 @@ if [ ! -f /usr/share/doc/popularity-contest/copyright ]
 then
     echo "You might want to install popularity-contest. See http://popcon.debian.org/"
 fi
+
+## To disable warnings, add the following (UNCOMMENTED!) to ~/.custom
+
+#if [ -f ~/.warnings ]; then
+#    rm ~/.warnings
+#    fi
