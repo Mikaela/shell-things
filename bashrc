@@ -319,6 +319,7 @@ alias http.debian.net="lynx http.debian.net/debian/project/trace/"
 
 # Amount of keys in GPG keyring.
 alias gpg-key-amount="gpg --list-keys|grep '^pub'|wc -l"
+alias gpg-key-count="gpg --export -a|gpg --import"
 
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
