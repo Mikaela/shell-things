@@ -266,6 +266,9 @@ alias apt-key-refresh-keys="apt-key adv --keyserver pool.sks-keyservers.net --re
 # To see which mirror http.debian.net puts you to. The file which has the latest update time is the mirror which you are using.
 alias http.debian.net="lynx http.debian.net/debian/project/trace/"
 
+# Amount of keys in GPG keyring.
+alias gpg-key-amount="gpg --list-keys|grep '^pub'|wc -l"
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
