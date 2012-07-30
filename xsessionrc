@@ -5,7 +5,7 @@ eval $(gpg-agent --daemon)
 
 # For MonkeySphere
 mkdir -p ~/.monkeysphere
-echo "USE_VALIDATION_AGENT=true" >> ~/.monkeysphere/monkeysphere.conf
+echo "USE_VALIDATION_AGENT=true" > ~/.monkeysphere/monkeysphere.conf
 
 # Enable core files.
 ulimit -c unlimited
