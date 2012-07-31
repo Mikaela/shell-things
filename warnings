@@ -4,7 +4,6 @@ command -v \htop >/dev/null 2>&1 || { echo >&2 "WARNING: htop isn't installed! Y
 unalias youtube-dl
 command -v \youtube-dl >/dev/null 2>&1 || { echo >&2 "WARNING: youtube-dl isn't installed! You should install it, because it's used as youtube-dl. What am I writing? Install it for fun"; } # Expect this to be removed in near future.
 alias youtube-dl="youtube-dl -t"
-command -v \nping >/dev/null 2>&1 || { echo >&2 "WARNING: nping isn't installed! You should install it, because it's used as ping."; }
 command -v \aptitude >/dev/null 2>&1 || { echo >&2 "WARNING: aptitude isn't installed! You should install it, because it's used as apt-get"; }
 command -v \gpg2 >/dev/null 2>&1 || { echo >&2 "WARNING: gnupg2 isn't installed! You should install it, because it's used as gpg."; }
 command -v \lynx >/dev/null 2>&1 || { echo >&2 "WARNING: lynx isn't installed! You should install it, because it's used by many functions."; }

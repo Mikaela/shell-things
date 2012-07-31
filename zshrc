@@ -141,8 +141,6 @@ alias nmap-regular="nmap "
 alias nmap-comprehensive="sudo nmap -sS -sU -T4 -A -v -PE -PP -PS21,22,23,25,80,113,31339 -PA80,113,443,10042 -PO --script all " 
 # Little "safer" scan as connecting to only HTTP and HTTPS ports doesn't look so attacking. Copy-paste to .zsh_custom and remove  " -p 80,443" if you want to scan all ports which nmap scans by default.
 alias nmap-osscan="sudo nmap -p 80,443 -O -v --osscan-guess --fuzzy "
-alias ping="nping "
-alias ping6="nping -6"
 alias netcat="ncat "
 
 # Tor (The Onion Router) specific.
