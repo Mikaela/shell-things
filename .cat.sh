@@ -9,6 +9,7 @@ mkdir -p ~/.gnupg
 cat gnupg/gpg.conf > ~/.gnupg/gpg.conf
 cat xsessionrc > ~/.xsessionrc
 cat warnings > ~/.warnings
+cat pastebinit.xml > ~/.pastebinit.xml
 cat oidentd.conf > ~/.oidentd.conf
 chmod 644 ~/.oidentd.conf
 chmod 711 ~
