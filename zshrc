@@ -193,6 +193,7 @@ alias supybot-config-reload="killall -HUP supybot "
 alias supybot-owner-quit="killall -INT supybot "
 # Translating plugins in Limnoria
 alias supybot-generate-messages.pot="pygettext --docstrings config.py plugin.py"
+alias supybot-check-plugin-trans="sandbox/check_trans.py plugins/"
 
 # ZSH specific.
 # I think that "theme" is more describing than "prompt".
