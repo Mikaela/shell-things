@@ -6,6 +6,10 @@ This is repository for important files, which I prefer to have everywhere.
 
 ### root
 
+.cat.sh — script which puts (almost) everything on it's correct place. *WARNING:* It will *overwrite* the current versions of those files if they exist. That is why it's hidden (dot)file.
+
+.gitignore — list of files, which git shouldn't add to this repository.
+
 bashrc — Bourne Again SHell config file
 
 gitconfig — git config file
