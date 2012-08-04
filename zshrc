@@ -269,6 +269,8 @@ alias http.debian.net="lynx http.debian.net/debian/project/trace/"
 alias gpg-key-amount="gpg --list-keys|grep '^pub'|wc -l"
 alias gpg-key-count="gpg --export -a|gpg --import"
 
+alias follow="tail -f "
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
