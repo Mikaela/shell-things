@@ -50,6 +50,9 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
+# Show the hostname and uptime on shell start
+hostname && uptime
+
 #####   Environment                 7RS56S  #####
 # Environment should be placed to .environment or .zsh_environment (or .zshenv).
 

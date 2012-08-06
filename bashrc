@@ -128,6 +128,9 @@ fi
 #Shopt settings.
 #shopt -s autocd
 
+# Show the hostname and uptime on shell start
+hostname && uptime
+
 #####   Environment                 7RS56S  #####
 # Environment should be placed to .environment or .bash_environment (or .bashenv).
 
