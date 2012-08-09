@@ -2,6 +2,18 @@
 
 This is repository for important files, which I prefer to have everywhere.
 
+## Downloading without git (NEW!)
+
+I wrote a script to download files in this repository without git.
+
+```
+mkdir -p shell-things
+cd shell-things
+wget -O shell-things.sh http://mkaysi.github.com/shell-things.sh
+wget -O shell-things.sh.asc http://mkaysi.github.com/shell-things.sh.asc
+chmod +x shell-things.sh && ./shell-things.sh
+```
+
 ## What is what
 
 ### root
