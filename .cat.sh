@@ -14,6 +14,8 @@ cat oidentd.conf > ~/.oidentd.conf
 chmod 644 ~/.oidentd.conf
 chmod 711 ~
 
+./recommends
+
 exec $SHELL
 
 # vim : set ft=sh :
