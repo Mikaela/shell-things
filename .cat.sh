@@ -14,7 +14,9 @@ cat oidentd.conf > ~/.oidentd.conf
 chmod 644 ~/.oidentd.conf
 chmod 711 ~
 
+echo "Beginning ./recommends"
 ./recommends
+echo "Ending ./recommends"
 
 exec $SHELL
 
