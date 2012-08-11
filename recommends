@@ -1,0 +1,11 @@
+command -v \youtube-dl >/dev/null 2>&1 || { echo >&2 "shell-things contains youtube-dl alias for automatically setting video title as name."; }
+
+if [ ! -f /usr/share/doc/gnupg-curl/copyright ]
+then
+    echo "You might want to install gnupg-curl. It allows you to use shortened URLs with gpg1."
+fi
+
+if [ ! -f /usr/share/doc/popularity-contest/copyright ]
+then
+    echo "You might want to install popularity-contest. See http://popcon.debian.org/"
+fi
