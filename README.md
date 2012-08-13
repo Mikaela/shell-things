@@ -6,11 +6,13 @@ This is repository for important files, which I prefer to have everywhere.
 
 I wrote a script to download files in this repository without git.
 
+NOTE: If the fourth command gives you "BAD SIGNATURE", proceed with caution!
+
 ```
-mkdir -p shell-things
-cd shell-things
 wget -O shell-things.sh http://mkaysi.github.com/shell-things.sh
 wget -O shell-things.sh.asc http://mkaysi.github.com/shell-things.sh.asc
+gpg --fetch-keys http://mkaysi.github.com/PGP/0x82A46728.txt
+gpg --verify shell-things.sh.asc
 chmod +x shell-things.sh && ./shell-things.sh
 ```
 
