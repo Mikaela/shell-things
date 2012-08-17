@@ -301,9 +301,6 @@ alias rsync-folder="rsync -h --progress -azvv "
 # SSHGuard seems to prefer users to run this always when connecting with keys in ssh-agent...
 alias ssh-add="\ssh-add -D && \ssh-add "
 
-# Usually aptitude is installed everywhere and if it's not, it can be unaliased in .aliases.
-alias apt-get=aptitude
-
 # Use GPG2 instead of GPG!
 alias gpg=gpg2
 
