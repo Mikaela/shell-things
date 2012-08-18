@@ -271,6 +271,12 @@ alias gpg-key-count="gpg --export -a|gpg --import"
 
 alias follow="tail -f "
 
+#myip shows current IP. This was a function.
+alias myip="curl http://cadoth.net/~mkaysi/IP.php"
+alias myip4="curl -6 http://cadoth.net/~mkaysi/IP.php"
+alias myip6="curl -6 http://cadoth.net/~mkaysi/IP.php"
+
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
@@ -286,12 +292,6 @@ fi
 # GEOIP lookup, copied from the ultimate bashrc http://goo.gl/qGK5j
 function geoip() {
 geoiplookup $1
-}
-
-# MYIP, copied from the ultimate bashrc http://goo.gl/qGK5j . I think that it requires lynx.
-function myip()
-{
-lynx -dump -hiddenlinks=ignore -nolist http://checkip.dyndns.org:8245/ | awk '{ print $4 }' | sed '/^$/d; s/^[ ]*//g; s/[ ]*$//g'
 }
 
 # Checks which package the command comes from. Copied from the ultimate bashrc http://goo.gl/qGK5j
