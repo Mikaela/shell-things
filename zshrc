@@ -273,7 +273,7 @@ alias follow="tail -f "
 
 #myip shows current IP. This was a function.
 alias myip="curl http://cadoth.net/~mkaysi/IP.php"
-alias myip4="curl -6 http://cadoth.net/~mkaysi/IP.php"
+alias myip4="curl -4 http://cadoth.net/~mkaysi/IP.php"
 alias myip6="curl -6 http://cadoth.net/~mkaysi/IP.php"
 
 
