@@ -263,7 +263,7 @@ alias scat="gpg --decrypt "
 alias apt-key-refresh-keys="apt-key adv --keyserver pool.sks-keyservers.net --refresh-keys"
 
 # To see which mirror http.debian.net puts you to. The file which has the latest update time is the mirror which you are using.
-alias http.debian.net="curl -s http://ftp.fi.debian.org/debian/project/trace/|pandoc -f html -t markdown"
+alias http.debian.net="curl -s http://http.debian.net/debian/project/trace/|pandoc -f html -t markdown"
 
 # Amount of keys in GPG keyring.
 alias gpg-key-amount="gpg --list-keys|grep '^pub'|wc -l"
