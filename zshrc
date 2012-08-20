@@ -276,6 +276,9 @@ alias myip="curl -s http://icanhazip.com"
 alias myip4="curl -s4 http://icanhazip.com"
 alias myip6="curl -s6 http://icanhazip.com"
 
+# Curl instead of wget with warning
+alias wget="echo Running curl -LO instead of wget && curl -LO "
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
