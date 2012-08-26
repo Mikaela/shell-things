@@ -10,12 +10,15 @@ echo "USE_VALIDATION_AGENT=true" > ~/.monkeysphere/monkeysphere.conf
 # Enable core files.
 ulimit -c unlimited
 
-# Start gtk-redshift automatically with coordinates of Kotka.
-# You might want to change those coordinates if you aren't in the city of Kotka.
+# Start gtk-redshift automatically.
 # Use http://stereopsis.com/flux/map.html to get the coordinates. Replace ", " with ":".
-# Coordinates are specified, because automatic location setting doesn't work.
-# See http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=685233
-gtk-redshift -l 60.4666227:26.9459998&
+# Set the coordinates to file ~/.redshiftlocation in format redshiftlocation=60.4666227:26.9459998
+
+if [ -f ~/.redshiftlocation ]; then
+    . ~/.redshiftlocation ];
+fi
+
+gtk-redshift -l $redshiftlocation&
 
 # The environment was set to ~/.environment according to other files...
 if [ -f ~/.environment ]; then
