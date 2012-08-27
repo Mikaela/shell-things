@@ -1,5 +1,7 @@
 command -v \youtube-dl >/dev/null 2>&1 || { echo >&2 "shell-things contains youtube-dl alias for automatically setting video title as name, so you might want to install youtube-dl."; }
 
+command -v \gtk-redshift >/dev/null 2>&1 || { echo >&2 "xsessionrc tries to start gtk-redshift automatically on boot, so you might want to install it (or redshift in some distributions)."; }
+
 if [ ! -f /usr/share/doc/gnupg-curl/copyright ]
 then
     echo "You might want to install gnupg-curl. It allows you to use shortened URLs with gpg1."
