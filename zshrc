@@ -279,6 +279,10 @@ alias myip6="curl -s6 http://icanhazip.com"
 # Curl instead of wget with warning
 alias wget="echo Running curl -LO instead of wget && curl -LO "
 
+# Update groups without logging out. Requires entering password. Source: http://blog.edwards-research.com/2010/10/linux-refresh-group-membership-without-logging-out/
+alias refrshgroups="exec su -l $USER"
+
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
