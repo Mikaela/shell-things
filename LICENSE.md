@@ -1,6 +1,6 @@
 Copyright (c) 2012, Mika Suomalainen (Mkaysi) and contributors* 
 
-*=see "git log --raw | grep '^Author: ' | sort | uniq -c"
+*=see "git shortlog -s"
 
 All rights reserved.
 
