@@ -2,6 +2,12 @@
 
 This is repository for important files, which I prefer to have everywhere.
 
+### License
+
+See [LICENSE.md] in this folder.
+
+[LICENSE.md]:LICENSE.md
+
 ## Downloading without git (NEW!)
 
 I wrote a script to download files in this repository without git.
