@@ -346,6 +346,9 @@ alias ipconfig=ifconfig # MSDOS
 alias copy=cp # MSDOS
 alias move=mv # MSDOS
 
+# List git committers of repository
+alias git-committers="git shortlog -s"
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases

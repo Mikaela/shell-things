@@ -295,6 +295,9 @@ alias ipconfig=ifconfig # MSDOS
 alias copy=cp # MSDOS
 alias move=mv # MSDOS
 
+# List git committers of repository
+alias git-committers="git shortlog -s"
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
