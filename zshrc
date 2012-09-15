@@ -285,6 +285,14 @@ alias refreshgroups="exec su -l $USER"
 # Incasesensitive grepping
 alias grep="grep -i"
 
+# Get public key lenght of (public) SSH key
+alias ssh-pubkey-length="ssh-keygen -lf "
+
+# MSDOS commands. MSDOS is after every alias line to get these lines easily by grepping.
+alias cls=clear # MSDOS
+alias help=man # MSDOS
+alias ipconfig=ifconfig # MSDOS
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
