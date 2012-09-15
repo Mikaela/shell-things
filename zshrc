@@ -292,6 +292,8 @@ alias ssh-pubkey-length="ssh-keygen -lf "
 alias cls=clear # MSDOS
 alias help=man # MSDOS
 alias ipconfig=ifconfig # MSDOS
+alias copy=cp # MSDOS
+alias move=mv # MSDOS
 
 # .aliases
 if [ -f ~/.aliases ]; then

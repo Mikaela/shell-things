@@ -343,6 +343,8 @@ alias ssh-pubkey-length="ssh-keygen -lf "
 alias cls=clear # MSDOS
 alias help=man # MSDOS
 alias ipconfig=ifconfig # MSDOS
+alias copy=cp # MSDOS
+alias move=mv # MSDOS
 
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
