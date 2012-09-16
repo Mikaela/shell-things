@@ -6,6 +6,9 @@
 #   Aliases                     RJ706I
 #   Functions                   ZGC5QQ
 
+# uname should be readable in $uname 
+uname=`uname`
+
 #####   Defaults etc...             M0TZLS  #####
 
 # This is based on zshrc which came with Debian (Third option in wizard for new users.)
@@ -72,9 +75,6 @@ fi
 if [ -f ~/.zshenv ]; then
     source ~/.zshenv
 fi
-
-# uname should be readable in $uname 
-uname=`uname`
 
 # Don't check for mail!
 unset MAILCHECK
