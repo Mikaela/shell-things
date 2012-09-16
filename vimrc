@@ -92,3 +92,10 @@ set visualbell
 if has('gui_running')
     set background=light
 endif
+
+if has("unix")
+  let s:uname = system("uname")
+  if s:uname == "Darwin\n"
+    set background=light
+  endif
+endif
