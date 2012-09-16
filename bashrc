@@ -136,12 +136,6 @@ hostname && uptime
 
 # Source before mentioned locations if they exist.
 
-# Don't check for mail!
-unset MAILCHECK
-
-# Enable core files.
-ulimit -c unlimited
-
 # .environment
 if [ -f ~/.environment ]; then
     source ~/.environment
@@ -151,6 +145,16 @@ fi
 if [ -f ~/.bash_environment ]; then
     source ~/.bash_environment
 fi
+
+# $uname should tell which OS is used.
+$uname=`uname`
+
+# Don't check for mail!
+unset MAILCHECK
+
+# Enable core files.
+ulimit -c unlimited
+
 
 # More colours :D
 if [[ $TERM == 'xterm' ]]; then

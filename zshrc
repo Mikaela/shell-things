@@ -58,12 +58,6 @@ hostname && uptime
 
 # Source before mentioned locations if they exist.
 
-# Don't check for mail!
-unset MAILCHECK
-
-# Enable core files
-ulimit -c unlimited
-
 # .environment
 if [ -f ~/.environment ]; then
     source ~/.environment
@@ -78,6 +72,16 @@ fi
 if [ -f ~/.zshenv ]; then
     source ~/.zshenv
 fi
+
+# uname should be readable in $uname 
+uname=`uname`
+
+# Don't check for mail!
+unset MAILCHECK
+
+# Enable core files.
+ulimit -c unlimited
+
 
 #More colours :D
 if [[ $TERM == 'xterm' ]]; then
