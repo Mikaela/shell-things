@@ -6,6 +6,9 @@
 #   Aliases                     RJ706I
 #   Functions                   ZGC5QQ
 
+# $uname should tell which OS is used.
+$uname=`uname`
+
 # For Mac OS X + SSH sessions. bashrc must be sourced by hand at least once.
 echo "if [ -f ~/.bashrc ]; then
     source ~/.bashrc
@@ -136,12 +139,6 @@ hostname && uptime
 
 # Source before mentioned locations if they exist.
 
-# Don't check for mail!
-unset MAILCHECK
-
-# Enable core files.
-ulimit -c unlimited
-
 # .environment
 if [ -f ~/.environment ]; then
     source ~/.environment
@@ -151,6 +148,13 @@ fi
 if [ -f ~/.bash_environment ]; then
     source ~/.bash_environment
 fi
+
+# Don't check for mail!
+unset MAILCHECK
+
+# Enable core files.
+ulimit -c unlimited
+
 
 # More colours :D
 if [[ $TERM == 'xterm' ]]; then

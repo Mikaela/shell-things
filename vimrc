@@ -81,9 +81,6 @@ runtime macros/matchit.vim
 set wildmenu
 set wildmode=list:longest
 
-" Set terminal title (This probably helps with tmux)
-set title
-
 " Flash, do not beep!
 set visualbell
 " End of copied from http://items.sjbach.com/319/configuring-vim-right
@@ -91,4 +88,11 @@ set visualbell
 " gvim has light background
 if has('gui_running')
     set background=light
+endif
+
+if has("unix")
+  let s:uname = system("uname")
+  if s:uname == "Darwin\n"
+    set background=light
+  endif
 endif

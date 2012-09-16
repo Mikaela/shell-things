@@ -6,6 +6,9 @@
 #   Aliases                     RJ706I
 #   Functions                   ZGC5QQ
 
+# uname should be readable in $uname 
+uname=`uname`
+
 #####   Defaults etc...             M0TZLS  #####
 
 # This is based on zshrc which came with Debian (Third option in wizard for new users.)
@@ -58,12 +61,6 @@ hostname && uptime
 
 # Source before mentioned locations if they exist.
 
-# Don't check for mail!
-unset MAILCHECK
-
-# Enable core files
-ulimit -c unlimited
-
 # .environment
 if [ -f ~/.environment ]; then
     source ~/.environment
@@ -78,6 +75,13 @@ fi
 if [ -f ~/.zshenv ]; then
     source ~/.zshenv
 fi
+
+# Don't check for mail!
+unset MAILCHECK
+
+# Enable core files.
+ulimit -c unlimited
+
 
 #More colours :D
 if [[ $TERM == 'xterm' ]]; then
