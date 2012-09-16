@@ -6,6 +6,9 @@
 #   Aliases                     RJ706I
 #   Functions                   ZGC5QQ
 
+# $uname should tell which OS is used.
+$uname=`uname`
+
 # For Mac OS X + SSH sessions. bashrc must be sourced by hand at least once.
 echo "if [ -f ~/.bashrc ]; then
     source ~/.bashrc
@@ -145,9 +148,6 @@ fi
 if [ -f ~/.bash_environment ]; then
     source ~/.bash_environment
 fi
-
-# $uname should tell which OS is used.
-$uname=`uname`
 
 # Don't check for mail!
 unset MAILCHECK
