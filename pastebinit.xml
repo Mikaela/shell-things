@@ -1,7 +1,6 @@
 <pastebinit>
-    # Plaintext version cannot be downloaded, see http://pad.lv/784485
-    <pastebin>http://paste.ubuntu.com</pastebin>
-    <author>Mika Suomalainen</author>
+    <pastebin>http://paste.debian.net</pastebin>
+    <author>Mkaysi</author>
     <jabberid>mkaysi@jabber.org</jabberid>
     <format>text</format>
 </pastebinit>
