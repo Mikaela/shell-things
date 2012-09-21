@@ -6,9 +6,6 @@
 #   Aliases                     RJ706I
 #   Functions                   ZGC5QQ
 
-# $uname should tell which OS is used.
-$uname=`uname`
-
 # For Mac OS X + SSH sessions. bashrc must be sourced by hand at least once.
 echo "if [ -f ~/.bashrc ]; then
     source ~/.bashrc
