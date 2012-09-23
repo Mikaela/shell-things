@@ -350,6 +350,10 @@ alias move=mv # MSDOS
 # List git committers of repository
 alias git-committers="git shortlog -s"
 
+# Line ending converting with flip
+alias unixle="flip -ub "
+alias msdosle="flip -mb "
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases

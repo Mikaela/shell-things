@@ -302,6 +302,9 @@ alias move=mv # MSDOS
 # List git committers of repository
 alias git-committers="git shortlog -s"
 
+alias unixle="flip -ub "
+alias msdosle="flip -mb "
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases

@@ -6,6 +6,7 @@ command -v \lynx >/dev/null 2>&1 || { echo >&2 "WARNING: lynx isn't installed! Y
 command -v \gpg-agent >/dev/null 2>&1 || { echo >&2 "WARNING: gnupg-agent isn't installed. You should install it, because it's used by gpg.conf and xsessionrc in shell-things."; }
 command -v \curl >/dev/null 2>&1 || { echo >&2 "WARNING: curl isn't installed! You should install it, because it's used by some aliases or functions."; }
 command -v \pandoc >/dev/null 2>&1 || { echo >&2 "WARNING: pandoc isn't installed. It's used by some aliases or functions, so you might want to install it."; }
+command -v \flip >/dev/null 2>&1 || { echo >&2 "WARNING: flip isn't installed. You might want to install it, because it's used in line ending conversions."; }
 
 ## To disable warnings, add the following (UNCOMMENTED!) to ~/.custom
 
