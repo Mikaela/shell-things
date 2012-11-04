@@ -326,16 +326,6 @@ geoiplookup $1
 # Checks which package the command comes from. Copied from the ultimate bashrc http://goo.gl/qGK5j
 function cmdpkg() { PACKAGE=$(dpkg -S $(which $1) | cut -d':' -f1); echo "[${PACKAGE}]"; dpkg -s "${PACKAGE}" ;}
 
-# ROT13, copied from the ultimate bashrc http://goo.gl/qGK5j
-function rot13()
-{
-    if [ $# -lt 1 ] || [ $# -gt 1 ]; then
-        echo "Seriously?  You don't know what rot13 does?"
-    else
-        echo $@ | tr A-Za-z N-ZA-Mn-za-m
-    fi
-}
-
 # Down for everyone or just me? Copied from the ultimate bashrc http://goo.gl/qGK5j
 function downforme() {
 	RED='\e[1;31m'

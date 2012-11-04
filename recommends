@@ -16,3 +16,5 @@ if [ ! -f /usr/share/doc/popularity-contest/copyright ]
 then
     echo "You might want to install popularity-contest. See http://popcon.debian.org/" && echo "If you aren't on Linux you can ignore this."
 fi
+
+command -v \rot13 >/dev/null 2>&1 || { echo >&2 "rot13 was removed from bashrc & zshrc, because it's provided by bsdgames. You might want to install it."; }
