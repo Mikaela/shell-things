@@ -1,6 +1,9 @@
 uname=`uname`
+echo "Most of packages in recommends can be safely ignored, they are written for Debian/Ubuntu based distributions."
+echo "CentOS doesn't have most of packages listed in this file."
 
 command -v \youtube-dl >/dev/null 2>&1 || { echo >&2 "shell-things contains youtube-dl alias for automatically setting video title as name, so you might want to install youtube-dl."; }
+command -v \flip >/dev/null 2>&1 || { echo >&2 "WARNING: flip isn't installed. You might want to install it, because it's used in line ending conversions."; }
 
 if [ $uname = "linux" ]
 then
