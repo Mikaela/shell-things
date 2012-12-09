@@ -1,3 +1,4 @@
+command -v \isohybrid >/dev/null 2>&1 || { echo >&2 "isohybrid isn't installed. It comes with package syslinux and is used to make iso image bootable from CD/USB when it's burned/written."; }
 command -v \vim >/dev/null 2>&1 || { echo >&2 "WARNING: vim isn't installed You should install it, because it's used as text editor.!"; }
 command -v \most >/dev/null 2>&1 || { echo >&2 "WARNING: most isn't installed! You should install it, because it's used as pager."; }
 command -v \htop >/dev/null 2>&1 || { echo >&2 "WARNING: htop isn't installed! You should install it, because it's used as top."; }

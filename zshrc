@@ -306,6 +306,13 @@ alias git-committers="git shortlog -s"
 alias unixle="flip -ub "
 alias msdosle="flip -mb "
 
+# Making .iso bootable from CD/DVD/USB. Cat it to /dev/<DEVICE>
+# MaKe Hybrid ISO
+alias mkhiso=isohybrid
+
+# Yum
+alias yum-unlock="rm -rf /var/run/yum.pid"
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
