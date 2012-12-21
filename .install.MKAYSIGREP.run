@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Do not use this script unless you know what you are doing!
+cat .bash_aliases.MKAYSIGREP > ~/.bash_aliases
+cat .zsh_aliases.MKAYSIGREP > ~/.zsh_aliases
+cat .gitconfig.MKAYSIGREP > ~/.gitconfig
+mkdir -p ~/.gnupg
+cat .gpg.conf.MKAYSIGREP > ~/.gnupg/gpg.conf
+cat .pastebinit.xml.MKAYSIGREP > ~/.pastebinit.xml
+cat .environment.MKAYSIGREP > ~/.environment
+# vim : set ft=sh :

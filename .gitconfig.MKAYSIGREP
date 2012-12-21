@@ -4,7 +4,7 @@
 	# From http://progit.org/book/ch2-7.html
 	last = cat-file commit HEAD
 [core]
-	#editor = vim 
+	editor = vim 
 [color]
 	# From git manpage and http://book.git-scm.com/5_customizing_git.html
 	branch = true

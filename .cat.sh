@@ -1,1 +1,1 @@
-cat.run
+install.run

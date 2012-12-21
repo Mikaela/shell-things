@@ -9,7 +9,5 @@ mkdir -p ~/.gnupg
 cat gpg.conf > ~/.gnupg/gpg.conf
 cat xsessionrc > ~/.xsessionrc
 cat pastebinit.xml > ~/.pastebinit.xml
-chmod 644 ~/.oidentd.conf
-chmod 711 ~
 
 # vim : set ft=sh :
