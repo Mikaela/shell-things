@@ -42,7 +42,7 @@ and contain modifications which might not be useful to other people than me.
 ### apt
 
 ```
-apt-get install vim most htop gnupg2 lynx pandoc gnupg-agent flip youtube-dl
+apt-get install vim htop gnupg2 lynx pandoc gnupg-agent flip youtube-dl
 ```
 
 ### yum
@@ -52,5 +52,7 @@ rpm --install http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-
 rpm --install http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm
 rpm --install http://rpm.livna.org/livna-release.rpm
 
-yum -y install vim most htop gnupg2 lynx pandoc youtube-dl
+yum -y install vim htop gnupg2 lynx pandoc youtube-dl
+```
+
 --->
