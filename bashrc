@@ -86,19 +86,19 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    alias dir='dir --color=auto'
-    alias vdir='vdir --color=auto'
+    alias ls='ls --color=always'
+    alias dir='dir --color=always'
+    alias vdir='vdir --color=always'
 
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
+    alias grep='grep --color=always'
+    alias fgrep='fgrep --color=always'
+    alias egrep='egrep --color=always'
 fi
 
 # some more ls aliases
-alias ll='ls -alF --color=auto'
-alias la='ls -A --color=auto'
-alias l='ls -CF --color=auto'
+alias ll='ls -alF --color=always'
+alias la='ls -A --color=always'
+alias l='ls -CF --color=always'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -258,16 +258,16 @@ alias supybot-generate-messages.pot-mass="find . -type d -exec sh -c '(cd {} && 
 ## -- Start of aliases which are saved from Ubuntu default bashrc. --
 
 # enable color support of ls and also add handy aliases
-alias ls='ls --color=auto'
-alias dir='dir --color=auto'
-alias vdir='vdir --color=auto'
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
+alias ls='ls --color=always'
+alias dir='dir --color=always'
+alias vdir='vdir --color=always'
+alias grep='grep --color=always'
+alias fgrep='fgrep --color=always'
+alias egrep='egrep --color=always'
 # some more ls aliases
-alias ll='ls -alF --color=auto'
-alias la='ls -A --color=auto'
-alias l='ls -CF --color=auto'
+alias ll='ls -alF --color=always'
+alias la='ls -A --color=always'
+alias l='ls -CF --color=always'
 # Add an "alert" alias for long running commands.  Use like so:
                         
 ## -- End of aliases which are saved from Ubuntu default bashrc. --
