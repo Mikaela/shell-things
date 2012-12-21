@@ -1,5 +1,3 @@
 *~
 *.swp
-pgprules.xml
-accountrc
-hosts
+*.tmp

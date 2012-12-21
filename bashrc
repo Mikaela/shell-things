@@ -158,7 +158,7 @@ fi
 # Things after this are just examples and should be put to some other file, which is sourced above.
 
 # Sets the default editor. I am vim user, so I want it to be vim. If you don't like terminal based text editors, change "" to gedit (Gnome) or Kate (KDE).
-export EDITOR=vim
+#export EDITOR=vim # MKAYSIGREP MKAYSIGREPENVIRONMENT
 
 # Sets locale. You can get list of locales with "locale -a" command. This should be something which ends to .utf8
 #export LC_ALL=fi_FI.utf8 # MKAYSIGREP # MKAYSIGREPENVIRONMENT
