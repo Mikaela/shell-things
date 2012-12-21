@@ -1,6 +1,6 @@
-<pastebinit>
-    <pastebin>http://paste.debian.net</pastebin>
-    <author>Mkaysi</author>
-    <jabberid>mkaysi@jabber.org</jabberid>
-    <format>text</format>
-</pastebinit>
+<pastebinit> <!--- MKAYSIGREP ---> <!--- MKAYSIGREPPASTEBINIT --->
+    <pastebin>http://paste.debian.net</pastebin> <!--- MKAYSIGREP ---> <!--- MKAYSIGREPPASTEBINIT --->
+    <author>Example Com</author> <!--- MKAYSIGREP ---> <!--- MKAYSIGREPPASTEBINIT --->
+    <jabberid>example@example.com</jabberid> <!--- MKAYSIGREP ---> <!--- MKAYSIGREPPASTEBINIT --->
+    <format>text</format> <!--- MKAYSIGREP ---> <!--- MKAYSIGREPPASTEBINIT --->
+</pastebinit> <!--- MKAYSIGREP ---> <!--- MKAYSIGREPPASTEBINIT --->
