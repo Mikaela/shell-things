@@ -23,8 +23,14 @@ Just read the files and copy-paste some things which you need or run the install
 
 Yes. If you take something from these files, you can freely redistribute it even without mentioning the source.  I am trying to mention original sources in these files.
 
-## What are .MKAYSIGREP.md and MKAYSIGREP.html and .*.MKAYSIGREP?
+## What are .something.MKAYSIGREP files?
 
-They are just cheatsheet for me what do I copy to .custom or .environment or .aliases
-or whatever. Their content can be found from all files, but commented and without 
-proper configuration they can cause unwanted effects.
+They are outputs of
+
+```
+grep <file> MKAYSIGREP
+```
+
+and contain modifications which might not be useful to other people than me.
+
+.install.MKAYSIGREP.run is installation for them.

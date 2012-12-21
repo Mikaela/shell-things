@@ -1,5 +1,3 @@
-# This is zshrc of Mkaysi.
-
 # TOC
 #   Defaults etc...             M0TZLS
 #   Environment                 7RS56S
@@ -16,7 +14,7 @@ uname=`uname`
 # Set up the prompt
 
 autoload -Uz promptinit
-# Green for normal user and red for root. Thanks nyuszika7h :D
+# Green for normal user and red for root. Thank you nyuszika7h
 promptinit
 PS1="%B%(!.%F{red}.%F{green})%n@%m %~
 %#%f%b "
@@ -76,14 +74,11 @@ if [ -f ~/.zshenv ]; then
     source ~/.zshenv
 fi
 
-# Don't check for mail!
-unset MAILCHECK
-
 # Enable core files.
 ulimit -c unlimited
 
 
-#More colours :D
+#More colours 
 if [[ $TERM == 'xterm' ]]; then
 export TERM=xterm-256color
 fi
@@ -93,13 +88,13 @@ export TERM=screen-256color
 fi
 
 # Sets the default editor.
-export EDITOR=vim
+#export EDITOR=vim # MKAYSIGREP # MKAYSIGREPENVIRONMENT
 
 # Sets locale. You can get list of locales with "locale -a" command. This should be something which ends to .utf8
-export LC_ALL=fi_FI.utf8
+#export LC_ALL=fi_FI.utf8 # MKAYSIGREP # MKAYSIGREPENVIRONMENT
 
 # Sets your timezone. Set in format <Region/City>, or just timezone like UTC.
-export TZ="/usr/share/zoneinfo/Europe/Helsinki"
+# export TZ="/usr/share/zoneinfo/Europe/Helsinki" # MKAYSIGREP # MKAYSIGREPENVIRONMENT
 
 # Sets PATH. To add another path, add :</path/to/new/path> to string below. 
 PATH=$HOME/.local/bin:$HOME/.local/games:$PATH
@@ -109,7 +104,7 @@ PATH=$HOME/.local/bin:$HOME/.local/games:$PATH
 #cd
 
 # Uses most as the default pager if you uncomment line below. (You will also get colourful manpages :D).
-export PAGER=most
+#export PAGER=most # MKAYSIGREP # MKAYSIGREPENVIRONMENT
 
 # Sets environmnet variable CPUARCH to output of "uname -p"
 CPUARCH=`uname -p`
@@ -123,17 +118,14 @@ alias sudo="sudo "
 alias ..="cd .."
 
 # Use htop instead of top, it's better. Requires htop.
-alias top="htop"
+#alias top="htop" # MKAYSIGREP MKAYSIGREPALIAS
 
 # Automaticly adds title to Youtube-dl when downloading videos with it. Requires youtube-dl.
 alias youtube-dl="youtube-dl -t"
 
 # git specific. This is the command which I use when git asks me to commit something and says that I have modified files, even when I haven't.
 alias gdrop="git stash && git stash drop"
-alias gitk="gitg" # Requires gitg . I just think that it looks nicer than gitk.
-
-# If I run nautilus, I want it to open in folder where I am.
-alias nautilus="nautilus ./"
+#alias gitk="gitg" # Requires gitg . I just think that it looks nicer than gitk. # MKAYSIGREP MKAYSIGREPALIAS
 
 # Why I must write "weechat-curses" to start it?
 alias weechat="weechat-curses"
@@ -151,14 +143,14 @@ alias nmap-regular="nmap "
 alias nmap-comprehensive="sudo nmap -sS -sU -T4 -A -v -PE -PP -PS21,22,23,25,80,113,31339 -PA80,113,443,10042 -PO --script all " 
 # Little "safer" scan as connecting to only HTTP and HTTPS ports doesn't look so attacking. Copy-paste to .zsh_custom and remove  " -p 80,443" if you want to scan all ports which nmap scans by default.
 alias nmap-osscan="sudo nmap -p 80,443 -O -v --osscan-guess --fuzzy "
-alias netcat="ncat "
+#alias netcat="ncat " # MKAYSIGREP # MKAYSIGREPALIAS
 
 # Tor (The Onion Router) specific.
-alias usewithtor="proxychains "
-alias torsocks="proxychains "
+#alias usewithtor="proxychains " # MKAYSIGREP MKAYSIGREPALIAS
+#alias torsocks="proxychains " # MKAYSIGREP MKAYSIGREPALIAS
 
-# This should allow aliases to work with proxychains.
-alias proxychains="proxychains "
+# This should allow aliases to work with proxychains. 
+#alias proxychains="proxychains " # MKAYSIGREP MKAYSIGREPALIAS
 
 # Downloads folder over SSH. Usage: rdownload <host>:<remotefolder> <local_destination> | TIP: use ~/ssh/config to configure hosts.
 alias rdownload="rsync -h --progress -avz "
@@ -172,7 +164,7 @@ alias tmux="tmux -u"
 alias aptitute="aptitude "
 
 # This is the checkinstall rule which I like to use.
-alias checkinstall="make install "
+#alias checkinstall="make install " # MKAYSIGREP MKAYSIGREPALIAS
 
 # The Battle for Wesnoth specific, http://wesnoth.org/
 # It seems to be an good idea to have debug logs on terminal with svn version.
@@ -197,7 +189,7 @@ alias -s bz2='tar -xjvf'
 
 # For copy-pasting directly from somewhere
 alias %=" "
-alias #=" "
+alias \#=" "
 
 # Supybot specifig. Why to write long command, if you can write short command?
 alias supybot-config-reload="killall -HUP supybot "
@@ -215,15 +207,15 @@ alias theme="prompt "
 
 # enable color support of ls and also add handy aliases
 alias ls='ls --color=auto'
-#alias dir='dir --color=auto'
-#alias vdir='vdir --color=auto'
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias ll='ls -alF --color=auto'
+alias la='ls -A --color=auto'
+alias l='ls -CF --color=auto'
 # Add an "alert" alias for long running commands.  Use like so:
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
                         
@@ -252,13 +244,13 @@ alias rsync-folder="rsync -h --progress -azvv "
 alias ssh-add="\ssh-add -D && \ssh-add "
 
 # Use GPG2 instead of GPG!
-alias gpg=gpg2
+#alias gpg=gpg2 # MKAYSIGREP MKAYSIGREPALIAS
 # ZSH doesn't currently include automatic completion for GPG2, 
 # so use the GPG one, which works with GPG2 too. This is in aliases, 
 # because that above alias needs this and this will disappear when zsh 
 # gets GPG2 completion. See 
 # http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=666755
-compdef gpg2=gpg
+#compdef gpg2=gpg # MKAYSIGREP MKAYSIGREPALIAS
 
 # For locally installed mosh on remote server.
 alias lmosh="mosh --server=~/.local/bin/mosh-server "
@@ -286,7 +278,7 @@ alias myip4="curl -s4 http://icanhazip.com"
 alias myip6="curl -s6 http://icanhazip.com"
 
 # Curl instead of wget with warning
-alias wget="echo Running curl -LO instead of wget && curl -LO "
+#alias wget="echo Running curl -LO instead of wget && curl -LO " # MKAYSIGREP # MKAYSIGREPALIAS
 
 # Update groups without logging out. Requires entering password. Source: http://blog.edwards-research.com/2010/10/linux-refresh-group-membership-without-logging-out/
 alias refreshgroups="exec su -l $USER"

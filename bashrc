@@ -1,5 +1,3 @@
-# bashrc of  Mkaysi
-
 # TOC
 #   Defaults etc...             M0TZLS
 #   Environment                 7RS56S
