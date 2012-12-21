@@ -197,6 +197,7 @@ alias -s bz2='tar -xjvf'
 
 # For copy-pasting directly from somewhere
 alias %=" "
+alias #=" "
 
 # Supybot specifig. Why to write long command, if you can write short command?
 alias supybot-config-reload="killall -HUP supybot "
@@ -316,6 +317,18 @@ alias mkhiso=isohybrid
 # Yum
 alias yum-unlock="rm -rf /var/run/yum.pid"
 alias yum-rm-timedhosts="rm /var/cache/yum/$CPUARCH/17/timedhost*"
+
+# Archiving and extracting with tar
+# This is tartar to avoid conflict with tar
+alias tartar="tar cfv "
+alias targz="tar cfvz "
+alias tarbz2="tar cfvj "
+# ex-tartar and ex-tar, because there is alias tartar and command tar
+alias ex-tar="tar xfv "
+alias ex-tartar="tar xfv "
+alias ex-targz="tar xfvz "
+alias ex-tarbz2="tar xfvj "
+
 
 # .aliases
 if [ -f ~/.aliases ]; then

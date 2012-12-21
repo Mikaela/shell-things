@@ -366,6 +366,18 @@ alias mkhiso=isohybrid
 alias yum-unlock="rm -rf /var/run/yum.pid"
 alias yum-rm-timedhosts="rm /var/cache/yum/$CPUARCH/17/timedhost*"
 
+# Archiving and extracting with tar
+# This is tartar to avoid conflict with tar
+alias tartar="tar cfv "
+alias targz="tar cfvz "
+alias tarbz2="tar cfvj "
+# I have function ex so these are ex-* to avoid conflict.
+# ex-tartar and ex-tar, because there is alias tartar and command tar
+alias ex-tar="tar xfv "
+alias ex-tartar="tar xfv "
+alias ex-targz="tar xfvz "
+alias ex-tarbz2="tar xfvj "
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
