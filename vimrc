@@ -2,15 +2,10 @@
 set nocompatible
 
 " Copied from /usr/local/vim/vimrc of Debian.
-" This should read Debian default config files too.
-runtime! debian.vim
 
-" Vim5 and later versions support syntax highlighting. Uncommenting the next
-" line enables syntax highlighting by default.
+" Show syntax colours
 syntax on
 
-" The following are commented out as they cause vim to behave a lot
-" differently from regular Vi. They are highly recommended though.
 set showcmd		" Show (partial) command in status line.
 set showmatch		" Show matching brackets.
 set ignorecase		" Do case insensitive matching
@@ -28,6 +23,7 @@ endif
 " end of copied from /usr/local/vim/vimrc
 
 " Copied from nyuszika7h http://nyuszika7h.dyndns.org/~nyuszika7h/.vimrc
+
 set number          " Show line numbers.
 
 set ruler           " Show the line and column number of the cursor position,
@@ -40,20 +36,9 @@ set background=dark " When set to "dark", Vim will try to use colors that look
 
 " end of copied from nyuszika7h
 
+
 "Use modelines!
 set modeline
-
-" Copied from http://vim.wikia.com/wiki/Modeline_magic
-" Append modeline after last line in buffer.
-" Use substitute() instead of printf() to handle '%%s' modeline in LaTeX
-" files.
-function! AppendModeline()
-  let l:modeline = printf(" vim: set ts=%d sw=%d tw=%d :",
-        \ &tabstop, &shiftwidth, &textwidth)
-  let l:modeline = substitute(&commentstring, "%s", l:modeline, "")
-  call append(line("$"), l:modeline)
-endfunction
-nnoremap <silent> <Leader>ml :call AppendModeline()<CR>
 
 "end of copied fron vimwiki.
 
@@ -67,9 +52,6 @@ set autoindent
 " end of copied fron linuxquestions.org
 
 " Copied from whttp://items.sjbach.com/319/configuring-vim-right
-
-" Set leader key as ,
-let mapleader = ","
 
 " Longer history
 set history=1000
@@ -88,11 +70,4 @@ set visualbell
 " gvim has light background
 if has('gui_running')
     set background=light
-endif
-
-if has("unix")
-  let s:uname = system("uname")
-  if s:uname == "Darwin\n"
-    set background=light
-  endif
 endif
