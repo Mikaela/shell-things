@@ -48,9 +48,6 @@ case "$TERM" in
     xterm-color) color_prompt=yes;;
 esac
 
-# uncomment for a colored prompt, if the terminal has the capability; turned
-# off by default to not distract the user: the focus in a terminal window
-# should be on the output of commands, not on the prompt
 force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
@@ -71,7 +68,7 @@ else
 fi
 unset color_prompt force_color_prompt
 
-# Red colour for root, thanks nyuszika7h :D
+# Red colour for root, thanks nyuszika7h 
 # Check if we're root
 if [[ $EUID == 0 ]]; then
     PS1='\033[1;31m\u@\h:\w\$\033[0m '
@@ -92,8 +89,8 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
@@ -101,9 +98,9 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias ll='ls -alF --color=auto'
+alias la='ls -A --color=auto'
+alias l='ls -CF --color=auto'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -146,9 +143,6 @@ if [ -f ~/.bash_environment ]; then
     source ~/.bash_environment
 fi
 
-# Don't check for mail!
-unset MAILCHECK
-
 # Enable core files.
 ulimit -c unlimited
 
@@ -169,10 +163,10 @@ fi
 export EDITOR=vim
 
 # Sets locale. You can get list of locales with "locale -a" command. This should be something which ends to .utf8
-export LC_ALL=fi_FI.utf8
+#export LC_ALL=fi_FI.utf8 # MKAYSIGREP
 
 # Sets your timezone. Set in format <Region/City>, or just timezone like UTC.
-export TZ="/usr/share/zoneinfo/Europe/Helsinki"
+#export TZ="/usr/share/zoneinfo/Europe/Helsinki" # MKAYSIGREP
 
 # Sets PATH. To add another path, add :</path/to/new/path> to string below. 
 PATH=$HOME/.local/bin:$HOME/.local/games:$PATH
@@ -182,7 +176,7 @@ PATH=$HOME/.local/bin:$HOME/.local/games:$PATH
 #cd
 
 # Uses most as the default pager if you uncomment line below. (You will also get colourful manpages :D).
-export PAGER=most
+#export PAGER=most # MKAYSIGREP
 
 # Sets environmnet variable CPUARCH to output of "uname -p"
 CPUARCH=`uname -p`
@@ -196,14 +190,14 @@ alias sudo="sudo "
 alias ..="cd .."
 
 # Use htop instead of top, it's better. Requires htop.
-alias top="htop"
+#alias top="htop" # MKAYSIGREP
 
 # Automaticly adds title to Youtube-dl when downloading videos with it. Requires youtube-dl.
 alias youtube-dl="youtube-dl -t"
 
 # git specific. This is the command which I use when git asks me to commit something and says that I have modified files, even when I haven't.
 alias gdrop="git stash && git stash drop"
-alias gitk="gitg" # Requires gitg . I just think that it looks nicer than gitk.
+#alias gitk="gitg" # Requires gitg . I just think that it looks nicer than gitk. #MKAYSIGREP
 
 # If I run nautilus, I want it to open in folder where I am.
 #alias nautilus="nautilus ./"
@@ -224,14 +218,14 @@ alias nmap-regular="nmap "
 alias nmap-comprehensive="sudo nmap -sS -sU -T4 -A -v -PE -PP -PS21,22,23,25,80,113,31339 -PA80,113,443,10042 -PO --script all " 
 # Little "safer" scan as connecting to only HTTP and HTTPS ports doesn't look so attacking. Copy-paste to .bash_custom and remove  " -p 80,443" if you want to scan all ports which nmap scans by default.
 alias nmap-osscan="sudo nmap -p 80,443 -O -v --osscan-guess --fuzzy "
-alias netcat="ncat "
+#alias netcat="ncat " # MKAYSIGREP
 
 # Tor (The Onion Router) specific.
-alias usewithtor="proxychains "
-alias torsocks="proxychains "
+#alias usewithtor="proxychains " # MKAYSIGREP
+#alias torsocks="proxychains " # MKAYSIGREP
 
 # This should allow aliases to work with proxychains.
-alias proxychains="proxychains "
+#alias proxychains="proxychains " # MKAYSIGREP
 
 # Downloads folder over SSH. Usage: rdownload <host>:<remotefolder> <local_destination> | TIP: use ~/ssh/config to configure hosts.
 alias rdownload="rsync -h --progress -avz "
@@ -245,7 +239,7 @@ alias tmux="tmux -u"
 alias aptitute="aptitude "
 
 # This is the checkinstall rule which I like to use.
-alias checkinstall="make install "
+#alias checkinstall="make install " # MKAYSIGREP
 
 # The Battle for Wesnoth specific, http://wesnoth.org/
 # It seems to be an good idea to have debug logs on terminal with svn version.
@@ -253,8 +247,8 @@ alias wesnoth="wesnoth --debug"
 
 # For copy-pasting directly from somewhere
 alias %=" "
-
-# SupyBot specifig. Why to write long command, if you can write short command?
+alias \#=" "
+# Supybot specifig. Why to write long command, if you can write short command?
 alias supybot-config-reload="killall -HUP supybot "
 alias supybot-owner-quit="killall -INT supybot "
 # Translating plugins in Limnoria
@@ -263,23 +257,19 @@ alias supybot-generate-messages.pot-xgettext="xgettext --language=Python config.
 alias supybot-check-plugin-trans="sandbox/check_trans.py plugins/"
 alias supybot-generate-messages.pot-mass="find . -type d -exec sh -c '(cd {} && pygettext --docstrings config.py plugin.py)' ';'"
 
-# bash specific.
-# I think that "theme" is more describing than "prompt".
-alias theme="prompt "
-
 ## -- Start of aliases which are saved from Ubuntu default bashrc. --
 
 # enable color support of ls and also add handy aliases
 alias ls='ls --color=auto'
-#alias dir='dir --color=auto'
-#alias vdir='vdir --color=auto'
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias ll='ls -alF --color=auto'
+alias la='ls -A --color=auto'
+alias l='ls -CF --color=auto'
 # Add an "alert" alias for long running commands.  Use like so:
                         
 ## -- End of aliases which are saved from Ubuntu default bashrc. --
@@ -307,7 +297,7 @@ alias rsync-folder="rsync -h --progress -azvv "
 alias ssh-add="\ssh-add -D && \ssh-add "
 
 # Use GPG2 instead of GPG!
-alias gpg=gpg2
+# alias gpg=gpg2 # MKAYSIGREP
 
 # For userspecific installation of mosh on remote server.
 alias lmosh="mosh --server=~/.local/bin/mosh-server "
@@ -333,7 +323,7 @@ alias myip4="curl -s4 http://icanhazip.com"
 alias myip6="curl -s6 http://icanhazip.com"
 
 # Curl instead of wget with warning
-alias wget="echo Running curl -LO instead of wget && curl -LO "
+# alias wget="echo Running curl -LO instead of wget && curl -LO " # MKAYSIGREP
 
 # Update groups without logging out. Requires entering password. Source: http://blog.edwards-research.com/2010/10/linux-refresh-group-membership-without-logging-out/
 alias refreshgroups="exec su -l $USER"
@@ -494,9 +484,4 @@ if [ -f ~/.custom ]; then
 # .bash_custom
 if [ -f ~/.bash_custom ]; then
     source ~/.bash_custom
-    fi
-
-# Warnings
-if [ -f ~/.warnings ]; then
-    source ~/.warnings
     fi
