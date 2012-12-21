@@ -34,3 +34,23 @@ grep <file> MKAYSIGREP
 and contain modifications which might not be useful to other people than me.
 
 .install.MKAYSIGREP.run is installation for them.
+
+<!---
+
+## MKAYSIGREP depedencies - this is meant only for me
+
+### apt
+
+```
+apt-get install vim most htop gnupg2 lynx pandoc gnupg-agent flip youtube-dl
+```
+
+### yum
+
+```
+rpm --install http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm
+rpm --install http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm
+rpm --install http://rpm.livna.org/livna-release.rpm
+
+yum -y install vim most htop gnupg2 lynx pandoc youtube-dl
+--->
