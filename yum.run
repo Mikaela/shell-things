@@ -1,5 +1,0 @@
-sudo su - -c "time rpm --install --quiet http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm"
-sudo su - -c "time rpm --install --quiet http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm"
-sudo su - -c "time rpm --install --quiet http://rpm.livna.org/livna-release.rpm"
-
-sudo su - -c "yum -y install vim most htop gnupg2 lynx pandoc youtube-dl"

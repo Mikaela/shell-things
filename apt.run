@@ -1,1 +1,0 @@
-sudo su - -c "apt-get install vim most htop gnupg2 lynx pandoc gnupg-agent flip youtube-dl"
