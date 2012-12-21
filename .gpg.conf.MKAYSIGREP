@@ -51,14 +51,14 @@ personal-digest-preferences SHA512,SHA384,SHA256,SHA224,RIPEMD160,SHA1,MD5
 keyid-format 0xLONG
 
 # Add comments to things signed/encrypted by gpg
-comment Homepage: http://mkaysi.github.com/ # MKAYSIGREP MKAYSIGREPGPG
-comment Public key: http://mkaysi.github.com/PGP/0x82A46728.txt # MKAYSIGREP MKAYSIGREPGPG
-comment gpg --fetch-keys http://mkaysi.github.com/PGP/0x82A46728.txt # MKAYSIGREP MKAYSIGREPGPG
-comment Fingerprint = 24BC 1573 B8EE D666 D10A  AA65 4DB5 3CFE 82A4 6728 # MKAYSIGREP MKAYSIGREPGPG
-comment I have personal problem with PGP/MIME... # MKAYSIGREP MKAYSIGREPGPG
-comment ...so signature *IS* long. See http://git.io/6FLzWg # MKAYSIGREP MKAYSIGREPGPG
-comment Please remove PGP lines in replies. http://git.io/nvHrDg # MKAYSIGREP MKAYSIGREPGPG
-comment Charset of this message should be UTF-8. # MKAYSIGREP MKAYSIGREPGPG
+comment Homepage: http://mkaysi.github.com/
+comment Public key: http://mkaysi.github.com/PGP/0x82A46728.txt 
+comment gpg --fetch-keys http://mkaysi.github.com/PGP/0x82A46728.txt
+comment Fingerprint = 24BC 1573 B8EE D666 D10A  AA65 4DB5 3CFE 82A4 6728
+comment I have personal problem with PGP/MIME... 
+comment ...so signature *IS* long. See http://git.io/6FLzWg 
+comment Please remove PGP lines in replies. http://git.io/nvHrDg
+comment Charset of this message should be UTF-8.
 
 # Contacts / Groups
 # PGPNET
