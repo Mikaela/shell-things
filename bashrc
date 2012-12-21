@@ -184,6 +184,9 @@ PATH=$HOME/.local/bin:$HOME/.local/games:$PATH
 # Uses most as the default pager if you uncomment line below. (You will also get colourful manpages :D).
 export PAGER=most
 
+# Sets environmnet variable CPUARCH to output of "uname -p"
+CPUARCH=`uname -p`
+
 #####   Aliases                     RJ706I  #####
 
 # To get sudo work with aliases.
@@ -361,6 +364,7 @@ alias mkhiso=isohybrid
 
 # Yum
 alias yum-unlock="rm -rf /var/run/yum.pid"
+alias yum-rm-timedhosts="rm /var/cache/yum/$CPUARCH/17/timedhost*"
 
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
