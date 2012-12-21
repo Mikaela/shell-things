@@ -16,6 +16,6 @@
 	status = true
 	ui = true
 [user]
-	#name = Mika Suomalainen
-	#email = mkaysi@outlook.com
-	#signingkey = 0x4DB53CFE82A46728
+	name = Mika Suomalainen
+	email = mkaysi@outlook.com
+	signingkey = 0x4DB53CFE82A46728

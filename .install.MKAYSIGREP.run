@@ -7,4 +7,5 @@ mkdir -p ~/.gnupg
 cat .gpg.conf.MKAYSIGREP > ~/.gnupg/gpg.conf
 cat .pastebinit.xml.MKAYSIGREP > ~/.pastebinit.xml
 cat .environment.MKAYSIGREP > ~/.environment
+cat .gitconfig.MKAYSIGREP > ~/.gitconfig
 # vim : set ft=sh :
