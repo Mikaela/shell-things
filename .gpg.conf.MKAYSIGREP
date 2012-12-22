@@ -80,6 +80,11 @@ lock-multiple
 
 expert
 
+# Little verbosity
+verbose
+verbose
+verbose
+
 # Teach to be careful with sensitive things by exporting them like everything else
 import-options import-local-sigs
 export-options export-local-sigs export-attributes export-sensitive-revkeys export-clean
