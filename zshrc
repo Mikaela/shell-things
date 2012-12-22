@@ -328,6 +328,10 @@ alias ex-tartar="tar xfv "
 alias ex-targz="tar xfvz "
 alias ex-tarbz2="tar xfvj "
 
+alias info="echo 'I don't know anyone who likes and uses info pages, so I aliased this to pinfo. If you don't have it installed, you should install it! To override this alias run: \info <document>' && pinfo "
+
+# To have less handle ls colours
+alias less="less -R "
 
 # .aliases
 if [ -f ~/.aliases ]; then
