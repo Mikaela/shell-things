@@ -113,8 +113,14 @@ export LESS_TERMCAP_so=$'\E[01;44;33m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
 
-# Sets environmnet variable CPUARCH to output of "uname -p"
+# Sets environment variable CPUARCH to output of "uname -p" and UNAME to "uname"
 CPUARCH=`uname -p`
+UNAME=`uname`
+
+# If we are on Mac, show hidden files in Finder and enable AirDrop over Ethernet and on unsupported (by Apple) Macs
+if [ $UNAME = "Darwin" ]; then
+    defaults write com.apple.finder AppleShowAllFiles TRUE &&  defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
+fi
 
 #####   Aliases                     RJ706I  #####
 
