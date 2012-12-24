@@ -1,4 +1,4 @@
-PATH=$HOME/.local/bin:$PATH
+PATH=$HOME/.local/bin/:$HOME/.local/sbin/:$HOME/.local/games/:/opt/local/bin/:/opt/local/sbin:/opt/local/games/:$PATH
 
 # Use gpg-agent
 eval $(gpg-agent --daemon)
