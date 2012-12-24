@@ -9,6 +9,12 @@ if [ $UNAME = "Darwin" ]; then
      defaults write com.apple.finder AppleShowAllFiles TRUE &&  defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 fi
 
+# If we are on Mac, set update check interval to 1 day
+if [[ $UNAME = "Darwin" && $USER = "root" ]]; then
+    defaults write /Library/Preferences/com.apple.SoftwareUpdate ScheduleFrequency 1
+fi
+# The above requires at least Mountain Lion.
+
 # Use gpg-agent
 eval $(gpg-agent --daemon)
 
