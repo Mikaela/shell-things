@@ -198,6 +198,9 @@ if [[ $UNAME = "Darwin" && $USER = "root" ]]; then
 fi
 # The above requires at least Mountain Lion.
 
+# I have only one display
+export DISPLAY=:0
+
 #####   Aliases                     RJ706I  #####
 
 # To get sudo work with aliases.
