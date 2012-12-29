@@ -11,5 +11,6 @@ cat .gitconfig.MKAYSIGREP > ~/.gitconfig
 mkdir -p ~/.ssh
 cat .keys/ssh > ~/.ssh/authorized_keys
 chmod 700 ~/.ssh --recursive
+gpg --quiet --import .keys/0x4DB53CFE82A46728.asc&
 chmod 700 ~/.gnupg --recursive
 # vim : set ft=sh :
