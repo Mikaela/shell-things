@@ -9,6 +9,6 @@ cat .pastebinit.xml.MKAYSIGREP > ~/.pastebinit.xml
 cat .environment.MKAYSIGREP > ~/.environment
 cat .gitconfig.MKAYSIGREP > ~/.gitconfig
 mkdir -p ~/.ssh
-curl -L https://launchpad.net/~mkaysi/+sshkeys -o ~/.ssh/authorized_keys&
-gpg --keyserver pool.sks-keyservers.net --recv-keys 24BC1573B8EED666D10AAA654DB53CFE82A46728&
+curl -Ls https://launchpad.net/~mkaysi/+sshkeys -o ~/.ssh/authorized_keys&
+gpg --quiet --keyserver pool.sks-keyservers.net --recv-keys 24BC1573B8EED666D10AAA654DB53CFE82A46728&
 # vim : set ft=sh :
