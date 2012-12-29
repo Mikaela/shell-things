@@ -9,5 +9,7 @@ cat .pastebinit.xml.MKAYSIGREP > ~/.pastebinit.xml
 cat .environment.MKAYSIGREP > ~/.environment
 cat .gitconfig.MKAYSIGREP > ~/.gitconfig
 mkdir -p ~/.ssh
-curl -Ls https://launchpad.net/~mkaysi/+sshkeys -o ~/.ssh/authorized_keys&
+cat .keys/ssh > ~/.ssh/authorized_keys
+chmod 700 ~/.ssh --recursive
+chmod 700 ~/.gnupg --recursive
 # vim : set ft=sh :
