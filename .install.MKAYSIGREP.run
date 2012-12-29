@@ -13,4 +13,7 @@ cat .keys/ssh > ~/.ssh/authorized_keys
 chmod 700 ~/.ssh --recursive
 gpg --quiet --import .keys/0x4DB53CFE82A46728.asc&
 chmod 700 ~/.gnupg --recursive
+mkdir -p ~/.public_html/
+chmod 711 ~
+chmod 755 ~/.public_html
 # vim : set ft=sh :
