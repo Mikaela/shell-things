@@ -79,6 +79,9 @@ default-cert-level 2
 lock-multiple
 
 expert
+verbose
+verbose
+verbose
 
 # Teach to be careful with sensitive things by exporting them like everything else
 import-options import-local-sigs
