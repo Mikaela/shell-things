@@ -9,5 +9,4 @@ mkdir -p ~/.gnupg
 cat gpg.conf > ~/.gnupg/gpg.conf
 cat xsessionrc > ~/.xsessionrc
 cat pastebinit.xml > ~/.pastebinit.xml&
-gpg --quiet --keyserver pool.sks-keyservers.net --recv-keys 24BC1573B8EED666D10AAA654DB53CFE82A46728&
 # vim : set ft=sh :
