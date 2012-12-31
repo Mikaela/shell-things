@@ -20,15 +20,18 @@ promptinit
 PS1="%B%(!.%F{red}.%F{green})%n@%m %~
 %#%f%b "
 
-setopt histignorealldups sharehistory
+setopt histignorealldups sharehistory APPEND_HISTORY SHARE_HISTORY
 
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
 
-# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-HISTSIZE=1000
-SAVEHIST=1000
-HISTFILE=~/.zsh_history
+HISTCONTROL=ignoredups
+export HISTSIZE=9999999999
+export HISTFILESIZE=99999999999
+export HISTTIMEFORMAT='%F %T '
+HISTFILE=~/.history
+export APPEND_HISTORY=
+export SHARE_HISTORY=
 
 # Use modern completion system
 autoload -Uz compinit
@@ -350,6 +353,9 @@ alias ex-targz="tar xfvz "
 alias ex-tarbz2="tar xfvj "
 
 alias info="echo 'I don't know anyone who likes and uses info pages, so I aliased this to pinfo. If you don't have it installed, you should install it! To override this alias run: \info <document>' && pinfo "
+
+# For getting timestamps in history
+alias history="history -i "
 
 # To have less handle ls colours
 alias less="less -R "

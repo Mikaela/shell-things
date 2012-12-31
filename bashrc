@@ -21,14 +21,21 @@ fi" > ~/.bash_profile
 
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
-HISTCONTROL=ignoredups:ignorespace
+HISTCONTROL=ignoredups
 
 # append to the history file, don't overwrite it
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+export HISTSIZE=
+export HISTFILESIZE=
+
+export HISTTIMEFORMAT='%F %T '
+
+HISTFILE=~/.history
+export APPEND_HISTORY=
+export SHARE_HISTORY=
+
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
