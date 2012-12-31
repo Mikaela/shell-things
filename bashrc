@@ -98,7 +98,7 @@ fi
 
 # some more ls aliases
 if [[ $UNAME != Darwin ]]; then
-    alias ll='ls -alF --color=always' && alias la='ls -A --color=always' && alias l='ls -CF --color=always'
+    alias ll='ls -alFh --color=always' && alias la='ls -A --color=always' && alias l='ls -CF --color=always'
 fi
 
 # Add an "alert" alias for long running commands.  Use like so:
@@ -291,7 +291,7 @@ alias fgrep='fgrep --color=always'
 alias egrep='egrep --color=always'
 # some more ls aliases
 if [[ $UNAME != Darwin ]]; then
-    alias ll='ls -alF --color=always' && alias la='ls -A --color=always' && alias l='ls -CF --color=always'
+    alias ll='ls -alFh --color=always' && alias la='ls -A --color=always' && alias l='ls -CF --color=always'
 fi
 
 ## -- End of aliases which are saved from Ubuntu default bashrc. --
