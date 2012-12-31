@@ -231,7 +231,7 @@ alias theme="prompt "
 ## -- Start of aliases which are saved from Ubuntu default bashrc. --
 
 # enable color support of ls and also add handy aliases
-if [[ $UNAME != Darwin ]]; then
+if [[ $UNAME != Darwin ]]; then
     alias ls='ls --color=always'
 fi
 alias dir='dir --color=always'
@@ -240,7 +240,7 @@ alias grep='grep --color=always'
 alias fgrep='fgrep --color=always'
 alias egrep='egrep --color=always'
 # some more ls aliases
-if [[ $UNAME != Darwin ]]; then
+if [[ "$UNAME" != "Darwin" ]]; then
     alias ll='ls -alF --color=always' && alias la='ls -A --color=always' && alias l='ls -CF --color=always'
 fi
 
