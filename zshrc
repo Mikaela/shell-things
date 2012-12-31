@@ -240,7 +240,7 @@ alias grep='grep --color=always'
 alias fgrep='fgrep --color=always'
 alias egrep='egrep --color=always'
 # some more ls aliases
-if [[ $UNAME != Darwin ]] ;then
+if [[ $UNAME != Darwin ]]; then
     alias ll='ls -alF --color=always' && alias la='ls -A --color=always' && alias l='ls -CF --color=always'
 fi
 
