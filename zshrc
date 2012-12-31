@@ -121,7 +121,7 @@ CPUARCH=`uname -p`
 UNAME=`uname`
 
 # If we are on Mac, show hidden files in Finder and enable AirDrop over Ethernet and on unsupported (by Apple) Macs
-if [ $UNAME = "Darwin" ]; then
+if [[ $UNAME = "Darwin" ]]; then
     defaults write com.apple.finder AppleShowAllFiles TRUE &&  defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 fi
 
