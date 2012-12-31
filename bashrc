@@ -1,3 +1,4 @@
+UNAME=`uname`
 # TOC
 #   Defaults etc...             M0TZLS
 #   Environment                 7RS56S
@@ -96,9 +97,9 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='ls -alF --color=always'
-alias la='ls -A --color=always'
-alias l='ls -CF --color=always'
+if [[ $UNAME != Darwin ]]; then
+    alias ll='ls -alF --color=always' && alias la='ls -A --color=always' && alias l='ls -CF --color=always'
+fi
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -127,7 +128,7 @@ fi
 hostname && uptime
 
 #####   Environment                 7RS56S  #####
-# Environment should be placed to .environment or .bash_environment (or .bashenv).
+# Environment should be placed to .environment or .bash_environment.
 
 # Source before mentioned locations if they exist.
 
@@ -280,18 +281,19 @@ alias supybot-generate-messages.pot-mass="find . -type d -exec sh -c '(cd {} && 
 ## -- Start of aliases which are saved from Ubuntu default bashrc. --
 
 # enable color support of ls and also add handy aliases
-alias ls='ls --color=always'
+if [[ $UNAME != Darwin ]]; then
+    alias ls='ls --color=always'
+fi
 alias dir='dir --color=always'
 alias vdir='vdir --color=always'
 alias grep='grep --color=always'
 alias fgrep='fgrep --color=always'
 alias egrep='egrep --color=always'
 # some more ls aliases
-alias ll='ls -alF --color=always'
-alias la='ls -A --color=always'
-alias l='ls -CF --color=always'
-# Add an "alert" alias for long running commands.  Use like so:
-                        
+if [[ $UNAME != Darwin ]]; then
+    alias ll='ls -alF --color=always' && alias la='ls -A --color=always' && alias l='ls -CF --color=always'
+fi
+
 ## -- End of aliases which are saved from Ubuntu default bashrc. --
 
 # Copying command in Supybot (Internet.DNS)

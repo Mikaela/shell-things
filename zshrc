@@ -231,16 +231,19 @@ alias theme="prompt "
 ## -- Start of aliases which are saved from Ubuntu default bashrc. --
 
 # enable color support of ls and also add handy aliases
-alias ls='ls --color=always'
+if [[ $UNAME != Darwin ]];then
+    alias ls='ls --color=always'
+fi
 alias dir='dir --color=always'
 alias vdir='vdir --color=always'
 alias grep='grep --color=always'
 alias fgrep='fgrep --color=always'
 alias egrep='egrep --color=always'
 # some more ls aliases
-alias ll='ls -alF --color=always'
-alias la='ls -A --color=always'
-alias l='ls -CF --color=always'
+if [[ $UNAME != Darwin ]];then
+    alias ll='ls -alF --color=always' && alias la='ls -A --color=always' && alias l='ls -CF --color=always'
+fi
+
 # Add an "alert" alias for long running commands.  Use like so:
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
                         
