@@ -384,6 +384,10 @@ alias mkhiso=isohybrid
 # Yum
 alias yum-unlock="rm -rf /var/run/yum.pid"
 alias yum-rm-timedhosts="rm /var/cache/yum/$CPUARCH/17/timedhost*"
+alias yummy="yum -y "
+alias yummn="yum -n "
+alias yumy=yummy
+alias yumn=yummn
 
 # Archiving and extracting with tar
 # This is tartar to avoid conflict with tar
