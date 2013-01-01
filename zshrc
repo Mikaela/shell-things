@@ -360,6 +360,9 @@ alias history="history -i "
 # To have less handle ls colours
 alias less="less -R "
 
+# "su -" with sudo
+alias ssu="sudo -i "
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases

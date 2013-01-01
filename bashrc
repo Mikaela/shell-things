@@ -402,6 +402,9 @@ alias info="echo 'I don't know anyone who likes and uses info pages, so I aliase
 # To have less handle ls colours
 alias less="less -R "
 
+# "su -" with sudo
+alias ssu="sudo -i "
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
