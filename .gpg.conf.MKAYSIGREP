@@ -74,7 +74,7 @@ with-fingerprint
 photo-viewer eog %i
 
 # The default to use for the check level when signing a key.
-default-cert-level 2
+#default-cert-level 2
 
 lock-multiple
 
