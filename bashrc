@@ -409,6 +409,11 @@ alias less="less -R "
 # "su -" with sudo
 alias ssu="sudo -i "
 
+# systemd runlevels/targets
+alias currenttargets="systemctl list-units --type=target"
+alias telsystemd="systemctl isolate "
+alias defaulttarget="systemctl enable "
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases

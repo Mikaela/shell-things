@@ -358,6 +358,11 @@ alias ex-tarbz2="tar xfvj "
 
 alias info="echo 'I don't know anyone who likes and uses info pages, so I aliased this to pinfo. If you don't have it installed, you should install it! To override this alias run: \info <document>' && pinfo "
 
+# systemd runlevels/targets
+alias currenttargets="systemctl list-units --type=target"
+alias telsystemd="systemctl isolate "
+alias defaulttarget="systemctl enable "
+
 # For getting timestamps in history
 alias history="history -i "
 
