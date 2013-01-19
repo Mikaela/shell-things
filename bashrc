@@ -414,6 +414,10 @@ alias currenttargets="systemctl list-units --type=target"
 alias telsystemd="systemctl isolate "
 alias defaulttarget="systemctl enable "
 
+# Fedora Utils http://satya164.github.com/fedorautils/
+alias fedorautils="\fedorautils -c"
+alias fedorautils-install='su -c "curl http://download.opensuse.org/repositories/home:/satya164:/zenity/Fedora_17/home:satya164:zenity.repo -o /etc/yum.repos.d/zenity.repo && yum update zenity"'
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases

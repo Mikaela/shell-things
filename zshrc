@@ -372,6 +372,10 @@ alias less="less -R "
 # "su -" with sudo
 alias ssu="sudo -i "
 
+# Fedora Utils http://satya164.github.com/fedorautils/
+alias fedorautils="\fedorautils -c"
+alias fedorautils-install='su -c "curl http://download.opensuse.org/repositories/home:/satya164:/zenity/Fedora_17/home:satya164:zenity.repo -o /etc/yum.repos.d/zenity.repo && yum update zenity"'
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
