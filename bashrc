@@ -175,7 +175,7 @@ fi
 #export TZ="/usr/share/zoneinfo/Europe/Helsinki" # MKAYSIGREP #MKAYSIGREPENVIRONMENT
 
 # Sets PATH. To add another path, add :</path/to/new/path> to string below. 
-PATH=$HOME/.local/bin/:$HOME/.local/sbin/:$HOME/.local/games/:$HOME/bin/:$HOME/sbin/:$HOME/games/:/opt/local/bin/:/opt/local/sbin/:/opt/local/games/:/usr/local/bin/:/usr/local/sbin/:/usr/local/games/:/bin/:/sbin/:/games/:/usr/bin/:/usr/sbin/:/usr/games/:$PATH
+PATH=$HOME/.local/bin:$HOME/.local/sbin:$HOME/.local/games:$HOME/bin:$HOME/sbin:$HOME/games:/opt/local/bin:/opt/local/sbin:/opt/local/games:/usr/local/bin:/usr/local/sbin:/usr/local/games:/bin:/sbin:/games:/usr/bin:/usr/sbin:/usr/games:$PATH
 
 # "Changes" home directory without root. Uncomment both lines below this.
 #export HOME=<path to new home>
