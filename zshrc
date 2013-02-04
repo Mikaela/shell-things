@@ -376,7 +376,7 @@ alias history="history -i "
 alias less="less -R "
 
 # "su -" with/without sudo
-alias ssu="sudo -i "
+alias ssu="sudo su -"
 alias suu="su -"
 
 # Fedora Utils http://satya164.github.com/fedorautils/
