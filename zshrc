@@ -369,8 +369,9 @@ alias history="history -i "
 # To have less handle ls colours
 alias less="less -R "
 
-# "su -" with sudo
+# "su -" with/without sudo
 alias ssu="sudo -i "
+alias suu="su -"
 
 # Fedora Utils http://satya164.github.com/fedorautils/
 alias fedorautils="\fedorautils -c"

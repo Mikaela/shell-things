@@ -406,8 +406,9 @@ alias info="echo 'I don't know anyone who likes and uses info pages, so I aliase
 # To have less handle ls colours
 alias less="less -R "
 
-# "su -" with sudo
+# "su -" with/without sudo
 alias ssu="sudo -i "
+alias suu="su -"
 
 # systemd runlevels/targets
 alias currenttargets="systemctl list-units --type=target"
