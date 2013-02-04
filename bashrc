@@ -407,7 +407,7 @@ alias info="echo 'I don't know anyone who likes and uses info pages, so I aliase
 alias less="less -R "
 
 # "su -" with/without sudo
-alias ssu="sudo -i "
+alias ssu="sudo su -"
 alias suu="su -"
 
 # systemd runlevels/targets
