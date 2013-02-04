@@ -29,9 +29,6 @@ HISTCONTROL=ignoredups
 export HISTSIZE=9999999999
 export HISTFILESIZE=99999999999
 export HISTTIMEFORMAT='%F %T '
-HISTFILE=~/.history
-export APPEND_HISTORY=
-export SHARE_HISTORY=
 
 # Use modern completion system
 autoload -Uz compinit
