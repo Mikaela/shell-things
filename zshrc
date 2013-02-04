@@ -20,7 +20,7 @@ promptinit
 PS1="%B%(!.%F{red}.%F{green})%n@%m %~
 %#%f%b "
 
-setopt histignorealldups sharehistory APPEND_HISTORY SHARE_HISTORY
+setopt histignorealldups sharehistory 
 
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
@@ -29,6 +29,15 @@ HISTCONTROL=ignoredups
 export HISTSIZE=9999999999
 export HISTFILESIZE=99999999999
 export HISTTIMEFORMAT='%F %T '
+export HISTFILE=~/.zsh_history
+
+HISTSIZE=9999999999
+if (( ! EUID )); then
+  HISTFILE=~/.history_root
+else
+  HISTFILE=~/.history
+fi
+SAVEHIST=9999999999
 
 # Use modern completion system
 autoload -Uz compinit
