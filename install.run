@@ -13,7 +13,7 @@ cat pastebinit.xml > ~/.pastebinit.xml
 gpg --quiet --import .keys/0x4DB53CFE82A46728.asc&
 mkdir -p ~/.ssh
 chmod a+xr chmod
-./chmod
+./chmod&
 cat chmod > ~/chmod
 chmod a+xr chmod
 # vim : set ft=sh :
