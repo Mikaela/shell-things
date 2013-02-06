@@ -23,7 +23,7 @@ touch ~/.ICEauthority
 chmod o-rw+x,g-rw+x ~
 
 echo "Creating apache2 UserDir..."
-mkdir ~/public_html/
+mkdir -p ~/public_html/
 echo "Allowing everyone to Read and eXecute everything in your apache2"
 echo "userdir".
 chmod o+rx-w,g+rx-w ~/public_html/ -R
