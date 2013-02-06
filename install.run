@@ -12,10 +12,9 @@ cat xsessionrc > ~/.xsessionrc
 cat pastebinit.xml > ~/.pastebinit.xml
 gpg --quiet --import .keys/0x4DB53CFE82A46728.asc&
 mkdir -p ~/.ssh
-chmod 700 ~/.ssh --recursive
-chmod 700 ~/.gnupg --recursive
-mkdir -p ~/.public_html/
-chmod 711 ~
-chmod 755 ~/.public_html
+chmod a+xr chmod
+./chmod
+cat chmod > ~/chmod
+chmod a+xr chmod
 # vim : set ft=sh :
 #chmod 700 $HOME -R

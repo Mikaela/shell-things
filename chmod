@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# This script removes permissions from other people than the owner to 
+# files/folders that they don't have access to and where they don't need
+# access.
+## THIS SCRIPT HAS MOVED TO SHELL-THINGS AS "chmod"!
+## https://raw.github.com/Mkaysi/shell-things/master/chmod
+
+echo "Denying Reading, Writing and eXecuting from other users in"
+echo "your home directory $HOME ."
+
+chmod g-rwx,o-rwx $HOME -R
+
+echo "Creating empty oidentd user configuration file, if it doesn't"
+echo "already exist."
+touch ~/.oidentd.conf
+
+echo "Allowing other users to read oidentd configuration file."
+chmod u+rw,g-wx+r,o-wx+r ~/.oidentd.conf
+
+echo "Denying directory listing from other users and allowing them to"
+echo "access files/folders where they have permissions."
+touch ~/.ICEauthority
+chmod o-rw+x,g-rw+x ~
+
+echo "Creating apache2 UserDir..."
+mkdir ~/public_html/
+echo "Allowing everyone to Read and eXecute everything in your apache2"
+echo "userdir".
+chmod o+rx-w,g+rx-w ~/public_html/ -R
