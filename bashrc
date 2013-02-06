@@ -232,6 +232,7 @@ alias gdrop="git stash && git stash drop"
 
 # Why I must write "weechat-curses" to start it?
 alias weechat="weechat-curses"
+alias weechat-version="weechat-curses --help|head -n2"
 
 #NMAP specific. All nmap things should be run as root, so it's probably best to copy these aliases to root's .bashrc. Things which don't run without root ask for sudo password.
 alias nmap-intense="nmap -T4 -A -v -PE -PS22,25,80 -PA21,23,80,3389 "
