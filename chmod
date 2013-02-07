@@ -5,34 +5,65 @@
 ## THIS SCRIPT HAS MOVED TO SHELL-THINGS AS "chmod"!
 ## https://raw.github.com/Mkaysi/shell-things/master/chmod
 
+GROUP=`id -gn`
+
+if [ -f /etc/httpd/conf/httpd.conf ]; then
+    wwwdata=`grep ^User /etc/httpd/conf/httpd.conf|cut -f 2 --delimiter=" "`
+    fi
+
+if [ -f /etc/apache2/apache2.conf ]; then
+    wwwdata=`grep ^User /etc/apache2/apache2.conf|cut -f 2 --delimiter=" "`
+    fi
+    
+if [ -f /etc/lighttpd/lighttpd.conf ]; then
+    wwwdata=`grep server.user /etc/lighttpd/lighttpd.conf|cut -f 2 -d=`
+    fi
+
 echo "Denying Reading, Writing and eXecuting from other users in"
 echo "your home directory $HOME ."
-
+echo ""
 chmod g-rwx,o-rwx $HOME -R
 
 echo "Creating empty oidentd user configuration file, if it doesn't"
 echo "already exist."
+echo ""
 touch ~/.oidentd.conf
 
 echo "Allowing other users to read oidentd configuration file."
 chmod u+rw,g-wx+r,o-wx+r ~/.oidentd.conf
+echo ""
 
 echo "Denying directory listing from other users and allowing them to"
 echo "access files/folders where they have permissions."
 touch ~/.ICEauthority
 chmod o-rw+x,g-rw+x ~
+echo ""
 
 echo "Creating apache2 UserDir..."
 mkdir -p ~/public_html/
+echo ""
 echo "Allowing everyone to Read and eXecute everything in your apache2"
-echo "userdir".
-chmod o+rx-w,g+rx-w ~/public_html/ -R
+echo "userdir and hoping that we are the only user in group $GROUP..."
+chmod o+rx-w,g+rxw ~/public_html/ -R
+echo ""
 
 echo "Setting corret permissions to other files which others should access."
 touch ~/.face
 touch ~/.forward
-
+echo ""
 chmod a+r-wx,u+rw ~/.face
 chmod a+r-wx,u+rw ~/.forward
+
+echo "Setting access lists. This requires package acl to be installed"
+echo "and kernel support for it and mount point being mounted with option"
+echo "acl"
+echo ""
+
+setfacl -R -m u:$wwwdata:rwx ~/public_html 
+setfacl -R -m d:u:$wwwdata:rwx ~/public_html 
+
+if [ -f chmod.2 ]; then
+    ./chmod.2
+    fi
 
 echo "Everything is now done :)"
