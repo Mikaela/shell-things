@@ -29,7 +29,10 @@ echo "userdir".
 chmod o+rx-w,g+rx-w ~/public_html/ -R
 
 echo "Setting corret permissions to other files which others should access."
-chmod a+r-wx,u+rw .face
-chmod a+r-wx,u+rw .forward
+touch ~/.face
+touch ~/.forward
+
+chmod a+r-wx,u+rw ~/.face
+chmod a+r-wx,u+rw ~/.forward
 
 echo "Everything is now done :)"
