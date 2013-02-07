@@ -7,17 +7,7 @@
 
 GROUP=`id -gn`
 
-if [ -f /etc/httpd/conf/httpd.conf ]; then
-    wwwdata=`grep ^User /etc/httpd/conf/httpd.conf|cut -f 2 --delimiter=" "`
-    fi
-
-if [ -f /etc/apache2/apache2.conf ]; then
-    wwwdata=`grep ^User /etc/apache2/apache2.conf|cut -f 2 --delimiter=" "`
-    fi
-    
-if [ -f /etc/lighttpd/lighttpd.conf ]; then
-    wwwdata=`grep server.user /etc/lighttpd/lighttpd.conf|cut -f 2 -d=`
-    fi
+wwwdata=`head -n1 wwwuser`
 
 echo "Denying Reading, Writing and eXecuting from other users in"
 echo "your home directory $HOME ."
