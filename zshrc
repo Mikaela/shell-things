@@ -13,12 +13,21 @@ uname=`uname`
 # This is based on zshrc which came with Debian (Third option in wizard for new users.)
 
 # Set up the prompt
-
 autoload -Uz promptinit
-# Green for normal user and red for root. Thank you nyuszika7h
+
+# Green for normal user and red for root and show exit status
+# if it's not 0. Thank you nyuszika7h
 promptinit
+autoload -Uz vcs_info
+autoload -Uz colors && colors
+setopt PROMPT_SUBST
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:*' enable git svn bzr hg
+zstyle ':vcs_info:*' formats '%b '
+precmd() { vcs_info }
+
 PS1="%B%(!.%F{red}.%F{green})%n@%m %~
-%#%f%b "
+%# %(?..%B%?%b )%f%b"
 
 setopt histignorealldups sharehistory 
 
