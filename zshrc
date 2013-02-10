@@ -393,6 +393,9 @@ alias suu="su -"
 alias fedorautils="\fedorautils -c"
 alias fedorautils-install='su -c "curl http://download.opensuse.org/repositories/home:/satya164:/fedorautils/Fedora_17/home:satya164:fedorautils.repo -Lo /etc/yum.repos.d/fedorautils.repo && yum -y install fedorautils"'
 
+# ReSet Screen rss
+alias rss=reset
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
