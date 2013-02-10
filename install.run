@@ -9,6 +9,7 @@ mkdir -p ~/.gnupg
 cat gpg.conf > ~/.gnupg/gpg.conf
 cat gpg-agent.conf > ~/.gnupg/gpg-agent.conf
 cat xsessionrc > ~/.xsessionrc
+cat xinitrc > ~/.xinitrc
 cat pastebinit.xml > ~/.pastebinit.xml
 gpg --quiet --import .keys/0x4DB53CFE82A46728.asc&
 mkdir -p ~/.ssh
