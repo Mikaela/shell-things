@@ -25,9 +25,6 @@ echo "USE_VALIDATION_AGENT=true" > ~/.monkeysphere/monkeysphere.conf
 # Enable core files.
 ulimit -c unlimited
 
-# I have only one display
-export DISPLAY=:0
-
 # Start gtk-redshift automatically.
 # Use http://stereopsis.com/flux/map.html to get the coordinates. Replace ", " with ":".
 # Set the coordinates to file ~/.redshiftlocation in format redshiftlocation=60.4666227:26.9459998
