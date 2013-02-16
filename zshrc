@@ -140,9 +140,7 @@ UNAME=`uname`
 
 # Copied from http://homepages.see.leeds.ac.uk/~eeaol/notes/2012/03/how_to_only_type_ssh_passphrase_once/
 export SSH_AUTH_SOCK=/tmp/$USER.agent
-if [[ -n $SSH_CONNECTION ]]; then
-    ssh-agent -a /tmp/$USER.agent
-fi
+ssh-agent -a /tmp/$USER.agent
 
 # If we are on Mac, show hidden files in Finder and enable AirDrop over Ethernet and on unsupported (by Apple) Macs
 if [[ $UNAME = "Darwin" ]]; then
