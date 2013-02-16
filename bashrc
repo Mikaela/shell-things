@@ -131,8 +131,8 @@ fi
 #Shopt settings.
 #shopt -s autocd
 
-# Show the hostname and uptime on shell start
-hostname && uptime
+# Show the hostname, uptime and users logged in on shell start
+hostname && uptime && who -H -w -u
 
 #####   Environment                 7RS56S  #####
 # Environment should be placed to .environment or .bash_environment.
