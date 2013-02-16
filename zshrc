@@ -138,6 +138,12 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 CPUARCH=`uname -p`
 UNAME=`uname`
 
+# Copied from http://homepages.see.leeds.ac.uk/~eeaol/notes/2012/03/how_to_only_type_ssh_passphrase_once/
+export SSH_AUTH_SOCK=/tmp/$USER.agent
+if [[ -n $SSH_CONNECTION ]]; then
+    ssh-agent -a /tmp/$USER.agent
+fi
+
 # If we are on Mac, show hidden files in Finder and enable AirDrop over Ethernet and on unsupported (by Apple) Macs
 if [[ $UNAME = "Darwin" ]]; then
     defaults write com.apple.finder AppleShowAllFiles TRUE &&  defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
