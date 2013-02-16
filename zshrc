@@ -393,6 +393,9 @@ alias fedorautils-install='su -c "curl http://download.opensuse.org/repositories
 # ReSet Screen rss
 alias rss=reset
 
+# Who command which I use with Conky
+alias cwho="who -H -w -u"
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
