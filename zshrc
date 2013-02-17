@@ -76,7 +76,9 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 hostname
 uptime
 echo ""
-who -H -w -u
+if [[ $UNAME != Darwin  ]] then;
+    who -H -w -u
+fi
 
 #####   Environment                 7RS56S  #####
 # Environment should be placed to .environment or .zsh_environment (or .zshenv).

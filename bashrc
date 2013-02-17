@@ -135,7 +135,9 @@ fi
 hostname
 uptime
 echo ""
-who -H -w -u
+if [[ $UNAME != Darwin ]]; then
+    who -H -w -u
+fi
 
 #####   Environment                 7RS56S  #####
 # Environment should be placed to .environment or .bash_environment.
