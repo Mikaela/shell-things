@@ -132,7 +132,7 @@ fi
 #shopt -s autocd
 
 # Show the hostname, uptime and users logged in on shell start
-hostname && uptime && who -H -w -u
+hostname && uptime && echo "" && who -H -w -u
 
 #####   Environment                 7RS56S  #####
 # Environment should be placed to .environment or .bash_environment.
