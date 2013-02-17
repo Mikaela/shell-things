@@ -208,7 +208,7 @@ fi
 
 # Copied from http://homepages.see.leeds.ac.uk/~eeaol/notes/2012/03/how_to_only_type_ssh_passphrase_once/
 export SSH_AUTH_SOCK=/tmp/$USER.agent
-ssh-agent -a /tmp/$USER.agent
+ssh-agent -a /tmp/$USER.agent > /dev/null 2>&1
 
 #####   Aliases                     RJ706I  #####
 
