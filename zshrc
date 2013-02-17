@@ -73,7 +73,10 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # Show the hostname, uptime and users logged in on shell start
-hostname && uptime && echo "" && who -H -w -u
+hostname
+uptime
+echo ""
+who -H -w -u
 
 #####   Environment                 7RS56S  #####
 # Environment should be placed to .environment or .zsh_environment (or .zshenv).
