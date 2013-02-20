@@ -37,7 +37,7 @@ echo "userdir and hoping that we are the only user in group $GROUP..."
 chmod o+rx-w,g+rxw ~/public_html/ -R
 echo ""
 
-echo "Setting corret permissions to other files which others should access."
+echo "Setting correct permissions to other files which others should access."
 touch ~/.face
 touch ~/.forward
 echo ""
