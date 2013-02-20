@@ -16,5 +16,7 @@ mkdir -p ~/.public_html/
 chmod a+xr chmod
 ./chmod&
 cat chmod > ~/chmod
-chmod a+xr chmod
+cat wwwuser > ~/wwwuser
+chmod a+xr ~/chmod
+chmod a+r ~/wwwuser
 # vim : set ft=sh :

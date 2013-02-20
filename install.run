@@ -16,6 +16,8 @@ mkdir -p ~/.ssh
 chmod a+xr chmod
 ./chmod&
 cat chmod > ~/chmod
+cat wwwuser > ~/wwwuser
 chmod a+xr chmod
+chmod a+r wwwuser
 # vim : set ft=sh :
 #chmod 700 $HOME -R
