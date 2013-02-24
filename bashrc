@@ -264,6 +264,8 @@ alias nmap-osscan="sudo nmap -p 80,443 -O -v --osscan-guess --fuzzy "
 
 # Downloads folder over SSH. Usage: rdownload <host>:<remotefolder> <local_destination> | TIP: use ~/ssh/config to configure hosts.
 alias rdownload="rsync -h --progress -avz "
+alias rscp='rsync -h --progress -avz '
+alias rscpr='rsync -h --progress -azvv '
 
 # TMUX specific
 alias attach="tmux -u attach-session"
