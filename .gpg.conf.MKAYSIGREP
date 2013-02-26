@@ -58,8 +58,9 @@ default-preference-list AES256,AES192,AES,CAST5,3DES SHA512,SHA384,SHA256,SHA224
 default-keyserver-url hkps://hkps.pool.sks-keyservers.net
 
 # Forcing preferred settings even if it's against OpenPGP standards
-#digest-algo SHA512
-#compress-algo BZIP2
+cert-algo SHA512
+digest-algo SHA512
+compress-algo BZIP2
 
 no-allow-non-selfsigned-uid
 default-sig-expire 0
@@ -90,6 +91,13 @@ export-options export-local-sigs export-attributes export-sensitive-revkeys expo
 # Ask everything
 ask-cert-level
 ask-cert-expire
+
+# Copying https://we.riseup.net/riseuplabs+paow/openpgp-best-practices#update-your-gpg-defaults
+# when outputting certificates, view user IDs distinctly from keys:
+fixed-list-mode
+# You should always know at a glance which User IDs gpg thinks are legitimately bound to the keys in your keyring:
+verify-options show-uid-validity
+list-options show-uid-validity
 
 # Add comments to things signed/encrypted by gpg
 comment Homepage: http://mkaysi.github.com/
