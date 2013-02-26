@@ -4,6 +4,7 @@ cat .bash_aliases.MKAYSIGREP > ~/.bash_aliases
 cat .zsh_aliases.MKAYSIGREP > ~/.zsh_aliases
 cat .gitconfig.MKAYSIGREP > ~/.gitconfig
 mkdir -p ~/.gnupg
+cat sks-keyservers.netCA.pem > ~/.gnupg/sks-keyservers.netCA.pem
 cat .gpg.conf.MKAYSIGREP > ~/.gnupg/gpg.conf
 cat gpg-agent.conf > ~/.gnupg/gpg-agent.conf
 cat .pastebinit.xml.MKAYSIGREP > ~/.pastebinit.xml

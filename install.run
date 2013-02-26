@@ -8,6 +8,7 @@ cat vimrc > ~/.vimrc
 mkdir -p ~/.gnupg
 cat gpg.conf > ~/.gnupg/gpg.conf
 cat gpg-agent.conf > ~/.gnupg/gpg-agent.conf
+cat sks-keyservers.netCA.pem > ~/.gnupg/sks-keyservers.netCA.pem
 cat xsessionrc > ~/.xsessionrc
 cat xinitrc > ~/.xinitrc
 cat pastebinit.xml > ~/.pastebinit.xml
