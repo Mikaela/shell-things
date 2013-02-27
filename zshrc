@@ -407,6 +407,10 @@ alias rss=reset
 # Who command which I use with Conky
 alias cwho="who -H -w -u"
 
+# Upgrading Redhad/Debian
+alias yumyup="yum -y check-update;yum -y update;grub2-mkconfig -o /boot/grub2/grub.cfg"
+alias aptyup="apt-get -y update;apt-get -y upgrade;update-grub"
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
