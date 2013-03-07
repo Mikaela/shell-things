@@ -105,7 +105,8 @@ comment Public key: http://mkaysi.github.com/PGP/0x82A46728.txt
 comment gpg --fetch-keys http://mkaysi.github.com/PGP/0x82A46728.txt
 comment Fingerprint = 24BC 1573 B8EE D666 D10A  AA65 4DB5 3CFE 82A4 6728
 comment How/Why I send emails like I do http://git.io/tkIyFQ
-##uncomment if someone complains about information behind above link without reading it
+comment How to not verify my signature http://xkcd.com/1181/
+#uncomment if someone complains about information behind above link without reading it
 #comment ^^ explains why my signature is long and how you can hide it
 
 # Contacts / Groups
