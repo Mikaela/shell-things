@@ -411,6 +411,9 @@ alias cwho="who -H -w -u"
 alias yumyup="yum -y check-update;yum -y update;grub2-mkconfig -o /boot/grub2/grub.cfg"
 alias aptyup="apt-get -y update;apt-get -y upgrade;update-grub"
 
+alias apt-gety="apt-get -y "
+alias aptitude="aptitude -y "
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
