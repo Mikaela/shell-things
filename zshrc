@@ -412,7 +412,7 @@ alias yumyup="yum -y check-update;yum -y update;grub2-mkconfig -o /boot/grub2/gr
 alias aptyup="apt-get -y update;apt-get -y upgrade;update-grub"
 
 alias apt-gety="apt-get -y "
-alias aptitude="aptitude -y "
+alias aptitudey="aptitude -y "
 
 # .aliases
 if [ -f ~/.aliases ]; then
