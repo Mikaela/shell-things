@@ -443,7 +443,7 @@ alias apt-gety="apt-get -y "
 alias aptitudey="aptitude -y "
 
 # Set core pattern how I want it to be
-alias fcorepattern='echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf'
+alias fcorepattern='echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf;sysctl -f'
 
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
