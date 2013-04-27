@@ -5,11 +5,11 @@ echo "Adding repositories..."
 # Steam Desktop Environment
 apt-add-repository ppa:thor27-gmail/steam-desktop
 
-# RunesCape
+# RuneScape
 apt-add-repository ppa:hikariknight/unix-runescape-client
 
 # WebKit
-apt-add-repository ppa:webkit-team
+#apt-add-repository ppa:webkit-team
 
 # Midori
 apt-add-repository ppa:midori/ppa
