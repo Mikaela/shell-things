@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+echo "Adding repositories..."
+
+# Steam Desktop Environment
+apt-add-repository ppa:thor27-gmail/steam-desktop
+
+# RunesCape
+apt-add-repository ppa:hikariknight/unix-runescape-client
+
+# WebKit
+apt-add-repository ppa:webkit-team
+
+# Midori
+apt-add-repository ppa:midori/ppa
+
+# Y-PPA-Manager
+ppa:webupd8team/y-ppa-manager
+
+# Wesnoth Development PPA
+ppa:rhonda/wesnoth-devel
+
+echo "Repositories added. Updating package cache..."
+
+apt-get -y update
+
+echo "Installing and running launchpad-getkeys to avoid missing GPG keys..."
+apt-get -y install launchpad-getkeys
+launchpad-getkeys
