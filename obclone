@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+rm -rf openbox
 git clone git://gist.github.com/4750378.git openbox
 # vim : set : ft=sh
