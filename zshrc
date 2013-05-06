@@ -418,6 +418,9 @@ alias aptitudey="aptitude -y "
 # Set core pattern how I want it to be
 alias fcorepattern='echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf;sysctl -f'
 
+# ffmpeg is depreceated
+alias ffmpeg=avconv
+
 
 # .aliases
 if [ -f ~/.aliases ]; then
