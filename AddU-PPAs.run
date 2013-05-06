@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo "Installing some packages to help this script"
+apt-get -y install apt-cacher-ng mesa-utils aptitude
+
 echo "Adding repositories..."
 
 # Steam Desktop Environment
