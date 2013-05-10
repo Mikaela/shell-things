@@ -100,9 +100,9 @@ verify-options show-uid-validity
 list-options show-uid-validity
 
 # Add comments to things signed/encrypted by gpg
-comment Homepage: http://mkaysi.github.com/
-comment Public key: http://mkaysi.github.com/PGP/0x82A46728.txt
-comment gpg --fetch-keys http://mkaysi.github.com/PGP/0x82A46728.txt
+comment Homepage: http://mkaysi.github.io/
+comment Public key: http://mkaysi.github.io/PGP/0x82A46728.txt
+comment gpg --fetch-keys http://mkaysi.github.io/PGP/0x82A46728.txt
 comment Fingerprint = 24BC 1573 B8EE D666 D10A  AA65 4DB5 3CFE 82A4 6728
 comment How/Why I send emails like I do http://adf.ly/MnBa4
 comment How to not verify my signature http://adf.ly/MnBqm
