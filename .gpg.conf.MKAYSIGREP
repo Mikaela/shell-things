@@ -31,13 +31,13 @@ keyserver-options ca-cert-file=~/.gnupg/sks-keyservers.netCA.pem auto-key-retrie
 auto-key-locate keyserver
 
 # Use my key by default
-default-key 0x4DB53CFE82A46728 # MKAYSIGREP # MKAYSIGREPGPG
+default-key 0xDAA6CA08F2E96AC7
 
 # Encrypt to sender's key by default
 default-recipient-self
 
 # Always encrypt to my key
-encrypt-to 0x4DB53CFE82A46728 # MKAYSIGREP MKAYSIGREPGPG
+encrypt-to 0xDAA6CA08F2E96AC7 # MKAYSIGREP MKAYSIGREPGPG
 
 # Use UTF-8 charset
 charset UTF-8
@@ -101,8 +101,8 @@ list-options show-uid-validity
 
 # Add comments to things signed/encrypted by gpg
 comment Homepage: http://mkaysi.github.io/
-comment Public key: http://mkaysi.github.io/PGP/0x82A46728.txt
-comment gpg --fetch-keys http://mkaysi.github.io/PGP/0x82A46728.txt
+comment Public key: http://mkaysi.github.io/PGP/0xF2E96AC7.txt
+comment gpg --fetch-keys http://mkaysi.github.io/PGP/0xF2E96AC7.txt
 comment Fingerprint = 24BC 1573 B8EE D666 D10A  AA65 4DB5 3CFE 82A4 6728
 comment How/Why I send emails like I do http://adf.ly/MnBa4
 comment How to not verify my signature http://adf.ly/MnBqm
