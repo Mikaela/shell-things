@@ -103,7 +103,7 @@ list-options show-uid-validity
 comment Homepage: http://mkaysi.github.io/
 comment Public key: http://mkaysi.github.io/PGP/0xF2E96AC7.txt
 comment gpg --fetch-keys http://mkaysi.github.io/PGP/0xF2E96AC7.txt
-comment Fingerprint = 24BC 1573 B8EE D666 D10A  AA65 4DB5 3CFE 82A4 6728
+comment Fingerprint = 2BE0 B660 BF31 C8F9 3FA0  FEB8 DAA6 CA08 F2E9 6AC7
 comment How/Why I send emails like I do http://adf.ly/MnBa4
 comment How to not verify my signature http://adf.ly/MnBqm
 #uncomment if someone complains about information behind above link without reading it
