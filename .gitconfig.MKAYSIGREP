@@ -16,6 +16,6 @@
 	status = true
 	ui = true
 [user]
-	name = Mika Suomalainen
+	name = Mikaela Suomalainen
 	email = mkaysi@outlook.com
-	signingkey = 0x4DB53CFE82A46728
+	signingkey = 0xDAA6CA08F2E96AC7
