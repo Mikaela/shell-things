@@ -5,6 +5,7 @@ cat tmux.conf > ~/.tmux.conf
 cat zshrc > ~/.zshrc
 cat gitconfig > ~/.gitconfig
 cat vimrc > ~/.vimrc
+cat oidentd.conf > ~/.oidentd.conf
 mkdir -p ~/.gnupg
 cat gpg.conf > ~/.gnupg/gpg.conf
 cat gpg-agent.conf > ~/.gnupg/gpg-agent.conf
