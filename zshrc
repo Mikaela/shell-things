@@ -421,6 +421,10 @@ alias fcorepattern='echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf
 # ffmpeg is depreceated
 alias ffmpeg=avconv
 
+# inxi  https://code.google.com/p/inxi/
+alias inxi-install="cd ~/.local/bin && \wget -Nc smxi.org/inxi && chmod +x inxi && cd"
+alias inxi-update="inxi -U"
+
 
 # .aliases
 if [ -f ~/.aliases ]; then
