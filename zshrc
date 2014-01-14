@@ -176,9 +176,8 @@ alias youtube-dl="youtube-dl -t"
 alias gdrop="git stash && git stash drop"
 #alias gitk="gitg" # Requires gitg . I just think that it looks nicer than gitk. # MKAYSIGREP MKAYSIGREPALIAS
 
-# Why I must write "weechat-curses" to start it?
-alias weechat="weechat-curses"
-alias weechat-version="weechat-curses --help|head -n2"
+# Show compilation date of WeeChat.
+alias weechat-version="weechat --help|head -n2"
 
 #NMAP specific. All nmap things should be run as root, so it's probably best to copy these aliases to root's .zshrc. Things which don't run without root ask for sudo password.
 alias nmap-intense="nmap -T4 -A -v -PE -PS22,25,80 -PA21,23,80,3389 "
