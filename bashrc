@@ -215,6 +215,10 @@ fi
 export SSH_AUTH_SOCK=/tmp/$USER.agent
 ssh-agent -a /tmp/$USER.agent > /dev/null 2>&1
 
+# In our series useless/weird environment variables, beep
+beep=
+BEEP=
+
 #####   Aliases                     RJ706I  #####
 
 # To get sudo work with aliases.

@@ -158,6 +158,10 @@ if [[ $UNAME = "Darwin" && $USER = "root" ]]; then
 fi
 # The above requires at least Mountain Lion.
 
+# In our series useless/weird environment variables, beep
+beep=
+BEEP=
+
 #####   Aliases                     RJ706I  #####
 
 # To get sudo work with aliases.
