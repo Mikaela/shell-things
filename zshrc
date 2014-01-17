@@ -27,7 +27,7 @@ zstyle ':vcs_info:*' formats '%b '
 precmd() { vcs_info }
 
 PS1="%B%(!.%F{red}.%F{green})%n@%m %~
-%(?..%B%?%b )%f%b %#"
+%# %(?..%B%?%b )%f%b"
 
 setopt histignorealldups sharehistory 
 
