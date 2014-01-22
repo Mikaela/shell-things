@@ -215,6 +215,10 @@ fi
 export SSH_AUTH_SOCK=/tmp/$USER.agent
 ssh-agent -a /tmp/$USER.agent > /dev/null 2>&1
 
+# In our series useless/weird environment variables, beep
+beep=
+BEEP=
+
 #####   Aliases                     RJ706I  #####
 
 # To get sudo work with aliases.
@@ -236,9 +240,8 @@ alias gdrop="git stash && git stash drop"
 # If I run nautilus, I want it to open in folder where I am.
 #alias nautilus="nautilus ./"
 
-# Why I must write "weechat-curses" to start it?
-alias weechat="weechat-curses"
-alias weechat-version="weechat-curses --help|head -n2"
+#SHow compilation date of WeeChat.
+alias weechat-version="weechat --help|head -n2"
 
 #NMAP specific. All nmap things should be run as root, so it's probably best to copy these aliases to root's .bashrc. Things which don't run without root ask for sudo password.
 alias nmap-intense="nmap -T4 -A -v -PE -PS22,25,80 -PA21,23,80,3389 "
@@ -447,6 +450,12 @@ alias fcorepattern='echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf
 
 # ffmpeg is depreceated
 alias ffmpeg=avconv
+
+# inxi  https://code.google.com/p/inxi/
+alias inxi-install="mkdir -p ~/.local/bin && cd ~/.local/bin && \wget -Nc smxi.org/inxi && chmod +x inxi && cd"
+alias inxi-install-root="cd /usr/local/bin && \wget -Nc smxi.org/inxi && chmod +x inxi && cd"
+alias inxi-update="inxi -U"
+
 
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 

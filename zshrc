@@ -158,6 +158,10 @@ if [[ $UNAME = "Darwin" && $USER = "root" ]]; then
 fi
 # The above requires at least Mountain Lion.
 
+# In our series useless/weird environment variables, beep
+beep=
+BEEP=
+
 #####   Aliases                     RJ706I  #####
 
 # To get sudo work with aliases.
@@ -176,9 +180,8 @@ alias youtube-dl="youtube-dl -t"
 alias gdrop="git stash && git stash drop"
 #alias gitk="gitg" # Requires gitg . I just think that it looks nicer than gitk. # MKAYSIGREP MKAYSIGREPALIAS
 
-# Why I must write "weechat-curses" to start it?
-alias weechat="weechat-curses"
-alias weechat-version="weechat-curses --help|head -n2"
+# Show compilation date of WeeChat.
+alias weechat-version="weechat --help|head -n2"
 
 #NMAP specific. All nmap things should be run as root, so it's probably best to copy these aliases to root's .zshrc. Things which don't run without root ask for sudo password.
 alias nmap-intense="nmap -T4 -A -v -PE -PS22,25,80 -PA21,23,80,3389 "
@@ -420,6 +423,11 @@ alias fcorepattern='echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf
 
 # ffmpeg is depreceated
 alias ffmpeg=avconv
+
+# inxi  https://code.google.com/p/inxi/
+alias inxi-install="mkdir -p ~/.local/bin && cd ~/.local/bin && \wget -Nc smxi.org/inxi && chmod +x inxi && cd"
+alias inxi-install-root="cd /usr/local/bin && \wget -Nc smxi.org/inxi && chmod +x inxi && cd"
+alias inxi-update="inxi -U"
 
 
 # .aliases
