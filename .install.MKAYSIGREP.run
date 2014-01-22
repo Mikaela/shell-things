@@ -12,6 +12,7 @@ cat .environment.MKAYSIGREP > ~/.environment
 cat .gitconfig.MKAYSIGREP > ~/.gitconfig
 mkdir -p ~/.ssh
 cat .keys/ssh > ~/.ssh/authorized_keys
+cat Xdefaults > ~/.Xdefaults
 gpg --quiet --import .keys/0x4DB53CFE82A46728.asc&
 gpg --quiet --import .keys/0xDAA6CA08F2E96AC7.asc&
 mkdir -p ~/.public_html/

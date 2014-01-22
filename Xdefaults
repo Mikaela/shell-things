@@ -1,0 +1,9 @@
+!Debian package: rxvt-unicode-256color
+URxvt*background: #000000
+URxvt*foreground: #ffffff
+URxvt*termName: rxvt-256color
+URxvt.scrollBar: false
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+URxvt.perl-ext-common: ...,tabbed,...
