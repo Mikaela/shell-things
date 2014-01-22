@@ -8,6 +8,13 @@ UNAME=`uname`
 # uname should be readable in $uname 
 uname=`uname`
 
+# enable terminal bell
+
+if [ -f /usr/bin/xset ];
+then
+    xset b on
+fi
+
 #####   Defaults etc...             M0TZLS  #####
 
 # This is based on zshrc which came with Debian (Third option in wizard for new users.)

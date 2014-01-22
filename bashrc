@@ -10,6 +10,13 @@ echo "if [ -f ~/.bashrc ]; then
     source ~/.bashrc
 fi" > ~/.bash_profile
 
+# enable terminal bell
+
+if [ -f /usr/bin/xset ];
+then
+    xset b on
+fi
+
 #####   Defaults etc...             M0TZLS  #####
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
