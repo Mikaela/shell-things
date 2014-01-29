@@ -166,8 +166,8 @@ fi
 # The above requires at least Mountain Lion.
 
 # In our series useless/weird environment variables, beep
-beep=
-BEEP=
+export beep=
+export BEEP=
 
 #####   Aliases                     RJ706I  #####
 
