@@ -35,5 +35,5 @@ and contain modifications which might not be useful to other people than me.
 
 .install.MKAYSIGREP.run is installation for them.
 
-**WARNING: .install.MKAYSIGREP.run  INSTALLS MY PUBLIC SSH KEY AND AUTHORIZES
+**WARNING: .install.MKAYSIGREP.run  INSTALLS MY PUBLIC SSH KEYS AND AUTHORIZES
 ME TO CONNECT TO YOUR SSH SERVER! DO NOT RUN IT!**
