@@ -465,7 +465,7 @@ alias inxi-update="inxi -U"
 
 # Local pip installations ( improvised from https://stackoverflow.com/questions/2915471/install-a-python-package-into-a-different-directory-using-pip )
 alias lpip="pip install --install-option=--prefix=$HOME/.local"
-
+alias lpip3="pip3 install --install-option=--prefix=$HOME/.local"
 
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
