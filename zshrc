@@ -436,6 +436,8 @@ alias inxi-install="mkdir -p ~/.local/bin && cd ~/.local/bin && \wget -Nc smxi.o
 alias inxi-install-root="cd /usr/local/bin && \wget -Nc smxi.org/inxi && chmod +x inxi && cd"
 alias inxi-update="inxi -U"
 
+# Local pip installations ( improvised from https://stackoverflow.com/questions/2915471/install-a-python-package-into-a-different-directory-using-pip )
+alias lpip="pip install --install-option=--prefix=$HOME/.local"
 
 # .aliases
 if [ -f ~/.aliases ]; then
