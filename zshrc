@@ -433,7 +433,7 @@ alias ffmpeg=avconv
 
 # inxi  https://code.google.com/p/inxi/
 alias inxi-install="mkdir -p ~/.local/bin && cd ~/.local/bin && \wget -Nc smxi.org/inxi && chmod +x inxi && cd"
-alias inxi-install-root="cd /usr/local/bin && \wget -Nc smxi.org/inxi && chmod +x inxi && ./inxi -U && cd"
+alias inxi-install-root="cd /usr/local/bin;\wget -Nc smxi.org/inxi;chmod +x inxi;./inxi -U && cd"
 alias inxi-update="inxi -U"
 
 # Local pip installations ( improvised from https://stackoverflow.com/questions/2915471/install-a-python-package-into-a-different-directory-using-pip )
