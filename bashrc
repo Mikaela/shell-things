@@ -349,6 +349,7 @@ alias ssh-add="\ssh-add -D && \ssh-add "
 
 # For userspecific installation of mosh on remote server.
 alias lmosh="mosh --server=~/.local/bin/mosh-server "
+alias lmosha="mosh --server=~/.local/bin/mosh-server-alt "
 
 # Secure cat
 alias scat="gpg --decrypt "
