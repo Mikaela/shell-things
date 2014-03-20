@@ -319,7 +319,7 @@ alias ssh-add="\ssh-add -D && \ssh-add "
 
 # For locally installed mosh on remote server.
 alias lmosh="mosh --server=~/.local/bin/mosh-server "
-lmosha="mosh --server=~/.local/bin/mosh-server-alt "
+alias lmosha="mosh --server=~/.local/bin/mosh-server-alt "
 
 # Allow custom aliases to be put in .aliases or .zsh_aliases .
 
