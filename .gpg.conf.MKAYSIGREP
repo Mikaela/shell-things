@@ -2,7 +2,8 @@
 # Copyright 1998, 1999, 2000, 2001, 2002, 2003,
 #           2010 Free Software Foundation, Inc.
 #           2012,
-#           2013 Mika Suomalainen (Mkaysi) https://raw.github.com/Mkaysi/shell-things/master/gpg.conf
+#           2013,
+#           2014 Mikaela Suomalainen (Mkaysi) https://raw.github.com/Mkaysi/shell-things/master/gpg.conf
 # This file is free software; as a special exception the author gives
 # unlimited permission to copy and/or distribute it, with or without
 # modifications, as long as this notice is preserved.
@@ -24,20 +25,18 @@
 # This is one of the most used keyservers as far as I know.
 keyserver hkps://hkps.pool.sks-keyservers.net
 keyserver-options ca-cert-file=~/.gnupg/sks-keyservers.netCA.pem auto-key-retrieve no-include-revoked verbose no-honor-keyserver-url import-clean
-# Note to self: import-clean = delete signatures from unknown keys || import-minimal = remove all signatures from keys.
-
 
 # Try to automatically find keys from keyserver if key for email address isn't found, but we are encrypting to email address.
 auto-key-locate keyserver
 
 # Use my key by default
-default-key 0xDAA6CA08F2E96AC7
+default-key 0x0C207F07B2F32B67 
 
 # Encrypt to sender's key by default
 default-recipient-self
 
 # Always encrypt to my key
-encrypt-to 0xDAA6CA08F2E96AC7 # MKAYSIGREP MKAYSIGREPGPG
+encrypt-to 0x0C207F07B2F32B67 
 
 # Use UTF-8 charset
 charset UTF-8
@@ -48,6 +47,8 @@ use-agent
 
 # Do everything in ASCII format by default instead of binary
 armor
+
+# Note to self: import-clean = delete signatures from unknown keys || import-minimal = remove all signatures from keys.
 
 personal-cipher-preferences AES256,AES192,AES,CAST5,3DES
 personal-digest-preferences SHA512,SHA384,SHA256,SHA224,RIPEMD160,SHA1,MD5
@@ -63,8 +64,6 @@ digest-algo SHA512
 compress-algo BZIP2
 
 no-allow-non-selfsigned-uid
-default-sig-expire 0
-
 allow-multiple-messages
 
 # Show the LONG KEYID and fingerprint by default and tell that it's hexadecimal string.
@@ -100,18 +99,9 @@ verify-options show-uid-validity
 list-options show-uid-validity
 
 # Add comments to things signed/encrypted by gpg
-comment Homepage: http://mkaysi.github.io/
-comment Public key: http://mkaysi.github.io/PGP/0xF2E96AC7.txt
-comment gpg --fetch-keys http://mkaysi.github.io/PGP/0xF2E96AC7.txt
-comment Fingerprint = 2BE0 B660 BF31 C8F9 3FA0  FEB8 DAA6 CA08 F2E9 6AC7
-comment How/Why I send emails like I do http://adf.ly/MnBa4
-comment How to not verify my signature http://adf.ly/MnBqm
+comment Homepage: http://mkaysi.github.io/ 
+comment Public key: http://mkaysi.github.io/PGP/0xB2F32B67.txt 
+comment gpg --fetch-keys http://mkaysi.github.io/PGP/0xB2F32B67.txt 
+comment Fingerprint = 2910 4A46 C561 5BF9 78A0 83F2 0C20 7F07 B2F3 2B67
 #uncomment if someone complains about information behind above link without reading it
 #comment ^^ explains why my signature is long and how you can hide it
-
-# Contacts / Groups
-# PGPNET
-group PGPNET=0x9CC6C4F03F370F7E 0x028ADF7453B04B15 0x4FA0BC023E154674 0x321E4E2373590E5D 0xC8B9B8C9DAC006F7 0xE045FE37AD62C09F 0x3BF4412249A850DC 0xB511FEE3DD86C24F 0x206C38805E0E5C42 0x013680AC643DD559 0xE0E9DD26F1D99755 0x82121A454319410E 0x41B0346260D02095 0x6874B04B6A0687B0 0xED845FEEA602AAB7 0x83C6A66F46914B32 0xCE462071331D023F 0xF1B011DC0365833F 0xD3C7FB49081383FA 0xBB0F603E6691CBDF 0x5D57C386564C4A09 0xC110784A111831BE 0xA8A90B8EAD0C6E69 0x4DB53CFE82A46728 0xB6ABE088B62E904D 0x2353DCC8E13CDF84 0x034FD3C3BAD41583 0x82CDBDAB82A8E763 0xF4E1C6A18013408D 0x797DFD70917B1BF0 0x5F11CD9291FD8F51 0xC021F18A9A135171 0x86511A36FE79D2D4 0x0EBB8286E8A253BA 0x7D618792A3E069DE 0x9B6B50F3CBF0F0D3 0xF010498E5AECF89B 0xB96EAA54B5D84CE0 0x0AB32D6916E2E31D 0x0B6ED1FFDD271AEC 
-
-# TouchLay Server Adminstrators
-group TLSA=0x4DB53CFE82A46728 0x0BD622288449A12B 0x729DF464666CC0DD 0xCACC5B094EC00206
