@@ -441,6 +441,10 @@ alias inxi-update="inxi -U"
 alias lpip="pip install --install-option=--prefix=$HOME/.local"
 alias lpip3="pip3 install --install-option=--prefix=$HOME/.local"
 
+# FINEID
+alias ssh-add-sc="ssh-add -s /usr/lib/opensc-pkcs11.so"
+alias ssh-add-sc-pub="ssh-add -L"
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
