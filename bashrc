@@ -482,6 +482,14 @@ pkcs11so=`locate opensc-pkcs11.so`
 alias ssh-add-sc="ssh-add -s $opensc-pkcs11.so"
 alias ssh-add-sc-pub="ssh-add -L"
 
+# apt in Ubuntu 14.04+ and other distributions
+
+if [ -f /usr/bin/apt ]; then
+    alias aptitude=apt
+    alias apt-get=apt
+    alias apt-cache=apt
+fi
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
