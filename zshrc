@@ -463,6 +463,12 @@ if [ -f /usr/bin/apt ]; then
     alias apt-cache=apt
 fi
 
+# Same as the previous, but for yum --> dnf
+
+if [ -f /usr/bin/dnf ]; then
+    alias yum=dnf
+fi
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
