@@ -218,12 +218,12 @@ if [[ $UNAME = "Darwin" && $USER = "root" ]]; then
 fi
 # The above requires at least Mountain Lion.
 
-# If we are on Linux, enable apt process bar.
+# If we are on Linux, enable apt progress bar and colours
 if [[ $USER = "root" ]]; then
     mkdir -p /etc/apt/apt.conf.d/
     echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
+    echo 'APT::Color "1";' > /etc/apt/apt.conf.d/99color
 fi
-
 
 # Copied from http://homepages.see.leeds.ac.uk/~eeaol/notes/2012/03/how_to_only_type_ssh_passphrase_once/
 export SSH_AUTH_SOCK=/tmp/$USER.agent

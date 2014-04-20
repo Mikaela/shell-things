@@ -164,10 +164,11 @@ if [[ $UNAME = "Darwin" && $USER = "root" ]]; then
      defaults write /Library/Preferences/com.apple.SoftwareUpdate ScheduleFrequency 1
 fi
 
-# If we are on Linux, enable apt process bar.
+# If we are on Linux, enable apt progress bar and colours
 if [[ $USER = "root" ]]; then
     mkdir -p /etc/apt/apt.conf.d/
     echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
+    echo 'APT::Color "1";' > /etc/apt/apt.conf.d/99color
 fi
 
 # The above requires at least Mountain Lion.
