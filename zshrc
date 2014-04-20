@@ -447,8 +447,8 @@ alias inxi-install-root="cd /usr/local/bin;\wget -Nc smxi.org/inxi;chmod +x inxi
 alias inxi-update="inxi -U"
 
 # Local pip installations ( improvised from https://stackoverflow.com/questions/2915471/install-a-python-package-into-a-different-directory-using-pip )
-alias lpip="pip install --install-option=--prefix=$HOME/.local"
-alias lpip3="pip3 install --install-option=--prefix=$HOME/.local"
+alias lpip="pip --install-option=--prefix=$HOME/.local"
+alias lpip3="pip3 --install-option=--prefix=$HOME/.local"
 
 # FINEID
 pkcs11so=`locate opensc-pkcs11.so`
