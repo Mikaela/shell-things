@@ -163,6 +163,13 @@ fi
 if [[ $UNAME = "Darwin" && $USER = "root" ]]; then
      defaults write /Library/Preferences/com.apple.SoftwareUpdate ScheduleFrequency 1
 fi
+
+# If we are on Linux, enable apt process bar.
+if [[ $USER = "root" ]]; then
+    mkdir -p /etc/apt/apt.conf.d/
+    echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
+fi
+
 # The above requires at least Mountain Lion.
 
 # In our series useless/weird environment variables, beep
