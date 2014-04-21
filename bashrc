@@ -453,7 +453,7 @@ alias rss=reset
 # Who command which I use with Conky
 alias cwho="who -H -w -u"
 
-# Upgrading Redhad/Debian
+# Upgrading Redhat/Debian
 alias yumyup="yum -y check-update;yum -y update;grub2-mkconfig -o /boot/grub2/grub.cfg"
 alias apt-getyup="apt-get -y update;apt-get -y upgrade;update-grub"
 alias aptitudeyup="aptitude -y update;aptitude -y upgrade;update-grub"
@@ -462,6 +462,8 @@ alias aptyup="apt -y update;apt -y upgrade;update-grub"
 alias apty="apt -y"
 alias apt-gety="apt-get -y "
 alias aptitudey="aptitude -y "
+
+#alias aptitude='"You might want to try apt-* instead...' #MKAYSIGREP #MKAYSIGREPALIAS
 
 # Set core pattern how I want it to be
 alias fcorepattern='echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf;sysctl -f'
