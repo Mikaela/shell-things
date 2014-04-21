@@ -7,5 +7,5 @@ alias proxychains="proxychains " # MKAYSIGREP # MKAYSIGREPALIAS
 alias checkinstall="make install " # MKAYSIGREP # MKAYSIGREPALIAS
 alias gpg=gpg2 # MKAYSIGREP # MKAYSIGREPALIAS
 alias wget="echo Running curl -LO instead of wget && curl -LO " # MKAYSIGREP # MKAYSIGREPALIAS
-alias aptitude='echo "You might want to try apt-* instead..."' #MKAYSIGREP #MKAYSIGREPALIAS
+#alias aptitude='echo "You might want to try apt-* instead..."' #MKAYSIGREP #MKAYSIGREPALIAS
 
