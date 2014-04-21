@@ -222,6 +222,7 @@ fi
 if [[ $USER = "root" ]]; then
     mkdir -p /etc/apt/apt.conf.d/
     echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
+    echo 'DPkgPM::Progress-Fancy "1";' >> /etc/apt/apt.conf.d/99progressbar
     echo 'APT::Color "1";' > /etc/apt/apt.conf.d/99color
 fi
 
