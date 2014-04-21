@@ -463,7 +463,7 @@ alias apty="apt -y"
 alias apt-gety="apt-get -y "
 alias aptitudey="aptitude -y "
 
-#alias aptitude='"You might want to try apt-* instead...' #MKAYSIGREP #MKAYSIGREPALIAS
+#alias aptitude='echo "You might want to try apt-* instead..."' #MKAYSIGREP #MKAYSIGREPALIAS
 
 # Set core pattern how I want it to be
 alias fcorepattern='echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf;sysctl -f'
