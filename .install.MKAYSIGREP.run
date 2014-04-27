@@ -14,6 +14,8 @@ cat .gitconfig.MKAYSIGREP > ~/.gitconfig
 mkdir -p ~/.ssh
 cat .keys/ssh > ~/.ssh/authorized_keys
 cat Xdefaults > ~/.Xdefaults
+mkdir -p ~/.inxi
+cat inxi.conf > ~/.inxi/inxi.conf
 gpg --quiet --import .keys/0x4DB53CFE82A46728.asc&
 gpg --quiet --import .keys/0xDAA6CA08F2E96AC7.asc&
 gpg --quiet --import .keys/0x0C207F07B2F32B67.asc&
