@@ -194,7 +194,10 @@ alias pyenv-install="cd ~;git clone https://github.com/yyuu/pyenv.git $PYENV_ROO
 PATH=$PYENV_ROOT/bin:$HOME/.local/bin:$HOME/.local/sbin:$HOME/.local/games:$HOME/bin:$HOME/sbin:$HOME/games:$HOME/tmcbeans/bin:/opt/local/bin:/opt/local/sbin:/opt/local/games:/usr/local/bin:/usr/local/sbin:/usr/local/games:/bin:/sbin:/games:/usr/bin:/usr/sbin:/usr/games:$PATH
 
 # Apply pyenv changes.
-eval "$(pyenv init -)"
+
+if [ -d "$PYENV_ROOT" ]; then
+    eval "$(pyenv init -)"
+fi
 
 # "Changes" home directory without root. Uncomment both lines below this.
 #export HOME=<path to new home>
