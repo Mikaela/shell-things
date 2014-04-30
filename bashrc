@@ -506,6 +506,9 @@ if [ -f /usr/bin/dnf ]; then
     alias yum=dnf
 fi
 
+# Homebrew
+alias homebrew-install="mkdir -p ~/.local;cd ~/.local;git clone https://github.com/homebrew/homebrew.git;mkdir -p $HOME/.local/share/man/man1;ln -sf $HOME/.local/homebrew/bin/brew $HOME/.local/bin/brew;ln -sf $HOME/.local/homebrew/share/man/man1/brew.1 $HOME/.local/share/man/man1/brew.1;cd"
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
