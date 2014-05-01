@@ -497,6 +497,9 @@ fi
 # Homebrew
 alias homebrew-install="mkdir -p ~/.local/bin;cd ~/.local;git clone https://github.com/Homebrew/homebrew.git;mkdir -p $HOME/.local/share/man/man1;ln -sf $HOME/.local/homebrew/bin/brew $HOME/.local/bin/brew;ln -sf $HOME/.local/homebrew/share/man/man1/brew.1 $HOME/.local/share/man/man1/brew.1;cd"
 
+# OS X Server
+alias os-x-caching-interface="serveradmin settings caching:Interface ="
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases

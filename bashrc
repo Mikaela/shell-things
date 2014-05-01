@@ -5,7 +5,7 @@ UNAME=`uname`
 #   Aliases                     RJ706I
 #   Functions                   ZGC5QQ
 
-# For Mac OS X + SSH sessions. bashrc must be sourced by hand at least once.
+# For OS X + SSH sessions. bashrc must be sourced by hand at least once.
 echo "if [ -f ~/.bashrc ]; then
     source ~/.bashrc
 fi" > ~/.bash_profile
@@ -522,6 +522,9 @@ fi
 
 # Homebrew
 alias homebrew-install="mkdir -p ~/.local/bin;cd ~/.local;git clone https://github.com/Homebrew/homebrew.git;mkdir -p $HOME/.local/share/man/man1;ln -sf $HOME/.local/homebrew/bin/brew $HOME/.local/bin/brew;ln -sf $HOME/.local/homebrew/share/man/man1/brew.1 $HOME/.local/share/man/man1/brew.1;cd"
+
+# OS X Server
+alias os-x-caching-interface="serveradmin settings caching:Interface ="
 
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
