@@ -254,6 +254,10 @@ ssh-agent -a /tmp/$USER.agent > /dev/null 2>&1
 export beep=
 export BEEP=
 
+# OS X ls colours (copied from https://apple.stackexchange.com/questions/33677/how-can-i-configure-mac-terminal-to-have-color-ls-output )
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
 #####   Aliases                     RJ706I  #####
 
 # To get sudo work with aliases.

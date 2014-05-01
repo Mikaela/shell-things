@@ -193,6 +193,10 @@ fi
 export beep=
 export BEEP=
 
+# OS X ls colours (copied from https://apple.stackexchange.com/questions/33677/
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
 #####   Aliases                     RJ706I  #####
 
 # To get sudo work with aliases.
