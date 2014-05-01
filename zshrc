@@ -83,8 +83,13 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 hostname
 uptime
 echo ""
+
 if [[ $UNAME != Darwin  ]] then;
     who -H -w -u
+fi
+
+if [[ $UNAME = Darwin ]]; then
+    who -H -u
 fi
 
 #####   Environment                 7RS56S  #####
@@ -298,6 +303,11 @@ alias egrep='egrep --color=always'
 # some more ls aliases
 if [[ "$UNAME" != "Darwin" ]]; then
     alias ll='ls -alFh --color=always' && alias la='ls -A --color=always' && alias l='ls -CF --color=always'
+fi
+
+if [[ $UNAME = Darwin ]]; then
+    alias ll="ls -alFH"
+    alias l="ls -CF"
 fi
 
 # Add an "alert" alias for long running commands.  Use like so:

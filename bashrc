@@ -115,6 +115,11 @@ if [[ $UNAME != Darwin ]]; then
     alias ll='ls -alFh --color=always' && alias la='ls -A --color=always' && alias l='ls -CF --color=always'
 fi
 
+if [[ $UNAME = Darwin ]]; then
+    alias ll="ls -alFH"
+    alias l="ls -CF"
+fi
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -144,6 +149,10 @@ uptime
 echo ""
 if [[ $UNAME != Darwin ]]; then
     who -H -w -u
+fi
+
+if [[ $UNAME = Darwin ]]; then
+    who -H -u
 fi
 
 #####   Environment                 7RS56S  #####
