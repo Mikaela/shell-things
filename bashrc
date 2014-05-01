@@ -116,6 +116,7 @@ if [[ $UNAME != Darwin ]]; then
 fi
 
 if [[ $UNAME = Darwin ]]; then
+    alias ls="ls -Gp"
     alias ll="ls -alFHGp"
     alias l="ls -CFGp"
 fi
