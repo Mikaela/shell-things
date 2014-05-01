@@ -116,8 +116,8 @@ if [[ $UNAME != Darwin ]]; then
 fi
 
 if [[ $UNAME = Darwin ]]; then
-    alias ll="ls -alFH"
-    alias l="ls -CF"
+    alias ll="ls -alFHGp"
+    alias l="ls -CFGp"
 fi
 
 # Add an "alert" alias for long running commands.  Use like so:

@@ -9,6 +9,8 @@ GROUP=`id -gn`
 
 wwwdata=`head -n1 wwwuser`
 
+setfacl=`locate setfacl|grep bin|head -n1`
+
 echo "Denying Reading, Writing and eXecuting from other users in"
 echo "your home directory $HOME ."
 echo ""
@@ -44,16 +46,18 @@ echo ""
 chmod a+r-wx,u+rw ~/.face
 chmod a+r-wx,u+rw ~/.forward
 
-echo "Setting access lists. This requires package acl to be installed"
-echo "and kernel support for it and mount point being mounted with option"
-echo "acl"
-echo ""
+if [[ -f $setfacl ]]; then
+    echo "Setting access lists. This requires package acl to be installed"
+    echo "and kernel support for it and mount point being mounted with option"
+    echo "acl"
+    echo ""
 
 setfacl -R -m u:$wwwdata:rwx ~/public_html 
 setfacl -R -m d:u:$wwwdata:rwx ~/public_html 
+fi
 
 if [ -f chmod.2 ]; then
     ./chmod.2
-    fi
+fi
 
 echo "Everything is now done :)"
