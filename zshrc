@@ -86,10 +86,14 @@ echo ""
 
 if [[ $UNAME != Darwin  ]] then;
     who -H -w -u
+    echo ""
+    last -10 -w -x
 fi
 
 if [[ $UNAME = Darwin ]]; then
     who -H -u
+    echo ""
+    last -10
 fi
 
 #####   Environment                 7RS56S  #####
