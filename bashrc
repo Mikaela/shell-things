@@ -263,6 +263,12 @@ export BEEP=
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
+# make
+export NPROC=`nproc`
+export MAKEFLAGS="-j$NPROC"
+export MAKE="make $MAKEFLAGS"
+alias make="make $MAKEFLAGS"
+
 #####   Aliases                     RJ706I  #####
 
 # To get sudo work with aliases.
