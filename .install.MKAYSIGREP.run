@@ -26,4 +26,5 @@ cat chmod > ~/chmod
 cat wwwuser > ~/wwwuser
 chmod a+xr ~/chmod
 chmod a+r ~/wwwuser
+touch ~/.MKAYSIGREP
 # vim : set ft=sh :

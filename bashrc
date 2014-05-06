@@ -644,6 +644,55 @@ function gribble-gpg-everify() {
     rm -rf bitcoin_otc.txt bitcoin_otc.txt.asc
 }
 
+# This function will install/upgrade shell-things.
+
+function shell-things {
+
+export SHELL_THINGS_REPO=$HOME/.shell-things
+export MKAYSIGREP=$HOME/.MKAYSIGREP
+
+# Check if ~/.shell-things exists and cd and pull.
+if [ -d $SHELL_THINGS_REPO ]; then
+    echo "shell-things: $SHELL_THINGS_REPO exists, git pulling..."
+    echo ""
+    cd $SHELL_THINGS_REPO
+    git pull
+    echo ""
+    echo "shell-things: Installing/Upgrading..."
+    echo ""
+# If it doesn't exist...
+else
+    echo ""
+    echo "shell-things: $SHELL_THINGS_REPO doesn't exist, cloning..."
+    echo ""
+    git clone https://github.com/Mkaysi/shell-things.git $SHELL_THINGS_REPO
+    cd $SHELL_THINGS_REPO
+    echo ""
+    echo "shell-things: Installing/Upgrading..."
+    echo ""
+fi
+
+# Installing...
+./install.run
+echo ""
+echo "shell-things: Installing finished."
+echo ""
+
+#If ~/.MKAYSIGREP exists, run that script too...
+if [ -f "$MKAYSIGREP" ]; then
+    echo "MKAYSIGREP has been used previously, Installing/Upgrading."
+    ./.install.MKAYSIGREP.run
+fi
+
+echo ""
+echo "shell-things: Everthing is now done :)"
+echo ""
+
+cd
+
+}
+
+
 # .custom
 if [ -f ~/.custom ]; then
     source ~/.custom
