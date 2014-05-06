@@ -202,7 +202,12 @@ export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 # make
-export NPROC=`nproc`
+if [[ $UNAME != Darwin ]]; then
+    export NPROC=`nproc`
+else
+    export NPROC=`sysctl -n hw.cpu`
+fi
+
 export MAKEFLAGS="-j$NPROC"
 export MAKE="make $MAKEFLAGS"
 alias make="make $MAKEFLAGS"
