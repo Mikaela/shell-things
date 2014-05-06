@@ -205,7 +205,7 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 if [[ $UNAME != Darwin ]]; then
     export NPROC=`nproc`
 else
-    export NPROC=`sysctl -n hw.cpu`
+    export NPROC=`sysctl -n hw.ncpu`
 fi
 
 export MAKEFLAGS="-j$NPROC"
