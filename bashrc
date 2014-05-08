@@ -119,6 +119,7 @@ if [[ $UNAME = Darwin ]]; then
     alias ls="ls -Gp"
     alias ll="ls -alFHGp"
     alias l="ls -CFGp"
+    alias ssh-add="\ssh-add -D && \ssh-add -K"
 fi
 
 # Add an "alert" alias for long running commands.  Use like so:
@@ -390,7 +391,9 @@ alias KILL="killall -KILL "
 alias rsync-folder="rsync -h --progress -azvv "
 
 # SSHGuard seems to prefer users to run this always when connecting with keys in ssh-agent...
-alias ssh-add="\ssh-add -D && \ssh-add "
+if [[ $UNAME != Darwin ]]; then
+    alias ssh-add="\ssh-add -D && \ssh-add "
+fi
 
 # Use GPG2 instead of GPG!
 # alias gpg=gpg2 # MKAYSIGREP # MKAYSIGREPALIAS
