@@ -531,7 +531,7 @@ fi
 alias homebrew-install="mkdir -p ~/.local/bin;cd ~/.local;git clone https://github.com/Homebrew/homebrew.git;mkdir -p $HOME/.local/share/man/man1;ln -sf $HOME/.local/homebrew/bin/brew $HOME/.local/bin/brew;ln -sf $HOME/.local/homebrew/share/man/man1/brew.1 $HOME/.local/share/man/man1/brew.1;cd"
 
 # OS X Server
-alias os-x-server-caching-interface="serveradmin settings caching:Interface ="
+alias osx-server-caching-interface="serveradmin settings caching:Interface ="
 
 # Simple HTTPd with Python.
 alias python2-httpd="python -m SimpleHTTPServer"
