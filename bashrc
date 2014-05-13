@@ -700,6 +700,40 @@ cd
 
 }
 
+# This function will download and install sources.list.
+
+function ubuntu-sources-list-install {
+
+export RELEASE=`lsb_release -sr`
+a[1]="http://mkaysi.github.io/shell-things/sources.list/$RELEASE"
+
+echo "I am now changing directory to /etc/apt/."
+echo ""
+cd /etc/apt/
+
+echo "I will now backup sources.list to sources.list.bak ."
+echo ""
+cp /etc/apt/sources.list /etc/apt/sources.list.bak
+
+echo "I will now download the sources.list file from https://mkaysi.github.io/shell-things/sources.list/$RELEASE and save it as /etc/apt/sources.list ."
+echo ""
+echo "" > /etc/apt/sources.list
+\wget ${a[1]} -O /etc/apt/sources.list
+#\curl -L ${a[1]} >> /etc/apt/sources.list
+
+echo ""
+echo "The new sources.list file should now be installed."
+echo ""
+
+echo "Finally, I will now run 'apt-get -y update' so the new sources.list is used."
+echo ""
+
+apt-get update
+
+echo "I have now finished everything that I was supposed to do."
+
+}
+
 
 # .custom
 if [ -f ~/.custom ]; then
