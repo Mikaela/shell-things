@@ -518,6 +518,10 @@ alias homebrew-install="mkdir -p ~/.local/bin;cd ~/.local;git clone https://gith
 # OS X Server
 alias os-x-server-caching-interface="serveradmin settings caching:Interface ="
 
+# Simple HTTPd with Python.
+alias python2-httpd="python -m SimpleHTTPServer"
+alias python3-httpd="python -m http.server"
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
