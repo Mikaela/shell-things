@@ -233,17 +233,6 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 UNAME=`uname`
 CPUARCH=`uname -p`
 
-# If we are on Mac, show hidden files in Finder and enable AirDrop over Ethernet and on unsupported (by Apple) Macs
-if [ $UNAME = "Darwin" ]; then
-     defaults write com.apple.finder AppleShowAllFiles TRUE &&  defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
-fi
-
-# If we are on Mac, set update check interval to 1 day
-if [[ $UNAME = "Darwin" && $USER = "root" ]]; then
-    defaults write /Library/Preferences/com.apple.SoftwareUpdate ScheduleFrequency 1
-fi
-# The above requires at least Mountain Lion.
-
 # If we are on Linux, enable apt progress bar and colours
 if [[ $USER = "root" ]]; then
     mkdir -p /etc/apt/apt.conf.d/
@@ -752,6 +741,38 @@ if [[ -f /usr/bin/nodejs && ! -f /usr/bin/node && ! -f /usr/local/bin/node && ! 
     ln -s /usr/bin/nodejs $HOME/.local/bin/node
 fi
 
+}
+
+# Show hidden files in OS X.
+
+function osx-show-hidden-files {
+if [ "$1" = "TRUE" ] || ["$1" = 1 ] ; then
+    $USERCHOICE = "TRUE"
+else
+    $USERCHOICE = 0
+fi
+
+defaults write com.apple.finder AppleShowAllFiles $USERCHOICE
+echo "defaults write com.apple.finder AppleShowAllFiles $USERCHOICE"
+}
+
+# Enable AirDrop on unsupported Macs + Ethernet.
+
+function osx-airdrop-listenall {
+if [ "$1" = "TRUE" ] || ["$1" = 1 ] ; then
+    $USERCHOICE = "TRUE"
+else
+    $USERCHOICE = 0
+fi
+
+defaults write com.apple.NetworkBrowser BrowseAllInterfaces $USERCHOICE
+echo "defaults write com.apple.NetworkBrowser BrowseAllInterfaces $USERCHOICE"
+}
+
+# Check the time how often updates are checked on OS X.
+function osx-set-updatecheck {
+defaults write /Library/Preferences/com.apple.SoftwareUpdate ScheduleFrequency $1
+echo "defaults write /Library/Preferences/com.apple.SoftwareUpdate ScheduleFrequency $1"
 }
 
 # .custom
