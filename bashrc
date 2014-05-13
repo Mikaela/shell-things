@@ -746,12 +746,6 @@ fi
 # Show hidden files in OS X.
 
 function osx-show-hidden-files {
-if [ "$1" = "TRUE" ] || ["$1" = 1 ] ; then
-    $USERCHOICE = "TRUE"
-else
-    $USERCHOICE = 0
-fi
-
 defaults write com.apple.finder AppleShowAllFiles $USERCHOICE
 echo "defaults write com.apple.finder AppleShowAllFiles $USERCHOICE"
 }
@@ -759,12 +753,6 @@ echo "defaults write com.apple.finder AppleShowAllFiles $USERCHOICE"
 # Enable AirDrop on unsupported Macs + Ethernet.
 
 function osx-airdrop-listenall {
-if [ "$1" = "TRUE" ] || ["$1" = 1 ] ; then
-    $USERCHOICE = "TRUE"
-else
-    $USERCHOICE = 0
-fi
-
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces $USERCHOICE
 echo "defaults write com.apple.NetworkBrowser BrowseAllInterfaces $USERCHOICE"
 }
