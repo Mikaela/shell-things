@@ -530,8 +530,11 @@ fi
 # Homebrew
 alias homebrew-install="mkdir -p ~/.local/bin;cd ~/.local;git clone https://github.com/Homebrew/homebrew.git;mkdir -p $HOME/.local/share/man/man1;ln -sf $HOME/.local/homebrew/bin/brew $HOME/.local/bin/brew;ln -sf $HOME/.local/homebrew/share/man/man1/brew.1 $HOME/.local/share/man/man1/brew.1;cd"
 
-# OS X Server
+# OS X
 alias osx-server-caching-interface="serveradmin settings caching:Interface ="
+alias osx-show-hidden-files="defaults write com.apple.finder AppleShowAllFiles"
+alias osx-airdrop-listenallif="defaults write com.apple.NetworkBrowser BrowseAllInterfaces"
+alias osx-set-updatecheck="defaults write /Library/Preferences/com.apple.SoftwareUpdate ScheduleFrequency"
 
 # Simple HTTPd with Python.
 alias python2-httpd="python -m SimpleHTTPServer"
@@ -741,26 +744,6 @@ if [[ -f /usr/bin/nodejs && ! -f /usr/bin/node && ! -f /usr/local/bin/node && ! 
     ln -s /usr/bin/nodejs $HOME/.local/bin/node
 fi
 
-}
-
-# Show hidden files in OS X.
-
-function osx-show-hidden-files {
-defaults write com.apple.finder AppleShowAllFiles $USERCHOICE
-echo "defaults write com.apple.finder AppleShowAllFiles $USERCHOICE"
-}
-
-# Enable AirDrop on unsupported Macs + Ethernet.
-
-function osx-airdrop-listenall {
-defaults write com.apple.NetworkBrowser BrowseAllInterfaces $USERCHOICE
-echo "defaults write com.apple.NetworkBrowser BrowseAllInterfaces $USERCHOICE"
-}
-
-# Check the time how often updates are checked on OS X.
-function osx-set-updatecheck {
-defaults write /Library/Preferences/com.apple.SoftwareUpdate ScheduleFrequency $1
-echo "defaults write /Library/Preferences/com.apple.SoftwareUpdate ScheduleFrequency $1"
 }
 
 # .custom
