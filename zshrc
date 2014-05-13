@@ -505,7 +505,7 @@ alias homebrew-install="mkdir -p ~/.local/bin;cd ~/.local;git clone https://gith
 
 # OS X
 alias osx-server-caching-interface="serveradmin settings caching:Interface ="
-lias osx-show-hidden-files="defaults write com.apple.finder AppleShowAllFiles"
+alias osx-show-hidden-files="defaults write com.apple.finder AppleShowAllFiles"
 alias osx-airdrop-listenallif="defaults write com.apple.NetworkBrowser BrowseAllInterfaces"
 alias osx-set-updatecheck="defaults write /Library/Preferences/com.apple.SoftwareUpdate ScheduleFrequency"
 
