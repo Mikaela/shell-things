@@ -1,39 +1,46 @@
 # What is this?
 
-This is collection of files which I prefer to have everywhere.
+This repository has my rc-files other things that I want to have everywhere.
 
 ## Where does the name "shell-things" come from? / History
 
-In the beginning this repository was only GitHub gist and contained only two files,
-bashrc. Then I moved to zsh and abandoned .bashrc. Some time after that I got need for
-having both files so I merged them into shell-things. At some point there came many
-other files from which some aren't related to shells, but I don't want to rename it.
+In the beginning this repository was only GitHub gist and contained only 
+two files, bashrc. 
+
+Then I moved to zsh and abandoned .bashrc. 
+
+Some time after that I got need for having both files so I merged them 
+into shell-things. At some point there came many other files from which 
+some aren't related to shells, but I don't want to rename it.
+
+And why would I rename this? shell-things name is more unique than dotfiles 
+and this has been shell-things for years.
 
 ## How do I use this?
 
-Just read the files and copy-paste some things which you need or run the install.run file.
+
+### How you should use this.
+
+The best way to use files things like this is to read them and copy-paste 
+the things that look useful to you to your own files.
+
+### How you will most likely use this.
+
+If you are lazy or want to copy me as much as possible, you will install 
+git, curl and wget if you don't have them already and run
 
 ```
-./install.run
+wget https://mkaysi.github.io/shell-things/shell-things.bash
+source shell-things.bash
+shell-things
+source ~/.`echo $SHELL|cut -d/ -f3`rc
 ```
 
-<b>WARNING: install.run CAN CAUSE DATA LOSS BY OVERWRITING EVERYTHING WHAT IT ADDS!</b>
+To upgrade, simply run `shell-things`.
 
-## Can I share this
+#### How I use this.
 
-Yes. If you take something from these files, you can freely redistribute it even without mentioning the source.  I am trying to mention original sources in these files.
+As I know everything that is in this repository, I simply do the above.
 
-## What are .something.MKAYSIGREP files?
-
-They are outputs of
-
-```
-grep <file> MKAYSIGREP
-```
-
-and contain modifications which might not be useful to other people than me.
-
-.install.MKAYSIGREP.run is installation for them.
-
-**WARNING: .install.MKAYSIGREP.run  INSTALLS MY PUBLIC SSH KEYS AND AUTHORIZES
-ME TO CONNECT TO YOUR SSH SERVER! DO NOT RUN IT!**
+I know everything that is in this file and how it affects my environment 
+and I want it, so I can do that.
