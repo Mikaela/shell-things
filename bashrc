@@ -732,26 +732,24 @@ echo "I have now finished everything that I was supposed to do."
 
 # This function fixes nodejs on Debian based systems.
 # (Everything expects nodejs to be called as node, but it's not with Debian.)
-function fix-node {
-
-if [[ $USER = "root" && -f /usr/bin/nodejs && ! -f /usr/bin/node && ! -f /usr/local/bin/node ]] then;
-    ln -s /usr/bin/nodejs /usr/local/bin/node
-fi
-
-mkdir -p $HOME/.local/bin
-
-if [[ -f /usr/bin/nodejs && ! -f /usr/bin/node && ! -f /usr/local/bin/node && ! -f $HOME/.local/bin/node ]] then;
-    ln -s /usr/bin/nodejs $HOME/.local/bin/node
-fi
-
+fix-node () {
+        if [[ $USER = "root" && -f /usr/bin/nodejs && ! -f /usr/bin/node && ! -f /usr/local/bin/node ]]
+        then
+                ln -s /usr/bin/nodejs /usr/local/bin/node
+        fi
+        mkdir -p $HOME/.local/bin
+        if [[ -f /usr/bin/nodejs && ! -f /usr/bin/node && ! -f /usr/local/bin/node && ! -f $HOME/.local/bin/node ]]
+        then
+                ln -s /usr/bin/nodejs $HOME/.local/bin/node
+        fi
 }
 
 # .custom
 if [ -f ~/.custom ]; then
     source ~/.custom
-    fi
+fi
 
 # .bash_custom
 if [ -f ~/.bash_custom ]; then
     source ~/.bash_custom
-    fi
+fi
