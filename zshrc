@@ -482,7 +482,7 @@ alias inxi-install-root="cd /usr/local/bin;\wget -Nc smxi.org/inxi;chmod +x inxi
 alias inxi-update="inxi -U"
 
 # FINEID
-pkcs11so=`locate opensc-pkcs11.so`
+pkcs11so=`find /usr/*lib -name 'opensc-pkcs11.so' 2>/dev/null`
 alias ssh-add-sc="ssh-add -s $pkcs11so"
 alias ssh-add-sc-pub="ssh-add -L"
 
