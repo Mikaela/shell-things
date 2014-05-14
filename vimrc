@@ -85,3 +85,15 @@ set fileencoding=utf-8
 " Remove BOMs. They broke things yesterday nd now they wasted my time
 " at school! via http://techwelkin.com/how-to-remove-byte-order-mark-bom-characters
 set nobomb
+
+" Copied from https://github.com/ProgVal/misc/blob/master/dotfiles/.vimrc
+set autoindent
+set softtabstop=4
+filetype plugin indent on
+
+" Return to last edit position when opening files (You want this!)
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
+" End of copied from https://raw.githubusercontent.com/ProgVal/misc/master/dotfiles/.vimrc
