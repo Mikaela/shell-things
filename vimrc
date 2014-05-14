@@ -71,3 +71,17 @@ set visualbell
 if has('gui_running')
     set background=light
 endif
+
+" Show hidden characters via http://www.perturb.org/display/679_Make_Vim_show_hidden_characters.html
+set invlist
+
+"Prefer to UNIX line endings, but understand DOS too.
+set fileformats=unix,dos
+
+"Use UTF-8!
+set encoding=utf-8
+set fileencoding=utf-8
+
+" Remove BOMs. They broke things yesterday nd now they wasted my time
+" at school! via http://techwelkin.com/how-to-remove-byte-order-mark-bom-characters
+set nobomb
