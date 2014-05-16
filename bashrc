@@ -261,6 +261,7 @@ else
 fi
 
 export MAKEFLAGS="-j$NPROC"
+export MAKE_OPTS="$MAKEFLAGS"
 alias make="make $MAKEFLAGS"
 
 #####   Aliases                     RJ706I  #####
