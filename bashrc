@@ -404,7 +404,7 @@ alias http.debian.net="curl -sL http://http.debian.net/debian/project/trace/|pan
 alias gpg-key-amount="gpg --list-keys|grep '^pub'|wc -l"
 alias gpg-key-count="gpg --export -a|gpg --import"
 
-alias follow="tail -f "
+alias follow="tail -F"
 
 #myip shows current IP. This was a function.
 alias myip="curl -s http://icanhazip.com"
