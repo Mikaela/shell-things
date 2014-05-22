@@ -540,6 +540,14 @@ alias osx-set-updatecheck="defaults write /Library/Preferences/com.apple.Softwar
 alias python2-httpd="python -m SimpleHTTPServer"
 alias python3-httpd="python -m http.server"
 
+# Resetting different desktop environments
+alias reset-gnome="rm -rf ~/.gnome ~/.gnome2 ~/.gconf ~/.gconfd ~/.metacity ~/.cache ~/.dbus ~/.dmrc ~/.mission-control ~/.thumbnails ~/.config/dconf/user ~/.compiz*"
+alias reset-unity="If you get error about command not found, please install 'unity-tweak-tool';unity-tweak-tool --reset-unity"
+alias reset-kde="rm -rf ~/.kde4 ~/.kde"
+alias reset-lxpanel="rm -rf ~/.config/lxpanel;lxpanelctl restart"
+alias reset-xfce4="rm -rf ~/.config/xfce4"
+alias reset-matepanel="mate-panel --reset"
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
