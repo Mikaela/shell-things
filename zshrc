@@ -214,7 +214,6 @@ alias youtube-dl="youtube-dl -t"
 
 # git specific. This is the command which I use when git asks me to commit something and says that I have modified files, even when I haven't.
 alias gdrop="git stash && git stash drop"
-#alias gitk="gitg" # Requires gitg . I just think that it looks nicer than gitk. # MKAYSIGREP MKAYSIGREPALIAS
 
 # Show compilation date of WeeChat.
 alias weechat-version="weechat --help|head -n2"
@@ -232,14 +231,6 @@ alias nmap-regular="nmap "
 alias nmap-comprehensive="sudo nmap -sS -sU -T4 -A -v -PE -PP -PS21,22,23,25,80,113,31339 -PA80,113,443,10042 -PO --script all " 
 # Little "safer" scan as connecting to only HTTP and HTTPS ports doesn't look so attacking. Copy-paste to .zsh_custom and remove  " -p 80,443" if you want to scan all ports which nmap scans by default.
 alias nmap-osscan="sudo nmap -p 80,443 -O -v --osscan-guess --fuzzy "
-#alias netcat="ncat " # MKAYSIGREP # MKAYSIGREPALIAS
-
-# Tor (The Onion Router) specific.
-#alias usewithtor="proxychains " # MKAYSIGREP MKAYSIGREPALIAS
-#alias torsocks="proxychains " # MKAYSIGREP MKAYSIGREPALIAS
-
-# This should allow aliases to work with proxychains. 
-#alias proxychains="proxychains " # MKAYSIGREP MKAYSIGREPALIAS
 
 # Downloads folder over SSH. Usage: rdownload <host>:<remotefolder> <local_destination> | TIP: use ~/ssh/config to configure hosts.
 alias rdownload="rsync -h --progress -avz "
@@ -253,9 +244,6 @@ alias tmux="tmux -u"
 
 # I am always typoing "aptitude" with my phone...
 alias aptitute="aptitude "
-
-# This is the checkinstall rule which I like to use.
-#alias checkinstall="make install " # MKAYSIGREP MKAYSIGREPALIAS
 
 # The Battle for Wesnoth specific, http://wesnoth.org/
 # It seems to be an good idea to have debug logs on terminal with svn version.
@@ -381,9 +369,6 @@ alias myip="curl -s http://icanhazip.com"
 alias myip4="curl -s4 http://icanhazip.com"
 alias myip6="curl -s6 http://icanhazip.com"
 
-# Curl instead of wget with warning
-#alias wget="echo Running curl -LO instead of wget && curl -LO " # MKAYSIGREP # MKAYSIGREPALIAS
-
 # Update groups without logging out. Requires entering password. Source: http://blog.edwards-research.com/2010/10/linux-refresh-group-membership-without-logging-out/
 alias refreshgroups="exec su -l $USER"
 
@@ -465,8 +450,6 @@ alias aptyup="apt -y update;apt -y upgrade;update-grub"
 alias apt-gety="apt-get -y "
 alias aptitudey="aptitude -y "
 alias apty="apt -y"
-
-#alias aptitude='echo "You might want to try apt-* instead..."' #MKAYSIGREP #MKAYSIGREPALIAS
 
 # Set core pattern how I want it to be
 alias fcorepattern='echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf;sysctl -f'
