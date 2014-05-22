@@ -542,7 +542,7 @@ alias python3-httpd="python -m http.server"
 
 # Resetting different desktop environments
 alias reset-gnome="rm -rf ~/.gnome ~/.gnome2 ~/.gconf ~/.gconfd ~/.metacity ~/.cache ~/.dbus ~/.dmrc ~/.mission-control ~/.thumbnails ~/.config/dconf/user ~/.compiz*"
-alias reset-unity="If you get error about command not found, please install 'unity-tweak-tool';unity-tweak-tool --reset-unity"
+alias reset-unity="unity-tweak-tool --reset-unity"
 alias reset-kde="rm -rf ~/.kde4 ~/.kde"
 alias reset-lxpanel="rm -rf ~/.config/lxpanel;lxpanelctl restart"
 alias reset-xfce4="rm -rf ~/.config/xfce4"
