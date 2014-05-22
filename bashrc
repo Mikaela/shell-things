@@ -1,4 +1,4 @@
-UNAME=`uname`
+UNAME=$(uname)
 # TOC
 #   Defaults etc...             M0TZLS
 #   Environment                 7RS56S
@@ -230,8 +230,8 @@ export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
 
 # Sets environment variable CPUARCH to output of "uname -p" & UNAME to "uname"
-UNAME=`uname`
-CPUARCH=`uname -p`
+UNAME=$(uname)
+CPUARCH=$(uname -p)
 
 # If we are on Linux, enable apt progress bar and colours
 if [[ $USER = "root" ]]; then
@@ -255,9 +255,9 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 # make
 if [[ $UNAME != Darwin ]]; then
-    export NPROC=`nproc`
+    export NPROC=$(nproc)
 else
-    export NPROC=`sysctl -n hw.ncpu`
+    export NPROC=$(sysctl -n hw.ncpu)
 fi
 
 export MAKEFLAGS="-j$NPROC"
@@ -509,7 +509,7 @@ alias inxi-install-root="cd /usr/local/bin;\wget -Nc smxi.org/inxi;chmod +x inxi
 alias inxi-update="inxi -U"
 
 # FINEID
-pkcs11so=`find /usr/*lib -name 'opensc-pkcs11.so' 2>/dev/null`
+pkcs11so=$(find /usr/*lib -name 'opensc-pkcs11.so' 2>/dev/null)
 alias ssh-add-sc="ssh-add -s $opensc-pkcs11.so"
 alias ssh-add-sc-pub="ssh-add -L"
 
@@ -572,7 +572,7 @@ function downforme() {
 	then
 		echo -e "${YELLOW}usage:${NC} downforme website_url"
 	else
-		JUSTYOUARRAY=(`lynx -dump http://downforeveryoneorjustme.com/$1 | grep -o "It's just you"`)
+JUSTYOUARRAY=($(lynx -dump http://downforeveryoneorjustme.com/$1 | grep -o "It's just you"))
 		if [ ${#JUSTYOUARRAY} != 0 ]
 		then
 			echo -e "${RED}It's just you. \n${NC}$1 is up."
@@ -700,7 +700,7 @@ cd
 
 function ubuntu-sources-list-install {
 
-export RELEASE=`lsb_release -sr`
+export RELEASE=$(lsb_release -sr)
 a[1]="http://mkaysi.github.io/shell-things/sources.list/$RELEASE"
 
 echo "I am now changing directory to /etc/apt/."
