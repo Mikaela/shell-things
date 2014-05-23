@@ -2,8 +2,6 @@ before_install:
     - yes|sudo apt-add-repository ppa:unit193/inxi
     - sudo apt-get -y update
     - sudo apt-get -y install bash zsh tmux git inxi gnupg2
-    - sudo wget -Nc smxi.org/inxi -O /usr/local/bin/inxi
-    - sudo chmod +x /usr/local/bin/inxi
 install:
     - ./install.run
     - ./.install.MKAYSIGREP.run
@@ -14,7 +12,7 @@ script:
     - gpg --version
     - vim -c quit
     - inxi --recommends
-    - inxi
+    - inxi -F
     - gpg2 --refresh-keys
 notifications:
     on_success: never
