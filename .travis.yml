@@ -8,9 +8,7 @@ install:
 script:
     - bash ~/.bashrc
     - zsh ~/.zshrc
-    - tmux -c exit
     - gpg --version
-    - vim -c quit
     - inxi --recommends
     - inxi -F
     - gpg2 --refresh-keys
