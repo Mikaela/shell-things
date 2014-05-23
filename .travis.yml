@@ -1,5 +1,5 @@
 before_install:
-    - sudo apt-add-repository ppa:unit193/inxi
+    - yes|sudo apt-add-repository ppa:unit193/inxi
     - sudo apt-get -y update
     - sudo apt-get -y install bash zsh tmux git inxi gnupg-curl
     - sudo wget -Nc smxi.org/inxi -O /usr/local/bin/inxi
