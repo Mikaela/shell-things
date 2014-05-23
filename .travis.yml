@@ -1,6 +1,6 @@
 before_install:
     - sudo apt-get -y update
-    - sudo apt-get -y install bash zsh tmux git lspci gnupg-curl
+    - sudo apt-get -y install bash zsh tmux git pciutils gnupg-curl
     - sudo wget -Nc smxi.org/inxi -O /usr/local/bin/inxi
     - sudo chmod +x /usr/local/bin/inxi
 install:
