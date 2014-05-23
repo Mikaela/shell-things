@@ -1,12 +1,17 @@
 before_install:
     - sudo apt-get -y update
-    - sudo apt-get -y install bash zsh tmux git
+    - sudo apt-get -y install bash zsh tmux git inxi
 install:
     - ./install.run
     - ./.install.MKAYSIGREP.run
 script:
     - bash ~/.bashrc
     - zsh ~/.zshrc
+    - tmux -c exit
+    - gpg --version
+    - vim -c quit
+    - inxi
+    - gpg --refresh-keys
 notifications:
     on_success: never
     on_failure: never
