@@ -146,19 +146,19 @@ fi
 #shopt -s autocd
 
 # Show the hostname, uptime and users logged in on shell start
-hostname
-uptime
-echo ""
+(hostname&)
+(uptime&)
+(echo "")
 if [[ $UNAME != Darwin ]]; then
-    who -H -w -u|head -n10
-    echo ""
-    last -10 -w -x
+    (who -H -w -u|head -n10&)
+    (echo "")
+    (last -10 -w -x&)
 fi
 
 if [[ $UNAME = Darwin ]]; then
-    who -H -u|head -n10
-    echo ""
-    last -10
+    (who -H -u|head -n10&)
+    (echo "")
+    (last -10&)
 fi
 
 #####   Environment                 7RS56S  #####
