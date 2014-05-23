@@ -1,0 +1,9 @@
+before_install:
+    - sudo apt-get -y update
+    - sudo apt-get -y install bash zsh tmux git
+script:
+    - bash ./bashrc
+    - zsh ./zshrc
+notifications:
+    on_success: never
+    on_failure: never
