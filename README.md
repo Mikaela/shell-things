@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Mkaysi/shell-things.svg?branch=master)](https://travis-ci.org/Mkaysi/shell-things)
+
 # What is this?
 
 This repository has my rc-files other things that I want to have everywhere.
