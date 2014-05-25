@@ -20,4 +20,4 @@
 	#email = mikaela.suomalainen@outlook.com
 	#signingkey = 0xDAA6CA08F2E96AC7
 [push]
-	default = simple
+	default = current
