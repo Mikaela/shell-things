@@ -21,3 +21,5 @@
 	#signingkey = 0xDAA6CA08F2E96AC7
 [push]
 	default = current
+[branch]
+	autosetupmerge = always
