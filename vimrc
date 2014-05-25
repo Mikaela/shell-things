@@ -97,3 +97,6 @@ autocmd BufReadPost *
      \   exe "normal! g`\"" |
      \ endif
 " End of copied from https://raw.githubusercontent.com/ProgVal/misc/master/dotfiles/.vimrc
+
+" If we have tabs, remove them
+retab
