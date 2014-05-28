@@ -375,6 +375,7 @@ fi
 
 # Use GPG2 instead of GPG!
 # alias gpg=gpg2 # MKAYSIGREP # MKAYSIGREPALIAS
+alias gpg-fix-tty='export GPG_TTY=$(tty)'
 
 # For userspecific installation of mosh on remote server.
 alias lmosh="mosh --server=~/.local/bin/mosh-server "

@@ -336,6 +336,8 @@ fi
 
 # Use GPG2 instead of GPG!
 #alias gpg=gpg2 # MKAYSIGREP MKAYSIGREPALIAS
+alias gpg-fix-tty='export GPG_TTY=$(tty)'
+
 # ZSH doesn't currently include automatic completion for GPG2, 
 # so use the GPG one, which works with GPG2 too. This is in aliases, 
 # because that above alias needs this and this will disappear when zsh 
