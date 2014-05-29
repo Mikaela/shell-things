@@ -14,7 +14,7 @@ fi" > ~/.bash_profile
 
 if [ -f /usr/bin/xset ];
 then
-    xset b on
+    (xset b on&)
 fi
 
 #####   Defaults etc...             M0TZLS  #####
@@ -32,17 +32,6 @@ HISTCONTROL=ignoredups
 
 # append to the history file, don't overwrite it
 shopt -s histappend
-
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-export HISTSIZE=
-export HISTFILESIZE=
-
-export HISTTIMEFORMAT='%F %T '
-
-HISTFILE=~/.history
-export APPEND_HISTORY=
-export SHARE_HISTORY=
-
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -177,8 +166,7 @@ if [ -f ~/.bash_environment ]; then
 fi
 
 # Enable core files.
-ulimit -c unlimited
-
+(ulimit -c unlimited&)
 
 # More colours :D
 if [[ $TERM == 'xterm' ]]; then
@@ -188,7 +176,6 @@ fi
 if [[ $TERM == 'screen' ]]; then             
 export TERM=screen-256color              
 fi
-
 
 # Things after this are just examples and should be put to some other file, which is sourced above.
 
@@ -243,7 +230,7 @@ fi
 
 # Copied from http://homepages.see.leeds.ac.uk/~eeaol/notes/2012/03/how_to_only_type_ssh_passphrase_once/
 export SSH_AUTH_SOCK=/tmp/$USER.agent
-ssh-agent -a /tmp/$USER.agent > /dev/null 2>&1
+(ssh-agent -a /tmp/$USER.agent > /dev/null 2>&1&)
 
 # In our series useless/weird environment variables, beep
 export beep=
@@ -308,9 +295,9 @@ alias rscp='rsync -h --progress -avz '
 alias rscpr='rsync -h --progress -azvv '
 
 # TMUX specific
-alias attach="tmux -u attach-session"
-alias detach="tmux -u detach"
 alias tmux="tmux -u"
+alias attach="tmux attach-session"
+alias detach="tmux detach"
 
 # I am always typoing "aptitude" with my phone...
 alias aptitute="aptitude "

@@ -12,7 +12,7 @@ UNAME=$(uname)
 
 if [ -f /usr/bin/xset ];
 then
-    xset b on
+    (xset b on&)
 fi
 
 #####   Defaults etc...             M0TZLS  #####
@@ -36,24 +36,8 @@ precmd() { vcs_info }
 PS1="%B%(!.%F{red}.%F{green})%n@%m %~
 %# %(?..%B%?%b )%f%b"
 
-setopt histignorealldups sharehistory 
-
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
-
-HISTCONTROL=ignoredups
-export HISTSIZE=9999999999
-export HISTFILESIZE=99999999999
-export HISTTIMEFORMAT='%F %T '
-export HISTFILE=~/.zsh_history
-
-HISTSIZE=9999999999
-if (( ! EUID )); then
-  HISTFILE=~/.history_root
-else
-  HISTFILE=~/.history
-fi
-SAVEHIST=9999999999
 
 # Use modern completion system
 autoload -Uz compinit
@@ -117,7 +101,7 @@ if [ -f ~/.zshenv ]; then
 fi
 
 # Enable core files.
-ulimit -c unlimited
+(ulimit -c unlimited&)
 
 
 #More colours 
@@ -239,9 +223,9 @@ alias rscp='rsync -h --progress -avz '
 alias rscpr='rsync -h --progress -azvv '
 
 # TMUX specific
-alias attach="tmux -u attach-session"
-alias detach="tmux -u detach"
 alias tmux="tmux -u"
+alias attach="tmux attach-session"
+alias detach="tmux detach"
 
 # I am always typoing "aptitude" with my phone...
 alias aptitute="aptitude "
