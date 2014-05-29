@@ -415,8 +415,8 @@ alias move=mv # MSDOS
 
 # List git committers of repository
 alias git-committers="git shortlog -s"
-alias git-changelog="git changelog --oneline --decorate"
-alias git-changelog-color="git changelog --oneline --decorate --color"
+alias git-changelog="git log --oneline --decorate"
+alias git-changelog-color="git log --oneline --decorate --color"
 
 # Line ending converting with flip
 alias unixle="flip -ub "
