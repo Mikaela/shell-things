@@ -196,6 +196,9 @@ alias pyenv-install-alt="cd ~;git clone https://github.com/yyuu/pyenv.git $PYENV
 # Sets PATH. To add another path, add :</path/to/new/path> to string below. 
 PATH=$PYENV_ROOT/shims:$PYENV_ROOT/bin:$HOME/.local/bin:$HOME/.local/sbin:$HOME/.local/games:$HOME/bin:$HOME/sbin:$HOME/games:$HOME/tmcbeans/bin:/opt/local/bin:/opt/local/sbin:/opt/local/games:/usr/local/bin:/usr/local/sbin:/usr/local/games:/bin:/sbin:/games:/usr/bin:/usr/sbin:/usr/games:$PATH
 
+# Removes duplicates from $PATH. Copied from http://unix.stackexchange.com/a/14896
+PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++')
+
 # Apply pyenv changes.
 
 if [ -d "$PYENV_ROOT" ]; then
