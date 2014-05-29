@@ -6,6 +6,7 @@
 
 # uname should be readable in $uname 
 uname=$(uname)
+UNAME=$(uname)
 
 # enable terminal bell
 
