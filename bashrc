@@ -531,6 +531,10 @@ alias reset-lxpanel="rm -rf ~/.config/lxpanel;lxpanelctl restart"
 alias reset-xfce4="rm -rf ~/.config/xfce4"
 alias reset-matepanel="mate-panel --reset"
 
+# Show date in ISO 8601 format
+alias isodate='date "+%Y-%m-%d %H:%M:%S%z"'
+alias isodateu='date -u "+%Y-%m-%d %H:%M:%S%z"'
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
