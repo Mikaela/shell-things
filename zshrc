@@ -182,10 +182,6 @@ else
     export NPROC=$(sysctl -n hw.ncpu)
 fi
 
-export MAKEFLAGS="-j$NPROC"
-export MAKE_OPTS="$MAKEFLAGS"
-alias make="make $MAKEFLAGS"
-
 #####   Aliases                     RJ706I  #####
 
 # To get sudo work with aliases.
