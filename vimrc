@@ -99,4 +99,6 @@ autocmd BufReadPost *
 " End of copied from https://raw.githubusercontent.com/ProgVal/misc/master/dotfiles/.vimrc
 
 " If we have tabs, remove them
-retab
+if has("autocmd") 
+    au BufReadPost * if &modifiable | retab | endif 
+endif 
