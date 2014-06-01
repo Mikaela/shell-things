@@ -1,23 +1,23 @@
 [alias]
-	# From https://github.com/blog/985-git-io-github-url-shortener#comment-15121
-	shorten = "!sh -c 'curl -i http://git.io -F url=$1' -"
-	# From http://progit.org/book/ch2-7.html
-	last = cat-file commit HEAD
+    # From https://github.com/blog/985-git-io-github-url-shortener#comment-15121
+    shorten = "!sh -c 'curl -i http://git.io -F url=$1' -"
+    # From http://progit.org/book/ch2-7.html
+    last = cat-file commit HEAD
 [core]
-	#editor = vim 
+    #editor = vim 
 [color]
-	# From git manpage and http://book.git-scm.com/5_customizing_git.html
-	branch = true
-	diff = true
-	grep = true
-	interactive = true
-	pager = true
-	showbranch = true
-	status = true
-	ui = true
+    # From git manpage and http://book.git-scm.com/5_customizing_git.html
+    branch = true
+    diff = true
+    grep = true
+    interactive = true
+    pager = true
+    showbranch = true
+    status = true
+    ui = true
 [user]
-	#name = Mikaela Suomalainen
-	#email = mikaela.suomalainen@outlook.com
-	#signingkey = 0xDAA6CA08F2E96AC7
+    #name = Mikaela Suomalainen
+    #email = mikaela.suomalainen@outlook.com
+    #signingkey = 0xDAA6CA08F2E96AC7
 [push]
-	default = current
+    default = current
