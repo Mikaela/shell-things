@@ -500,6 +500,9 @@ alias reset-matepanel="mate-panel --reset"
 alias isodate='date "+%Y-%m-%d %H:%M:%S%z"'
 alias isodateu='date -u "+%Y-%m-%d %H:%M:%S%z"'
 
+# Show information on PEM file.
+alias peminfo="openssl x509 -text -in"
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
@@ -522,28 +525,28 @@ function cmdpkg() { PACKAGE=$(dpkg -S $(which $1) | cut -d':' -f1); echo "[${PAC
 
 # Down for everyone or just me? Copied from the ultimate bashrc http://goo.gl/qGK5j
 function downforme() {
-	RED='\e[1;31m'
-	GREEN='\e[1;32m'
-	YELLOW='\e[1;33m'
-	NC='\e[0m'
-	if [ $# = 0 ]
-	then
-		echo -e "${YELLOW}usage:${NC} downforme website_url"
-	else
+    RED='\e[1;31m'
+    GREEN='\e[1;32m'
+    YELLOW='\e[1;33m'
+    NC='\e[0m'
+    if [ $# = 0 ]
+    then
+        echo -e "${YELLOW}usage:${NC} downforme website_url"
+    else
 JUSTYOUARRAY=($(lynx -dump http://downforeveryoneorjustme.com/$1 | grep -o "It's just you"))
-		if [ ${#JUSTYOUARRAY} != 0 ]
-		then
-			echo -e "${RED}It's just you. \n${NC}$1 is up."
-		else
-			echo -e "${GREEN}It's not just you! \n${NC}$1 looks down from here."
-		fi
-	fi
+        if [ ${#JUSTYOUARRAY} != 0 ]
+        then
+            echo -e "${RED}It's just you. \n${NC}$1 is up."
+        else
+            echo -e "${GREEN}It's not just you! \n${NC}$1 looks down from here."
+        fi
+    fi
 }
 
 # Topt10 commands, copied from the ultimate bashrc http://goo.gl/qGK5j
 function top10() {
-	# copyright 2007 - 2010 Christopher Bratusek
-	history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head
+    # copyright 2007 - 2010 Christopher Bratusek
+    history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head
 }
 
 # ex command. Copied from zshrc of bioterror ( http://ricecows.org/configs/zsh/.zshrc ). Original comment below:
