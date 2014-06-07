@@ -181,6 +181,7 @@ if [[ $UNAME != Darwin ]]; then
 else
     export NPROC=$(sysctl -n hw.ncpu)
 fi
+alias maken="make -j$NPROC"
 
 #####   Aliases                     RJ706I  #####
 
