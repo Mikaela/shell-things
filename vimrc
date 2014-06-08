@@ -6,14 +6,14 @@ set nocompatible
 " Show syntax colours
 syntax on
 
-set showcmd		" Show (partial) command in status line.
-set showmatch		" Show matching brackets.
-set ignorecase		" Do case insensitive matching
-set smartcase		" Do smart case matching
-"set incsearch		" Incremental search
-set autowrite		" Automatically save before commands like :next and :make
+set showcmd     " Show (partial) command in status line.
+set showmatch       " Show matching brackets.
+set ignorecase      " Do case insensitive matching
+set smartcase       " Do smart case matching
+"set incsearch      " Incremental search
+set autowrite       " Automatically save before commands like :next and :make
 set hidden             " Hide buffers when they are abandoned
-"set mouse=a		" Enable mouse usage (all modes)
+"set mouse=a        " Enable mouse usage (all modes)
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
@@ -102,3 +102,21 @@ autocmd BufReadPost *
 if has("autocmd") 
     au BufReadPost * if &modifiable | retab | endif 
 endif 
+
+" dos2unix ^M copied from http://stackoverflow.com/a/5361702/1675649
+fun! Dos2unixFunction()
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    try
+        set ff=unix
+        w!
+        "%s/\%x0d$//e
+    catch /E32:/
+        echo "Sorry, the file is not saved."
+    endtry
+    let @/=_s
+    call cursor(l, c)
+endfun
+com! Dos2Unix keepjumps call Dos2unixFunction()
+au BufReadPost * keepjumps call Dos2unixFunction()
