@@ -1,19 +1,8 @@
 PATH=$PYENV_ROOT/shims:$PYENV_ROOT/bin:$HOME/.local/bin:$HOME/.local/sbin:$HOME/.local/games:$HOME/bin:$HOME/sbin:$HOME/games:$HOME/tmcbeans/bin:/opt/local/bin:/opt/local/sbin:/opt/local/games:/usr/local/bin:/usr/local/sbin:/usr/local/games:/bin:/sbin:/games:/usr/bin:/usr/sbin:/usr/games:$PATH
 
 # Sets environment variable CPUARCH to output of "uname -p" & UNAME to "uname"
-UNAME=`uname`
-CPUARCH=`uname -p`
-
-# If we are on Mac, show hidden files in Finder and enable AirDrop over Ethernet and on unsupported (by Apple) Macs
-if [ $UNAME = "Darwin" ]; then
-     defaults write com.apple.finder AppleShowAllFiles TRUE &&  defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
-fi
-
-# If we are on Mac, set update check interval to 1 day
-if [[ $UNAME = "Darwin" && $USER = "root" ]]; then
-    defaults write /Library/Preferences/com.apple.SoftwareUpdate ScheduleFrequency 1
-fi
-# The above requires at least Mountain Lion.
+UNAME=$(uname)
+CPUARCH=$(uname -p)
 
 # Use gpg-agent
 eval $(gpg-agent --daemon)
