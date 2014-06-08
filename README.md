@@ -1,8 +1,8 @@
-# What is this?
+## What is this?
 
 This repository has my rc-files other things that I want to have everywhere.
 
-## Where does the name "shell-things" come from? / History
+### Where does the name "shell-things" come from? / History
 
 In the beginning this repository was only GitHub gist and contained only 
 two files, bashrc. 
@@ -16,15 +16,15 @@ some aren't related to shells, but I don't want to rename it.
 And why would I rename this? shell-things name is more unique than dotfiles 
 and this has been shell-things for years.
 
-## How do I use this?
+### How do I use this?
 
 
-### How you should use this.
+#### How you should use this.
 
 The best way to use files things like this is to read them and copy-paste 
 the things that look useful to you to your own files.
 
-### How you will most likely use this.
+#### How you will most likely use this.
 
 If you are lazy or want to copy me as much as possible, you will install 
 git, curl and wget if you don't have them already and run
@@ -38,7 +38,7 @@ source ~/.`echo $SHELL|cut -d/ -f3`rc
 
 To upgrade, simply run `shell-things`.
 
-#### How I use this.
+##### How I use this.
 
 As I know everything that is in this repository, I simply do the above.
 

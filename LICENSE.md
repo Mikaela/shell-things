@@ -1,4 +1,5 @@
-Copyright (c) 2013,2014 Mikaela Suomalainen (Mkaysi) & contributors (git shortlog -s)
+Copyright (c) 2012-2014 Mikaela Suomalainen & contributors 
+(git shortlog -sne)
 
 All rights reserved.
 
