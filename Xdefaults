@@ -8,6 +8,6 @@ URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
 !URxvt.perl-ext-common: ...,tabbed,...
 !URxvt.urgentOnBell: True
-URxvt*font: xft:DejaVu Sans Mono:pixelsize=11:antialias=true:hinting=true, xft:unifont:pixelsize=11:antialias=true:hinting=true, xft:Andale Mono:pixelsize=11:antialias=true:hinting=true, xft:FontAwesome:pixelsize=11:antialias=true:hinting=true
+URxvt*font: xft:FontAwesome:pixelsize=11:antialias=true:hinting=true, xft:DejaVu Sans Mono:pixelsize=11:antialias=true:hinting=true, xft:unifont:pixelsize=11:antialias=true:hinting=true, xft:Andale Mono:pixelsize=11:antialias=true:hinting=true, 
 URxvt*boldFont: xft:DejaVu Sans Mono:bold:pixelsize=11:antialias=true:hinting=true
 URxvt.letterSpace: 0
