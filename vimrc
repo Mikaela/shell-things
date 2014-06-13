@@ -120,3 +120,9 @@ fun! Dos2unixFunction()
 endfun
 com! Dos2Unix keepjumps call Dos2unixFunction()
 au BufReadPost * keepjumps call Dos2unixFunction()
+
+" Copied from Edelwin: https://gist.github.com/Edelwin/ca9a819e5509f1ede2d7
+iab  #i #include
+iab  #z #!/usr/bin/env zsh
+iab  #p #!/usr/bin/env python3
+iab  #r #!/usr/bin/env ruby
