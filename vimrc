@@ -126,3 +126,7 @@ iab  #i #include
 iab  #z #!/usr/bin/env zsh
 iab  #p #!/usr/bin/env python3
 iab  #r #!/usr/bin/env ruby
+" end of copied from Edelwin
+iab #b #!/usr/bin/env bash
+iab #p2 #!/usr/bin/env python2
+iab #p3 #!/usr/bin/env python3
