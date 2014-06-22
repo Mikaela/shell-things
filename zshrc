@@ -708,6 +708,19 @@ fi
 
 }
 
+# This function fixes automatic startup in graphical sessions.
+# I have had issues with auto start not doing anything and this seems to 
+# fix it.
+fix-autostart() {
+    if [[ $USER = "root" ]]
+    then
+        mkdir -p /etc/xdg/autostart
+        chmod -R 755 /etc/xdg/autostart
+    fi
+    mkdir -p ~/.config/autostart
+    chmod -R 755 ~/.config/autostart
+}
+
 # Source files for miscannellious modifications.
 
 # .custom
