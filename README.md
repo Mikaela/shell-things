@@ -35,7 +35,7 @@ git, curl and wget if you don't have them already and run
 wget https://mkaysi.github.io/shell-things/shell-things.bash
 source shell-things.bash
 shell-things
-source ~/.`echo $SHELL|cut -d/ -f3`rc
+source ~/.$(echo $SHELL|cut -d/ -f3)rc
 ```
 
 To upgrade, simply run `shell-things`.
