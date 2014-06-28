@@ -535,6 +535,9 @@ alias isodateu='date -u "+%Y-%m-%d %H:%M:%S%z"'
 # Show information on PEM file.
 alias peminfo="openssl x509 -text -in"
 
+# tmux emergency attach
+alias tmuxeattach="/proc/$(pgrep -o tmux)/exe attach"
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
