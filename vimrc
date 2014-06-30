@@ -128,7 +128,3 @@ iab  #p #!/usr/bin/env python3
 iab  #r #!/usr/bin/env ruby
 " end of copied from Edelwin
 iab #b #!/usr/bin/env bash
-
-" The line after the link is copied from
-" http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
-set textwidth=72
