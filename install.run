@@ -21,7 +21,7 @@ gpg --quiet --import .keys/0xDAA6CA08F2E96AC7.asc&
 gpg --quiet --import .keys/0x0C207F07B2F32B67.asc&
 mkdir -p ~/.ssh
 chmod a+xr chmod
-./chmod& 2>/dev/null
+bash -x ./chmod& 2>/dev/null
 cat chmod > ~/chmod
 cat wwwuser > ~/wwwuser
 chmod a+xr ~/chmod

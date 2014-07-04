@@ -642,7 +642,7 @@ else
 fi
 
 # Installing...
-./install.run
+bash -x ./install.run
 echo ""
 echo "shell-things: Installing finished."
 echo ""
@@ -650,7 +650,7 @@ echo ""
 #If ~/.MKAYSIGREP exists, run that script too...
 if [ -f "$MKAYSIGREP" ]; then
     echo "MKAYSIGREP has been used previously, Installing/Upgrading."
-    ./.install.MKAYSIGREP.run
+    bash -x ./.install.MKAYSIGREP.run
 fi
 
 echo ""
