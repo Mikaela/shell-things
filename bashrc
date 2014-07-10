@@ -367,7 +367,8 @@ if [[ $UNAME != Darwin ]]; then
 fi
 
 # Use GPG2 instead of GPG!
-# alias gpg=gpg2 # MKAYSIGREP # MKAYSIGREPALIAS
+alias gpg=gpg2
+export KEYBASE_GPG=gpg2
 alias gpg-fix-tty='export GPG_TTY=$(tty)'
 
 # For userspecific installation of mosh on remote server.

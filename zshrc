@@ -326,7 +326,9 @@ if [[ $UNAME != Darwin ]]; then
 fi
 
 # Use GPG2 instead of GPG!
-#alias gpg=gpg2 # MKAYSIGREP MKAYSIGREPALIAS
+alias gpg=gpg2
+compdef gpg2=gpg
+export KEYBASE_GPG=gpg2
 alias gpg-fix-tty='export GPG_TTY=$(tty)'
 
 # ZSH doesn't currently include automatic completion for GPG2, 

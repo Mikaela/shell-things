@@ -1,3 +1,2 @@
 alias top="htop" # MKAYSIGREP # MKAYSIGREPALIAS
 alias gitk="gitg" # Requires gitg . I just think that it looks nicer than gitk. #MKAYSIGREP # MKAYSIGREPALIAS
-alias gpg=gpg2 # MKAYSIGREP # MKAYSIGREPALIAS
