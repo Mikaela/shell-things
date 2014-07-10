@@ -490,7 +490,7 @@ alias inxi-install-root="cd /usr/local/bin;\wget -Nc smxi.org/inxi;chmod +x inxi
 alias inxi-update="inxi -U"
 
 # FINEID
-alias ssh-add-sc="ssh-add -s $(find /usr/*lib -name 'opensc-pkcs11.so')"
+#alias ssh-add-sc="ssh-add -s $(find /usr/*lib -name 'opensc-pkcs11.so')"
 alias ssh-add-sc-pub="\ssh-add -L"
 
 ## apt in Ubuntu 14.04+ and other distributions
