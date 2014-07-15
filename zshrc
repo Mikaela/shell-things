@@ -508,6 +508,9 @@ alias peminfo="openssl x509 -text -in"
 # tmux emergency attach
 alias tmuxeattach="/proc/$(pgrep -o tmux)/exe attach"
 
+# Reset configuration files on systems using apt
+alias purgeconfig="apt-get install --reinstall -o DPkg::options::=--force-confask"
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
