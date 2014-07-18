@@ -487,8 +487,8 @@ alias osx-airdrop-listenallif="defaults write com.apple.NetworkBrowser BrowseAll
 alias osx-set-updatecheck="defaults write /Library/Preferences/com.apple.SoftwareUpdate ScheduleFrequency"
 
 # Simple HTTPd with Python.
-alias python2-httpd="python -m SimpleHTTPServer"
-alias python3-httpd="python -m http.server"
+alias python2-httpd="python2 -m SimpleHTTPServer"
+alias python3-httpd="python3 -m http.server"
 
 # Resetting different desktop environments
 alias reset-gnome="rm -rf ~/.gnome ~/.gnome2 ~/.gconf ~/.gconfd ~/.metacity ~/.cache ~/.dbus ~/.dmrc ~/.mission-control ~/.thumbnails ~/.config/dconf/user ~/.compiz*"
