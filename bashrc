@@ -262,8 +262,9 @@ alias ..="cd .."
 # Use htop instead of top, it's better. Requires htop.
 #alias top="htop" # MKAYSIGREP # MKAYSIGREPALIAS
 
-# Automaticly adds title to Youtube-dl when downloading videos with it. Requires youtube-dl.
+# Add title to youtube-dl & make yle-dl Windows-friendly
 alias youtube-dl="youtube-dl -t"
+alias yle-dl="yle-dl --vfat"
 
 # git specific. This is the command which I use when git asks me to commit something and says that I have modified files, even when I haven't.
 alias gdrop="git stash && git stash drop"
