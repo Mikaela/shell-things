@@ -512,6 +512,9 @@ alias tmuxeattach="/proc/$(pgrep -o tmux)/exe attach"
 # Reset configuration files on systems using apt
 alias purgeconfig="apt-get install --reinstall -o DPkg::options::=--force-confask"
 
+# Send command output to http://sprunge.us `command|sprungeus`
+alias sprungeus="curl -F 'sprunge=<-' http://sprunge.us"
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
