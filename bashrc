@@ -769,6 +769,13 @@ ssh-regen-host-keys () {
         ssh-keygen -t ed25519 -N "" -f /etc/ssh/ssh_host_ed25519_key
 }
 
+# This function erases Master Boot Record from device
+# Note: this is dangerous so this function will echo the command
+# instad of running it!
+erase-mbr() {
+    echo dd if=/dev/zero of=$1 bs=512 count=2
+}
+
 # .custom
 if [ -f ~/.custom ]; then
     source ~/.custom
