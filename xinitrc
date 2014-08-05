@@ -1,1 +1,1 @@
-exec openbox-session
+exec mate-session
