@@ -519,7 +519,9 @@ alias sprungeus="curl -F 'sprunge=<-' http://sprunge.us"
 alias pyenv='CONFIGURE_OPTS="--enable-shared" PYTHON_CONFIGURE_OPTS="--enable-shared" command \pyenv'
 
 # Copy-paste mtr output more easily
-alias mtrp="mtr -rw4c 5"
+alias mtrp="mtr -rwc 5"
+alias mtrp4="mtr -rw4c 5"
+alias mtrp6="mtr -rw6c 5"
 
 # .aliases
 if [ -f ~/.aliases ]; then
