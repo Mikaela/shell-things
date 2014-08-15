@@ -548,6 +548,9 @@ alias sprungeus="curl -F 'sprunge=<-' http://sprunge.us"
 # Always build pythons with --enable-shared when using pyenv
 alias pyenv='CONFIGURE_OPTS="--enable-shared" PYTHON_CONFIGURE_OPTS="--enable-shared" command \pyenv'
 
+# Copy-paste mtr output more easily
+alias mtrp="mtr -rw4c 5"
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
