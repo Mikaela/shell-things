@@ -362,7 +362,7 @@ alias follow="tail -F"
 
 #myip shows current IP. This was a function.
 alias myip="curl -s http://icanhazip.com"
-alias myip4="curl -s4 http://icanhazip.com"
+alias myip4="dig A +short myip.opendns.com @resolver1.opendns.com"
 alias myip6="curl -s6 http://icanhazip.com"
 
 # Update groups without logging out. Requires entering password. Source: http://blog.edwards-research.com/2010/10/linux-refresh-group-membership-without-logging-out/
