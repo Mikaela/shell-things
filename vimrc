@@ -128,3 +128,6 @@ iab  #p #!/usr/bin/env python3
 iab  #r #!/usr/bin/env ruby
 " end of copied from Edelwin
 iab #b #!/usr/bin/env bash
+
+" Highlight all search results
+set hlsearch
