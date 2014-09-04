@@ -553,6 +553,17 @@ alias mtrp="mtr -rwc 5"
 alias mtrp4="mtr -rw4c 5"
 alias mtrp6="mtr -rw6c 5"
 
+# pip
+alias pip="python -m pip"
+alias pip2="python2 -m pip"
+alias pip3="python3 -m pip"
+alias pippypy="pypy -m pip"
+alias pippypy2="pypy2 -m pip"
+alias pippypy3="pypy3 -m pip"
+alias pypypip=pippypy
+alias pypypip2=pippypy2
+alias pypypip3=pippypy3
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
