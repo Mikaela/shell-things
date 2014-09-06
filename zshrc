@@ -120,7 +120,7 @@ fi
 #export LC_ALL=fi_FI.utf8 # MKAYSIGREP # MKAYSIGREPENVIRONMENT
 
 # Sets your timezone. Set in format <Region/City>, or just timezone like UTC.
-# export TZ="/usr/share/zoneinfo/Europe/Helsinki" # MKAYSIGREP # MKAYSIGREPENVIRONMENT
+# export TZ="Europe/Helsinki" # MKAYSIGREP # MKAYSIGREPENVIRONMENT
 
 # pyenv (Source: their README.md file http://git.io/ReCDSQ )
 export PYENV_ROOT="$HOME/.pyenv"
