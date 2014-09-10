@@ -3,7 +3,9 @@
 cat .bash_aliases.MKAYSIGREP > ~/.bash_aliases
 cat .zsh_aliases.MKAYSIGREP > ~/.zsh_aliases
 cat .gitconfig.MKAYSIGREP > ~/.gitconfig
-cat oidentd.conf > ~/.oidentd.conf
+if [ ! -f ~/.oidentd.conf ]; then
+    cat oidentd.conf > ~/.oidentd.conf
+fi
 mkdir -p ~/.gnupg
 cat sks-keyservers.netCA.pem > ~/.gnupg/sks-keyservers.netCA.pem
 cat .gpg.conf.MKAYSIGREP > ~/.gnupg/gpg.conf
