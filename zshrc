@@ -534,6 +534,12 @@ alias pypypip=pippypy
 alias pypypip2=pippypy2
 alias pypypip3=pippypy3
 
+# apg with small letters, capital letters and numbers. I don't usually use
+# special characters as they sometimes have difficulties with some systems
+# and cross-platform operating systems.
+# Usage: apt-random <minimum length>
+alias apg-random="apg -a1 -M LCN -m"
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
