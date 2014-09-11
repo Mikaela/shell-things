@@ -262,6 +262,7 @@ alias supybot-owner-quit="killall -INT supybot "
 # Translating plugins in Limnoria
 alias supybot-generate-messages.pot="pygettext --docstrings config.py plugin.py"
 alias supybot-check-plugin-trans="sandbox/check_trans.py plugins/"
+alias supybot-check-core-trans="sandbox/check_trans.py --core"
 alias supybot-generate-messages.pot-mass="find . -type d -exec sh -c '(cd {} && pygettext --docstrings config.py plugin.py)' ';'"
 
 # ZSH specific.
