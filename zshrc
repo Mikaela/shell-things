@@ -257,18 +257,12 @@ alias %=" "
 alias \#=" "
 
 # Supybot specifig. Why to write long command, if you can write short command?
-alias supybot-config-reload="killall -HUP supybot;killall -HUP limnoria"
-alias supybot-owner-quit="killall -INT supybot;killall -INT limnoria"
+alias supybot-config-reload="killall -HUP supybot "
+alias supybot-owner-quit="killall -INT supybot "
 # Translating plugins in Limnoria
 alias supybot-generate-messages.pot="pygettext --docstrings config.py plugin.py"
 alias supybot-check-plugin-trans="sandbox/check_trans.py plugins/"
 alias supybot-generate-messages.pot-mass="find . -type d -exec sh -c '(cd {} && pygettext --docstrings config.py plugin.py)' ';'"
-alias limnoria-config-reload="supybot-config-reload"
-alias limnoria-owner-quit="supybot-owner-quit"
-alias limnoria-generate-messages.pot="supybot-generate-messages.pot"
-alias limnoria-generate-messages.pot="supybot-generate-messages.pot-xgettext"
-alias limnoria-check-plugin-trans="supybot-check-plugin-trans"
-alias limnoria-generate-messages.pot-mass="supybot-generate-messages.pot-mass"
 
 # ZSH specific.
 # I think that "theme" is more describing than "prompt".
