@@ -535,6 +535,11 @@ alias pypypip3=pippypy3
 # Usage: apt-random <minimum length>
 alias apg-random="apg -a1 -M LCN -m"
 
+# cp/mv using rsync. rcp appears to be link to scp in my system, so I can
+# safely use this alias.
+alias rcp="rsync -a --progress"
+alias rmv="rsync -a --progress --remove-source-files"
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
