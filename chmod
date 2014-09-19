@@ -6,12 +6,6 @@
 ## https://raw.github.com/Mkaysi/shell-things/master/chmod
 set -x
 
-GROUP=$(id -gn)
-
-wwwdata=$(head -n1 wwwuser)
-
-setfacl=$(locate setfacl|grep bin|head -n1)
-
 chmod g-rwx,o-rwx $HOME -R
 
 touch ~/.oidentd.conf
@@ -27,15 +21,9 @@ chmod -R 755 ~/public_html/
 touch ~/.face
 touch ~/.forward
 touch ~/.netrc
-echo ""
 chmod a+r-wx,u+rw ~/.face
 chmod a+r-wx,u+rw ~/.forward
 chmod 600 ~/.netrc
-
-if [[ -f $setfacl ]]; then
-setfacl -R -m u:$wwwdata:rwx ~/public_html 
-setfacl -R -m d:u:$wwwdata:rwx ~/public_html 
-fi
 
 if [ -f chmod.2 ]; then
     ./chmod.2
