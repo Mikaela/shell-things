@@ -801,6 +801,21 @@ erase-mbr() {
     echo dd if=/dev/zero of=$1 bs=512 count=2
 }
 
+# Use clang if installed. It seems interesting and this is probably good
+# way to test it. This might not be a function, but I don't have any better
+# place for this.
+if hash clang 2>/dev/null; then
+    export CC=clang
+else
+    unset CC
+fi
+
+if hash clang++ 2>/dev/null; then
+    export CXX=clang++
+else
+    unset CXX
+fi
+
 # .custom
 if [ -f ~/.custom ]; then
     source ~/.custom
