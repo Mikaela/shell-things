@@ -780,13 +780,13 @@ erase-mbr() {
 if hash clang 2>/dev/null; then
     export CC=clang
 else
-    unset CC
+    #unset CC
 fi
 
 if hash clang++ 2>/dev/null; then
     export CXX=clang++
 else
-    unset CXX
+    #unset CXX
 fi
 
 
