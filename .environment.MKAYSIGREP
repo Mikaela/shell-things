@@ -1,6 +1,6 @@
 export EDITOR=vim # MKAYSIGREP MKAYSIGREPENVIRONMENT
 
-if [[$UNAME != Darwin ]]; then
+if [[ $UNAME != Darwin ]]; then
     export LC_ALL=fi_FI.utf8 # MKAYSIGREP # MKAYSIGREPENVIRONMENT
 else
     export LC_ALL=fi_FI.UTF-8
