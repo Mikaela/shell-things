@@ -1,3 +1,9 @@
 export EDITOR=vim # MKAYSIGREP MKAYSIGREPENVIRONMENT
-export LC_ALL=fi_FI.utf8 # MKAYSIGREP # MKAYSIGREPENVIRONMENT
+
+if [[$UNAME != Darwin ]]; then
+    export LC_ALL=fi_FI.utf8 # MKAYSIGREP # MKAYSIGREPENVIRONMENT
+else
+    export LC_ALL=fi_FI.UTF-8
+fi
+
 export TZ="Europe/Helsinki" # MKAYSIGREP #MKAYSIGREPENVIRONMENT
