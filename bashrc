@@ -816,6 +816,36 @@ else
     #unset CXX
 fi
 
+# Function to temporarily set sysctl options which I want and echo how to
+# set them permanently
+function sysctl-mikaela() {
+   set -x
+   sysctl kernel.core_pattern=%e-%p-%h.core
+   sysctl vm.swappiness=1
+   echo 'echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf'
+   echo 'echo vm.swappiness = 1 >> /etc/sysctl.conf'
+   set +x
+}
+
+# Function to permanently set sysctl options which I want.
+function sysctl-mikaela-run() {
+    set -x
+    echo 'echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf'
+    echo 'echo vm.swappiness = 1 >> /etc/sysctl.conf'
+    sysctl -p
+    set +x
+}
+
+# Function to undo sysctl-mikaela
+function sysctl-undo-mikaela() {
+    set -x
+    sysctl kernel.core_pattern=core
+    sysctl vm.swappiness=60
+    echo 'echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf'
+    echo 'echo vm.swappiness = 1 >> /etc/sysctl.conf'
+    set +x
+}
+
 # .custom
 if [ -f ~/.custom ]; then
     source ~/.custom
