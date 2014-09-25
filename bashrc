@@ -183,7 +183,7 @@ fi
 #export EDITOR=vim # MKAYSIGREP MKAYSIGREPENVIRONMENT
 
 # Sets locale. You can get list of locales with "locale -a" command. This should be something which ends to .utf8
-#export LC_ALL=fi_FI.utf8 # MKAYSIGREP # MKAYSIGREPENVIRONMENT
+#export LC_ALL=fi_FI.UTF-8 # MKAYSIGREP # MKAYSIGREPENVIRONMENT
 
 # Sets your timezone. Set in format <Region/City>, or just timezone like UTC.
 #export TZ="Europe/Helsinki" # MKAYSIGREP #MKAYSIGREPENVIRONMENT
