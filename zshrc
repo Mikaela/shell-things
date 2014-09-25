@@ -803,8 +803,8 @@ function sysctl-mikaela() {
 # Function to permanently set sysctl options which I want.
 function sysctl-mikaela-run() {
     set -x
-    echo 'echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf'
-    echo 'echo vm.swappiness = 1 >> /etc/sysctl.conf'
+    echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf
+    echo vm.swappiness = 1 >> /etc/sysctl.conf
     sysctl -p
     set +x
 }
