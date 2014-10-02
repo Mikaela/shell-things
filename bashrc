@@ -806,14 +806,10 @@ erase-mbr() {
 # place for this.
 if hash clang 2>/dev/null; then
     export CC=clang
-else
-    #unset CC
 fi
 
 if hash clang++ 2>/dev/null; then
     export CXX=clang++
-else
-    #unset CXX
 fi
 
 # Function to temporarily set sysctl options which I want and echo how to
