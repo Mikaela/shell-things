@@ -1,3 +1,7 @@
+[user]
+    name = Mikaela Suomalainen
+    email = mikaela.suomalainen@outlook.com
+    signingkey = 0xDAA6CA08F2E96AC7
 [alias]
     # From https://github.com/blog/985-git-io-github-url-shortener#comment-15121
     shorten = "!sh -c 'curl -i http://git.io -F url=$1' -"
@@ -18,11 +22,9 @@
     showbranch = true
     status = true
     ui = true
-[user]
-    name = Mikaela Suomalainen
-    email = mikaela.suomalainen@outlook.com
-    signingkey = 0xDAA6CA08F2E96AC7
 [push]
     default = current
 [credential]
-	helper = cache --timeout=86400
+    helper = cache --timeout=86400
+[merge]
+    ff = only
