@@ -842,6 +842,12 @@ function sysctl-undo-mikaela() {
     set +x
 }
 
+# Add GitHub pull requests to fetched things via http://git.io/-C-0oQ
+github-add-pulls() {
+    git config --add remote.origin.fetch '+refs/pull/*/head:refs/remotes/origin/pr/*'
+    git config --add remote.upstream.fetch '+refs/pull/*/head:refs/remotes/upstream/-pr/*'
+}
+
 # .custom
 if [ -f ~/.custom ]; then
     source ~/.custom
