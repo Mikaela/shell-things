@@ -19,6 +19,14 @@ fi
 
 # This is based on zshrc which came with Debian (Third option in wizard for new users.)
 
+# Save history
+export HISTSIZE=99999
+export SAVEHIST=$HISTSIZE
+setopt hist_ignore_all_dups
+export HISTFILE=~/.zsh_history
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
+
 # Set up the prompt
 autoload -Uz promptinit
 
