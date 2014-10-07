@@ -591,7 +591,7 @@ JUSTYOUARRAY=($(lynx -dump http://downforeveryoneorjustme.com/$1 | grep -o "It's
 # Topt10 commands, copied from the ultimate bashrc http://goo.gl/qGK5j
 function top10() {
     # copyright 2007 - 2010 Christopher Bratusek
-    history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head
+    \history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head
 }
 
 # ex command. Copied from zshrc of bioterror ( http://ricecows.org/configs/zsh/.zshrc ). Original comment below:
