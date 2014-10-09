@@ -3,30 +3,13 @@
 cat .bash_aliases.MIKAELA_GREP > ~/.bash_aliases
 cat .zsh_aliases.MIKAELA_GREP > ~/.zsh_aliases
 cat .gitconfig.MIKAELA_GREP > ~/.gitconfig
-if [ ! -f ~/.oidentd.conf ]; then
-    cat oidentd.conf > ~/.oidentd.conf
-fi
 mkdir -p ~/.gnupg
 cat sks-keyservers.netCA.pem > ~/.gnupg/sks-keyservers.netCA.pem
 cat .gpg.conf.MIKAELA_GREP > ~/.gnupg/gpg.conf
-cat gpg-agent.conf > ~/.gnupg/gpg-agent.conf
 cat .pastebinit.xml.MIKAELA_GREP > ~/.pastebinit.xml
 cat .environment.MIKAELA_GREP > ~/.environment
 cat .gitconfig.MIKAELA_GREP > ~/.gitconfig
 mkdir -p ~/.ssh
 cat .keys/ssh > ~/.ssh/authorized_keys
-cat Xdefaults > ~/.Xdefaults
-mkdir -p ~/.inxi
-cat inxi.conf > ~/.inxi/inxi.conf
-gpg --quiet --import .keys/0x4DB53CFE82A46728.asc&
-gpg --quiet --import .keys/0xDAA6CA08F2E96AC7.asc&
-gpg --quiet --import .keys/0x0C207F07B2F32B67.asc&
-mkdir -p ~/.public_html/
-bash -x chmod a+xr chmod
-./chmod& 2>/dev/null
-cat chmod > ~/chmod
-cat wwwuser > ~/wwwuser
-chmod a+xr ~/chmod
-chmod a+r ~/wwwuser
 touch ~/.MIKAELA_GREP
 # vim : set ft=sh :
