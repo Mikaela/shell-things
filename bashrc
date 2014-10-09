@@ -686,7 +686,7 @@ function gribble-gpg-everify() {
 function shell-things {
 
 export SHELL_THINGS_REPO=$HOME/.shell-things
-export MIKAELA_GREP=$HOME/.MKAYSIGREP
+export MIKAELA_GREP=$HOME/.MIKAELA_GREP
 
 # Check if ~/.shell-things exists and cd and pull.
 if [ -d $SHELL_THINGS_REPO ]; then
