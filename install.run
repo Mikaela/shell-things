@@ -4,18 +4,6 @@ set -x
 
 export MIKAELA_GREP=$HOME/.MIKAELA_GREP
 
-if [ -f $HOME/.MKAYSIGREP ]
-then
-    mv $HOME/.MKAYSIGREP $MIKAELA_GREP
-fi
-
-if [ -f "$MIKAELA_GREP" ]
-then
-    echo "MIKAELA_GREP has been used previously, Installing/Upgrading."
-    bash -x ./.install.MIKAELA_GREP.run
-fi
-
-
 cat bashrc > ~/.bashrc
 cat tmux.conf > ~/.tmux.conf
 cat zshrc > ~/.zshrc
@@ -42,6 +30,17 @@ chmod a+xr chmod
 bash -x ./chmod& 2>/dev/null
 cat chmod > ~/chmod
 chmod a+xr ~/chmod
+
+if [ -f $HOME/.MKAYSIGREP ]
+then
+    mv $HOME/.MKAYSIGREP $MIKAELA_GREP
+fi
+
+if [ -f "$MIKAELA_GREP" ]
+then
+    echo "MIKAELA_GREP has been used previously, Installing/Upgrading."
+    bash -x ./.install.MIKAELA_GREP.run
+fi
 
 set +x
 # vim : set ft=sh :
