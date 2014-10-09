@@ -686,7 +686,6 @@ function gribble-gpg-everify() {
 function shell-things {
 
 export SHELL_THINGS_REPO=$HOME/.shell-things
-export MIKAELA_GREP=$HOME/.MIKAELA_GREP
 
 # Check if ~/.shell-things exists and cd and pull.
 if [ -d $SHELL_THINGS_REPO ]; then
@@ -711,12 +710,6 @@ fi
 
 # Installing...
 bash -x ./install.run
-
-#If ~/.MIKAELA_GREP exists, run that script too...
-if [ -f "$MIKAELA_GREP" ]; then
-    echo "MIKAELA_GREP has been used previously, Installing/Upgrading."
-    bash -x ./.install.MIKAELA_GREP.run
-fi
 
 echo ""
 echo "shell-things: Everthing is now done :)"
