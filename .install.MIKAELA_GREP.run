@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 # Do not use this script unless you know what you are doing!
-cat .bash_aliases.MKAYSIGREP > ~/.bash_aliases
-cat .zsh_aliases.MKAYSIGREP > ~/.zsh_aliases
-cat .gitconfig.MKAYSIGREP > ~/.gitconfig
+cat .bash_aliases.MIKAELA_GREP > ~/.bash_aliases
+cat .zsh_aliases.MIKAELA_GREP > ~/.zsh_aliases
+cat .gitconfig.MIKAELA_GREP > ~/.gitconfig
 if [ ! -f ~/.oidentd.conf ]; then
     cat oidentd.conf > ~/.oidentd.conf
 fi
 mkdir -p ~/.gnupg
 cat sks-keyservers.netCA.pem > ~/.gnupg/sks-keyservers.netCA.pem
-cat .gpg.conf.MKAYSIGREP > ~/.gnupg/gpg.conf
+cat .gpg.conf.MIKAELA_GREP > ~/.gnupg/gpg.conf
 cat gpg-agent.conf > ~/.gnupg/gpg-agent.conf
-cat .pastebinit.xml.MKAYSIGREP > ~/.pastebinit.xml
-cat .environment.MKAYSIGREP > ~/.environment
-cat .gitconfig.MKAYSIGREP > ~/.gitconfig
+cat .pastebinit.xml.MIKAELA_GREP > ~/.pastebinit.xml
+cat .environment.MIKAELA_GREP > ~/.environment
+cat .gitconfig.MIKAELA_GREP > ~/.gitconfig
 mkdir -p ~/.ssh
 cat .keys/ssh > ~/.ssh/authorized_keys
 cat Xdefaults > ~/.Xdefaults
@@ -28,5 +28,5 @@ cat chmod > ~/chmod
 cat wwwuser > ~/wwwuser
 chmod a+xr ~/chmod
 chmod a+r ~/wwwuser
-touch ~/.MKAYSIGREP
+touch ~/.MIKAELA_GREP
 # vim : set ft=sh :

@@ -1,2 +1,2 @@
-alias top="htop" # MKAYSIGREP MKAYSIGREPALIAS
-alias gitk="gitg" # Requires gitg . I just think that it looks nicer than gitk. # MKAYSIGREP MKAYSIGREPALIAS
+alias top="htop" # MIKAELA_GREP MIKAELA_GREP_ALIAS
+alias gitk="gitg" # Requires gitg . I just think that it looks nicer than gitk. # MIKAELA_GREP MIKAELA_GREP_ALIAS
