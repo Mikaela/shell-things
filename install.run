@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Do not use this script unless you know what you are doing!
+set -x
 
 export MIKAELA_GREP=$HOME/.MIKAELA_GREP
 
@@ -41,5 +42,7 @@ chmod a+xr chmod
 bash -x ./chmod& 2>/dev/null
 cat chmod > ~/chmod
 chmod a+xr ~/chmod
+
+set +x
 # vim : set ft=sh :
 #chmod 700 $HOME -R

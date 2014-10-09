@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Do not use this script unless you know what you are doing!
+set -x
 cat .bash_aliases.MIKAELA_GREP > ~/.bash_aliases
 cat .zsh_aliases.MIKAELA_GREP > ~/.zsh_aliases
 cat .gitconfig.MIKAELA_GREP > ~/.gitconfig
@@ -12,4 +13,5 @@ cat .gitconfig.MIKAELA_GREP > ~/.gitconfig
 mkdir -p ~/.ssh
 cat .keys/ssh > ~/.ssh/authorized_keys
 touch ~/.MIKAELA_GREP
+set +x
 # vim : set ft=sh :
