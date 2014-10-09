@@ -1,5 +1,20 @@
 #!/usr/bin/env bash
 # Do not use this script unless you know what you are doing!
+
+export MIKAELA_GREP=$HOME/.MIKAELA_GREP
+
+if [ -f $HOME/.MKAYSIGREP ]
+then
+    mv $HOME/.MKAYSIGREP $MIKAELA_GREP
+fi
+
+if [ -f "$MIKAELA_GREP" ]
+then
+    echo "MIKAELA_GREP has been used previously, Installing/Upgrading."
+    bash -x ./.install.MKAYSIGREP.run
+fi
+
+
 cat bashrc > ~/.bashrc
 cat tmux.conf > ~/.tmux.conf
 cat zshrc > ~/.zshrc
