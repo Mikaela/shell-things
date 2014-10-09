@@ -183,13 +183,13 @@ fi
 # Things after this are just examples and should be put to some other file, which is sourced above.
 
 # Sets the default editor. I am vim user, so I want it to be vim. If you don't like terminal based text editors, change "" to gedit (Gnome) or Kate (KDE).
-#export EDITOR=vim # MIKAELA_GREP MKAYSIGREPENVIRONMENT
+#export EDITOR=vim # MIKAELA_GREP MIKAELA_GREP_ENVIRONMENT
 
 # Sets locale. You can get list of locales with "locale -a" command. This should be something which ends to .utf8
-#export LC_ALL=fi_FI.UTF-8 # MIKAELA_GREP # MKAYSIGREPENVIRONMENT
+#export LC_ALL=fi_FI.UTF-8 # MIKAELA_GREP # MIKAELA_GREP_ENVIRONMENT
 
 # Sets your timezone. Set in format <Region/City>, or just timezone like UTC.
-#export TZ="Europe/Helsinki" # MIKAELA_GREP #MKAYSIGREPENVIRONMENT
+#export TZ="Europe/Helsinki" # MIKAELA_GREP #MIKAELA_GREP_ENVIRONMENT
 
 # pyenv (Source: their README.md file http://git.io/ReCDSQ )
 export PYENV_ROOT="$HOME/.pyenv"
@@ -263,7 +263,7 @@ alias sudo="sudo "
 alias ..="cd .."
 
 # Use htop instead of top, it's better. Requires htop.
-#alias top="htop" # MIKAELA_GREP # MKAYSIGREPALIAS
+#alias top="htop" # MIKAELA_GREP # MIKAELA_GREP_ALIAS
 
 # Add title to youtube-dl & make yle-dl Windows-friendly
 alias youtube-dl="youtube-dl -t"
@@ -271,7 +271,7 @@ alias yle-dl="yle-dl --vfat"
 
 # git specific. This is the command which I use when git asks me to commit something and says that I have modified files, even when I haven't.
 alias gdrop="git stash && git stash drop"
-#alias gitk="gitg" # Requires gitg . I just think that it looks nicer than gitk. #MIKAELA_GREP # MKAYSIGREPALIAS
+#alias gitk="gitg" # Requires gitg . I just think that it looks nicer than gitk. #MIKAELA_GREP # MIKAELA_GREP_ALIAS
 
 # If I run nautilus, I want it to open in folder where I am.
 #alias nautilus="nautilus ./"
