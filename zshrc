@@ -122,13 +122,13 @@ export TERM=screen-256color
 fi
 
 # Sets the default editor.
-#export EDITOR=vim # MKAYSIGREP # MKAYSIGREPENVIRONMENT
+#export EDITOR=vim # MIKAELA_GREP # MKAYSIGREPENVIRONMENT
 
 # Sets locale. You can get list of locales with "locale -a" command. This should be something which ends to .utf8
-#export LC_ALL=fi_FI.UTF-8 # MKAYSIGREP # MKAYSIGREPENVIRONMENT
+#export LC_ALL=fi_FI.UTF-8 # MIKAELA_GREP # MKAYSIGREPENVIRONMENT
 
 # Sets your timezone. Set in format <Region/City>, or just timezone like UTC.
-# export TZ="Europe/Helsinki" # MKAYSIGREP # MKAYSIGREPENVIRONMENT
+# export TZ="Europe/Helsinki" # MIKAELA_GREP # MKAYSIGREPENVIRONMENT
 
 # pyenv (Source: their README.md file http://git.io/ReCDSQ )
 export PYENV_ROOT="$HOME/.pyenv"
@@ -200,7 +200,7 @@ alias sudo="sudo "
 alias ..="cd .."
 
 # Use htop instead of top, it's better. Requires htop.
-#alias top="htop" # MKAYSIGREP MKAYSIGREPALIAS
+#alias top="htop" # MIKAELA_GREP MKAYSIGREPALIAS
 
 # Add title to youtube-dl & make yle-dl Windows-friendly
 alias youtube-dl="youtube-dl -t"
@@ -340,7 +340,7 @@ alias gpg-fix-tty='export GPG_TTY=$(tty)'
 # because that above alias needs this and this will disappear when zsh 
 # gets GPG2 completion. See 
 # http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=666755
-#compdef gpg2=gpg # MKAYSIGREP MKAYSIGREPALIAS
+#compdef gpg2=gpg # MIKAELA_GREP MKAYSIGREPALIAS
 
 # For locally installed mosh on remote server.
 alias lmosh="mosh --server=~/.local/bin/mosh-server "
@@ -659,7 +659,7 @@ function gribble-gpg-everify() {
 function shell-things {
 
 export SHELL_THINGS_REPO=$HOME/.shell-things
-export MKAYSIGREP=$HOME/.MKAYSIGREP
+export MIKAELA_GREP=$HOME/.MKAYSIGREP
 
 # Check if ~/.shell-things exists and cd and pull.
 if [ -d $SHELL_THINGS_REPO ]; then
@@ -688,10 +688,10 @@ echo ""
 echo "shell-things: Installing finished."
 echo ""
 
-#If ~/.MKAYSIGREP exists, run that script too...
-if [ -f "$MKAYSIGREP" ]; then
-    echo "MKAYSIGREP has been used previously, Installing/Upgrading."
-    bash -x ./.install.MKAYSIGREP.run
+#If ~/.MIKAELA_GREP exists, run that script too...
+if [ -f "$MIKAELA_GREP" ]; then
+    echo "MIKAELA_GREP has been used previously, Installing/Upgrading."
+    bash -x ./.install.MIKAELA_GREP.run
 fi
 
 echo ""
