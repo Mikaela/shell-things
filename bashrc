@@ -507,7 +507,7 @@ if [ -f /usr/bin/dnf ]; then
 fi
 
 # Homebrew
-alias homebrew-install="mkdir -p ~/.local/bin;cd ~/.local;git clone https://github.com/Homebrew/homebrew.git;mkdir -p $HOME/.local/share/man/man1;ln -sf $HOME/.local/homebrew/bin/brew $HOME/.local/bin/brew;ln -sf $HOME/.local/homebrew/share/man/man1/brew.1 $HOME/.local/share/man/man1/brew.1;cd"
+alias homebrew-install="cd /usr;git clone https://github.com/Homebrew/homebrew.git;mkdir -p local;rsync -aP homebrew/* .local;rsync -aP homebrew/.* local/;chmod -R 755 local;chown -R root:wheel local"
 
 # OS X
 alias osx-server-caching-interface="serveradmin settings caching:Interface ="
