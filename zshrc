@@ -482,8 +482,10 @@ if [ -f /usr/bin/dnf ]; then
 fi
 
 # Homebrew
-alias homebrew-install="cd /usr;git clone https://github.com/Homebrew/homebrew.git;mkdir -p local;rsync -aP homebrew/* local;rsync -aP homebrew/.* local/;chmod -R 755 local;chown -R root:wheel local;rm -rf homebrew"
+alias homebrew-install="cd ~;git clone https://github.com/Homebrew/homebrew.git;mkdir -p .local;rsync -aP homebrew/* .local;rsync -aP homebrew/.* .local;rm -rf homebrew"
+alias homebrew-install-root="cd /usr;git clone https://github.com/Homebrew/homebrew.git;mkdir -p local;rsync -aP homebrew/* local;rsync -aP homebrew/.* local/;chmod -R 755 local;chown -R root:wheel local;rm -rf homebrew"
 alias linuxbrew-install="cd ~;git clone https://github.com/Homebrew/linuxbrew.git;mkdir -p .local;rsync -aP linuxbrew/* .local;rsync -aP linuxbrew/.* .local;rm -rf linuxbrew"
+alias linuxbrew-install-root="cd /usr;git clone https://github.com/Homebrew/linuxbrew.git;mkdir -p local;rsync -aP linuxbrew/* local;rsync -aP linuxbrew/.* local/;chmod -R 755 local;chown -R root:wheel local;rm -rf linuxbrew"
 
 # OS X
 alias osx-server-caching-interface="serveradmin settings caching:Interface ="
