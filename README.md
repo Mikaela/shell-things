@@ -1,9 +1,6 @@
 ## What is this?
 
 This repository has my rc-files other things that I want to have everywhere.
-
-[![Visit our IRC channel](https://kiwiirc.com/buttons/chat.freenode.net/%23Mikaela.png)](https://kiwiirc.com/client/chat.freenode.net:+6697/##Mikaela)
-
 ### Where does the name "shell-things" come from? / History
 
 In the beginning this repository was only GitHub gist and contained only 
