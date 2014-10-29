@@ -299,7 +299,7 @@ alias rscp='rsync -h --progress -avz '
 alias rscpr='rsync -h --progress -azvv '
 
 # TMUX specific
-alias tmux="tmux -u"
+alias tmux="tmux -2u"
 alias attach="tmux attach-session"
 alias detach="tmux detach"
 
