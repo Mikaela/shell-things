@@ -795,8 +795,13 @@ function sysctl-mikaela() {
    set -x
    sysctl kernel.core_pattern=%e-%p-%h.core
    sysctl vm.swappiness=1
+   sysctl net.ipv6.conf.eth0.use_tempaddr=2
+   sysctl net.ipv6.conf.wlan0.use_tempaddr=2
    echo 'echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf'
    echo 'echo vm.swappiness = 1 >> /etc/sysctl.conf'
+   echo 'sysctl net.ipv6.conf.eth0.use_tempaddr=2'
+   echo 'sysctl net.ipv6.conf.wlan0.use_tempaddr=2'
+   echo 'If network-manager is used, see /etc/NetworkManager/system-connections/<connection>'
    set +x
 }
 
@@ -805,6 +810,9 @@ function sysctl-mikaela-run() {
     set -x
     echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf
     echo vm.swappiness = 1 >> /etc/sysctl.conf
+    echo 'sysctl net.ipv6.conf.eth0.use_tempaddr=2'
+    echo 'sysctl net.ipv6.conf.wlan0.use_tempaddr=2'
+    echo 'If network-manager is used, see /etc/NetworkManager/system-connections/<connection>'
     sysctl -p
     set +x
 }
