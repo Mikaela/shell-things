@@ -789,18 +789,13 @@ if hash clang++ 2>/dev/null; then
     export CXX=clang++
 fi
 
-# Function to temporarily set sysctl options which I want and echo how to
-# set them permanently
+# Function to temporarily set sysctl options which I want
 function sysctl-mikaela() {
    set -x
    sysctl kernel.core_pattern=%e-%p-%h.core
    sysctl vm.swappiness=1
    sysctl net.ipv6.conf.eth0.use_tempaddr=2
    sysctl net.ipv6.conf.wlan0.use_tempaddr=2
-   echo 'echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf'
-   echo 'echo vm.swappiness = 1 >> /etc/sysctl.conf'
-   echo 'sysctl net.ipv6.conf.eth0.use_tempaddr=2'
-   echo 'sysctl net.ipv6.conf.wlan0.use_tempaddr=2'
    echo 'If network-manager is used, see /etc/NetworkManager/system-connections/<connection>'
    set +x
 }
@@ -810,20 +805,10 @@ function sysctl-mikaela-run() {
     set -x
     echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf
     echo vm.swappiness = 1 >> /etc/sysctl.conf
-    echo 'sysctl net.ipv6.conf.eth0.use_tempaddr=2'
-    echo 'sysctl net.ipv6.conf.wlan0.use_tempaddr=2'
+    echo sysctl net.ipv6.conf.eth0.use_tempaddr=2 >> /etc/sysctl.conf
+    echo sysctl net.ipv6.conf.wlan0.use_tempaddr=2 >> /etc/sysctl.conf
     echo 'If network-manager is used, see /etc/NetworkManager/system-connections/<connection>'
     sysctl -p
-    set +x
-}
-
-# Function to undo sysctl-mikaela
-function sysctl-undo-mikaela() {
-    set -x
-    sysctl kernel.core_pattern=core
-    sysctl vm.swappiness=60
-    echo 'echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf'
-    echo 'echo vm.swappiness = 1 >> /etc/sysctl.conf'
     set +x
 }
 
