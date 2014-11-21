@@ -827,8 +827,8 @@ function sysctl-mikaela-run() {
     set -x
     echo kernel.core_pattern = %e-%p-%h.core >> /etc/sysctl.conf
     echo vm.swappiness = 1 >> /etc/sysctl.conf
-    echo sysctl net.ipv6.conf.eth0.use_tempaddr=2 >> /etc/sysctl.conf
-    echo sysctl net.ipv6.conf.wlan0.use_tempaddr=2 >> /etc/sysctl.conf
+    echo net.ipv6.conf.eth0.use_tempaddr=2 >> /etc/sysctl.conf
+    echo net.ipv6.conf.wlan0.use_tempaddr=2 >> /etc/sysctl.conf
     sysctl -p
     echo 'If network-manager is used, see /etc/NetworkManager/system-connections/<connection>'
     set +x
