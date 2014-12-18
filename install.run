@@ -31,9 +31,9 @@ bash -x ./chmod&
 cat chmod > ~/chmod
 chmod a+xr ~/chmod
 
-if [ -f $HOME/.MKAYSIGREP ]
+if [ -f $HOME/.MIKAELAGREP ]
 then
-    mv $HOME/.MKAYSIGREP $MIKAELA_GREP
+    mv $HOME/.MIKAELAGREP $MIKAELA_GREP
 fi
 
 if [ -f "$MIKAELA_GREP" ]

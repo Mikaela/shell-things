@@ -3,7 +3,7 @@
 # files/folders that they don't have access to and where they don't need
 # access.
 ## THIS SCRIPT HAS MOVED TO SHELL-THINGS AS "chmod"!
-## https://raw.github.com/Mkaysi/shell-things/master/chmod
+## https://raw.github.com/Mikaela/shell-things/master/chmod
 set -x
 
 chmod g-rwx,o-rwx $HOME -R

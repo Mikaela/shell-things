@@ -29,7 +29,7 @@ If you are lazy or want to copy me as much as possible, you will install
 git, curl and wget if you don't have them already and run
 
 ```
-wget https://mkaysi.github.io/shell-things/shell-things.bash
+wget https://mikaela.github.io/shell-things/shell-things.bash
 source shell-things.bash
 shell-things
 source ~/.$(echo $SHELL|cut -d/ -f3)rc

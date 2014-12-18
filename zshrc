@@ -677,7 +677,7 @@ else
     echo ""
     echo "shell-things: $SHELL_THINGS_REPO doesn't exist, cloning..."
     echo ""
-    git clone https://github.com/Mkaysi/shell-things.git $SHELL_THINGS_REPO
+    git clone https://github.com/Mikaela/shell-things.git $SHELL_THINGS_REPO
     cd $SHELL_THINGS_REPO
     echo ""
     echo "shell-things: Installing/Upgrading..."
@@ -703,7 +703,7 @@ cd
 function ubuntu-sources-list-install {
 
 export RELEASE=$(lsb_release -sr)
-a[1]="http://mkaysi.github.io/shell-things/sources.list/$RELEASE"
+a[1]="http://mikaela.github.io/shell-things/sources.list/$RELEASE"
 
 echo "I am now changing directory to /etc/apt/."
 echo ""
@@ -713,7 +713,7 @@ echo "I will now backup sources.list to sources.list.bak ."
 echo ""
 cp /etc/apt/sources.list /etc/apt/sources.list.bak
 
-echo "I will now download the sources.list file from https://mkaysi.github.io/shell-things/sources.list/$RELEASE and save it as /etc/apt/sources.list ."
+echo "I will now download the sources.list file from https://mikaela.github.io/shell-things/sources.list/$RELEASE and save it as /etc/apt/sources.list ."
 echo ""
 echo "" > /etc/apt/sources.list
 \wget ${a[1]} -O /etc/apt/sources.list
