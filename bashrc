@@ -840,6 +840,12 @@ github-add-pulls() {
     git config --add remote.upstream.fetch '+refs/pull/*/head:refs/remotes/upstream/-pr/*'
 }
 
+serversslcertfp() {
+    openssl s_client -connect $1 < /dev/null 2>/dev/null|openssl x509 -fingerprint -md5 -noout -in /dev/stdin
+    openssl s_client -connect $1 < /dev/null 2>/dev/null|openssl x509 -fingerprint -sha1 -noout -in /dev/stdin
+    openssl s_client -connect $1 < /dev/null 2>/dev/null|openssl x509 -fingerprint -sha256 -noout -in /dev/stdin
+}
+
 # .custom
 if [ -f ~/.custom ]; then
     source ~/.custom
