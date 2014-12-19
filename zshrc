@@ -665,6 +665,7 @@ export SHELL_THINGS_REPO=$HOME/.shell-things
 
 # Check if ~/.shell-things exists and cd and pull.
 if [ -d $SHELL_THINGS_REPO ]; then
+    git remote set-url origin https://github.com/Mikaela/shell-things.git
     echo "shell-things: $SHELL_THINGS_REPO exists, git pulling..."
     echo ""
     cd $SHELL_THINGS_REPO
