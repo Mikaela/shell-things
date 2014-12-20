@@ -99,9 +99,9 @@ autocmd BufReadPost *
 " End of copied from https://raw.githubusercontent.com/ProgVal/misc/master/dotfiles/.vimrc
 
 " If we have tabs, remove them
-if has("autocmd") 
-    au BufReadPost * if &modifiable | retab | endif 
-endif 
+"if has("autocmd") 
+"    au BufReadPost * if &modifiable | retab | endif 
+"endif 
 
 " dos2unix ^M copied from http://stackoverflow.com/a/5361702/1675649
 fun! Dos2unixFunction()
