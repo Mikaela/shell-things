@@ -819,9 +819,28 @@ github-add-pulls() {
     git config --add remote.upstream.fetch '+refs/pull/*/head:refs/remotes/upstream/-pr/*'
 }
 
+# Get server SSL certificate fingerprint in MD5, SHA1 and SHA256.
+# Note that this should not be pointed to round-robin and is pointed
+# preferably to direct IP address.
+# Note that OpenSSL doesn't support IPv6 at time of writing (2014-12-21).
 serversslcertfp() {
     openssl s_client -connect $1 < /dev/null 2>/dev/null|openssl x509 -fingerprint -md5 -noout -in /dev/stdin
     openssl s_client -connect $1 < /dev/null 2>/dev/null|openssl x509 -fingerprint -sha1 -noout -in /dev/stdin
+    openssl s_client -connect $1 < /dev/null 2>/dev/null|openssl x509 -fingerprint -sha256 -noout -in /dev/stdin
+}
+
+# Get server SSL certificate fingerprint in MD5, SHA1 and SHA256.
+serversslcertfpmd5() {
+    openssl s_client -connect $1 < /dev/null 2>/dev/null|openssl x509 -fingerprint -md5 -noout -in /dev/stdin
+}
+
+# Get server SSL certificate fingerprint in MD5, SHA1 and SHA256.
+serversslcertfpsha1() {
+    openssl s_client -connect $1 < /dev/null 2>/dev/null|openssl x509 -fingerprint -sha1 -noout -in /dev/stdin
+}
+
+# Get server SSL certificate fingerprint in MD5, SHA1 and SHA256.
+serversslcertfpsha256() {
     openssl s_client -connect $1 < /dev/null 2>/dev/null|openssl x509 -fingerprint -sha256 -noout -in /dev/stdin
 }
 
