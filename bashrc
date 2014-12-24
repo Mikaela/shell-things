@@ -254,6 +254,9 @@ else
 fi
 alias maken="make -j$NPROC"
 
+# Ensure that pkg-config paths are found
+export PKG_CONFIG_PATH=$(which pkg-config)
+
 #####   Aliases                     RJ706I  #####
 
 # To get sudo work with aliases.
