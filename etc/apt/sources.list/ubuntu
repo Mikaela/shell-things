@@ -1,0 +1,35 @@
+
+## Replace RELEASE on every line with your Ubuntu RELEASE which you can find out by running 
+# lsb_release -c
+
+# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
+# newer versions of the distribution.
+deb mirror://mirrors.ubuntu.com/mirrors.txt RELEASE main restricted universe multiverse
+
+## Major bug fix updates produced after the final release of the
+## distribution.
+deb mirror://mirrors.ubuntu.com/mirrors.txt RELEASE-updates main restricted universe multiverse
+
+## N.B. software from this repository may not have been tested as
+## extensively as that contained in the main release, although it includes
+## newer versions of some applications which may provide useful features.
+## Also, please note that software in backports WILL NOT receive any review
+## or updates from the Ubuntu security team.
+deb mirror://mirrors.ubuntu.com/mirrors.txt RELEASE-backports main restricted universe multiverse
+deb mirror://mirrors.ubuntu.com/mirrors.txt RELEASE-security main restricted universe multiverse
+deb-src mirror://mirrors.ubuntu.com/mirrors.txt RELEASE main restricted universe multiverse
+deb-src mirror://mirrors.ubuntu.com/mirrors.txt RELEASE-updates main restricted universe multiverse
+deb-src mirror://mirrors.ubuntu.com/mirrors.txt RELEASE-backports main restricted universe multiverse
+deb-src mirror://mirrors.ubuntu.com/mirrors.txt RELEASE-security main restricted universe multiverse
+
+## Uncomment the following two lines to add software from Canonical's
+## 'partner' repository.
+## This software is not part of Ubuntu, but is offered by Canonical and the
+## respective vendors as a service to Ubuntu users.
+deb http://archive.canonical.com/ubuntu RELEASE partner
+deb-src http://archive.canonical.com/ubuntu RELEASE partner
+
+## This software is not part of Ubuntu, but is offered by third-party
+## developers who want to ship their latest software.
+deb http://extras.ubuntu.com/ubuntu RELEASE main
+deb-src http://extras.ubuntu.com/ubuntu RELEASE main

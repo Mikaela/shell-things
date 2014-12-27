@@ -1,0 +1,70 @@
+server {
+
+    # default_server from default vhost must exist somewhere!
+    listen 80;
+    listen [::]:80;
+
+    server_name vhost.example.org;
+    return 301 https://$server_name$request_uri;
+ }
+ 
+ server {
+    listen 443;
+    listen [::]:443;
+
+    root /var/www/vhostdir;
+    index index.php index.html index.htm;
+
+    # vhost address
+    server_name vhost.example.org;
+
+    # SSL
+    #ssl_certificate /etc/nginx/ssl/nginx.crt;
+    #ssl_certificate_key /etc/nginx/ssl/nginx.key;
+
+    location / {
+        # First attempt to serve request as file, then
+        # as directory, then fall back to displaying a 404.
+        try_files $uri $uri/ =404;
+        autoindex on;
+    }
+
+    # Userdir
+    #ilocation ~ ^/~(.+?)(/.*)?$ {
+    #    alias /home/$1/public_html$2;
+    #    index  index.html index.htm;
+    #    autoindex on;
+    #}
+
+
+    #error_page 404 /404.html;
+
+    # redirect server error pages to the static page /50x.html
+    #
+    #error_page 500 502 503 504 /50x.html;
+    #location = /50x.html {
+    #   root /usr/share/nginx/html;
+    #}
+
+    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+    #
+    location ~ \.php$ {
+       fastcgi_split_path_info ^(.+\.php)(/.+)$;
+    #   # NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
+    #
+    #   # With php5-cgi alone:
+    #    fastcgi_pass 127.0.0.1:9000;
+    #   # With php5-fpm:
+       fastcgi_pass unix:/var/run/php5-fpm.sock;
+       fastcgi_index index.php;
+       #include fastcgi_params;
+       include fastcgi.conf;
+    }
+
+    # deny access to .htaccess files, if Apache's document root
+    # concurs with nginx's one
+    #
+    location ~ /\.ht {
+       deny all;
+    }
+}

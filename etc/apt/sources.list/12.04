@@ -1,0 +1,37 @@
+# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
+# newer versions of the distribution.
+deb mirror://mirrors.ubuntu.com/mirrors.txt precise main restricted universe multiverse
+
+## Major bug fix updates produced after the final precise of the
+## distribution.
+deb mirror://mirrors.ubuntu.com/mirrors.txt precise-updates main restricted universe multiverse
+
+## N.B. software from this repository may not have been tested as
+## extensively as that contained in the main precise, although it includes
+## newer versions of some applications which may provide useful features.
+## Also, please note that software in backports WILL NOT receive any review
+## or updates from the Ubuntu security team.
+deb mirror://mirrors.ubuntu.com/mirrors.txt precise-backports main restricted universe multiverse
+deb mirror://mirrors.ubuntu.com/mirrors.txt precise-security main restricted universe multiverse
+deb-src mirror://mirrors.ubuntu.com/mirrors.txt precise main restricted universe multiverse
+deb-src mirror://mirrors.ubuntu.com/mirrors.txt precise-updates main restricted universe multiverse
+deb-src mirror://mirrors.ubuntu.com/mirrors.txt precise-backports main restricted universe multiverse
+deb-src mirror://mirrors.ubuntu.com/mirrors.txt precise-security main restricted universe multiverse
+
+## Uncomment the following two lines to add software from Canonical's
+## 'partner' repository.
+## This software is not part of Ubuntu, but is offered by Canonical and the
+## respective vendors as a service to Ubuntu users.
+deb http://archive.canonical.com/ubuntu precise partner
+deb-src http://archive.canonical.com/ubuntu precise partner
+
+## This software is not part of Ubuntu, but is offered by third-party
+## developers who want to ship their latest software.
+deb http://extras.ubuntu.com/ubuntu precise main
+deb-src http://extras.ubuntu.com/ubuntu precise main
+
+## Ubuntu MATE https://ubuntu-mate.org/
+deb http://ppa.launchpad.net/ubuntu-mate-dev/ppa/ubuntu precise main
+deb http://ppa.launchpad.net/ubuntu-mate-dev/precise-mate/ubuntu precise main
+deb-src http://ppa.launchpad.net/ubuntu-mate-dev/ppa/ubuntu precise main
+deb-src http://ppa.launchpad.net/ubuntu-mate-dev/precise-mate/ubuntu precise main

@@ -1,0 +1,18 @@
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+
+## swap file creation and auto-mount
+# # fallocate -l 4G /swap
+# # chmod 600 /swap
+# # mkswap /swap
+# # swapon /swap
+# and to /etc/fstab:
+/swap   none    swap    sw  0   0
+
+# Don't mount Windows partition automatically, allow normal users to mount it without root
+# noauto,user
+UUID=105AB1525AB13576   /media/Windows  ntfs    defaults,rw,noauto,user 0   0
+
+# Mount my external HDD automatically on boot.
+UUID=2A2C535742C3A3D4   /media/Mikaelan ntfs    defaults,rw 0   0

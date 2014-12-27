@@ -1,0 +1,16 @@
+server {
+    listen 80;
+    listen [::]:80;
+    listen 443;
+    listen [::]:443;
+
+    server_name something.example.org;
+
+# NOTE: For X-Real-IP & X-Forwarded-For see ../conf.d/rproxy.conf
+# Behind CloudFlare see ../conf.d/cloudflare.conf
+
+location / {
+    proxy_pass http://localhost:8080/;
+    }
+}
+

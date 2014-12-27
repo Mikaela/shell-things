@@ -1,0 +1,10 @@
+# debian (without the t) in this directory is for Debian Stable.
+
+## Main Debian archives.
+deb http://http.debian.net/debian testing main contrib non-free
+deb-src http://http.debian.net/debian testing main contrib non-free
+
+## Debian Security
+deb http://security.debian.org/ testing/updates main contrib non-free
+deb-src http://security.debian.org/ testing/updates main contrib non-free
+
