@@ -18,6 +18,9 @@ dnssec
 # Check that unsigned reply is OK (takes extra queries)
 dnssec-check-unsigned
 
+# Larger cache (default is 150)
+cache-size=99999
+
 # Debugging, log all DNS queries
 #log-queries
 
