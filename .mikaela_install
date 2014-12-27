@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Do not use this script unless you know what you are doing!
+set -x
+cat .mikaela/bash_aliases> ~/.bash_aliases
+cat .mikaela/zsh_aliases > ~/.zsh_aliases
+cat .mikaela/gitconfig > ~/.gitconfig
+mkdir -p ~/.gnupg
+cat .mikaela/gpg.conf> ~/.gnupg/gpg.conf
+cat .mikaela/pastebinit.xml > ~/.pastebinit.xml
+cat .mikaela/environment > ~/.environment
+cat .mikaela/gitconfig > ~/.gitconfig
+mkdir -p ~/.ssh
+cat .mikaela/keys/ssh > ~/.ssh/authorized_keys
+touch ~/.MIKAELA_GREP
+set +x
+# vim : set ft=sh :

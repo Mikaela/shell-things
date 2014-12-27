@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+# Do not use this script unless you know what you are doing!
+set -x
+
+export MIKAELA_GREP=$HOME/.MIKAELA_GREP
+
+cat rc/bashrc > ~/.bashrc
+cat conf/tmux.conf > ~/.tmux.conf
+cat rc/zshrc > ~/.zshrc
+cat conf/gitconfig > ~/.gitconfig
+cat rc/vimrc > ~/.vimrc
+if [ ! -f ~/.oidentd.conf ]; then
+    cat conf/oidentd.conf > ~/.oidentd.conf
+fi
+mkdir -p ~/.gnupg
+cat gpg/gpg.conf > ~/.gnupg/gpg.conf
+cat gpg/gpg-agent.conf > ~/.gnupg/gpg-agent.conf
+cat gpg/sks-keyservers.netCA.pem > ~/.gnupg/sks-keyservers.netCA.pem
+cat rc/xsessionrc > ~/.xsessionrc
+cat rc/xinitrc > ~/.xinitrc
+cat conf/pastebinit.xml > ~/.pastebinit.xml
+cat conf/Xdefaults > ~/.Xdefaults
+mkdir -p ~/.inxi
+cat conf/inxi.conf > ~/.inxi/inxi.conf
+gpg --quiet --import .keys/0x4DB53CFE82A46728.asc&
+gpg --quiet --import .keys/0xDAA6CA08F2E96AC7.asc&
+gpg --quiet --import .keys/0x0C207F07B2F32B67.asc&
+mkdir -p ~/.ssh
+chmod a+xr chmod
+bash -x ./chmod&
+
+if [ -f $HOME/.MIKAELAGREP ]
+then
+    mv $HOME/.MIKAELAGREP $MIKAELA_GREP
+fi
+
+if [ -f "$MIKAELA_GREP" ]
+then
+    bash -x .mikaela_install
+fi
+
+set +x
+# vim : set ft=sh :
+#chmod 700 $HOME -R

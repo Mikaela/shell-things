@@ -2,8 +2,6 @@
 # This script removes permissions from other people than the owner to 
 # files/folders that they don't have access to and where they don't need
 # access.
-## THIS SCRIPT HAS MOVED TO SHELL-THINGS AS "chmod"!
-## https://raw.github.com/Mikaela/shell-things/master/chmod
 set -x
 
 chmod g-rwx,o-rwx $HOME -R
@@ -24,9 +22,5 @@ touch ~/.netrc
 chmod a+r-wx,u+rw ~/.face
 chmod a+r-wx,u+rw ~/.forward
 chmod 600 ~/.netrc
-
-if [ -f chmod.2 ]; then
-    ./chmod.2
-fi
 
 set +x
