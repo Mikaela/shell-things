@@ -1,0 +1,23 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"ConsentPromptBehaviorAdmin"=dword:00000002
+"ConsentPromptBehaviorUser"=dword:00000002
+"dontdisplaylastusername"=dword:00000000
+"shutdownwithoutlogon"=dword:00000001
+"undockwithoutlogon"=dword:00000001
+"VerboseStatus"=dword:00000001
+"HideStartupScripts"=dword:00000000
+"HideShutdownScripts"=dword:00000000
+"EnableFirstLogonAnimation"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
+"RealTimeIsUniversal"=qword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+"AddrConfigControl"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\TCPIP\v6Transition]
+"Teredo_DefaultQualified"="Enabled"
+"Teredo_State"="Enterprise Client"
+"Teredo_ServerName"="teredo.trex.fi"

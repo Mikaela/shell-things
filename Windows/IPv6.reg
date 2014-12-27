@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
+"AddrConfigControl"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\TCPIP\v6Transition]
+"Teredo_DefaultQualified"="Enabled"
+"Teredo_State"="Enterprise Client"
+"Teredo_ServerName"="teredo.trex.fi"
