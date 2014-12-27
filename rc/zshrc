@@ -689,7 +689,7 @@ else
 fi
 
 # Installing...
-bash -x ./install.run
+bash -x ./install
 echo ""
 echo "shell-things: Installing finished."
 echo ""
