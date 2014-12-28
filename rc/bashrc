@@ -580,7 +580,7 @@ alias rcp="rsync -a --progress"
 alias rmv="rsync -a --progress --remove-source-files"
 
 # Clear apt list cache
-alias clear-apt-list-cache="cd /var/lib/apt/lists && rm * && cd partial && rm * && cd"
+alias clear-apt-list-cache="cd /var/lib/apt/lists;rm *;cd partial;rm *;cd"
 
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
