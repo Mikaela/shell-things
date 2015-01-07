@@ -559,6 +559,10 @@ alias rmv="rsync -a --progress --remove-source-files"
 # Clear apt list cache
 alias clear-apt-list-cache="cd /var/lib/apt/lists;rm *;cd partial;rm *;cd"
 
+# Accept all cookies with Lynx, makes browsing easier and
+# every other browser does this too.
+alias lynx="lynx -accept_all_cookies"
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
