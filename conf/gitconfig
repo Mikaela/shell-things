@@ -1,6 +1,6 @@
 [user]
 #    name = Mikaela Suomalainen
-#    email = mikaela.suomalainen@outlook.com
+#    email = mikaela+git@mikaela.info
 #    signingkey = 0x0C207F07B2F32B67
 [alias]
     cleandi = clean -di
