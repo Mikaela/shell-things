@@ -856,28 +856,14 @@ github-add-pulls() {
 }
 
 # Get server SSL certificate fingerprint in MD5, SHA1 and SHA256.
-# Note that this should not be pointed to round-robin and is pointed
-# preferably to direct IP address.
-# Note that OpenSSL doesn't support IPv6 at time of writing (2014-12-21).
+# Note that OpenSSL doesn't support IPv6 at time of writing (2015-01-13).
 serversslcertfp() {
-    openssl s_client -connect $1 < /dev/null 2>/dev/null|openssl x509 -fingerprint -md5 -noout -in /dev/stdin
-    openssl s_client -connect $1 < /dev/null 2>/dev/null|openssl x509 -fingerprint -sha1 -noout -in /dev/stdin
-    openssl s_client -connect $1 < /dev/null 2>/dev/null|openssl x509 -fingerprint -sha256 -noout -in /dev/stdin
-}
-
-# Get server SSL certificate fingerprint in MD5, SHA1 and SHA256.
-serversslcertfpmd5() {
-    openssl s_client -connect $1 < /dev/null 2>/dev/null|openssl x509 -fingerprint -md5 -noout -in /dev/stdin
-}
-
-# Get server SSL certificate fingerprint in MD5, SHA1 and SHA256.
-serversslcertfpsha1() {
-    openssl s_client -connect $1 < /dev/null 2>/dev/null|openssl x509 -fingerprint -sha1 -noout -in /dev/stdin
-}
-
-# Get server SSL certificate fingerprint in MD5, SHA1 and SHA256.
-serversslcertfpsha256() {
-    openssl s_client -connect $1 < /dev/null 2>/dev/null|openssl x509 -fingerprint -sha256 -noout -in /dev/stdin
+    SSSLCFFN="/tmp/$(date -Is).pem"
+    openssl s_client -showcerts -connect $1 < /dev/null|tee $SSSLCFFN
+    cat $SSSLCFFN|openssl x509 -md5 -fingerprint -noout
+    cat $SSSLCFFN|openssl x509 -sha1 -fingerprint -noout
+    cat $SSSLCFFN|openssl x509 -sha256 -fingerprint -noout
+    rm $SSSLCFFN
 }
 
 # .custom
