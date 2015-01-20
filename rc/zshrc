@@ -79,7 +79,7 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 if [[ $UNAME != Darwin  ]] then;
     (who -H -w -u|head -n10&)
     (echo "")
-    (last -10 -w -x&)
+#    (last -10 -w -x&)
 fi
 
 if [[ $UNAME = Darwin ]]; then
@@ -184,15 +184,10 @@ export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 # make
-if [[ $UNAME != Darwin ]]; then
-    export NPROC=$(nproc)
-else
-    export NPROC=$(sysctl -n hw.ncpu)
-fi
 alias maken="make -j$NPROC"
 
 # Ensure that pkg-config paths are found
-export PKG_CONFIG_PATH=$(which pkg-config)
+#export PKG_CONFIG_PATH=$(which pkg-config)
 
 #####   Aliases                     RJ706I  #####
 
