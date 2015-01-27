@@ -558,6 +558,10 @@ alias clear-apt-list-cache="cd /var/lib/apt/lists;rm *;cd partial;rm *;cd"
 # every other browser does this too.
 alias lynx="lynx -accept_all_cookies"
 
+# Cat multiple files preserving filenames
+# via http://stackoverflow.com/a/7816490
+alias multicat='tail -n +1'
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
