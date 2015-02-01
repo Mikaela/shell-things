@@ -388,9 +388,9 @@ alias gpg-key-count="gpg --export -a|gpg --import"
 alias follow="tail -F"
 
 #myip shows current IP. This was a function.
-alias myip="curl -s http://icanhazip.com"
-alias myip4="dig A +short myip.opendns.com @resolver1.opendns.com"
-alias myip6="curl -s6 http://icanhazip.com"
+alias myip4="dig +short myip.opendns.com A @208.67.222.222"
+alias myip6="dig +short myip.opendns.com AAAA @2620:0:ccc::2"
+alias myip="myip4 && myip6"
 
 # Update groups without logging out. Requires entering password. Source: http://blog.edwards-research.com/2010/10/linux-refresh-group-membership-without-logging-out/
 alias refreshgroups="exec su -l $USER"
