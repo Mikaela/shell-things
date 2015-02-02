@@ -563,7 +563,7 @@ alias lynx="lynx -accept_all_cookies"
 alias multicat='tail -n +1'
 
 # Getting SSIDs and keys from connmann (Jolla)
-alias connman-wlans="grep -E "Name|Passphrase" /var/lib/connman/wifi*/settings --no-filename"
+alias connman-wlans='grep -E "Name|Passphrase" /var/lib/connman/wifi*/settings --no-filename'
 
 # .aliases
 if [ -f ~/.aliases ]; then
