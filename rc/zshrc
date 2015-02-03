@@ -846,6 +846,13 @@ serversslcertfp() {
     rm $SSSLCFFN
 }
 
+# The same for local certificate file
+sslcertfp () {
+    cat $1 | openssl x509 -md5 -fingerprint -noout
+    cat $1 | openssl x509 -sha1 -fingerprint -noout
+    cat $1 | openssl x509 -sha256 -fingerprint -noout
+}
+
 # Source files for miscannellious modifications.
 
 # .custom
