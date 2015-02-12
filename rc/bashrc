@@ -590,6 +590,10 @@ alias multicat='tail -n +1'
 # Getting SSIDs and keys from connmann (Jolla)
 alias connman-wlans='grep -E "Name|Passphrase" /var/lib/connman/wifi*/settings --no-filename'
 
+# Turn input into lowercase and remove colons.
+# Meant for SSL certificates (IRC))
+alias lowernocolon="tr -d ':' | tr 'A-Z' 'a-z'"
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
