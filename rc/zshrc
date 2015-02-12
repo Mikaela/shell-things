@@ -858,6 +858,11 @@ serversslciphers() {
     nmap $1 -p $2 --script +ssl-enum-ciphers
 }
 
+# Generate SSL certificate
+sslgenpem () {
+    openssl req -nodes -newkey rsa:4096 -keyout $1.pem -x509 -days 3650 -out $1.pem -subj "/CN=$2"
+}
+
 # Source files for miscannellious modifications.
 
 # .custom
