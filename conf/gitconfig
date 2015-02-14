@@ -32,3 +32,5 @@
     helper = cache --timeout=86400
 [merge]
     ff = only
+[format]
+	signoff = true
