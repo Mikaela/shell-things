@@ -1,0 +1,7 @@
+[mysqld]
+performance_schema = off
+
+[mariadb]
+aria_pagecache_buffer_size = 32m
+aria_sort_buffer_size = 32m
+
