@@ -1,0 +1,14 @@
+[Unit]
+Description=ZNC, an advanced IRC bouncer
+After=network.target
+
+[Service]
+Type=forking
+PIDFile=/home/znc/.znc/znc.pid
+ExecStart=/home/znc/.local/bin/znc
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=always
+User=znc
+
+[Install]
+WantedBy=multi-user.target
