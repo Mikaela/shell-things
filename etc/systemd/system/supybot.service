@@ -1,0 +1,14 @@
+[Unit]
+Description=Supybot
+After=network.target
+
+[Service]
+Type=simple
+PIDFile=/home/bot/botname/botname.pid
+ExecStart=/usr/local/bin/supybot /home/bot/botname/botname.conf
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=always
+User=bot
+
+[Install]
+WantedBy=multi-user.target
