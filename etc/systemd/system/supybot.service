@@ -3,9 +3,9 @@ Description=Supybot
 After=network.target
 
 [Service]
-Type=simple
+Type=forking
 PIDFile=/home/bot/botname/botname.pid
-ExecStart=/usr/local/bin/supybot /home/bot/botname/botname.conf
+ExecStart=/usr/local/bin/supybot /home/bot/botname/botname.conf --daemon
 ExecReload=/bin/kill -HUP $MAINPID
 Restart=always
 User=bot
