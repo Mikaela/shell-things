@@ -4,7 +4,6 @@ After=network.target
 
 [Service]
 Type=forking
-PIDFile=/home/bot/botname/botname.pid
 ExecStart=/usr/local/bin/supybot /home/bot/botname/botname.conf --daemon
 ExecReload=/bin/kill -HUP $MAINPID
 Restart=always
