@@ -851,7 +851,7 @@ function sysctl-mikaela-run() {
     echo net.ipv6.bindv6only=1 >> /etc/sysctl.d/60-mikaela.conf
     echo net.ipv6.conf.eth0.use_tempaddr=2 >> /etc/sysctl.d/60-mikaela.conf
     echo net.ipv6.conf.wlan0.use_tempaddr=2 >> /etc/sysctl.d/60-mikaela.conf
-    sysctl -p
+    sysctl --system
     service procps start
     echo 'If network-manager is used, see /etc/NetworkManager/system-connections/<connection>'
     set +x
