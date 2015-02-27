@@ -13,10 +13,12 @@ deb mirror://mirrors.ubuntu.com/mirrors.txt vivid-updates main restricted univer
 ## or updates from the Ubuntu security team.
 deb mirror://mirrors.ubuntu.com/mirrors.txt vivid-backports main restricted universe multiverse
 deb mirror://mirrors.ubuntu.com/mirrors.txt vivid-security main restricted universe multiverse
+deb http://security.ubuntu.com/ubuntu vivid-security main restricted universe multiverse
 deb-src mirror://mirrors.ubuntu.com/mirrors.txt vivid main restricted universe multiverse
 deb-src mirror://mirrors.ubuntu.com/mirrors.txt vivid-updates main restricted universe multiverse
 deb-src mirror://mirrors.ubuntu.com/mirrors.txt vivid-backports main restricted universe multiverse
 deb-src mirror://mirrors.ubuntu.com/mirrors.txt vivid-security main restricted universe multiverse
+deb-src http://security.ubuntu.com/ubuntu vivid-security main restricted universe multiverse
 
 ## Uncomment the following two lines to add software from Canonical's
 ## 'partner' repository.

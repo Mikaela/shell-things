@@ -13,10 +13,12 @@ deb mirror://mirrors.ubuntu.com/mirrors.txt utopic-updates main restricted unive
 ## or updates from the Ubuntu security team.
 deb mirror://mirrors.ubuntu.com/mirrors.txt utopic-backports main restricted universe multiverse
 deb mirror://mirrors.ubuntu.com/mirrors.txt utopic-security main restricted universe multiverse
+deb http://security.ubuntu.com/ubuntu utopic-security main restricted universe multiverse
 deb-src mirror://mirrors.ubuntu.com/mirrors.txt utopic main restricted universe multiverse
 deb-src mirror://mirrors.ubuntu.com/mirrors.txt utopic-updates main restricted universe multiverse
 deb-src mirror://mirrors.ubuntu.com/mirrors.txt utopic-backports main restricted universe multiverse
 deb-src mirror://mirrors.ubuntu.com/mirrors.txt utopic-security main restricted universe multiverse
+deb-src http://security.ubuntu.com/ubuntu utopic-security main restricted universe multiverse
 
 ## Uncomment the following two lines to add software from Canonical's
 ## 'partner' repository.
@@ -29,7 +31,3 @@ deb-src http://archive.canonical.com/ubuntu utopic partner
 ## developers who want to ship their latest software.
 deb http://extras.ubuntu.com/ubuntu utopic main
 deb-src http://extras.ubuntu.com/ubuntu utopic main
-
-## Ubuntu MATE https://ubuntu-mate.org/
-deb http://ppa.launchpad.net/ubuntu-mate-dev/ppa/ubuntu utopic main
-deb-src http://ppa.launchpad.net/ubuntu-mate-dev/ppa/ubuntu utopic main

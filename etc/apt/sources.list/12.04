@@ -13,10 +13,12 @@ deb mirror://mirrors.ubuntu.com/mirrors.txt precise-updates main restricted univ
 ## or updates from the Ubuntu security team.
 deb mirror://mirrors.ubuntu.com/mirrors.txt precise-backports main restricted universe multiverse
 deb mirror://mirrors.ubuntu.com/mirrors.txt precise-security main restricted universe multiverse
+deb http://security.ubuntu.com/ubuntu precise-security main restricted universe multiverse
 deb-src mirror://mirrors.ubuntu.com/mirrors.txt precise main restricted universe multiverse
 deb-src mirror://mirrors.ubuntu.com/mirrors.txt precise-updates main restricted universe multiverse
 deb-src mirror://mirrors.ubuntu.com/mirrors.txt precise-backports main restricted universe multiverse
 deb-src mirror://mirrors.ubuntu.com/mirrors.txt precise-security main restricted universe multiverse
+deb-src http://security.ubuntu.com/ubuntu precise-security main restricted universe multiverse
 
 ## Uncomment the following two lines to add software from Canonical's
 ## 'partner' repository.
@@ -29,9 +31,3 @@ deb-src http://archive.canonical.com/ubuntu precise partner
 ## developers who want to ship their latest software.
 deb http://extras.ubuntu.com/ubuntu precise main
 deb-src http://extras.ubuntu.com/ubuntu precise main
-
-## Ubuntu MATE https://ubuntu-mate.org/
-deb http://ppa.launchpad.net/ubuntu-mate-dev/ppa/ubuntu precise main
-deb http://ppa.launchpad.net/ubuntu-mate-dev/precise-mate/ubuntu precise main
-deb-src http://ppa.launchpad.net/ubuntu-mate-dev/ppa/ubuntu precise main
-deb-src http://ppa.launchpad.net/ubuntu-mate-dev/precise-mate/ubuntu precise main
