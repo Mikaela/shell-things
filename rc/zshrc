@@ -581,9 +581,10 @@ fi
 
 #####   Functions                   ZGC5QQ  #####
 
-# GEOIP lookup, copied from the ultimate bashrc http://goo.gl/qGK5j
+# GEOIP lookup, improved from the ultimate bashrc http://goo.gl/qGK5j
 function geoip() {
-geoiplookup $1
+    geoiplookup $1
+    geoiplookup6 $1
 }
 
 # Checks which package the command comes from. Copied from the ultimate bashrc http://goo.gl/qGK5j
