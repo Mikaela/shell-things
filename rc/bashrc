@@ -886,7 +886,7 @@ sslcertfp () {
 
 # Usage: serversslciphers hostname port
 serversslciphers() {
-    nmap $1 -p $2 --script +ssl-enum-ciphers
+    nmap -Pn $1 -p $2 --script +ssl-enum-ciphers
 }
 
 # Generate SSL certificate
