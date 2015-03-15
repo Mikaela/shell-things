@@ -543,8 +543,9 @@ alias pypypip3=pippypy3
 # apg with small letters, capital letters and numbers. I don't usually use
 # special characters as they sometimes have difficulties with some systems
 # and cross-platform operating systems.
+# APG IS LIMITED TO 255 CHARACTERS SO IT'S REPLACED WITH PWGEN!
 # Usage: apt-random <minimum length>
-alias apg-random="apg -a1 -M LCN -m"
+alias apg-random="pwgen -s"
 
 # cp/mv using rsync. rcp appears to be link to scp in my system, so I can
 # safely use this alias.
