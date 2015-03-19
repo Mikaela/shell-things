@@ -31,3 +31,10 @@ deb-src http://archive.canonical.com/ubuntu utopic partner
 ## developers who want to ship their latest software.
 deb http://extras.ubuntu.com/ubuntu utopic main
 deb-src http://extras.ubuntu.com/ubuntu utopic main
+
+# Ubuntu MATE, added here because of
+# https://ubuntu-mate.org/blog/ubuntu-mate-utopic-ppa/
+# For indicators
+# https://ubuntu-mate.community/t/enabling-indicators-in-ubuntu-mate-14-10-and-15-04/22?u=mikaela
+deb http://ppa.launchpad.net/ubuntu-mate-dev/utopic-mate/ubuntu utopic main
+deb-src http://ppa.launchpad.net/ubuntu-mate-dev/utopic-mate/ubuntu utopic main
