@@ -570,6 +570,14 @@ alias connman-wlans='grep -E "Name|Passphrase" /var/lib/connman/wifi*/settings -
 # Meant for SSL certificates (IRC))
 alias lowernocolon="tr -d ':' | tr 'A-Z' 'a-z'"
 
+# As pacman and yaourt share the same flags
+if hash yaourt 2>/dev/null; then
+    alias pacman="yaourt --needed"
+else
+# I don't want to reinstall exact same  versions that I have
+    alias pacman="pacman --needed"
+fi
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases
