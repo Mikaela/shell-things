@@ -1,4 +1,4 @@
 if [ -f ~/.$(echo $SHELL|cut -d/ -f3)rc ]; then
     source ~/.$(echo $SHELL|cut -d/ -f3)rc
 fi
-setxkbmap -option compose:lwin
+setxkbmap -option compose:lwin -option terminate:ctrl_alt_bksp
