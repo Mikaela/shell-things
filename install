@@ -7,6 +7,7 @@ export MIKAELA_GREP=$HOME/.MIKAELA_GREP
 cat rc/bashrc > ~/.bashrc
 cat conf/tmux.conf > ~/.tmux.conf
 cat rc/zshrc > ~/.zshrc
+cat rc/profile > ~/.profile
 cat conf/gitconfig > ~/.gitconfig
 cat rc/vimrc > ~/.vimrc
 if [ ! -f ~/.oidentd.conf ]; then

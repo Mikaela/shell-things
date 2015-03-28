@@ -5,11 +5,6 @@ UNAME=$(uname)
 #   Aliases                     RJ706I
 #   Functions                   ZGC5QQ
 
-# For OS X + SSH sessions. bashrc must be sourced by hand at least once.
-echo "if [ -f ~/.bashrc ]; then
-    source ~/.bashrc
-fi" > ~/.bash_profile
-
 # enable terminal bell
 
 if [ -f /usr/bin/xset ];
