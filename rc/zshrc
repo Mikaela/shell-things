@@ -835,7 +835,7 @@ function sysctl-mikaela-run() {
     set -x
     mkdir -p /etc/sysctl.d/
     echo kernel.core_pattern = %e-%p-%h.core > /etc/sysctl.d/60-mikaela.conf
-    echo vm.swappiness = 10 >> /etc/sysctl.d/60-mikaela.conf
+    echo vm.swappiness = 1 >> /etc/sysctl.d/60-mikaela.conf
     echo net.ipv6.bindv6only=1 >> /etc/sysctl.d/60-mikaela.conf
     echo net.ipv6.conf.eth0.use_tempaddr=2 >> /etc/sysctl.d/60-mikaela.conf
     echo net.ipv6.conf.wlan0.use_tempaddr=2 >> /etc/sysctl.d/60-mikaela.conf
