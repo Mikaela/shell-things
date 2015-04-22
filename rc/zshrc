@@ -881,6 +881,22 @@ sslgenpem () {
     openssl req -nodes -newkey rsa:4096 -keyout $1.pem -x509 -days 3650 -out $1.pem -subj "/CN=$2"
 }
 
+# Managing SSL certificates of Google Chrome
+chrome-add-cert () {
+    echo "Please ensure that either libnss3-tools or nss-tools is installed."
+    certutil -d sql:$HOME/.pki/nssdb -A -t "P,," -n $1 -i $1
+}
+
+chrome-list-certs () {
+    echo "Please ensure that either libnss3-tools or nss-tools is installed."    
+    certutil -d sql:$HOME/.pki/nssdb -L # add '-h all' to see all built-in certs
+}
+
+ssldownloadcert () {
+    echo "Please ensure that either libnss3-tools or nss-tools is installed."    
+    echo QUIT | openssl s_client -connect $1:443 | sed -ne '/BEGIN CERT/,/END CERT/p' | tee $1.pem
+}
+
 # Source files for miscannellious modifications.
 
 # .custom
