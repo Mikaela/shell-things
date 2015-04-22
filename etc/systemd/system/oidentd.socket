@@ -1,0 +1,10 @@
+[Unit]
+Description=Ident (RFC 1413) socket
+
+[Socket]
+ListenStream=113
+BindIPv6Only=both
+Accept=yes
+
+[Install]
+WantedBy=sockets.target
