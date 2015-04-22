@@ -1,7 +1,7 @@
 Useful nginx files that I will probably need and which I will forget if I
 cannot read them from here.
 
-## Manjaro
+## Arch
 
 Remove the default server block and add to http block:
 
