@@ -283,9 +283,9 @@ if [[ $UNAME != Darwin ]]; then
 fi
 alias dir='dir --color=always'
 alias vdir='vdir --color=always'
-alias grep='grep --color=always'
-alias fgrep='fgrep --color=always'
-alias egrep='egrep --color=always'
+alias grep='grep -i --color=always'
+alias fgrep='fgrep -i --color=always'
+alias egrep='egrep -i --color=always'
 # some more ls aliases
 if [[ "$UNAME" != "Darwin" ]]; then
     alias ll='ls -alFh --color=always' && alias la='ls -A --color=always' && alias l='ls -CF --color=always'
@@ -368,9 +368,6 @@ alias myip="myip4 && myip6"
 
 # Update groups without logging out. Requires entering password. Source: http://blog.edwards-research.com/2010/10/linux-refresh-group-membership-without-logging-out/
 alias refreshgroups="exec su -l $USER"
-
-# Incasesensitive grepping
-alias grep="grep -i"
 
 # Get public key lenght of (public) SSH key
 alias ssh-pubkey-length="ssh-keygen -lf "
