@@ -130,21 +130,11 @@ fi
 # Sets your timezone. Set in format <Region/City>, or just timezone like UTC.
 # export TZ="Europe/Helsinki" # MIKAELA_GREP # MIKAELA_GREP_ENVIRONMENT
 
-# pyenv (Source: their README.md file http://git.io/ReCDSQ )
-export PYENV_ROOT="$HOME/.pyenv"
-alias pyenv-install="\wget -O /tmp/pyenv-installer https://raw.github.com/yyuu/pyenv-installer/master/bin/pyenv-installer;chmod +x /tmp/pyenv-installer;/tmp/pyenv-installer;rm /tmp/pyenv-installer"
-alias pyenv-install-alt="cd ~;git clone https://github.com/yyuu/pyenv.git $PYENV_ROOT"
-
 # Sets PATH. To add another path, add :</path/to/new/path> to string below. 
-PATH=$HOME/.local/bin:$HOME/.local/sbin:$HOME/.local/games:$HOME/bin:$HOME/sbin:$HOME/games:$PYENV_ROOT/shims:$PYENV_ROOT/bin:/usr/local/bin:/usr/local/sbin:/usr/local/games:/usr/bin:/usr/sbin:/usr/games:/bin:/sbin:/games:$PATH
+PATH=$HOME/.local/bin:$HOME/.local/sbin:$HOME/.local/games:$HOME/bin:$HOME/sbin:$HOME/games:/usr/local/bin:/usr/local/sbin:/usr/local/games:/usr/bin:/usr/sbin:/usr/games:/bin:/sbin:/games:$PATH
 
 # Removes duplicates from $PATH. Copied from http://unix.stackexchange.com/a/14896
 PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS; printf $a[$1]}')
-
-# Apply pyenv changes.
-if [ -d "$PYENV_ROOT" ]; then
-    eval "$(pyenv init -)"
-fi
 
 # "Changes" home directory without root. Uncomment both lines below this.
 #export HOME=<path to new home>
@@ -513,9 +503,6 @@ alias purgeconfig="apt-get install --reinstall -o DPkg::options::=--force-confas
 # Send command output to sprunge.us or ix.io `command|<sprungeus|ixio>`
 alias sprungeus="curl -F 'sprunge=<-' http://sprunge.us"
 alias ixio="curl -F 'f:1=<-' ix.io"
-
-# Always build pythons with --enable-shared when using pyenv
-alias pyenv='CONFIGURE_OPTS="--enable-shared" PYTHON_CONFIGURE_OPTS="--enable-shared" command \pyenv'
 
 # Copy-paste mtr output more easily
 alias mtrp="mtr -rwc 10"
