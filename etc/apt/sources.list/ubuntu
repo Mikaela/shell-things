@@ -26,8 +26,3 @@ deb-src http://security.ubuntu.com/ubuntu RELEASE-security main restricted unive
 ## respective vendors as a service to Ubuntu users.
 deb http://archive.canonical.com/ubuntu RELEASE partner
 deb-src http://archive.canonical.com/ubuntu RELEASE partner
-
-## This software is not part of Ubuntu, but is offered by third-party
-## developers who want to ship their latest software.
-deb http://extras.ubuntu.com/ubuntu RELEASE main
-deb-src http://extras.ubuntu.com/ubuntu RELEASE main
