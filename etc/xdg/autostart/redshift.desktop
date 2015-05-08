@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Exec=redshift -l 60.467306:26.945833
+Hidden=false
+Name=redshift
