@@ -485,6 +485,7 @@ alias homebrew-install="cd ~;git clone https://github.com/Homebrew/homebrew.git 
 alias homebrew-install-root="cd /usr;git clone https://github.com/Homebrew/homebrew.git --depth=1;mkdir -p local;rsync -aP homebrew/* local;rsync -aP homebrew/.* local/;chmod -R 755 local;chown -R root:wheel local;rm -rf homebrew"
 alias linuxbrew-install="cd ~;git clone https://github.com/Homebrew/linuxbrew.git --depth=1;mkdir -p .local;rsync -aP linuxbrew/* .local;rsync -aP linuxbrew/.* .local;rm -rf linuxbrew"
 alias linuxbrew-install-root="cd /usr;git clone https://github.com/Homebrew/linuxbrew.git --depth=1;mkdir -p local;rsync -aP linuxbrew/* local;rsync -aP linuxbrew/.* local/;chmod -R 755 local;chown -R root:wheel local;rm -rf linuxbrew"
+export HOMEBREW_LOGS=~/.local/log
 
 # OS X
 alias osx-server-caching-interface="serveradmin settings caching:Interface ="
