@@ -1,0 +1,9 @@
+[Unit]
+Description=Stops aliendalvik hourly as I am unlikely to need it that much and it restarts automatically if Android app is started and just wasttes battery.
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1h
+
+[Install]
+WantedBy=timers.target
