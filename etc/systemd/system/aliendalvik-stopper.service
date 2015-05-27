@@ -3,7 +3,7 @@ Description=aliendalvik stopper service
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/systemctl stop aliendalvik.service
+ExecStart=/bin/systemctl stop aliendalvik.service
 
 [Install]
 WantedBy=aliendalvik-stopper.timer
