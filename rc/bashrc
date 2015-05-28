@@ -809,6 +809,7 @@ erase-mbr() {
 # place for this.
 if hash clang 2>/dev/null; then
     export CC=clang
+    export HOMEBREW_CC=clang
 fi
 
 if hash clang++ 2>/dev/null; then
