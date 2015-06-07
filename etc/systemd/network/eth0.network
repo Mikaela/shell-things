@@ -1,5 +1,5 @@
 [Match]
-Name=enp0s18
+Name=eth0
 
 [Network]
 Address=172.16.1.2/16
@@ -10,4 +10,5 @@ Gateway=172.16.0.1
 DNS=127.0.0.1
 DNS=::1
 DNS=8.8.4.4
-NTP=pool.ntp.org
+# Enable systemd-timesyncd with `timedatectl set-ntp true`
+NTP=fi.pool.ntp.org
