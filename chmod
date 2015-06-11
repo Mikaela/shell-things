@@ -23,4 +23,7 @@ chmod a+r-wx,u+rw ~/.face
 chmod a+r-wx,u+rw ~/.forward
 chmod 600 ~/.netrc
 
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+
 set +x
