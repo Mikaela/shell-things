@@ -564,6 +564,9 @@ else
     alias pacman="pacman --needed"
 fi
 
+# Sailfish Network status, via IRC
+alias sailfish-nstatus='dbus-send --system --type=method_call --print-reply --dest=net.connman / net.connman.Manager.GetServices|less'
+
 # .aliases
 if [ -f ~/.aliases ]; then
     source ~/.aliases

@@ -578,6 +578,9 @@ else
     alias pacman="pacman --needed"
 fi
 
+# Sailfish Network status, via IRC
+alias sailfish-nstatus='dbus-send --system --type=method_call --print-reply --dest=net.connman / net.connman.Manager.GetServices|less'
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
