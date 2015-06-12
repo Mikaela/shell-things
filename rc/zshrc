@@ -860,6 +860,15 @@ ssldownloadcert () {
     echo QUIT | openssl s_client -connect $1:443 | sed -ne '/BEGIN CERT/,/END CERT/p' | tee $1.pem
 }
 
+# Getting magnet from transmission-daemon
+transmission-torrents () {
+    transmission-remote -l
+}
+transmission-magnet () {
+    transmission-remote -l -t $1 -i | grep magnet
+}
+
+
 # Source files for miscannellious modifications.
 
 # .custom
