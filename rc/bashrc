@@ -879,6 +879,11 @@ transmission-magnet () {
     transmission-remote -l -t $1 -i | grep magnet
 }
 
+git-squash () {
+    git reset --soft HEAD~$1
+    git commit
+}
+
 # .custom
 if [ -f ~/.custom ]; then
     source ~/.custom
