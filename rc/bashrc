@@ -454,9 +454,6 @@ alias apty="apt -y"
 alias apt-gety="apt-get -y "
 alias aptitudey="aptitude -y "
 
-# ffmpeg is depreceated
-alias ffmpeg=avconv
-
 # inxi  https://code.google.com/p/inxi/
 alias inxi-install="mkdir -p ~/.local/bin && cd ~/.local/bin && \wget -Nc smxi.org/inxi && chmod +x inxi && cd"
 alias inxi-install-root="cd /usr/local/bin;\wget -Nc smxi.org/inxi;chmod +x inxi;./inxi -U;cd"
