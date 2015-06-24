@@ -870,7 +870,7 @@ git-squash () {
 }
 
 # Combining mtrp4 & mtrp6
-mtrp46() {
+mtrp() {
     mtrp4 $@
     mtrp6 $@
 }

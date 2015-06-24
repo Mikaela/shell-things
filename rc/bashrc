@@ -881,7 +881,7 @@ git-squash () {
 }
 
 # Combining mtrp4 & mtp6
-mtrp46() {
+mtrp() {
     mtrp4 $@
     mtrp6 $@
 }
