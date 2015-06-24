@@ -522,7 +522,6 @@ alias sprungeus="curl -F 'sprunge=<-' http://sprunge.us"
 alias ixio="curl -F 'f:1=<-' ix.io"
 
 # Copy-paste mtr output more easily
-alias mtrp="mtr -rwc 10"
 alias mtrp4="mtr -rw4c 10"
 alias mtrp6="mtr -rw6c 10"
 
@@ -879,6 +878,12 @@ transmission-magnet () {
 git-squash () {
     git reset --soft HEAD~$1
     git commit
+}
+
+# Combining mtrp4 & mtp6
+mtrp46() {
+    mtrp4 $@
+    mtrp6 $@
 }
 
 # .custom
