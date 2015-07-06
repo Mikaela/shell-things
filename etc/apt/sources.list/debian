@@ -1,5 +1,3 @@
-# debiant in this directory is for Debian Testing.
-
 ## Main Debian archives.
 deb http://http.debian.net/debian stable main contrib non-free
 deb-src http://http.debian.net/debian stable main contrib non-free
