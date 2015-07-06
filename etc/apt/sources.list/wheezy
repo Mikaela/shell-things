@@ -1,11 +1,11 @@
 ## Main Debian archives.
-deb http://http.debian.net/debian wheezy main contrib non-free
-deb-src http://http.debian.net/debian wheezy main contrib non-free
+deb http://httpredir.debian.org/debian wheezy main contrib non-free
+deb-src http://httpredir.debian.org/debian wheezy main contrib non-free
 
 ## Debian Security
 deb http://security.debian.org/ wheezy/updates main contrib non-free
 deb-src http://security.debian.org/ wheezy/updates main contrib non-free
 
 ## Debian Backports
-deb http://http.debian.net/debian wheezy-backports main contrib non-free
-deb-src http://http.debian.net/debian wheezy-backports main contrib non-free
+deb http://httpredir.debian.org/debian wheezy-backports main contrib non-free
+deb-src http://httpredir.debian.org/debian wheezy-backports main contrib non-free

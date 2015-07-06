@@ -1,1 +1,3 @@
-sid
+## Main Debian archives.
+deb http://httpredir.debian.org/debian sid main contrib non-free
+deb-src http://httpredir.debian.org/debian sid main contrib non-free
