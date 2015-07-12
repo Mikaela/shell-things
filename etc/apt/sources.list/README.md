@@ -10,9 +10,21 @@ the files work everywhere and the nearest mirrors are always used no matter
 where you are.
 
 Which script to use?
+--------------------
 
 * `install` for Ubuntu and Debian testing/unstable.
     * If you run `ìnstall` on Debian Stable, sources.list will say
       `stable` and when new Debian becomes stable apt wants to
       upgrade to it directly and that can be dangerous.
 * `install.debian` for not-rolling Debian.
+
+Usage
+-----
+
+1. Become root with `sudo su -`
+2. Download the script either with either of the following):
+    1. `curl -LO https://github.com/Mikaela/shell-things/raw/master/etc/apt/sources.list/install`
+    2. `https://github.com/Mikaela/shell-things/raw/master/etc/apt/sources.list/install.debian`
+3. `chmod +x install*`
+4. `./install` or `./install.debian`
+5. *optionally* `rm install` or `rm install.debian`
