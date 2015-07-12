@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 export RELEASE=$(lsb_release -sr)
 a[1]="https://raw.githubusercontent.com/Mikaela/shell-things/master/etc/apt/sources.list/$RELEASE" 
 echo "I am now changing directory to /etc/apt/."
