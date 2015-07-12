@@ -23,8 +23,9 @@ Usage
 
 1. Become root with `sudo su -`
 2. Download the script either with either of the following):
-    1. `curl -LO https://github.com/Mikaela/shell-things/raw/master/etc/apt/sources.list/install`
-    2. `https://github.com/Mikaela/shell-things/raw/master/etc/apt/sources.list/install.debian`
-3. `chmod +x install*`
-4. `./install` or `./install.debian`
-5. *optionally* `rm install` or `rm install.debian`
+    1. Ubuntu/Debian testing/unstable:
+       `curl -L http://git.io/vqhtJ > sources.list.install`
+    2. Debian: `curl -L http://git.io/vqhtF > sources.list.install`
+3. `chmod +x sources.list.install`
+4. `./sources.list.install`
+5. *optionally* `sources.list.install`
