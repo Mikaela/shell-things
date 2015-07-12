@@ -714,7 +714,7 @@ cd
 
 # This function will download and install sources.list.
 
-function ubuntu-sources-list-install {
+function sources-list-install {
 
 export RELEASE=$(lsb_release -sr)
 a[1]="https://raw.githubusercontent.com/Mikaela/shell-things/master/etc/apt/sources.list/$RELEASE"
