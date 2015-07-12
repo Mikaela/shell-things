@@ -28,4 +28,4 @@ Usage
     2. Debian: `curl -L http://git.io/vqhtF > sources.list.install`
 3. `chmod +x sources.list.install`
 4. `./sources.list.install`
-5. *optionally* `sources.list.install`
+5. *optionally* `rm sources.list.install`
