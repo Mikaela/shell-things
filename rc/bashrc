@@ -216,11 +216,13 @@ UNAME=$(uname)
 CPUARCH=$(uname -p)
 
 # If we are on Linux, enable apt progress bar and colours
+# and Happy Eyeballs workaround https://pad.lv/1308200
 if [[ $USER = "root" ]]; then
     mkdir -p /etc/apt/apt.conf.d/
     echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
-    echo 'DPkgPM::Progress-Fancy "1";' >> /etc/apt/apt.conf.d/99progressbar
     echo 'APT::Color "1";' > /etc/apt/apt.conf.d/99color
+    echo 'Acquire::http::Timeout "2";' > /etc/apt/apt.conf.d/99timeout
+    echo 'Acquire::ftp::Timeout "2";' >> /etc/apt/apt.conf.d/99timeout
 fi
 
 # Copied from http://homepages.see.leeds.ac.uk/~eeaol/notes/2012/03/how_to_only_type_ssh_passphrase_once/

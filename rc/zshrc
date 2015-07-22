@@ -163,11 +163,13 @@ export SSH_AUTH_SOCK=/tmp/$USER.agent
 ssh-agent -a /tmp/$USER.agent > /dev/null 2>&1
 
 # If we are on Linux, enable apt progress bar and colours
+# and Happy Eyeballs workaround https://pad.lv/1308200
 if [[ $USER = "root" ]]; then
     mkdir -p /etc/apt/apt.conf.d/
     echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
-    echo 'DPkgPM::Progress-Fancy "1";' >> /etc/apt/apt.conf.d/99progressbar
     echo 'APT::Color "1";' > /etc/apt/apt.conf.d/99color
+    echo 'Acquire::http::Timeout "2";' > /etc/apt/apt.conf.d/99timeout
+    echo 'Acquire::ftp::Timeout "2";' >> /etc/apt/apt.conf.d/99timeout
 fi
 
 # In our series useless/weird environment variables, beep
