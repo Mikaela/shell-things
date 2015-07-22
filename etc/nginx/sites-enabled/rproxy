@@ -4,6 +4,9 @@ server {
     listen 443;
     listen [::]:443;
 
+    # Enable this if your want HSTS (recommended)
+    add_header Strict-Transport-Security "max-age=15552000; includeSubdomains; preload";
+
     server_name something.example.org;
 
 # NOTE: For X-Real-IP & X-Forwarded-For see ../conf.d/rproxy.conf

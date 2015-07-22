@@ -31,7 +31,7 @@ server {
     ssl_prefer_server_ciphers on;
 
     # Enable this if your want HSTS (recommended)
-    add_header Strict-Transport-Security max-age=15768000;
+    add_header Strict-Transport-Security "max-age=15552000; includeSubdomains; preload";
 
     # OCSP Stapling ---
     # fetch OCSP records from URL in ssl_certificate and cache them

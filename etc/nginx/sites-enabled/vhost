@@ -6,6 +6,9 @@ server {
     listen 443;
     listen [::]:443;
 
+    # Enable this if your want HSTS (recommended)
+    add_header Strict-Transport-Security "max-age=15552000; includeSubdomains; preload";
+
     root /var/www/vhostdir;
     index index.php index.html index.htm;
 
