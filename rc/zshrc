@@ -184,6 +184,9 @@ alias maken="make -j$NPROC"
 # Ensure that pkg-config paths are found
 #export PKG_CONFIG_PATH=$(which pkg-config)
 
+# znc uses this variable for figuring out hostname
+export HOSTNAME=$(hostname --fqdn)
+
 #####   Aliases                     RJ706I  #####
 
 # To get sudo work with aliases.
