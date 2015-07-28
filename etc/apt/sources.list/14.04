@@ -34,5 +34,5 @@ deb-src http://extras.ubuntu.com/ubuntu trusty main
 
 # https://wiki.ubuntu.com/DebuggingProgramCrash
 # sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 428D7C01
-deb http://ddebs.ubuntu.com trusty main restricted universe multiverse
-deb http://ddebs.ubuntu.com trusty-updates main restricted universe multiverse
+#deb http://ddebs.ubuntu.com trusty main restricted universe multiverse
+#deb http://ddebs.ubuntu.com trusty-updates main restricted universe multiverse
