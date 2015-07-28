@@ -31,3 +31,9 @@ deb-src http://archive.canonical.com/ubuntu wily partner
 # sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 428D7C01
 #deb http://ddebs.ubuntu.com wily main restricted universe multiverse
 #deb http://ddebs.ubuntu.com wily-updates main restricted universe multiverse
+# Ignore unless you have enabled proposed below
+#deb http://ddebs.ubuntu.com wily-proposed main restricted universe multiverse
+
+# https://wiki.ubuntu.com/Testing/EnableProposed
+#deb mirror://mirrors.ubuntu.com/mirrors.txt wily-proposed main restricted universe multiverse
+#deb-src mirror://mirrors.ubuntu.com/mirrors.txt wily-proposed main restricted universe multiverse

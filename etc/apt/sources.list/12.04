@@ -36,3 +36,9 @@ deb-src http://extras.ubuntu.com/ubuntu precise main
 # sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 428D7C01
 #deb http://ddebs.ubuntu.com precise main restricted universe multiverse
 #deb http://ddebs.ubuntu.com precise-updates main restricted universe multiverse
+# Ignore unless you have enabled proposed below
+#deb http://ddebs.ubuntu.com precise-proposed main restricted universe multiverse
+
+# https://wiki.ubuntu.com/Testing/EnableProposed
+#deb mirror://mirrors.ubuntu.com/mirrors.txt precise-proposed main restricted universe multiverse
+#deb-src mirror://mirrors.ubuntu.com/mirrors.txt precise-proposed main restricted universe multiverse
