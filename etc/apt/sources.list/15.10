@@ -26,3 +26,8 @@ deb-src http://security.ubuntu.com/ubuntu wily-security main restricted universe
 ## respective vendors as a service to Ubuntu users.
 deb http://archive.canonical.com/ubuntu wily partner
 deb-src http://archive.canonical.com/ubuntu wily partner
+
+# https://wiki.ubuntu.com/DebuggingProgramCrash
+# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 428D7C01
+deb http://ddebs.ubuntu.com wily main restricted universe multiverse
+deb http://ddebs.ubuntu.com wily-updates main restricted universe multiverse
