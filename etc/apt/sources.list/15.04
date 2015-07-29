@@ -1,39 +1,31 @@
-# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
-# newer versions of the distribution.
+## Main repositories
 deb mirror://mirrors.ubuntu.com/mirrors.txt vivid main restricted universe multiverse
-
-## Major bug fix updates produced after the final vivid of the
-## distribution.
-deb mirror://mirrors.ubuntu.com/mirrors.txt vivid-updates main restricted universe multiverse
-
-## N.B. software from this repository may not have been tested as
-## extensively as that contained in the main vivid, although it includes
-## newer versions of some applications which may provide useful features.
-## Also, please note that software in backports WILL NOT receive any review
-## or updates from the Ubuntu security team.
-deb mirror://mirrors.ubuntu.com/mirrors.txt vivid-backports main restricted universe multiverse
-deb mirror://mirrors.ubuntu.com/mirrors.txt vivid-security main restricted universe multiverse
-deb http://security.ubuntu.com/ubuntu vivid-security main restricted universe multiverse
 deb-src mirror://mirrors.ubuntu.com/mirrors.txt vivid main restricted universe multiverse
+deb mirror://mirrors.ubuntu.com/mirrors.txt vivid-updates main restricted universe multiverse
 deb-src mirror://mirrors.ubuntu.com/mirrors.txt vivid-updates main restricted universe multiverse
-deb-src mirror://mirrors.ubuntu.com/mirrors.txt vivid-backports main restricted universe multiverse
+deb mirror://mirrors.ubuntu.com/mirrors.txt vivid-security main restricted universe multiverse
 deb-src mirror://mirrors.ubuntu.com/mirrors.txt vivid-security main restricted universe multiverse
+deb http://security.ubuntu.com/ubuntu vivid-security main restricted universe multiverse
 deb-src http://security.ubuntu.com/ubuntu vivid-security main restricted universe multiverse
 
-## Uncomment the following two lines to add software from Canonical's
-## 'partner' repository.
-## This software is not part of Ubuntu, but is offered by Canonical and the
-## respective vendors as a service to Ubuntu users.
+## Backports
+## https://help.ubuntu.com/community/UbuntuBackports
+deb mirror://mirrors.ubuntu.com/mirrors.txt vivid-backports main restricted universe multiverse
+deb-src mirror://mirrors.ubuntu.com/mirrors.txt vivid-backports main restricted universe multiverse
+
+## Pre-release updates
+## https://wiki.ubuntu.com/Testing/EnableProposed
+#deb mirror://mirrors.ubuntu.com/mirrors.txt vivid-proposed main restricted universe multiverse
+#deb-src mirror://mirrors.ubuntu.com/mirrors.txt vivid-proposed main restricted universe multiverse
+
+## Proprietary and closed-source software
 deb http://archive.canonical.com/ubuntu vivid partner
 deb-src http://archive.canonical.com/ubuntu vivid partner
 
-# https://wiki.ubuntu.com/DebuggingProgramCrash
-# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 428D7C01
+## Non-built-in debug symbol packages
+## https://wiki.ubuntu.com/DebuggingProgramCrash
+## sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 428D7C01
 #deb http://ddebs.ubuntu.com vivid main restricted universe multiverse
 #deb http://ddebs.ubuntu.com vivid-updates main restricted universe multiverse
-# Ignore unless you have enabled proposed below
+## Ignore unless you have enabled proposed
 #deb http://ddebs.ubuntu.com vivid-proposed main restricted universe multiverse
-
-# https://wiki.ubuntu.com/Testing/EnableProposed
-#deb mirror://mirrors.ubuntu.com/mirrors.txt vivid-proposed main restricted universe multiverse
-#deb-src mirror://mirrors.ubuntu.com/mirrors.txt vivid-proposed main restricted universe multiverse
