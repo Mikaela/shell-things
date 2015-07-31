@@ -376,9 +376,7 @@ alias gpg-key-count="gpg --export -a|gpg --import"
 
 alias follow="tail -F"
 
-#myip shows current IP. This was a function.
-alias myip4="dig +short myip.opendns.com. A @208.67.222.222"
-alias myip6="dig +short myip.opendns.com. AAAA @2620:0:ccc::2"
+# Current IPv4 and IPv6 addresses. Calls functions.
 alias myip="myip4 && myip6"
 
 # Update groups without logging out. Requires entering password. Source: http://blog.edwards-research.com/2010/10/linux-refresh-group-membership-without-logging-out/
@@ -924,6 +922,24 @@ git-squash () {
 mtrp() {
     mtrp4 $@
     mtrp6 $@
+}
+
+# My IPv4 address
+myip4 () {
+    if hash dig 2>/dev/null; then
+        dig +short myip.opendns.com. A @208.67.222.222
+    else
+        curl -L4s http://icanhazip.com/
+    fi
+}
+
+# My IPv6 address
+myip6 () {
+    if hash dig 2>/dev/null; then
+        dig +short myip.opendns.com. AAAA @2620:0:ccc::2
+    else
+        curl -L6s http://icanhazip.com/
+    fi
 }
 
 # .custom
