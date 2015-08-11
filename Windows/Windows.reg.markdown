@@ -32,11 +32,12 @@ This file is supposed to explain [Windows.reg](Windows.reg).
 
 ```
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
+"RealTimeIsUniversal"=dword:00000000
 "RealTimeIsUniversal"=qword:00000000
 ```
 
 * Sets hardware clock to UTC time (doesn't affect system clock!)
-    * Must be dword with 32-bit systems.
+    * qword for 64-bit, dword for 32-bit systems. The latter might override earlier one.
 
 ```
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
