@@ -30,6 +30,8 @@ This file is supposed to explain [Windows.reg](Windows.reg).
 * Shows output of shutdown scripts
 * Disables the first logon animation on Windows 8\*
 
+<!--
+
 ```
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
 "RealTimeIsUniversal"=dword:00000000
@@ -38,6 +40,10 @@ This file is supposed to explain [Windows.reg](Windows.reg).
 
 * Sets hardware clock to UTC time (doesn't affect system clock!)
     * qword for 64-bit, dword for 32-bit systems. The latter might override earlier one.
+
+**Removed, this is too difficult. Just set timezone as UTC in Windows.**	
+
+-->	
 
 ```
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
