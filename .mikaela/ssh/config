@@ -1,0 +1,29 @@
+# My SSH config. This does leak existense of some hosts where I have
+# access, but they should require SSH key authentication anyway.
+
+Host *
+    VerifyHostKeyDNS=ask
+    Compression yes
+    CompressionLevel 6
+    ControlMaster yes
+    ControlPath /tmp/SSH_%u-%r.%h.%p
+    ControlPersist yes
+    ForwardAgent no
+    ForwardX11 no
+    IdentityFile ~/.ssh/Mikaela_Suomalainen
+    LogLevel VERBOSE
+    Protocol 2
+    PubkeyAuthentication yes
+    RequestTTY yes
+    SendEnv *
+    ServerAliveInterval 60
+
+Host hilla
+    HostName hilla.kapsi.fi
+
+Host lakka
+    HostName lakka.kapsi.fi
+
+Host synvaler
+    HostName synvaler.mikaela.info
+    AddressFamily inet6

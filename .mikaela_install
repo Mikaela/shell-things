@@ -11,6 +11,7 @@ cat .mikaela/environment > ~/.environment
 cat .mikaela/gitconfig > ~/.gitconfig
 mkdir -p ~/.ssh
 cat .mikaela/keys/ssh > ~/.ssh/authorized_keys
+cat .mikaela/ssh/config > ~/.ssh/config
 touch ~/.MIKAELA_GREP
 set +x
 # vim : set ft=sh :
