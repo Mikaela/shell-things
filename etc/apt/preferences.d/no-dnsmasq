@@ -1,3 +1,0 @@
-Package: dnsmasq
-Pin: release *
-Pin-Priority: -1

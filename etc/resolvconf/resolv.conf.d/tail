@@ -1,3 +1,0 @@
-# According to manual page for resolv.conf, the last search/domain entry
-# wins
-search DOMAIN.TLD
