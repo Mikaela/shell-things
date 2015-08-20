@@ -2,7 +2,7 @@
 # access, but they should require SSH key authentication anyway.
 
 Host *
-    VerifyHostKeyDNS=ask
+    VerifyHostKeyDNS=yes
     Compression yes
     CompressionLevel 6
     ControlMaster yes
