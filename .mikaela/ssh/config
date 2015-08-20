@@ -27,3 +27,4 @@ Host lakka
 Host synvaler
     HostName synvaler.mikaela.info
     AddressFamily inet6
+    User nemo
