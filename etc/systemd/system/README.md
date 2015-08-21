@@ -1,3 +1,5 @@
+Subdirectories of this directory shouldn't exist unless they are .wants
+
 ## IPv6-files
 
 The IPv6 files are copied from https://www.reddit.com/r/raspberry_pi/comments/14vcpz/rpi_as_an_ipv6_router_using_a_sixxs_tunnel_and/
