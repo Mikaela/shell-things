@@ -1,9 +1,9 @@
 [Unit]
 Description=DNSCrypt client proxy
-Requires=dnscrypt-proxy.socket
+Requires=dnscrypt-proxy4.socket
 
 [Install]
-Also=dnscrypt-proxy.socket
+Also=dnscrypt-proxy4.socket
 WantedBy=multi-user.target
 
 [Service]
