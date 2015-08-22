@@ -567,6 +567,9 @@ alias sailfish-nstatus='dbus-send --system --type=method_call --print-reply --de
 # apt build depedencies (without installing)
 alias apt-builddep="apt-rdepends --build-depends --follow=DEPENDS"
 
+# http://superuser.com/a/638033 - get embedded Windows key
+alias winkey="xxd /sys/firmware/acpi/tables/MSDM"
+
 # Allow custom aliases to be put in .aliases or .zsh_aliases .
 
 # .aliases
