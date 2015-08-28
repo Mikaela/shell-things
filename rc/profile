@@ -1,4 +1,26 @@
-#if [ -f ~/.$(echo $SHELL|cut -d/ -f3)rc ] && [ x$DISPLAY != x ]; then
-#    source ~/.$(echo $SHELL|cut -d/ -f3)rc
-#fi
+# Set PATH properly
+PATH=$HOME/.local/bin:$HOME/.local/sbin:$HOME/.local/games:$HOME/.linuxbrew/bin:$HOME/.linuxbrew/sbin:$HOME/.linuxbrew/games:$HOME/bin:$HOME/sbin:$HOME/games:/usr/local/bin:/usr/local/sbin:/usr/local/games:/usr/bin:/usr/sbin:/usr/games:/bin:/sbin:/games:$PATH
+
+# Add RubyGems to PATH
+if hash ruby 2>/dev/null; then
+    PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+fi
+
+# Set compose to left Super/Windows, kill X with ctrl-alt-backspace,
+# disable nbsp (still available with compose-space-space.
 setxkbmap -option compose:lwin -option terminate:ctrl_alt_bksp -option nbsp:none
+
+# Removes duplicates from $PATH. Copied from http://unix.stackexchange.com/a/14896
+PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS; printf $a[$1]}')
+
+# Start gpg-agent
+eval $(gpg-agent --daemon)
+
+# Enable core files.
+ulimit -c unlimited
+
+
+# The environment was set to ~/.environment according to other files...
+if [ -f ~/.environment ]; then
+    . ~/.environment
+fi
