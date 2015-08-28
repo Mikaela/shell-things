@@ -17,6 +17,7 @@ Host *
     RequestTTY yes
     SendEnv *
     ServerAliveInterval 60
+    UpdateHostKeys=ask
 
 Host hilla
     HostName hilla.kapsi.fi
