@@ -125,7 +125,7 @@ UsePrivilegeSeparation sandbox      # Default for new installations.
 #ChrootDirectory none
 #VersionAddendum none
 
-Banner /etc/issue
+Banner /etc/issue.net
 
 # Example of overriding settings on a per-user basis
 #Match User anoncvs
