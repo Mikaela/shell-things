@@ -17,7 +17,6 @@ mkdir -p ~/.gnupg
 cat gpg/gpg.conf > ~/.gnupg/gpg.conf
 cat gpg/gpg-agent.conf > ~/.gnupg/gpg-agent.conf
 cat gpg/sks-keyservers.netCA.pem > ~/.gnupg/sks-keyservers.netCA.pem
-cat rc/xsessionrc > ~/.xsessionrc
 cat rc/xinitrc > ~/.xinitrc
 cat conf/pastebinit.xml > ~/.pastebinit.xml
 cat conf/Xdefaults > ~/.Xdefaults
