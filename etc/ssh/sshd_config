@@ -1,15 +1,8 @@
-# Package generated configuration file
 # See the sshd_config(5) manpage for details
 
-# What ports, IPs and protocols we listen for
-# sshd default
 Port 22
-# https, usually not blocked by firewalls. Verify that there is nothing
-# else listening on 443 before using this port.
-Port 443
-# personal port assigning system that I use to get around inability of
-# my router to forward one WAN port to another LAN port
-Port 10000
+#Port 443
+#Port 10000
 
 # Use these options to restrict which interfaces/protocols sshd will bind to
 ListenAddress ::
@@ -17,12 +10,10 @@ ListenAddress 0.0.0.0
 Protocol 2
 # HostKeys for protocol version 2
 HostKey /etc/ssh/ssh_host_rsa_key
-HostKey /etc/ssh/ssh_host_dsa_key
 HostKey /etc/ssh/ssh_host_ecdsa_key
 HostKey /etc/ssh/ssh_host_ed25519_key
 
 ## IF THE HOST KEYS ARE MISSING, RUN THE FOLLOWING AS ROOT:
-# ssh-keygen -t dsa -N "" -f /etc/ssh/ssh_host_dsa_key
 # ssh-keygen -t rsa -N "" -f /etc/ssh/ssh_host_rsa_key
 # ssh-keygen -t ecdsa -N "" -f /etc/ssh/ssh_host_ecdsa_key
 # ssh-keygen -t ed25519 -N "" -f /etc/ssh/ssh_host_ed25519_key
