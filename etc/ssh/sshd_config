@@ -20,12 +20,10 @@ Protocol 2
 
 # HostKeys for protocol version 2
 HostKey /etc/ssh/ssh_host_rsa_key
-HostKey /etc/ssh/ssh_host_ecdsa_key
 HostKey /etc/ssh/ssh_host_ed25519_key
 
 ## IF THE HOST KEYS ARE MISSING, RUN THE FOLLOWING AS ROOT:
 # ssh-keygen -t rsa -N "" -f /etc/ssh/ssh_host_rsa_key
-# ssh-keygen -t ecdsa -N "" -f /etc/ssh/ssh_host_ecdsa_key
 # ssh-keygen -t ed25519 -N "" -f /etc/ssh/ssh_host_ed25519_key
 
 # Uncomment one of the following depending on which OS
