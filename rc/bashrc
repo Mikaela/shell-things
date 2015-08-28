@@ -187,7 +187,7 @@ fi
 #export TZ="Europe/Helsinki" # MIKAELA_GREP #MIKAELA_GREP_ENVIRONMENT
 
 # Sets PATH. To add another path, add :</path/to/new/path> to string below. 
-PATH=$HOME/.local/bin:$HOME/.local/sbin:$HOME/.local/games:$HOME/bin:$HOME/sbin:$HOME/games:/usr/local/bin:/usr/local/sbin:/usr/local/games:/usr/bin:/usr/sbin:/usr/games:/bin:/sbin:/games:$PATH
+PATH=$HOME/.local/bin:$HOME/.local/sbin:$HOME/.local/games:$HOME/.linuxbrew/bin:$HOME/.linuxbrew/sbin:$HOME/.linuxbrew/games:$HOME/bin:$HOME/sbin:$HOME/games:/usr/local/bin:/usr/local/sbin:/usr/local/games:/usr/bin:/usr/sbin:/usr/games:/bin:/sbin:/games:$PATH
 
 # Add RubyGems to PATH
 if hash ruby 2>/dev/null; then
