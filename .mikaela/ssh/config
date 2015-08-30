@@ -2,22 +2,32 @@
 # access, but they should require SSH key authentication anyway.
 
 Host *
+    # Verify SSHFP records. In case DNSSEC is used this skips the
+    # question on whether you trust the fingerprint or not.
     VerifyHostKeyDNS=yes
-    Compression yes
-    CompressionLevel 6
+
+    # Multiple sessions over single connection
     ControlMaster yes
+    # Path for the control socket
     ControlPath /tmp/SSH_%u-%r.%h.%p
+    # Keep connection open in the background even after connection has been
+    # closed.
     ControlPersist yes
+
     ForwardAgent no
     ForwardX11 no
+
     IdentityFile ~/.ssh/Mikaela_Suomalainen
+
     LogLevel VERBOSE
     Protocol 2
+
+    # Always try public key authentication
     PubkeyAuthentication yes
-    RequestTTY yes
-    SendEnv *
+
+    # "ping" the server every minute, if it doesn't reply in three
+    # "pings", disconnect.
     ServerAliveInterval 60
-    UpdateHostKeys=ask
 
 Host hilla
     HostName hilla.kapsi.fi
