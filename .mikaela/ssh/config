@@ -2,19 +2,10 @@
 # access, but they should require SSH key authentication anyway.
 
 Host *
-    # Ensure KnownHosts are unreadable if leaked.
-    # While you might be reading this file from GitHub, I haven't
-    # specified all hosts here.
-    HashKnownHosts yes
-    
-    # Verify SSHFP records. In case DNSSEC is used this skips the
-    # question on whether you trust the fingerprint or not.
-    VerifyHostKeyDNS=yes
-
-    # Multiple sessions over single connection
-    ControlMaster yes
     # Path for the control socket
     ControlPath /tmp/SSH_%u-%r.%h.%p
+    # Multiple sessions over single connection
+    ControlMaster yes
     # Keep connection open in the background even after connection has been
     # closed.
     ControlPersist yes
@@ -22,6 +13,12 @@ Host *
     ForwardAgent no
     ForwardX11 no
 
+    # Ensure KnownHosts are unreadable if leaked.
+    # While you might be reading this file from GitHub, I haven't
+    # specified all hosts here.
+    HashKnownHosts yes
+
+    # SSH key to use
     IdentityFile ~/.ssh/Mikaela_Suomalainen
 
     LogLevel VERBOSE
@@ -34,6 +31,10 @@ Host *
     # "pings", disconnect.
     ServerAliveInterval 60
 
+    # Verify SSHFP records. In case DNSSEC is used this skips the
+    # question on whether you trust the fingerprint or not.
+    VerifyHostKeyDNS=yes
+
 Host hilla
     HostName hilla.kapsi.fi
     User mikaela
@@ -43,14 +44,14 @@ Host lakka
     User mikaela
 
 Host synvaler
-    HostName synvaler.mikaela.info
     AddressFamily inet6
+    HostName synvaler.mikaela.info
     User nemo
-
-Host verdarik
-    HostName verdarik.mikaela.info
-    User mikaela
 
 Host tezagm
     HostName tezagm.mikaela.info
+    User mikaela
+
+Host verdarik
+    HostName verdarik.mikaela.info
     User mikaela
