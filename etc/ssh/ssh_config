@@ -1,0 +1,41 @@
+# /etc/ssh/ssh_config - at least the Arch default was full of comments
+# so I think it makes more sense if I just paste my normal config here
+# without host specific options.
+
+Host *
+    # Path for the control socket
+    ControlPath /tmp/SSH_%u-%r.%h.%p
+    # Multiple sessions over single connection
+    ControlMaster yes
+    # Keep connection open in the background even after connection has been
+    # closed.
+    ControlPersist yes
+
+    ForwardAgent no
+    ForwardX11 no
+
+    # Ensure KnownHosts are unreadable if leaked.
+    # While you might be reading this file from GitHub, I haven't
+    # specified all hosts here.
+    HashKnownHosts yes
+
+    # SSH key to use
+    IdentityFile ~/.ssh/Mikaela_Suomalainen
+
+    LogLevel VERBOSE
+    Protocol 2
+
+    # Always try public key authentication
+    PubkeyAuthentication yes
+
+    # If the server doesn't reply in "three" pings, connection is dead.
+    # Defaults to 3 anyway, but I add it here for clearity and
+    # in case it decides to change in the future.
+    ServerAliveCountMax 3
+
+    # "ping" the server every minute.
+    ServerAliveInterval 60
+
+    # Verify SSHFP records. In case DNSSEC is used this skips the
+    # question on whether you trust the fingerprint or not.
+    VerifyHostKeyDNS=yes

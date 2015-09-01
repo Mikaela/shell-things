@@ -21,7 +21,7 @@ HostKey /etc/ssh/ssh_host_rsa_key
 
 # Uncomment one of the following depending on which OS
 ## Arch
-#Subsystem   sftp    /usr/lib/ssh/sftp-server
+Subsystem   sftp    /usr/lib/ssh/sftp-server
 ## Debian
 #Subsystem sftp /usr/lib/openssh/sftp-server
 
@@ -61,10 +61,3 @@ PrintMotd no # pam does that
 UsePrivilegeSeparation sandbox      # Default for new installations.
 
 Banner /etc/issue.net
-
-# If the client doesn't reply to 3 "pings", connection is dead.
-ClientAliveCountMax 3
-
-# "ping" the client after 60 seconds if no data has has been received
-# from it.
-ClientAliveInterval 60
