@@ -27,8 +27,12 @@ Host *
     # Always try public key authentication
     PubkeyAuthentication yes
 
-    # "ping" the server every minute, if it doesn't reply in three
-    # "pings", disconnect.
+    # If the server doesn't reply in "three" pings, connection is dead.
+    # Defaults to 3 anyway, but I add it here for clearity and
+    # in case it decides to change in the future.
+    ServerAliveCountMax 3
+
+    # "ping" the server every minute.
     ServerAliveInterval 60
 
     # Verify SSHFP records. In case DNSSEC is used this skips the
