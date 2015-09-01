@@ -17,9 +17,6 @@ Host *
     # Ensure KnownHosts are unreadable if leaked.
     HashKnownHosts yes
 
-    # SSH key to use
-    IdentityFile ~/.ssh/Mikaela_Suomalainen
-
     LogLevel VERBOSE
     Protocol 2
 
