@@ -15,8 +15,6 @@ Host *
     ForwardX11 no
 
     # Ensure KnownHosts are unreadable if leaked.
-    # While you might be reading this file from GitHub, I haven't
-    # specified all hosts here.
     HashKnownHosts yes
 
     # SSH key to use
