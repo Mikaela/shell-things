@@ -33,9 +33,16 @@ Host *
     # "ping" the server every minute.
     ServerAliveInterval 60
 
+    # OpenSSH 6.8+ - ask all host keys from servers.
+    # I trust the server admins and ways to identify the keys (DNSSEC,
+    # manual)
+    UpdateHostKeys yes
+
     # Verify SSHFP records. In case DNSSEC is used this skips the
     # question on whether you trust the fingerprint or not.
-    VerifyHostKeyDNS=yes
+    # All my hosts run DNSSEC validating Unbound on localhost and use it
+    # for all DNS queries. Yours should too.
+    VerifyHostKeyDNS yes
 
 Host hilla
     HostName hilla.kapsi.fi
