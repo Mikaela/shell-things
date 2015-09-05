@@ -180,7 +180,7 @@ fi
 #export EDITOR=vim # MIKAELA_GREP MIKAELA_GREP_ENVIRONMENT
 
 # Sets locale. You can get list of locales with "locale -a" command. This should be something which ends to .utf8
-#export LC_ALL=fi_FI.UTF-8 # MIKAELA_GREP # MIKAELA_GREP_ENVIRONMENT
+#export LANG=fi_FI.UTF-8 # MIKAELA_GREP # MIKAELA_GREP_ENVIRONMENT
 
 # Sets your timezone. Set in format <Region/City>, or just timezone like UTC.
 #export TZ="Europe/Helsinki" # MIKAELA_GREP #MIKAELA_GREP_ENVIRONMENT
