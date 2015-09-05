@@ -23,7 +23,7 @@ Host *
     # Always try public key authentication
     PubkeyAuthentication yes
 
-    # Send LANG and LC_* environment variables to the server
+    # Send LANG and LC_* environment variables to the server.
     SendEnv LANG LC_*
 
     # If the server doesn't reply in "three" pings, connection is dead.
