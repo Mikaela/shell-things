@@ -1,6 +1,6 @@
 [Unit]
 Description=Enable IPv6 forwarding
-After=network.target
+After=network-online.target
 
 [Service]
 Type=oneshot
