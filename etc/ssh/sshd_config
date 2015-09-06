@@ -52,10 +52,10 @@ Port 22
 ListenAddress 0.0.0.0
 ListenAddress ::
 
-# In cse you wish to use external SFTP subsystem, uncomment one of the
-# following or wonder where the subsystem is.
-# I think it's the easiest when I don't uncomment anything as I don't use
-# SFTP so often...
+# Use the internal SFTP to avoid having to find the external one.
+Subsystem sftp internal-sftp
+# If you wish to use the external one, uncomment the appropiate one
+# for your OS or find it somewhere.
 ## Arch
 #Subsystem   sftp    /usr/lib/ssh/sftp-server
 ## Debian
@@ -82,13 +82,6 @@ PrintMotd no
 
 # Avoid enabling insecure protocol 1.
 Protocol 2
-
-## Enable SFTP. As the subsystem location varies, uncomment the one for the
-## OS you use.
-## Arch
-#Subsystem sftp /usr/lib/ssh/sftp-server
-## Debian
-#Subsystem sftp /usr/lib/openssh/sftp-server
 
 # Set this to 'yes' to enable PAM authentication, account processing,
 # and session processing. If this is enabled, PAM authentication will
