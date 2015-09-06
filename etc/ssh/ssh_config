@@ -3,7 +3,7 @@
 # without host specific options.
 
 Host *
-    # Path for the control socket
+    # Path for the control socket.
     ControlPath /tmp/SSH_%u-%r.%h.%p
     # Multiple sessions over single connection
     ControlMaster yes
@@ -20,13 +20,13 @@ Host *
     LogLevel VERBOSE
     Protocol 2
 
-    # Always try public key authentication
+    # Always try public key authentication.
     PubkeyAuthentication yes
 
     # Send LANG, LANGUAGE and LC_* environment variables to the server.
     SendEnv LANG LANGUAGE LC_*
 
-    # If the server doesn't reply in "three" pings, connection is dead.
+    # If the server doesn't reply in three "pings", connection is dead.
     # Defaults to 3 anyway, but I add it here for clearity and
     # in case it decides to change in the future.
     ServerAliveCountMax 3

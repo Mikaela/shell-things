@@ -2,7 +2,7 @@
 # access, but they should require SSH key authentication anyway.
 
 Host *
-    # Path for the control socket
+    # Path for the control socket.
     ControlPath /tmp/SSH_%u-%r.%h.%p
     # Multiple sessions over single connection
     ControlMaster yes
@@ -19,7 +19,7 @@ Host *
     LogLevel VERBOSE
     Protocol 2
 
-    # Always try public key authentication
+    # Always try public key authentication.
     PubkeyAuthentication yes
 
     # Send LANG, LANGUAGE and LC_* environment variables to the server.
@@ -35,7 +35,7 @@ Host *
 
     # OpenSSH 6.8+ - ask all host keys from servers.
     # I trust the server admins and ways to identify the keys (DNSSEC,
-    # manual)
+    # manual).
     UpdateHostKeys yes
 
     # Verify SSHFP records. In case DNSSEC is used this skips the
