@@ -52,15 +52,18 @@ Port 22
 ListenAddress 0.0.0.0
 ListenAddress ::
 
-# Uncomment one of the following depending on which OS
+# In cse you wish to use external SFTP subsystem, uncomment one of the
+# following or wonder where the subsystem is.
+# I think it's the easiest when I don't uncomment anything as I don't use
+# SFTP so often...
 ## Arch
 #Subsystem   sftp    /usr/lib/ssh/sftp-server
 ## Debian
 #Subsystem sftp /usr/lib/openssh/sftp-server
 ## Fedora (21)
 #Subsystem sftp /usr/libexec/openssh/sftp-server
-# Gentoo (/usr/lib is a symlink)
-#Subsystem /usr/lib/misc/sftp-server
+## Gentoo (/usr/lib is a symlink)
+#Subsystem sftp /usr/lib/misc/sftp-server
 
 # VERBOSE logging, logs user's key fingerprint on login. Needed to have a
 # clear audit track of which key was using to log in.
