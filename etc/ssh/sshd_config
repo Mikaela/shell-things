@@ -44,6 +44,10 @@ HostKey /etc/ssh/ssh_host_rsa_key
 # ssh-keygen -t ed25519 -N "" -f /etc/ssh/ssh_host_ed25519_key
 # ssh-keygen -t rsa -N "" -f /etc/ssh/ssh_host_rsa_key
 
+# Listen on the following TCP ports, default 22.
+# /etc/ssh/sshd_config ...: ports must be specified before ListenAddress.
+Port 22
+
 # Listen on all IPv4 & IPv6 addresses.
 ListenAddress 0.0.0.0
 ListenAddress ::
@@ -58,9 +62,6 @@ PasswordAuthentication no
 # Auditing reasons, difficult to track which process belongs to which root
 # user.
 PermitRootLogin No
-
-# Listen on the following TCP ports, default 22.
-Port 22
 
 # Print /etc/motd (or /etc/profile or equivalent) on login. It's already
 # done by PAM, so no need for duplicate MOTDs.
