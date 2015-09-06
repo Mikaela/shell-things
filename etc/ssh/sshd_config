@@ -52,18 +52,19 @@ Port 22
 ListenAddress 0.0.0.0
 ListenAddress ::
 
-# Use the internal SFTP to avoid having to find the external one.
-Subsystem sftp internal-sftp
+# Use the internal SFTP to avoid having to find the external one. VERBOSE
+# logs transactions that sftp-server performs on behalf of the client.
+Subsystem sftp internal-sftp -l VERBOSE
 # If you wish to use the external one, uncomment the appropiate one
 # for your OS or find it somewhere.
 ## Arch
-#Subsystem   sftp    /usr/lib/ssh/sftp-server
+#Subsystem   sftp    /usr/lib/ssh/sftp-server -l VERBOSE
 ## Debian
-#Subsystem sftp /usr/lib/openssh/sftp-server
+#Subsystem sftp /usr/lib/openssh/sftp-server -l VERBOSE
 ## Fedora (21)
-#Subsystem sftp /usr/libexec/openssh/sftp-server
+#Subsystem sftp /usr/libexec/openssh/sftp-server -l VERBOSE
 ## Gentoo (/usr/lib is a symlink)
-#Subsystem sftp /usr/lib/misc/sftp-server
+#Subsystem sftp /usr/lib/misc/sftp-server -l VERBOSE
 
 # VERBOSE logging, logs user's key fingerprint on login. Needed to have a
 # clear audit track of which key was using to log in.
