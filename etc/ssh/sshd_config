@@ -2,16 +2,41 @@
 # be more clear and if they are missed some day, just download
 # upstream config file or take it from any distribution.
 
-Port 22
+# Partially based on https://wiki.mozilla.org/Security/Guidelines/OpenSSH
+# where some comments are took. Some options look like I don't want to
+# change them to get updates when defaults change.
 
+# No environment variable is accepted for security reasons, e.g.
+# shellshock worked with remotely accepted environment variables.
+#AcceptEnv LANG LANGUAGE LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT LC_IDENTIFICATION
+
+# IPv4 & IPv6
 AddressFamily any
-ListenAddress 0.0.0.0
-ListenAddress ::
 
-# The default requires explicit activation of protocol 1
-Protocol 2
+# Password based logins are disabled - only public key based logins are
+# allowed.
+AuthenticationMethods publickey
 
-# HostKeys for protocol version 2
+# The default is to check both .ssh/authorized_keys and
+# .ssh/authorized_keys2 but this is overridden so installations will only
+# check .ssh/authorized_keys.
+AuthorizedKeysFile  .ssh/authorized_keys
+
+# File to send to client before authentication.
+Banner /etc/issue.net
+
+# Disable s/key passwords.
+ChallengeResponseAuthentication no
+
+# If the client doesn't reply in three "pings", connection is dead.
+# Defaults to 3 anyway, but I add it here for clearity and
+# in case it decides to change in the future.
+ClientAliveCountMax 3
+
+# "ping" the client every minute.
+ClientAliveInterval 60
+
+# HostKeys for protocol version 2.
 HostKey /etc/ssh/ssh_host_ed25519_key
 HostKey /etc/ssh/ssh_host_rsa_key
 
@@ -19,36 +44,37 @@ HostKey /etc/ssh/ssh_host_rsa_key
 # ssh-keygen -t ed25519 -N "" -f /etc/ssh/ssh_host_ed25519_key
 # ssh-keygen -t rsa -N "" -f /etc/ssh/ssh_host_rsa_key
 
-# Uncomment one of the following depending on which OS
-## Arch
-#Subsystem   sftp    /usr/lib/ssh/sftp-server
-## Debian
-#Subsystem sftp /usr/lib/openssh/sftp-server
+# Listen on all IPv4 & IPv6 addresses.
+ListenAddress 0.0.0.0
+ListenAddress ::
 
-# Nothing is Accepted for security reasons, e.g. shellshock worked with
-# remotely accepted environment variables.
-#AcceptEnv LANG LANGUAGE LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT LC_IDENTIFICATION
-
-# Logging
+# VERBOSE logging, logs user's key fingerprint on login. Needed to have a
+# clear audit track of which key was using to log in.
 LogLevel VERBOSE
-
-# Authentication:
-PermitRootLogin No
-
-# The default is to check both .ssh/authorized_keys and
-# .ssh/authorized_keys2 but this is overridden so installations will only
-# check .ssh/authorized_keys
-AuthorizedKeysFile  .ssh/authorized_keys
-
-# Password based logins are disabled - only public key based logins are
-# allowed.
-AuthenticationMethods publickey
 
 # Disable tunneled clear text passwords!
 PasswordAuthentication no
 
-# Disable s/key passwords
-ChallengeResponseAuthentication no
+# Auditing reasons, difficult to track which process belongs to which root
+# user.
+PermitRootLogin No
+
+# Listen on the following TCP ports, default 22.
+Port 22
+
+# Print /etc/motd (or /etc/profile or equivalent) on login. It's already
+# done by PAM, so no need for duplicate MOTDs.
+PrintMotd no
+
+# Avoid enabling insecure protocol 1.
+Protocol 2
+
+## Enable SFTP. As the subsystem location varies, uncomment the one for the
+## OS you use.
+## Arch
+#Subsystem sftp /usr/lib/ssh/sftp-server
+## Debian
+#Subsystem sftp /usr/lib/openssh/sftp-server
 
 # Set this to 'yes' to enable PAM authentication, account processing,
 # and session processing. If this is enabled, PAM authentication will
@@ -61,15 +87,7 @@ ChallengeResponseAuthentication no
 # and ChallengeResponseAuthentication to 'no'.
 UsePAM yes
 
-PrintMotd no # pam does that
-UsePrivilegeSeparation sandbox      # Default for new installations.
-
-Banner /etc/issue.net
-
-# If the client doesn't reply in "three" pings, connection is dead.
-# Defaults to 3 anyway, but I add it here for clearity and
-# in case it decides to change in the future.
-ClientAliveCountMax 3
-
-# "ping" the client every minute.
-ClientAliveInterval 60
+# Use kernel sandbox mechanisms where possible in unprivilegied processes.
+# Systrace on OpenBSD, Seccomp on Linux, seatbelt on MacOSX/Darwin,
+# rlimit elsewhere.
+UsePrivilegeSeparation sandbox
