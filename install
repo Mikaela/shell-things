@@ -19,7 +19,7 @@ cat gpg/gpg-agent.conf > ~/.gnupg/gpg-agent.conf
 cat gpg/sks-keyservers.netCA.pem > ~/.gnupg/sks-keyservers.netCA.pem
 cat rc/xinitrc > ~/.xinitrc
 cat conf/pastebinit.xml > ~/.pastebinit.xml
-cat conf/Xdefaults > ~/.Xdefaults
+cat conf/Xresources > ~/.Xresources
 mkdir -p ~/.inxi
 cat conf/inxi.conf > ~/.inxi/inxi.conf
 gpg --quiet --import .mikaela/keys/0x0C207F07B2F32B67.asc&
