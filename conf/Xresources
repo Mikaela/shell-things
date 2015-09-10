@@ -1,6 +1,8 @@
 ! Arch package: rxvt-unicode
 ! Debian package: rxvt-unicode-256color
 
+! To reload this file, `xrdb ~/.Xresources`
+
 ! Compile xft: Attempt to find a visual with the given bit depth;
 ! URxvt*depth: bitdepth
 
@@ -106,13 +108,14 @@ URxvt*urgentOnBell: true
 ! URxvt*print-pipe: string
 
 ! Set scrollbar style to rxvt, plain, next or xterm. plain is the
-! URxvt*scrollstyle: mode
+! smallest option.
+URxvt*scrollstyle: plain
 
 ! Set the scrollbar width in pixels.
 ! URxvt*thickness: number
 
 ! True: enable the scrollbar [default]; option -sb. False: disable
-URxvt*scrollBar: false
+URxvt*scrollBar: true
 
 ! True: place the scrollbar on the right of the window; option -sr.
 ! URxvt*scrollBar_right: boolean
