@@ -60,7 +60,7 @@ URxvt*foreground: #ffffff
 ! URxvt*fadeColor: colour
 
 ! Set the application icon pixmap; option -icon.
-! URxvt*iconFile: file
+URxvt*iconFile: /usr/share/icons/mate/scalable/apps/utilities-terminal-symbolic.svg
 
 ! Use the specified colour for the scrollbar [default #B2B2B2].
 ! URxvt*scrollColor: colour
