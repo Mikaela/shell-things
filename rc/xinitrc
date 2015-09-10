@@ -1,1 +1,2 @@
+[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 exec mate-session
