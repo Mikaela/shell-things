@@ -19,7 +19,6 @@ URxvt*foreground: #ffffff
 ! Use the specified colour for the colour value n, where 0-7
 ! URxvt*colorn: colour
 
-! 
 ! URxvt*colorBD: colour
 
 ! Use the specified colour to display bold or italic characters when
@@ -89,7 +88,7 @@ URxvt*boldItalicFont: xft:DejaVu Sans Mono:Bold Italic:pixelsize=11, xft:Inconso
 ! URxvt*mapAlert: boolean
 
 ! True: set the urgency hint for the wm on receipt of a bell
-! URxvt*urgentOnBell: boolean
+URxvt*urgentOnBell: true
 
 ! True: use visual bell on receipt of a bell character; option -vb.
 ! URxvt*visualBell: boolean
@@ -113,7 +112,7 @@ URxvt*boldItalicFont: xft:DejaVu Sans Mono:Bold Italic:pixelsize=11, xft:Inconso
 ! URxvt*thickness: number
 
 ! True: enable the scrollbar [default]; option -sb. False: disable
-! URxvt*scrollBar: boolean
+URxvt*scrollBar: false
 
 ! True: place the scrollbar on the right of the window; option -sr.
 ! URxvt*scrollBar_right: boolean
@@ -149,7 +148,7 @@ URxvt*boldItalicFont: xft:DejaVu Sans Mono:Bold Italic:pixelsize=11, xft:Inconso
 ! URxvt*skipBuiltinGlyphs: boolean
 
 ! Specifies the terminal type name to be set in the TERM environment
-! URxvt*termName: termname
+URxvt*termName: rxvt-256color
 
 ! Specifies number of lines (pixel height) to insert between each row
 ! URxvt*lineSpace: number
@@ -232,8 +231,7 @@ URxvt*boldItalicFont: xft:DejaVu Sans Mono:Bold Italic:pixelsize=11, xft:Inconso
 ! Compile frills: Associate action with keysym sym. The intervening
 ! URxvt*keysym.sym: action
 
-! URxvt*perl-ext-common: string
-
+URxvt*perl-ext-common: default,matcher
 ! Comma-separated list(s) of perl extension scripts (default:
 ! URxvt*perl-ext: string
 
@@ -253,7 +251,7 @@ URxvt*boldItalicFont: xft:DejaVu Sans Mono:Bold Italic:pixelsize=11, xft:Inconso
 ! URxvt*searchable-scrollback: keysym *DEPRECATED*
 
 ! Specifies the program to be started with a URL argument. Used by
-! URxvt*url-launcher: string
+URxvt*url-launcher: /usr/bin/xdg-open
 
 ! Compile frills: Sets the WM_TRANSIENT_FOR property to the given
 ! URxvt*transient-for: windowid
@@ -267,11 +265,5 @@ URxvt*boldItalicFont: xft:DejaVu Sans Mono:Bold Italic:pixelsize=11, xft:Inconso
 ! Turn on/off ISO 14755 5.2 mode (default enabled).
 ! URxvt*iso14755_52: boolean
 
-URxvt*termName: rxvt-256color
-URxvt.scrollBar: false
-URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
-!URxvt.perl-ext-common: ...,tabbed,...
-!URxvt.urgentOnBell: True
 URxvt.letterSpace: 0
