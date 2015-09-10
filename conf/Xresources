@@ -1,5 +1,5 @@
-! Debian package: rxvt-unicode-256color
 ! Arch package: rxvt-unicode
+! Debian package: rxvt-unicode-256color
 
 ! Compile xft: Attempt to find a visual with the given bit depth;
 ! URxvt*depth: bitdepth
