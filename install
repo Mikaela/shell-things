@@ -24,7 +24,7 @@ mkdir -p ~/.inxi
 cat conf/inxi.conf > ~/.inxi/inxi.conf
 gpg --quiet --import .mikaela/keys/0x0C207F07B2F32B67.asc&
 mkdir -p ~/.config/terminator/
-cat conf/terminator >> ~/.config/terminator/config
+cat conf/terminator.config >> ~/.config/terminator/config
 mkdir -p ~/.ssh
 chmod a+xr chmod
 bash -x ./chmod&
