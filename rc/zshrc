@@ -23,9 +23,9 @@ UNAME=$(uname)
 #    function preexec {
 #      printf "\033]0;%s\a" "$1"
 #    }
-
-  ;;
-esac
+#
+#  ;;
+#esac
 
 # enable terminal bell
 
