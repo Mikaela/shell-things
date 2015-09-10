@@ -1,4 +1,5 @@
-! Arch package: rxvt-unicode
+! Arch package: rxvt-unicode or AUR rxvt-unicode-pixbuf for custom icon and
+!               backgrounds. rxvt-unicode doesn't have icons.
 ! Debian package: rxvt-unicode-256color
 
 ! To reload this file, `xrdb ~/.Xresources`
