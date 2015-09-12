@@ -2,6 +2,12 @@
 !               backgrounds. rxvt-unicode does not have icons.
 ! Debian package: rxvt-unicode-256color
 
+! Font packages:
+!                Arch: ttf-dejavu ttf-inconsolata ttf-ubuntu-font-family
+!                      ttf-font-awesome (AUR)
+!                Debian: fonts-dejavu fonts-inconsolata -
+!                        fonts-font-awesome
+
 ! To reload this file, `xrdb ~/.Xresources`
 
 ! Compile xft: Attempt to find a visual with the given bit depth;
