@@ -144,10 +144,10 @@ fi
 #export EDITOR=vim # MIKAELA_GREP # MIKAELA_GREP_ENVIRONMENT
 
 # Sets locale. You can get list of locales with "locale -a" command. This should be something which ends to .utf8
-#export LANG=fi_FI.UTF-8 # MIKAELA_GREP # MIKAELA_GREP_ENVIRONMENT
+#export LANG=fi_FI.UTF-8
 
-# Sets your timezone. Set in format <Region/City>, or just timezone like UTC.
-# export TZ="Europe/Helsinki" # MIKAELA_GREP # MIKAELA_GREP_ENVIRONMENT
+# Set TZ to local timezone for sending over SSH
+TZ=$(date +%Z)
 
 # Sets PATH. To add another path, add :</path/to/new/path> to string below. 
 PATH=$HOME/.local/bin:$HOME/.local/sbin:$HOME/.local/games:$HOME/.linuxbrew/bin:$HOME/.linuxbrew/sbin:$HOME/.linuxbrew/games:$HOME/bin:$HOME/sbin:$HOME/games:/usr/local/bin:/usr/local/sbin:/usr/local/games:/usr/bin:/usr/sbin:/usr/games:/bin:/sbin:/games:$PATH
