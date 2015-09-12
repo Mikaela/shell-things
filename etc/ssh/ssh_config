@@ -23,8 +23,9 @@ Host *
     # Always try public key authentication.
     PubkeyAuthentication yes
 
-    # Send LANG, LANGUAGE and LC_* environment variables to the server.
-    SendEnv LANG LANGUAGE LC_*
+    # Send needed environment variables. I don't like setting wildcards
+    # and LC_ALL is disabled on purpouse.
+    SendEnv LANG LANGUAGE LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT LC_IDENTIFICATION TERM TZ
 
     # If the server doesn't reply in three "pings", connection is dead.
     # Defaults to 3 anyway, but I add it here for clearity and

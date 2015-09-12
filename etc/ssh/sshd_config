@@ -6,10 +6,9 @@
 # where some comments are took. Some options look like I don't want to
 # change them to get updates when defaults change.
 
-# Allow the client to send preferred locales.
-# LC_ALL is intentionally missing as it's only for testing purpouses
-# (set it on the server, not in client if it's seriously needed).
-AcceptEnv LANG LANGUAGE LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT LC_IDENTIFICATION
+# Allow the client to send needed environment variables. I don't like
+# setting wildcards and LC_ALL is disabled on purpouse.
+AcceptEnv LANG LANGUAGE LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT LC_IDENTIFICATION TERM TZ
 
 # IPv4 & IPv6
 AddressFamily any
