@@ -2,5 +2,5 @@
 # disable unbreakable space
 setxkbmap -option compose:lwin -option terminate:ctrl_alt_bksp -option nbsp:none
 
-# Steam won't work with it's included runtime
-#export STEAM_RUNTIME=0
+# Set TZ as the current timezone. This is supposed to be sent over SSH.
+TZ=$(date +%Z)
