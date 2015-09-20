@@ -22,3 +22,6 @@ Windows Registry Editor Version 5.00
 "Teredo_DefaultQualified"="Enabled"
 "Teredo_State"="Enterprise Client"
 "Teredo_ServerName"="teredo.trex.fi"
+
+[HKEY_USERS\.DEFAULT\Control Panel\Keyboard]
+"InitialKeyboardIndicators"="2147483650"

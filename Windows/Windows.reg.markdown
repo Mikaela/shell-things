@@ -56,3 +56,10 @@ This file is supposed to explain [Windows.reg](Windows.reg).
 * Enable Teredo
 * Enable Teredo even when joined to domain.
 * Use `teredo.trex.fi` as Teredo server as it's in Finland where I am.
+
+```
+[HKEY_USERS\.DEFAULT\Control Panel\Keyboard]
+"InitialKeyboardIndicators"="2147483650"
+```
+
+* Enable numlock on boot.
