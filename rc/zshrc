@@ -880,7 +880,7 @@ serversslcertfp () {
     echo "$SSSLCFFN" | openssl x509 -md5 -fingerprint -noout
     echo "$SSSLCFFN" | openssl x509 -sha1 -fingerprint -noout
     echo "$SSSLCFFN" | openssl x509 -sha256 -fingerprint -noout
-    echo "$SSSLCFFN" | openssl x509 -sha512 -fingerprint -noou
+    echo "$SSSLCFFN" | openssl x509 -sha512 -fingerprint -noout
     unset SSSLCFFN
 }
 
@@ -889,7 +889,7 @@ sslcertfp () {
     cat $1 | openssl x509 -md5 -fingerprint -noout
     cat $1 | openssl x509 -sha1 -fingerprint -noout
     cat $1 | openssl x509 -sha256 -fingerprint -noout
-    cat $1 | openssl x509 -sha512 -fingerprint -noou
+    cat $1 | openssl x509 -sha512 -fingerprint -noout
 }
 
 # Usage: serversslciphers hostname port
