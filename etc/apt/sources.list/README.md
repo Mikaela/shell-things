@@ -22,10 +22,14 @@ Usage
 -----
 
 1. Become root with `sudo su -`
-2. Download the script either with either of the following):
-    1. Ubuntu/Debian testing/unstable:
-       `curl -L http://git.io/vqhtJ > sources.list.install`
-    2. Debian: `curl -L http://git.io/vqhtF > sources.list.install`
+2. Download the script using appropiate distribution and curl **or** wget
+   depending on which you have installed:
+    * Ubuntu/Debian testing/unstable:
+       * `curl -L http://git.io/vqhtJ > sources.list.install`
+       * `wget http://git.io/vqhtJ -O sources.list.install`
+    * Debian
+        * `curl -L http://git.io/vqhtF > sources.list.install`
+        * `wget http://git.io/vqhtF -O sources.list.install`
 3. `chmod +x sources.list.install`
 4. `./sources.list.install`
 5. *optionally* `rm sources.list.install`
