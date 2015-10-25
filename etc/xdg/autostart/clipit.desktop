@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=ClipIt
+Icon=clipit-trayicon
+Exec=/usr/bin/clipit
+Terminal=false
+Type=Application
