@@ -330,9 +330,15 @@ alias nslookup6="nslookup -type=AAAA "
 alias dig6="dig AAAA "
 
 # SSHGuard specific
-alias sshguard-show-bans="sudo iptables -L sshguard --line-numbers"
+alias sshguard-show-bans="sshguard4-show-bans && sshguard6-show-bans"
+alias sshguard4-show-bans="sudo iptables -L sshguard --line-numbers"
+alias sshguard6-show-bans="sudo ip6tables -L sshguard --line-numbers"
 # Enter ban number as arguement. You can see ban numbers with previous command.
-alias sshguard-unban="sudo iptables -D sshguard "
+alias sshguard4-unban="sudo iptables -D sshguard "
+alias sshguard6-unban="sudo ip6tables -D sshguard "
+alias sshguard-unban-all="sshguard4-unban-all && sshguard-6-unban-all"
+alias sshguard4-unban-all="sudo iptables -F sshguard"
+alias sshguard6-unban-all="sudo ip6tables -F sshguard"
 
 # This needs something which makes it easy to remember.
 alias KILL="killall -KILL "
