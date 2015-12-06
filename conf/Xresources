@@ -8,7 +8,13 @@
 !                Debian: fonts-dejavu fonts-inconsolata -
 !                        fonts-font-awesome
 
+! Sounds:
+!        Arch: mplayer sound-theme-freedesktop.
+
 ! To reload this file, `xrdb ~/.Xresources`
+
+! Execute this command on beep
+URxvt.bell-command: mplayer /usr/share/sounds/freedesktop/stereo/bell.oga
 
 ! Compile xft: Attempt to find a visual with the given bit depth;
 ! URxvt*depth: bitdepth
