@@ -4,3 +4,6 @@ setxkbmap -option compose:lwin -option terminate:ctrl_alt_bksp -option nbsp:none
 
 # Set TZ as the current timezone. This is supposed to be sent over SSH.
 TZ=$(date +%Z)
+
+# Enable numlock
+numlockx on

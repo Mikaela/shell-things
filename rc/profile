@@ -19,6 +19,8 @@ eval $(gpg-agent --daemon)
 # Enable core files.
 ulimit -c unlimited
 
+# Numlock on at boot
+numlockx on
 
 # The environment was set to ~/.environment according to other files...
 if [ -f ~/.environment ]; then
