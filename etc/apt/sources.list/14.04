@@ -33,3 +33,8 @@ deb-src http://extras.ubuntu.com/ubuntu trusty main
 #deb http://ddebs.ubuntu.com trusty-updates main restricted universe multiverse
 ## Ignore unless you have enabled proposed
 #deb http://ddebs.ubuntu.com trusty-proposed main restricted universe multiverse
+
+## Ubuntu MATE
+## gpg --keyserver pool.sks-keyservers.net --recv-keys 709A860A600B9A61FEF5346AFB01CC26162506E7
+#deb http://ppa.launchpad.net/ubuntu-mate-dev/trusty-mate/ubuntu trusty main
+#deb-src http://ppa.launchpad.net/ubuntu-mate-dev/trusty-mate/ubuntu trusty main

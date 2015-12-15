@@ -33,3 +33,11 @@ deb-src http://extras.ubuntu.com/ubuntu precise main
 #deb http://ddebs.ubuntu.com precise-updates main restricted universe multiverse
 ## Ignore unless you have enabled proposed
 #deb http://ddebs.ubuntu.com precise-proposed main restricted universe multiverse
+
+## Ubuntu MATE
+## gpg --keyserver pool.sks-keyservers.net --recv-keys 709A860A600B9A61FEF5346AFB01CC26162506E7
+#deb http://ppa.launchpad.net/ubuntu-mate-dev/precise-mate/ubuntu precise main
+#deb-src http://ppa.launchpad.net/ubuntu-mate-dev/precise-mate/ubuntu precise main
+## gpg --keyserver pool.sks-keyservers.net --recv-keys 709A860A600B9A61FEF5346AFB01CC26162506E7
+#deb http://ppa.launchpad.net/ubuntu-mate-dev/ppa/ubuntu precise main
+#deb-src http://ppa.launchpad.net/ubuntu-mate-dev/ppa/ubuntu precise main

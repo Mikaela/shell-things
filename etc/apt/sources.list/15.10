@@ -29,3 +29,8 @@ deb-src http://archive.canonical.com/ubuntu wily partner
 #deb http://ddebs.ubuntu.com wily-updates main restricted universe multiverse
 ## Ignore unless you have enabled proposed
 #deb http://ddebs.ubuntu.com wily-proposed main restricted universe multiverse
+
+## Ubuntu MATE
+## gpg --keyserver pool.sks-keyservers.net --recv-keys 709A860A600B9A61FEF5346AFB01CC26162506E7
+#deb http://ppa.launchpad.net/ubuntu-mate-dev/wily-mate/ubuntu wily main
+#deb-src http://ppa.launchpad.net/ubuntu-mate-dev/wily-mate/ubuntu wily main
