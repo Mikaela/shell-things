@@ -76,7 +76,7 @@ PasswordAuthentication no
 
 # Auditing reasons, difficult to track which process belongs to which root
 # user.
-PermitRootLogin No
+PermitRootLogin no
 
 # Print /etc/motd (or /etc/profile or equivalent) on login. It's already
 # done by PAM, so no need for duplicate MOTDs.
