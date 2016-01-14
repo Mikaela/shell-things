@@ -26,7 +26,7 @@ Host *
     # and LC_ALL is disabled on purpouse.
     SendEnv EDITOR LANG LANGUAGE LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT LC_IDENTIFICATION TERM TZ
 
-    # If the server doesn't reply in "three" pings, connection is dead.
+    # If the server doesn't reply in three "pings", connection is dead.
     # Defaults to 3 anyway, but I add it here for clearity and
     # in case it decides to change in the future.
     ServerAliveCountMax 3

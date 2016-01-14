@@ -37,7 +37,7 @@ Host *
 
     # OpenSSH 6.8+ - ask all host keys from servers.
     # I trust the server admins and ways to identify the keys (DNSSEC,
-    # manual)
+    # manual).
     UpdateHostKeys yes
 
     # Add undocumented "UseRoaming no" to ssh_config or use
