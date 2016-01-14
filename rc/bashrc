@@ -263,7 +263,6 @@ alias yle-dl="yle-dl --vfat"
 
 # git specific. This is the command which I use when git asks me to commit something and says that I have modified files, even when I haven't.
 alias gdrop="git stash && git stash drop"
-#alias gitk="gitg" # Requires gitg . I just think that it looks nicer than gitk. #MIKAELA_GREP # MIKAELA_GREP_ALIAS
 
 # If I run nautilus, I want it to open in folder where I am.
 #alias nautilus="nautilus ./"
