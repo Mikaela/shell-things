@@ -39,6 +39,12 @@ Host *
     # manual).
     UpdateHostKeys yes
 
+    # Add undocumented "UseRoaming no" to ssh_config or use
+    # "-oUseRoaming=no" to prevent upcoming #openssh client bug
+    # CVE-2016-0777. More later.
+    # ~~ https://twitter.com/msfriedl/status/687635945642967040
+    UseRoaming no
+
     # Verify SSHFP records. In case DNSSEC is used this skips the
     # question on whether you trust the fingerprint or not.
     # All my hosts run DNSSEC validating Unbound on localhost and use it
