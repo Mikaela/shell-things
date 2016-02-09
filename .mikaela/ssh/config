@@ -48,6 +48,9 @@ Host *
     # for all DNS queries. Yours should too.
     VerifyHostKeyDNS yes
 
+Host aur.archlinux.org
+    User aur
+
 Host hilla
     HostName hilla.kapsi.fi
     User mikaela
