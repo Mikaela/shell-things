@@ -28,7 +28,7 @@ This file is supposed to explain [Windows.reg](Windows.reg).
 * Shows verbose information on login (starting service...)
 * Shows output of startup scripts
 * Shows output of shutdown scripts
-* Disables the first logon animation on Windows 8\*
+* Disables the first logon animation on Windows 8 and newer
 
 ```
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
@@ -37,7 +37,8 @@ This file is supposed to explain [Windows.reg](Windows.reg).
 ```
 
 * Sets hardware clock to UTC time (doesn't affect system clock!)
-    * qword for 64-bit, dword for 32-bit systems. The latter might override earlier one.
+    * qword for 64-bit, dword for 32-bit systems. The actual reg file has
+      only qword as I haven't seen 32-bit Windowses lately.
 
 ```
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]

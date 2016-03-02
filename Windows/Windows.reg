@@ -12,7 +12,6 @@ Windows Registry Editor Version 5.00
 "EnableFirstLogonAnimation"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
-"RealTimeIsUniversal"=dword:00000000
 "RealTimeIsUniversal"=qword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
