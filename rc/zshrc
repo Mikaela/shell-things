@@ -579,10 +579,10 @@ alias lowernocolon="tr -d ':' | tr 'A-Z' 'a-z'"
 
 # As pacman and pacaur share the same flags
 if hash pacaur 2>/dev/null; then
-    alias pacman="pacaur --needed"
+    alias pacman="LANG=en pacaur --needed"
 else
 # I don't want to reinstall exact same  versions that I have
-    alias pacman="pacman --needed"
+    alias pacman="LANG=en pacman --needed"
 fi
 
 # Sailfish Network status, via IRC
