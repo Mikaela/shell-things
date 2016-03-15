@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=chromium --no-startup-window
+Hidden=false
+X-MATE-Autostart-enabled=true
+Name[fi_FI]=Chromium
+Name=Chromium
+Comment[fi_FI]=
+Comment=
