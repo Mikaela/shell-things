@@ -33,4 +33,6 @@
 [merge]
     ff = only
 [format]
-	signoff = true
+    signoff = true
+[commit]
+    gpgsign = true
