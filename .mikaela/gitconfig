@@ -28,11 +28,12 @@
     ui = true
 [push]
     default = current
+    gpgSign = if-asked
 [credential]
     helper = cache --timeout=86400
 [merge]
     ff = only
 [format]
-    signoff = true
+    signOff = true
 [commit]
     gpgsign = true
