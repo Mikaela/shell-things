@@ -932,6 +932,7 @@ transmission-magnet () {
     transmission-remote -l -t $1 -i | grep magnet
 }
 
+# Merges the last $1 commits into one
 git-squash () {
     git reset --soft HEAD~$1
     git commit
