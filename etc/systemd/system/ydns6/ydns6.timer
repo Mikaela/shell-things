@@ -1,5 +1,5 @@
 [Unit]
-Description=Run ydns-simple every 5 minutes
+Description=Run ydns6 every 5 minutes
 
 [Timer]
 OnBootSec=1min

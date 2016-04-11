@@ -1,9 +1,0 @@
-[Unit]
-Description=ydns-simple service
-
-[Service]
-Type=simple
-ExecStart=/usr/local/bin/ydns-simple
-
-[Install]
-WantedBy=ydns-simple.timer

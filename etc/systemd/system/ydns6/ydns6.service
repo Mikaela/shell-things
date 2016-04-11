@@ -1,0 +1,9 @@
+[Unit]
+Description=ydns6 service
+
+[Service]
+Type=simple
+ExecStart=/home/nemo/.local/bin/ydns6
+
+[Install]
+WantedBy=ydns6.timer
