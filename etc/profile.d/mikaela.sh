@@ -7,3 +7,6 @@ TZ=$(date +%Z)
 
 # Enable numlock
 numlockx on
+
+# Workaround disappearing cursors, probably no harm in any case
+export XCURSOR_DISCOVER=1

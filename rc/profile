@@ -22,6 +22,9 @@ ulimit -c unlimited
 # Numlock on at boot
 numlockx on
 
+# Workaround disappearing cursors, probably no harm in any case
+export XCURSOR_DISCOVER=1
+
 # The environment was set to ~/.environment according to other files...
 if [ -f ~/.environment ]; then
     . ~/.environment
