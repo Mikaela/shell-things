@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
 # Kotka:  60.467306:26.945833
-Exec=redshift -l 60.467306:26.945833
+# Lauttasaari: 60.158611:24.875
+Exec=redshift -l 60.158611:24.875
 Hidden=false
 Name=redshift
