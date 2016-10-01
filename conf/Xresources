@@ -167,7 +167,7 @@ URxvt*scrollBar: true
 URxvt*termName: rxvt-256color
 
 ! Specifies number of lines (pixel height) to insert between each row
-! URxvt*lineSpace: number
+URxvt*lineSpace: 5
 
 ! True: handle Meta (Alt) + keypress to set the 8th bit. False:
 ! URxvt*meta8: boolean
