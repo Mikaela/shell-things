@@ -1,6 +1,6 @@
 Systemd services. These are sorted by some kind of category into
 subdirectories. The sudirectories won't exist in the real
-`/etc/systemd/system` unless they end `.wants` or something similar
+`/etc/systemd/system` unless they end `.wants` or `.d` or something similar
 and I forget to update this README file if that happens.
 
 * reflector.service is copied from https://wiki.archlinux.org/index.php/Reflector
