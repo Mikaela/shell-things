@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"VerboseStatus"=dword:00000001
+"HideStartupScripts"=dword:00000000
+"HideShutdownScripts"=dword:00000000
+"EnableFirstLogonAnimation"=dword:00000000
