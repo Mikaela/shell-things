@@ -51,6 +51,11 @@ Host *
 Host aur.archlinux.org
     User aur
 
+Host ccx_shell
+    HostName ccx.webprojekty.cz
+    Port 24022
+    User mikaela
+
 Host hilla
     HostName hilla.kapsi.fi
     User mikaela
@@ -72,6 +77,3 @@ Host tezagm
     HostName tezagm.mikaela.info
     User mikaela
 
-Host vardiera
-    HostName vardiera.mikaela.info
-    User mikaela
