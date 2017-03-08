@@ -63,6 +63,7 @@ Host hilla
 Host lakka
     HostName lakka.kapsi.fi
     User mikaela
+    LocalForward 127.0.0.1:9001 127.0.0.1:30614
 
 Host meetingology
     HostName ubottu.com
