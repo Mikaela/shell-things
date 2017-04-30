@@ -552,7 +552,7 @@ alias pypypip3=pippypy3
 # and cross-platform operating systems.
 # APG IS LIMITED TO 255 CHARACTERS SO IT'S REPLACED WITH PWGEN!
 # Usage: apt-random <minimum length>
-alias apg-random="pwgen -s"
+alias apg-random="pwgen -sy"
 
 # cp/mv using rsync. rcp appears to be link to scp in my system, so I can
 # safely use this alias.
