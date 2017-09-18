@@ -6,9 +6,9 @@ if hash ruby 2>/dev/null; then
     PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 fi
 
-# Set compose to left Super/Windows, kill X with ctrl-alt-backspace,
+# Set compose to menu, kill X with ctrl-alt-backspace,
 # disable nbsp (still available with compose-space-space.
-setxkbmap -option compose:lwin -option terminate:ctrl_alt_bksp -option nbsp:none
+setxkbmap -option compose:menu -option terminate:ctrl_alt_bksp -option nbsp:none
 
 # Removes duplicates from $PATH. Copied from http://unix.stackexchange.com/a/14896
 PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS; printf $a[$1]}')
