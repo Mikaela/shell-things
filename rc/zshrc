@@ -187,8 +187,8 @@ if [[ $USER = "root" ]]; then
     mkdir -p /etc/apt/apt.conf.d/
     echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
     echo 'APT::Color "1";' > /etc/apt/apt.conf.d/99color
-    echo 'Acquire::http::Timeout "2";' > /etc/apt/apt.conf.d/99timeout
-    echo 'Acquire::ftp::Timeout "2";' >> /etc/apt/apt.conf.d/99timeout
+#    echo 'Acquire::http::Timeout "2";' > /etc/apt/apt.conf.d/99timeout
+#    echo 'Acquire::ftp::Timeout "2";' >> /etc/apt/apt.conf.d/99timeout
 fi
 
 # In our series useless/weird environment variables, beep
