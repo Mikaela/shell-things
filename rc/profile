@@ -14,7 +14,8 @@ setxkbmap -option compose:menu -option terminate:ctrl_alt_bksp -option nbsp:none
 PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS; printf $a[$1]}')
 
 # Start gpg-agent
-eval $(gpg-agent --daemon)
+# Ubuntu (MATE) 18.04 doesn't appreciate this
+#eval $(gpg-agent --daemon)
 
 # Enable core files.
 ulimit -c unlimited
