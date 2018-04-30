@@ -1,0 +1,36 @@
+## Main repositories
+deb mirror://mirrors.ubuntu.com/mirrors.txt bionic main restricted universe multiverse
+deb-src mirror://mirrors.ubuntu.com/mirrors.txt bionic main restricted universe multiverse
+deb mirror://mirrors.ubuntu.com/mirrors.txt bionic-updates main restricted universe multiverse
+deb-src mirror://mirrors.ubuntu.com/mirrors.txt bionic-updates main restricted universe multiverse
+deb mirror://mirrors.ubuntu.com/mirrors.txt bionic-security main restricted universe multiverse
+deb-src mirror://mirrors.ubuntu.com/mirrors.txt bionic-security main restricted universe multiverse
+deb http://security.ubuntu.com/ubuntu bionic-security main restricted universe multiverse
+deb-src http://security.ubuntu.com/ubuntu bionic-security main restricted universe multiverse
+
+## Backports
+## https://help.ubuntu.com/community/UbuntuBackports
+deb mirror://mirrors.ubuntu.com/mirrors.txt bionic-backports main restricted universe multiverse
+deb-src mirror://mirrors.ubuntu.com/mirrors.txt bionic-backports main restricted universe multiverse
+
+## Pre-release updates
+## https://wiki.ubuntu.com/Testing/EnableProposed
+#deb mirror://mirrors.ubuntu.com/mirrors.txt bionic-proposed main restricted universe multiverse
+#deb-src mirror://mirrors.ubuntu.com/mirrors.txt bionic-proposed main restricted universe multiverse
+
+## Proprietary and closed-source software
+deb http://archive.canonical.com/ubuntu bionic partner
+deb-src http://archive.canonical.com/ubuntu bionic partner
+
+## Non-built-in debug symbol packages
+## https://wiki.ubuntu.com/DebuggingProgramCrash
+## sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 428D7C01
+#deb http://ddebs.ubuntu.com bionic main restricted universe multiverse
+#deb http://ddebs.ubuntu.com bionic-updates main restricted universe multiverse
+## Ignore unless you have enabled proposed
+#deb http://ddebs.ubuntu.com bionic-proposed main restricted universe multiverse
+
+## Ubuntu MATE
+## apt-key adv --keyserver pool.sks-keyservers.net --recv-keys 709A860A600B9A61FEF5346AFB01CC26162506E7
+#deb http://ppa.launchpad.net/ubuntu-mate-dev/bionic-mate/ubuntu bionic main
+#deb-src http://ppa.launchpad.net/ubuntu-mate-dev/bionic-mate/ubuntu bionic main
