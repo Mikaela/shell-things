@@ -205,7 +205,7 @@ URxvt*lineSpace: 5
 ! The characters used as delimiters for double-click word selection
 ! URxvt*cutchars: string
 
-! 
+!
 ! URxvt*{|}
 
 ! OverTheSpot, OffTheSpot, Root; option -pt.
@@ -275,11 +275,14 @@ URxvt*url-launcher: /usr/bin/xdg-open
 ! Compile frills: Sets override-redirect for the terminal window,
 ! URxvt*override-redirect: boolean
 
-! Turn on/off ISO 14755 (default enabled).
-! URxvt*iso14755: boolean
+! Turn off ISO 14755 which takes ctrl + shift
+URxvt*iso14755: false
+URxvt*iso14755_52: false
 
-! Turn on/off ISO 14755 5.2 mode (default enabled).
-! URxvt*iso14755_52: boolean
-
+! EXPLAIN ME!
 URxvt.matcher.button: 1
 URxvt.letterSpace: 0
+
+! enable ctrl + shift + c/v https://unix.stackexchange.com/a/329556
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
