@@ -84,11 +84,11 @@ URxvt*iconFile: /usr/share/icons/mate/scalable/apps/utilities-terminal-symbolic.
 ! The colour of the border around the text area and between the
 ! URxvt*borderColor: colour
 
-! Select the fonts to be used. This is a comma separated list of font
-URxvt*font: xft:DejaVu Sans Mono:Book:pixelsize=15, xft:Inconsolata:Medium:pixelsize=15, xft:Ubuntu Mono:Regular:pixelsize=15, xft:FontAwesome:Regular:pixelsize=15
-URxvt*boldFont: xft:DejaVu Sans Mono:bold:pixelsize=15, xft:Inconsolata:Bold:pixelsize=15, xft:Ubuntu Mono:Bold:pixelsize=15, ft:FontAwesome:Bold:pixelsize=15
-URxvt*italicFont: xft:DejaVu Sans Mono:Italic:pixelsize=15, xft:Inconsolata:Italic:pixelsize=15, xft:Ubuntu Mono:Italic:pixelsize=15, xft:FontAwesome:Italic:pixelsize=15
-URxvt*boldItalicFont: xft:DejaVu Sans Mono:Bold Italic:pixelsize=15, xft:Inconsolata:Bold Italic:pixelsize=15, xft:Ubuntu Mono:Bold Italic:pixelsize=15, xft:FontAwesome:Bold Italic:pixelsize=15
+! Select the fonts to be used. This is a comma separated list of fonts.
+URxvt*font: xft:DejaVu Sans Mono:Book:size=15, xft:Inconsolata:Medium:size=15, xft:Ubuntu Mono:Regular:size=15, xft:FontAwesome:Regular:size=15
+URxvt*boldFont: xft:DejaVu Sans Mono:bold:size=15, xft:Inconsolata:Bold:size=15, xft:Ubuntu Mono:Bold:size=15, ft:FontAwesome:Bold:size=15
+URxvt*italicFont: xft:DejaVu Sans Mono:Italic:size=15, xft:Inconsolata:Italic:size=15, xft:Ubuntu Mono:Italic:size=15, xft:FontAwesome:Italic:size=15
+URxvt*boldItalicFont: xft:DejaVu Sans Mono:Bold Italic:size=15, xft:Inconsolata:Bold Italic:size=15, xft:Ubuntu Mono:Bold Italic:size=15, xft:FontAwesome:Bold Italic:size=15
 
 ! When font styles are not enabled, or this option is enabled (True,
 ! URxvt*intensityStyles: boolean
