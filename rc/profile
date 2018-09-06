@@ -21,7 +21,9 @@ PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS;
 ulimit -c unlimited
 
 # Numlock on at boot
-numlockx on
+if hash numlockx 2>/dev/null; then
+    numlockx on
+fi
 
 # Workaround disappearing cursors, probably no harm in any case
 export XCURSOR_DISCOVER=1
