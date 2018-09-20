@@ -5,7 +5,7 @@ The files have been named so they are easily to fetch with script,
 `lsb_release -sr` returns release e.g. `14.04` or `testing` and
 `lsb_release -rc` returns codename e.g. `jessie`.
 
-`mirrors.ubuntu.com/mirrors.txt` and `httpredir.debian.org` are used so
+`mirrors.ubuntu.com/mirrors.txt` and `deb.debian.org` are used so
 the files work everywhere and the nearest mirrors are always used no matter
 where you are.
 

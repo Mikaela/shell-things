@@ -1,6 +1,6 @@
 ## Main Debian archives.
-deb http://httpredir.debian.org/debian testing main contrib non-free
-deb-src http://httpredir.debian.org/debian testing main contrib non-free
+deb https://deb.debian.org/debian testing main contrib non-free
+deb-src https://deb.debian.org/debian testing main contrib non-free
 
 ## Debian Security
 deb http://security.debian.org/ testing/updates main contrib non-free
