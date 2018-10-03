@@ -1,0 +1,15 @@
+# Don't rely on the OS to tell hostname
+hostname whatever
+# Send .onion addresses to Tor
+forward-socks5t .onion 127.0.0.1:9050 .
+# Send .i2p addresses to i2p(d)
+forward .i2p 127.0.0.1:4444
+# Where config is specified for config.privoxy.org read-access
+confdir /etc/privoxy
+# Be only accessible from localhost
+listen-address 127.0.0.1:8118
+listen-address [::1]:8118
+# Maximum, doesn't matter for single localhost user that much
+max-client-connections 512
+# Link config.privoxy.org here
+user-manual /usr/share/doc/privoxy/user-manual
