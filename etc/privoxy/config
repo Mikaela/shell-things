@@ -13,3 +13,7 @@ listen-address [::1]:8118
 max-client-connections 512
 # Link config.privoxy.org here
 user-manual /usr/share/doc/privoxy/user-manual
+# Disable filtering & co, only forward traffic
+toggle 0
+# Increase buffer limit to 50 MB in hope of some pages loading faster...
+buffer-limit 51200
