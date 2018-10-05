@@ -1,0 +1,20 @@
+[Unit]
+Description=cjdns: routing engine designed for security, scalability, speed and ease of use
+Wants=network.target
+After=network.target
+
+[Service]
+ProtectHome=true
+ProtectSystem=true
+SyslogIdentifier=cjdroute
+ExecStartPre=/bin/sh -ec "if ! test -s /opt/cjdns/cjdroute.conf; \
+                then umask 077; \
+                /opt/cjdns/cjdroute --genconf > /opt/cjdns/cjdroute.conf; \
+                echo 'WARNING: A new /opt/cjdns/cjdroute.conf file has been generated.'; \
+            fi"
+ExecStart=/bin/sh -c "exec /opt/cjdns/cjdroute --nobg < /opt/cjdns/cjdroute.conf"
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+Also=cjdns-resume.service
