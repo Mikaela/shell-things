@@ -1,5 +1,7 @@
 # Don't rely on the OS to tell hostname
 hostname whatever
+# Send everything through Tor (unless told otherwise below)
+#forward-socks5t / 127.0.0.1:9050 .
 # Send .onion addresses to Tor
 forward-socks5t .onion 127.0.0.1:9050 .
 # Send .i2p addresses to i2p(d)
