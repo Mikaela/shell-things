@@ -7,9 +7,9 @@ Host *
     ControlPath ~/.ssh/sockets/socket-%r@%h:%p
     # Multiple sessions over single connection
     ControlMaster yes
-    # Keep connection open in the background even after connection has been
-    # closed.
-    ControlPersist yes
+    # Automatically decide whether to keep connection open in the
+    # background even after connection has been closed.
+    ControlPersist auto
 
     ForwardAgent no
     ForwardX11 no
