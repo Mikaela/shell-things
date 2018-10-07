@@ -3,7 +3,7 @@
 
 Host *
     # Path for the control socket.
-    ControlPath /tmp/SSH_%u-%r.%h.%p
+    ControlPath ~/.ssh/sockets/socket-%r@%h:%p
     # Multiple sessions over single connection
     ControlMaster yes
     # Keep connection open in the background even after connection has been
