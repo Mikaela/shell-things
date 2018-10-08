@@ -1,13 +1,25 @@
 # Empty listen_addresses to use systemd socket activation
 listen_addresses = []
+# The fastest working servers are automatically picked.
 server_names = ['cloudflare-ipv6', 'cloudflare', 'google']
 
 ipv4_servers = true
 ipv6_servers = true
+block_ipv6 = false
 require_dnssec = true
-fallback_resolver = '208.67.220.220:53'
+require_nofilter = true
+# Use Google DNS B for resolving the server_names[] if the system
+# resolver is broken (which it is for me as it points directly to
+# dnscrypt-proxy which is not functional at that time.
+# The example config recommends DNSSEC support which OpenDNS is missing.
+# China: 114.114.114.114:53 according to the example file.
+fallback_resolver = '8.8.4.4:53'
 cache = true
 cache_size = 10000
+
+# Tor if necessary
+#force_tcp = true
+#proxy = "socks5://127.0.0.1:9050"
 
 [query_log]
   file = '/var/log/dnscrypt-proxy/query.log'
