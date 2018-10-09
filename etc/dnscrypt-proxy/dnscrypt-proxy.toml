@@ -1,7 +1,7 @@
 # Empty listen_addresses to use systemd socket activation
 listen_addresses = []
 # The fastest working servers are automatically picked.
-server_names = ['cloudflare-ipv6', 'cloudflare', 'google']
+server_names = ['cloudflare-ipv6', 'quad9-ip6-nofilter-pri', 'quad9-ip6-nofilter-alt', 'cloudflare', 'google', 'quad9-ip4-nofilter-pri', 'quad9-ip4-nofilter-alt']
 
 ipv4_servers = true
 ipv6_servers = true
@@ -16,6 +16,12 @@ require_nofilter = true
 fallback_resolver = '8.8.4.4:53'
 cache = true
 cache_size = 10000
+# Load-balancing
+# fastest = always fastest, p2 = random between two fastest, ph = random
+# from the fastest half of the configured list, random = any random
+# Default is p2, but as my list grew so long and contains so much IPv6 that
+# may not work everywhere, I am picking ph just in case.
+lb_strategy = 'ph'
 
 # Tor if necessary
 #force_tcp = true
