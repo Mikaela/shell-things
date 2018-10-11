@@ -10,6 +10,8 @@ cat rc/zshrc > ~/.zshrc
 cat rc/profile > ~/.profile
 cat conf/gitconfig > ~/.gitconfig
 cat rc/vimrc > ~/.vimrc
+mkdir -p ~/.config/nvim/
+cat conf/init.vim > ~/.config/nvim/init.vim
 cat conf/makepkg.conf > ~/.makepkg.conf
 if [ ! -f ~/.oidentd.conf ]; then
     cat conf/oidentd.conf > ~/.oidentd.conf
