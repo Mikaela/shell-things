@@ -335,7 +335,7 @@ URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 
 *background:              S_base03
 *foreground:              S_base0
-*fading:                  40
+!*fading:                  40
 *fadeColor:               S_base03
 *cursorColor:             S_base1
 *pointerColorBackground:  S_base01
