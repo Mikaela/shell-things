@@ -1,0 +1,10 @@
+h.jolly-roger.mikaela.info	fcc1:488:a266:f968:9183:9be5:f6f1:f6f6
+h.relpda.mikaela.info	fc5a:c8f7:2098:55b8:5309:12c4:cbc6:7b5b
+h.sedric.mikaela.info	fc84:4044:d916:8ec0:d93d:9c7c:70b6:ecba
+h.vietnam.mikaela.info	fc1e:19d6:b227:64e0:7b2:b12:b625:151b
+irc.fc00.io.mikaela.info	fcec:ae97:8902:d810:6c92:ec67:efb2:3ec5
+irc.h.umbrellix.net.mikaela.info	fcda:c930:1c80:ef8a:4fb:6c65:8506:1dd2
+nxdomain.mikaela.info	::1
+y.jolly-roger.mikaela.info	203:b53c:86b8:880f:d049:7e63:8d7c:e270
+y.relpda.mikaela.info	201:ef0c:cebe:f000:183c:9326:cbba:8fe1
+y.sedric.mikaela.info	201:b060:d3fe:dbef:8f6d:561d:6892:9cd4

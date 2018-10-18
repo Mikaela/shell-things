@@ -3,6 +3,9 @@ listen_addresses = []
 # The fastest working servers are automatically picked.
 server_names = ['cloudflare-ipv6', 'quad9-ip6-nofilter-pri', 'quad9-ip6-nofilter-alt', 'cloudflare', 'google', 'quad9-ip4-nofilter-pri', 'quad9-ip4-nofilter-alt']
 
+# hosts-file via dnscrypt-proxy that is probably only of interest to me.
+#cloaking_rules = '/etc/dnscrypt-proxy/hosts-mikaela.txt'
+
 ipv4_servers = true
 ipv6_servers = true
 block_ipv6 = false
