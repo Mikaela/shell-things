@@ -8,3 +8,4 @@ nxdomain.mikaela.info	::1
 y.jolly-roger.mikaela.info	203:b53c:86b8:880f:d049:7e63:8d7c:e270
 y.relpda.mikaela.info	201:ef0c:cebe:f000:183c:9326:cbba:8fe1
 y.sedric.mikaela.info	201:b060:d3fe:dbef:8f6d:561d:6892:9cd4
+y.vietnam.mikaela.info	200:5d18:baf6:667b:80f6:ed96:f800:3bce
