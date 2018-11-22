@@ -27,3 +27,7 @@ deb-src http://security.debian.org/ testing/updates main contrib non-free
 ## Updates repo
 deb https://deb.debian.org/debian testing-updates main contrib non-free
 deb-src https://deb.debian.org/debian testing-updates main contrib non-free
+
+## Updates repo over Tor
+#deb tor+http://vwakviie2ienjx6t.onion/debian testing-updates main contrib non-free
+#deb-src tor+http://vwakviie2ienjx6t.onion/debian testing-updates main contrib non-free
