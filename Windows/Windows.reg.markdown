@@ -34,8 +34,8 @@ Windows Registry Editor Version 5.00
 
 ```
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
-"RealTimeIsUniversal"=dword:00000000
-"RealTimeIsUniversal"=qword:00000000
+"RealTimeIsUniversal"=dword:00000001
+"RealTimeIsUniversal"=qword:00000001
 ```
 
 * Sets hardware clock to UTC time (doesn't affect system clock!)
