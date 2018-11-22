@@ -1,3 +1,4 @@
 ## Main Debian archives.
 deb https://deb.debian.org/debian sid main contrib non-free
 deb-src https://deb.debian.org/debian sid main contrib non-free
+#deb https://deb.debian.org/debian-debug sid-debug main contrib non-free
