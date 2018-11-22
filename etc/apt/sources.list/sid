@@ -1,9 +1,9 @@
-## Main Debian archives.
+## Main repos
 deb https://deb.debian.org/debian sid main contrib non-free
 deb-src https://deb.debian.org/debian sid main contrib non-free
 #deb https://deb.debian.org/debian-debug sid-debug main contrib non-free
 
-## Main Debian archives over Tor.
+## Main repos over Tor
 #deb tor+http://vwakviie2ienjx6t.onion/debian sid main contrib non-free
 #deb-src tor+http://vwakviie2ienjx6t.onion/debian sid main contrib non-free
 #deb http://ktqxbqrhg5ai2c7f.onion/debian-debug sid-debug main contrib non-free

@@ -1,32 +1,39 @@
-## Main Debian archives.
+## Main repos
 deb https://deb.debian.org/debian stable main contrib non-free
 deb-src https://deb.debian.org/debian stable main contrib non-free
 #deb https://deb.debian.org/debian-debug stable-debug main contrib non-free
 
-## Main Debian archives over Tor.
+## Main repos over Tor
 #deb tor+http://vwakviie2ienjx6t.onion/debian stable main contrib non-free
 #deb-src tor+http://vwakviie2ienjx6t.onion/debian stable main contrib non-free
 #deb http://ktqxbqrhg5ai2c7f.onion/debian-debug stable-debug main contrib non-free
 
-## Debian Security
-deb http://security.debian.org/ stable/updates main contrib non-free
-deb-src http://security.debian.org/ stable/updates main contrib non-free
+## Security repo CDN
+deb https://deb.debian.org/debian-security/ stable/updates main contrib non-free
+deb-src https://deb.debian.org/debian-security/ stable/updates main contrib non-free
 ## https://bugs.debian.org/894081
 #deb https://deb.debian.org/debian-debug stable-proposed-updates-debug main contrib non-free
 
-## Debian Security Over Tor
+## Security repo directly
+deb http://security.debian.org/ stable/updates main contrib non-free
+deb-src http://security.debian.org/ stable/updates main contrib non-free
+
+## Security repos over Tor
 #deb tor+http://sgvtcaew4bxjd7ln.onion/debian-security stable/updates main contrib non-free
 #deb-src tor+http://sgvtcaew4bxjd7ln.onion/debian-security stable/updates main contrib non-free
 ## https://bugs.debian.org/894081
 #deb http://ktqxbqrhg5ai2c7f.onion/debian-debug stable-proposed-updates-debug main contrib non-free
 
+## Updates repo
+deb https://deb.debian.org/debian stable-updates main contrib non-free
+deb-src https://deb.debian.org/debian stable-updates main contrib non-free
 
-## Debian Backports
+## Backports
 deb https://deb.debian.org/debian stable-backports main contrib non-free
 deb-src https://deb.debian.org/debian stable-backports main contrib non-free
 #deb https://deb.debian.org/debian-debug stable-backports-debug main contrib non-free
 
-## Debian Backports over Tor
+## Backports over Tor
 #deb tor+http://vwakviie2ienjx6t.onion/debian stable-backports main contrib non-free
 #deb-src tor+http://vwakviie2ienjx6t.onion/debian stable-backports main contrib non-free
 #deb http://ktqxbqrhg5ai2c7f.onion/debian-debug stable-backports-debug main contrib non-free
