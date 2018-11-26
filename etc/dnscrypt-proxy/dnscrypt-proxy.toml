@@ -7,6 +7,9 @@ listen_addresses = []
 # hosts-file via dnscrypt-proxy that is probably only of interest to me.
 #cloaking_rules = '/etc/dnscrypt-proxy/hosts-mikaela.txt'
 
+# When not using socket activation (Arch)
+#listen_addresses = ['127.0.0.1:53', '127.0.2.1:53', '[::1]:53']
+
 ipv4_servers = true
 ipv6_servers = true
 block_ipv6 = false
