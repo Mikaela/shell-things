@@ -8,12 +8,6 @@ listen_addresses = []
 # mikaela.internal / my hosts file
 #cloaking_rules = '/etc/dnscrypt-proxy/hosts-mikaela.txt'
 
-# Logs on top for easier noticing and disabling
-[query_log]
-  file = '/var/log/dnscrypt-proxy/query.log'
-[nx_log]
-  file = '/var/log/dnscrypt-proxy/nx.log'
-
 # The fastest working servers are automatically picked from configured
 # ones. If not configured, the whole list is compared.
 #server_names = ['cloudflare-ipv6', 'quad9-ip6-nofilter-pri', 'quad9-ip6-nofilter-alt', 'cloudflare', 'google', 'quad9-ip4-nofilter-pri', 'quad9-ip4-nofilter-alt']
@@ -46,6 +40,12 @@ lb_strategy = 'ph'
 # Tor if necessary
 #force_tcp = true
 #proxy = "socks5://127.0.0.1:9050"
+
+# To be enabled by hand on systems needing them
+#[query_log]
+#  file = '/var/log/dnscrypt-proxy/query.log'
+#[nx_log]
+#  file = '/var/log/dnscrypt-proxy/nx.log'
 
 [sources]
   [sources.'public-resolvers']
