@@ -18,6 +18,7 @@ ipv6_servers = true
 block_ipv6 = false
 require_dnssec = true
 require_nofilter = true
+require_nolog = true
 
 # Use Google DNS B for resolving the server_names[] if the system
 # resolver is broken (which it is for me as it points directly to
