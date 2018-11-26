@@ -574,9 +574,9 @@ alias connman-wlans='grep -E "Name|Passphrase" /var/lib/connman/wifi*/settings -
 # Meant for SSL certificates (IRC))
 alias lowernocolon="tr -d ':' | tr 'A-Z' 'a-z'"
 
-# As pacman and pacaur share the same flags
-if hash pacaur 2>/dev/null; then
-    alias pacman="LANG=en pacaur --needed"
+# As pacman and yay share the same flags
+if hash yay 2>/dev/null; then
+    alias pacman="LANG=en yay --needed"
 else
 # I don't want to reinstall exact same  versions that I have
     alias pacman="LANG=en pacman --needed"
