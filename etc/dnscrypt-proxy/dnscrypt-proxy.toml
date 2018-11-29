@@ -34,9 +34,8 @@ cache_size = 10000
 # Load-balancing
 # fastest = always fastest, p2 = random between two fastest, ph = random
 # from the fastest half of the configured list, random = any random
-# Default is p2, but as my list grew so long and contains so much IPv6 that
-# may not work everywhere, I am picking ph just in case.
-lb_strategy = 'ph'
+# https://github.com/jedisct1/dnscrypt-proxy/wiki/Load-Balancing-Options
+lb_strategy = 'p2'
 
 # Tor if necessary
 #force_tcp = true
@@ -60,4 +59,5 @@ lb_strategy = 'ph'
 #  [sources.'opennic']
 #  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/opennic.md', 'https://download.dnscrypt.info/resolvers-list/v2/opennic.md']
 #  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+#  refresh_delay = 72
 #  cache_file = '/var/cache/dnscrypt-proxy/opennic.md'
