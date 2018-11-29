@@ -27,6 +27,12 @@ require_nolog = true
 # China: 114.114.114.114:53 according to the example file.
 fallback_resolver = '8.8.4.4:53'
 
+# Ensure syslog
+use_syslog = true
+
+# Cert reload time in minutes (see refresh_delay under sources for them)
+cert_refresh_delay = 240
+
 # Shouldn't take that much MEM and I imagine it's subject to TTL anyway.
 cache = true
 cache_size = 10000
