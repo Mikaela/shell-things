@@ -575,12 +575,12 @@ alias connman-wlans='grep -E "Name|Passphrase" /var/lib/connman/wifi*/settings -
 alias lowernocolon="tr -d ':' | tr 'A-Z' 'a-z'"
 
 # As pacman and yay share the same flags
-if hash yay 2>/dev/null; then
-    alias pacman="LANG=en yay --needed"
-else
+#if hash yay 2>/dev/null; then
+#    alias pacman="LANG=en yay --needed"
+#else
 # I don't want to reinstall exact same  versions that I have
-    alias pacman="LANG=en pacman --needed"
-fi
+alias pacman="LANG=en pacman --needed"
+#fi
 
 # Sailfish Network status, via IRC
 alias sailfish-nstatus='dbus-send --system --type=method_call --print-reply --dest=net.connman / net.connman.Manager.GetServices|less'
