@@ -1,4 +1,6 @@
-# Last edit 2018-11-26 15:44
+# Last edit 2018-12-10 12:04
+cloudberry.fr1.servers.devices.y.cwinfo.internal	201:a635:d55c:109e:1f54:d9cc:387e:7963
+fr2.servers.devices.y.cwinfo.internal	200:c00f:c8a1:2e17:b7b3:b90:3a72:ffed
 h.jolly-roger.mikaela.internal	fcc1:488:a266:f968:9183:9be5:f6f1:f6f6
 h.relpda.mikaela.internal	fc5a:c8f7:2098:55b8:5309:12c4:cbc6:7b5b
 h.sedric.mikaela.internal	fc84:4044:d916:8ec0:d93d:9c7c:70b6:ecba
