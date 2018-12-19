@@ -1,7 +1,7 @@
 ## Main repos
 deb https://deb.debian.org/debian sid main contrib non-free
 deb-src https://deb.debian.org/debian sid main contrib non-free
-#deb https://deb.debian.org/debian-debug sid-debug main contrib non-free
+deb https://deb.debian.org/debian-debug sid-debug main contrib non-free
 
 ## Main repos over Tor
 #deb tor+http://vwakviie2ienjx6t.onion/debian sid main contrib non-free
