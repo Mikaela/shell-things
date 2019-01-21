@@ -1,0 +1,36 @@
+# I have no idea does this allow comments, but why to not try it
+
+# the magic command is `systemctl preset-all` if you forget it!
+
+# Graphical things
+# I have too many machines under control of DHCP and I think CUPS depends
+# on this (note to self at family by the way, CUPS is missing)
+enable avahi-daemon.*
+enable lightdm.service
+
+# Very important remote access/networking
+enable sshguard.service
+enable sshd.service
+enable yggdrasil.service
+enable tor.service
+enable ufw.service
+enable dnscrypt-proxy.service
+enable haveged.service
+enable NetworkManager.service
+enable NetworkManager-wait-online.service
+# mostly replaced with Yggdrasil
+#enable cjdns.service
+
+# As I am breaking automagic, no idea if this is automagic
+enable apparmor.service
+enable cron.service
+enable systemd-journald.service
+enable systemd-timesyncd.service
+
+# Misc
+#enable bumblebeed.service
+enable vnstat.service
+enable uptimed.service
+
+# Don't autostart random services I don't authorize!
+disable *
