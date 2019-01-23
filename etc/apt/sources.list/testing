@@ -15,12 +15,13 @@ deb-src https://deb.debian.org/debian-security/ testing/updates main contrib non
 deb https://deb.debian.org/debian-debug testing-proposed-updates-debug main contrib non-free
 
 ## Security repo directly
-deb http://security.debian.org/ testing/updates main contrib non-free
-deb-src http://security.debian.org/ testing/updates main contrib non-free
+# To be enabled AFTER it gets https, meanwhile CDN & Tor must be enough.
+#deb http://security.debian.org/ testing/updates main contrib non-free
+#deb-src http://security.debian.org/ testing/updates main contrib non-free
 
 ## Security repos over Tor
-#deb tor+http://sgvtcaew4bxjd7ln.onion/debian-security testing/updates main contrib non-free
-#deb-src tor+http://sgvtcaew4bxjd7ln.onion/debian-security testing/updates main contrib non-free
+deb tor+http://sgvtcaew4bxjd7ln.onion/debian-security testing/updates main contrib non-free
+deb-src tor+http://sgvtcaew4bxjd7ln.onion/debian-security testing/updates main contrib non-free
 ## https://bugs.debian.org/894081
 #deb http://ktqxbqrhg5ai2c7f.onion/debian-debug testing-proposed-updates-debug main contrib non-free
 
