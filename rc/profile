@@ -8,8 +8,9 @@ fi
 
 # Set compose to menu, kill X with ctrl-alt-backspace,
 # disable nbsp (still available with compose-space-space,
-# make Caps Lock a backspace (Colemak)
-setxkbmap -option compose:menu -option terminate:ctrl_alt_bksp -option nbsp:none -option caps:backspace
+# make alt+shift toggle layout and specify layouts
+# as Finnish, Czech Qwerty and Esperanto.
+setxkbmap -option compose:menu -option terminate:ctrl_alt_bksp -option nbsp:none -option 'grp:alt_shift_toggle' -layout fi,cz,epo -variant ,qwerty,
 
 # Removes duplicates from $PATH. Copied from http://unix.stackexchange.com/a/14896
 PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS; printf $a[$1]}')
