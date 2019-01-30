@@ -1,0 +1,3 @@
+# Allow everyone in the sudo group to hibernate
+# passwordlessly
+%sudo   ALL = NOPASSWD: /usr/sbin/hibernate
