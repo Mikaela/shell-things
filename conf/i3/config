@@ -173,8 +173,10 @@ bar {
 bindsym Shift+Print exec gnome-screenshot -i
 bindsym Print exec gnome-screenshot -i
 bindsym Control+$mod+l exec i3lock -n -c 7F00FF
+bindsym $mod+Escape exec "i3lock; sudo /usr/sbin/hibernate"
 
 # Autostarts
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk -l 60.15937:24.87530
 exec --no-startup-id xrandr --output HDMI-1 --same-as eDP-1
+exec --no-startup-id volumeicon
