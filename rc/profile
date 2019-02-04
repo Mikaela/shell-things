@@ -7,10 +7,8 @@ if hash ruby 2>/dev/null; then
 fi
 
 # Set compose to menu, kill X with ctrl-alt-backspace,
-# disable nbsp (still available with compose-space-space,
-# make alt+shift toggle layout and specify layouts
-# as Finnish, Czech Qwerty and Esperanto.
-setxkbmap -option compose:menu -option terminate:ctrl_alt_bksp -option nbsp:none -option 'grp:alt_shift_toggle' -layout fi,cz,epo -variant ,qwerty,
+# disable nbsp (still available with compose-space-space)
+setxkbmap -option compose:menu -option terminate:ctrl_alt_bksp -option nbsp:none
 
 # Removes duplicates from $PATH. Copied from http://unix.stackexchange.com/a/14896
 PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS; printf $a[$1]}')
