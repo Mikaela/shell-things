@@ -1,8 +1,16 @@
+# Packages expected:
+# Debian: i3 suckless-tools rxvt-unicode-256color j4-dmenu-desktop
+# gnome-screenshot i3lock sudo hibernate playerctl pulseaudio-utils
+# galculator network-manager-gnome redshift-gtk x11-xserver-utils
+# volumeicon-alsa
+
+# Search also for CHANGEME near the bottom
+
 #Super
 set $mod Mod4
 
-# Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
+# Font for window titles. Will also be used by the bar unless a different
+# font is used in the bar {} block below.
 font pango:monospace 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -27,10 +35,9 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
+# wrapper around dmenu supporting .desktop (flatpak)
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+# supposedly more than 25 times faster
 bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
 
 # change focus
@@ -177,15 +184,22 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 # unknown key, likely XF86BrightnessAdjust as it's a sun, but could be XF86ContrastAdjust
 bindsym XF86Calculator exec --no-startup-id galculator
 
-# Special Window rules
+# Float these apps by default
 for_window [title="^Mozilla Firefox$"] floating enable
 for_window [title="urxvt"] floating enable
 for_window [title="galculator"] floating enable
 
 # Autostarts
 exec --no-startup-id nm-applet
-exec --no-startup-id redshift-gtk -l 60.15937:24.87530
-exec --no-startup-id xrandr --output HDMI-1 --same-as eDP-1
 exec --no-startup-id volumeicon
 exec --no-startup-id xsetroot -solid \#000000
+
+# CHANGEME - weird autostart options that may not be suitable even for my other devices
+# Centre of Lauttasaari
+exec --no-startup-id redshift-gtk -l 60.15937:24.87530
+# Centre of Kotka
+#exec --no-startup-id redshift-gtk -l 60.46742:26.94508
+# Sedric - I want the same view on both displays (and generally disable the internal one with hardware key to not distract myself).
+exec --no-startup-id xrandr --output HDMI-1 --same-as eDP-1
+# Special keyboard options such as FI/CZ/EPO layouts that WILL CONFUSE YOU.
 exec --no-startup-id setxkbmap -option compose:menu -option terminate:ctrl_alt_bksp -option nbsp:none -option 'grp:alt_shift_toggle' -layout fi,cz,epo -variant ,qwerty,
