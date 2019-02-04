@@ -175,14 +175,17 @@ bindsym $mod+Escape exec "i3lock; sudo /usr/sbin/hibernate"
 
 # Microsoft Wired Keyboard 600
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 #bindsym XF86Search
 # unknown key here looking like a share button? XF86Community ?
 #bindsym XF86Display
 # unknown key, likely XF86BrightnessAdjust as it's a sun, but could be XF86ContrastAdjust
 bindsym XF86Calculator exec --no-startup-id galculator
+# Volume keys NOTE: won't work if nothing is playing (which I consider an improvement
+# over randomly stopping working as I enable and disable audio devices).
+set $sink $(pactl list short sinks | grep RUNNING | cut -f1)
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $sink -5%
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $sink +5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $sink toggle # mute sound
 
 # Float these apps by default
 for_window [title="^Mozilla Firefox$"] floating enable
