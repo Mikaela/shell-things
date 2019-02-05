@@ -200,4 +200,4 @@ exec --no-startup-id redshift-gtk -l 60.15937:24.87530
 # Sedric - I want the same view on both displays (and generally disable the internal one with hardware key to not distract myself).
 exec --no-startup-id xrandr --output HDMI-1 --same-as eDP-1
 # Special keyboard options such as FI/CZ/EPO layouts that WILL CONFUSE YOU.
-exec --no-startup-id setxkbmap -option compose:menu -option terminate:ctrl_alt_bksp -option nbsp:none -option 'grp:alt_shift_toggle' -layout fi,cz,epo -variant ,qwerty,
+exec --no-startup-id setxkbmap -option compose:menu -option terminate:ctrl_alt_bksp -option nbsp:none -option caps:backspace -option shift:both_capslock -option 'grp:alt_shift_toggle' -layout fi,cz,epo -variant ,qwerty,
