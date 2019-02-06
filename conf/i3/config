@@ -2,7 +2,7 @@
 # Debian: i3 suckless-tools rxvt-unicode-256color j4-dmenu-desktop
 # gnome-screenshot i3lock sudo hibernate playerctl pulseaudio-utils
 # galculator network-manager-gnome redshift-gtk x11-xserver-utils
-# volumeicon-alsa feh
+# volumeicon-alsa feh rofi
 
 # Search also for CHANGEME near the bottom
 
@@ -38,7 +38,7 @@ bindsym $mod+Shift+q kill
 # wrapper around dmenu supporting .desktop (flatpak)
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 # supposedly more than 25 times faster
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --display-binary --dmenu="rofi -dmenu -i"
 
 # change focus
 bindsym $mod+j focus left
@@ -172,6 +172,9 @@ bindsym Shift+Print exec gnome-screenshot -i
 bindsym Print exec gnome-screenshot -i
 bindsym Control+$mod+l exec i3lock -n -c 7F00FF
 bindsym $mod+Escape exec "i3lock; sudo /usr/sbin/hibernate"
+bindsym $mod+x [urgent=latest] focus
+# alt-tab
+bindsym Mod1+Tab exec --no-startup-id rofi -show window
 
 # Media keys
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
