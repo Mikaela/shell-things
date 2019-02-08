@@ -17,7 +17,7 @@
 URxvt.bell-command: mplayer /usr/share/sounds/freedesktop/stereo/bell.oga
 
 ! Compile xft: Attempt to find a visual with the given bit depth;
-! URxvt*depth: bitdepth
+URxvt*depth: 32
 
 ! Compile xft: Turn on/off double-buffering for xft (default
 ! URxvt*buffered: boolean
@@ -333,7 +333,8 @@ URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 !
 ! URxvt*background:            S_base03
 
-*background:              S_base03
+!*background:              S_base03
+*.background: rgba:1111/1111/1111/dddd
 *foreground:              S_base0
 !*fading:                  40
 *fadeColor:               S_base03
