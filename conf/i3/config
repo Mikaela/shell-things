@@ -38,7 +38,7 @@ bindsym $mod+Shift+q kill
 # wrapper around dmenu supporting .desktop (flatpak)
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 # supposedly more than 25 times faster
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --display-binary --no-generic --dmenu="rofi -dmenu -i -theme solarized" --term="urxvt"
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --display-binary --no-generic --dmenu="rofi -dmenu -i" --term="urxvt"
 #bindsym $mod+d exec --no-startup-id rofi -show drun
 
 # change focus
@@ -175,8 +175,8 @@ bindsym Control+$mod+l exec i3lock -n -c 7F00FF
 bindsym $mod+Escape exec "i3lock; sudo /usr/sbin/hibernate"
 bindsym $mod+x [urgent=latest] focus
 # alt-tab
-bindsym Mod1+Tab exec --no-startup-id rofi -show window -theme solarized
-bindsym $mod+g exec --no-startup-id rofi -show window -theme solarized
+bindsym Mod1+Tab exec --no-startup-id rofi -show window
+bindsym $mod+g exec --no-startup-id rofi -show window
 
 # Media keys
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
