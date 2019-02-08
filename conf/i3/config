@@ -2,7 +2,7 @@
 # Debian: i3 suckless-tools rxvt-unicode-256color j4-dmenu-desktop
 # gnome-screenshot i3lock sudo hibernate playerctl pulseaudio-utils
 # galculator network-manager-gnome redshift-gtk x11-xserver-utils
-# pasystray feh rofi pulsemixer libnotify-bin
+# pasystray feh rofi pulsemixer libnotify-bin xcompmgr
 
 # Search also for CHANGEME near the bottom
 
@@ -175,6 +175,7 @@ bindsym $mod+Escape exec "i3lock; sudo /usr/sbin/hibernate"
 bindsym $mod+x [urgent=latest] focus
 # alt-tab
 bindsym Mod1+Tab exec --no-startup-id rofi -show window
+bindsym $mod+g exec --no-startup-id rofi -show window
 
 # Media keys
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
@@ -190,8 +191,10 @@ bindsym XF86AudioMute exec --no-startup-id pulsemixer --toggle-mute && notify-se
 
 
 # Float these apps by default
+# I use privacy.resistfingerprinting which is incompatible with not floating
 for_window [title="^Mozilla Firefox$"] floating enable
-for_window [title="urxvt"] floating enable
+# I was concerned about lines getting too long in Vim
+#for_window [title="urxvt"] floating enable
 for_window [title="galculator"] floating enable
 
 # Autostarts
@@ -201,6 +204,7 @@ exec --no-startup-id pasystray --notify=all
 #exec --no-startup-id xsetroot -solid \#000000
 # ~/.wallpaper as wallpaper
 exec --no-startup-id feh --bg-scale ~/.wallpaper
+exec --no-startup-id xcompmgr -c
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 # Centre of Lauttasaari
