@@ -205,7 +205,7 @@ exec --no-startup-id pasystray --notify=all
 #exec --no-startup-id xsetroot -solid \#000000
 # ~/.wallpaper as wallpaper
 exec --no-startup-id feh --bg-scale ~/.wallpaper
-exec --no-startup-id xcompmgr
+exec --no-startup-id xcompmgr -c -n
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 # Centre of Lauttasaari
