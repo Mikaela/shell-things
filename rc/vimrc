@@ -95,3 +95,7 @@ au BufReadPost * keepjumps call Dos2unixFunction()
 
 " Highlight all search results
 set hlsearch
+
+" Red column on the right as indication on what I wish to consider as the
+" maximum length of a line.
+set colorcolumn=76
