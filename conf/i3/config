@@ -177,6 +177,7 @@ bindsym $mod+x [urgent=latest] focus
 # alt-tab
 bindsym Mod1+Tab exec --no-startup-id rofi -show window
 bindsym $mod+g exec --no-startup-id rofi -show window
+bindsym XF86Calculator exec --no-startup-id galculator
 
 # Media keys
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
@@ -194,6 +195,7 @@ bindsym XF86AudioMute exec --no-startup-id pulsemixer --toggle-mute && notify-se
 # Float these apps by default
 # I use privacy.resistfingerprinting which is incompatible with not floating
 for_window [title="^Mozilla Firefox$"] floating enable
+for_window [title="^Tor Browser$"] floating enable
 # I was concerned about lines getting too long in Vim
 #for_window [title="urxvt"] floating enable
 for_window [title="galculator"] floating enable
