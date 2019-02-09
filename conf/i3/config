@@ -3,7 +3,11 @@
 # gnome-screenshot i3lock sudo hibernate playerctl pulseaudio-utils
 # galculator network-manager-gnome redshift-gtk x11-xserver-utils
 # pasystray feh rofi pulsemixer libnotify-bin xcompmgr
-
+#
+# Debian theming: lxappearance gtk-chtheme qt4-qtconfig
+# https://askubuntu.com/a/600946
+#
+#
 # Search also for CHANGEME near the bottom
 
 #Super
