@@ -119,6 +119,8 @@ bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
+bindsym $mod+Prior workspace previous
+bindsym $mod+Next workspace next
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -131,6 +133,8 @@ bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
+bindsym $mod+Shift+Prior move container to workspace previous
+bindsym $mod+Shift+Next move container to workspace next
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -172,15 +176,24 @@ bar {
         status_command i3status
 }
 
-# My keys
+# Screenshotting
 bindsym Shift+Print exec gnome-screenshot -i
 bindsym Print exec gnome-screenshot -i
-bindsym Control+$mod+l exec i3lock -n -c 7F00FF
-bindsym $mod+Escape exec "i3lock; sudo /usr/sbin/hibernate"
+
+# no forking (TODO: why?) black colour, Windows cursor (that does nothing)
+# show failed attempts.
+bindsym Control+$mod+l exec i3lock -n -c 000000 -p win -f
+# passwordless sudo for /usr/sbin/hibernate specified in sudoers.d
+bindsym $mod+Escape exec "i3lock -c 000000 -p win -f; sudo /usr/sbin/hibernate"
+
+# Jumping to window with alert (the red colour)
 bindsym $mod+x [urgent=latest] focus
+
 # alt-tab
 bindsym Mod1+Tab exec --no-startup-id rofi -show window
 bindsym $mod+g exec --no-startup-id rofi -show window
+
+# For some reason my keyboard has a dedicated button for calculator
 bindsym XF86Calculator exec --no-startup-id galculator
 
 # Media keys
@@ -188,17 +201,18 @@ bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
 # Volume keys NOTE: won't work if nothing is playing (which I consider an improvement
 # over randomly stopping working as I enable and disable audio devices).
 #set $sink $(pactl list short sinks | grep RUNNING | cut -f1)
-#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $sink -5% && notify-send -t 500 "$(pulsemixer --get-volume)"
-#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $sink +5% && notify-send -t 500 "$(pulsemixer --get-volume)"
+#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $sink -5% # && notify-send -t 500 "$(pulsemixer --get-volume)"
+#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $sink +5% # && notify-send -t 500 "$(pulsemixer --get-volume)"
 #bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $sink toggle # mute sound
-bindsym XF86AudioLowerVolume exec --no-startup-id pulsemixer --change-volume -5 && notify-send -t 500 "$(pulsemixer --get-volume)"
-bindsym XF86AudioRaiseVolume exec --no-startup-id pulsemixer --change-volume +5 && notify-send -t 500 "$(pulsemixer --get-volume)"
-bindsym XF86AudioMute exec --no-startup-id pulsemixer --toggle-mute && notify-send -t 500 "🔇 pressed"
-
+# Apparently pasystray alerts me of the status changes, so I don't have to
+# echo them by myself.
+bindsym XF86AudioLowerVolume exec --no-startup-id pulsemixer --change-volume -5 # && notify-send -t 500 "$(pulsemixer --get-volume)"
+bindsym XF86AudioRaiseVolume exec --no-startup-id pulsemixer --change-volume +5 # && notify-send -t 500 "$(pulsemixer --get-volume)"
+bindsym XF86AudioMute exec --no-startup-id pulsemixer --toggle-mute # && notify-send -t 500 "🔇 pressed"
 
 # Float these apps by default
 # I use privacy.resistfingerprinting which is incompatible with not floating
-for_window [title="^Mozilla Firefox$"] floating enable
+#for_window [title="^Mozilla Firefox$"] floating enable
 for_window [title="^Tor Browser$"] floating enable
 # I was concerned about lines getting too long in Vim
 #for_window [title="urxvt"] floating enable
