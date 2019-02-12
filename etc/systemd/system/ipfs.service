@@ -1,0 +1,11 @@
+[Unit]
+Description=IPFS daemon
+After=network.target
+
+[Service]
+ExecStart=/home/mikaela/go/bin/ipfs daemon --routing=dhtclient --enable-gc
+Restart=on-failure
+User=mikaela
+
+[Install]
+WantedBy=default.target
