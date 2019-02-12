@@ -41,9 +41,13 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec dmenu_run
 # wrapper around dmenu supporting .desktop (flatpak)
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-# supposedly more than 25 times faster
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --display-binary --no-generic --dmenu="rofi -dmenu -i" --term="urxvt"
-#bindsym $mod+d exec --no-startup-id rofi -show drun
+# j4-dmenu-desktop is supposedly more than 25 times faster
+bindsym $mod +d exec --no-startup-id j4-dmenu-desktop --display-binary --no-generic --dmenu="rofi -dmenu -i" --term="urxvt"
+
+# for j4-dmenu-desktop daemon mode (unreleased version)
+# https://github.com/enkore/j4-dmenu-desktop/pull/80/commits/87f6b8b03dabbd83ad0f5d889a75da1b99cdff03
+#exec --no-startup-id j4-dmenu-desktop --display-binary --no-generic --dmenu="rofi -dmenu -i" --term="urxvt" --wait-on=~/.config/j4ddfifo
+#bindsym $mod+d exec --no-startup-id echo > ~/.config/j4ddfifo
 
 # change focus
 bindsym $mod+j focus left
@@ -212,7 +216,7 @@ bindsym XF86AudioMute exec --no-startup-id pulsemixer --toggle-mute # && notify-
 
 # Float these apps by default
 # I use privacy.resistfingerprinting which is incompatible with not floating
-#for_window [title="^Mozilla Firefox$"] floating enable
+for_window [title="^Mozilla Firefox$"] floating enable
 for_window [title="^Tor Browser$"] floating enable
 # I was concerned about lines getting too long in Vim
 #for_window [title="urxvt"] floating enable
