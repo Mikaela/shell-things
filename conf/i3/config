@@ -201,7 +201,7 @@ bindsym $mod+g exec --no-startup-id rofi -show window
 bindsym XF86Calculator exec --no-startup-id galculator
 
 # Media keys
-bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause && notify-send -t 500 "Play-Pause pressed"
 # Volume keys NOTE: won't work if nothing is playing (which I consider an improvement
 # over randomly stopping working as I enable and disable audio devices).
 #set $sink $(pactl list short sinks | grep RUNNING | cut -f1)
