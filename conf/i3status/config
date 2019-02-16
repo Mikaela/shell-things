@@ -30,16 +30,14 @@ load {
 wireless _first_ {
         #format_up = "W: (%quality at %essid) %frequency %ip"
         format_up = "W:%quality %frequency"
-        #format_down = "W: down"
-        format_down = ""
+        format_down = "W:🢃"
 }
 
 ethernet _first_ {
         # if you use %speed, i3status requires root privileges
         #format_up = "E: %ip (%speed)"
-        format_up = "E: OK"
-        #format_down = "E: down"
-        format_down = ""
+        format_up = "E:🢁"
+        format_down = "E:🢃"
 }
 
 battery all {
@@ -64,6 +62,6 @@ volume master {
 }
 
 ipv6 {
-        format_up = ""
-        format_down = "NO IPv6!"
+        format_up = "IPv6: 🢁"
+        format_down = "IPv6: 🢃"
 }
