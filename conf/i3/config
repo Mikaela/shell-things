@@ -19,6 +19,12 @@ set $mod Mod4
 
 # Stop repeating the same thing everywhere!
 set $TERMINAL xfce4-terminal
+# For use without display managers. All display managers seem to be
+# horrible, LightDM user switching is insecure, GDM depends on GNOME, SDDM
+# doesn't support `passwd -de`
+# i3lock options: no forking (TODO: why?) black colour, Windows cursor (that does nothing)
+# show failed attempts.
+set $ScreenLockCmd i3lock -n -c 000000 -p win -f
 
 # Font for window titles. Will also be used by the bar unless a different
 # font is used in the bar {} block below.
@@ -192,11 +198,9 @@ bindsym Shift+Print exec gnome-screenshot -i
 bindsym Print exec gnome-screenshot -i
 
 # lock screen by hand using Mod + Ctrl + L
-# no forking (TODO: why?) black colour, Windows cursor (that does nothing)
-# show failed attempts.
-bindsym Control+$mod+l exec i3lock -n -c 000000 -p win -f
+bindsym Control+$mod+l exec $ScreenLockCmd
 # passwordless sudo for /usr/sbin/hibernate specified in sudoers.d
-bindsym $mod+Escape exec "i3lock -c 000000 -p win -f; sudo /usr/sbin/hibernate"
+bindsym $mod+Escape exec "$ScreenLockCmd; sudo /usr/sbin/hibernate"
 
 # Jumping to window with alert (the red colour)
 bindsym $mod+x [urgent=latest] focus
