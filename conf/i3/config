@@ -3,7 +3,7 @@
 # gnome-screenshot i3lock sudo hibernate playerctl pulseaudio-utils
 # galculator network-manager-gnome redshift-gtk x11-xserver-utils
 # pasystray feh rofi pulsemixer libnotify-bin xcompmgr xfce4-terminal
-# fonts-dejavu dbus-x11
+# fonts-dejavu dbus-x11 arandr
 #
 # Debian theming: lxappearance gtk-chtheme qt4-qtconfig
 # https://askubuntu.com/a/600946
@@ -32,7 +32,7 @@ set $ScreenLockCmd i3lock -c 000000 -p win -f
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono Book 7
+font pango:DejaVu Sans Mono Book 8
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -226,6 +226,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pulsemixer --change-volume -5 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pulsemixer --change-volume +5 # && notify-send -t 500 "$(pulsemixer --get-volume)"
 bindsym XF86AudioMute exec --no-startup-id pulsemixer --toggle-mute # && notify-send -t 500 "🔇 pressed"
 
+bindsym $mod+p exec arandr
+
 # Float these apps by default
 # I use privacy.resistfingerprinting which is incompatible with not floating
 #for_window [title="^Mozilla Firefox$"] floating enable
@@ -247,9 +249,9 @@ exec --no-startup-id redshift-gtk -l 60.15937:24.87530
 # Centre of Kotka
 #exec --no-startup-id redshift-gtk -l 60.46742:26.94508
 # Sedric - mirror displays
-#exec --no-startup-id xrandr --output HDMI-1 --same-as eDP-1
+exec --no-startup-id xrandr --output HDMI-1 --same-as eDP-1
 # Sedric - double monitor via arandr
-exec --no-startup-id xrandr --output VGA-1 --off --output HDMI-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --mode 1920x1080 --pos 1920x0 --rotate normal --dpi 135
-workspace 1 output HDMI-1
+#exec --no-startup-id xrandr --output VGA-1 --off --output HDMI-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --mode 1920x1080 --pos 1920x0 --rotate normal --dpi 135
+#workspace 1 output HDMI-1
 # Special keyboard options such as FI/CZ/EPO layouts that WILL CONFUSE YOU.
 exec --no-startup-id setxkbmap -option compose:menu -option terminate:ctrl_alt_bksp -option nbsp:none -option caps:backspace -option shift:both_capslock -option grp:ctrls_toggle -layout fi,cz,epo -variant ,qwerty,
