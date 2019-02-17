@@ -7,6 +7,7 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
+        output_format = "i3bar"
         colors = true
         interval = 1
 }
@@ -26,7 +27,8 @@ order += "tztime local"
 load {
         format = "%1min %5min %15min"
         # The default is 5 while my laptop has only 4 and older PC 1.
-        max_threshold = "3,7"
+        # CHANGEME - apparently whether . or , works depends on locale -.-
+        #max_threshold = "3.7"
         #max_threshold = "0,7"
 }
 
