@@ -11,6 +11,8 @@ general {
         interval = 1
 }
 
+order += "disk /"
+order += "disk /home"
 order += "ipv6"
 order += "volume master"
 order += "load"
@@ -23,8 +25,9 @@ order += "tztime local"
 # Load is first as the treshold may need the most modification here
 load {
         format = "%1min %5min %15min"
-        # The default is 5 while my laptop has only 4.
+        # The default is 5 while my laptop has only 4 and older PC 1.
         max_threshold = "3,7"
+        #max_threshold = "0,7"
 }
 
 wireless _first_ {
@@ -64,4 +67,12 @@ volume master {
 ipv6 {
         format_up = "IPv6: 🢁"
         format_down = "IPv6: 🢃"
+}
+
+disk / {
+        format = "/: %free"
+}
+
+disk /home {
+        format = "/home: %free"
 }
