@@ -4,9 +4,12 @@
 
 # Graphical things
 # I have too many machines under control of DHCP and I think CUPS depends
-# on this (note to self at family by the way, CUPS is missing)
+# on this.
 enable avahi-daemon.*
-enable lightdm.service
+enable display-manager.service
+# I hope this is enough cups
+enable cups-browsed.service
+enable cups.*
 
 # Very important remote access/networking
 enable sshguard.service
@@ -33,6 +36,9 @@ enable systemd-timesyncd.service
 #enable bumblebeed.service
 enable vnstat.service
 enable uptimed.service
+
+# For some reason Debian disables TTY1 by default
+enable getty@tty1.service
 
 # Don't autostart random services I don't authorize!
 disable *
