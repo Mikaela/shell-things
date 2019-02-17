@@ -1,3 +1,5 @@
+# flatpak & snap & co.
+. /etc/profile
 # Using dbus-launch seems to be necessary here to get dbus up, otherwise
 # there are errors about it missing and pasystray & nm-applet cannot be
 # interacted with.

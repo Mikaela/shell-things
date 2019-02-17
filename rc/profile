@@ -1,5 +1,5 @@
 # Set PATH properly
-PATH=$HOME/.local/bin:$HOME/bin:$HOME/go/bin:/snap/bin:/usr/local/bin:/usr/local/sbin:/usr/local/games:/usr/bin:/usr/sbin:/usr/games:/bin:/sbin:/games:$PATH
+PATH=$HOME/.local/bin:$HOME/bin:$HOME/go/bin:$HOME/.local/share/flatpak/exports/bin:/var/lib/flatpak/exports/bin:/snap/bin:/usr/local/bin:/usr/local/sbin:/usr/local/games:/usr/bin:/usr/sbin:/usr/games:/bin:/sbin:/games:$PATH
 
 # Add RubyGems to PATH
 if hash ruby 2>/dev/null; then
