@@ -4,6 +4,7 @@ set -x
 cat .mikaela/bash_aliases> ~/.bash_aliases
 cat .mikaela/zsh_aliases > ~/.zsh_aliases
 cat .mikaela/gitconfig > ~/.gitconfig
+cat rc/xinitrc > ~/.xinitrc
 mkdir -p ~/.gnupg
 cat .mikaela/gpg.conf> ~/.gnupg/gpg.conf
 cat .mikaela/pastebinit.xml > ~/.pastebinit.xml
