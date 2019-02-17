@@ -3,10 +3,14 @@
 # gnome-screenshot i3lock sudo hibernate playerctl pulseaudio-utils
 # galculator network-manager-gnome redshift-gtk x11-xserver-utils
 # pasystray feh rofi pulsemixer libnotify-bin xcompmgr xfce4-terminal
-# fonts-dejavu
+# fonts-dejavu dbus-x11
 #
 # Debian theming: lxappearance gtk-chtheme qt4-qtconfig
 # https://askubuntu.com/a/600946
+#
+# HIDPI text scaling:
+# % gsettings set org.gnome.desktop.interface scaling-factor 2
+# https://wiki.archlinux.org/index.php/HiDPI#GNOME
 #
 # Search also for CHANGEME near the bottom
 
@@ -22,7 +26,7 @@ set $TERMINAL xfce4-terminal
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono Book 10
+font pango:DejaVu Sans Mono Book 7
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -241,7 +245,7 @@ exec --no-startup-id redshift-gtk -l 60.15937:24.87530
 # Sedric - mirror displays
 #exec --no-startup-id xrandr --output HDMI-1 --same-as eDP-1
 # Sedric - double monitor via arandr
-exec --no-startup-id xrandr --output VGA-1 --off --output HDMI-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --mode 1920x1080 --pos 1920x0 --rotate normal
+exec --no-startup-id xrandr --output VGA-1 --off --output HDMI-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --mode 1920x1080 --pos 1920x0 --rotate normal --dpi 135
 workspace 1 output HDMI-1
 # Special keyboard options such as FI/CZ/EPO layouts that WILL CONFUSE YOU.
 exec --no-startup-id setxkbmap -option compose:menu -option terminate:ctrl_alt_bksp -option nbsp:none -option caps:backspace -option shift:both_capslock -option grp:ctrls_toggle -layout fi,cz,epo -variant ,qwerty,
