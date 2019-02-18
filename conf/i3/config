@@ -32,7 +32,7 @@ set $ScreenLockCmd i3lock -c 000000 -p win -f
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono Book 8
+font pango:DejaVu Sans Mono Book 10
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -198,7 +198,23 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        # Solarized Dark copied from https://github.com/tobiaszwaszak/i3wm/blob/master/config
+        colors {
+            background #002b36
+            statusline #839496
+            separator  #586e75
+            focused_workspace  #b58900 #b58900 #002b36
+            active_workspace   #586e75 #586e75 #002b36
+            inactive_workspace #073642 #002b36 #839496
+            urgent_workspace   #dc322f #dc322f #fdf6e3
+        }
 }
+
+# Solarized Dark copied from https://github.com/tobiaszwaszak/i3wm
+client.focused          #002b36 #586e75 #fdf6e3 #268bd2
+client.focused_inactive #002b36 #073642 #839496 #073642
+client.unfocused        #002b36 #073642 #839496 #073642
+client.urgent           #002b36 #dc322f #fdf6e3 #002b36
 
 # Screenshotting
 bindsym Shift+Print exec gnome-screenshot -i

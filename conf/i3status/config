@@ -10,6 +10,10 @@ general {
         output_format = "i3bar"
         colors = true
         interval = 1
+        # solarized dark copied from https://github.com/tobiaszwaszak/i3wm/blob/master/i3status.conf
+        color_good = "#859900"
+        color_bad = "#dc322f"
+        color_degraded = "#cb4b16"
 }
 
 order += "disk /"
