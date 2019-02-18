@@ -3,7 +3,7 @@
 # gnome-screenshot i3lock sudo hibernate playerctl pulseaudio-utils
 # galculator network-manager-gnome redshift-gtk x11-xserver-utils
 # pasystray feh rofi pulsemixer libnotify-bin xcompmgr xfce4-terminal
-# fonts-dejavu dbus-x11 arandr
+# fonts-dejavu dbus-x11 arandr numlockx
 #
 # Debian theming: lxappearance gtk-chtheme qt4-qtconfig
 # https://askubuntu.com/a/600946
@@ -271,6 +271,7 @@ exec --no-startup-id feh --bg-scale ~/.wallpaper
 exec --no-startup-id xcompmgr -c -n
 # Make everything a bit transparent, you don't want this.
 #exec --no-startup-id compton --active-opacity 0.95 --inactive-opacity 0.95 -m 0.95 -e 0.95
+exec --no-startup-id numlockx on
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 # Centre of Lauttasaari
