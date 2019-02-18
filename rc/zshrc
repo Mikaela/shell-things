@@ -589,6 +589,9 @@ alias apt-builddep="apt-rdepends --build-depends --follow=DEPENDS"
 # http://superuser.com/a/638033 - get embedded Windows key
 alias winkey="xxd /sys/firmware/acpi/tables/MSDM"
 
+# Always exec startx so Ctrl-Alt-Backspace won't lead to unlocked TTY.
+alias startx="exec \startx"
+
 # Allow custom aliases to be put in .aliases or .zsh_aliases .
 
 # .aliases
