@@ -56,12 +56,13 @@ battery all {
 
 tztime utc {
         timezone = "UTC"
-        format = "%Z: %Y-%m-%d %H.%M.%S"
+        # ISO 8601ish
+        format = "%Z: %Y-%m-%d %H:%H:%S(%z)"
 }
 
 tztime local {
-        format = "%Z: %Y-%m-%d %H.%M.%S"
-        #format = "%Z: %c"
+        # Finnishish formatting.
+        format = "%Z: %A %d. %B %Y, %H.%M.%S(%z)"
 }
 
 volume master {
