@@ -1,3 +1,5 @@
-# Allow everyone in the sudo group to hibernate
-# passwordlessly
-%sudo   ALL = NOPASSWD: /usr/sbin/hibernate
+# Allow everyone in the plugdev group to hibernate passwordlessly
+# Yes, I am abusing the default Debian groups :)
+%plugdev   ALL = NOPASSWD: /usr/sbin/hibernate
+# suspend
+%plugdev   ALL = NOPASSWD: /usr/sbin/s2ram
