@@ -165,7 +165,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the EXIT shortcut. Do you really want to EXIT i3? This will end your X session (and should throw you to TTY login prompt or something is WRONG!).' -B 'Yes, EXIT i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -222,8 +222,12 @@ bindsym Print exec gnome-screenshot -i
 
 # lock screen by hand using Mod + Ctrl + L
 bindsym Control+$mod+l exec $ScreenLockCmd
-# passwordless sudo for /usr/sbin/hibernate specified in sudoers.d
-bindsym $mod+Escape exec "$ScreenLockCmd; sudo /usr/sbin/hibernate"
+
+# hibernate and suspend, inspiration took from the nagbar for exiting i3.
+# Passwordless sudo for both commands is specified in
+# /etc/sudoers.d/hibernate
+bindsym $mod+Escape exec "i3-nagbar -t warning -m 'You pressed the HIBERNATE shortcut. Do you really want to HIBERNATE?' -B 'Yes, HIBERNATE' '$ScreenLockCmd; sudo /usr/sbin/hibernate'"
+bindsym $mod+Shift+Escape exec "i3-nagbar -t warning -m 'You pressed the SUSPEND shortcut. Do you really want to SUSPEND?' -B 'Yes, SUSPEND' '$ScreenLockCmd; sudo /usr/sbin/s2ram'"
 
 # Jumping to window with alert (the red colour)
 bindsym $mod+x [urgent=latest] focus
