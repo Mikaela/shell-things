@@ -57,7 +57,7 @@ battery all {
 tztime utc {
         timezone = "UTC"
         # ISO 8601ish
-        format = "%Z: %Y-%m-%d %H:%H:%S(%z)"
+        format = "%Z: %Y-%m-%d %H:%M:%S(%z)"
 }
 
 tztime local {
