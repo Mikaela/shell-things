@@ -14,3 +14,8 @@ LC_MONETARY     DEFAULT=fi_FI.UTF-8
 LC_NAME         DEFAULT=fi_FI.UTF-8
 # +358...
 LC_TELEPHONE    DEFAULT=fi_FI.UTF-8
+
+# fcitx input method
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
