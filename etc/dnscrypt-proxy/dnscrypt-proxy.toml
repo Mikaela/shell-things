@@ -25,7 +25,10 @@ require_nolog = true
 # dnscrypt-proxy which is not functional at that time.)
 # The example config recommends DNSSEC support which OpenDNS is missing.
 # China: 114.114.114.114:53 according to the example file.
-fallback_resolver = '8.8.4.4:53'
+# 8.8.4.4 - Google
+#fallback_resolver = '8.8.4.4:53'
+# https://dns.watch/
+fallback_resolver = '84.200.70.40:53'
 
 # Ensure syslog
 use_syslog = true
