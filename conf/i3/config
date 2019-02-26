@@ -3,7 +3,10 @@
 # gnome-screenshot i3lock sudo hibernate playerctl pulseaudio-utils
 # galculator network-manager-gnome redshift-gtk x11-xserver-utils
 # pasystray feh rofi pulsemixer libnotify-bin xcompmgr xfce4-terminal
-# fonts-dejavu dbus-x11 arandr numlockx fcitx-bin fcitx-mozc
+# fonts-dejavu dbus-x11 arandr numlockx fcitx-bin fcitx-mozc conky-all
+# flatpak
+#
+# Flatpaks expected: org.gajim.Gajim org.gajim.Gajim.Plugin.omemo
 #
 # Debian theming: lxappearance gtk-chtheme qt4-qtconfig
 # https://askubuntu.com/a/600946
@@ -258,7 +261,8 @@ bindsym $mod+p exec arandr
 
 # Float these apps by default
 # I use privacy.resistfingerprinting which is incompatible with not floating
-#for_window [title="^Mozilla Firefox$"] floating enable
+# I think I am more productive with floating Firefox.
+for_window [title="^Mozilla Firefox$"] floating enable
 for_window [title="^Tor Browser$"] floating enable
 for_window [title="galculator"] floating enable
 
@@ -275,6 +279,9 @@ exec --no-startup-id xcompmgr -c -n
 exec --no-startup-id numlockx on
 # see also pam_environment https://wiki.archlinux.org/index.php/Fcitx#Non_desktop_environment
 exec --no-startup-id fcitx
+exec --no-startup-id flatpak run org.gajim.Gajim
+exec --no-startup-id $TERMINAL
+exec --no-startup-id conky
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 # Centre of Lauttasaari
