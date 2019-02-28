@@ -13,6 +13,7 @@ enable cups.*
 
 # Very important remote access/networking
 enable sshguard.service
+enable ssh.service
 enable sshd.service
 enable yggdrasil.service
 enable yggdrasil-resume.service
@@ -22,9 +23,6 @@ enable dnscrypt-proxy.service
 enable haveged.service
 enable NetworkManager.service
 enable NetworkManager-wait-online.service
-# mostly replaced with Yggdrasil
-#enable cjdns.service
-#enable cjdns-resume.service
 
 # As I am breaking automagic, no idea if this is automagic
 enable apparmor.service
