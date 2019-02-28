@@ -38,6 +38,9 @@ enable uptimed.service
 enable snapd.service
 enable lm-sensors.service
 
+# FINEID
+enable pcscd.service
+
 # For some reason Debian disables TTY1 by default
 enable getty@tty1.service
 
