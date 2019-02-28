@@ -1,3 +1,6 @@
+# xprofile reading
+[ -f /etc/xprofile ] && . /etc/xprofile
+[ -f ~/.xprofile ] && . ~/.xprofile
 # flatpak & snap & co.
 . /etc/profile
 # Using dbus-launch seems to be necessary here to get dbus up, otherwise
