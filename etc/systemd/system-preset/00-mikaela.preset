@@ -21,6 +21,7 @@ enable tor.service
 enable ufw.service
 enable dnscrypt-proxy.service
 enable haveged.service
+enable networking.service
 enable NetworkManager.service
 enable NetworkManager-wait-online.service
 
@@ -34,6 +35,8 @@ enable systemd-timesyncd.service
 #enable bumblebeed.service
 enable vnstat.service
 enable uptimed.service
+enable snapd.service
+enable lm-sensors.service
 
 # For some reason Debian disables TTY1 by default
 enable getty@tty1.service
