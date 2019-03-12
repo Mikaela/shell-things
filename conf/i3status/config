@@ -50,7 +50,8 @@ ethernet _first_ {
 }
 
 battery all {
-        format = "%status %percentage %remaining"
+        # %remaining looks horrible especially with updating every second
+        format = "🔌%status %percentage"
         format_down = ""
 }
 
