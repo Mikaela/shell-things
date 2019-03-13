@@ -9,7 +9,11 @@
 general {
         output_format = "i3bar"
         colors = true
-        interval = 1
+        # 1 is horrible with battery status and possibly unnecessary
+        # weight for older devices. 5 appears to be Debian default, and I
+        # guess it's enough often for seeing if the system is frozen when
+        # staring at a clock.
+        interval = 5
         # solarized dark copied from https://github.com/tobiaszwaszak/i3wm/blob/master/i3status.conf
         color_good = "#859900"
         color_bad = "#dc322f"
@@ -51,7 +55,7 @@ ethernet _first_ {
 
 battery all {
         # %remaining looks horrible especially with updating every second
-        format = "🔌%status %percentage"
+        format = "🔌%status %percentage %remaining"
         format_down = ""
 }
 
@@ -73,8 +77,8 @@ volume master {
 }
 
 ipv6 {
-        format_up = "IPv6: 🢁"
-        format_down = "IPv6: 🢃"
+        format_up = "IPv6:🢁"
+        format_down = "IPv6:🢃"
 }
 
 disk / {
