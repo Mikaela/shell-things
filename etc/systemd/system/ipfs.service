@@ -5,8 +5,9 @@ After=network.target
 [Service]
 ExecStart=/home/mikaela/go/bin/ipfs daemon --routing=dhtclient --enable-gc --enable-namesys-pubsub
 # My attempts at explaining flags above + --mount for fuse
-# --mount - fuse for /ipfs and /ipns, see https://github.com/ipfs/go-ipfs/blob/master/docs/fuse.md as it requires some specific config, I am not
-#   setting it as default here.
+# --mount - fuse for /ipfs and /ipns, see
+#   https://github.com/ipfs/go-ipfs/blob/master/docs/fuse.md as it requires
+#   some specific config, I am not setting it as default here.
 # --routing=dhtclient - not serving requests to the network saving bandwidth
 # --enable-gc - automatic cleaning of unpinned files per rules in ipfs
 #   config, I think by default two hours or when the repo gets bigger than
@@ -25,7 +26,12 @@ ExecStart=/home/mikaela/go/bin/ipfs daemon --routing=dhtclient --enable-gc --ena
 #   connections
 #  ipfs config --json Swarm.EnableAutoRelay true - if impassable NAT is
 #   detected, connect to the network through relays that have configured
-#   themselves as open (EnableRelayHop?)
+#   themselves as open (EnableAutoNATService & EnableRelayHop?)
+#  ipfs config --json Experimental.QUIC true - QUIC support, remember to
+#   edit swarm addresses to include /ip4/0.0.0.0/udp/4001/quic
+#   /ip6/::/udp/4001/quic
+#  ipfs config --json Experimental.FilestoreEnabled true - for ipfs add
+#   --nocopy to not store the content twice on disc
 #
 #  Extra: to disable IPv4 connections:
 #   ipfs swarm filters add /ip4/0.0.0.0/ipcidr/0
