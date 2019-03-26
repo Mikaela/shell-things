@@ -9,8 +9,18 @@ listen_addresses = []
 #cloaking_rules = '/etc/dnscrypt-proxy/hosts-mikaela.txt'
 
 # The fastest working servers are automatically picked from configured
-# ones. If not configured, the whole list is compared.
-#server_names = ['cloudflare-ipv6', 'quad9-ip6-nofilter-pri', 'quad9-ip6-nofilter-alt', 'cloudflare', 'google', 'quad9-ip4-nofilter-pri', 'quad9-ip4-nofilter-alt']
+# ones. If not configured, the whole list is compared. This overrides the
+# requirements below.
+# https://quad9.net/about/ & https://quad9.net/privacy/
+server_names = ['quad9-dnscrypt-ip4-filter-pri', 'quad9-dnscrypt-ip4-filter-alt', 'quad9-dnscrypt-ip6-filter-pri', 'quad9-dnscrypt-ip6-filter-alt', 'quad9-doh-ip4-filter-pri', 'quad9-doh-ip4-filter-alt', 'quad9-doh-ip6-filter-pri', 'quad9-doh-ip6-filter-alt']
+
+# Server names to never use even if they match the criteria below. I think
+# Cloudflare is too big and as it gets selected by default everywhere other
+# resolvers won't even get attempted. There is also Mozilla planning to send
+# all Firefox DNS queries to them.
+# This is unsupported in the Debian's version 2.0.19, so I am keeping
+# server_names.
+#disabled_server_names = ['cloudflare-ipv6', 'cloudflare']
 
 # Requirements for which servers to use
 ipv4_servers = true
@@ -20,15 +30,9 @@ require_dnssec = true
 require_nofilter = true
 require_nolog = true
 
-# Use Google DNS B for resolving the server_names[] if the system
-# resolver is broken (which it is for me as it points directly to
-# dnscrypt-proxy which is not functional at that time.)
-# The example config recommends DNSSEC support which OpenDNS is missing.
+# Resolver to use for the initial queries, DNSSEC capable one recommended.
 # China: 114.114.114.114:53 according to the example file.
-# 8.8.4.4 - Google
-#fallback_resolver = '8.8.4.4:53'
-# https://dns.watch/
-fallback_resolver = '84.200.70.40:53'
+#fallback_resolver = '149.112.112.112:53'
 
 # Ensure syslog
 use_syslog = true
