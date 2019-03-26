@@ -3,7 +3,36 @@ Description=IPFS daemon
 After=network.target
 
 [Service]
-ExecStart=/home/mikaela/go/bin/ipfs daemon --routing=dhtclient --enable-gc
+ExecStart=/home/mikaela/go/bin/ipfs daemon --routing=dhtclient --enable-gc --enable-namesys-pubsub
+# My attempts at explaining flags above + --mount for fuse
+# --mount - fuse for /ipfs and /ipns, see https://github.com/ipfs/go-ipfs/blob/master/docs/fuse.md as it requires some specific config, I am not
+#   setting it as default here.
+# --routing=dhtclient - not serving requests to the network saving bandwidth
+# --enable-gc - automatic cleaning of unpinned files per rules in ipfs
+#   config, I think by default two hours or when the repo gets bigger than
+#   10G
+# --enable-namesys-pubsub - real time previously cached ipns updates
+#
+# My specific config:
+#  ipfs config Reprovider.Strategy pinned - advertise only pinned files
+#   to the network to reduce connections instead of also cached content
+#   (which they will still be able to download, see ipfs/go-ipfs#4145)
+#  ipfs config Swarm.ConnMgr.GracePeriod 1s - to get rid of excess
+#   connections quickly
+#  ipfs config --json Swarm.ConnMgr.HighWater 20 - attempt to stay below 20
+#   connections
+#  ipfs config --json Swarm.ConnMgr.LowWater 5 - attempt to keep at least 5
+#   connections
+#  ipfs config --json Swarm.EnableAutoRelay true - if impassable NAT is
+#   detected, connect to the network through relays that have configured
+#   themselves as open (EnableRelayHop?)
+#
+#  Extra: to disable IPv4 connections:
+#   ipfs swarm filters add /ip4/0.0.0.0/ipcidr/0
+#    However I think this may do more harm than good, especially if the
+#    other config options above (especially Reprovider.Strategy pinned) keep
+#    amount of connection tolerable and won't cause issues.
+#
 Restart=on-failure
 User=mikaela
 
