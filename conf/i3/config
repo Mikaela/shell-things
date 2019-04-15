@@ -8,7 +8,7 @@
 #
 # Flatpaks expected: org.gajim.Gajim org.gajim.Gajim.Plugin.omemo
 #
-# Debian theming: lxappearance gtk-chtheme qt4-qtconfig
+# Debian theming: lxappearance gtk-chtheme qt4-qtconfig qt5ct
 # https://askubuntu.com/a/600946
 #
 # HIDPI text scaling:
