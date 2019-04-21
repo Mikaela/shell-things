@@ -295,6 +295,6 @@ exec --no-startup-id redshift-gtk -l 60.15937:24.87530
 #exec --no-startup-id xrandr --output VGA-1 --off --output HDMI-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --mode 1920x1080 --pos 1920x0 --rotate normal --dpi 135
 #workspace 1 output HDMI-1
 # Sedric - HDMI-only. Disable via TTY if appropiate.
-xrandr --output VGA-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --off
+exec --no-startup-id xrandr --output VGA-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --off
 # Special keyboard options such as FI/CZ/EPO layouts that WILL CONFUSE YOU.
 exec --no-startup-id setxkbmap -option compose:menu -option terminate:ctrl_alt_bksp -option nbsp:none -option caps:backspace -option shift:both_capslock -option grp:ctrls_toggle -layout fi,cz,epo -variant ,qwerty,
