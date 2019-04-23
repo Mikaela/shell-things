@@ -20,10 +20,10 @@ ExecStart=/home/mikaela/go/bin/ipfs daemon --routing=dhtclient --enable-gc --ena
 #   (which they will still be able to download, see ipfs/go-ipfs#4145)
 #  ipfs config Swarm.ConnMgr.GracePeriod 1s - to get rid of excess
 #   connections quickly
-#  ipfs config --json Swarm.ConnMgr.HighWater 20 - attempt to stay below 20
+#  ipfs config --json Swarm.ConnMgr.HighWater 40 - attempt to stay below 40
 #   connections
-#  ipfs config --json Swarm.ConnMgr.LowWater 5 - attempt to keep at least 5
-#   connections
+#  ipfs config --json Swarm.ConnMgr.LowWater 20 - attempt to keep at least
+#   20 connections
 #  ipfs config --json Swarm.EnableAutoRelay true - if impassable NAT is
 #   detected, connect to the network through relays that have configured
 #   themselves as open (EnableAutoNATService & EnableRelayHop?)
@@ -32,6 +32,8 @@ ExecStart=/home/mikaela/go/bin/ipfs daemon --routing=dhtclient --enable-gc --ena
 #   /ip6/::/udp/4001/quic
 #  ipfs config --json Experimental.FilestoreEnabled true - for ipfs add
 #   --nocopy to not store the content twice on disc
+#
+# I am using badger datastore.
 #
 #  Extra: to disable IPv4 connections:
 #   ipfs swarm filters add /ip4/0.0.0.0/ipcidr/0
