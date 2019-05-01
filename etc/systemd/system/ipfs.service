@@ -33,6 +33,11 @@ ExecStart=/home/mikaela/go/bin/ipfs daemon --routing=dhtclient --enable-gc --ena
 #  ipfs config --json Experimental.FilestoreEnabled true - for ipfs add
 #   --nocopy to not store the content twice on disc
 #
+# Routing note: dhtclient may cause problems making the content findable
+#               even if it uses less bandwitdh, so it may be better to use
+#               dht everywhere if that isn't a problem. dht also breaks
+#               LowWater/HighWater limits.
+#
 # I am using badger datastore.
 #
 #  Extra: to disable IPv4 connections:
