@@ -1,0 +1,11 @@
+[Unit]
+Description=Tor client
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/tor -f /etc/tor/torrc-client
+Restart=always
+User=debian-tor
+
+[Install]
+WantedBy=default.target
