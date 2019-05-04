@@ -9,7 +9,6 @@ SocksPort 9050 IsolateDestAddr PreferIPv6
 # https://trac.torproject.org/projects/tor/wiki/org/roadmaps/Tor/IPv6#TestingclientsrunningviaIPv6
 #ClientUseIPv6 1
 #ClientPreferIPv6ORPort 1
-#ClientPreferIPv6DirPort 1
 
 ControlPort 9052
 CookieAuthentication 1
