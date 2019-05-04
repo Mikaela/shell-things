@@ -1,14 +1,28 @@
 DataDirectory /var/lib/tor-client
 Log notice syslog
+
+# This instance will appear in syslog as "Tor-client"
 SyslogIdentityTag client
+
+# Use the default SocksPort, but also isolate streams going to different
+# destination addresses and in case of DualStack Exits prefer IPv6, because
+# they aren't publicly listed and may let through Tor blocks.
+# https://trac.torproject.org/projects/tor/ticket/16947
 SocksPort 9050 IsolateDestAddr PreferIPv6
 
 # Uncomment to disable IPv4
 #ClientUseIPv4 0
-# Enabling and preferring IPv6 over IPv4
-# https://trac.torproject.org/projects/tor/wiki/org/roadmaps/Tor/IPv6#TestingclientsrunningviaIPv6
-#ClientUseIPv6 1
+
+# Allow Tor to connect to relay/bridge over IPv6. As the default is
+# IPv4-only, this may cause less anonymity if the guard is bad (and
+# especially if you are behind CGN?)
+ClientUseIPv6 1
+
+# Always prefer IPv6 over IPv4 (see previous), maybe this would be useful
+# in a DS network preventing Tor over IPv4.
 #ClientPreferIPv6ORPort 1
 
+# The default ControlPort is 9051 which is presumably used by the main Tor
+# instance.
 ControlPort 9052
 CookieAuthentication 1
