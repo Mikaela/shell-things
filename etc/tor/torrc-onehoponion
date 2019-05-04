@@ -6,6 +6,10 @@ SyslogIdentityTag onehoponion
 SocksPort 0
 HiddenServiceSingleHopMode 1
 HiddenServiceNonAnonymousMode 1
-
-ControlPort 9053
 CookieAuthentication 1
+
+# I think hidden services running in this mode should be controlled only by
+# me in this file so services like Zeronet or Ricochet don't accidentally
+# create NonAnonymous hidden services
+ControlPort 0
+ControlSocket 0
