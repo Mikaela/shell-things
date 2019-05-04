@@ -1,0 +1,11 @@
+DataDirectory /var/lib/tor-onehoponion
+Log notice syslog
+
+SyslogIdentityTag onehoponion
+
+SocksPort 0
+HiddenServiceSingleHopMode 1
+HiddenServiceNonAnonymousMode 1
+
+ControlPort 9053
+CookieAuthentication 1

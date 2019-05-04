@@ -1,0 +1,13 @@
+# From the torrc's on this directory, this is the only one not in use
+# anywhere, mostly I have the main tor.service as OneHopOnion SSH access
+# and client for my Tor traffic (+ Tor Browser), OneHopOnion is just for
+# an instance that was already running a relay.
+
+SocksPort 0
+ORPort 443
+#Nickname
+RelayBandwidthRate 2 MByte
+#ContactInfo
+DirPort 80 # what port to advertise for directory connections
+#MyFamily
+ExitPolicy reject *:* # no exits allowed

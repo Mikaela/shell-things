@@ -1,0 +1,11 @@
+[Unit]
+Description=Tor one hop onion service host
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/tor -f /etc/tor/torrc-onehoponion
+Restart=always
+User=debian-tor
+
+[Install]
+WantedBy=default.target
