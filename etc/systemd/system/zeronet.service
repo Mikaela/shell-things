@@ -3,7 +3,7 @@ Description=ZeroNet
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python2 /home/mikaela/src/github/HelloZeroNet/ZeroNet/zeronet.py
+ExecStart=/usr/bin/python3 /home/mikaela/src/github/HelloZeroNet/ZeroNet/zeronet.py --tor always
 Restart=on-failure
 User=mikaela
 
