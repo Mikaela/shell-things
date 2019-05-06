@@ -67,17 +67,19 @@ lb_strategy = 'p2'
   cache_file = '/var/cache/dnscrypt-proxy/public-resolvers.md'
   minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
   refresh_delay = 72
-  prefix = ''
+  prefix = 'public-'
 
-#  [sources.'opennic']
-#  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/opennic.md', 'https://download.dnscrypt.info/resolvers-list/v2/opennic.md']
-#  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
-#  refresh_delay = 72
-#  cache_file = '/var/cache/dnscrypt-proxy/opennic.md'
+[sources.'opennic']
+  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/opennic.md', 'https://download.dnscrypt.info/resolvers-list/v2/opennic.md']
+  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+  refresh_delay = 72
+  cache_file = '/var/cache/dnscrypt-proxy/opennic.md'
+  prefix = 'opennic-'
 
 # 2.0.23 recommended so onions won't be attempted without proxy enabled
 # (5c9edfccfe67474bee2836ada67f955f10e43357)
-[sources.'onion-services']
-  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/onion-services.md', 'https://download.dnscrypt.info/resolvers-list/v2/onion-services.md']
-  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
-  cache_file = 'onion-services.md'
+#[sources.'onion-services']
+#  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/onion-services.md', 'https://download.dnscrypt.info/resolvers-list/v2/onion-services.md']
+#  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+#  cache_file = 'onion-services.md'
+#  prefix = 'onion-'
