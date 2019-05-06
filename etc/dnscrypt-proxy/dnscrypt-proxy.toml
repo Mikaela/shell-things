@@ -74,3 +74,10 @@ lb_strategy = 'p2'
 #  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
 #  refresh_delay = 72
 #  cache_file = '/var/cache/dnscrypt-proxy/opennic.md'
+
+# 2.0.23 recommended so onions won't be attempted without proxy enabled
+# (5c9edfccfe67474bee2836ada67f955f10e43357)
+[sources.'onion-services']
+  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/onion-services.md', 'https://download.dnscrypt.info/resolvers-list/v2/onion-services.md']
+  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+  cache_file = 'onion-services.md'
