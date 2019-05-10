@@ -47,4 +47,4 @@ Host *
     # DNSSEC is used, but apparently only "ask" and "no" write known_hosts
     # However with "ask" you won't be told whether the zone is signed, so
     # I consider "yes" to be the least evil.
-    VerifyHostKeyDNS ask
+    VerifyHostKeyDNS yes
