@@ -8,18 +8,13 @@ listen_addresses = []
 # mikaela.internal / my hosts file
 #cloaking_rules = '/etc/dnscrypt-proxy/hosts-mikaela.txt'
 
-# The fastest working servers are automatically picked from configured
-# ones. If not configured, the whole list is compared. This overrides the
-# requirements below.
-# https://quad9.net/about/ & https://quad9.net/privacy/
-server_names = ['quad9-dnscrypt-ip4-filter-pri', 'quad9-dnscrypt-ip4-filter-alt', 'quad9-dnscrypt-ip6-filter-pri', 'quad9-dnscrypt-ip6-filter-alt', 'quad9-doh-ip4-filter-pri', 'quad9-doh-ip4-filter-alt', 'quad9-doh-ip6-filter-pri', 'quad9-doh-ip6-filter-alt']
-
 # Server names to never use even if they match the criteria below. I think
 # Cloudflare is too big and as it gets selected by default everywhere other
 # resolvers won't even get attempted. There is also Mozilla planning to send
 # all Firefox DNS queries to them.
-# This is unsupported in the Debian's version 2.0.19, so I am keeping
-# server_names.
+# However through Tor Cloudflare never seems to be the fastest so I am
+# leaving this commented.
+# This is unsupported in the Debian's version 2.0.19.
 #disabled_server_names = ['cloudflare-ipv6', 'cloudflare']
 
 # Requirements for which servers to use
@@ -31,7 +26,8 @@ require_nofilter = true
 require_nolog = true
 
 # Resolver to use for the initial queries, DNSSEC capable one recommended.
-# China: 114.114.114.114:53 according to the example file.
+# China: 114.114.114.114:53 according to the example file. Default is
+# currently 9.9.9.9 and I can follow the defaults.
 #fallback_resolver = '149.112.112.112:53'
 
 # Ensure syslog
@@ -52,9 +48,13 @@ lb_strategy = 'p2'
 
 # Tor if necessary
 #force_tcp = true
-#proxy = "socks5://127.0.0.1:9050"
+# Experience: this port shouldn't have IsolateDestAddr/IsolateDestPort or
+# Tor may be unhappy due to the amount of circuits opened. Different ports
+# are already isolated from each other and I think dnscrypt-proxy should
+# mostly be connecting to the top fastest servers with lb_strategy p2
+#proxy = "socks5://127.0.0.1:9052"
 
-# To be enabled by hand on systems needing them
+# Logging to be enabled by hand on systems needing them
 #[query_log]
 #  file = '/var/log/dnscrypt-proxy/query.log'
 #[nx_log]
@@ -70,7 +70,7 @@ lb_strategy = 'p2'
   prefix = 'public-'
 
 [sources.'opennic']
-  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/opennic.md', 'https://download.dnscrypt.info/resolvers-list/v2/opennic.md']
+ urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/opennic.md', 'https://download.dnscrypt.info/resolvers-list/v2/opennic.md']
   minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
   refresh_delay = 72
   cache_file = '/var/cache/dnscrypt-proxy/opennic.md'
@@ -78,8 +78,9 @@ lb_strategy = 'p2'
 
 # 2.0.23 recommended so onions won't be attempted without proxy enabled
 # (5c9edfccfe67474bee2836ada67f955f10e43357)
+# I won't uncomment this until I have updated version everywhere.
 #[sources.'onion-services']
 #  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/onion-services.md', 'https://download.dnscrypt.info/resolvers-list/v2/onion-services.md']
 #  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
-#  cache_file = 'onion-services.md'
+#  cache_file = '/var/cache/dnscrypt-proxy/onion-services.md'
 #  prefix = 'onion-'
