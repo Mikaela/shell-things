@@ -9,6 +9,8 @@ SyslogIdentityTag client
 # they aren't publicly listed and may let through Tor blocks.
 # https://trac.torproject.org/projects/tor/ticket/16947
 SocksPort 9050 IsolateDestAddr PreferIPv6
+SocksPort 9052 PreferIPv6
+SocksPort 9060 OnionTrafficOnly
 
 # Uncomment to disable IPv4
 #ClientUseIPv4 0
@@ -35,3 +37,6 @@ CookieAuthentication 1
 #ControlSocket /run/tor/control GroupWritable RelaxDirModeCheck
 #ControlSocketsGroupWritable 1
 #SocksPort unix:/run/tor/socks WorldWritable IsolateDestAddr PreferIPv6
+
+# https://gitweb.torproject.org/torspec.git/tree/proposals/291-two-guard-nodes.txt
+#NumEntryGuards 2
