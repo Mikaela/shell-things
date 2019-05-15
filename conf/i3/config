@@ -7,6 +7,7 @@
 # flatpak apparmor-notify
 #
 # Flatpaks expected: org.gajim.Gajim org.gajim.Gajim.Plugin.omemo
+# de.haeckerfelix.gradio
 #
 # Debian theming: lxappearance gtk-chtheme qt4-qtconfig qt5ct
 # https://askubuntu.com/a/600946
@@ -283,6 +284,7 @@ exec --no-startup-id flatpak run org.gajim.Gajim
 exec --no-startup-id $TERMINAL
 exec --no-startup-id conky
 exec --no-startup-id aa-notify -p -s 1 -w 60
+exec --no-startup-id flatpak run de.haeckerfelix.gradio
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 # Centre of Lauttasaari
