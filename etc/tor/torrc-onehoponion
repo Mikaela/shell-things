@@ -13,3 +13,4 @@ CookieAuthentication 1
 # create NonAnonymous hidden services
 ControlPort 0
 ControlSocket 0
+CookieAuthFile 0
