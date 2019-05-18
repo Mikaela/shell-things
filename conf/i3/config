@@ -4,7 +4,7 @@
 # galculator network-manager-gnome redshift-gtk x11-xserver-utils
 # pasystray feh rofi pulsemixer libnotify-bin xcompmgr xfce4-terminal
 # fonts-dejavu dbus-x11 arandr numlockx fcitx-bin fcitx-mozc conky-all
-# flatpak apparmor-notify
+# flatpak apparmor-notify caffeine
 #
 # Flatpaks expected: org.gajim.Gajim org.gajim.Gajim.Plugin.omemo
 # de.haeckerfelix.gradio
@@ -285,6 +285,7 @@ exec --no-startup-id $TERMINAL
 exec --no-startup-id conky
 exec --no-startup-id aa-notify -p -s 1 -w 60
 exec --no-startup-id flatpak run de.haeckerfelix.gradio
+exec --no-startup-id caffeine-indicator
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 # Centre of Lauttasaari
