@@ -4,7 +4,7 @@
 # galculator network-manager-gnome redshift-gtk x11-xserver-utils
 # pasystray feh rofi pulsemixer libnotify-bin xcompmgr xfce4-terminal
 # fonts-dejavu dbus-x11 arandr numlockx fcitx-bin fcitx-mozc conky-all
-# flatpak apparmor-notify caffeine
+# flatpak apparmor-notify caffeine keybase
 #
 # Flatpaks expected: org.gajim.Gajim org.gajim.Gajim.Plugin.omemo
 # de.haeckerfelix.gradio
@@ -266,6 +266,9 @@ bindsym $mod+p exec arandr
 for_window [title="^Mozilla Firefox$"] floating enable
 for_window [title="^Tor Browser$"] floating enable
 for_window [title="galculator"] floating enable
+# insert new rules above this line
+# https://github.com/keybase/client/issues/8232
+for_window [title="tracker - .*"] floating enable
 
 # Autostarts
 exec --no-startup-id nm-applet
@@ -280,12 +283,15 @@ exec --no-startup-id xcompmgr -c -n
 exec --no-startup-id numlockx on
 # see also pam_environment https://wiki.archlinux.org/index.php/Fcitx#Non_desktop_environment
 exec --no-startup-id fcitx
-exec --no-startup-id flatpak run org.gajim.Gajim
 exec --no-startup-id $TERMINAL
 exec --no-startup-id conky
 exec --no-startup-id aa-notify -p -s 1 -w 60
-exec --no-startup-id flatpak run de.haeckerfelix.gradio
 exec --no-startup-id caffeine-indicator
+exec --no-startup-id KEYBASE_AUTOSTART=1 run_keybase -a
+
+# Flatpaks
+exec --no-startup-id flatpak run org.gajim.Gajim --quiet
+exec --no-startup-id flatpak run de.haeckerfelix.gradio
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 # Centre of Lauttasaari
