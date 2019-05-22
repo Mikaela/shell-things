@@ -52,7 +52,7 @@ lb_strategy = 'p2'
 # Tor may be unhappy due to the amount of circuits opened. Different ports
 # are already isolated from each other and I think dnscrypt-proxy should
 # mostly be connecting to the top fastest servers with lb_strategy p2
-#proxy = "socks5://127.0.0.1:9052"
+#proxy = "socks5://dnscrypt-proxy:randompasswordhere123613413671@127.0.0.1:9052"
 
 # Logging to be enabled by hand on systems needing them
 #[query_log]
