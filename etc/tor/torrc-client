@@ -8,9 +8,12 @@ SyslogIdentityTag client
 # destination addresses and in case of DualStack Exits prefer IPv6, because
 # they aren't publicly listed and may let through Tor blocks.
 # https://trac.torproject.org/projects/tor/ticket/16947
-SocksPort 9050 IsolateDestAddr PreferIPv6
-SocksPort 9052 PreferIPv6
-SocksPort 9060 OnionTrafficOnly
+SocksPort 9050 IsolateDestAddr PreferIPv6 IsolateSOCKSAuth
+SocksPort 9052 PreferIPv6 IsolateSOCKSAuth
+SocksPort 9060 OnionTrafficOnly IsolateSOCKSAuth
+
+# HTTP Proxy port
+HTTPTunnelPort 8118 IsolateDestAddr PreferIPv6 IsolateSOCKSAuth
 
 # Uncomment to disable IPv4
 #ClientUseIPv4 0
