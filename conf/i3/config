@@ -4,13 +4,18 @@
 # galculator network-manager-gnome redshift-gtk x11-xserver-utils
 # pasystray feh rofi pulsemixer libnotify-bin xcompmgr xfce4-terminal
 # fonts-dejavu dbus-x11 arandr numlockx fcitx-bin fcitx-mozc conky-all
-# flatpak apparmor-notify caffeine keybase
+# flatpak apparmor-notify caffeine keybase snapd
 #
 # Flatpaks expected: org.gajim.Gajim org.gajim.Gajim.Plugin.omemo
 # de.haeckerfelix.gradio com.wire.WireDesktop
 #
+# Snaps expected: signal-desktop
+#
 # Debian theming: lxappearance gtk-chtheme qt4-qtconfig qt5ct
 # https://askubuntu.com/a/600946
+#
+# YES! This file is a monster and there really are that many weird
+# packages and three electrons autostarting, SEND HELP!
 #
 # HIDPI text scaling:
 # % gsettings set org.gnome.desktop.interface scaling-factor 2
@@ -287,12 +292,18 @@ exec --no-startup-id $TERMINAL
 exec --no-startup-id conky
 exec --no-startup-id aa-notify -p -s 1 -w 60
 exec --no-startup-id caffeine-indicator
+# ELECTRON!
 exec --no-startup-id KEYBASE_AUTOSTART=1 run_keybase -a
 
 # Flatpaks
+# ELECTRON!
 exec --no-startup-id flatpak run com.wire.WireDesktop --startup
 exec --no-startup-id flatpak run de.haeckerfelix.gradio
 exec --no-startup-id flatpak run org.gajim.Gajim --quiet
+
+# Snaps
+# ELECTRON
+exec --no-startup-id signal-desktop
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 # Centre of Lauttasaari
