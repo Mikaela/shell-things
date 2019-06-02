@@ -15,7 +15,7 @@ listen_addresses = []
 # However through Tor Cloudflare never seems to be the fastest so I am
 # leaving this commented.
 # This is unsupported in the Debian's version 2.0.19.
-#disabled_server_names = ['cloudflare-ipv6', 'cloudflare']
+#disabled_server_names = ['public-cloudflare-ipv6', 'public-cloudflare']
 
 # Requirements for which servers to use
 ipv4_servers = true
