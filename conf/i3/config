@@ -231,11 +231,11 @@ bindsym Print exec gnome-screenshot -i
 # lock screen by hand using Mod + Ctrl + L
 bindsym Control+$mod+l exec $ScreenLockCmd
 
-# hibernate and suspend, inspiration took from the nagbar for exiting i3.
+# suspend and hibernate, inspiration took from the nagbar for exiting i3.
 # Passwordless sudo for both commands is specified in
 # /etc/sudoers.d/hibernate
-bindsym $mod+Escape exec "i3-nagbar -t warning -m 'You pressed the HIBERNATE shortcut. Do you really want to HIBERNATE?' -B 'Yes, HIBERNATE' '$ScreenLockCmd; sudo /usr/sbin/hibernate'"
-bindsym $mod+Shift+Escape exec "i3-nagbar -t warning -m 'You pressed the SUSPEND shortcut. Do you really want to SUSPEND?' -B 'Yes, SUSPEND' '$ScreenLockCmd; sudo /usr/sbin/s2ram'"
+bindsym $mod+Escape exec "i3-nagbar -t warning -m 'You pressed the SUSPEND shortcut. Do you really want to SUSPEND?' -B 'Yes, SUSPEND' '$ScreenLockCmd; sudo /usr/sbin/s2ram'"
+bindsym $mod+Shift+Escape exec "i3-nagbar -t warning -m 'You pressed the HIBERNATE shortcut. Do you really want to HIBERNATE?' -B 'Yes, HIBERNATE' '$ScreenLockCmd; sudo /usr/sbin/hibernate'"
 
 # Jumping to window with alert (the red colour)
 bindsym $mod+x [urgent=latest] focus
@@ -309,7 +309,7 @@ exec --no-startup-id redshift-gtk -l 60.15937:24.87530
 #exec --no-startup-id xrandr --output HDMI-1 --same-as eDP-1
 # Sedric - double monitor via arandr
 #exec --no-startup-id xrandr --output VGA-1 --off --output HDMI-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --mode 1920x1080 --pos 1920x0 --rotate normal --dpi 135
-#workspace 1 output HDMI-1
+workspace 1 output HDMI-1
 # Sedric - HDMI-only. Disable via TTY if appropiate.
 exec --no-startup-id xrandr --output VGA-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --off
 # Special keyboard options such as FI/CZ/EPO layouts that WILL CONFUSE YOU.
