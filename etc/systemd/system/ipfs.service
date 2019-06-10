@@ -2,8 +2,16 @@
 Description=IPFS daemon
 After=network.target
 
+# IMPORTANT! If you are running on a VPS/dedicated/similar
+# `ipfs init --profile=server` or immediately after setting it up
+# `ipfs profile apply server`.
+# I would probably recommend `ipfs init --profile=badgerds && ipfs profile apply server`
+# REF: https://github.com/ipfs/go-ipfs/issues/4343 "Running IPFS on VPS
+# providers triggers netscan detection, risking account termination"
+
 [Service]
 ExecStart=/home/mikaela/go/bin/ipfs daemon --routing=dhtclient --enable-gc --enable-namesys-pubsub
+
 # My attempts at explaining flags above + --mount for fuse
 # --mount - fuse for /ipfs and /ipns, see
 #   https://github.com/ipfs/go-ipfs/blob/master/docs/fuse.md as it requires
