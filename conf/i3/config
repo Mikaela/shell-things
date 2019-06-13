@@ -4,7 +4,7 @@
 # galculator network-manager-gnome redshift-gtk x11-xserver-utils
 # pasystray feh rofi pulsemixer libnotify-bin xcompmgr xfce4-terminal
 # fonts-dejavu dbus-x11 arandr numlockx fcitx-bin fcitx-mozc conky-all
-# flatpak apparmor-notify caffeine keybase dino
+# flatpak apparmor-notify caffeine keybase dino kdocker
 #
 # Keybase: https://keybase.io/docs/the_app/install_linux
 # Dino: https://software.opensuse.org/download.html?project=network:messaging:xmpp:dino&package=dino
@@ -293,7 +293,7 @@ exec --no-startup-id $TERMINAL
 exec --no-startup-id conky
 exec --no-startup-id aa-notify -p -s 1 -w 60
 exec --no-startup-id caffeine-indicator
-exec --no-startup-id dino
+exec --no-startup-id kdocker dino
 # ELECTRON!
 exec --no-startup-id KEYBASE_AUTOSTART=1 run_keybase -a
 
