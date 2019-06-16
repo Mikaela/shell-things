@@ -293,9 +293,9 @@ exec --no-startup-id $TERMINAL
 exec --no-startup-id conky
 exec --no-startup-id aa-notify -p -s 1 -w 60
 exec --no-startup-id caffeine-indicator
-exec --no-startup-id kdocker -d 15 dino
+#exec --no-startup-id kdocker -d 60 dino
 # ELECTRON!
-exec --no-startup-id KEYBASE_AUTOSTART=1 run_keybase -a
+#exec --no-startup-id KEYBASE_AUTOSTART=1 run_keybase -a
 
 # Flatpaks
 # ELECTRON!
