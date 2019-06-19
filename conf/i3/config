@@ -289,7 +289,7 @@ exec --no-startup-id xcompmgr -c -n
 exec --no-startup-id numlockx on
 # see also pam_environment https://wiki.archlinux.org/index.php/Fcitx#Non_desktop_environment
 exec --no-startup-id fcitx
-exec --no-startup-id $TERMINAL
+exec --no-startup-id kdocker -m -d 60 $TERMINAL
 exec --no-startup-id conky
 exec --no-startup-id aa-notify -p -s 1 -w 60
 exec --no-startup-id caffeine-indicator
