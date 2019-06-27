@@ -4,7 +4,7 @@
 # galculator network-manager-gnome redshift-gtk x11-xserver-utils
 # pasystray feh rofi pulsemixer libnotify-bin xcompmgr xfce4-terminal
 # fonts-dejavu dbus-x11 arandr numlockx fcitx-bin fcitx-mozc conky-all
-# flatpak apparmor-notify caffeine keybase dino kdocker
+# flatpak apparmor-notify caffeine keybase dino kdocker pavucontrol mumble
 #
 # Keybase: https://keybase.io/docs/the_app/install_linux
 # Dino: https://software.opensuse.org/download.html?project=network:messaging:xmpp:dino&package=dino
@@ -265,6 +265,8 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pulsemixer --change-volume +5 
 bindsym XF86AudioMute exec --no-startup-id pulsemixer --toggle-mute # && notify-send -t 500 "🔇 pressed"
 
 bindsym $mod+p exec arandr
+bindsym $mod+Shift+a exec pavucontrol -t 5
+bindsym $mod+m exec mumble
 
 # Float these apps by default
 # I use privacy.resistfingerprinting which is incompatible with not floating
