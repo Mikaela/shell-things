@@ -81,10 +81,12 @@ ipv6 {
         format_down = "IPv6:🢃"
 }
 
+# %avail vs %free: https://github.com/i3/i3status/issues/349#issuecomment-506565599
+
 disk / {
-        format = "/: %free"
+        format = "/: %avail"
 }
 
 disk /home {
-        format = "/home: %free"
+        format = "/home: %avail"
 }
