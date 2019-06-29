@@ -370,7 +370,7 @@ alias lmosha="mosh --server=~/.local/bin/mosh-server-alt "
 alias scat="gpg --decrypt "
 
 # To check are keys, which apt uses changed
-alias apt-key-refresh-keys="apt-key adv --keyserver pool.sks-keyservers.net --refresh-keys"
+#alias apt-key-refresh-keys="apt-key adv --keyserver hkps://keys.openpgp.org --refresh-keys"
 
 # To see which mirror httpredir.debian.org puts you to. The file which has the latest update time is the mirror which you are using.
 alias httpredir.debian.org="curl -sL http://httpredir.debian.org/debian/project/trace/|pandoc -f html -t markdown"
