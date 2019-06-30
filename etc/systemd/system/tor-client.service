@@ -4,6 +4,7 @@ After=network.target
 
 [Service]
 ExecStart=/usr/bin/tor -f /etc/tor/torrc-client
+ExecReload=/bin/kill -HUP $MAINPID
 Restart=always
 User=debian-tor
 
