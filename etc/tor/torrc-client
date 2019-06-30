@@ -1,3 +1,7 @@
+# WARNING: This config uses two guards by default instead of just one,
+# search for NumEntryGuards 2, this may make Tor instance doing this more
+# identifiable and same applies to some other changes I am doing.
+# Run by your own responsibility.
 DataDirectory /var/lib/tor-client
 Log notice syslog
 
@@ -13,7 +17,9 @@ SocksPort 9052 PreferIPv6 IsolateSOCKSAuth
 SocksPort 9060 OnionTrafficOnly IsolateSOCKSAuth
 
 # HTTP Proxy port
-HTTPTunnelPort 8118 IsolateDestAddr PreferIPv6 IsolateSOCKSAuth
+# This works only for HTTPS and similar, so I ended up using Privoxy to get
+# apt-listchanges and apt-listbugs also through Tor.
+#HTTPTunnelPort 8118 IsolateDestAddr PreferIPv6 IsolateSOCKSAuth
 
 # Uncomment to disable IPv4
 #ClientUseIPv4 0
@@ -28,18 +34,28 @@ ClientUseIPv6 1
 #ClientPreferIPv6ORPort 1
 
 # Disable control access
-ControlPort 0
-ControlSocket 0
+#ControlPort 0
+#ControlSocket 0
 
 # If these have been disabled in the main Tor or OneHopOnion and something
 # should work with the Debian defaults (e.g. zeronet)
+# Uncommented due to how I would uncomment them anyway in my setup. See ###
+# below
 CookieAuthentication 1
-#CookieAuthFileGroupReadable 1
-#CookieAuthFile /run/tor/control.authcookie
-#ControlPort 9051
-#ControlSocket /run/tor/control GroupWritable RelaxDirModeCheck
-#ControlSocketsGroupWritable 1
-#SocksPort unix:/run/tor/socks WorldWritable IsolateDestAddr PreferIPv6
+CookieAuthFileGroupReadable 1
+CookieAuthFile /run/tor/control.authcookie
+ControlPort 9051
+ControlSocket /run/tor/control GroupWritable RelaxDirModeCheck
+ControlSocketsGroupWritable 1
+SocksPort unix:/run/tor/socks WorldWritable IsolateDestAddr PreferIPv6
+
+### Disabling the Above in Debian Torrc (judging by my running system)
+##ControlPort 0
+##ControlSocket 0
+##CookieAuthentication 0
+##CookieAuthFile 0
 
 # https://gitweb.torproject.org/torspec.git/tree/proposals/291-two-guard-nodes.txt
-#NumEntryGuards 2
+# Possibly dangerous or more easily fingerprintable as it's not the default
+# yet!
+NumEntryGuards 2
