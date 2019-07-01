@@ -24,13 +24,13 @@ deb-src http://archive.canonical.com/ubuntu xenial partner
 
 ## Non-built-in debug symbol packages
 ## https://wiki.ubuntu.com/DebuggingProgramCrash
-## sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 428D7C01
+## sudo apt-key adv --keyserver hkps://keys.openpgp.org --recv-keys 428D7C01
 #deb http://ddebs.ubuntu.com xenial main restricted universe multiverse
 #deb http://ddebs.ubuntu.com xenial-updates main restricted universe multiverse
 ## Ignore unless you have enabled proposed
 #deb http://ddebs.ubuntu.com xenial-proposed main restricted universe multiverse
 
 ## Ubuntu MATE
-## apt-key adv --keyserver pool.sks-keyservers.net --recv-keys 709A860A600B9A61FEF5346AFB01CC26162506E7
+## apt-key adv --keyserver hkps://keys.openpgp.org --recv-keys 709A860A600B9A61FEF5346AFB01CC26162506E7
 #deb http://ppa.launchpad.net/ubuntu-mate-dev/xenial-mate/ubuntu xenial main
 #deb-src http://ppa.launchpad.net/ubuntu-mate-dev/xenial-mate/ubuntu xenial main
