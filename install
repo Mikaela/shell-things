@@ -19,6 +19,8 @@ fi
 mkdir -p ~/.gnupg
 cat gpg/gpg.conf > ~/.gnupg/gpg.conf
 cat gpg/gpg-agent.conf > ~/.gnupg/gpg-agent.conf
+cat gpg/dirmngr.conf > ~/.gnupg/dirmngr.conf
+killall -HUP dirmngr
 #cat rc/xinitrc > ~/.xinitrc
 cat conf/pastebinit.xml > ~/.pastebinit.xml
 cat conf/Xresources > ~/.Xresources
