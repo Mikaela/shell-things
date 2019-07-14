@@ -49,7 +49,7 @@ cache = true
 cache_size = 10000
 
 # Load-balancing
-# fastest = always fastest, p2 = random between two fastest, ph = random
+# fastest (first in 2.0.24+)= always fastest, p2 = random between two fastest, ph = random
 # from the fastest half of the configured list, random = any random
 # https://github.com/jedisct1/dnscrypt-proxy/wiki/Load-Balancing-Options
 lb_strategy = 'p2'
