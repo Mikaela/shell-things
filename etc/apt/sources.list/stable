@@ -1,3 +1,7 @@
+# NOTE FOR DEBIAN 11 BULLSEYE!
+# When it's released, run 's/\/updates/-security/g' and remove this note!
+# https://lists.debian.org/debian-devel-announce/2019/07/msg00004.html
+
 ## Main repos
 deb https://deb.debian.org/debian stable main contrib non-free
 deb-src https://deb.debian.org/debian stable main contrib non-free
