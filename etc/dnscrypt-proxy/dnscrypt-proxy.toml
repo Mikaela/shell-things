@@ -8,6 +8,22 @@ listen_addresses = []
 # mikaela.internal / my hosts file
 #cloaking_rules = '/etc/dnscrypt-proxy/hosts-mikaela.txt'
 
+# When server_names isn't specified the criteria below disabled_server_names
+# gets used, if it's specified, this overrides the criteria.
+
+# Quad9, I had this line on one family server which regardless of bad
+# network conditions (Huawei router forgetting IPv6 + CGN + NAT) failed less
+# queries, so I decided this is worth having noted somewhere.
+# However dnscrypt-proxy detects these as the same provider and seems to end
+# up comparing only: quad9-dnscrypt-ip4-filter-pri
+# quad9-dnscrypt-ip4-filter-alt quad9-dnscrypt-ip6-filter-alt
+# quad9-dnscrypt-ip6-filter-pri
+# If I understand correctly, dnscrypt uses port 443
+#server_names = ['quad9-dnscrypt-ip4-filter-pri', 'quad9-dnscrypt-ip4-filter-alt', 'quad9-dnscrypt-ip6-filter-pri', 'quad9-dnscrypt-ip6-filter-alt', 'quad9-doh-ip4-filter-pri', 'quad9-doh-ip4-filter-alt', 'quad9-doh-ip6-filter-pri', 'quad9-doh-ip6-filter-alt']
+# If I am wrong and dnscrypt doesn't use 443, alternative line for laptops
+# which may encounter filtering
+#server_names = ['quad9-doh-ip4-filter-pri', 'quad9-doh-ip4-filter-alt', 'quad9-doh-ip6-filter-pri', 'quad9-doh-ip6-filter-alt']
+
 # Server names to never use even if they match the criteria below. I think
 # Cloudflare is too big and as it gets selected by default everywhere other
 # resolvers won't even get attempted. There is also Mozilla planning to send
