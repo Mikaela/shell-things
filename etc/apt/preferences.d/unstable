@@ -1,3 +1,6 @@
+# Updating from testing only when apt is told to do so
+# https://wiki.debian.org/AptPreferences#Notes_from_JoshuaRodman
+# See also https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=725934 debsecan
 Package: *
 Pin: release a=testing
 Pin-Priority: 900

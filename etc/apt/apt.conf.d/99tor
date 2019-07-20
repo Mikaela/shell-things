@@ -1,1 +1,4 @@
+# I am using apt-transport-tor, but I have a suspicion it doesn't work for
+# apt-listchanges & apt-listbugs, so I still have the old Privoxy method
+# enabled. https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/apt
 Acquire::http::Proxy "http://127.0.0.1:8118/";
