@@ -2,8 +2,9 @@
 listen_addresses = []
 # When not using socket activation (Arch), 127.0.2.1:53 is what the Debian
 # socket seems to give for all of my systems so I want to listen on it for
-# compatibility
-#listen_addresses = ['127.0.0.1:53', '127.0.2.1:53', '[::1]:53']
+# compatibility + I want to run Unbound in front of DNSCrypt-proxy
+# (see etc/unbound/unbound.conf.d/dnscrypt-proxy.conf)
+#listen_addresses = ['127.0.2.1:53']
 
 # mikaela.internal / my hosts file
 #cloaking_rules = '/etc/dnscrypt-proxy/hosts-mikaela.txt'
