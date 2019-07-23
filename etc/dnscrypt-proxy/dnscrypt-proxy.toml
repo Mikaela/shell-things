@@ -9,6 +9,10 @@ listen_addresses = []
 # mikaela.internal / my hosts file
 #cloaking_rules = '/etc/dnscrypt-proxy/hosts-mikaela.txt'
 
+# Disable cache in case of another server caching resolver in front of
+# DNSCrypt-proxy (Unbound)
+cache = true
+
 # When server_names isn't specified the criteria below disabled_server_names
 # gets used, if it's specified, this overrides the criteria.
 
@@ -46,8 +50,9 @@ use_syslog = true
 cert_refresh_delay = 240
 
 # Shouldn't take that much MEM and I imagine it's subject to TTL anyway.
-cache = true
 cache_size = 10000
+# cache for 5 minutes even if the TTL wass shorter
+cache_min_ttl = 300
 
 # Load-balancing
 # fastest (first in 2.0.24+)= always fastest, p2 = random between two fastest, ph = random
