@@ -6,5 +6,9 @@ Pin: release a=testing
 Pin-Priority: 900
 
 Package: *
+Pin: release a=testing-debug
+Pin-Priority: 900
+
+Package: *
 Pin: release o=Debian
 Pin-Priority: -10
