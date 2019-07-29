@@ -1,0 +1,35 @@
+### WARNING! DO NOT USE! ###
+
+## This is based on my unstable file for Debian testing and
+## https://wiki.debian.org/AptPreferences#Notes_from_JoshuaRodman
+
+## The currently installed release of Debian is 9 stretch, OpenVZ is not
+## compatible with 10 at least yet
+#Package: *
+#Pin: release a=stretch
+#Pin-Priority: 900
+
+## I don't want to get backports unless I especially request them
+#Package: *
+#Pin: release a=stretch-backports
+#Pin-Priority: -1
+
+## Debian 10 Buster is the new version and I don't want updates from it
+## either without warning.
+#Package: *
+#Pin: release a=buster-backports
+#Pin-Priority: -1
+
+## Catch-all
+#Package: *
+#Pin: release o=Debian
+#Pin-Priority: -10
+
+# Problems:
+## * This is unsupported by Debian and be a too easy recipe to Frankendebian
+## * Debian Security is forgotten
+## * a lot of other issues due to dark magic?
+## * this is too scary for me to keep on the VPS so I rm:ed it and
+##   buster.list
+##    * this is also why everything is commented, so I cannot accidentally
+##      install this anywhere.
