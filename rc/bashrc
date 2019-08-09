@@ -956,6 +956,11 @@ myip6 () {
     fi
 }
 
+# acme.sh
+if [ -f ~/.acme.sh/acme.sh.env ]; then
+    source ~/.acme.sh/acme.sh.env
+fi
+
 # .custom
 if [ -f ~/.custom ]; then
     source ~/.custom

@@ -962,6 +962,11 @@ myip6 () {
 
 # Source files for miscannellious modifications.
 
+# acme.sh
+if [ -f ~/.acme.sh/acme.sh.env ]; then
+    source ~/.acme.sh/acme.sh.env
+fi
+
 # .custom
 if [ -f ~/.custom ]; then
     source ~/.custom
