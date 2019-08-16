@@ -712,7 +712,7 @@ if [ -d $SHELL_THINGS_REPO ]; then
     echo "shell-things: $SHELL_THINGS_REPO exists, git pulling..."
     echo ""
     cd $SHELL_THINGS_REPO
-    git remote set-url origin https://github.com/Mikaela/shell-things.git
+    git remote set-url origin https://gitea.blesmrt.net/Mikaela/shell-things.git
     git pull
     echo ""
     echo "shell-things: Installing/Upgrading..."
@@ -722,7 +722,7 @@ else
     echo ""
     echo "shell-things: $SHELL_THINGS_REPO doesn't exist, cloning..."
     echo ""
-    git clone https://github.com/Mikaela/shell-things.git $SHELL_THINGS_REPO
+    git clone https://gitea.blesmrt.net/Mikaela/shell-things.git $SHELL_THINGS_REPO
     cd $SHELL_THINGS_REPO
     echo ""
     echo "shell-things: Installing/Upgrading..."
