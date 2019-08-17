@@ -1,1 +1,1 @@
-https://github.com/Mikaela/scripts/blob/gh-pages/bash/ydns6
+https://gitea.blesmrt.net/mikaela/scripts/src/branch/master/bash/deprecated/ydns6
