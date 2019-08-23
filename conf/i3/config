@@ -291,11 +291,11 @@ exec --no-startup-id xcompmgr -c -n
 exec --no-startup-id numlockx on
 # see also pam_environment https://wiki.archlinux.org/index.php/Fcitx#Non_desktop_environment
 exec --no-startup-id fcitx
-exec --no-startup-id kdocker -m -d 60 $TERMINAL
+exec --no-startup-id kdocker -m -d 300 $TERMINAL
 exec --no-startup-id conky
 exec --no-startup-id aa-notify -p -s 1 -w 60
 exec --no-startup-id caffeine-indicator
-#exec --no-startup-id kdocker -d 60 dino
+exec --no-startup-id kdocker -d 300 dino
 # ELECTRON!
 exec --no-startup-id KEYBASE_AUTOSTART=1 run_keybase -a
 
@@ -303,7 +303,7 @@ exec --no-startup-id KEYBASE_AUTOSTART=1 run_keybase -a
 # ELECTRON!
 exec --no-startup-id flatpak run com.wire.WireDesktop --startup
 exec --no-startup-id flatpak run de.haeckerfelix.gradio
-exec --no-startup-id flatpak run org.gajim.Gajim --quiet
+#exec --no-startup-id flatpak run org.gajim.Gajim --quiet
 # ELECTRON!
 exec --no-startup-id flatpak run org.signal.Signal --start-in-tray
 
