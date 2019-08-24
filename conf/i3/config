@@ -271,7 +271,7 @@ bindsym $mod+m exec mumble
 # Float these apps by default
 # I use privacy.resistfingerprinting which is incompatible with not floating
 # I think I am more productive with floating Firefox.
-for_window [title="^Mozilla Firefox$"] floating enable
+#for_window [title="^Mozilla Firefox$"] floating enable
 for_window [title="^Tor Browser$"] floating enable
 for_window [title="galculator"] floating enable
 # insert new rules above this line
