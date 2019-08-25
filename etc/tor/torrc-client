@@ -31,7 +31,7 @@ ClientUseIPv6 1
 
 # Always prefer IPv6 over IPv4 (see previous), maybe this would be useful
 # in a DS network preventing Tor over IPv4.
-#ClientPreferIPv6ORPort 1
+ClientPreferIPv6ORPort 1
 
 ## Mapping clearnet domains to onions for certificate validation if
 ## accessed through Tor
