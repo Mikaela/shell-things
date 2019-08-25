@@ -5,6 +5,7 @@
 # pasystray feh rofi pulsemixer libnotify-bin xcompmgr xfce4-terminal
 # fonts-dejavu dbus-x11 arandr numlockx fcitx-bin fcitx-mozc conky-all
 # flatpak apparmor-notify caffeine keybase dino kdocker pavucontrol mumble
+# audacious
 #
 # Keybase: https://keybase.io/docs/the_app/install_linux
 # Dino: https://software.opensuse.org/download.html?project=network:messaging:xmpp:dino&package=dino
@@ -266,7 +267,11 @@ bindsym XF86AudioMute exec --no-startup-id pulsemixer --toggle-mute # && notify-
 
 bindsym $mod+p exec arandr
 bindsym $mod+Shift+a exec pavucontrol -t 5
+# m for mumble
 bindsym $mod+m exec mumble
+# shift + m for music/media, which I need more seldom, but keep forgetting
+# the good app, while I do remember mpv/Syncplay/VLC whenever I need them.
+bindsym $mod+Shift+m exec audacious
 
 # Float these apps by default
 # I use privacy.resistfingerprinting which is incompatible with not floating
