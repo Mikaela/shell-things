@@ -576,7 +576,7 @@ alias lowernocolon="tr -d ':' | tr 'A-Z' 'a-z'"
 #if hash yay 2>/dev/null; then
 #    alias pacman="LANG=en yay --needed"
 #else
-# I don't want to reinstall exact same  versions that I have
+# I don't want to reinstall exact same versions that I have
 alias pacman="LANG=en pacman --needed"
 #fi
 
@@ -591,6 +591,9 @@ alias winkey="xxd /sys/firmware/acpi/tables/MSDM"
 
 # Always exec startx so Ctrl-Alt-Backspace won't lead to unlocked TTY.
 alias startx="exec \startx"
+
+# cat list of kernel detected vulnerabilities/states with filenames
+alias linux-check-cpu-vulns="tail -n +1 /sys/devices/system/cpu/vulnerabilities/*"
 
 # Allow custom aliases to be put in .aliases or .zsh_aliases .
 
