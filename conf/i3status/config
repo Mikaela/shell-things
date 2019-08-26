@@ -34,9 +34,10 @@ order += "tztime local"
 # Load is first as the treshold may need the most modification here
 load {
         format = "%1min %5min %15min"
-        # The default is 5 while my laptop has only 4 and older PC 1.
+        # The default is 5 while my laptop has only 2 cores (without SMT
+        # for MDS mitigation) and older PC 1.
         # CHANGEME - apparently whether . or , works depends on locale -.-
-        #max_threshold = "3.7"
+        #max_threshold = "1,7"
         #max_threshold = "0,7"
 }
 
