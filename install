@@ -13,6 +13,8 @@ cat rc/vimrc > ~/.vimrc
 mkdir -p ~/.config/nvim/
 cat conf/init.vim > ~/.config/nvim/init.vim
 cat conf/makepkg.conf > ~/.makepkg.conf
+mkdir -p ~/.config/mpv/
+cat conf/mpv.conf > ~/.config/mpv/mpv.conf
 if [ ! -f ~/.oidentd.conf ]; then
     cat conf/oidentd.conf > ~/.oidentd.conf
 fi
