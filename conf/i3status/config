@@ -34,11 +34,15 @@ order += "tztime local"
 # Load is first as the treshold may need the most modification here
 load {
         format = "%1min %5min %15min"
-        # The default is 5 while my laptop has only 2 cores (without SMT
-        # for MDS mitigation) and older PC 1.
+        # Defaults to 5, nosmt MDS mitigation disables ½ of the cores
+        # X,7 ? https://scoutapm.com/blog/understanding-load-averages
         # CHANGEME - apparently whether . or , works depends on locale -.-
-        #max_threshold = "1,7"
+        # Rbtpzn, the oldest machine from 2006, single core
         #max_threshold = "0,7"
+        # Dualcore, mostly everything else
+        max_threshold = "1,7"
+        # Zaldaryn, quadcore
+        #max_threshold = "3,7"
 }
 
 wireless _first_ {
