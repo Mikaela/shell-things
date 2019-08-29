@@ -1,0 +1,16 @@
+[Unit]
+Description=Etherpad lite
+After=network.target
+
+[Service]
+# From README, add `-s path-to-settings`
+ExecStart=/home/mikaela/src/github.com/ether/etherpad-lite/bin/run.sh
+# I am not sure how much Etherpad cares about working dir, but just in case
+WorkingDirectory=/home/mikaela/src/github.com/ether/etherpad-lite
+# bin/run.sh told me to do this
+Environment="NODE_ENV=production"
+Restart=always
+User=CHANGEME
+
+[Install]
+WantedBy=default.target
