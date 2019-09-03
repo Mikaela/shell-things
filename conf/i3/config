@@ -17,6 +17,8 @@
 #
 # Debian theming: lxappearance gtk-chtheme qt4-qtconfig qt5ct
 # https://askubuntu.com/a/600946
+# + ~/.xprofile specifies GTK_THEME which hopefully gets detected/understood
+#   by browsers etc.
 #
 # YES! This file is a monster and there really are that many weird
 # packages and three electrons autostarting, SEND HELP!
