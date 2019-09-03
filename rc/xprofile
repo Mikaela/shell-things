@@ -8,4 +8,4 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # This is hopefully read by web browsers and thus sites with dark theme
 # should offer it to me
-GTK_THEME=Adwaita-dark
+export GTK_THEME=Adwaita-dark
