@@ -1,5 +1,11 @@
+# fcitx as input method requires these three
 export XMODIFIERS=@im=fcitx
 export GTK_IM_MODULE="fcitx"
 export QT_IM_MODULE="fcitx"
+
+# required for using qt5ct (QT5 qtconfig), theming
 export QT_QPA_PLATFORMTHEME="qt5ct"
+
+# This is hopefully read by web browsers and thus sites with dark theme
+# should offer it to me
 GTK_THEME=Adwaita-dark
