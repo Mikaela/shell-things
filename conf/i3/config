@@ -283,9 +283,6 @@ bindsym $mod+Shift+m exec audacious
 #for_window [title="^Mozilla Firefox$"] floating enable
 for_window [title="^Tor Browser$"] floating enable
 for_window [title="galculator"] floating enable
-# https://chrome.google.com/webstore/detail/sidewise-tree-style-tabs/biiammgklaefagjclmnlialkmaemifgo
-# use in undocked mode (in extension settings) with i3!
-for_window [title="Sidewise"] floating enable
 # insert new rules above this line
 # https://github.com/keybase/client/issues/8232
 for_window [title="tracker - .*"] floating enable
