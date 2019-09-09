@@ -9,10 +9,15 @@
 # # swapon /swap
 # and to /etc/fstab:
 /swap   none    swap    sw  0   0
+# Note that swap shouldn't be used if there is encryption present.
 
-# Don't mount Windows partition automatically, allow normal users to mount it without root
-# noauto,user
-UUID=105AB1525AB13576   /media/Windows  ntfs    defaults,rw,noauto,user 0   0
+# Don't mount Windows partition automatically, allow normal users to mount
+# it without root: noauto,user
+UUID=   /media/Windows  ntfs    defaults,rw,noauto,user 0   0
 
 # Mount my external HDD automatically on boot.
-UUID=2A2C535742C3A3D4   /media/Mikaelan ntfs    defaults,rw 0   0
+UUID=   /media/Mikaelan ntfs    defaults,rw 0   0
+
+# tmpfs means stored on RAM, size defaults to half of it, can be forced
+# with size=<number><M|G>
+tmpfs   /tmp         tmpfs   rw,nodev,nosuid          0  0
