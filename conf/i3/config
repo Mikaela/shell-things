@@ -22,6 +22,8 @@
 #
 # YES! This file is a monster and there really are that many weird
 # packages and three electrons autostarting, SEND HELP!
+# UPDATE: WHATEVER YOU DO, DON'T AUTOSTART ELECTRONS! LET THE LOAD AVERAGE
+#         OF ~35 BEFORE FREEZING BE A LESSON!
 #
 # HIDPI text scaling:
 # % gsettings set org.gnome.desktop.interface scaling-factor 2
@@ -306,17 +308,17 @@ exec --no-startup-id aa-notify -p -s 1 -w 60
 exec --no-startup-id caffeine-indicator
 exec --no-startup-id kdocker -d 300 dino
 # ELECTRON!
-exec --no-startup-id KEYBASE_AUTOSTART=1 run_keybase -a
+#exec --no-startup-id KEYBASE_AUTOSTART=1 run_keybase -a
 
 # Flatpaks
 # ELECTRON!
-exec --no-startup-id flatpak run com.wire.WireDesktop --startup
+#exec --no-startup-id flatpak run com.wire.WireDesktop --startup
 exec --no-startup-id flatpak run de.haeckerfelix.gradio
 #exec --no-startup-id flatpak run org.gajim.Gajim --quiet
 # ELECTRON!
-exec --no-startup-id flatpak run org.signal.Signal --start-in-tray
+#exec --no-startup-id flatpak run org.signal.Signal --start-in-tray
 # ELECTRON!
-exec --no-startup-id flatpak run com.slack.Slack --startup
+#exec --no-startup-id flatpak run com.slack.Slack --startup
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 # Centre of Lauttasaari
