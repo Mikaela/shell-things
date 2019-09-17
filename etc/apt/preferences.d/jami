@@ -1,0 +1,5 @@
+# This is possibly a bad idea, but to keep Jami updating from their repo
+
+Package: *ring* *jami*
+Pin: release o=ring
+Pin-Priority: 991
