@@ -310,7 +310,8 @@ exec --no-startup-id aa-notify -p -s 1 -w 60
 exec --no-startup-id caffeine-indicator
 exec --no-startup-id kdocker -d 300 dino
 exec --no-startup-id gnome-ring -r
-exec --no-startup-id flatpak run io.github.NhekoReborn.Nheko
+# https://github.com/Nheko-Reborn/nheko/issues/79 - 100 % background CPU
+#exec --no-startup-id flatpak run io.github.NhekoReborn.Nheko
 # ELECTRON!
 #exec --no-startup-id KEYBASE_AUTOSTART=1 run_keybase -a
 
