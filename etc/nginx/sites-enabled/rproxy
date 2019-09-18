@@ -17,7 +17,7 @@ server {
 # Behind CloudFlare see ../conf.d/cloudflare.conf
 
 location / {
-    proxy_pass http://localhost:8080/;
+    proxy_pass http://localhost:8080;
     }
 }
 
