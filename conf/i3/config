@@ -321,8 +321,9 @@ exec --no-startup-id telegram-desktop -startintray
 #exec --no-startup-id flatpak run com.wire.WireDesktop --startup
 exec --no-startup-id flatpak run de.haeckerfelix.gradio
 #exec --no-startup-id flatpak run org.gajim.Gajim --quiet
-# ELECTRON!
-#exec --no-startup-id flatpak run org.signal.Signal --start-in-tray
+# ELECTRON! I have to autostart it as Signal won't use tray icon without
+#           that flag and this seems to be the least painful way to have it.
+exec --no-startup-id flatpak run org.signal.Signal --start-in-tray
 # ELECTRON!
 #exec --no-startup-id flatpak run com.slack.Slack --startup
 
