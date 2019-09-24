@@ -1,0 +1,4 @@
+# On Debian Testing, Firefox is better supported in Sid
+Package: firefox firefox-esr
+Pin: release n=sid
+Pin-Priority: 990
