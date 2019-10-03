@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Firefox Developer Edition (home)
+Exec=/home/mikaela/.local/firefox/firefox %u
+Comment=Firefox Developer Edition (home)
+Terminal=false
+Icon=/home/mikaela/.local/firefox/browser/chrome/icons/default/default128.png
+Type=Application
