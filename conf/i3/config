@@ -13,7 +13,7 @@
 #
 # Flatpaks expected: org.gajim.Gajim org.gajim.Gajim.Plugin.omemo
 # de.haeckerfelix.gradio com.wire.WireDesktop org.signal.Signal
-# io.github.NhekoReborn.Nheko
+# io.github.NhekoReborn.Nheko com.github.wwmm.pulseeffects
 #
 # i3status command below expects locale fi_FI.utf8
 #
@@ -326,6 +326,7 @@ exec --no-startup-id flatpak run de.haeckerfelix.gradio
 exec --no-startup-id flatpak run org.signal.Signal --start-in-tray
 # ELECTRON!
 #exec --no-startup-id flatpak run com.slack.Slack --startup
+exec --no-startup-id flatpak run com.github.wwmm.pulseeffects --gapplication-service
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 # Centre of Lauttasaari
