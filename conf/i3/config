@@ -326,7 +326,7 @@ exec --no-startup-id flatpak run de.haeckerfelix.gradio
 exec --no-startup-id flatpak run org.signal.Signal --start-in-tray
 # ELECTRON!
 #exec --no-startup-id flatpak run com.slack.Slack --startup
-exec --no-startup-id flatpak run com.github.wwmm.pulseeffects --gapplication-service
+#exec --no-startup-id flatpak run com.github.wwmm.pulseeffects --gapplication-service
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 # Centre of Lauttasaari
