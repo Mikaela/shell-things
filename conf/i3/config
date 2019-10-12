@@ -292,6 +292,9 @@ for_window [title="galculator"] floating enable
 for_window [title="tracker - .*"] floating enable
 
 # Autostarts
+# I generally have flatpaks separately near the bottom, but other things are
+# going to depend on PulseEffects
+exec --no-startup-id flatpak run com.github.wwmm.pulseeffects --gapplication-service
 exec --no-startup-id nm-applet
 exec --no-startup-id pasystray --notify=all
 # Wallpaper, solid black
@@ -327,7 +330,6 @@ exec --no-startup-id flatpak run de.haeckerfelix.gradio
 exec --no-startup-id flatpak run org.signal.Signal --start-in-tray
 # ELECTRON!
 #exec --no-startup-id flatpak run com.slack.Slack --startup
-#exec --no-startup-id flatpak run com.github.wwmm.pulseeffects --gapplication-service
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 # Centre of Lauttasaari
