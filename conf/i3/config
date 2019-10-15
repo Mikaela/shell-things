@@ -322,7 +322,7 @@ exec --no-startup-id STEAM_FRAME_FORCE_CLOSE=1 steam -silent
 
 # Flatpaks
 # ELECTRON!
-#exec --no-startup-id flatpak run com.wire.WireDesktop --startup
+exec --no-startup-id flatpak run com.wire.WireDesktop --startup
 exec --no-startup-id flatpak run de.haeckerfelix.gradio
 #exec --no-startup-id flatpak run org.gajim.Gajim --quiet
 # ELECTRON! I have to autostart it as Signal won't use tray icon without
