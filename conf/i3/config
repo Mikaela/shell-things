@@ -14,6 +14,7 @@
 # Flatpaks expected: org.gajim.Gajim org.gajim.Gajim.Plugin.omemo
 # de.haeckerfelix.gradio com.wire.WireDesktop org.signal.Signal
 # io.github.NhekoReborn.Nheko com.github.wwmm.pulseeffects
+# im.riot.Riot
 #
 # i3status command below expects locale fi_FI.utf8
 #
@@ -311,25 +312,27 @@ exec --no-startup-id kdocker -m -d 300 $TERMINAL
 exec --no-startup-id conky
 exec --no-startup-id aa-notify -p -s 1 -w 60
 exec --no-startup-id caffeine-indicator
-#exec --no-startup-id kdocker -d 300 dino
+exec --no-startup-id kdocker -d 300 dino
 exec --no-startup-id jami-gnome -r
-#exec --no-startup-id telegram-desktop -startintray
+exec --no-startup-id telegram-desktop -startintray
 # https://github.com/Nheko-Reborn/nheko/issues/79 - 100 % background CPU
 #exec --no-startup-id flatpak run io.github.NhekoReborn.Nheko
 # ELECTRON!
-#exec --no-startup-id KEYBASE_AUTOSTART=1 run_keybase -a
+exec --no-startup-id KEYBASE_AUTOSTART=1 run_keybase -a
 exec --no-startup-id STEAM_FRAME_FORCE_CLOSE=1 steam -silent
 
 # Flatpaks
 # ELECTRON!
 exec --no-startup-id flatpak run com.wire.WireDesktop --startup
 exec --no-startup-id flatpak run de.haeckerfelix.gradio
-#exec --no-startup-id flatpak run org.gajim.Gajim --quiet
+exec --no-startup-id flatpak run org.gajim.Gajim --quiet
 # ELECTRON! I have to autostart it as Signal won't use tray icon without
 #           that flag and this seems to be the least painful way to have it.
 exec --no-startup-id flatpak run org.signal.Signal --start-in-tray
 # ELECTRON!
 #exec --no-startup-id flatpak run com.slack.Slack --startup
+# ELECTRON!
+exec --no-startup-id flatpak run im.riot.Riot --hidden
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 # Centre of Lauttasaari
