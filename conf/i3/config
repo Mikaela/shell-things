@@ -333,6 +333,7 @@ exec --no-startup-id flatpak run org.signal.Signal --start-in-tray
 #exec --no-startup-id flatpak run com.slack.Slack --startup
 # ELECTRON!
 exec --no-startup-id flatpak run im.riot.Riot --hidden
+exec --no-startup-id flatpak run im.riot.Riot --profile T2L --hidden
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 # Centre of Lauttasaari
