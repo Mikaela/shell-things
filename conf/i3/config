@@ -14,7 +14,7 @@
 # Flatpaks expected: org.gajim.Gajim org.gajim.Gajim.Plugin.omemo
 # de.haeckerfelix.gradio com.wire.WireDesktop org.signal.Signal
 # io.github.NhekoReborn.Nheko com.github.wwmm.pulseeffects
-# im.riot.Riot
+# im.riot.Riot chat.rocket.RocketChat
 #
 # i3status command below expects locale fi_FI.utf8
 #
@@ -335,6 +335,8 @@ exec --no-startup-id flatpak run org.signal.Signal --start-in-tray
 # ELECTRON!
 exec --no-startup-id flatpak run im.riot.Riot --hidden
 exec --no-startup-id flatpak run im.riot.Riot --profile T2L --hidden
+# ELECTRON! + https://github.com/RocketChat/Rocket.Chat.Electron/issues/654
+exec --no-startup-id flatpak run chat.rocket.RocketChat
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 # Centre of Lauttasaari
