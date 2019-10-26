@@ -5,7 +5,7 @@
 # pasystray feh rofi pulsemixer libnotify-bin xcompmgr xfce4-terminal
 # fonts-dejavu dbus-x11 arandr numlockx fcitx-bin fcitx-mozc conky-all
 # flatpak apparmor-notify caffeine keybase dino kdocker pavucontrol mumble
-# audacious jami-gnome telegram-desktop steam
+# audacious jami-gnome telegram-desktop steam htop
 #
 # Keybase: https://keybase.io/docs/the_app/install_linux
 # Dino: https://software.opensuse.org/download.html?project=network:messaging:xmpp:dino&package=dino
@@ -296,6 +296,7 @@ for_window [title="tracker - .*"] floating enable
 # I generally have flatpaks separately near the bottom, but other things are
 # going to depend on PulseEffects
 #exec --no-startup-id flatpak run com.github.wwmm.pulseeffects --gapplication-service
+exec --no-startup-id $TERMINAL -T htop -x htop
 exec --no-startup-id nm-applet
 exec --no-startup-id pasystray --notify=all
 # Wallpaper, solid black
