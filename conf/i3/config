@@ -306,6 +306,8 @@ exec --no-startup-id feh --bg-scale ~/.wallpaper
 exec --no-startup-id xcompmgr -c -n
 # Make everything a bit transparent, you don't want this.
 #exec --no-startup-id compton --active-opacity 0.95 --inactive-opacity 0.95 -m 0.95 -e 0.95
+# CHANGEME - work try-out practice laptop was unhappy about numlockx on,
+#            at least on it, this should be off.
 exec --no-startup-id numlockx on
 # see also pam_environment https://wiki.archlinux.org/index.php/Fcitx#Non_desktop_environment
 exec --no-startup-id fcitx
@@ -315,7 +317,7 @@ exec --no-startup-id aa-notify -p -s 1 -w 60
 exec --no-startup-id caffeine-indicator
 exec --no-startup-id kdocker -d 300 dino
 #exec --no-startup-id jami-gnome -r
-exec --no-startup-id telegram-desktop -startintray
+#exec --no-startup-id telegram-desktop -startintray
 # https://github.com/Nheko-Reborn/nheko/issues/79 - 100 % background CPU
 #exec --no-startup-id flatpak run io.github.NhekoReborn.Nheko
 # ELECTRON!
@@ -325,7 +327,7 @@ exec --no-startup-id STEAM_FRAME_FORCE_CLOSE=1 steam -silent
 # Flatpaks
 # ELECTRON!
 exec --no-startup-id flatpak run com.wire.WireDesktop --startup
-exec --no-startup-id flatpak run de.haeckerfelix.gradio
+#exec --no-startup-id flatpak run de.haeckerfelix.gradio
 exec --no-startup-id flatpak run org.gajim.Gajim --quiet
 # ELECTRON! I have to autostart it as Signal won't use tray icon without
 #           that flag and this seems to be the least painful way to have it.
@@ -333,10 +335,10 @@ exec --no-startup-id flatpak run org.signal.Signal --start-in-tray
 # ELECTRON!
 #exec --no-startup-id flatpak run com.slack.Slack --startup
 # ELECTRON!
-exec --no-startup-id flatpak run im.riot.Riot --hidden
-exec --no-startup-id flatpak run im.riot.Riot --profile T2L --hidden
+#exec --no-startup-id flatpak run im.riot.Riot --hidden
+#exec --no-startup-id flatpak run im.riot.Riot --profile T2L --hidden
 # ELECTRON! + https://github.com/RocketChat/Rocket.Chat.Electron/issues/654
-exec --no-startup-id flatpak run chat.rocket.RocketChat
+#exec --no-startup-id flatpak run chat.rocket.RocketChat
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 # Centre of Lauttasaari
