@@ -323,6 +323,9 @@ exec --no-startup-id kdocker -d 300 dino
 # ELECTRON!
 #exec --no-startup-id KEYBASE_AUTOSTART=1 run_keybase -a
 exec --no-startup-id STEAM_FRAME_FORCE_CLOSE=1 steam -silent
+exec --no-startup-id kdeconnect-indicator
+# CHANGEME - this may not be here on all systems, Debian testing 64bit
+exec --no-startup-id /usr/lib/x86_64-linux-gnu/libexec/kdeconnectd
 
 # Flatpaks
 # ELECTRON!
