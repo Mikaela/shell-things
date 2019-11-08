@@ -5,7 +5,7 @@
 # pasystray feh rofi pulsemixer libnotify-bin xcompmgr xfce4-terminal
 # fonts-dejavu dbus-x11 arandr numlockx fcitx-bin fcitx-mozc conky-all
 # flatpak apparmor-notify caffeine keybase dino kdocker pavucontrol mumble
-# audacious jami-gnome telegram-desktop steam htop
+# audacious jami-gnome telegram-desktop steam htop kdeconnect
 #
 # Keybase: https://keybase.io/docs/the_app/install_linux
 # Dino: https://software.opensuse.org/download.html?project=network:messaging:xmpp:dino&package=dino
@@ -317,7 +317,8 @@ exec --no-startup-id aa-notify -p -s 1 -w 60
 exec --no-startup-id caffeine-indicator
 exec --no-startup-id kdocker -d 300 dino
 #exec --no-startup-id jami-gnome -r
-#exec --no-startup-id telegram-desktop -startintray
+exec --no-startup-id telegram-desktop -many -startintray
+exec --no-startup-id telegram-desktop -many -workdir ~/.config/t2l-telegram -startintray
 # https://github.com/Nheko-Reborn/nheko/issues/79 - 100 % background CPU
 #exec --no-startup-id flatpak run io.github.NhekoReborn.Nheko
 # ELECTRON!
