@@ -5,11 +5,12 @@
 # pasystray feh rofi pulsemixer libnotify-bin xcompmgr xfce4-terminal
 # fonts-dejavu dbus-x11 arandr numlockx fcitx-bin fcitx-mozc conky-all
 # flatpak apparmor-notify caffeine keybase dino kdocker pavucontrol mumble
-# audacious jami-gnome telegram-desktop steam htop kdeconnect
+# audacious jami-gnome telegram-desktop steam htop kdeconnect insync
 #
 # Keybase: https://keybase.io/docs/the_app/install_linux
 # Dino: https://software.opensuse.org/download.html?project=network:messaging:xmpp:dino&package=dino
 # jami-gnome: https://jami.net/download-jami-linux/
+# insync: https://www.insynchq.com/downloads
 #
 # Flatpaks expected: org.gajim.Gajim org.gajim.Gajim.Plugin.omemo
 # de.haeckerfelix.gradio com.wire.WireDesktop org.signal.Signal
@@ -327,6 +328,7 @@ exec --no-startup-id STEAM_FRAME_FORCE_CLOSE=1 steam -silent
 exec --no-startup-id kdeconnect-indicator
 # CHANGEME - this may not be here on all systems, Debian testing 64bit
 exec --no-startup-id /usr/lib/x86_64-linux-gnu/libexec/kdeconnectd
+exec --no-startup-id insync start
 
 # Flatpaks
 # ELECTRON!
