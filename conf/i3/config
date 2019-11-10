@@ -318,7 +318,7 @@ exec --no-startup-id caffeine-indicator
 exec --no-startup-id kdocker -d 300 dino
 #exec --no-startup-id jami-gnome -r
 exec --no-startup-id telegram-desktop -many -startintray
-exec --no-startup-id telegram-desktop -many -workdir ~/.config/t2l-telegram -startintray
+exec --no-startup-id telegram-desktop -many -workdir ~/.config/T2L-telegram -startintray
 # https://github.com/Nheko-Reborn/nheko/issues/79 - 100 % background CPU
 #exec --no-startup-id flatpak run io.github.NhekoReborn.Nheko
 # ELECTRON!
