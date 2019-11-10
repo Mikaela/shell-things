@@ -330,7 +330,7 @@ exec --no-startup-id kdeconnect-indicator
 # CHANGEME - this may not be here on all systems, Debian testing 64bit
 exec --no-startup-id /usr/lib/x86_64-linux-gnu/libexec/kdeconnectd
 exec --no-startup-id insync start
-#exec --no-startup-id nextcloud --background
+exec --no-startup-id nextcloud --background
 
 # Flatpaks
 # ELECTRON!
