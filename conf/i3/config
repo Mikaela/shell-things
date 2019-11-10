@@ -55,7 +55,7 @@ set $ScreenLockCmd i3lock -c 000000 -p win -f
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono Book 10
+font pango:DejaVu Sans Mono Book 9
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
