@@ -319,7 +319,9 @@ exec --no-startup-id conky
 exec --no-startup-id aa-notify -p -s 1 -w 60
 exec --no-startup-id caffeine-indicator
 exec --no-startup-id kdocker -d 300 dino
-#exec --no-startup-id jami-gnome -r
+# VIP app that is expected to not get sold or violate its privacy policy
+# or anything nasty, keep this in mind when considering commenting!
+exec --no-startup-id jami-gnome -r
 exec --no-startup-id telegram-desktop -many -startintray
 exec --no-startup-id telegram-desktop -many -workdir ~/.config/T2L-telegram -startintray
 # https://github.com/Nheko-Reborn/nheko/issues/79 - 100 % background CPU
@@ -335,7 +337,8 @@ exec --no-startup-id nextcloud --background
 
 # Flatpaks
 # ELECTRON!
-exec --no-startup-id flatpak run com.wire.WireDesktop --startup
+exec --no-startup-id flatpak run com.wire.WireDesktop
+#--startup # Wire needs to not trayify so I will see notifications
 #exec --no-startup-id flatpak run de.haeckerfelix.gradio
 exec --no-startup-id flatpak run org.gajim.Gajim --quiet
 # ELECTRON! I have to autostart it as Signal won't use tray icon without
