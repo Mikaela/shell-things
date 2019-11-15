@@ -89,7 +89,7 @@ time {
         # Finnishish formatting.
         #format = "%Z: %A %d. %B %Y, %H.%M.%S(%z)"
         # I guess ISO 8601 (+ mix from UTC) just makes the most sense to me
-        format = "%Z: %F %H.%M.%S%z"
+        format = "%Z: (%a) %F %H.%M.%S%z"
 }
 
 volume master {
