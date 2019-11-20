@@ -2,6 +2,9 @@
     name = Mikaela Suomalainen
     email = mikaela+git@mikaela.info
     signingkey = 0x0C207F07B2F32B67
+    ##wtop
+    #email = mikaela.suomalainen@robuntu.fi
+    #signingkey = 0xDC189FE6FA9BD685
 [alias]
     cleandi = clean -di
     cleandix = clean -dix
