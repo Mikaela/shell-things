@@ -6,7 +6,7 @@
 # fonts-dejavu dbus-x11 arandr numlockx fcitx-bin fcitx-mozc conky-all
 # flatpak apparmor-notify caffeine keybase dino kdocker pavucontrol mumble
 # audacious jami-gnome telegram-desktop steam htop kdeconnect insync
-# nextcloud-client
+# nextcloud-client parcimonie
 #
 # Keybase: https://keybase.io/docs/the_app/install_linux
 # Dino: https://software.opensuse.org/download.html?project=network:messaging:xmpp:dino&package=dino
@@ -336,6 +336,8 @@ exec --no-startup-id kdeconnect-indicator
 exec --no-startup-id /usr/lib/x86_64-linux-gnu/libexec/kdeconnectd
 exec --no-startup-id insync start
 exec --no-startup-id nextcloud --background
+sleep 60 && exec --no-startup-id parcimonie --with-dbus
+sleep 70 && exec --no-startup-id parcimonie-applet
 
 # Flatpaks
 # ELECTRON!
