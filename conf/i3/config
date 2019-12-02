@@ -323,7 +323,7 @@ exec --no-startup-id kdocker -d 300 dino
 # or anything nasty, keep this in mind when considering commenting!
 exec --no-startup-id jami-gnome -r
 exec --no-startup-id telegram-desktop -many -startintray
-exec --no-startup-id telegram-desktop -many -workdir ~/.config/T2L-telegram -startintray
+exec --no-startup-id sleep 180 && telegram-desktop -many -workdir ~/.config/T2L-telegram -startintray
 # https://github.com/Nheko-Reborn/nheko/issues/79 - 100 % background CPU
 #exec --no-startup-id flatpak run io.github.NhekoReborn.Nheko
 # ELECTRON!
@@ -350,7 +350,7 @@ exec --no-startup-id sleep 45 && flatpak run org.signal.Signal --start-in-tray
 #exec --no-startup-id flatpak run com.slack.Slack --startup
 # ELECTRON!
 exec --no-startup-id sleep 60 && flatpak run im.riot.Riot --hidden
-#exec --no-startup-id flatpak run im.riot.Riot --profile T2L --hidden
+exec --no-startup-id sleep 120 && flatpak run im.riot.Riot --profile T2L --hidden
 # ELECTRON! + https://github.com/RocketChat/Rocket.Chat.Electron/issues/654
 #exec --no-startup-id flatpak run chat.rocket.RocketChat
 
