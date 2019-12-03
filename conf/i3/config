@@ -336,8 +336,8 @@ exec --no-startup-id kdeconnect-indicator
 exec --no-startup-id /usr/lib/x86_64-linux-gnu/libexec/kdeconnectd
 exec --no-startup-id insync start
 exec --no-startup-id nextcloud --background
-sleep 60 && exec --no-startup-id parcimonie --with-dbus
-sleep 70 && exec --no-startup-id parcimonie-applet
+exec --no-startup-id sleep 60 && parcimonie --with-dbus
+exec --no-startup-id sleep 70 && parcimonie-applet
 
 # Flatpaks
 # ELECTRON!
