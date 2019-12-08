@@ -48,3 +48,9 @@
 #    diff = diff-highlight | less
 [interactive]
 #    diffFilter = diff-highlight
+[gpg]
+       program = gpg2
+[gpgv]
+       program = gpgv2
+[tag]
+       forceSignAnnotated = true
