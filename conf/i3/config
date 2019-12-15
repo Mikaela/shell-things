@@ -303,9 +303,9 @@ exec --no-startup-id $TERMINAL -T htop -x htop
 exec --no-startup-id nm-applet
 exec --no-startup-id pasystray --notify=all
 # Wallpaper, solid black
-#exec --no-startup-id xsetroot -solid \#000000
+exec --no-startup-id xsetroot -solid \#000000
 # ~/.wallpaper as wallpaper
-exec --no-startup-id feh --bg-scale ~/.wallpaper
+#exec --no-startup-id feh --bg-scale ~/.wallpaper
 exec --no-startup-id xcompmgr -c -n
 # Make everything a bit transparent, you don't want this.
 #exec --no-startup-id compton --active-opacity 0.95 --inactive-opacity 0.95 -m 0.95 -e 0.95
@@ -344,7 +344,7 @@ exec --no-startup-id sleep 70 && parcimonie-applet
 exec --no-startup-id flatpak run com.wire.WireDesktop
 #--startup # Wire needs to not trayify so I will see notifications
 #exec --no-startup-id flatpak run de.haeckerfelix.gradio
-#exec --no-startup-id flatpak run org.gajim.Gajim --quiet
+exec --no-startup-id flatpak run org.gajim.Gajim --quiet
 # ELECTRON! I have to autostart it as Signal won't use tray icon without
 #           that flag and this seems to be the least painful way to have it.
 exec --no-startup-id sleep 45 && flatpak run org.signal.Signal --start-in-tray
