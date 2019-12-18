@@ -286,10 +286,11 @@ bindsym $mod+m exec mumble
 bindsym $mod+Shift+m exec audacious
 
 # Float these apps by default
-# I use privacy.resistfingerprinting which is incompatible with not floating
-# I think I am more productive with floating Firefox.
+# Firefox & Tor Browser have `privacy.resistFingerprinting.letterboxing`
+# that hide the default screen size, so they don't have to be floated.
+# https://support.torproject.org/tbb/maximized-torbrowser-window/
 #for_window [title="^Mozilla Firefox$"] floating enable
-for_window [title="^Tor Browser$"] floating enable
+#for_window [title="^Tor Browser$"] floating enable
 for_window [title="galculator"] floating enable
 # insert new rules above this line
 # https://github.com/keybase/client/issues/8232
@@ -322,8 +323,8 @@ exec --no-startup-id caffeine-indicator
 # VIP app that is expected to not get sold or violate its privacy policy
 # or anything nasty, keep this in mind when considering commenting! Jami
 exec --no-startup-id jami-gnome -r
-#exec --no-startup-id telegram-desktop -many -startintray
-#exec --no-startup-id sleep 180 && telegram-desktop -many -workdir ~/.config/T2L-telegram -startintray
+exec --no-startup-id telegram-desktop -many -startintray
+exec --no-startup-id sleep 180 && telegram-desktop -many -workdir ~/.config/T2L-telegram -startintray
 # https://github.com/Nheko-Reborn/nheko/issues/79 - 100 % background CPU
 #exec --no-startup-id flatpak run io.github.NhekoReborn.Nheko
 # ELECTRON!
