@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Gajim
+Exec=/usr/bin/flatpak run org.gajim.Gajim
+Type=Application
+Icon=org.gajim.Gajim

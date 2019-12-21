@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Signal
+Exec=/usr/bin/flatpak run org.signal.Signal --start-in-tray
+Type=Application
+Icon=org.signal.Signal
