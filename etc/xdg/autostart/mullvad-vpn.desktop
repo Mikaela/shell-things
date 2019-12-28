@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Mullvad VPN
+Exec="/opt/Mullvad VPN/mullvad-vpn" %U
+Type=Application
+Icon=mullvad-vpn
