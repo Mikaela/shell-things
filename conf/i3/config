@@ -12,6 +12,7 @@
 # Dino: https://software.opensuse.org/download.html?project=network:messaging:xmpp:dino&package=dino
 # jami-gnome: https://jami.net/download-jami-linux/
 # insync: https://www.insynchq.com/downloads
+# Mullvad: TODO
 #
 # Flatpaks expected: org.gajim.Gajim org.gajim.Gajim.Plugin.omemo
 # de.haeckerfelix.gradio com.wire.WireDesktop org.signal.Signal
@@ -326,6 +327,7 @@ exec --no-startup-id caffeine-indicator
 exec --no-startup-id jami-gnome -r
 exec --no-startup-id telegram-desktop -many -startintray
 exec --no-startup-id sleep 180 && telegram-desktop -many -workdir ~/.config/T2L-telegram -startintray
+
 # https://github.com/Nheko-Reborn/nheko/issues/79 - 100 % background CPU
 #exec --no-startup-id flatpak run io.github.NhekoReborn.Nheko
 # ELECTRON!
@@ -340,6 +342,7 @@ exec --no-startup-id insync start
 exec --no-startup-id nextcloud --background
 exec --no-startup-id sleep 60 && parcimonie --with-dbus
 exec --no-startup-id sleep 70 && parcimonie-applet
+exec --no-startup-id "/opt/Mullvad VPN/mullvad-vpn"
 
 # Flatpaks
 # ELECTRON!
