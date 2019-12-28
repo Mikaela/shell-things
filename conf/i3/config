@@ -325,13 +325,13 @@ exec --no-startup-id caffeine-indicator
 # VIP app that is expected to not get sold or violate its privacy policy
 # or anything nasty, keep this in mind when considering commenting! Jami
 exec --no-startup-id jami-gnome -r
-exec --no-startup-id telegram-desktop -many -startintray
-exec --no-startup-id sleep 180 && telegram-desktop -many -workdir ~/.config/T2L-telegram -startintray
+#exec --no-startup-id telegram-desktop -many -startintray
+#exec --no-startup-id sleep 180 && telegram-desktop -many -workdir ~/.config/T2L-telegram -startintray
 
 # https://github.com/Nheko-Reborn/nheko/issues/79 - 100 % background CPU
 #exec --no-startup-id flatpak run io.github.NhekoReborn.Nheko
 # ELECTRON!
-exec --no-startup-id sleep 30 && KEYBASE_AUTOSTART=1 run_keybase -a
+#exec --no-startup-id sleep 30 && KEYBASE_AUTOSTART=1 run_keybase -a
 # STILL ELECTRON!
 #exec --no-startup-id run_keybase
 #exec --no-startup-id STEAM_FRAME_FORCE_CLOSE=1 steam -silent
@@ -346,13 +346,13 @@ exec --no-startup-id "/opt/Mullvad VPN/mullvad-vpn"
 
 # Flatpaks
 # ELECTRON!
-exec --no-startup-id flatpak run com.wire.WireDesktop
+#exec --no-startup-id flatpak run com.wire.WireDesktop
 #--startup # Wire needs to not trayify so I will see notifications
 #exec --no-startup-id flatpak run de.haeckerfelix.gradio
-exec --no-startup-id flatpak run org.gajim.Gajim --quiet
+#exec --no-startup-id flatpak run org.gajim.Gajim --quiet
 # ELECTRON! I have to autostart it as Signal won't use tray icon without
 #           that flag and this seems to be the least painful way to have it.
-exec --no-startup-id sleep 45 && flatpak run org.signal.Signal --start-in-tray
+#exec --no-startup-id sleep 45 && flatpak run org.signal.Signal --start-in-tray
 # ELECTRON!
 #exec --no-startup-id flatpak run com.slack.Slack --startup
 # ELECTRON!
