@@ -363,11 +363,11 @@ exec --no-startup-id "/opt/Mullvad VPN/mullvad-vpn"
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 # Centre of Lauttasaari
-exec --no-startup-id redshift-gtk -l 60.15937:24.87530
+#exec --no-startup-id redshift-gtk -l 60.15937:24.87530
 # Centre of Kotka
 #exec --no-startup-id redshift-gtk -l 60.46742:26.94508
 # Sedric - mirror displays
-exec --no-startup-id xrandr --output HDMI-1 --same-as eDP-1
+#exec --no-startup-id xrandr --output HDMI-1 --same-as eDP-1
 # Sedric - double monitor via arandr
 #exec --no-startup-id xrandr --output VGA-1 --off --output HDMI-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output eDP-1 --mode 1920x1080 --pos 0x0 --rotate normal
 #workspace 1 output HDMI-1
