@@ -342,7 +342,7 @@ exec --no-startup-id insync start
 exec --no-startup-id nextcloud --background
 exec --no-startup-id sleep 60 && parcimonie --with-dbus
 exec --no-startup-id sleep 70 && parcimonie-applet
-exec --no-startup-id "/opt/Mullvad VPN/mullvad-vpn"
+exec --no-startup-id sh -c "/opt/Mullvad\ VPN/mullvad-vpn"
 
 # Flatpaks
 # ELECTRON!
@@ -352,7 +352,7 @@ exec --no-startup-id "/opt/Mullvad VPN/mullvad-vpn"
 #exec --no-startup-id flatpak run org.gajim.Gajim --quiet
 # ELECTRON! I have to autostart it as Signal won't use tray icon without
 #           that flag and this seems to be the least painful way to have it.
-#exec --no-startup-id sleep 45 && flatpak run org.signal.Signal --start-in-tray
+exec --no-startup-id sleep 45 && flatpak run org.signal.Signal --start-in-tray
 # ELECTRON!
 #exec --no-startup-id flatpak run com.slack.Slack --startup
 # ELECTRON!
