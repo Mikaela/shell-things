@@ -10,7 +10,7 @@ fi
 # disable nbsp (still available with compose-space-space)
 setxkbmap -option compose:menu -option terminate:ctrl_alt_bksp -option nbsp:none
 
-# Removes duplicates from $PATH. Copied from http://unix.stackexchange.com/a/14896
+# Removes duplicates from $PATH. Copied from https://unix.stackexchange.com/a/14896
 PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS; printf $a[$1]}')
 
 # Start gpg-agent

@@ -194,7 +194,7 @@ if hash ruby 2>/dev/null; then
     PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 fi
 
-# Removes duplicates from $PATH. Copied from http://unix.stackexchange.com/a/14896
+# Removes duplicates from $PATH. Copied from https://unix.stackexchange.com/a/14896
 PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS; printf $a[$1]}')
 
 # "Changes" home directory without root. Uncomment both lines below this.
@@ -202,7 +202,7 @@ PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS;
 #cd
 
 # Colours to less
-# Copied from http://nion.modprobe.de/blog/archives/572-less-colors-for-man-pages.html
+# Copied from https://nion.modprobe.de/blog/archives/572-less-colors-for-man-pages.html
 export LESS_TERMCAP_mb=$'\E[01;31m'
 export LESS_TERMCAP_md=$'\E[01;31m'
 export LESS_TERMCAP_me=$'\E[0m'
@@ -225,7 +225,7 @@ if [[ $USER = "root" ]]; then
 #    echo 'Acquire::ftp::Timeout "2";' >> /etc/apt/apt.conf.d/99timeout
 fi
 
-# Copied from http://homepages.see.leeds.ac.uk/~eeaol/notes/2012/03/how_to_only_type_ssh_passphrase_once/
+# Copied from https://homepages.see.leeds.ac.uk/~eeaol/notes/2012/03/how_to_only_type_ssh_passphrase_once/
 export SSH_AUTH_SOCK=/tmp/$USER.agent
 (ssh-agent -a /tmp/$USER.agent > /dev/null 2>&1&)
 
@@ -297,7 +297,7 @@ alias detach="tmux detach"
 # I am always typoing "aptitude" with my phone...
 alias aptitute="aptitude "
 
-# The Battle for Wesnoth specific, http://wesnoth.org/
+# The Battle for Wesnoth specific, https://wesnoth.org/
 # It seems to be an good idea to have debug logs on terminal with svn version.
 alias wesnoth="wesnoth --debug"
 
@@ -373,7 +373,7 @@ alias scat="gpg --decrypt "
 #alias apt-key-refresh-keys="apt-key adv --keyserver hkps://keys.openpgp.org --refresh-keys"
 
 # To see which mirror httpredir.debian.org puts you to. The file which has the latest update time is the mirror which you are using.
-alias httpredir.debian.org="curl -sL http://httpredir.debian.org/debian/project/trace/|pandoc -f html -t markdown"
+alias httpredir.debian.org="curl -sL https://httpredir.debian.org/debian/project/trace/|pandoc -f html -t markdown"
 
 # Amount of keys in GPG keyring.
 alias gpg-key-amount="gpg --list-keys|grep '^pub'|wc -l"
@@ -384,7 +384,7 @@ alias follow="tail -F"
 # Current IPv4 and IPv6 addresses. Calls functions.
 alias myip="myip4 && myip6"
 
-# Update groups without logging out. Requires entering password. Source: http://blog.edwards-research.com/2010/10/linux-refresh-group-membership-without-logging-out/
+# Update groups without logging out. Requires entering password. Source: https://blog.edwards-research.com/2010/10/linux-refresh-group-membership-without-logging-out/
 alias refreshgroups="exec su -l $USER"
 
 # Get public key lenght of (public) SSH key
@@ -442,9 +442,9 @@ alias currenttargets="systemctl list-units --type=target"
 alias telsystemd="systemctl isolate "
 alias defaulttarget="systemctl enable "
 
-# Fedora Utils http://satya164.github.com/fedorautils/
+# Fedora Utils https://satya164.github.com/fedorautils/
 alias fedorautils="\fedorautils -c"
-alias fedorautils-install='su -c "curl http://download.opensuse.org/repositories/home:/satya164:/fedorautils/Fedora_17/home:satya164:fedorautils.repo -Lo /etc/yum.repos.d/fedorautils.repo && yum -y install fedorautils"'
+alias fedorautils-install='su -c "curl https://download.opensuse.org/repositories/home:/satya164:/fedorautils/Fedora_17/home:satya164:fedorautils.repo -Lo /etc/yum.repos.d/fedorautils.repo && yum -y install fedorautils"'
 
 # ReSet Screen rss
 alias rss=reset
@@ -526,7 +526,7 @@ alias tmuxeattach="/proc/$(pgrep -o tmux)/exe attach"
 alias purgeconfig="apt-get install --reinstall -o DPkg::options::=--force-confask"
 
 # Send command output to sprunge.us or ix.io `command|<sprungeus|ixio>`
-alias sprungeus="curl -F 'sprunge=<-' http://sprunge.us"
+alias sprungeus="curl -F 'sprunge=<-' https://sprunge.us"
 alias ixio="curl -F 'f:1=<-' ix.io"
 
 # Copy-paste mtr output more easily
@@ -564,7 +564,7 @@ alias clear-apt-list-cache="cd /var/lib/apt/lists && rm -f *|true && cd partial 
 alias lynx="lynx -accept_all_cookies"
 
 # Cat multiple files preserving filenames
-# via http://stackoverflow.com/a/7816490
+# via https://stackoverflow.com/a/7816490
 alias multicat='tail -n +1'
 
 # Getting SSIDs and keys from connmann (Jolla)
@@ -588,7 +588,7 @@ alias sailfish-nstatus='dbus-send --system --type=method_call --print-reply --de
 # apt build depedencies (without installing)
 alias apt-builddep="apt-rdepends --build-depends --follow=DEPENDS"
 
-# http://superuser.com/a/638033 - get embedded Windows key
+# https://superuser.com/a/638033 - get embedded Windows key
 alias winkey="xxd /sys/firmware/acpi/tables/MSDM"
 
 # Always exec startx so Ctrl-Alt-Backspace won't lead to unlocked TTY.
@@ -611,16 +611,16 @@ fi
 
 #####   Functions                   ZGC5QQ  #####
 
-# GEOIP lookup, improved from the ultimate bashrc http://goo.gl/qGK5j
+# GEOIP lookup, improved from the ultimate bashrc https://goo.gl/qGK5j
 function geoip() {
     geoiplookup $1
     geoiplookup6 $1
 }
 
-# Checks which package the command comes from. Copied from the ultimate bashrc http://goo.gl/qGK5j
+# Checks which package the command comes from. Copied from the ultimate bashrc https://goo.gl/qGK5j
 function cmdpkg() { PACKAGE=$(dpkg -S $(which $1) | cut -d':' -f1); echo "[${PACKAGE}]"; dpkg -s "${PACKAGE}" ;}
 
-# Down for everyone or just me? Copied from the ultimate bashrc http://goo.gl/qGK5j
+# Down for everyone or just me? Copied from the ultimate bashrc https://goo.gl/qGK5j
 function downforme() {
     RED='\e[1;31m'
     GREEN='\e[1;32m'
@@ -630,7 +630,7 @@ function downforme() {
     then
         echo -e "${YELLOW}usage:${NC} downforme website_url"
     else
-JUSTYOUARRAY=($(lynx -dump http://downforeveryoneorjustme.com/$1 | grep -o "It's just you"))
+JUSTYOUARRAY=($(lynx -dump https://downforeveryoneorjustme.com/$1 | grep -o "It's just you"))
         if [ ${#JUSTYOUARRAY} != 0 ]
         then
             echo -e "${RED}It's just you. \n${NC}$1 is up."
@@ -640,13 +640,13 @@ JUSTYOUARRAY=($(lynx -dump http://downforeveryoneorjustme.com/$1 | grep -o "It's
     fi
 }
 
-# Topt10 commands, copied from the ultimate bashrc http://goo.gl/qGK5j
+# Topt10 commands, copied from the ultimate bashrc https://goo.gl/qGK5j
 function top10() {
     # copyright 2007 - 2010 Christopher Bratusek
     \history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head
 }
 
-# ex command. Copied from bashrc of bioterror ( http://ricecows.org/configs/bash/.bashrc ). Original comment below:
+# ex command. Copied from bashrc of bioterror ( https://ricecows.org/configs/bash/.bashrc ). Original comment below:
 ## for unit193 ;)
 ## use command "ex" to extract any archive files.
 ## "ex package.zip" for example
@@ -681,7 +681,7 @@ fi
 
 # Given by nyuszika7h. Shortens GitHub URLs with git.io
 function gitio() {                                         
-    curl -s -i http://git.io -F "url=$1" | grep --color=never -P '^Location: ' | awk '{ print $2 }'
+    curl -s -i https://git.io -F "url=$1" | grep --color=never -P '^Location: ' | awk '{ print $2 }'
 }
 
 function mkcd() {
@@ -867,7 +867,7 @@ if hash clang++ 2>/dev/null; then
     export CXX=clang++
 fi
 
-# Add GitHub pull requests to fetched things via http://git.io/-C-0oQ
+# Add GitHub pull requests to fetched things via https://git.io/-C-0oQ
 github-add-pulls() {
     git config --add remote.origin.fetch '+refs/pull/*/head:refs/remotes/origin/pr/*'
     git config --add remote.upstream.fetch '+refs/pull/*/head:refs/remotes/upstream/-pr/*'
@@ -946,7 +946,7 @@ myip4 () {
     if hash dig 2>/dev/null; then
         dig +short myip.opendns.com. A @208.67.222.222
     else
-        curl -L4s http://icanhazip.com/
+        curl -L4s https://icanhazip.com/
     fi
 }
 
@@ -955,7 +955,7 @@ myip6 () {
     if hash dig 2>/dev/null; then
         dig +short myip.opendns.com. AAAA @2620:0:ccc::2
     else
-        curl -L6s http://icanhazip.com/
+        curl -L6s https://icanhazip.com/
     fi
 }
 

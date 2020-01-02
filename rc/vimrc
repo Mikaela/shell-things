@@ -52,7 +52,7 @@ if has('gui_running')
 endif
 
 " Show hidden characters via
-" http://www.perturb.org/display/679_Make_Vim_show_hidden_characters.html
+" https://www.perturb.org/display/679_Make_Vim_show_hidden_characters.html
 set invlist
 
 "Prefer to UNIX line endings, but understand DOS too.
@@ -64,7 +64,7 @@ set fileencoding=utf-8
 
 " Remove BOMs. They broke things yesterday and now they wasted my time
 " at school! 
-" via http://techwelkin.com/how-to-remove-byte-order-mark-bom-characters
+" via https://techwelkin.com/how-to-remove-byte-order-mark-bom-characters
 set nobomb
 
 filetype plugin indent on
@@ -75,7 +75,7 @@ autocmd BufReadPost *
      \   exe "normal! g`\"" |
      \ endif
 
-" dos2unix ^M copied from http://stackoverflow.com/a/5361702/1675649
+" dos2unix ^M copied from https://stackoverflow.com/a/5361702/1675649
 fun! Dos2unixFunction()
     let _s=@/
     let l = line(".")
