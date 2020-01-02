@@ -462,9 +462,9 @@ alias apty="apt -y"
 alias apt-gety="apt-get -y "
 alias aptitudey="aptitude -y "
 
-# inxi  https://code.google.com/p/inxi/
-alias inxi-install="mkdir -p ~/.local/bin && cd ~/.local/bin && \wget -Nc smxi.org/inxi && chmod +x inxi && cd"
-alias inxi-install-root="cd /usr/local/bin;\wget -Nc smxi.org/inxi;chmod +x inxi;./inxi -U;cd"
+# inxi - https://smxi.org/docs/inxi.htm
+alias inxi-install="mkdir -p ~/.local/bin && cd ~/.local/bin && \wget -Nc https://github.com/smxi/inxi/raw/master/inxi && chmod +x inxi && cd"
+alias inxi-install-root="cd /usr/local/bin;\wget -Nc https://github.com/smxi/inxi/raw/master/inxi;chmod +x inxi;./inxi -U;cd"
 alias inxi-update="inxi -U"
 
 # FINEID
