@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Nextcloud
+Exec=/usr/bin/nextcloud
+Icon=nextcloud
+Type=Application
