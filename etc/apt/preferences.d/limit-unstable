@@ -1,0 +1,4 @@
+# Copied from https://www.wireguard.com/install/
+Package: *
+Pin: release a=unstable
+Pin-Priority: 90
