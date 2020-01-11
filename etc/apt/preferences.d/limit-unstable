@@ -1,4 +1,6 @@
-# Copied from https://www.wireguard.com/install/
+# Copied from https://www.wireguard.com/install/ (2020-01-11)
+# Default priority appears to be 500, so 90 results to unstable being
+# used when the package is not available anywhere else
 Package: *
 Pin: release a=unstable
 Pin-Priority: 90
