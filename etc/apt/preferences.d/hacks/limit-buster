@@ -1,0 +1,20 @@
+# Inspired by limit-unstable, I need this on a cheap NAT VPS with OpenVZ
+# and ancient kernel that is incompatible with Debian 10 Buster and I needed
+# to get its oidentd for fixing TheLounges ident by using forwarding
+# https://thelounge.chat/docs/guides/identd-and-oidentd#using-oidentd-to-forward-requests-to-the-built-in-server
+
+Package: *
+Pin: release n=buster
+Pin-Priority: 90
+
+Package: *
+Pin: release n=buster-updates
+Pin-Priority: 90
+
+Package: *
+Pin: release n=buster-backports
+Pin-Priority: 90
+
+Package: *
+Pin: release n=buster-debug
+Pin-Priority: 90
