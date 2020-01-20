@@ -322,6 +322,7 @@ exec --no-startup-id conky
 exec --no-startup-id aa-notify -p -s 1 -w 60
 exec --no-startup-id caffeine-indicator
 #exec --no-startup-id kdocker -d 300 dino
+exec --no-startup-id dino
 # VIP app that is expected to not get sold or violate its privacy policy
 # or anything nasty, keep this in mind when considering commenting! Jami
 exec --no-startup-id jami-gnome -r
@@ -346,7 +347,7 @@ exec --no-startup-id sh -c "/opt/Mullvad\ VPN/mullvad-vpn"
 
 # Flatpaks
 # ELECTRON!
-#exec --no-startup-id flatpak run com.wire.WireDesktop
+exec --no-startup-id flatpak run com.wire.WireDesktop
 #--startup # Wire needs to not trayify so I will see notifications
 #exec --no-startup-id flatpak run de.haeckerfelix.gradio
 #exec --no-startup-id flatpak run org.gajim.Gajim --quiet
@@ -367,7 +368,7 @@ exec --no-startup-id sleep 45 && flatpak run org.signal.Signal --start-in-tray
 # Centre of Kotka
 #exec --no-startup-id redshift-gtk -l 60.46742:26.94508
 # Sedric - mirror displays
-#exec --no-startup-id xrandr --output HDMI-1 --same-as eDP-1
+exec --no-startup-id xrandr --output HDMI-1 --same-as eDP-1
 # Sedric - double monitor via arandr
 #exec --no-startup-id xrandr --output VGA-1 --off --output HDMI-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output eDP-1 --mode 1920x1080 --pos 0x0 --rotate normal
 #workspace 1 output HDMI-1
