@@ -311,9 +311,9 @@ exec --no-startup-id feh --bg-scale ~/.wallpaper
 exec --no-startup-id xcompmgr -c -n
 # Make everything a bit transparent, you don't want this.
 #exec --no-startup-id compton --active-opacity 0.95 --inactive-opacity 0.95 -m 0.95 -e 0.95
-# CHANGEME - work try-out practice laptop was unhappy about numlockx on,
+# CHANGEME - Kincarron is unhappy about numlockx on,
 #            at least on it, this should be off.
-exec --no-startup-id numlockx on
+#exec --no-startup-id numlockx on
 # see also pam_environment https://wiki.archlinux.org/index.php/Fcitx#Non_desktop_environment
 exec --no-startup-id fcitx
 #exec --no-startup-id kdocker -m -d 300 $TERMINAL
