@@ -6,7 +6,7 @@
 # fonts-dejavu dbus-x11 arandr numlockx fcitx-bin fcitx-mozc conky-all
 # flatpak apparmor-notify caffeine keybase dino kdocker pavucontrol mumble
 # audacious jami-gnome telegram-desktop steam htop kdeconnect insync
-# nextcloud-client parcimonie
+# nextcloud-client parcimonie lxqt-powermanagement
 #
 # Keybase: https://keybase.io/docs/the_app/install_linux
 # Dino: https://software.opensuse.org/download.html?project=network:messaging:xmpp:dino&package=dino
@@ -328,6 +328,7 @@ exec --no-startup-id dino
 exec --no-startup-id jami-gnome -r
 #exec --no-startup-id telegram-desktop -many -startintray
 #exec --no-startup-id sleep 180 && telegram-desktop -many -workdir ~/.config/T2L-telegram -startintray
+exec --no-startup-id lxqt-powermanagement
 
 # https://github.com/Nheko-Reborn/nheko/issues/79 - 100 % background CPU
 #exec --no-startup-id flatpak run io.github.NhekoReborn.Nheko
