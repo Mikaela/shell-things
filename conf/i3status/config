@@ -58,7 +58,7 @@ wireless _first_ {
         #format_up = "W:%quality %frequency"
         #format_down = "W:🢃"
         format_down = ""
-        format_quality = "%3d%s"
+        #format_quality = "%3d%s"
 }
 
 ethernet _first_ {
@@ -76,6 +76,8 @@ battery all {
         format_down = ""
         status_full = "🔌☻"
         #status_unk  = "?"
+        # kincarron battery fix
+        #path = "/sys/class/power_supply/%d/uevent"
 }
 
 tztime utc {
