@@ -6,7 +6,7 @@
 # fonts-dejavu dbus-x11 arandr numlockx fcitx-bin fcitx-mozc conky-all
 # flatpak apparmor-notify caffeine keybase dino kdocker pavucontrol mumble
 # audacious jami-gnome telegram-desktop steam htop kdeconnect insync
-# nextcloud-client parcimonie lxqt-powermanagement
+# nextcloud-client parcimonie lxqt-powermanagement pulseeffects
 #
 # Keybase: https://keybase.io/docs/the_app/install_linux
 # Dino: https://software.opensuse.org/download.html?project=network:messaging:xmpp:dino&package=dino
@@ -298,9 +298,13 @@ for_window [title="galculator"] floating enable
 for_window [title="tracker - .*"] floating enable
 
 # Autostarts
+
 # I generally have flatpaks separately near the bottom, but other things are
-# going to depend on PulseEffects
-exec --no-startup-id flatpak run com.github.wwmm.pulseeffects --gapplication-service
+# going to depend on PulseEffects and it seems to be more reliable from repositories
+# at times
+#exec --no-startup-id flatpak run com.github.wwmm.pulseeffects --gapplication-service
+exec --no-startup-id pulseeffects --gapplication-service
+
 exec --no-startup-id $TERMINAL -T htop -x htop
 exec --no-startup-id nm-applet
 exec --no-startup-id sleep 60 && pasystray --notify=all
