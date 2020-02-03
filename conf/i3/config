@@ -365,7 +365,7 @@ exec --no-startup-id sleep 45 && flatpak run org.signal.Signal --start-in-tray
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 # Centre of Lauttasaari
-#exec --no-startup-id redshift-gtk -l 60.15937:24.87530
+exec --no-startup-id redshift-gtk -l 60.15937:24.87530
 # Centre of Kotka
 #exec --no-startup-id redshift-gtk -l 60.46742:26.94508
 # Sedric - mirror displays
