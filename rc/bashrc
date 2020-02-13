@@ -165,7 +165,7 @@ fi
 # Enable core files.
 (ulimit -c unlimited&)
 
-# More colours :D
+# More colours 
 if [[ $TERM == 'xterm' ]]; then
 export TERM=xterm-256color
 fi
@@ -176,12 +176,8 @@ fi
 
 # Things after this are just examples and should be put to some other file, which is sourced above.
 
-# Sets the default editor. I am vim user, so I want it to be vim. If you don't like terminal based text editors, change "" to gedit (Gnome) or Kate (KDE).
+# Sets the default editor.
 #export EDITOR=vim # MIKAELA_GREP MIKAELA_GREP_ENVIRONMENT
-
-# Sets locale. You can get list of locales with "locale -a" command. This
-# should be something which ends to .utf8
-#export LANG=fi_FI.UTF-8
 
 # Set TZ to local timezone for sending over SSH
 TZ=$(date +%Z)
@@ -196,10 +192,6 @@ fi
 
 # Removes duplicates from $PATH. Copied from https://unix.stackexchange.com/a/14896
 PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS; printf $a[$1]}')
-
-# "Changes" home directory without root. Uncomment both lines below this.
-#export HOME=<path to new home>
-#cd
 
 # Colours to less
 # Copied from https://nion.modprobe.de/blog/archives/572-less-colors-for-man-pages.html
@@ -216,35 +208,22 @@ UNAME=$(uname)
 CPUARCH=$(uname -p)
 
 # If we are on Linux, enable apt progress bar and colours
-# and Happy Eyeballs workaround https://pad.lv/1308200
 if [[ $USER = "root" ]]; then
     mkdir -p /etc/apt/apt.conf.d/
     echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
     echo 'APT::Color "1";' > /etc/apt/apt.conf.d/99color
-#    echo 'Acquire::http::Timeout "2";' > /etc/apt/apt.conf.d/99timeout
-#    echo 'Acquire::ftp::Timeout "2";' >> /etc/apt/apt.conf.d/99timeout
 fi
 
 # Copied from https://homepages.see.leeds.ac.uk/~eeaol/notes/2012/03/how_to_only_type_ssh_passphrase_once/
 export SSH_AUTH_SOCK=/tmp/$USER.agent
 (ssh-agent -a /tmp/$USER.agent > /dev/null 2>&1&)
 
-# In our series useless/weird environment variables, beep
-export beep=
-export BEEP=
-
-# OS X ls colours (copied from https://apple.stackexchange.com/questions/33677/how-can-i-configure-mac-terminal-to-have-color-ls-output )
+# OS X ls colours (copied from https://apple.stackexchange.com/questions/33677/
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
-# make
-alias maken="make -j$NPROC"
-
-# Ensure that pkg-config paths are found
-#export PKG_CONFIG_PATH=$(which pkg-config)
-
 # znc uses this variable for figuring out hostname
-export HOSTNAME=$(hostname --fqdn)
+#export HOSTNAME=$(hostname --fqdn)
 
 #####   Aliases                     RJ706I  #####
 
@@ -254,8 +233,10 @@ alias sudo="sudo "
 # Moving between directories:
 alias ..="cd .."
 
-# Use htop instead of top, it's better. Requires htop.
-#alias top="htop" # MIKAELA_GREP # MIKAELA_GREP_ALIAS
+# Use htop instead of top if available
+if hash htop 2>/dev/null; then
+    alias top="htop"
+fi
 
 # Add title to youtube-dl & make yle-dl Windows-friendly
 alias youtube-dl="youtube-dl -o '%(title)s-%(id)s.%(ext)s'"
@@ -264,13 +245,10 @@ alias yle-dl="yle-dl --vfat"
 # git specific. This is the command which I use when git asks me to commit something and says that I have modified files, even when I haven't.
 alias gdrop="git stash && git stash drop"
 
-# If I run nautilus, I want it to open in folder where I am.
-#alias nautilus="nautilus ./"
-
-#SHow compilation date of WeeChat.
+# Show compilation date of WeeChat.
 alias weechat-version="weechat --help|head -n2"
 
-#NMAP specific. All nmap things should be run as root, so it's probably best to copy these aliases to root's .bashrc. Things which don't run without root ask for sudo password.
+# NMAP specific. All nmap things should be run with sudo.
 alias nmap-intense="nmap -T4 -A -v -PE -PS22,25,80 -PA21,23,80,3389 "
 alias nmap-intense-udp="sudo nmap -sS -sU -T4 -A -v -PE -PS22,25,80 -PA21,23,80,3389 "
 alias nmap-intense-all-tcp="nmap -p 1-65535 -T4 -A -v -PE -PS22,25,80 -PA21,23,80,3389 "
@@ -294,16 +272,6 @@ alias tmux="tmux -2u"
 alias attach="tmux attach-session"
 alias detach="tmux detach"
 
-# I am always typoing "aptitude" with my phone...
-alias aptitute="aptitude "
-
-# The Battle for Wesnoth specific, https://wesnoth.org/
-# It seems to be an good idea to have debug logs on terminal with svn version.
-alias wesnoth="wesnoth --debug"
-
-# For copy-pasting directly from somewhere
-alias %=" "
-alias \#=" "
 # Supybot specifig. Why to write long command, if you can write short command?
 alias supybot-config-reload="killall -HUP supybot "
 alias supybot-owner-quit="killall -INT supybot "
@@ -327,14 +295,6 @@ fi
 
 ## -- End of aliases which are saved from Ubuntu default bashrc. --
 
-# Copying command in Supybot (Internet.DNS)
-alias dns="nslookup "
-alias dns6="nslookup -type=AAAA "
-alias nslookup6="nslookup -type=AAAA "
-
-# If I have nslookup6...
-alias dig6="dig AAAA "
-
 # SSHGuard specific
 alias sshguard-show-bans="sshguard4-show-bans && sshguard6-show-bans"
 alias sshguard4-show-bans="sudo iptables -L sshguard --line-numbers"
@@ -346,9 +306,6 @@ alias sshguard-unban-all="sshguard4-unban-all && sshguard-6-unban-all"
 alias sshguard4-unban-all="sudo iptables -F sshguard"
 alias sshguard6-unban-all="sudo ip6tables -F sshguard"
 
-# This needs something which makes it easy to remember.
-alias KILL="killall -KILL "
-
 # For locally rsync copying folder1 to folder2.
 alias rsync-folder="rsync -h --progress -azvv "
 
@@ -358,28 +315,15 @@ if [[ $UNAME != Darwin ]]; then
 fi
 
 # Use GPG2 instead of GPG!
-alias gpg=gpg2
-export KEYBASE_GPG=gpg2
+if hash gpg2 2>/dev/null; then
+    alias gpg=gpg2
+    export KEYBASE_GPG=gpg2
+fi
 alias gpg-fix-tty='export GPG_TTY=$(tty)'
-
-# For userspecific installation of mosh on remote server.
-alias lmosh="mosh --server=~/.local/bin/mosh-server "
-alias lmosha="mosh --server=~/.local/bin/mosh-server-alt "
-
-# Secure cat
-alias scat="gpg --decrypt "
-
-# To check are keys, which apt uses changed
-#alias apt-key-refresh-keys="apt-key adv --keyserver hkps://keys.openpgp.org --refresh-keys"
-
-# To see which mirror httpredir.debian.org puts you to. The file which has the latest update time is the mirror which you are using.
-alias httpredir.debian.org="curl -sL https://httpredir.debian.org/debian/project/trace/|pandoc -f html -t markdown"
 
 # Amount of keys in GPG keyring.
 alias gpg-key-amount="gpg --list-keys|grep '^pub'|wc -l"
 alias gpg-key-count="gpg --export -a|gpg --import"
-
-alias follow="tail -F"
 
 # Current IPv4 and IPv6 addresses. Calls functions.
 alias myip="myip4 && myip6"
@@ -406,18 +350,6 @@ alias git-changelog-color="git log --oneline --decorate --color"
 alias unixle="flip -ub "
 alias msdosle="flip -mb "
 
-# Making .iso bootable from CD/DVD/USB. Cat it to /dev/<DEVICE>
-# MaKe Hybrid ISO
-alias mkhiso=isohybrid
-
-# Yum
-alias yum-unlock="rm -rf /var/run/yum.pid"
-alias yum-rm-timedhosts="rm /var/cache/yum/$CPUARCH/17/timedhost*"
-alias yummy="yum -y "
-alias yummn="yum -n "
-alias yumy=yummy
-alias yumn=yummn
-
 # Archiving and extracting with tar
 # This is tartar to avoid conflict with tar
 alias tartar="tar cfv "
@@ -442,79 +374,44 @@ alias currenttargets="systemctl list-units --type=target"
 alias telsystemd="systemctl isolate "
 alias defaulttarget="systemctl enable "
 
-# Fedora Utils https://satya164.github.com/fedorautils/
-alias fedorautils="\fedorautils -c"
-alias fedorautils-install='su -c "curl https://download.opensuse.org/repositories/home:/satya164:/fedorautils/Fedora_17/home:satya164:fedorautils.repo -Lo /etc/yum.repos.d/fedorautils.repo && yum -y install fedorautils"'
-
-# ReSet Screen rss
-alias rss=reset
-
 # Who command which I use with Conky
 alias cwho="who -H -w -u"
 
-# Upgrading Redhat/Debian
-alias yumyup="yum -y check-update;yum -y update;grub2-mkconfig -o /boot/grub2/grub.cfg"
-alias apt-getyup="apt-get -y update;apt-get -y upgrade;update-grub"
-alias aptitudeyup="aptitude -y update;aptitude -y upgrade;update-grub"
-
-alias aptyup="apt -y update;apt -y upgrade;update-grub"
-alias apty="apt -y"
-alias apt-gety="apt-get -y "
-alias aptitudey="aptitude -y "
-
 # inxi - https://smxi.org/docs/inxi.htm
-alias inxi-install="mkdir -p ~/.local/bin && cd ~/.local/bin && \wget -Nc https://github.com/smxi/inxi/raw/master/inxi && chmod +x inxi && cd"
-alias inxi-install-root="cd /usr/local/bin;\wget -Nc https://github.com/smxi/inxi/raw/master/inxi;chmod +x inxi;./inxi -U;cd"
-alias inxi-update="inxi -U"
+#alias inxi-install="mkdir -p ~/.local/bin && cd ~/.local/bin && \wget -Nc https://github.com/smxi/inxi/raw/master/inxi && chmod +x inxi && cd"
+#alias inxi-install-root="cd /usr/local/bin;\wget -Nc https://github.com/smxi/inxi/raw/master/inxi;chmod +x inxi;./inxi -U;cd"
+#alias inxi-update="inxi -U"
 
 # FINEID
 #alias ssh-add-sc="ssh-add -s $(find /usr/*lib -name 'opensc-pkcs11.so')"
 alias ssh-add-sc-pub="\ssh-add -L"
 
-## apt in Ubuntu 14.04+ and other distributions
-
-#if [ -f /usr/bin/apt ]; then
-#    alias aptitude=apt
-#    alias apt-get=apt
-#    alias apt-cache=apt
-#fi
-
-# Same as the previous, but for yum --> dnf
-
-if [ -f /usr/bin/dnf ]; then
-    alias yum=dnf
-fi
-
 # Homebrew
-alias homebrew-install="cd ~;git clone https://github.com/Homebrew/homebrew.git --depth=1;mkdir -p .local;rsync -aP homebrew/* .local;rsync -aP homebrew/.* .local;rm -rf homebrew"
-alias homebrew-install-root="cd /usr;git clone https://github.com/Homebrew/homebrew.git --depth=1;mkdir -p local;rsync -aP homebrew/* local;rsync -aP homebrew/.* local/;chmod -R 755 local;chown -R root:wheel local;rm -rf homebrew"
-alias linuxbrew-install="cd ~;git clone https://github.com/Homebrew/linuxbrew.git --depth=1;mkdir -p .local;rsync -aP linuxbrew/* .local;rsync -aP linuxbrew/.* .local;rm -rf linuxbrew"
-alias linuxbrew-install-root="cd /usr;git clone https://github.com/Homebrew/linuxbrew.git --depth=1;mkdir -p local;rsync -aP linuxbrew/* local;rsync -aP linuxbrew/.* local/;chmod -R 755 local;chown -R root:wheel local;rm -rf linuxbrew"
-export HOMEBREW_LOGS=$HOME/.cache/Homebrew/Logs
+#alias homebrew-install="cd ~;git clone https://github.com/Homebrew/homebrew.git --depth=1;mkdir -p .local;rsync -aP homebrew/* .local;rsync -aP homebrew/.* .local;rm -rf homebrew"
+#alias homebrew-install-root="cd /usr;git clone https://github.com/Homebrew/homebrew.git --depth=1;mkdir -p local;rsync -aP homebrew/* local;rsync -aP homebrew/.* local/;chmod -R 755 local;chown -R root:wheel local;rm -rf homebrew"
+#alias linuxbrew-install="cd ~;git clone https://github.com/Homebrew/linuxbrew.git --depth=1;mkdir -p .local;rsync -aP linuxbrew/* .local;rsync -aP linuxbrew/.* .local;rm -rf linuxbrew"
+#alias linuxbrew-install-root="cd /usr;git clone https://github.com/Homebrew/linuxbrew.git --depth=1;mkdir -p local;rsync -aP linuxbrew/* local;rsync -aP linuxbrew/.* local/;chmod -R 755 local;chown -R root:wheel local;rm -rf linuxbrew"
+#export HOMEBREW_LOGS=$HOME/.cache/Homebrew/Logs
 
 # OS X
-alias osx-server-caching-interface="serveradmin settings caching:Interface ="
+# What is this?
+#alias osx-server-caching-interface="serveradmin settings caching:Interface ="
 alias osx-show-hidden-files="defaults write com.apple.finder AppleShowAllFiles"
+# Workaround on unsupported devices?
 alias osx-airdrop-listenallif="defaults write com.apple.NetworkBrowser BrowseAllInterfaces"
 alias osx-set-updatecheck="defaults write /Library/Preferences/com.apple.SoftwareUpdate ScheduleFrequency"
 
 # Simple HTTPd with Python.
-alias python2-httpd="python2 -m SimpleHTTPServer"
-alias python3-httpd="python3 -m http.server"
+alias python-httpd="python3 -m http.server"
 
 # Resetting different desktop environments
-alias reset-gnome="rm -rf ~/.gnome ~/.gnome2 ~/.gconf ~/.gconfd ~/.metacity ~/.cache ~/.dbus ~/.dmrc ~/.mission-control ~/.thumbnails ~/.config/dconf/user ~/.compiz*"
-alias reset-unity="unity-tweak-tool --reset-unity"
-alias reset-kde="rm -rf ~/.kde4 ~/.kde"
-alias reset-lxpanel="rm -rf ~/.config/lxpanel;lxpanelctl restart"
-alias reset-xfce4="rm -rf ~/.config/xfce4"
-alias reset-matepanel="mate-panel --reset"
-
-# Show date in ISO 8601 format
-alias isodate='date -Is'
-alias isodateu='date -uIs'
-alias isodatea='date "+%Y-%m-%dT%H:%M:%S%z"'
-alias isodateua='date -u "+%Y-%m-%dT%H:%M:%S%z"'
+# TODO: I imagine these are broken
+#alias reset-gnome="rm -rf ~/.gnome ~/.gnome2 ~/.gconf ~/.gconfd ~/.metacity ~/.cache ~/.dbus ~/.dmrc ~/.mission-control ~/.thumbnails ~/.config/dconf/user ~/.compiz*"
+#alias reset-unity="unity-tweak-tool --reset-unity"
+#alias reset-kde="rm -rf ~/.kde4 ~/.kde"
+#alias reset-lxpanel="rm -rf ~/.config/lxpanel;lxpanelctl restart"
+#alias reset-xfce4="rm -rf ~/.config/xfce4"
+#alias reset-matepanel="mate-panel --reset"
 
 # Show information on PEM file.
 alias peminfo="openssl x509 -text -in"
@@ -535,26 +432,16 @@ alias mtrp6="mtr -rw6c 10"
 
 # pip
 alias pip="python -m pip"
-alias pip2="python2 -m pip"
 alias pip3="python3 -m pip"
-alias pippypy="pypy -m pip"
-alias pippypy2="pypy2 -m pip"
-alias pippypy3="pypy3 -m pip"
-alias pypypip=pippypy
-alias pypypip2=pippypy2
-alias pypypip3=pippypy3
-
-# apg with small letters, capital letters and numbers. I don't usually use
-# special characters as they sometimes have difficulties with some systems
-# and cross-platform operating systems.
-# APG IS LIMITED TO 255 CHARACTERS SO IT'S REPLACED WITH PWGEN!
-# Usage: apt-random <minimum length>
-alias apg-random="pwgen -sy"
+alias pypypip="pypy -m pip"
+alias pypypip3="pypy3 -m pip"
 
 # cp/mv using rsync. rcp appears to be link to scp in my system, so I can
 # safely use this alias.
-alias rcp="rsync -a --progress"
-alias rmv="rsync -a --progress --remove-source-files"
+if hash rsync 2>/dev/null; then
+    alias rcp="rsync -a --progress"
+    alias rmv="rsync -a --progress --remove-source-files"
+fi
 
 # Clear apt list cache
 alias clear-apt-list-cache="cd /var/lib/apt/lists && rm -f *|true && cd partial && rm -f *|true && cd"
@@ -574,10 +461,6 @@ alias connman-wlans='grep -E "Name|Passphrase" /var/lib/connman/wifi*/settings -
 # Meant for SSL certificates (IRC))
 alias lowernocolon="tr -d ':' | tr 'A-Z' 'a-z'"
 
-# As pacman and yay share the same flags
-#if hash yay 2>/dev/null; then
-#    alias pacman="LANG=en yay --needed"
-#else
 # I don't want to reinstall exact same versions that I have
 alias pacman="LANG=en pacman --needed"
 #fi
@@ -588,7 +471,7 @@ alias sailfish-nstatus='dbus-send --system --type=method_call --print-reply --de
 # apt build depedencies (without installing)
 alias apt-builddep="apt-rdepends --build-depends --follow=DEPENDS"
 
-# https://superuser.com/a/638033 - get embedded Windows key
+# https://superuser.com/a/638033 - get embedded Windows product key
 alias winkey="xxd /sys/firmware/acpi/tables/MSDM"
 
 # Always exec startx so Ctrl-Alt-Backspace won't lead to unlocked TTY.
@@ -617,35 +500,7 @@ function geoip() {
     geoiplookup6 $1
 }
 
-# Checks which package the command comes from. Copied from the ultimate bashrc https://goo.gl/qGK5j
-function cmdpkg() { PACKAGE=$(dpkg -S $(which $1) | cut -d':' -f1); echo "[${PACKAGE}]"; dpkg -s "${PACKAGE}" ;}
-
-# Down for everyone or just me? Copied from the ultimate bashrc https://goo.gl/qGK5j
-function downforme() {
-    RED='\e[1;31m'
-    GREEN='\e[1;32m'
-    YELLOW='\e[1;33m'
-    NC='\e[0m'
-    if [ $# = 0 ]
-    then
-        echo -e "${YELLOW}usage:${NC} downforme website_url"
-    else
-JUSTYOUARRAY=($(lynx -dump https://downforeveryoneorjustme.com/$1 | grep -o "It's just you"))
-        if [ ${#JUSTYOUARRAY} != 0 ]
-        then
-            echo -e "${RED}It's just you. \n${NC}$1 is up."
-        else
-            echo -e "${GREEN}It's not just you! \n${NC}$1 looks down from here."
-        fi
-    fi
-}
-
-# Topt10 commands, copied from the ultimate bashrc https://goo.gl/qGK5j
-function top10() {
-    # copyright 2007 - 2010 Christopher Bratusek
-    \history | awk '{a[$2]++ } END{for(i in a){print a[i] " " i}}' | sort -rn | head
-}
-
+# TODO: Is it bash or zshrc?
 # ex command. Copied from bashrc of bioterror ( https://ricecows.org/configs/bash/.bashrc ). Original comment below:
 ## for unit193 ;)
 ## use command "ex" to extract any archive files.
@@ -680,7 +535,7 @@ fi
 }
 
 # Given by nyuszika7h. Shortens GitHub URLs with git.io
-function gitio() {                                         
+function gitio() {
     curl -s -i https://git.io -F "url=$1" | grep --color=never -P '^Location: ' | awk '{ print $2 }'
 }
 
@@ -736,78 +591,15 @@ fi
 
 # Installing...
 bash -x ./install
+echo ""
+echo "shell-things: Installing finished."
+echo ""
 
 echo ""
-echo "shell-things: Everthing is now done :)"
+echo "shell-things: Everything is now done :)"
 echo ""
 
 cd
-
-}
-
-# This function will download and install sources.list.
-function sources-list-install {
-
-export RELEASE=$(lsb_release -sr)
-a[1]="https://raw.githubusercontent.com/Mikaela/shell-things/master/etc/apt/sources.list/$RELEASE"
-
-echo "I am now changing directory to /etc/apt/."
-echo ""
-cd /etc/apt/
-
-echo "I will now backup sources.list to sources.list.bak ."
-echo ""
-cp /etc/apt/sources.list /etc/apt/sources.list.bak
-
-echo "I will now download the sources.list file from https://raw.githubusercontent.com/Mikaela/shell-things/master/etc/apt/sources.list/$RELEASE and save it as /etc/apt/sources.list ."
-echo ""
-echo "" > /etc/apt/sources.list
-\wget ${a[1]} -O /etc/apt/sources.list
-#\curl -L ${a[1]} >> /etc/apt/sources.list
-
-echo ""
-echo "The new sources.list file should now be installed."
-echo ""
-
-echo "Finally, I will now run 'apt-get -y update' so the new sources.list is used."
-echo ""
-
-apt-get update
-
-echo "I have now finished everything that I was supposed to do."
-
-}
-
-# Same for Debian (codename instead of release)
-function sources-list-install-debian {
-
-export RELEASE=$(lsb_release -sc)
-a[1]="https://raw.githubusercontent.com/Mikaela/shell-things/master/etc/apt/sources.list/$RELEASE"
-
-echo "I am now changing directory to /etc/apt/."
-echo ""
-cd /etc/apt/
-
-echo "I will now backup sources.list to sources.list.bak ."
-echo ""
-cp /etc/apt/sources.list /etc/apt/sources.list.bak
-
-echo "I will now download the sources.list file from https://raw.githubusercontent.com/Mikaela/shell-things/master/etc/apt/sources.list/$RELEASE and save it as /etc/apt/sources.list ."
-echo ""
-echo "" > /etc/apt/sources.list
-\wget ${a[1]} -O /etc/apt/sources.list
-#\curl -L ${a[1]} >> /etc/apt/sources.list
-
-echo ""
-echo "The new sources.list file should now be installed."
-echo ""
-
-echo "Finally, I will now run 'apt-get -y update' so the new sources.list is used."
-echo ""
-
-apt-get update
-
-echo "I have now finished everything that I was supposed to do."
 
 }
 
@@ -825,35 +617,20 @@ fix-node () {
         fi
 }
 
-# This function fixes automatic startup in graphical sessions.
-# I have had issues with auto start not doing anything and this seems to 
-# fix it.
-fix-autostart() {
-    if [[ $USER = "root" ]]
-    then
-        mkdir -p /etc/xdg/autostart
-        chmod -R 755 /etc/xdg/autostart
-    fi
-    mkdir -p ~/.config/autostart
-    chmod -R 755 ~/.config/autostart
-}
-
 # This function removes and regenerates ssh host keys.
 
-ssh-regen-host-keys () {
-        rm /etc/ssh/ssh_host_*
-        ssh-keygen -t dsa -N "" -f /etc/ssh/ssh_host_dsa_key
-        ssh-keygen -t rsa -N "" -f /etc/ssh/ssh_host_rsa_key
-        ssh-keygen -t ecdsa -N "" -f /etc/ssh/ssh_host_ecdsa_key
-        ssh-keygen -t ed25519 -N "" -f /etc/ssh/ssh_host_ed25519_key
-}
+#ssh-regen-host-keys () {
+#        rm /etc/ssh/ssh_host_*
+#        ssh-keygen -t rsa -N "" -f /etc/ssh/ssh_host_rsa_key
+#        ssh-keygen -t ed25519 -N "" -f /etc/ssh/ssh_host_ed25519_key
+#}
 
 # This function erases Master Boot Record from device
 # Note: this is dangerous so this function will echo the command
 # instad of running it!
-erase-mbr() {
-    echo dd if=/dev/zero of=$1 bs=512 count=2
-}
+#erase-mbr() {
+#    echo dd if=/dev/zero of=$1 bs=512 count=2
+#}
 
 # Use clang if installed. It seems interesting and this is probably good
 # way to test it. This might not be a function, but I don't have any better
@@ -876,7 +653,7 @@ github-add-pulls() {
 # Get server SSL certificate fingerprint in MD5, SHA1 and SHA256.
 # Note that OpenSSL doesn't support IPv6 at time of writing (2015-01-13).
 serversslcertfp () {
-SSSLCFFN=$(openssl s_client -showcerts -connect $1 < /dev/null)
+    SSSLCFFN=$(openssl s_client -showcerts -connect $1 < /dev/null)
     # To see all validity information
     echo "$SSSLCFFN"
     # For getting the fingerprints
@@ -935,7 +712,7 @@ git-squash () {
     git commit
 }
 
-# Combining mtrp4 & mtp6
+# Combining mtrp4 & mtrp6
 mtrp() {
     mtrp4 $@
     mtrp6 $@
@@ -958,6 +735,8 @@ myip6 () {
         curl -L6s https://icanhazip.com/
     fi
 }
+
+# Source files for miscannellious modifications.
 
 # acme.sh
 if [ -f ~/.acme.sh/acme.sh.env ]; then
