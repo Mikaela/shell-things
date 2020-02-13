@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=IPFS Desktop (AppImage)
+Terminal=false
+Name=IPFS Desktop (AppImage)
+Exec=~/.local/bin/ipfs-desktop
+Type=Application
+Icon=/ipfs/QmdaoXCCXaXE1MMcFF3mB93CZLZqG7qKrdG5XQcbLRpQjX/ipfs.ico.png

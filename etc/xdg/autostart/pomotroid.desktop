@@ -1,6 +1,0 @@
-[Desktop Entry]
-Comment=Pomotroid in Firejail
-Terminal=false
-Name=Firejailed Pomotroid
-Exec=firejail --appimage --private ~/.local/bin/pomotroid --no-sandbox
-Type=Application
