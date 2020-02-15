@@ -480,6 +480,15 @@ alias startx="exec \startx"
 # cat list of kernel detected vulnerabilities/states with filenames
 alias linux-check-cpu-vulns="tail -n +1 /sys/devices/system/cpu/vulnerabilities/*"
 
+# gpg web key directory lookup
+alias wkdlookup="gpg --auto-key-locate nodefault,wkd --locate-keys"
+# Ubuntu key server, Tor not necessary due to dirmngr config
+alias gpg-uks="gpg --keyserver hkps://keyserver.ubuntu.com"
+alias gpg-uks-recv="gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys"
+
+# ports that are being listened to
+alias netstat-listening-ports="netstat -plnt"
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
