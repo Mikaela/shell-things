@@ -485,6 +485,8 @@ alias wkdlookup="gpg --auto-key-locate nodefault,wkd --locate-keys"
 # Ubuntu key server, Tor not necessary due to dirmngr config
 alias gpg-uks="gpg --keyserver hkps://keyserver.ubuntu.com"
 alias gpg-uks-recv="gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys"
+alias gpg-export-minimal-ascii="gpg --armor --export-options export-minimal --export"
+alias gpg-export-minimal-binary="gpg --no-armor --export-options export-minimal --export"
 
 # ports that are being listened to
 alias netstat-listening-ports="netstat -plnt"
