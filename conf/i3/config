@@ -47,7 +47,9 @@ set $TERMINAL xfce4-terminal
 # doesn't support `passwd -de`
 # i3lock options: black colour, cursor (that does nothing)
 # show failed attempts.
-set $ScreenLockCmd i3lock -c 000000 -p win -f
+#set $ScreenLockCmd i3lock -c 000000 -p win -f
+# tiling png background image
+set $ScreenLockCmd i3lock -t -i ~/.i3lockbackground.png -p win -f
 #set $ScreenLockCmd i3lock-fancy
 
 # Font for window titles. Will also be used by the bar unless a different
