@@ -717,7 +717,7 @@ transmission-torrents () {
     transmission-remote -l
 }
 transmission-magnet () {
-    transmission-remote -l -t $1 -i | grep magnet
+    transmission-remote -l -t $1 -i | \grep magnet | awk -F': ' '{print $2}'
 }
 
 # Merges the last $1 commits into one
