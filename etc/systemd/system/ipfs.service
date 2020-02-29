@@ -7,6 +7,8 @@ After=network.target
 # `ipfs profile apply server`.
 # I would probably recommend `ipfs init --profile=badgerds && ipfs profile apply server`
 # REF: https://github.com/ipfs/go-ipfs/issues/4343 "Running IPFS on VPS
+#      (closed in favour of https://github.com/ipfs/go-ipfs/issues/6932
+#      "[META] Private Addresses In Public")
 # providers triggers netscan detection, risking account termination"
 
 [Service]
