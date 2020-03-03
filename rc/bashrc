@@ -226,8 +226,8 @@ if [ -f ~/.gnupg/sshcontrol ]; then
 # otherwise use the normal ssh-agent
 else
     # if the output is going to /dev/null, it's non/existence doesn't matter
-    (ssh-agent -a /tmp/$USER.agent > /dev/null 2>&1)
-    export SSH_AUTH_SOCK=/tmp/$USER.agent
+    (ssh-agent -a /tmp/$USER.sshagent > /dev/null 2>&1)
+    export SSH_AUTH_SOCK=/tmp/$USER.sshagent
 fi
 
 # OS X ls colours (copied from https://apple.stackexchange.com/questions/33677/
