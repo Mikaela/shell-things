@@ -214,9 +214,21 @@ if [[ $USER = "root" ]]; then
     echo 'APT::Color "1";' > /etc/apt/apt.conf.d/99color
 fi
 
-# Copied from https://homepages.see.leeds.ac.uk/~eeaol/notes/2012/03/how_to_only_type_ssh_passphrase_once/
-export SSH_AUTH_SOCK=/tmp/$USER.agent
-(ssh-agent -a /tmp/$USER.agent > /dev/null 2>&1&)
+# if gpg[-agent] has sshcontrol file, use it as ssh-agent. sshcontrol should
+# include the authentication subkey keygrip from
+# `gpg --with-keygrip --list-keys`
+# Assumption: there is not going to be a sshcontrol file if `gpgconf` is not
+# installed or `sshcontrol` is trivial to remove.
+if [ -f ~/.gnupg/sshcontrol ]; then
+    export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+    gpgconf --launch gpg-agent
+    gpg-connect-agent updatestartuptty /bye >/dev/null 2>&1
+# otherwise use the normal ssh-agent
+else
+    # if the output is going to /dev/null, it's non/existence doesn't matter
+    (ssh-agent -a /tmp/$USER.agent > /dev/null 2>&1)
+    export SSH_AUTH_SOCK=/tmp/$USER.agent
+fi
 
 # OS X ls colours (copied from https://apple.stackexchange.com/questions/33677/
 export CLICOLOR=1
