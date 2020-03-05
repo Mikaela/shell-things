@@ -138,9 +138,9 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-# Default to stacking layout as it should be easy to make a grid and I
-# probably have too small monitor to benefit from "default",
-workspace_layout stacking
+# Tabbed uses less space and may show me when I have too many windows in a
+# single workspace
+workspace_layout tabbed
 
 # Centerize window titles
 title_align center
