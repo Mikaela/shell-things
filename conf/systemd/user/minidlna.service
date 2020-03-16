@@ -1,0 +1,12 @@
+[Unit]
+Description=lightweight DLNA/UPnP-AV server targeted at embedded systems
+
+[Service]
+Type=forking
+# ../../minidlna/minidlna.conf
+ExecStart=/usr/sbin/minidlnad -f %h/.minidlna/minidlna.conf -P %h/.minidlna/minidlna.pid
+#ExecReload=/bin/kill -HUP $MAINPID
+PIDFile=%h/.minidlna/minidlna.pid
+
+[Install]
+WantedBy=default.target
