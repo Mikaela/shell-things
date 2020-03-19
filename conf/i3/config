@@ -253,8 +253,8 @@ bindsym Control+$mod+l exec $ScreenLockCmd
 # suspend and hibernate, inspiration took from the nagbar for exiting i3.
 # Passwordless sudo for both commands is specified in
 # /etc/sudoers.d/hibernate
-bindsym $mod+Escape exec "i3-nagbar -t warning -m 'You pressed the SUSPEND shortcut. Do you really want to SUSPEND?' -B 'Yes, SUSPEND' '$ScreenLockCmd; sudo /usr/sbin/s2ram'"
-bindsym $mod+Shift+Escape exec "i3-nagbar -t warning -m 'You pressed the HIBERNATE shortcut. Do you really want to HIBERNATE?' -B 'Yes, HIBERNATE' '$ScreenLockCmd; sudo /usr/sbin/hibernate'"
+bindsym $mod+Escape exec "i3-nagbar -t warning -m 'You pressed the SUSPEND shortcut. Do you really want to SUSPEND?' -B 'Yes, SUSPEND' '$ScreenLockCmd; systemctl suspend'"
+bindsym $mod+Shift+Escape exec "i3-nagbar -t warning -m 'You pressed the HIBERNATE shortcut. Do you really want to HIBERNATE?' -B 'Yes, HIBERNATE' '$ScreenLockCmd; systemctl hibernate'"
 
 # Jumping to window with alert (the red colour)
 bindsym $mod+x [urgent=latest] focus
