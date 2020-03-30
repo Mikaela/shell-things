@@ -8,7 +8,7 @@
   <gpu-usage v='50'/>
 
   <!-- Slot Control -->
-  <power v='LIGHT'/>
+  <power v='MEDIUM'/>
 
   <!-- User Information -->
   <passkey v=''/>
