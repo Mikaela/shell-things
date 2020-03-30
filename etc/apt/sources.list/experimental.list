@@ -1,0 +1,9 @@
+## Experimental repos
+deb https://deb.debian.org/debian experimental main contrib non-free
+deb-src https://deb.debian.org/debian experimental main contrib non-free
+deb https://deb.debian.org/debian-debug experimental-debug main contrib non-free
+
+## Experimental repos over Tor
+#deb tor+http://vwakviie2ienjx6t.onion/debian experimental main contrib non-free
+#deb-src tor+http://vwakviie2ienjx6t.onion/debian experimental main contrib non-free
+#deb tor+http://ktqxbqrhg5ai2c7f.onion/debian-debug experimental-debug main contrib non-free
