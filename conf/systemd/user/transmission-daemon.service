@@ -1,0 +1,12 @@
+[Unit]
+# This is ust copied from the Debian package
+Description=Transmission BitTorrent Daemon
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/transmission-daemon -f --log-error
+ExecStop=/bin/kill -s STOP $MAINPID
+ExecReload=/bin/kill -s HUP $MAINPID
+
+[Install]
+WantedBy=default.target

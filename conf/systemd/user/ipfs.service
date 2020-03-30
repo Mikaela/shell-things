@@ -59,7 +59,6 @@ ExecStart=/home/mikaela/go/bin/ipfs daemon --routing=dht --enable-gc --enable-na
 #    amount of connection tolerable and won't cause issues.
 #
 Restart=on-failure
-User=mikaela
 
 [Install]
 WantedBy=default.target
