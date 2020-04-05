@@ -264,6 +264,9 @@ bindsym $mod+x [urgent=latest] focus
 bindsym Mod1+Tab exec --no-startup-id rofi -show window
 bindsym $mod+g exec --no-startup-id rofi -show window
 
+# Telakoi (dock in Finnish) the focused window
+bindsym $mod+t exec --no-startup-id kdocker -f
+
 # For some reason my keyboard has a dedicated button for calculator
 bindsym XF86Calculator exec --no-startup-id galculator
 
