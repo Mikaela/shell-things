@@ -485,6 +485,10 @@ alias gpg-export-minimal-binary="gpg --no-armor --export-options export-minimal 
 # ports that are being listened to
 alias netstat-listening-ports="netstat -plnt"
 
+# mpv music & music shuffle
+alias mpvm="mpv --no-video"
+alias mpvms="mpv --no-video --shuffle"
+
 # Allow custom aliases to be put in .aliases or .zsh_aliases .
 
 # .aliases
