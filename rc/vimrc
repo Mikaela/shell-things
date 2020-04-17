@@ -27,9 +27,13 @@ set background=dark
 
 "Use modelines!
 set modeline
-set tabstop=4   "four spaces is likely a tab
+
+" These may be difficult with multiple languages especially if Vim already
+" knows what to do
+"set tabstop=4   "four spaces is likely a tab
 "set shiftwidth=4
-set expandtab
+"set expandtab
+
 set autoindent
 
 " Longer history
@@ -67,6 +71,8 @@ set fileencoding=utf-8
 " via https://techwelkin.com/how-to-remove-byte-order-mark-bom-characters
 set nobomb
 
+" Apply rules per filetype.vim
+set filetype
 filetype plugin indent on
 
 " Return to last edit position when opening files (You want this!)
