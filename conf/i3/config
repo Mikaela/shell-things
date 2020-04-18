@@ -309,7 +309,7 @@ for_window [title="tracker - .*"] floating enable
 # going to depend on PulseEffects and it seems to be more reliable from repositories
 # at times
 #exec --no-startup-id flatpak run com.github.wwmm.pulseeffects --gapplication-service
-exec --no-startup-id pulseeffects --gapplication-service
+#exec --no-startup-id pulseeffects --gapplication-service
 
 exec --no-startup-id $TERMINAL -T htop -x htop
 exec --no-startup-id nm-applet
