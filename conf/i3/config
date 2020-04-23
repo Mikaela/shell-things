@@ -6,7 +6,7 @@
 # fonts-dejavu dbus-x11 arandr numlockx fcitx-bin fcitx-mozc conky-all
 # flatpak apparmor-notify caffeine keybase dino kdocker pavucontrol mumble
 # audacious jami-gnome telegram-desktop steam htop kdeconnect insync
-# nextcloud-client parcimonie lxqt-powermanagement pulseeffects
+# nextcloud-client parcimonie lxqt-powermanagement pulseeffects kteatime
 #
 # Keybase: https://keybase.io/docs/the_app/install_linux
 # Dino: https://software.opensuse.org/download.html?project=network:messaging:xmpp:dino&package=dino
@@ -358,6 +358,7 @@ exec --no-startup-id nextcloud --background
 exec --no-startup-id sleep 60 && parcimonie --with-dbus
 exec --no-startup-id sleep 70 && parcimonie-applet
 exec --no-startup-id sh -c "/opt/Mullvad\ VPN/mullvad-vpn"
+exec --no-startup-id kteatime
 
 # Flatpaks
 # ELECTRON! THISISIM
