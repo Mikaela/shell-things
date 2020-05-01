@@ -18,9 +18,10 @@ ExecStart=/home/mikaela/go/bin/ipfs daemon --routing=dht --enable-gc --enable-na
 # --mount - fuse for /ipfs and /ipns, see
 #   https://github.com/ipfs/go-ipfs/blob/master/docs/fuse.md as it requires
 #   some specific config, I am not setting it as default here.
-# --routing=dht - server requests to the network possibly using more
-#   bandwidth but also making content more findable (as opposed to
-#   dhtclient, not serving requests to the network saving bandwidth)
+# --routing=dht - if the IPFS node is publicly accessible, it serves as
+#   `dhtserver` to the network possibly using more bandwidth, but also making
+#   hosted content more findable. Otherwise it will work as `dhtclient` not
+#   serving the network, but also saving bandwidth
 # --enable-gc - automatic cleaning of unpinned files per rules in ipfs
 #   config, I think by default two hours or when the repo gets bigger than
 #   10G
