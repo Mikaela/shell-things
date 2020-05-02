@@ -1,8 +1,8 @@
 # Packages expected:
-# Debian: i3 suckless-tools rxvt-unicode-256color j4-dmenu-desktop
+# Debian: i3 suckless-tools j4-dmenu-desktop
 # gnome-screenshot i3lock sudo hibernate playerctl pulseaudio-utils
 # galculator network-manager-gnome redshift-gtk x11-xserver-utils
-# pasystray feh rofi pulsemixer libnotify-bin xcompmgr xfce4-terminal
+# pasystray feh rofi pulsemixer libnotify-bin xcompmgr konsole
 # fonts-dejavu dbus-x11 arandr numlockx fcitx-bin fcitx-mozc conky-all
 # flatpak apparmor-notify caffeine keybase dino kdocker pavucontrol mumble
 # audacious jami-gnome telegram-desktop steam htop kdeconnect insync
@@ -42,7 +42,7 @@
 set $mod Mod4
 
 # Stop repeating the same thing everywhere!
-set $TERMINAL xfce4-terminal
+set $TERMINAL konsole
 # For use without display managers. All display managers seem to be
 # horrible, LightDM user switching is insecure, GDM depends on GNOME, SDDM
 # doesn't support `passwd -de`
