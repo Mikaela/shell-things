@@ -223,9 +223,14 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Selenized black from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3-selenized-black.conf
-set $bg #181818
-set $black #252525
-set $br_black #3b3b3b
+# When there are two definitions of which one is commented and 000000 is
+# uncommented, I have adjusted to AMOLED black.
+#set $bg #181818
+set $bg #000000
+#set $black #252525
+#set $br_black #3b3b3b
+set $black #000000
+set $br_black #000000
 set $white #777777
 set $fg #b9b9b9
 set $br_white #dedede
@@ -343,9 +348,9 @@ exec --no-startup-id $TERMINAL -T htop -x htop
 exec --no-startup-id nm-applet
 exec --no-startup-id sleep 60 && pasystray --notify=all
 # Wallpaper, solid (AMOLED) black
-#exec --no-startup-id hsetroot -solid \#000000
-# Selenized black background (not AMOLED compatible)
-exec --no-startup-id hsetroot -solid \#181818
+exec --no-startup-id hsetroot -solid \#000000
+# Selenized black background (not AMOLED)
+#exec --no-startup-id hsetroot -solid \#181818
 # ~/.wallpaper as wallpaper
 #exec --no-startup-id feh --bg-scale ~/.wallpaper
 exec --no-startup-id xcompmgr -c -n
