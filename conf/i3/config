@@ -7,6 +7,7 @@
 # flatpak apparmor-notify caffeine keybase dino kdocker pavucontrol mumble
 # audacious jami-gnome telegram-desktop steam htop kdeconnect insync
 # nextcloud-client parcimonie lxqt-powermanagement pulseeffects kteatime
+# hsetroot
 #
 # Keybase: https://keybase.io/docs/the_app/install_linux
 # Dino: https://software.opensuse.org/download.html?project=network:messaging:xmpp:dino&package=dino
@@ -315,7 +316,7 @@ exec --no-startup-id $TERMINAL -T htop -x htop
 exec --no-startup-id nm-applet
 exec --no-startup-id sleep 60 && pasystray --notify=all
 # Wallpaper, solid black
-exec --no-startup-id xsetroot -solid \#000000
+exec --no-startup-id hsetroot -solid \#000000
 # ~/.wallpaper as wallpaper
 #exec --no-startup-id feh --bg-scale ~/.wallpaper
 exec --no-startup-id xcompmgr -c -n
