@@ -13,11 +13,11 @@ general {
         # weight for older devices. 5 appears to be Debian default, and I
         # guess it's enough often for seeing if the system is frozen when
         # staring at a clock.
-        interval = 5
-        # solarized dark copied from https://github.com/tobiaszwaszak/i3wm/blob/master/i3status.conf
-        color_good = "#859900"
-        color_bad = "#dc322f"
-        color_degraded = "#cb4b16"
+        interval = 1
+        # Selenized black from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3status-selenized-black.conf
+        color_good = "#70b433"
+        color_degraded = "#dbb32d"
+        color_bad = "#ed4a46"
 }
 
 # Logicish: colour changing things at first (load is often red especially
