@@ -42,7 +42,7 @@
 set $mod Mod4
 
 # Stop repeating the same thing everywhere!
-set $TERMINAL konsole
+set $TERMINAL konsole --hide-menubar
 # For use without display managers. All display managers seem to be
 # horrible, LightDM user switching is insecure, GDM depends on GNOME, SDDM
 # doesn't support `passwd -de`
@@ -344,7 +344,7 @@ for_window [title="tracker - .*"] floating enable
 #exec --no-startup-id flatpak run com.github.wwmm.pulseeffects --gapplication-service
 #exec --no-startup-id pulseeffects --gapplication-service
 
-exec --no-startup-id $TERMINAL -T htop -x htop
+exec --no-startup-id $TERMINAL -e htop
 exec --no-startup-id nm-applet
 exec --no-startup-id sleep 60 && pasystray --notify=all
 # Wallpaper, solid (AMOLED) black
