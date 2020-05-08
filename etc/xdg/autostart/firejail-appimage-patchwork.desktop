@@ -1,0 +1,6 @@
+[Desktop Entry]
+Comment=patchwork in Firejail
+Terminal=false
+Name=Firejailed patchwork
+Exec=sh -c 'mkdir -p ~/.config/firejailed/patchwork/ && firejail --noprofile --appimage --private=~/.config/firejailed/patchwork/ ~/.local/bin/patchwork --no-sandbox'
+Type=Application
