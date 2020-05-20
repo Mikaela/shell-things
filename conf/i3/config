@@ -318,6 +318,7 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pulsemixer --change-volume +5 
 bindsym XF86AudioMute exec --no-startup-id pulsemixer --toggle-mute # && notify-send -t 500 "🔇 pressed"
 
 bindsym $mod+p exec arandr
+bindsym $mod+Shift+p exec arandr
 bindsym $mod+Shift+a exec pavucontrol -t 5
 # m for mumble
 bindsym $mod+m exec mumble
