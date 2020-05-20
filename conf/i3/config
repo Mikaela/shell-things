@@ -416,17 +416,28 @@ exec --no-startup-id kteatime
 #exec --no-startup-id flatpak run chat.rocket.RocketChat
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
+
+## Redshift for better night display
 # Centre of Lauttasaari
 exec --no-startup-id redshift-gtk -l 60.15937:24.87530
 # Centre of Kotka
 #exec --no-startup-id redshift-gtk -l 60.46742:26.94508
+
 # Sedric - mirror displays
 #exec --no-startup-id xrandr --output HDMI-1 --same-as eDP-1
+
 # Sedric - double monitor via arandr
 #exec --no-startup-id xrandr --output VGA-1 --off --output HDMI-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output eDP-1 --mode 1920x1080 --pos 0x0 --rotate normal
+# workspaces 1 to 5 on HDMI-1 so 6 and <6 will be on the other display
 #workspace 1 output HDMI-1
+#workspace 2 output HDMI-1
+#workspace 3 output HDMI-1
+#workspace 4 output HDMI-1
+#workspace 5 output HDMI-1
+
 # Sedric - HDMI-only. Disable via TTY if appropiate.
 #exec --no-startup-id xrandr --output VGA-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --off
+
 # Special keyboard options that WILL CONFUSE YOU.
 exec --no-startup-id setxkbmap -option compose:menu -option terminate:ctrl_alt_bksp -option nbsp:none -option caps:backspace -option shift:both_capslock
 #-option grp:ctrls_toggle -layout fi,cz,epo -variant ,qwerty,
