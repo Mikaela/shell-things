@@ -15,7 +15,10 @@ Host *
     # closed.
     ControlPersist yes
 
+    # SSH Agent forwarding is behind a lot of security breaches, never do it
+    # Most recently https://github.com/matrix-org/matrix.org/issues/371
     ForwardAgent no
+    # Never do that either https://security.stackexchange.com/a/14817/234532
     ForwardX11 no
 
     # Debian sets this as yes, upstream no. TODO: What is it?
