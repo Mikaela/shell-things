@@ -1,6 +1,10 @@
-# /etc/ssh/ssh_config - at least the Arch default was full of comments
-# so I think it makes more sense if I just paste my normal config here
-# without host specific options.
+# This works as a /etc/ssh/ssh_config or ~/.ssh/config like how I keep
+# using it. Higher option takes priority (keep `Host *` bottom)
+
+# User specific configs
+Include ~/.ssh/config.d/*.conf
+# Debian includes this
+Include /etc/ssh/ssh_config.d/*.conf
 
 Host *
     # Path for the control socket.
@@ -13,6 +17,9 @@ Host *
 
     ForwardAgent no
     ForwardX11 no
+
+    # Debian sets this as yes, upstream no. TODO: What is it?
+    #GSSAPIAuthentication yes
 
     # Ensure KnownHosts are unreadable if leaked.
     HashKnownHosts yes
