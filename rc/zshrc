@@ -128,7 +128,6 @@ fi
 # Enable core files.
 (ulimit -c unlimited&)
 
-
 # More colours 
 if [[ $TERM == 'xterm' ]]; then
 export TERM=xterm-256color
@@ -395,9 +394,6 @@ alias osx-show-hidden-files="defaults write com.apple.finder AppleShowAllFiles"
 alias osx-airdrop-listenallif="defaults write com.apple.NetworkBrowser BrowseAllInterfaces"
 alias osx-set-updatecheck="defaults write /Library/Preferences/com.apple.SoftwareUpdate ScheduleFrequency"
 
-# Simple HTTPd with Python.
-alias python-httpd="python3 -m http.server"
-
 # Resetting different desktop environments
 # TODO: I imagine these are broken
 #alias reset-gnome="rm -rf ~/.gnome ~/.gnome2 ~/.gconf ~/.gconfd ~/.metacity ~/.cache ~/.dbus ~/.dmrc ~/.mission-control ~/.thumbnails ~/.config/dconf/user ~/.compiz*"
@@ -424,11 +420,18 @@ alias ixio="curl -F 'f:1=<-' ix.io"
 alias mtrp4="mtr -rw4c 10"
 alias mtrp6="mtr -rw6c 10"
 
+# Simple HTTPd with Python.
+alias python-httpd="python3 -m http.server"
+
 # pip
 alias pip="python -m pip"
 alias pip3="python3 -m pip"
 alias pypypip="pypy -m pip"
 alias pypypip3="pypy3 -m pip"
+
+# Python virtualenv/the new venv comparsion:
+# https://virtualenv.pypa.io/en/latest/#virtualenv / python3-venv (Debian)
+alias venv="python3 -m venv"
 
 # cp/mv using rsync. rcp appears to be link to scp in my system, so I can
 # safely use this alias.
