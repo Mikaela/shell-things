@@ -614,6 +614,7 @@ if [ -d $SHELL_THINGS_REPO ]; then
     cd $SHELL_THINGS_REPO
     git remote set-url origin https://gitea.blesmrt.net/Mikaela/shell-things.git
     git pull
+    sleep 10
     echo ""
     echo "shell-things: Installing/Upgrading..."
     echo ""
@@ -624,6 +625,7 @@ else
     echo ""
     git clone https://gitea.blesmrt.net/Mikaela/shell-things.git $SHELL_THINGS_REPO
     cd $SHELL_THINGS_REPO
+    sleep 10
     echo ""
     echo "shell-things: Installing/Upgrading..."
     echo ""
