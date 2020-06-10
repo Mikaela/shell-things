@@ -1,0 +1,1 @@
+CapsLock:: Send {BackSpace}
