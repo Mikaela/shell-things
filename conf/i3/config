@@ -16,7 +16,7 @@
 # Mullvad: TODO
 #
 # Flatpaks expected: org.gajim.Gajim org.gajim.Gajim.Plugin.omemo
-# de.haeckerfelix.gradio com.wire.WireDesktop org.signal.Signal
+# de.haeckerfelix.Shortwave com.wire.WireDesktop org.signal.Signal
 # io.github.NhekoReborn.Nheko com.github.wwmm.pulseeffects
 # im.riot.Riot chat.rocket.RocketChat
 #
@@ -400,7 +400,7 @@ exec --no-startup-id kteatime
 # ELECTRON! THISISIM
 #exec --no-startup-id flatpak run com.wire.WireDesktop
 #--startup # Wire needs to not trayify so I will see notifications
-#exec --no-startup-id flatpak run de.haeckerfelix.gradio
+#exec --no-startup-id flatpak run de.haeckerfelix.Shortwave
 # THISISIM
 #exec --no-startup-id flatpak run org.gajim.Gajim --quiet
 # ELECTRON! I have to autostart it as Signal won't use tray icon without
