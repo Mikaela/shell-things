@@ -590,6 +590,7 @@ if [ -d $SHELL_THINGS_REPO ]; then
     echo ""
     cd $SHELL_THINGS_REPO
     git remote set-url origin https://gitea.blesmrt.net/Mikaela/shell-things.git
+    git fetch --all
     git pull
     sleep 10
     echo ""
