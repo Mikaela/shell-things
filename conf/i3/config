@@ -436,6 +436,15 @@ exec --no-startup-id redshift-gtk -l 60.15937:24.87530
 #workspace 4 output HDMI-1
 #workspace 5 output HDMI-1
 
+# Kincarron - double monitor via arandr
+#exec --no-startup-id xrandr --output LVDS-1 --primary --mode 1280x800 --pos 1920x280 --rotate normal --output VGA-1 --off --output HDMI-1 --mode 1920x1080i --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-2 --off --output DP-2 --off
+# workspaces 1 to 5 on LVDS-1 so 6 and <6 will be on the other display
+#workspace 1 output LVDS-1
+#workspace 2 output LVDS-1
+#workspace 3 output LVDS-1
+#workspace 4 output LVDS-1
+#workspace 5 output LVDS-1
+
 # Sedric - HDMI-only. Disable via TTY if appropiate.
 #exec --no-startup-id xrandr --output VGA-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --off
 
