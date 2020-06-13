@@ -54,3 +54,5 @@
 	program = gpgv2
 [tag]
 	forceSignAnnotated = true
+[pull]
+	ff = only
