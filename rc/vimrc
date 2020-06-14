@@ -23,7 +23,7 @@ set number      " Show line numbers.
 set ruler       " Show the line and column number of the cursor position,
                 " separated by a comma.
 
-set background=dark
+set background=light
 
 "Use modelines!
 set modeline
@@ -51,9 +51,9 @@ set wildmode=list:longest
 set visualbell
 
 " gvim has light background
-if has('gui_running')
-    set background=light
-endif
+"if has('gui_running')
+"    set background=light
+"endif
 
 " Show hidden characters via
 " https://www.perturb.org/display/679_Make_Vim_show_hidden_characters.html
