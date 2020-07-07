@@ -15,13 +15,13 @@ general {
         # staring at a clock.
         interval = 1
         # Selenized black from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3status-selenized-black.conf
-        #color_good = "#70b433"
-        #color_degraded = "#dbb32d"
-        #color_bad = "#ed4a46"
+        color_good = "#70b433"
+        color_degraded = "#dbb32d"
+        color_bad = "#ed4a46"
         # Selenized light from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3status-selenized-light.conf
-        color_good = "#489100"
-        color_degraded = "#ad8900"
-        color_bad = "#d2212d"
+        #color_good = "#489100"
+        #color_degraded = "#ad8900"
+        #color_bad = "#d2212d"
 }
 
 # Logicish: colour changing things at first (load is often red especially

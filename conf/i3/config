@@ -226,58 +226,58 @@ bindsym $mod+r mode "resize"
 # When there are two definitions of which one is commented and 000000 is
 # uncommented, I have adjusted to AMOLED black.
 ##set $bg #181818
-#set $bg #000000
+set $bg #000000
 ##set $black #252525
 ##set $br_black #3b3b3b
-#set $black #000000
-#set $br_black #000000
-#set $white #777777
-#set $fg #b9b9b9
-#set $br_white #dedede
+set $black #000000
+set $br_black #000000
+set $white #777777
+set $fg #b9b9b9
+set $br_white #dedede
 #
-#set $red #ed4a46
-#set $green #70b433
-#set $yellow #dbb32d
-#set $blue #368aeb
-#set $magenta #eb6eb7
-#set $cyan #3fc5b7
-#set $orange #e67f43
-#set $violet #a580e2
+set $red #ed4a46
+set $green #70b433
+set $yellow #dbb32d
+set $blue #368aeb
+set $magenta #eb6eb7
+set $cyan #3fc5b7
+set $orange #e67f43
+set $violet #a580e2
 #
-#set $br_red #ff5e56
-#set $br_green #83c746
-#set $br_yellow #efc541
-#set $br_blue #4f9cfe
-#set $br_magenta #ff81ca
-#set $br_cyan #56d8c9
-#set $br_orange #fa9153
-#set $br_violet #b891f5
+set $br_red #ff5e56
+set $br_green #83c746
+set $br_yellow #efc541
+set $br_blue #4f9cfe
+set $br_magenta #ff81ca
+set $br_cyan #56d8c9
+set $br_orange #fa9153
+set $br_violet #b891f5
 
 # Selenized light from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3-selenized-light.conf
-set $bg #fbf3db
-set $black #ece3cc
-set $br_black #d5cdb6
-set $white #909995
-set $fg #53676d
-set $br_white #3a4d53
+#set $bg #fbf3db
+#set $black #ece3cc
+#set $br_black #d5cdb6
+#set $white #909995
+#set $fg #53676d
+#set $br_white #3a4d53
 #
-set $red #d2212d
-set $green #489100
-set $yellow #ad8900
-set $blue #0072d4
-set $magenta #ca4898
-set $cyan #009c8f
-set $orange #c25d1e
-set $violet #8762c6
+#set $red #d2212d
+#set $green #489100
+#set $yellow #ad8900
+#set $blue #0072d4
+#set $magenta #ca4898
+#set $cyan #009c8f
+#set $orange #c25d1e
+#set $violet #8762c6
 #
-set $br_red #cc1729
-set $br_green #428b00
-set $br_yellow #a78300
-set $br_blue #006dce
-set $br_magenta #c44392
-set $br_cyan #00978a
-set $br_orange #bc5819
-set $br_violet #825dc0
+#set $br_red #cc1729
+#set $br_green #428b00
+#set $br_yellow #a78300
+#set $br_blue #006dce
+#set $br_magenta #c44392
+#set $br_cyan #00978a
+#set $br_orange #bc5819
+#set $br_violet #825dc0
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available) CHANGEME
@@ -285,6 +285,16 @@ bar {
         position top
         status_command LC_ALL=fi_FI.utf8 i3status
         # Selenized black from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3-selenized-black.conf
+        colors {
+            separator $blue
+            background $bg
+            statusline $br_white
+            focused_workspace $green $green $bg
+            active_workspace $cyan $blue $black
+            inactive_workspace $black $black $fg
+            urgent_workspace $yellow $yellow $black
+               }
+        # Selenized light from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3-selenized-light.conf
         #colors {
         #    separator $blue
         #    background $bg
@@ -294,31 +304,21 @@ bar {
         #    inactive_workspace $black $black $fg
         #    urgent_workspace $yellow $yellow $black
         #       }
-        # Selenized light from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3-selenized-light.conf
-        colors {
-            separator $blue
-            background $bg
-            statusline $br_white
-            focused_workspace $green $green $bg
-            active_workspace $cyan $blue $black
-            inactive_workspace $black $black $fg
-            urgent_workspace $yellow $yellow $black
-        }
 }
 
 # Selenized black from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3-selenized-black.conf
-# clientclass border backgr. text indicator
-#client.focused $green $green $black $blue
-#client.focused_inactive $cyan $cyan $black $violet
-#client.unfocused $black $black $fg $white
-#client.urgent $yellow $yellow $black $orange
-
-# Selenized light from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3-selenized-light.conf
 # clientclass border backgr. text indicator
 client.focused $green $green $black $blue
 client.focused_inactive $cyan $cyan $black $violet
 client.unfocused $black $black $fg $white
 client.urgent $yellow $yellow $black $orange
+
+# Selenized light from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3-selenized-light.conf
+# clientclass border backgr. text indicator
+#client.focused $green $green $black $blue
+#client.focused_inactive $cyan $cyan $black $violet
+#client.unfocused $black $black $fg $white
+#client.urgent $yellow $yellow $black $orange
 
 # Screenshotting
 bindsym Shift+Print exec gnome-screenshot -i
