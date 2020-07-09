@@ -6,4 +6,5 @@
 # Using dbus-launch seems to be necessary here to get dbus up, otherwise
 # there are errors about it missing and pasystray & nm-applet cannot be
 # interacted with.
+#exec dbus-launch --exit-with-session mate-session
 exec dbus-launch --exit-with-session i3
