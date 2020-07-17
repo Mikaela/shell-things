@@ -13,7 +13,7 @@ general {
         # weight for older devices. 5 appears to be Debian default, and I
         # guess it's enough often for seeing if the system is frozen when
         # staring at a clock.
-        interval = 1
+        interval = 5
         # Selenized black from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3status-selenized-black.conf
         color_good = "#70b433"
         color_degraded = "#dbb32d"
@@ -92,10 +92,10 @@ tztime utc {
 
 #tztime local {
 time {
-        # Finnishish formatting.
-        #format = "%Z: %A %d. %B %Y, %H.%M.%S(%z)"
-        # I guess ISO 8601 (+ mix from UTC) just makes the most sense to me
-        format = "%Z: (%a) %F %H.%M.%S%z"
+        # Finnishish formatting with my adjustments
+        #format = "%Y-W%V/%a %d. %Bta %Y/%H.%M.%S%z"
+        # %V = week number counted from first week with 4 days
+        format = "%Y-W%V (%a/%B) / %F %H.%M.%S%z"
 }
 
 volume master {
