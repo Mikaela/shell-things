@@ -94,8 +94,9 @@ tztime utc {
 time {
         # Finnishish formatting with my adjustments
         #format = "%Y-W%V/%a %d. %Bta %Y/%H.%M.%S%z"
+        # %G = week based year
         # %V = week number counted from first week with 4 days
-        format = "%Y-W%V (%a/%B) / %F %H.%M.%S%z"
+        format = "%G-W%V-%u (%a/%B) / %F %H.%M.%S%z"
 }
 
 volume master {
