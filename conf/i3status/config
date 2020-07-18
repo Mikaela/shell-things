@@ -90,13 +90,25 @@ tztime utc {
         format = "%Z: %Y-%m-%d %H:%M:%S%z"
 }
 
+# Date format explanations
+# %G = week based year
+# %V = week number counted from first week with 4 days
+# %u = week-day-number (1 = mon, 7 = sun)
+# %a = week day abbreviation (e.g. ma for maanantai (FI))
+# %B = unabbreviated month name (e.g. heinäkuu (FI))
+# %Y = actual year
+# %j = ordinal day of the year, from 000 to 366 (e.g. 201)
+# %F = year-month-day e.g. 2020-07-19
+# %H = 24H hour
+# %M = minute
+# %S = seconds
+# %z = timezone offset to UTC, e.g. +0300
+
 #tztime local {
 time {
         # Finnishish formatting with my adjustments
         #format = "%Y-W%V/%a %d. %Bta %Y/%H.%M.%S%z"
-        # %G = week based year
-        # %V = week number counted from first week with 4 days
-        format = "%G-W%V-%u (%a/%B) / %F %H.%M.%S%z"
+        format = "%G-W%V-%u %Y-%j / (%a/%B) / %F %H.%M.%S%z"
 }
 
 volume master {
