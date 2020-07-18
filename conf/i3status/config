@@ -108,7 +108,7 @@ tztime utc {
 time {
         # Finnishish formatting with my adjustments
         #format = "%Y-W%V/%a %d. %Bta %Y/%H.%M.%S%z"
-        format = "%G-W%V-%u %Y-%j / (%a/%B) / %F %H.%M.%S%z"
+        format = "%G-W%V-%u/%Y-%j/%a/%B/%F %H.%M.%S%z"
 }
 
 volume master {
