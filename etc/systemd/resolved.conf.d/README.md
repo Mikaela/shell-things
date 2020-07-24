@@ -2,7 +2,7 @@
 
 ### Files explained
 
-* everywhere.conf - configuration that doesn't affect DNS servers, attempts
+* 00-everywhere.conf - configuration that doesn't affect DNS servers, attempts
   to use DNSSEC and DoT and if it fails, doesn't care and uses insecure
   configuration.
 * quad9-compat.conf - non-tech person config for Quad9, same as above except
