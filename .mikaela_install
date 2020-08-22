@@ -11,7 +11,7 @@ cat .mikaela/pastebinit.xml > ~/.pastebinit.xml
 cat .mikaela/environment > ~/.environment
 cat .mikaela/gitconfig > ~/.gitconfig
 mkdir -p ~/.ssh
-cat .mikaela/keys/ssh > ~/.ssh/authorized_keys
+cat .mikaela/keys/authorized_keys > ~/.ssh/authorized_keys
 cat etc/ssh/ssh_config > ~/.ssh/config
 touch ~/.MIKAELA_GREP
 set +x
