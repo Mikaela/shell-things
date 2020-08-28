@@ -417,8 +417,10 @@ exec --no-startup-id caffeine-indicator
 #exec --no-startup-id jami-gnome -r
 #exec --no-startup-id telegram-desktop -many -startintray
 #exec --no-startup-id sleep 180 && telegram-desktop -many -workdir ~/.config/T2L-telegram -startintray
-# workaround i3status not detecting battery, fixed
-#exec --no-startup-id lxqt-powermanagement
+# Originally to workaround i3status which I actually fixed, now in hopes of
+# being more verbose when battery is about to run off and not have nasty
+# surprises...
+exec --no-startup-id lxqt-powermanagement
 
 # https://github.com/Nheko-Reborn/nheko/issues/79 - 100 % background CPU
 # THISISIM
