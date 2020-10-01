@@ -7,7 +7,7 @@
 # flatpak apparmor-notify caffeine keybase dino kdocker pavucontrol mumble
 # audacious jami-gnome telegram-desktop steam htop kdeconnect insync
 # nextcloud-client parcimonie lxqt-powermanagement pulseeffects kteatime
-# hsetroot
+# hsetroot tmux
 #
 # Keybase: https://keybase.io/docs/the_app/install_linux
 # Dino: https://software.opensuse.org/download.html?project=network:messaging:xmpp:dino&package=dino
@@ -404,7 +404,7 @@ exec --no-startup-id numlockx on
 # see also pam_environment https://wiki.archlinux.org/index.php/Fcitx#Non_desktop_environment
 exec --no-startup-id fcitx
 #exec --no-startup-id kdocker -m -d 300 $TERMINAL
-exec --no-startup-id $TERMINAL
+exec --no-startup-id $TERMINAL -e tmux
 exec --no-startup-id conky
 exec --no-startup-id aa-notify -p -s 1 -w 60
 exec --no-startup-id caffeine-indicator
