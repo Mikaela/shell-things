@@ -1,5 +1,6 @@
 Provider,DoH,DoT,IPv6,IPv6,IPv4,IPv4
 AdGuard,https://dns.adguard.com/dns-query,dns.adguard.com,2a10:50c0::ad1:ff,2a10:50c0::ad2:ff,94.140.14.14,94.140.15.15
+AdGuard Family,https://dns-family.adguard.com/dns-query,dns-family.adguard.com,2a10:50c0::bad1:ff,2a10:50c0::bad2:ff,94.140.14.15,94.140.15.16
 Cloudflare,https://cloudflare-dns.com/dns-query,one.one.one.one,2606:4700:4700::1001,2606:4700:4700::1111,1.1.1.1,1.0.0.1
 Cloudflare antimalware,https://security.cloudflare-dns.com/dns-query,,,,1.1.1.2,1.0.0.2
 Cloudflare MozillaFirefox,https://mozilla.cloudflare-dns.com/dns-query,,,,,
