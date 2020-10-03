@@ -11,4 +11,5 @@ Cloudflare MozillaFirefox,https://mozilla.cloudflare-dns.com/dns-query,,,,,
 NextDNS,https://dns.nextdns.io,dns.nextdns.io,2a07:a8c1::,2a07:a8c0::,45.90.30.0,45.90.28.0
 NextDNS Firefox,https://firefox.dns.nextdns.io,,,,,
 OpenDNS,https://doh.opendns.com/dns-query,,2620:119:35::35,2620:119:53::53,208.67.222.222,208.67.220.220
+OpenDNS Family,https://doh.familyshield.opendns.com/dns-query,,,,208.67.222.123,208.67.220.123
 Quad9,https://dns.quad9.net/dns-query,dns.quad9.net,2620:fe::fe,2620:fe::9,9.9.9.9,149.112.112.112
