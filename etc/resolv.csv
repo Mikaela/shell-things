@@ -13,3 +13,4 @@ NextDNS Firefox,https://firefox.dns.nextdns.io,,,,,
 OpenDNS,https://doh.opendns.com/dns-query,,2620:119:35::35,2620:119:53::53,208.67.222.222,208.67.220.220
 OpenDNS Family,https://doh.familyshield.opendns.com/dns-query,,,,208.67.222.123,208.67.220.123
 Quad9,https://dns.quad9.net/dns-query,dns.quad9.net,2620:fe::fe,2620:fe::9,9.9.9.9,149.112.112.112
+Quad9 ECS,https://dns11.quad9.net/dns-query,dns11.quad9.net,2620:fe::11,2620:fe::fe:11,9.9.9.11,149.112.112.11
