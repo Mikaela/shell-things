@@ -493,6 +493,9 @@ exec --no-startup-id redshift-gtk -l 60.15937:24.87530
 #workspace 4 output LVDS-1
 #workspace 5 output LVDS-1
 
+# Kincarron - mic in -> audio out
+#exec --no-startup-id pactl load-module module-loopback latency_msec=1
+
 # Sedric - HDMI-only. Disable via TTY if appropiate.
 #exec --no-startup-id xrandr --output VGA-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --off
 
