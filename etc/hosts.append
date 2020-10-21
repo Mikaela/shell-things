@@ -1,3 +1,4 @@
+
 # abusing this shell-things / this hosts.append file to cat into /etc/hosts
 # for blocking these specific domains with systemd-resolved like
 # /etc/unbound/unbound.conf.d/blocklist.conf to avoid logs/NextDNS spamming
