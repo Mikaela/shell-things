@@ -1,0 +1,6 @@
+[Desktop Entry]
+Comment=chatterino in Firejail
+Terminal=false
+Name=Firejailed chatterino
+Exec=sh -c 'mkdir -p ~/.config/firejailed/chatterino/ && firejail --noprofile --appimage --private=~/.config/firejailed/chatterino/ ~/.local/bin/chatterino'
+Type=Application
