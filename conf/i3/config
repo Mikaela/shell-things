@@ -356,9 +356,15 @@ bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause && notify-send -
 #bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $sink toggle # mute sound
 # Apparently pasystray alerts me of the status changes, so I don't have to
 # echo them by myself.
-bindsym XF86AudioLowerVolume exec --no-startup-id pulsemixer --change-volume -5 # && notify-send -t 500 "$(pulsemixer --get-volume)"
-bindsym XF86AudioRaiseVolume exec --no-startup-id pulsemixer --change-volume +5 # && notify-send -t 500 "$(pulsemixer --get-volume)"
-bindsym XF86AudioMute exec --no-startup-id pulsemixer --toggle-mute # && notify-send -t 500 "🔇 pressed"
+# pulseaudio bindings
+#bindsym XF86AudioLowerVolume exec --no-startup-id pulsemixer --change-volume -5 # && notify-send -t 500 "$(pulsemixer --get-volume)"
+#bindsym XF86AudioRaiseVolume exec --no-startup-id pulsemixer --change-volume +5 # && notify-send -t 500 "$(pulsemixer --get-volume)"
+#bindsym XF86AudioMute exec --no-startup-id pulsemixer --toggle-mute # && notify-send -t 500 "🔇 pressed"
+
+# amixer / alsamixer / alsa bindings
+bindsym XF86AudioLowerVolume exec --no-startup-id notify-send -t 500 "$(amixer set Master 2dB-)"
+bindsym XF86AudioRaiseVolume exec --no-startup-id notify-send -t 500 "$(amixer set Master 2dB+)"
+bindsym XF86AudioMute exec --no-startup-id notify-send -t 500 "$(amixer set Master toggle)"
 
 bindsym $mod+p exec arandr
 bindsym $mod+Shift+p exec arandr
