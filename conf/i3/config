@@ -1,6 +1,6 @@
 # Packages expected (just break line-length!):
 # Debian: i3 suckless-tools j4-dmenu-desktop gnome-screenshot i3lock sudo hibernate playerctl galculator network-manager-gnome redshift-gtk x11-xserver-utils feh rofi libnotify-bin xcompmgr konsole fonts-dejavu dbus-x11 arandr numlockx fcitx-bin fcitx-mozc conky-all flatpak apparmor-notify caffeine kdocker mumble audacious telegram-desktop steam htop kdeconnect nextcloud-client parcimonie lxqt-powermanagement kteatime hsetroot tmux
-# ALSA: alsa-utils apulse
+# ALSA: alsa-utils apulse coreutils
 #    NOTE! apulse is a wrapper and `apulse` is put in front of pulseaudio requiring app
 # pulseaudio: pulseaudio-utils pasystray pulsemixer pavucontrol pulseeffects
 # insync: https://www.insynchq.com/downloads
@@ -373,6 +373,13 @@ for_window [title="galculator"] floating enable
 for_window [title="tracker - .*"] floating enable
 
 # Autostarts
+
+# Sounds with alsamixer amixer
+exec --no-startup-id touch ~/.config/asound.state
+# Debian doesn't have /usr/sbin for non-root. CHANGEME ?
+exec --no-startup-id /usr/sbin/alsactl rdaemon -f ~/.config/asound.state
+# Alsa seems to need something to be played before it does anything so...
+exec --no-startup-id aplay $(mktemp)
 
 # I generally have flatpaks separately near the bottom, but other things are
 # going to depend on PulseEffects and it seems to be more reliable from repositories
