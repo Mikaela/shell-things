@@ -520,6 +520,12 @@ alias netstat-listening-ports="netstat -plnt"
 alias mpvm="mpv --no-video"
 alias mpvms="mpv --no-video --shuffle"
 
+# Compatibility with my i3 alsactl mess
+if [ -f ~/.config/asound.state ]
+then
+  alias alsactl="\alsactl -f ~/.config/asound.state"
+fi
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
