@@ -362,13 +362,16 @@ bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause && notify-send -
 #bindsym XF86AudioMute exec --no-startup-id pulsemixer --toggle-mute # && notify-send -t 500 "🔇 pressed"
 
 # amixer / alsamixer / alsa bindings
-bindsym XF86AudioLowerVolume exec --no-startup-id notify-send -t 500 "$(amixer set Master 2dB-)"
-bindsym XF86AudioRaiseVolume exec --no-startup-id notify-send -t 500 "$(amixer set Master 2dB+)"
-bindsym XF86AudioMute exec --no-startup-id notify-send -t 500 "$(amixer set Master toggle)"
+bindsym XF86AudioLowerVolume exec --no-startup-id notify-send -t 500 "$(amixer -M set Master 2dB-)"
+bindsym XF86AudioRaiseVolume exec --no-startup-id notify-send -t 500 "$(amixer -M set Master 2dB+)"
+bindsym XF86AudioMute exec --no-startup-id notify-send -t 500 "$(amixer -M set Master toggle)"
 
 bindsym $mod+p exec arandr
 bindsym $mod+Shift+p exec arandr
-bindsym $mod+Shift+a exec pavucontrol -t 5
+# pulseaudio
+#bindsym $mod+Shift+a exec pavucontrol -t 5
+# alsa amixer alsamixer
+bindsym $mod+Shift+a exec --no-startup-id $TERMINAL -e alsamixer
 # m for mumble
 bindsym $mod+m exec mumble
 # shift + m for music/media, which I need more seldom, but keep forgetting
