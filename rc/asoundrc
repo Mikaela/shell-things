@@ -1,0 +1,7 @@
+# alsa config, ~/.asoundrc (or /etc/asound.conf ?)
+# See list of cards with: cat /proc/asound/cards
+# Number 1 for me is USB headset and when it's unplugged, the integrated
+# soundcard gets used instead. Changing to headset requires restarting the
+# app (as opposed to `killall pulseaudio` and restarting all apps ;))
+defaults.pcm.card 1
+defaults.ctl.card 1
