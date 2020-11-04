@@ -1,6 +1,8 @@
 Provider,DoH,DoT,IPv6,IPv6,IPv4,IPv4
 AdGuard,https://dns.adguard.com/dns-query,dns.adguard.com,2a10:50c0::ad1:ff,2a10:50c0::ad2:ff,94.140.14.14,94.140.15.15
 AdGuard Family,https://dns-family.adguard.com/dns-query,dns-family.adguard.com,2a10:50c0::bad1:ff,2a10:50c0::bad2:ff,94.140.14.15,94.140.15.16
+"BlahDNS Finland (encrypted-only, needs SNI)",https://doh-fi.blahdns.com/dns-query,dot-fi.blahdns.com,2a01:4f9:c010:43ce::1,,95.216.212.177,
+"BlahDNS Germany (encrypted-only, needs SNI)",https://doh-de.blahdns.com/dns-query,dot-de.blahdns.com,2a01:4f8:c17:ec67::1,,78.46.244.143,
 Cleanbrowsing security,https://doh.cleanbrowsing.org/doh/security-filter/,security-filter-dns.cleanbrowsing.org,2a0d:2a00:1::2,2a0d:2a00:2::2,185.228.168.9,85.228.169.9
 Cleanbrowsing family (anti-proxy/VPN/Reddit),https://doh.cleanbrowsing.org/doh/family-filter/,family-filter-dns.cleanbrowsing.org,2a0d:2a00:1:: ,2a0d:2a00:2::,185.228.168.168,185.228.169.168
 Cleanbrowsing adult,https://doh.cleanbrowsing.org/doh/adult-filter/,adult-filter-dns.cleanbrowsing.org,2a0d:2a00:1::1,2a0d:2a00:2::1,185.228.168.10,185.228.169.11
