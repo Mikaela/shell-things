@@ -436,8 +436,9 @@ exec --no-startup-id redshift-gtk -l 60.15937:24.87530
 # Centre of Kotka
 #exec --no-startup-id redshift-gtk -l 60.46742:26.94508
 
-# Sedric - only internal monitor with readable resolution
-#exec --no-startup-id xrandr --output eDP-1 --primary --mode 1368x768 --pos 0x0 --rotate normal --output VGA-1 --off --output HDMI-1 --off
+# Sedric - 150 % display scaling (HiDPI), see also `xdpyinfo | grep resolution
+#          where 96 = 100 %
+#exec --no-startup-id xrandr --dpi 144
 
 # Sedric - mirror displays
 #exec --no-startup-id xrandr --output HDMI-1 --same-as eDP-1
