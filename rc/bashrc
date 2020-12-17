@@ -514,7 +514,7 @@ alias gpg-export-minimal-ascii="gpg --armor --export-options export-minimal --ex
 alias gpg-export-minimal-binary="gpg --no-armor --export-options export-minimal --export"
 
 # ports that are being listened to
-alias netstat-listening-ports="netstat -plnt"
+alias netstat-listening-ports="netstat -plntu"
 
 # mpv music & music shuffle
 alias mpvm="mpv --no-video"
