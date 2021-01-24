@@ -8,7 +8,7 @@
 # insync: https://www.insynchq.com/downloads
 # Mullvad: https://mullvad.net/download
 #
-# Fedora: i3 gnme-screenshot i3lock sudo playerctl galculator network-manager-applet redshift-gtk feh rofi libnotify dbus-x11 arandr numlockx fcitx conky kdocker caffeine kdocker mumble audacious htop kdeconnectd nextcloud-client parcimonie.sh lxqt-powermanagement kteatime tmux coreutils
+# Fedora: i3 gnome-screenshot i3lock sudo playerctl galculator network-manager-applet redshift-gtk feh rofi libnotify dbus-x11 arandr numlockx fcitx conky kdocker caffeine kdocker mumble audacious htop kdeconnectd nextcloud-client parcimonie.sh lxqt-powermanagement kteatime tmux coreutils
 #
 # i3status command below expects locale fi_FI.utf8
 #
