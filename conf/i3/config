@@ -70,11 +70,12 @@ bindsym $mod+Shift+q kill
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 # wrapper around dmenu supporting .desktop (flatpak)
-#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 # j4-dmenu-desktop is supposedly more than 25 times faster
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --display-binary --no-generic --dmenu="rofi -dmenu -i" --term="$TERMINAL"
+#bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --display-binary --no-generic --dmenu="rofi -dmenu -i" --term="$TERMINAL"
 # PowerToys Run compatibility
-bindsym Mod1+space exec --no-startup-id j4-dmenu-desktop --display-binary --no-generic --dmenu="rofi -dmenu -i" --term="$TERMINAL"
+#bindsym Mod1+space exec --no-startup-id j4-dmenu-desktop --display-binary --no-generic --dmenu="rofi -dmenu -i" --term="$TERMINAL"
+bindsym Mod1+space exec --no-startup-id i3-dmenu-desktop
 
 # for j4-dmenu-desktop daemon mode (unreleased version)
 # https://github.com/enkore/j4-dmenu-desktop/pull/80/commits/87f6b8b03dabbd83ad0f5d889a75da1b99cdff03
