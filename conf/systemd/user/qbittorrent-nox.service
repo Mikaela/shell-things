@@ -1,0 +1,10 @@
+[Unit]
+Description=A Headless Bittorrent client using rb_libtorrent
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/qbittorrent-nox --webui-port=8081
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=default.target
