@@ -42,6 +42,8 @@ MapAddress roubaix-fr.pirateirc.net tll4bxf546kzf6iv4n2m4pbbjnifrfewe3kcritva2tu
 # Freenode has a lot of valid names, but zettel is the name of their Tor
 # server
 MapAddress zettel.freenode.net ajnvpgl6prmkb7yktvue6im5wiedlz2w32uhcwaamdiecdrfpwwgnlqd.onion
+# My personal server, most likely used for IRC
+MapAddress etro.mikaela.info otzmigofmchtadpek223bkmrzqoa6mmvhmr5dxqurcrtwalizfibuxid.onion
 
 # Disable control access
 #ControlPort 0
