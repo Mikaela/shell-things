@@ -31,7 +31,7 @@ set $mod Mod4
 
 # Stop repeating the same thing everywhere!
 set $SHELL zsh
-set $TERMINAL konsole --hide-menubar -e $SHELL
+set $TERMINAL konsole --hide-menubar
 # For use without display managers. All display managers seem to be
 # horrible, LightDM user switching is insecure, GDM depends on GNOME, SDDM
 # doesn't support `passwd -de`
@@ -64,7 +64,7 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec $TERMINAL
+bindsym $mod+Return exec $TERMINAL -e $SHELL
 # kill focused window
 bindsym $mod+Shift+q kill
 
