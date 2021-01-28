@@ -30,7 +30,7 @@
 set $mod Mod4
 
 # Stop repeating the same thing everywhere!
-set $SHELL zsh
+set $SHELL /usr/bin/env zsh
 set $TERMINAL konsole --hide-menubar
 # For use without display managers. All display managers seem to be
 # horrible, LightDM user switching is insecure, GDM depends on GNOME, SDDM
@@ -415,7 +415,7 @@ exec --no-startup-id numlockx on
 # see also pam_environment https://wiki.archlinux.org/index.php/Fcitx#Non_desktop_environment
 exec --no-startup-id fcitx
 #exec --no-startup-id kdocker -m -d 300 $TERMINAL
-exec --no-startup-id $TERMINAL -e tmux -C $SHELL
+exec --no-startup-id $TERMINAL -e tmux -c $SHELL
 exec --no-startup-id conky
 exec --no-startup-id aa-notify -p -s 1 -w 60
 exec --no-startup-id caffeine-indicator
