@@ -1,4 +1,4 @@
-# See below, xleave probably won't be on local router
+# xleave probably won't be on local router
 #server LOCALMACHINE.local iburst auto_offline xleave prefer
 
 # Or alternatively reciprocally TODO: how do `key` options work? This
@@ -9,7 +9,3 @@
 #   rather than peer, I think even Chrony manual and that is where I took
 #   trusted LAN
 #peer LOCALMACHINE.local auto_offline xleave prefer
-
-# Allowing access from LAN:
-#allow 192.168
-#allow fe80::/10

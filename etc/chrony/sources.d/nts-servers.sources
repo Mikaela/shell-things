@@ -1,7 +1,4 @@
 # NTS requires Chrony 4.0
 
-# This line should be added if it's not in main chrony.conf
-#ntsdumpdir /var/lib/chrony
-
 # Cloudflare NTS, anycast, works probably anywhere. No leap second smearing.
 pool time.cloudflare.com maxsources 2 iburst nts
