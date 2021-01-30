@@ -8,7 +8,7 @@
 # insync: https://www.insynchq.com/downloads
 # Mullvad: https://mullvad.net/download
 #
-# Fedora: i3 gnome-screenshot i3lock sudo playerctl galculator network-manager-applet redshift-gtk feh rofi libnotify dbus-x11 arandr numlockx fcitx conky kdocker caffeine kdocker mumble audacious htop kdeconnectd nextcloud-client parcimonie.sh lxqt-powermanagement kteatime tmux coreutils
+# Fedora: i3 gnome-screenshot i3lock sudo playerctl galculator network-manager-applet redshift-gtk feh rofi libnotify dbus-x11 arandr numlockx fcitx conky kdocker caffeine kdocker mumble audacious htop kdeconnectd nextcloud-client parcimonie.sh lxqt-powermanagement kteatime tmux coreutils blueman-applet
 #
 # i3status command below expects locale fi_FI.utf8
 #
@@ -432,6 +432,7 @@ exec --no-startup-id sleep 60 && parcimonie --with-dbus
 exec --no-startup-id sleep 70 && parcimonie-applet
 exec --no-startup-id sh -c "/opt/Mullvad\ VPN/mullvad-vpn"
 exec --no-startup-id kteatime
+exec --no-startup-id blueman-applet
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 
