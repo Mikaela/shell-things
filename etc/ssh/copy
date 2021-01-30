@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-set -x
-mkdir -p /etc/ssh
-cat ssh_config > /etc/ssh/ssh_config
-cat sshd_config > /etc/ssh/sshd_config
-chmod a-x,u+rw,g+r-w,o+r-w /etc/ssh/ssh?_config
-set +x
