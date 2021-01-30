@@ -399,7 +399,7 @@ exec --no-startup-id aplay $(mktemp)
 exec --no-startup-id $TERMINAL -e htop
 exec --no-startup-id nm-applet
 # pulseaudio
-#exec --no-startup-id sleep 60 && pasystray --notify=all
+exec --no-startup-id sleep 60 && pasystray --notify=all
 # alsa amixer alsamixer
 exec --no-startup-id sleep 60 && pnmixer
 # Wallpaper, solid (AMOLED) black
