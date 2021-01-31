@@ -1,4 +1,5 @@
-# Copied from Fedora 33
+# Copied from Fedora 33. Requires OpenSSHd 8.2 released on 2020-02-14
+#  https://www.openssh.com/txt/release-8.2
 # To modify the system-wide sshd configuration, create a  *.conf  file under
 #  /etc/ssh/sshd_config.d/  which will be automatically included below
 Include /etc/ssh/sshd_config.d/*.conf
