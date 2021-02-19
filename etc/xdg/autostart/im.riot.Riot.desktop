@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Riot
+Name=Element
 Exec=/usr/bin/flatpak im.riot.Riot --hidden
 Type=Application
 Icon=im.riot.Riot
