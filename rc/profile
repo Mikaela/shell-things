@@ -32,3 +32,8 @@ export XCURSOR_DISCOVER=1
 if [ -f ~/.environment ]; then
     . ~/.environment
 fi
+
+# Something that scripts here won't attempt to overwrite
+if [ -f ~/.environment2 ]; then
+    . ~/.environment2
+fi
