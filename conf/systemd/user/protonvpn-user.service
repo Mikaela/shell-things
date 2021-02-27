@@ -1,0 +1,14 @@
+[Unit]
+Description=ProtonVPN connection
+After=network-online.target dbus.socket
+Wants=network-online.target dbus.socket
+
+[Service]
+Type=forking
+# ProtonVPN CLI v3.3.1 (protonvpn-nm-lib v0.4.2; proton-client v0.3.0)
+ExecStartPre=sleep 60
+ExecStart=protonvpn-cli connect --p2p
+# ExecStop runs after forking leading into immediate disconnect!
+
+[Install]
+WantedBy=default.target

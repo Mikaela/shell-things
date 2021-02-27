@@ -1,9 +1,10 @@
 [Unit]
 Description=A Headless Bittorrent client using rb_libtorrent
+After=protonvpn-user.service
+Wants=protonvpn-user.service
 
 [Service]
 Type=simple
-ExecStartPre=/usr/bin/sudo -n /usr/bin/protonvpn connect --p2p
 ExecStart=/usr/bin/qbittorrent-nox --webui-port=8081
 ExecReload=/bin/kill -HUP $MAINPID
 
