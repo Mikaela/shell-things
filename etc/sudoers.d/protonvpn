@@ -1,4 +1,10 @@
 # Letting sudoers to use ProtonVPN passwordlessly
+# This may be legacy for ProtonVPN 2.x and not required by 3.x
 %sudo ALL = (root) NOPASSWD: /usr/bin/protonvpn
+%sudo ALL = (root) NOPASSWD: /usr/bin/protonvpn-cli
+%sudo ALL = (root) NOPASSWD: /usr/bin/protonvpn-tray
+%sudo ALL = (root) NOPASSWD: /usr/bin/protonvpn-gui
+%sudo ALL = (root) NOPASSWD: /usr/local/bin/protonvpn
+%sudo ALL = (root) NOPASSWD: /usr/local/bin/protonvpn-cli
 %sudo ALL = (root) NOPASSWD: /usr/local/bin/protonvpn-tray
 %sudo ALL = (root) NOPASSWD: /usr/local/bin/protonvpn-gui
