@@ -1,3 +1,7 @@
 Package: pulseaudio
 Pin: release o=Debian
 Pin-Priority: -1
+
+Package: pulseaudio
+Pin: release o=Debian Backports
+Pin-Priority: -1
