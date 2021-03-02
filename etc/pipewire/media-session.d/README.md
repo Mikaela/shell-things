@@ -6,3 +6,7 @@ The old pulseaudio fix for less than 20 % volume being unhearable is editing `al
 ```
 
 from #pipewire on freenode which has public logging according to the title.
+
+The `api.alsa.soft-mixer = true` may be nicer as the volume is a lot less,
+77 % is well audible on USB headset and even 100 % isn't too loud. External
+speakers with subwoofer again work as usual.
