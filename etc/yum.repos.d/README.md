@@ -4,4 +4,3 @@ dnf still reads this repository apparently, and the repos I end up adding:
 * https://www.insynchq.com/
 * https://keybase.io/docs/the_app/install_linux
 * https://rpmfusion.org/Configuration
-* https://software.opensuse.org/download.html?project=network:messaging:xmpp:dino&package=dino

@@ -1,0 +1,6 @@
+[network_messaging_xmpp_dino]
+name=Modern Jabber/XMPP Client using GTK+/Vala  (Fedora_$releasever)
+baseurl=https://download.opensuse.org/repositories/network:/messaging:/xmpp:/dino/Fedora_$releasever/
+gpgcheck=1
+gpgkey=https://download.opensuse.org/repositories/network:/messaging:/xmpp:/dino/Fedora_$releasever/repodata/repomd.xml.key
+enabled=1
