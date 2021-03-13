@@ -1,5 +1,5 @@
-[proton-fedora-$releasever-unstable]
-name="fedora-$releasever-unstable"
+[proton-fedora-unstable]
+name="proton-fedora-unstable"
 baseurl=https://repo.protonvpn.com/fedora-$releasever-unstable/
 enabled=1
 gpgcheck=1
