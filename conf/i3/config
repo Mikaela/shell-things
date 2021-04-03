@@ -343,10 +343,11 @@ bindsym XF86Calculator exec --no-startup-id galculator
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause && notify-send -t 500 "Play-Pause pressed"
 # Volume keys NOTE: won't work if nothing is playing (which I consider an improvement
 # over randomly stopping working as I enable and disable audio devices).
-#set $sink $(pactl list short sinks | grep RUNNING | cut -f1)
-#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $sink -5% # && notify-send -t 500 "$(pulsemixer --get-volume)"
-#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $sink +5% # && notify-send -t 500 "$(pulsemixer --get-volume)"
-#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $sink toggle # mute sound
+# Use this for PipeWire too!
+set $sink $(pactl list short sinks | grep RUNNING | cut -f1)
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $sink -5% # && notify-send -t 500 "$(pulsemixer --get-volume)"
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $sink +5% # && notify-send -t 500 "$(pulsemixer --get-volume)"
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $sink toggle # mute sound
 # Apparently pasystray alerts me of the status changes, so I don't have to
 # echo them by myself.
 # pulseaudio bindings. pulsemixer is not available for Fedora or pipewire?
@@ -355,9 +356,9 @@ bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause && notify-send -
 #bindsym XF86AudioMute exec --no-startup-id pulsemixer --toggle-mute # && notify-send -t 500 "🔇 pressed"
 
 # amixer / alsamixer / alsa bindings
-bindsym XF86AudioLowerVolume exec --no-startup-id notify-send -t 500 "$(amixer -M set Master 2dB-)"
-bindsym XF86AudioRaiseVolume exec --no-startup-id notify-send -t 500 "$(amixer -M set Master 2dB+)"
-bindsym XF86AudioMute exec --no-startup-id notify-send -t 500 "$(amixer -M set Master toggle)"
+#bindsym XF86AudioLowerVolume exec --no-startup-id notify-send -t 500 "$(amixer -M set Master 2dB-)"
+#bindsym XF86AudioRaiseVolume exec --no-startup-id notify-send -t 500 "$(amixer -M set Master 2dB+)"
+#bindsym XF86AudioMute exec --no-startup-id notify-send -t 500 "$(amixer -M set Master toggle)"
 
 bindsym $mod+p exec arandr
 bindsym $mod+Shift+p exec arandr
