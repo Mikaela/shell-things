@@ -30,8 +30,8 @@
 set $mod Mod4
 
 # Stop repeating the same thing everywhere!
-set $SHELL /usr/bin/env zsh
-set $TERMINAL konsole --hide-menubar
+set $SHELL /bin/zsh
+set $TERMINAL mate-terminal --hide-menubar
 # For use without display managers. All display managers seem to be
 # horrible, LightDM user switching is insecure, GDM depends on GNOME, SDDM
 # doesn't support `passwd -de`
