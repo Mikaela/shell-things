@@ -349,7 +349,7 @@ bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause && notify-send -
 #bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $sink toggle # mute sound
 # Apparently pasystray alerts me of the status changes, so I don't have to
 # echo them by myself.
-# pulseaudio bindings
+# pulseaudio bindings. pulsemixer is not available for Fedora or pipewire?
 #bindsym XF86AudioLowerVolume exec --no-startup-id pulsemixer --change-volume -5 # && notify-send -t 500 "$(pulsemixer --get-volume)"
 #bindsym XF86AudioRaiseVolume exec --no-startup-id pulsemixer --change-volume +5 # && notify-send -t 500 "$(pulsemixer --get-volume)"
 #bindsym XF86AudioMute exec --no-startup-id pulsemixer --toggle-mute # && notify-send -t 500 "🔇 pressed"
@@ -361,10 +361,10 @@ bindsym XF86AudioMute exec --no-startup-id notify-send -t 500 "$(amixer -M set M
 
 bindsym $mod+p exec arandr
 bindsym $mod+Shift+p exec arandr
-# pulseaudio
-#bindsym $mod+Shift+a exec pavucontrol -t 5
-# alsa amixer alsamixer
-bindsym $mod+Shift+a exec --no-startup-id $TERMINAL -e alsamixer
+# pulseaudio / pipewire
+bindsym $mod+Shift+a exec pavucontrol -t 5
+# alsa amixer alsamixer rbtpzn
+#bindsym $mod+Shift+a exec --no-startup-id $TERMINAL -e alsamixer
 # m for mumble
 bindsym $mod+m exec mumble
 # shift + m for music/media, which I need more seldom, but keep forgetting
@@ -383,26 +383,26 @@ for_window [title="tracker - .*"] floating enable
 
 # Autostarts
 
-# Sounds with alsamixer amixer
-exec --no-startup-id touch ~/.config/asound.state
+# Sounds with alsamixer amixer rbtpzn
+#exec --no-startup-id touch ~/.config/asound.state
 # Debian doesn't have /usr/sbin for non-root. CHANGEME ?
-exec --no-startup-id /usr/sbin/alsactl rdaemon -f ~/.config/asound.state
+#exec --no-startup-id /usr/sbin/alsactl rdaemon -f ~/.config/asound.state
 # Alsa seems to need something to be played before it does anything so...
-exec --no-startup-id aplay $(mktemp)
+#exec --no-startup-id aplay $(mktemp)
 
 # I generally have flatpaks separately near the bottom, but other things are
 # going to depend on PulseEffects and it seems to be more reliable from repositories
-# at times
+# at times. PulseEffects has migrated to PipeWire
 #exec --no-startup-id flatpak run com.github.wwmm.pulseeffects --gapplication-service
 #exec --no-startup-id pulseeffects --gapplication-service
 
 exec --no-startup-id $TERMINAL -e htop
 exec --no-startup-id nm-applet
-# pulseaudio
+# pulseaudio (and pipewire?)
 exec --no-startup-id sleep 60 && pasystray --notify=all
 # alsa amixer alsamixer
-exec --no-startup-id sleep 60 && pnmixer
-# Wallpaper, solid (AMOLED) black
+#exec --no-startup-id sleep 60 && pnmixer
+# Wallpaper, solid (AMOLED) black. hsetroot is not on Fedora
 exec --no-startup-id hsetroot -solid \#000000
 # Selenized black background (not AMOLED)
 #exec --no-startup-id hsetroot -solid \#181818
@@ -430,7 +430,7 @@ exec --no-startup-id insync start
 exec --no-startup-id nextcloud --background
 exec --no-startup-id sleep 60 && parcimonie --with-dbus
 exec --no-startup-id sleep 70 && parcimonie-applet
-exec --no-startup-id sh -c "/opt/Mullvad\ VPN/mullvad-vpn"
+#exec --no-startup-id sh -c "/opt/Mullvad\ VPN/mullvad-vpn"
 exec --no-startup-id kteatime
 exec --no-startup-id blueman-applet
 
