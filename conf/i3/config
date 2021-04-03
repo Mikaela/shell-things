@@ -437,6 +437,18 @@ exec --no-startup-id blueman-applet
 
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 
+# Microsoft Edge
+exec --no-startup-id sleep 10 && microsoft-edge --no-startup-window
+
+# Communication apps preferred by partners
+# Signal
+exec --no-startup-id sleep 15 && flatpak run org.signal.Signal --start-in-tray
+# Gajim, XMPP (allowed here for not being Electron
+# (regardless of too much Electron already))
+exec --no-startup-id flatpak run org.gajim.Gajim
+# Telegram
+exec --no-startup-id sleep 15 && env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/telegram-desktop_telegram-desktop.desktop /var/lib/snapd/snap/bin/telegram-desktop -startintray
+
 ## Redshift for better night display
 # Centre of Lauttasaari
 exec --no-startup-id redshift-gtk -l 60.15937:24.87530
