@@ -427,6 +427,8 @@ exec --no-startup-id lxqt-powermanagement
 exec --no-startup-id kdeconnect-indicator
 # CHANGEME - this may not be here on all systems, Debian testing 64bit
 exec --no-startup-id /usr/lib/x86_64-linux-gnu/libexec/kdeconnectd
+# Same for Fedora 33
+exec --no-startup-id /usr/libexec/kdeconnectd
 exec --no-startup-id insync start
 exec --no-startup-id nextcloud --background
 exec --no-startup-id sleep 60 && parcimonie --with-dbus
