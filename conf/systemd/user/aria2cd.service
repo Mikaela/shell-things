@@ -1,0 +1,15 @@
+# https://wiki.archlinux.org/index.php/Aria2#Using_Aria2_as_a_Daemon
+# Needs manually creating config file
+# TODO: How to continue downloads across restart? How to download into
+#       ~/Downloads without an absolute path?
+[Unit]
+Description=Aria2 Daemon
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/aria2c
+# Arch Wiki had this, but default is $XDG_CONFIG_HOME/aria2/aria2.conf
+#--conf-path=/path/to/conf
+
+[Install]
+WantedBy=default.target
