@@ -1,7 +1,5 @@
 [Unit]
 Description=A Headless Bittorrent client using rb_libtorrent
-After=protonvpn-user.service
-Wants=protonvpn-user.service
 
 [Service]
 Type=simple

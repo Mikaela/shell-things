@@ -1,7 +1,6 @@
 [Unit]
 Description=IPFS daemon
-After=network.target protonvpn-user.service
-Wants=protonvpn-user.service
+After=network.target
 
 # IMPORTANT! If you are running on a VPS/dedicated/similar
 # `ipfs init --profile=server` or immediately after setting it up
