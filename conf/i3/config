@@ -451,7 +451,8 @@ exec --no-startup-id sleep 15 && flatpak run org.signal.Signal --start-in-tray
 exec --no-startup-id flatpak run org.gajim.Gajim
 exec --no-startup-id dino
 # Telegram
-exec --no-startup-id sleep 15 && env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/telegram-desktop_telegram-desktop.desktop /var/lib/snapd/snap/bin/telegram-desktop -startintray
+#exec --no-startup-id sleep 15 && env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/telegram-desktop_telegram-desktop.desktop /var/lib/snapd/snap/bin/telegram-desktop -startintray
+exec --no-startup-id sleep 15 && telegram-desktop -startintray
 
 ## Redshift for better night display
 # Centre of Lauttasaari
