@@ -1,0 +1,15 @@
+[Unit]
+Description=Connect Mullvad VPN on user login
+After=network-online.target dbus.socket
+Wants=network-online.target dbus.socket
+
+[Service]
+Type=forking
+ExecStartPre=sleep 60
+ExecStart=mullvad connect
+# ExecStop runs after forking leading into immediate disconnect!
+TimeOutSec=infinity
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

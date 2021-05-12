@@ -1,6 +1,7 @@
 [Unit]
 Description=IPFS daemon
-After=network.target
+After=network.target mullvad-connect.service
+Wants=mullvad-connect.service
 
 # IMPORTANT! If you are running on a VPS/dedicated/similar
 # `ipfs init --profile=server` or immediately after setting it up

@@ -1,5 +1,7 @@
 [Unit]
 Description=A Headless Bittorrent client using rb_libtorrent
+After=mullvad-connect.service
+Wants=mullvad-connect.service
 
 [Service]
 Type=simple
