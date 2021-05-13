@@ -1,7 +1,7 @@
 [Unit]
 Description=Connect Mullvad VPN on user login
-After=network-online.target dbus.socket
-Wants=network-online.target dbus.socket
+After=mullvad-daemon.service network-online.target dbus.socket
+Wants=mullvad-daemon.service network-online.target dbus.socket
 
 [Service]
 Type=forking
