@@ -5,7 +5,8 @@ Wants=mullvad-daemon.service network-online.target dbus.socket
 
 [Service]
 Type=forking
-ExecStartPre=sleep 60
+# Not necessary as the daemon is already up at this time
+#ExecStartPre=sleep 60
 ExecStart=mullvad connect
 # ExecStop runs after forking leading into immediate disconnect!
 TimeOutSec=infinity
