@@ -432,6 +432,7 @@ exec --no-startup-id /usr/libexec/kdeconnectd
 exec --no-startup-id insync start
 exec --no-startup-id nextcloud --background
 exec --no-startup-id sleep 60 && parcimonie --with-dbus
+exec --no-startup-id sleep 60 && parcimonie.sh --with-dbus
 exec --no-startup-id sleep 70 && parcimonie-applet
 #exec --no-startup-id sh -c "/opt/Mullvad\ VPN/mullvad-vpn"
 exec --no-startup-id sh -c "/opt/Mullvad\ VPN/mullvad-gui"
