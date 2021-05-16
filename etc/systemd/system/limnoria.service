@@ -1,0 +1,22 @@
+[Unit]
+Description=Limnoria instance
+After=network-online.target
+# if sharing server with IRC server, add
+#oragono.service
+#Wants=oragono.service
+
+[Service]
+Type=simple
+# if supybot.commands.allowShell is True and this is not set, may default to /
+WorkingDirectory=/home/BOTUSER/
+# supybot.pidFile
+PIDFile=/home/BOTUSER/BOTNICKNAME/BOTNICKNAME.pid
+# python3 setup.py install --user
+ExecStart=/home/BOTUSER/.local/bin/supybot /home/BOTUSER/BOTNICKNAME/BOTNICKNAME.conf
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=always
+User=BOTUSER
+
+[Install]
+WantedBy=multi-user.target
+
