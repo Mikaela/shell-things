@@ -122,7 +122,7 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+f floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
@@ -495,5 +495,5 @@ exec --no-startup-id redshift-gtk -l 60.15937:24.87530
 #exec --no-startup-id xrandr --output VGA-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --off
 
 # Special keyboard options that WILL CONFUSE YOU.
-exec --no-startup-id setxkbmap -option compose:menu -option terminate:ctrl_alt_bksp -option nbsp:none -option caps:backspace -option shift:both_capslock
-#-option grp:ctrls_toggle -layout fi,cz,epo -variant ,qwerty,
+# fi allows mostly typing fi/se (identicatal), cz/es. See also `man xkeyboard-config`
+exec --no-startup-id setxkbmap -option compose:menu -option terminate:ctrl_alt_bksp -option nbsp:none -option caps:backspace -option shift:both_capslock -option grp:win_space_toggle -layout fi,us,epo,ru -variant ,altgr-intl,,phonetic_winkeys
