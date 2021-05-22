@@ -44,6 +44,8 @@ MapAddress roubaix-fr.pirateirc.net tll4bxf546kzf6iv4n2m4pbbjnifrfewe3kcritva2tu
 MapAddress zettel.freenode.net ajnvpgl6prmkb7yktvue6im5wiedlz2w32uhcwaamdiecdrfpwwgnlqd.onion
 # My personal server, most likely used for IRC
 MapAddress etro.mikaela.info otzmigofmchtadpek223bkmrzqoa6mmvhmr5dxqurcrtwalizfibuxid.onion
+# https://liberta.casa/ confirmed from oper
+MapAddress irc.liberta.casa cr36xbvmgjwnfw4sly4kuc6c3ozhesjre3y5pggq5xdkkmbrq6dz4fad.onion
 
 # Disable control access
 #ControlPort 0
