@@ -46,6 +46,8 @@ MapAddress zettel.freenode.net ajnvpgl6prmkb7yktvue6im5wiedlz2w32uhcwaamdiecdrfp
 MapAddress etro.mikaela.info otzmigofmchtadpek223bkmrzqoa6mmvhmr5dxqurcrtwalizfibuxid.onion
 # https://liberta.casa/ confirmed from oper
 MapAddress irc.liberta.casa cr36xbvmgjwnfw4sly4kuc6c3ozhesjre3y5pggq5xdkkmbrq6dz4fad.onion
+# Ergo IRCd's home, confirmed from channel
+MapAddress irc.ergo.chat vrw7zcuarwx4oeju3iikiz3jffrvuijsysyznqf53mxizxrebomfnrid.onion
 
 # Disable control access
 #ControlPort 0
