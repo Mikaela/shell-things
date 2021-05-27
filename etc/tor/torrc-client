@@ -48,6 +48,8 @@ MapAddress etro.mikaela.info otzmigofmchtadpek223bkmrzqoa6mmvhmr5dxqurcrtwalizfi
 MapAddress irc.liberta.casa cr36xbvmgjwnfw4sly4kuc6c3ozhesjre3y5pggq5xdkkmbrq6dz4fad.onion
 # Ergo IRCd's home, confirmed from channel
 MapAddress irc.ergo.chat vrw7zcuarwx4oeju3iikiz3jffrvuijsysyznqf53mxizxrebomfnrid.onion
+# Heard from staffer, also https://libera.chat/guides/connect#verifying-tor-tls-connections
+MapAddress palladium.libera.chat libera75jm6of4wxpxt4aynol3xjmbtxgfyjpu34ss4d7r7q2v5zrpyd.onion
 
 # Disable control access
 #ControlPort 0
