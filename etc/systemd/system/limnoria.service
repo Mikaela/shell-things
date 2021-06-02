@@ -7,6 +7,7 @@ After=network-online.target
 
 [Service]
 Type=simple
+Environment="TZ=Europe/Helsinki"
 # if supybot.commands.allowShell is True and this is not set, may default to /
 WorkingDirectory=/home/BOTUSER/
 # supybot.pidFile
@@ -15,6 +16,7 @@ PIDFile=/home/BOTUSER/BOTNICKNAME/BOTNICKNAME.pid
 ExecStart=/home/BOTUSER/.local/bin/supybot /home/BOTUSER/BOTNICKNAME/BOTNICKNAME.conf
 ExecReload=/bin/kill -HUP $MAINPID
 Restart=always
+RestartSec=5s
 User=BOTUSER
 
 [Install]
