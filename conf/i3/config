@@ -442,7 +442,9 @@ exec --no-startup-id blueman-applet
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 
 # Microsoft Edge
-exec --no-startup-id sleep 10 && microsoft-edge --no-startup-window
+#exec --no-startup-id sleep 10 && microsoft-edge --no-startup-window
+# Steam, reason: my brother
+exec --no-startup-id sleep 10 && exec --no-startup-id STEAM_FRAME_FORCE_CLOSE=1 steam -silent
 
 # Communication apps preferred by partners
 # Signal
