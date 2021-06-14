@@ -1,3 +1,7 @@
+# PipeWire notes
+
+## USB headset volume problem
+
 2021-06-14: These files shouldn't even exist, the solution below is wrong,
 marking the headset as "Pro-audio" in pavucontrol Settings tab is enough to
 fix it.
@@ -25,3 +29,8 @@ See also:
 
 * https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/1220
   * marked as duplicate of: https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/207
+
+## Bluetooth
+
+* https://www.redpill-linpro.com/techblog/2021/05/31/better-bluetooth-headset-audio-with-msbc.html
+  * https://web.archive.org/web/20210614103423/https://www.redpill-linpro.com/techblog/2021/05/31/better-bluetooth-headset-audio-with-msbc.html
