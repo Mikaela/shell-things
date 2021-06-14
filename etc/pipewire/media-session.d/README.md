@@ -1,3 +1,9 @@
+2021-06-14: These files shouldn't even exist, the solution below is wrong,
+marking the headset as "Pro-audio" in pavucontrol Settings tab is enough to
+fix it.
+
+* * * * *
+
 The old pulseaudio fix for less than 20 % volume being unhearable is editing
 `alsa-monitor.conf` and uncommenting `api.alsa.ignore-dB = true`
 
@@ -11,3 +17,11 @@ from #pipewire on freenode which has public logging according to the title.
 The `api.alsa.soft-mixer = true` may be nicer as the volume is a lot less,
 77 % is well audible on USB headset and even 100 % isn't too loud. External
 speakers with subwoofer again work as usual.
+
+2021-06-14: the above solution is wrong and outdated, the files mentioned
+don't exist by default anymore, they need to be copied and edited separately
+
+See also:
+
+* https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/1220
+  * marked as duplicate of: https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/207
