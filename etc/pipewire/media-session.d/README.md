@@ -3,8 +3,13 @@
 ## USB headset volume problem
 
 2021-06-14: These files shouldn't even exist, the solution below is wrong,
-marking the headset as "Pro-audio" in pavucontrol Settings tab is enough to
-fix it.
+marking the headset as "Pro-audio" in pavucontrol Settings tab and adjusting
+one from `alsamixer` is enough to fix it.
+
+In `alsamixer` having it as pro-audio exposes the sound card in F6 known as
+*Logitech USB Headset* and there I see two siliders, *Headphone* and *Mic*,
+*Headphone* can apparently be 100 and *Mic* muted when not in use to avoid
+it echoing back.
 
 * * * * *
 
