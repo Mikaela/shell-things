@@ -327,7 +327,7 @@ bindsym $mod+Escape exec "i3-nagbar -t warning -m 'You pressed the SUSPEND short
 bindsym $mod+Shift+Escape exec "i3-nagbar -t warning -m 'You pressed the HIBERNATE shortcut. Do you really want to HIBERNATE?' -B 'Yes, HIBERNATE' '$ScreenLockCmd; systemctl -i hibernate'"
 
 # Jumping to window with alert (the red colour)
-bindsym $mod+x [urgent=latest] focus
+#bindsym $mod+x [urgent=latest] focus
 
 # alt-tab
 bindsym Mod1+Tab exec --no-startup-id rofi -show window
@@ -371,6 +371,11 @@ bindsym $mod+m exec mumble
 # shift + m for music/media, which I need more seldom, but keep forgetting
 # the good app, while I do remember mpv/Syncplay/VLC whenever I need them.
 #bindsym $mod+Shift+m exec audacious
+
+# x for XMPP/Dino, it's autostarting as gapplication service so probably
+# ready whenever this is started and I didn't know I had a keybind for
+# switching to urgent notifications
+bindsym $mod+x exec dino
 
 # Float these apps by default
 # Firefox & Tor Browser have `privacy.resistFingerprinting.letterboxing`
