@@ -370,7 +370,7 @@ bindsym $mod+Shift+a exec pavucontrol -t 5
 bindsym $mod+m exec mumble
 # shift + m for music/media, which I need more seldom, but keep forgetting
 # the good app, while I do remember mpv/Syncplay/VLC whenever I need them.
-bindsym $mod+Shift+m exec audacious
+#bindsym $mod+Shift+m exec audacious
 
 # Float these apps by default
 # Firefox & Tor Browser have `privacy.resistFingerprinting.letterboxing`
