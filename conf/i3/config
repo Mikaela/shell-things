@@ -475,14 +475,12 @@ exec --no-startup-id redshift-gtk -l 60.15937:24.87530
 #          where 96 = 100 %
 #exec --no-startup-id xrandr --dpi 144
 
-
 # Sedric, external GPU as primary
 #exec --no-startup-id xrandr --setprovideroutputsource modesetting NVIDIA-0
 #exec --no-startup-id xrandr --auto
 
 # Sedric - mirror displays
 #exec --no-startup-id xrandr --output HDMI-1-1 --same-as eDP-1-1
-
 
 # Sedric - double monitor via arandr, DON'T USE THIS, SEE THE BELOW SECTION
 #exec --no-startup-id xrandr --output VGA-1 --off --output HDMI-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output eDP-1 --mode 1920x1080 --pos 0x0 --rotate normal
@@ -502,7 +500,6 @@ exec --no-startup-id redshift-gtk -l 60.15937:24.87530
 #workspace 4 output HDMI-1-1
 #workspace 5 output HDMI-1-1
 
-
 # Kincarron - double monitor via arandr
 #exec --no-startup-id xrandr --output LVDS-1 --primary --mode 1280x800 --pos 1920x280 --rotate normal --output VGA-1 --off --output HDMI-1 --mode 1920x1080i --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-2 --off --output DP-2 --off
 # workspaces 1 to 5 on LVDS-1 so 6 and <6 will be on the other display
@@ -520,7 +517,6 @@ exec --no-startup-id redshift-gtk -l 60.15937:24.87530
 
 # Sedric - EXTERNAL GPU HDMI-only. Disable via TTY if appropiate.
 #exec --no-startup-id xrandr --output VGA-1-1 --off --output HDMI-1-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1-1 --off
-
 
 # Special keyboard options that WILL CONFUSE YOU.
 # windows+space should change layout, but doesn't, both ctrls do
