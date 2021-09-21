@@ -3,8 +3,8 @@
 #    email = mikaela+git@mikaela.info
 #    signingkey = 0x99392F62BAE30723
 #    ##wtop
-#    #email = mikaela@unicus.com
-#    #signingkey = 0x440D764E4F4A6C2D
+#    #email = mikaela+digitalents@mikaela.info
+#    #signingkey = 0xDF046339D69EB8C9
 [alias]
     cleandi = clean -di
     cleandix = clean -dix
