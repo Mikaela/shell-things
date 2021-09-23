@@ -126,7 +126,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+f floating toggle
 
 # change focus between tiling / floating windows
-#bindsym $mod+space focus mode_toggle
+bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -448,23 +448,23 @@ exec --no-startup-id blueman-applet
 # CHANGEME - weird autostart options that may not be suitable even for my other devices
 
 # Microsoft Edge
-exec --no-startup-id sleep 10 && microsoft-edge --no-startup-window
+#exec --no-startup-id sleep 10 && microsoft-edge --no-startup-window
 # Steam, reason: my brother
-exec --no-startup-id sleep 10 && exec --no-startup-id STEAM_FRAME_FORCE_CLOSE=1 steam -silent
+#exec --no-startup-id sleep 10 && exec --no-startup-id STEAM_FRAME_FORCE_CLOSE=1 steam -silent
 
 # Communication apps preferred by partners
 # Signal
-exec --no-startup-id sleep 15 && flatpak run org.signal.Signal --start-in-tray
+#exec --no-startup-id sleep 15 && flatpak run org.signal.Signal --start-in-tray
 # Gajim, XMPP (allowed here for not being Electron
 # (regardless of too much Electron already))
-exec --no-startup-id flatpak run org.gajim.Gajim --gapplication-service
+#exec --no-startup-id flatpak run org.gajim.Gajim --gapplication-service
 exec --no-startup-id dino --gapplication-service
 # Telegram
 #exec --no-startup-id sleep 15 && env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/telegram-desktop_telegram-desktop.desktop /var/lib/snapd/snap/bin/telegram-desktop -startintray
-exec --no-startup-id sleep 15 && telegram-desktop -startintray
+#exec --no-startup-id sleep 15 && telegram-desktop -startintray
 exec --no-startup-id flatpak run --command=telegram-desktop --file-forwarding org.telegram.desktop -startintray
 # HexChat IRC client in tray
-exec --no-startup-id sleep 20 && io.github.Hexchat --minimize=2
+#exec --no-startup-id sleep 20 && io.github.Hexchat --minimize=2
 # who actually prefers HexChat?
 # Jami, VIP, P2P, won't get sold and disappoint, not Electrin, I hope
 exec --no-startup-id sleep 25 && jami-qt
