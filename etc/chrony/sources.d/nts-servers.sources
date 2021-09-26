@@ -2,3 +2,6 @@
 
 # Cloudflare NTS, anycast, works probably anywhere. No leap second smearing.
 pool time.cloudflare.com maxsources 2 iburst nts
+
+# Swedish anycast https://www.netnod.se/time-and-frequency/how-to-use-nts
+server nts.netnod.se iburst nts
