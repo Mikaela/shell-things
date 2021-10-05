@@ -9,9 +9,7 @@ confdir /etc/chrony/chrony.d
 
 ## Windows
 
-```
-choco install nettime
-```
+Refer to ../../Windows/time/README.md
 
 ## Other random notes
 
