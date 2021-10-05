@@ -1,4 +1,10 @@
-dnf still reads this repository apparently, and the repos I end up adding:
+# yum/dnf repositories
+
+This directory is still read by `dnf` and contains files for repositories
+that I appear to end up adding on every system that aren't as clear to add
+as the links below.
+
+## Additional repositories
 
 * https://github.com/yggdrasil-network/yggdrasil-network.github.io/issues/127#issuecomment-766520311
 * https://www.insynchq.com/
