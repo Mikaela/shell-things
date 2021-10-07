@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsSelfHost\Applicability]
+"ContentType"="Mainline"
+"BranchName"="Dev"
+"Ring"="External"
