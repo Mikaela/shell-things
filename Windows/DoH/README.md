@@ -9,5 +9,7 @@ Requires Windows 11.
 * `DohWellKnownServers` adds DoH support for multiple IPv4 & IPv6 addresses
   that Windows 11 isn't shipping by default, currently:
   * Mullvad
+  * Mullvad Adblock
   * Adguard
   * Quad9 ECS (Windows 11 defaults include Quad9 default)
+  * Cloudflare antimalware
