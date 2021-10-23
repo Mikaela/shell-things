@@ -9,14 +9,12 @@ work for me on the first system I updated, Windows is not my primary operating
 system and my Windows was in factory reset state so it not working won't
 affect me.
 
-## What worked on Sedric
+## What works
 
-Sedric has no TPM or currently supported CPU, while the health check app says
-it's only two years old (I think that is wrong).
+Sedric, Tassu and Zaldaryn have no TPM or currently supported CPU, while
+the health check app says they are only two to six years old.
 
-* https://gist.github.com/AveYo/c74dc774a8fb81a332b5d65613187b15
-  * It said "Downloading Windows 10", but as per comments it will really be
-    Windows 11 and the actual installation will speak of Windows 11.
+* https://github.com/AveYo/MediaCreationTool.bat
 
 ## Registry files here
 
