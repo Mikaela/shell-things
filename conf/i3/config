@@ -437,9 +437,10 @@ exec --no-startup-id /usr/lib/x86_64-linux-gnu/libexec/kdeconnectd
 exec --no-startup-id /usr/libexec/kdeconnectd
 exec --no-startup-id insync start
 exec --no-startup-id nextcloud --background
-exec --no-startup-id sleep 60 && parcimonie --with-dbus
-exec --no-startup-id sleep 60 && parcimonie.sh --with-dbus
-exec --no-startup-id sleep 70 && parcimonie-applet
+# Observed performance problems 2021-Q4
+#exec --no-startup-id sleep 60 && parcimonie --with-dbus
+#exec --no-startup-id sleep 60 && parcimonie.sh --with-dbus
+#exec --no-startup-id sleep 70 && parcimonie-applet
 #exec --no-startup-id sh -c "/opt/Mullvad\ VPN/mullvad-vpn"
 exec --no-startup-id sh -c "/opt/Mullvad\ VPN/mullvad-gui"
 exec --no-startup-id kteatime
