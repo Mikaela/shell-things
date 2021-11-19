@@ -101,6 +101,7 @@ if [[ $UNAME = Darwin ]]; then
     (echo "")
     (last -10&)
 fi
+(echo 'Aferoj emas funkcii sin mem.'&)
 
 # fix dircolors for Selenized https://github.com/jan-warchol/selenized/blob/master/other-apps/dircolors/README.md
 export LS_COLORS="$LS_COLORS:ow=1;7;34:st=30;44:su=30;41"
