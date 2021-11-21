@@ -1,0 +1,16 @@
+[Unit]
+Description=Matterbridge Daemon
+After=network-online.target systemd-resolved.service
+#oragono.service
+# ^--v add these if running Ergo (previously Oragono) on the same host
+#Wants=oragono.service
+
+[Service]
+Environment="PATH=/home/matterbridge/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+ExecStart=/home/matterbridge/.local/bin/matterbridge -debug -conf /home/matterbridge/matterbridge.toml
+Restart=always
+RestartSec=5s
+User=matterbridge
+
+[Install]
+WantedBy=multi-user.target
