@@ -1,9 +1,9 @@
 [Unit]
-Description=Matterbridge mediarepo cleanup for things older than a wekk
+Description=Matterbridge mediarepo cleanup for things older than a week
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/find /var/www/html/matterbridge -type f -cmin +10080 -delete
+ExecStart=-/usr/bin/find /var/www/html/matterbridge -type f -cmin +10080 -delete
 User=matterbridge
 StandardOutput=null
 StandardError=null
