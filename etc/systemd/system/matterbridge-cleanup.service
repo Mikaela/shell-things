@@ -1,0 +1,12 @@
+[Unit]
+Description=Matterbridge mediarepo cleanup for things older than a wekk
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/find /var/www/html/matterbridge -type f -cmin +10080 -delete
+User=matterbridge
+StandardOutput=null
+StandardError=null
+
+[Install]
+WantedBy=multi-user.target

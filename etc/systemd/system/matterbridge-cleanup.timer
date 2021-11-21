@@ -1,0 +1,10 @@
+[Unit]
+Description=Run matterbridge cleanup every minute
+
+[Timer]
+OnCalendar=*-*-* *:*:00
+OnBootSec=0
+Persistent=true
+
+[Install]
+WantedBy=timers.target
