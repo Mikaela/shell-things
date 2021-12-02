@@ -390,6 +390,10 @@ for_window [title="tracker - .*"] floating enable
 
 # Autostarts
 
+# Finnish identity cards https://dvv.fi/en/card-reader-software
+# Requires `sudo systemctl enable --now pcscd` (one time operation)
+exec --no-startup-id DigiSignApplication
+
 # Sounds with alsamixer amixer rbtpzn
 #exec --no-startup-id touch ~/.config/asound.state
 # Debian doesn't have /usr/sbin for non-root. CHANGEME ?
