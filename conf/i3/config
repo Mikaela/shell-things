@@ -394,25 +394,16 @@ for_window [title="tracker - .*"] floating enable
 # Requires `sudo systemctl enable --now pcscd` (one time operation)
 exec --no-startup-id DigiSignApplication
 
-# Sounds with alsamixer amixer rbtpzn
-#exec --no-startup-id touch ~/.config/asound.state
-# Debian doesn't have /usr/sbin for non-root. CHANGEME ?
-#exec --no-startup-id /usr/sbin/alsactl rdaemon -f ~/.config/asound.state
-# Alsa seems to need something to be played before it does anything so...
-#exec --no-startup-id aplay $(mktemp)
-
 # I generally have flatpaks separately near the bottom, but other things are
 # going to depend on PulseEffects and it seems to be more reliable from repositories
 # at times. PulseEffects has migrated to PipeWire
 exec --no-startup-id flatpak run com.github.wwmm.easyeffects --gapplication-service
-#exec --no-startup-id pulseeffects --gapplication-service
+#exec --no-startup-id easyeffects --gapplication-service
 
 exec --no-startup-id $TERMINAL -e htop
 exec --no-startup-id nm-applet
 # pulseaudio (and pipewire?)
 exec --no-startup-id sleep 60 && pasystray --notify=all
-# alsa amixer alsamixer
-#exec --no-startup-id sleep 60 && pnmixer
 # Wallpaper, solid (AMOLED) black. hsetroot is not on Fedora
 exec --no-startup-id hsetroot -solid \#000000
 # Selenized black background (not AMOLED)
@@ -420,8 +411,6 @@ exec --no-startup-id hsetroot -solid \#000000
 # ~/.wallpaper as wallpaper
 exec --no-startup-id feh --bg-scale ~/.wallpaper
 exec --no-startup-id xcompmgr -c -n
-# Make everything a bit transparent, you don't want this.
-#exec --no-startup-id compton --active-opacity 0.95 --inactive-opacity 0.95 -m 0.95 -e 0.95
 exec --no-startup-id numlockx on
 # see also pam_environment https://wiki.archlinux.org/index.php/Fcitx#Non_desktop_environment
 exec --no-startup-id fcitx
