@@ -1,5 +1,5 @@
 [Unit]
-Description=Execute matterbridge restarter daily at 05 Finnish time
+Description=Execute Matterbridge restarter daily between 05-06 Finnish time
 
 [Timer]
 OnCalendar=*-*-* 05:00:00 Europe/Helsinki
