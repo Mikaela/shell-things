@@ -1,0 +1,11 @@
+[Unit]
+Description=Execute Gitea restarter daily between 05-06 Finnish time
+
+[Timer]
+OnCalendar=*-*-* 05:00:00 Europe/Helsinki
+#OnBootSec=0
+RandomizedDelaySec=1h
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,6 @@
+[Unit]
+Description=Gitea restarter
+
+[Service]
+Type=oneshot
+ExecStart=/bin/systemctl restart gitea.service --quiet
