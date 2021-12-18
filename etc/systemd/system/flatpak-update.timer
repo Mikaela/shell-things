@@ -1,0 +1,11 @@
+[Unit]
+Description=install flatpak updates and uninstall unused flatpaks daily
+
+[Timer]
+OnCalendar=*-*-* 19:00:00
+OnBootSec=300
+RandomizedDelaySec=3h
+Persistent=true
+
+[Install]
+WantedBy=timers.target
