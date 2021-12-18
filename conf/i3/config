@@ -32,6 +32,7 @@ set $mod Mod4
 # Stop repeating the same thing everywhere!
 set $SHELL /bin/zsh
 set $TERMINAL mate-terminal --hide-menubar
+set $TEXTEDITOR pluma
 # For use without display managers. All display managers seem to be
 # horrible, LightDM user switching is insecure, GDM depends on GNOME, SDDM
 # doesn't support `passwd -de`
@@ -334,8 +335,11 @@ bindsym $mod+Shift+Escape exec "i3-nagbar -t warning -m 'You pressed the HIBERNA
 bindsym Mod1+Tab exec --no-startup-id rofi -show window
 bindsym $mod+g exec --no-startup-id rofi -show window
 
-# Telakoi (dock in Finnish) the focused window
-bindsym $mod+t exec --no-startup-id kdocker -f
+# Open text editor
+bindsym $mod+t exec --no-startup-id $TEXTEDITOR
+
+# Telakoi/Tray (dock in Finnish) the focused window
+bindsym $mod+Shift+t exec --no-startup-id kdocker -f
 
 # For some reason my keyboard has a dedicated button for calculator
 bindsym XF86Calculator exec --no-startup-id galculator
