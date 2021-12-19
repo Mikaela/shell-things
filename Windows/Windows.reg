@@ -1,8 +1,8 @@
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
-"ConsentPromptBehaviorAdmin"=dword:00000002
-"ConsentPromptBehaviorUser"=dword:00000002
+"ConsentPromptBehaviorAdmin"=dword:00000001
+"ConsentPromptBehaviorUser"=dword:00000001
 "dontdisplaylastusername"=dword:00000000
 "shutdownwithoutlogon"=dword:00000001
 "undockwithoutlogon"=dword:00000001

@@ -3,14 +3,14 @@ This file is supposed to explain [Windows.reg](Windows.reg).
 ```
 Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
-"ConsentPromptBehaviorAdmin"=dword:00000002
-"ConsentPromptBehaviorUser"=dword:00000002
+"ConsentPromptBehaviorAdmin"=dword:00000001
+"ConsentPromptBehaviorUser"=dword:00000001
 ```
 
 * Make the file Windows Registry Editor script
-* Ask admins yes/no on UAC
-    * 1 would also ask for password, 0 disable entirely.
-* prompt standard users for username and password.
+* Ask admins for password/PIN in UAC
+    * 2 would ask for yes or no, 0 disable entirely (don't do that).
+* prompt standard users for username and password. 2021-12-19: I don't understand this or the line below.
     * The other option (1) doesn't even give them UAC prompt so you must
     always login as admin to do anything.
 
