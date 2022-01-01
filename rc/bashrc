@@ -327,9 +327,9 @@ alias sshguard6-unban-all="sudo ip6tables -F sshguard"
 alias rsync-folder="rsync -h --progress -azvv "
 
 # SSHGuard seems to prefer users to run this always when connecting with keys in ssh-agent...
-if [[ $UNAME != Darwin ]]; then
-    alias ssh-add="\ssh-add -D && \ssh-add "
-fi
+#if [[ $UNAME != Darwin ]]; then
+#    alias ssh-add="\ssh-add -D && \ssh-add "
+#fi
 
 # Use GPG2 instead of GPG!
 if hash gpg2 2>/dev/null; then
@@ -400,8 +400,8 @@ alias cwho="who -H -w -u"
 #alias inxi-update="inxi -U"
 
 # FINEID
-#alias ssh-add-sc="ssh-add -s $(find /usr/*lib -name 'opensc-pkcs11.so')"
-alias ssh-add-sc-pub="\ssh-add -L"
+#alias ssh-add-fineid="ssh-add -s $(find /usr/*lib -name 'libcryptoki.so')"
+#alias ssh-add-sc-pub="\ssh-add -L"
 
 # Homebrew
 #alias homebrew-install="cd ~;git clone https://github.com/Homebrew/homebrew.git --depth=1;mkdir -p .local;rsync -aP homebrew/* .local;rsync -aP homebrew/.* .local;rm -rf homebrew"
