@@ -4,8 +4,8 @@ deb-src https://deb.debian.org/debian stable main contrib non-free
 deb https://deb.debian.org/debian-debug stable-debug main contrib non-free
 
 ## Main repos over Tor
-#deb tor+http://vwakviie2ienjx6t.onion/debian stable main contrib non-free
-#deb-src tor+http://vwakviie2ienjx6t.onion/debian stable main contrib non-free
+#deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian stable main contrib non-free
+#deb-src tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian stable main contrib non-free
 #deb tor+http://ktqxbqrhg5ai2c7f.onion/debian-debug stable-debug main contrib non-free
 
 ## Security repo CDN
@@ -20,8 +20,8 @@ deb https://deb.debian.org/debian-debug stable-proposed-updates-debug main contr
 #deb-src http://security.debian.org/ stable-security main contrib non-free
 
 ## Security repos over Tor
-deb tor+http://sgvtcaew4bxjd7ln.onion/debian-security stable-security main contrib non-free
-deb-src tor+http://sgvtcaew4bxjd7ln.onion/debian-security stable-security main contrib non-free
+deb tor+http://5ajw6aqf3ep7sijnscdzw77t7xq4xjpsy335yb2wiwgouo7yfxtjlmid.onion/debian-security stable-security main contrib non-free
+deb-src tor+http://5ajw6aqf3ep7sijnscdzw77t7xq4xjpsy335yb2wiwgouo7yfxtjlmid.onion/debian-security stable-security main contrib non-free
 ## https://bugs.debian.org/894081
 #deb tor+http://ktqxbqrhg5ai2c7f.onion/debian-debug stable-proposed-updates-debug main contrib non-free
 
@@ -30,8 +30,8 @@ deb https://deb.debian.org/debian stable-updates main contrib non-free
 deb-src https://deb.debian.org/debian stable-updates main contrib non-free
 
 ## Updates repo over Tor
-#deb tor+http://vwakviie2ienjx6t.onion/debian stable-updates main contrib non-free
-#deb-src tor+http://vwakviie2ienjx6t.onion/debian stable-updates main contrib non-free
+#deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian stable-updates main contrib non-free
+#deb-src tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian stable-updates main contrib non-free
 
 ## Backports
 deb https://deb.debian.org/debian stable-backports main contrib non-free
@@ -39,6 +39,6 @@ deb-src https://deb.debian.org/debian stable-backports main contrib non-free
 deb https://deb.debian.org/debian-debug stable-backports-debug main contrib non-free
 
 ## Backports over Tor
-#deb tor+http://vwakviie2ienjx6t.onion/debian stable-backports main contrib non-free
-#deb-src tor+http://vwakviie2ienjx6t.onion/debian stable-backports main contrib non-free
+#deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian stable-backports main contrib non-free
+#deb-src tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian stable-backports main contrib non-free
 #deb tor+http://ktqxbqrhg5ai2c7f.onion/debian-debug stable-backports-debug main contrib non-free

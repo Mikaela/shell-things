@@ -4,8 +4,8 @@ deb-src https://deb.debian.org/debian testing main contrib non-free
 deb https://deb.debian.org/debian-debug testing-debug main contrib non-free
 
 ## Main repos over Tor
-#deb tor+http://vwakviie2ienjx6t.onion/debian testing main contrib non-free
-#deb-src tor+http://vwakviie2ienjx6t.onion/debian testing main contrib non-free
+#deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian testing main contrib non-free
+#deb-src tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian testing main contrib non-free
 #deb tor+http://ktqxbqrhg5ai2c7f.onion/debian-debug testing-debug main contrib non-free
 
 ## Security repo CDN
@@ -20,8 +20,8 @@ deb https://deb.debian.org/debian-debug testing-proposed-updates-debug main cont
 #deb-src http://security.debian.org/ testing-security main contrib non-free
 
 ## Security repos over Tor
-deb tor+http://sgvtcaew4bxjd7ln.onion/debian-security testing-security main contrib non-free
-deb-src tor+http://sgvtcaew4bxjd7ln.onion/debian-security testing-security main contrib non-free
+deb tor+http://5ajw6aqf3ep7sijnscdzw77t7xq4xjpsy335yb2wiwgouo7yfxtjlmid.onion/debian-security testing-security main contrib non-free
+deb-src tor+http://5ajw6aqf3ep7sijnscdzw77t7xq4xjpsy335yb2wiwgouo7yfxtjlmid.onion/debian-security testing-security main contrib non-free
 ## https://bugs.debian.org/894081
 #deb tor+http://ktqxbqrhg5ai2c7f.onion/debian-debug testing-proposed-updates-debug main contrib non-free
 
@@ -30,5 +30,5 @@ deb https://deb.debian.org/debian testing-updates main contrib non-free
 deb-src https://deb.debian.org/debian testing-updates main contrib non-free
 
 ## Updates repo over Tor
-#deb tor+http://vwakviie2ienjx6t.onion/debian testing-updates main contrib non-free
-#deb-src tor+http://vwakviie2ienjx6t.onion/debian testing-updates main contrib non-free
+#deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian testing-updates main contrib non-free
+#deb-src tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian testing-updates main contrib non-free
