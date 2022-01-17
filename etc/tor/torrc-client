@@ -36,12 +36,6 @@ ClientPreferIPv6ORPort 1
 
 ## Mapping clearnet domains to onions for certificate validation if
 ## accessed through Tor
-# Other valid domains (that I am unlikely to use) in normal IRC:
-# fi.pirateirc.net (I use it in Biboumi though) / irc.piraattipuolue.fi
-MapAddress roubaix-fr.pirateirc.net tll4bxf546kzf6iv4n2m4pbbjnifrfewe3kcritva2tuuuiowygx2cqd.onion
-# Freenode has a lot of valid names, but zettel is the name of their Tor
-# server
-MapAddress zettel.freenode.net ajnvpgl6prmkb7yktvue6im5wiedlz2w32uhcwaamdiecdrfpwwgnlqd.onion
 # My personal server, most likely used for IRC
 MapAddress etro.mikaela.info otzmigofmchtadpek223bkmrzqoa6mmvhmr5dxqurcrtwalizfibuxid.onion
 # https://liberta.casa/ confirmed from oper
