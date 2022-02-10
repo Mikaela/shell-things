@@ -1,1 +1,2 @@
-module: libcryptoki.so
+module: /usr/lib64/libcryptoki.so
+managed: no
