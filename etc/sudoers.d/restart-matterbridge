@@ -1,0 +1,3 @@
+# Via https://askubuntu.com/a/692712, I am tired of checking password just
+# for this. Target system: Debian and Ubuntu
+%sudo ALL=NOPASSWD: /bin/systemctl restart matterbridge.service
