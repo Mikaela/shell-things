@@ -468,8 +468,8 @@ exec --no-startup-id env LANG=en flatpak run --branch=beta --command=telegram-de
 # Jami, VIP, P2P, won't get sold and disappoint, not Electron, I hope
 exec --no-startup-id sleep 25 && jami-qt
 # FluffyChat is a Matrix client with multiple accounts and it's not even Electron!
-# (it's Flutter)
-exec --no-startup-id sleep 5 && flatpak run im.fluffychat.Fluffychat
+# (it's Flutter), however it suffers very high CPU usage on desktop (due to Flutter)
+#exec --no-startup-id sleep 5 && flatpak run im.fluffychat.Fluffychat
 # Moment is another non-Electron Matrix client (however this time Qt)
 exec --no-startup-id sleep 10 && flatpak run xyz.mx_moment.moment --start-in-tray
 
