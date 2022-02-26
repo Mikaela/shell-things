@@ -46,6 +46,8 @@ MapAddress irc.ergo.chat vrw7zcuarwx4oeju3iikiz3jffrvuijsysyznqf53mxizxrebomfnri
 MapAddress palladium.libera.chat libera75jm6of4wxpxt4aynol3xjmbtxgfyjpu34ss4d7r7q2v5zrpyd.onion
 # https://www.oftc.net/Tor/
 MapAddress irc.oftc.net oftcnet6xg6roj6d7id4y4cu6dchysacqj2ldgea73qzdagufflqxrid.onion
+# From operator and their MOTD
+MapAddress irc.hybridirc.com rhnxdpf3h7z6f4g6cvm7fuadzoucdjnvscgczsv7d6dolddbfwb5upid.onion
 
 # Disable control access
 #ControlPort 0
