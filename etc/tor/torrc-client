@@ -38,6 +38,8 @@ ClientPreferIPv6ORPort 1
 ## accessed through Tor
 # My personal server, most likely used for IRC
 MapAddress etro.mikaela.info otzmigofmchtadpek223bkmrzqoa6mmvhmr5dxqurcrtwalizfibuxid.onion
+# I setup this being operator, also on MOTD
+MapAddress irc.pirateirc.net cbmtec5xuhpjwjq245kpp5jk2wij63ydgu5vwbxvdamzibfubc5uzaqd.onion
 # https://liberta.casa/ confirmed from oper
 MapAddress irc.liberta.casa cr36xbvmgjwnfw4sly4kuc6c3ozhesjre3y5pggq5xdkkmbrq6dz4fad.onion
 # Ergo IRCd's home, confirmed from channel
