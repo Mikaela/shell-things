@@ -467,6 +467,8 @@ exec --no-startup-id env LANG=en flatpak run --branch=beta --command=telegram-de
 # who actually prefers HexChat?
 # Jami, VIP, P2P, won't get sold and disappoint, not Electron, I hope
 exec --no-startup-id sleep 25 && jami-qt
+# Briar, also P2P and may be more promising than Jami in special circumstances
+exec --no-startup-id sleep 25 && flatpak run org.briarproject.Briar
 # FluffyChat is a Matrix client with multiple accounts and it's not even Electron!
 # (it's Flutter), however it suffers very high CPU usage on desktop (due to Flutter)
 #exec --no-startup-id sleep 5 && flatpak run im.fluffychat.Fluffychat
