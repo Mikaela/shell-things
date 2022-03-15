@@ -620,6 +620,7 @@ if [ -d $SHELL_THINGS_REPO ]; then
     git remote set-url origin https://gitea.blesmrt.net/Mikaela/shell-things.git
     git fetch --all
     git pull
+    git verify-commit HEAD
     sleep 10
     echo ""
     echo "shell-things: Installing/Upgrading..."

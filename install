@@ -2,6 +2,8 @@
 # Do not use this script unless you know what you are doing!
 set -x
 
+git verify-commit HEAD
+
 export MIKAELA_GREP=$HOME/.MIKAELA_GREP
 
 cat rc/bashrc > ~/.bashrc

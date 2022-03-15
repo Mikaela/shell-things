@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Do not use this script unless you know what you are doing!
 set -x
+git verify-commit HEAD
 cat .mikaela/bash_aliases> ~/.bash_aliases
 cat .mikaela/zsh_aliases > ~/.zsh_aliases
 cat .mikaela/gitconfig > ~/.gitconfig
