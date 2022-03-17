@@ -399,9 +399,8 @@ alias cwho="who -H -w -u"
 #alias inxi-install-root="cd /usr/local/bin;\wget -Nc https://github.com/smxi/inxi/raw/master/inxi;chmod +x inxi;./inxi -U;cd"
 #alias inxi-update="inxi -U"
 
-# FINEID
-#alias ssh-add-fineid="ssh-add -s $(find /usr/*lib -name 'libcryptoki.so')"
-#alias ssh-add-sc-pub="\ssh-add -L"
+# FINEID to ssh-agent
+alias fineid="ssh-add -s /usr/lib64/libcryptoki.so"
 
 # Homebrew
 #alias homebrew-install="cd ~;git clone https://github.com/Homebrew/homebrew.git --depth=1;mkdir -p .local;rsync -aP homebrew/* .local;rsync -aP homebrew/.* .local;rm -rf homebrew"
