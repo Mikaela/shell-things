@@ -524,6 +524,9 @@ then
   alias alsactl="\alsactl -f ~/.config/asound.state"
 fi
 
+# More simple SSH file signing, ~/.ssh/signingkey.pub should be a symlink
+alias ssh-sign-file="ssh-keygen -Y sign -f ~/.ssh/signingkey.pub -n file"
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
