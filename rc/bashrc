@@ -787,6 +787,15 @@ myip6 () {
     fi
 }
 
+# Easier verifying of SSH signed files: ssh-verify-file whatever@mikaela.info file.txt
+# It's assumed that signature of file.txt is called as file.txt.sig
+sshAllowedSigners=$HOME/src/gitea.blesmrt.net/Mikaela/ssh-allowed_signers/allowed_signers
+ssh-verify-file () {
+    echo "$1 ${2:?Usage: ssh-verify-file <email> <file-to-verify>}" > /dev/null
+    ssh-keygen -Y verify -f $sshAllowedSigners -I $1 -n file -s $2.sig < $2
+}
+
+
 # Source files for miscannellious modifications.
 
 # acme.sh
