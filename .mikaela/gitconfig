@@ -17,6 +17,7 @@
     pulln = pull --no-ff
     pullen = pull --no-ff
     shorten = "!sh -c 'curl -i http://git.io -F url=$1' -"
+    verify = verify-commit HEAD
 
 [core]
     editor = vim
