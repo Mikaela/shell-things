@@ -461,7 +461,7 @@ exec --no-startup-id sleep 8 && dino
 # Telegram
 #exec --no-startup-id sleep 15 && env LANG=en BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/telegram-desktop_telegram-desktop.desktop /var/lib/snapd/snap/bin/telegram-desktop -startintray
 #exec --no-startup-id sleep 15 && env LANG=en telegram-desktop -startintray
-exec --no-startup-id env LANG=en flatpak run --branch=beta --command=telegram-desktop --file-forwarding org.telegram.desktop -startintray
+exec --no-startup-id sleep 15 && env LANG=en flatpak run --branch=beta --command=telegram-desktop --file-forwarding org.telegram.desktop -startintray
 # HexChat IRC client in tray
 #exec --no-startup-id sleep 20 && io.github.Hexchat --minimize=2
 # who actually prefers HexChat?
