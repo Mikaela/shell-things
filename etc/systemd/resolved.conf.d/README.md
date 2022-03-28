@@ -2,12 +2,12 @@
 
 ### Files explained
 
-* 00-defaults.conf - configuration not touching resolvers. Disables DNSSEC (as
+* `00-defaults.conf` - configuration not touching resolvers. Disables DNSSEC (as
   systemd-resolved doesn't handle it properly), enables opportunistic DoT and
   caching.
-* dot-*.conf - configuration to use the DNS provider with DNS-over-TLS. If
-  captive portals are a concern, `DNSOverTLS`.
-* README.md - you are reading it right now.
+* `dot-*.conf` - configuration to use the DNS provider with DNS-over-TLS. If
+  captive portals are a concern, `DNSOverTLS=no`.
+* `README.md` - you are reading it right now.
 
 ### General commentary
 
