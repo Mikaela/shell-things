@@ -1,6 +1,15 @@
-## systemd-resolved additional config files
+# systemd-resolved additional config files
 
-### Files explained
+## Quickstart
+
+```bash
+sudo systemctl enable --now systemd-resolved.service
+sudo ln -rsf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+# After changing configuration
+sudo systemctl restart systemd-resolved
+```
+
+## Files explained
 
 * `00-defaults.conf` - configuration not touching resolvers. Disables DNSSEC (as
   systemd-resolved doesn't handle it properly), enables opportunistic DoT and
@@ -9,7 +18,7 @@
   captive portals are a concern, `DNSOverTLS=no`.
 * `README.md` - you are reading it right now.
 
-### General commentary
+## General commentary
 
 * Based on my test DNSOverTLS is not supported in Ubuntu 18.04.x LTS (however
   at the time of writing this README.md, the current version is Ubuntu 20.04.0)
