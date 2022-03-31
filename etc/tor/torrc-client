@@ -17,9 +17,9 @@ SocksPort 9052 PreferIPv6 IsolateSOCKSAuth
 SocksPort 9060 OnionTrafficOnly IsolateSOCKSAuth
 
 # HTTP Proxy port
-# This works only for HTTPS and similar, so I ended up using Privoxy to get
-# apt-listchanges and apt-listbugs also through Tor.
-#HTTPTunnelPort 8118 IsolateDestAddr PreferIPv6 IsolateSOCKSAuth
+# This works only for HTTPS and similar
+HTTPTunnelPort 8118 IsolateDestAddr PreferIPv6 IsolateSOCKSAuth
+# Legacy compliancy with self
 HTTPTunnelPort 9119 IsolateDestAddr PreferIPv6 IsolateSOCKSAuth
 
 # Uncomment to disable IPv4
