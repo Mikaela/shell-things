@@ -12,11 +12,9 @@
     cleandix = clean -dix
     # From http://progit.org/book/ch2-7.html
     last = cat-file commit HEAD
-    # From https://github.com/blog/985-git-io-github-url-shortener#comment-15121
     mergen = merge --no-ff
     pulln = pull --no-ff
     pullen = pull --no-ff
-    shorten = "!sh -c 'curl -i http://git.io -F url=$1' -"
     verify = verify-commit HEAD
 
 [core]
