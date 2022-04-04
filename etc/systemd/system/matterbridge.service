@@ -6,13 +6,16 @@ After=network-online.target systemd-resolved.service
 #Wants=oragono.service
 
 [Service]
+Type=notify
 Environment="PATH=/home/matterbridge/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 # To get Telegram chatid, add the bot to the group and say /groupId, -debug
 # isn't needed for it nowadays
 ExecStart=/home/matterbridge/.local/bin/matterbridge -conf /home/matterbridge/matterbridge.toml
+TimeoutStartSec=3600
 Restart=always
-RestartSec=5s
+RestartSec=10
 User=matterbridge
+LimitNOFILE=49152
 
 [Install]
 WantedBy=multi-user.target
