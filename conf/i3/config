@@ -278,7 +278,9 @@ set $br_violet #b891f5
 # finds out, if available) CHANGEME
 bar {
         position top
-        status_command LC_ALL=fi_FI.utf8 i3status
+        #status_command LC_ALL=fi_FI.utf8 i3status
+        # Temporary workaround to broken i3status in Fedora
+        status_command LC_ALL=fi_FI.utf8 i3status-rs ~/.config/i3status-rs/config.toml
         # Selenized black from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3-selenized-black.conf
         colors {
             separator $blue
