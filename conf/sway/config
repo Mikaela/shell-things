@@ -23,6 +23,12 @@ set $menu bemenu-run | xargs swaymsg exec --
 # Screen lock command
 set $ScreenLockCmd swaylock -c 000000 -f
 
+# Preferred graphical text editor
+set $TEXTEDITOR pluma
+
+# Font
+font pango:OpenDyslexic 9
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
@@ -110,6 +116,15 @@ output * bg /usr/share/backgrounds/default.png fill
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
+
+    # alt-tab, super-g
+    bindsym Mod1+Tab exec --no-startup-id wofi -show window
+    bindsym $mod+g exec --no-startup-id wofi -show window
+    # super-t
+    bindsym $mod+t exec --no-startup-id $TEXTEDITOR
+    # calculator
+    bindsym XF86Calculator exec --no-startup-id galculator
+
 #
 # Workspaces:
 #
