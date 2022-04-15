@@ -117,14 +117,6 @@ output * bg /usr/share/backgrounds/default.png fill
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
 
-    # alt-tab, super-g
-    bindsym Mod1+Tab exec --no-startup-id wofi -show window
-    bindsym $mod+g exec --no-startup-id wofi -show window
-    # super-t
-    bindsym $mod+t exec --no-startup-id $TEXTEDITOR
-    # calculator
-    bindsym XF86Calculator exec --no-startup-id galculator
-
 #
 # Workspaces:
 #
@@ -218,26 +210,21 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+#
+# Keybinds:
+#
 # Lock screen
 bindsym Control+$mod+l exec $ScreenLockCmd
-
-#
-# Status Bar:
-#
-# Read `man 5 sway-bar` for more information about this section.
-bar {
-    position top
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
-
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
-}
+# alt-tab, super-g
+bindsym Mod1+Tab exec --no-startup-id wofi -show window
+bindsym $mod+g exec --no-startup-id wofi -show window
+# super-t
+bindsym $mod+t exec --no-startup-id $TEXTEDITOR
+# calculator
+bindsym XF86Calculator exec --no-startup-id galculator
+# Known from Windows display configuration
+bindsym $mod+p exec wdisplays
+bindsym $mod+Shift+p exec wdisplays
 
 # Reveal xwayland
 for_window [shell=".*"] title_format "%title :: %shell"
