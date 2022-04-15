@@ -12,7 +12,8 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term foot
+exec --no-startup-id foot --server
+set $term footclient
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -215,6 +216,9 @@ bar {
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
+
+# Reveal xwayland
+for_window [shell=".*"] title_format "%title :: %shell"
 
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*.conf
