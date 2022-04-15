@@ -20,6 +20,9 @@ set $term footclient
 #set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $menu bemenu-run | xargs swaymsg exec --
 
+# Screen lock command
+set $ScreenLockCmd swaylock -c 000000 -f
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
@@ -199,6 +202,9 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
+
+# Lock screen
+bindsym Control+$mod+l exec $ScreenLockCmd
 
 #
 # Status Bar:
