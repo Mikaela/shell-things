@@ -21,7 +21,9 @@ set $term footclient
 set $menu bemenu-run | xargs swaymsg exec --
 
 # Screen lock command
-set $ScreenLockCmd swaylock -c 000000 -f
+# -c, colour, -F showing failed attempts, -k keyboard layout display,
+# -l, caps lock idnicator
+set $ScreenLockCmd swaylock -c 000000 -F -k -l
 
 # Preferred graphical text editor
 set $TEXTEDITOR pluma
