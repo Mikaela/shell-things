@@ -1,0 +1,7 @@
+# This is ~/.gdbinit
+# Overwrite logs when writing
+set logging overwrite on
+# Enable logging by default, default location is ~/gdb.txt
+set logging on
+# Automatic debuginfo download on Fedora?
+set debuginfod enabled on
