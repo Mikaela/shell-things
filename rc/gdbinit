@@ -3,5 +3,7 @@
 set logging overwrite on
 # Enable logging by default, default location is ~/gdb.txt
 set logging on
+# ZNC and Kismet advice this
+handle SIGPIPE nostop noprint pass
 # Automatic debuginfo download on Fedora?
 set debuginfod enabled on
