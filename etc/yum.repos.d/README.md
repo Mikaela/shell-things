@@ -6,6 +6,7 @@ as the links below.
 
 ## Additional repositories
 
+* Begin by `sudo fedora-third-party enable`
 * https://github.com/yggdrasil-network/yggdrasil-network.github.io/issues/127#issuecomment-766520311
 * https://www.insynchq.com/
 * https://keybase.io/docs/the_app/install_linux
