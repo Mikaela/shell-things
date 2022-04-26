@@ -1,0 +1,72 @@
+# i3status-rs config file
+# based heavily on /usr/share/doc/i3status-rs/example_config.toml & https://github.com/greshake/i3status-rust/tree/master/examples
+# Note: I am  not confident that "irstatus-rs" and "i3status-rust" are the same
+#       software.
+
+# WIP: migration from i3status
+    # contains: (disk /, disk/home,) load, ipv6, wireless, ethernet, battery, volume, (utc) time, (local time)
+
+theme = "solarized-dark"
+# Doesn't exist :(
+#theme = "selenized-dark"
+icons = "awesome"
+
+#[[block]]
+#block = "disk_space"
+#path = "/"
+#alias = "/"
+#info_type = "available"
+#unit = "GB"
+#interval = 20
+#warning = 20.0
+#alert = 10.0
+
+[[block]]
+block = "load"
+interval = 5
+format = "{1m}"
+
+[[block]]
+block = "cpu"
+interval = 5
+
+[[block]]
+block = "memory"
+display_type = "memory"
+format_mem = "{Mup}%"
+format_swap = "{SUp}%"
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "custom"
+command = "date -uIs"
+interval = 5
+
+# Date format explanations
+# %G = week based year
+# %V = week number counted from first week with 4 days
+# %u = week-day-number (1 = mon, 7 = sun)
+# %a = week day abbreviation (e.g. ma for maanantai (FI))
+# %B = unabbreviated month name (e.g. heinäkuu (FI))
+# %Y = actual year
+# %j = ordinal day of the year, from 000 to 366 (e.g. 201)
+# %F = year-month-day e.g. 2020-07-19
+# %H = 24H hour
+# %M = minute
+# %S = seconds
+# %z = timezone offset to UTC, e.g. +0300
+[[block]]
+block = "time"
+interval = 5
+# i3status: format = "%G-W%V-%u (%j/%a/%B) %F %H.%M.%S%z"
+format = "%G-W%V-%u (%j/%a/%B) %F %H.%M.%S%z"
+# default
+#format = "%a %d/%m %R"
+
+#[[block]]
+#block = "custom"
+#command = "cat /etc/hostname"
+# Fedora 36 version doesn't recognise "once" (2022-04-06)
+#interval = 3600
