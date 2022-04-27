@@ -6,10 +6,18 @@
 # WIP: migration from i3status
     # contains: (disk /, disk/home,) load, ipv6, wireless, ethernet, battery, volume, (utc) time, (local time)
 
-theme = "solarized-dark"
+[theme]
+name = "solarized-dark"
 # Doesn't exist :(
-#theme = "selenized-dark"
-icons = "awesome"
+#name = "selenized-dark"
+[theme.overrides]
+# Selezined Dark
+idle_bg = "#103c48"
+idle_fg = "#adbcbc"
+[icons]
+name = "awesome"
+# fontawesome5-fonts-all in Fedora? doesn't work
+#name = "awesome5"
 
 #[[block]]
 #block = "disk_space"
