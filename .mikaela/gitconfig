@@ -59,3 +59,7 @@
     defaultBranch = cxefa
 [gpg "ssh"]
     allowedSignersFile = ~/src/gitea.blesmrt.net/Mikaela/ssh-allowed_signers/allowed_signers
+[advice]
+    # I am not developing in detached head state, I generally want to compile
+    # a specific version of a program and I know how to get out of it
+    detachedHead = false
