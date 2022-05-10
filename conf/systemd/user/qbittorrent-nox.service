@@ -1,12 +1,12 @@
 [Unit]
 Description=A Headless Bittorrent client using rb_libtorrent
-After=mullvad-connect.service
-Wants=mullvad-connect.service
 
 [Service]
 Type=simple
 ExecStart=/usr/bin/qbittorrent-nox --webui-port=8081
 ExecReload=/bin/kill -HUP $MAINPID
+Restart=always
+RestartSec=5
 
 [Install]
 WantedBy=default.target
