@@ -312,6 +312,9 @@ fi
 
 ## -- End of aliases which are saved from Ubuntu default bashrc. --
 
+# Enable colours for diff when in terminal
+alias diff="diff --color=auto"
+
 # SSHGuard specific
 alias sshguard-show-bans="sshguard4-show-bans && sshguard6-show-bans"
 alias sshguard4-show-bans="sudo iptables -L sshguard --line-numbers"
