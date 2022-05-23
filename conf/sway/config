@@ -34,7 +34,7 @@ font pango:OpenDyslexic 9
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/default.png fill
+#output * bg /usr/share/backgrounds/default.png fill
 #
 # Example configuration:
 #
