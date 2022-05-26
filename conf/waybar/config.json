@@ -2,15 +2,24 @@
     "layer": "top",
     "position": "left",
     "modules-left": ["sway/workspaces", "sway/mode"],
-    "modules-right": ["battery", "clock"],
+    "modules-right": ["cpu", "memory", "battery", "pulseaudio", "tray", "clock"],
     "sway/window": {
         "max-length": 50
     },
+    "cpu": {
+        "format": "CPU {usage}%"
+    },
+    "memory": {
+        "format": "MEM {percentage}%"
+    },
+    "pulseaudio": {
+        "format": "AUX {volume}%",
+        "format-bluetooth": "BT {volume}%"
+    },
     "battery": {
-        "format": "{capacity}% {icon}",
-        "format-icons": ["", "", "", "", ""]
+        "format": "BAT {capacity}%"
     },
     "clock": {
-        "format-alt": "{:%a, %d. %b  %H:%M}"
+        "format": "{:%Y-%j\n%G-W%V-%u\n%F\n%H.%M.%S}"
     }
 }
