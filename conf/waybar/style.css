@@ -1,0 +1,75 @@
+/* https://github.com/jan-warchol/selenized/blob/master/other-apps/wofi/selenized-dark.css */
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: OpenDyslexic, sans-serif;
+    font-size: 9px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #103c48;
+    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    color: white;
+}
+
+tooltip {
+  background: rgba(43, 48, 59, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+  color: white;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: #103c48;
+    color: white;
+    border-bottom: 3px solid #103c48;
+}
+
+#workspaces button.focused {
+    background: #64727D;
+    border-bottom: 3px solid white;
+}
+
+#mode, #clock, #battery {
+    padding: 0 10px;
+}
+
+#mode {
+    background: #103c48;
+    border-bottom: 3px solid white;
+}
+
+#clock {
+    background-color: #103c48;
+}
+
+#battery {
+    background-color: #103c48;
+    color: black;
+}
+
+#battery.charging {
+    color: white;
+    background-color: #103c48;
+}
+
+@keyframes blink {
+    to {
+        background-color: #103c48;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background: #f53c3c;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
