@@ -22,10 +22,8 @@ methods setting fonts):
 * User-interface text: Noto Serif Regular 10
 * Document text: Noto Serif Regular 11
 * Monospace text: Noto Sans Mono Regular 10
-* Expired window title text: Noto Serif Bold 11
-  * backtranslated from *Vanhennettujen ikkunaotsikkojen teksti* and I am
-    a bit lost on what that means. Window doesn't respond or is in the
-    background?
+* Legacy window title text: Noto Serif Bold 11
+  * Apparently this means "apps that don't use client-side decorations"
 
 The number behind is obviously the number and it's based on what were the
 defaults before I touched them so I am hoping GNOME knows what they are
