@@ -13,3 +13,36 @@ The source for that is marked as https://askubuntu.com/a/600946
 Additionally apparently my `~/.xprofile` specifies `GTK_THEME` which 
 I have hoped to get get detected/understood by browsers etc, but I think
 I decided to not import that to Sway which naturally doesn't read xprofile.
+
+### Fonts
+
+Using the same apps and `gnome-tweaks` (as there are probably a lot of
+methods setting fonts):
+
+* User-interface text: Noto Serif Regular 10
+* Document text: Noto Serif Regular 11
+* Monospace text: Noto Sans Mono Regular 10
+* Expired window title text: Noto Serif Bold 11
+  * backtranslated from *Vanhennettujen ikkunaotsikkojen teksti* and I am
+    a bit lost on what that means. Window doesn't respond or is in the
+    background?
+
+The number behind is obviously the number and it's based on what were the
+defaults before I touched them so I am hoping GNOME knows what they are
+doing.
+
+Noto should have all characters, looks good enough to my eyes, I guess Serif
+makes a distinguishion between letters "I" and "l", it doesn't seem to have
+a Mono variant, but the Sans is close enough.
+
+Where reading speed is needed, `OpenDyslexic` is nice, but some applications
+have trouble handling it, e.g. mpv (makes Ä and Ö and Å all Å) and Firefox
+(makes 8 look like 6 and other weirdness).
+
+Other font settings in GNOME-Tweak:
+
+* Hinting: *a bit*
+  * for no particular reason
+* Antialiasing: *Subpixel (for LCD-displays)*
+  * I have no idea where there are "standard grayscale" displays that aren't
+    LCD.
