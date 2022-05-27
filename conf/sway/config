@@ -29,7 +29,7 @@ set $ScreenLockCmd swaylock -c 000000 -F -k -l -f
 set $TEXTEDITOR pluma
 
 # Font
-font pango:OpenDyslexic 9
+font pango:Noto Sans Mono Regular 10
 
 ### Output configuration
 #
