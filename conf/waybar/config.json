@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "left",
     "modules-left": ["sway/workspaces", "sway/mode"],
-    "modules-right": ["cpu", "memory", "battery", "pulseaudio", "tray", "clock"],
+    "modules-right": ["cpu", "memory", "bluetooth", "battery", "pulseaudio", "tray", "sway/language", "clock"],
     "sway/window": {
         "max-length": 50
     },
@@ -10,14 +10,23 @@
         "format": "CPU {usage}%"
     },
     "memory": {
-        "format": "MEM {percentage}%"
+        "format": "🐏 {percentage}%"
     },
+"bluetooth": {
+	"format": " {status}",
+	"format-connected": " {device_alias}",
+	"format-connected-battery": " {device_alias} {device_battery_percentage}%",
+},
     "pulseaudio": {
-        "format": "AUX {volume}%",
-        "format-bluetooth": "BT {volume}%"
+        "format": "🔈 {volume}%",
+        "format-bluetooth": "🔈 {volume}%"
     },
     "battery": {
-        "format": "BAT {capacity}%"
+        "format": "🔋 {capacity}%"
+    },
+    "sway/language": {
+        "format": "⌨ {short} {variant}",
+        "on-click": "swaymsg input type:keyboard xkb_switch_layout next",
     },
     "clock": {
         "format": "{:%Y-%j\n%G-W%V-%u\n%F\n%H.%M.%S}"
