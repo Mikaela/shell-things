@@ -29,6 +29,6 @@
         "on-click": "swaymsg input type:keyboard xkb_switch_layout next",
     },
     "clock": {
-        "format": "{:%Y-%j\n%G-W%V-%u\n%F\n%H.%M.%S}"
+        "format": "{:%a. %d.\n%b.\n%Y-%j\n%G-W%V-%u\n%F\n%H.%M.%S}"
     }
 }
