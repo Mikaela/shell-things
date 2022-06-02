@@ -94,6 +94,9 @@ font pango:Noto Sans Mono Regular 10
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    # Lock and suspend
+    bindsym $mod+Escape exec "swaynag -t warning -m 'You pressed the SUSPEND shortcut. Do you really want to SUSPEND?' -B 'Yes, SUSPEND' '$ScreenLockCmd; systemctl -i suspend'"
+
 #
 # Moving around:
 #
