@@ -22,7 +22,11 @@
         "format-bluetooth": "🔈 {volume}%"
     },
     "battery": {
-        "format": "🔋 {capacity}%"
+        "states": {
+            "warning": 40,
+            "critical": 20
+    },
+        "format": "🔋 {capacity}%",
     },
     "sway/language": {
         "format": "⌨ {short} {variant}",
