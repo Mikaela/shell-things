@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "left",
     "modules-left": ["sway/workspaces", "sway/mode"],
-    "modules-right": ["cpu", "memory", "bluetooth", "battery", "pulseaudio", "sway/language", "tray", "clock"],
+    "modules-right": ["cpu", "memory", "battery", "pulseaudio", "sway/language", "bluetooth", "tray", "clock"],
     "sway/window": {
         "max-length": 50
     },
