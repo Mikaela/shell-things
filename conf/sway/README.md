@@ -44,3 +44,12 @@ Other font settings in GNOME-Tweak:
 * Antialiasing: *Subpixel (for LCD-displays)*
   * I have no idea where there are "standard grayscale" displays that aren't
     LCD.
+
+### Screen mirrorring
+
+[Officially unsupported for now]()
+
+Workarounds:
+
+* Use VNC (see my Scripts repo `bash/swaymirror.bash`)
+* Do something weird with OBS
