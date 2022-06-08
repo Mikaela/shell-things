@@ -45,11 +45,15 @@ Other font settings in GNOME-Tweak:
   * I have no idea where there are "standard grayscale" displays that aren't
     LCD.
 
-### Screen mirrorring
+### Screen mirroring
 
 [Officially unsupported for now]()
 
 Workarounds:
 
-* Use VNC (see my Scripts repo `bash/swaymirror.bash`)
+* Use VNC (see my Scripts repo [`bash/swaymirror.bash`](https://gitea.blesmrt.net/mikaela/scripts/src/branch/master/bash/swaymirror.bash))
 * Do something weird with OBS
+* Use a dedicated application that don't seem to be in Fedora repos, flatpak
+  or snap.
+  * [github.com/Ferdi265/wl-mirror](https://github.com/Ferdi265/wl-mirror)
+  * [github.com/progandy/wdomirror](https://github.com/progandy/wdomirror)
