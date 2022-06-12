@@ -23,7 +23,7 @@
     },
     "battery": {
         "states": {
-            "warning": 40,
+            "warning": 45,
             "critical": 20
     },
         "format": "BAT {capacity}%"
