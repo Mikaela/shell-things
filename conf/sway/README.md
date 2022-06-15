@@ -14,6 +14,8 @@ Additionally apparently my `~/.xprofile` specifies `GTK_THEME` which
 I have hoped to get get detected/understood by browsers etc, but I think
 I decided to not import that to Sway which naturally doesn't read xprofile.
 
+Apparently Adwaita must be set to dark theme in `gnome-control-center`
+
 ### Fonts
 
 Using the same apps and `gnome-tweaks` (as there are probably a lot of
