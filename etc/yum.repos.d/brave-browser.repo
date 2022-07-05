@@ -1,0 +1,6 @@
+[brave-browser]
+name=brave-browser
+baseurl=https://brave-browser-rpm-release.s3.brave.com/x86_64/
+enabled=1
+gpgcheck=1
+gpgkey=https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
