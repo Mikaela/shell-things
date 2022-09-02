@@ -49,7 +49,7 @@ MapAddress palladium.libera.chat libera75jm6of4wxpxt4aynol3xjmbtxgfyjpu34ss4d7r7
 # https://www.oftc.net/Tor/
 MapAddress irc.oftc.net oftcnet6xg6roj6d7id4y4cu6dchysacqj2ldgea73qzdagufflqxrid.onion
 # From operator and their MOTD
-MapAddress irc.hybridirc.com rhnxdpf3h7z6f4g6cvm7fuadzoucdjnvscgczsv7d6dolddbfwb5upid.onion
+MapAddress irc.hybridirc.com xtciv7bmnkb5afqsryowaejcerqmajsginkhkgtq6heiehu2ig7gdkid.onion
 
 # Disable control access
 #ControlPort 0
