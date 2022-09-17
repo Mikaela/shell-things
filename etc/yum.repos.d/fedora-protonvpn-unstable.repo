@@ -1,7 +1,0 @@
-[proton-fedora-unstable]
-name="proton-fedora-unstable"
-baseurl=https://repo.protonvpn.com/fedora-$releasever-unstable/
-enabled=1
-gpgcheck=1
-repo_gpgcheck=1
-gpgkey=https://repo.protonvpn.com/fedora-$releasever-unstable/public_key.asc
