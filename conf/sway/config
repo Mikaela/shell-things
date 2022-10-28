@@ -230,9 +230,16 @@ bindsym XF86Calculator exec --no-startup-id galculator
 # Known from Windows display configuration
 bindsym $mod+p exec wdisplays
 bindsym $mod+Shift+p exec wdisplays
+# Brightness from Sway user FAQ
+bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
 # Reveal xwayland
 for_window [shell=".*"] title_format "%title :: %shell"
+
+# Slow gtk start workaround
+exec systemctl --user import-environment
+exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*.conf
