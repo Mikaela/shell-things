@@ -5,3 +5,11 @@ pool time.cloudflare.com maxsources 2 iburst nts
 
 # Swedish anycast https://www.netnod.se/time-and-frequency/how-to-use-nts
 server nts.netnod.se iburst nts
+
+# https://system76.com/time
+server paris.time.system76.com iburst nts
+
+# https://nts.time.nl/ - regardless of name provides 1 v4 & v6 address
+# no pool directive
+server ntppool1.time.nl iburst nts
+server ntppool2.time.nl iburst nts
