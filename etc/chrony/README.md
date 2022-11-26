@@ -48,6 +48,13 @@ Checking that something has NTS?
 nmap -p 4460 -Pn ntp.example.net
 ```
 
+In [GitHub user jauderho's curated NTS list](https://gist.github.com/jauderho/2ad0d441760fc5ed69d8d4e2d6b35f8d)
+user [cadusilva suggests this command instead](https://gist.github.com/jauderho/2ad0d441760fc5ed69d8d4e2d6b35f8d?permalink_comment_id=4192632#gistcomment-4192632):
+
+```'
+chronyd -Q -t 3 'server NTP_SERVER_HERE iburst nts maxsamples 1'
+```
+
 ### Firewall configuration
 
 In case local clients or peers are wanted,
