@@ -1,7 +1,10 @@
+# DELETE ME
+server  iburst
+
 # Configuring SNTP Servers in Windows terminal
 
 ```
-w32tm /config /syncfromflags:manual /manualpeerlist:"time.cloudflare.com nts.netnod.se time.mikes.fi 0.pool.ntp.org 1.pool.ntp.org 2.pool.ntp.org 3.pool.ntp.org"
+w32tm /config /syncfromflags:manual /manualpeerlist:"time.cloudflare.com time.mikes.fi time1.mikes.fi time2.mikes.fi time3.mikes.fi 0.pool.ntp.org 1.pool.ntp.org 2.pool.ntp.org 3.pool.ntp.org"
 w32tm /resync
 w32tm /query /peers
 ```
@@ -15,22 +18,29 @@ w32tm /query /peers
     that may be blocked while the second keeps working. It may also not
     show all the peers, just the primary one, while `w32tm` is more verbose
     and has all of them.
+* As Windows doesn't support NTS and probably won't in near future, there is
+  no point in listing distant foreign servers.
+
 
 ## Variations
 
 Variations of the timeserver setting command to be kept at hand
 
-Note: `time.cloudflare.com` and `nts.netnod.se` probably work everywhere and
-I am keeping the second at hand in hopes of Windows implementing support for
-NTS. Additionally Sweden is a neighbouring country and thus doesn't seem
-too bad location for an NTP server.
+### DNA
+
+*Including Moi*
+
+```
+w32tm /config /syncfromflags:manual /manualpeerlist:"time.cloudflare.com ntp.dnainternet.fi time.mikes.fi time1.mikes.fi time2.mikes.fi time3.mikes.fi pool.ntp.org"
+```
+
+* https://www.dna.fi/liikennerajoitukset
+* https://asiakaspalvelu.moi.fi/hc/fi/articles/360029789832-Mitk%C3%A4-ovat-Moin-palvelinosoitteet-
 
 ### Elisa
 
-Finnish WISP that I seem to often be a customer of.
-
 ```
-w32tm /config /syncfromflags:manual /manualpeerlist:"time.cloudflare.com nts.netnod.se ntp1.kolumbus.fi ntp2.kolumbus.fi ntp.saunalahti.fi time.mikes.fi pool.ntp.org"
+w32tm /config /syncfromflags:manual /manualpeerlist:"time.cloudflare.com ntp1.kolumbus.fi ntp2.kolumbus.fi ntp.saunalahti.fi time.mikes.fi time1.mikes.fi time2.mikes.fi time3.mikes.fi pool.ntp.org"
 ```
 
 * https://elisa.fi/asiakaspalvelu/ohje/tiedonsiirtoportit-porttiohjaukset-palvelimet/
