@@ -1,2 +1,2 @@
 # DNA & Moi NTP server, no idea on smearing, I hope not
-server ntp.dnainternet.fi iburst
+pool ntp.dnainternet.fi maxsources 3 iburst
