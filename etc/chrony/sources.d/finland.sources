@@ -1,3 +1,7 @@
-# Public official Finnish time server, I am very surprised if there is leap
-# smearing
+# Public official Finnish time server
+# https://www.vttresearch.com/en/ourservices/time-finland-ntp-network-time-service
+# https://monitor.mikes.fi/ntp/
 server time.mikes.fi iburst
+server time1.mikes.fi iburst
+server time2.mikes.fi iburst
+server time3.mikes.fi iburst
