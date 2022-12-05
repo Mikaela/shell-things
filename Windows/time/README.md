@@ -1,6 +1,3 @@
-# DELETE ME
-server  iburst
-
 # Configuring SNTP Servers in Windows terminal
 
 ```
