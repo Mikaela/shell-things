@@ -61,3 +61,7 @@ Host *
     # However with "ask" you won't be told whether the zone is signed, so
     # I consider "yes" to be the least evil.
     VerifyHostKeyDNS yes
+
+    # Display key ascii art on connection. Makes noticing changed keys easier,
+    # although it's ambiguous and similar pattern may go past unnoticed.
+    VisualHostKey yes
