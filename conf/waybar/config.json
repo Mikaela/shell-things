@@ -33,9 +33,9 @@
         "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
     },
 "network": {
-	"interface": "wlan0",
+	//"interface": "wlan0",
 	"format": "{ifname}",
-	"format-wifi": "{essid} ({signalStrength}%) ",
+	"format-wifi": "{signalStrength}% {essid}",
 	"format-ethernet": "{ifname} ",
 	"format-disconnected": "", //An empty format will hide the module.
 	"format-disconnected": "",
