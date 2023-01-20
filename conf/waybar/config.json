@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "left",
     "modules-left": ["sway/workspaces", "sway/mode"],
-    "modules-right": ["cpu", "memory", "battery", "pulseaudio", "sway/language", "bluetooth", "tray", "clock"],
+    "modules-right": ["cpu", "memory", "battery", "pulseaudio", "sway/language", "network", "bluetooth", "tray", "clock"],
     "sway/window": {
         "max-length": 50
     },
@@ -32,6 +32,19 @@
         "format": "KBD {short} {variant}",
         "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
     },
+"network": {
+	"interface": "wlan0",
+	"format": "{ifname}",
+	"format-wifi": "{essid} ({signalStrength}%) ",
+	"format-ethernet": "{ifname} ",
+	"format-disconnected": "", //An empty format will hide the module.
+	"format-disconnected": "",
+	"tooltip-format": "{ifname}",
+	"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+	"tooltip-format-ethernet": "{ifname} ",
+	"tooltip-format-disconnected": "Disconnected",
+	"max-length": 50
+},
     "clock": {
         "format": "{:%a. %d.\n%b.\n%Y-%j\n%G-W%V-%u\n%F\n%H.%M.%S}"
     }
