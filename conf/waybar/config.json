@@ -35,13 +35,13 @@
 "network": {
 	//"interface": "wlan0",
 	"format": "{ifname}",
-	"format-wifi": "{signalStrength}% {essid}",
-	"format-ethernet": "{ifname} ",
+	"format-wifi": "{signalStrength}% {essid}",
+	"format-ethernet": "{ifname} up",
 	"format-disconnected": "", //An empty format will hide the module.
-	"format-disconnected": "",
+	"format-disconnected": "down",
 	"tooltip-format": "{ifname}",
-	"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
-	"tooltip-format-ethernet": "{ifname} ",
+	"tooltip-format-wifi": "{signalStrength}% {essid}",
+	"tooltip-format-ethernet": "{ifname} up",
 	"tooltip-format-disconnected": "Disconnected",
 	"max-length": 50
 },
