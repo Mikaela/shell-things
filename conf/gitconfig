@@ -33,6 +33,7 @@
 [push]
     default = current
     gpgSign = if-asked
+	autoSetupRemote = true
 [credential]
     helper = cache --timeout=86400
 [merge]
@@ -63,3 +64,8 @@
     # I am not developing in detached head state, I generally want to compile
     # a specific version of a program and I know how to get out of it
     detachedHead = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
