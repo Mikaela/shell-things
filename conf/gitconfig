@@ -34,6 +34,7 @@
     default = current
     gpgSign = if-asked
 	autoSetupRemote = true
+	recurseSubmodules = on-demand
 [credential]
     helper = cache --timeout=86400
 [merge]
@@ -69,3 +70,7 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[status]
+	submodulesummary = 1
+[submodule]
+	recurse = true
