@@ -1,0 +1,15 @@
+# This SSID is "private-home-sample", it comes from the filename
+[Settings]
+AutoConnect=true
+# MAC address override. Takes priority over AlwaysRandomizeAddress
+#AddressOverride=
+
+[Security]
+Passphrase=MySuperSecretPassphraseThatDoesNotReadHere
+
+[IPv4]
+# In home network recognising the device may be a quality of life feature
+SendHostname=true
+
+[IPv6]
+Enabled=true

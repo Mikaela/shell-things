@@ -1,9 +1,0 @@
-# This SSID is "private-wifi-sample", it comes from the filename
-[Settings]
-AutoConnect=true
-
-[IPv6]
-Enabled=true
-
-[Security]
-Passphrase=MySuperSecretPassphraseThatDoesNotReadHere

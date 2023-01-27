@@ -1,0 +1,9 @@
+# This SSID is "private-cafe-sample", it comes from the filename
+[Settings]
+AlwaysRandomizeAddress=true
+
+[Security]
+Passphrase=MySuperSecretPassphraseThatDoesNotReadHere
+
+[IPv6]
+Enabled=true
