@@ -1,0 +1,3 @@
+*.psk
+*.8021x
+!private-wifi-sample.psk
