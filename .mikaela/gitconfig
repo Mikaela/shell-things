@@ -74,3 +74,6 @@
 	submodulesummary = 1
 [submodule]
 	recurse = true
+[lfs]
+	setlockablereadonly = true
+	locksverify = true
