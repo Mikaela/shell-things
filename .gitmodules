@@ -1,0 +1,3 @@
+[submodule "etc/chrony/sources.d/jauderho-nts-servers"]
+	path = etc/chrony/sources.d/jauderho-nts-servers
+	url = https://gist.github.com/2ad0d441760fc5ed69d8d4e2d6b35f8d.git
