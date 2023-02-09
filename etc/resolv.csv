@@ -13,6 +13,9 @@ Cloudflare antimalware,https://security.cloudflare-dns.com/dns-query,,2606:4700:
 Cloudflare family,https://family.cloudflare-dns.com/dns-query,,2606:4700:4700::1113,2606:4700:4700::1003,1.1.1.3,1.0.0.3
 Cloudflare MozillaFirefox,https://mozilla.cloudflare-dns.com/dns-query,,,,,
 CZ.NIC ODVR,https://odvr.nic.cz/dns-query,odvr.nic.cz,2001:148f:ffff::1,2001:148f:fffe::1,193.17.47.1,185.43.135.1
+DNS0,https://dns0.eu,dns0.eu,2a0f:fc80::,2a0f:fc81::,193.110.81.0,185.253.5.0
+DNS0 Kids,https://kids.dns0.eu,kids.dns0.eu,2a0f:fc80::1,2a0f:fc81::1,193.110.81.1,185.253.5.1
+DNS0 Zero,https://zero.dns0.eu,zero.dns0.eu,2a0f:fc80::9,2a0f:fc81::9,193.110.81.9,185.253.5.9
 Mullvad,https://doh.mullvad.net/dns-query,doh.mullvad.net,2a07:e340::2,,194.242.2.2,193.19.108.2
 Mullvad Adblock,https://adblock.doh.mullvad.net/dns-query,adblock.doh.mullvad.net,2a07:e340::3,,194.242.2.3,193.19.108.3
 NextDNS,https://dns.nextdns.io,dns.nextdns.io,2a07:a8c1::,2a07:a8c0::,45.90.30.0,45.90.28.0
