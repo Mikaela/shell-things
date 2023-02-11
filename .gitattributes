@@ -1,0 +1,3 @@
+*.{reg,[rR][eE][gG]} text eol=crlf
+*.{bat,[bB][aA][tT]} text eol=crlf
+*.{ahk,[aA][hH][kK]} text eol=crlf
