@@ -1,14 +1,6 @@
-# Normalize line endings for text files https://www.git-scm.com/docs/gitattributes
-# https://www.git-scm.com/docs/gitattributes#_end_of_line_conversion
-#
-# WARNING: In the unlikely scenario of checkout within Windows, copy to
-# Linux, all line endings will be Windows clrf instead of lf as lf files
-# aren't spoecified otherwise due to this repo mostly being config files.
-# My repos are mostly incompatible with Windows anyway due to
-# case-insensitive files anyway.
-* text=auto
-# These files are forced to be Windows when checked out. Think of WSL?
-# https://rehansaeed.com/gitattributes-best-practices/#line-endings
+* text=auto eol=lf
+# Windows files even in checkout
+# Ref: https://rehansaeed.com/gitattributes-best-practices/#line-endings
 *.{reg,[rR][eE][gG]} text eol=crlf
 *.{bat,[bB][aA][tT]} text eol=crlf
 *.{ahk,[aA][hH][kK]} text eol=crlf
