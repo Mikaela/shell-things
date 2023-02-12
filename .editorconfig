@@ -6,15 +6,9 @@ end_of_line = lf
 trim_trailing_whitespace = true
 insert_final_newline = true
 charset = utf-8
-indent_style = space
-indent_size = 4
-
-# specific to Mikaela/shell-things
-[gitconfig]
+# Accessibility reasons. Vim: :%retab! (note also :set ts=4)
 indent_style = tab
-
-[.{git*,mailmap}]
-indent_style = tab
+#indent_size = 4
 
 [*.{reg,bat,ahk}]
 end_of_line = crlf
