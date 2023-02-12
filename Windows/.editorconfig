@@ -1,0 +1,4 @@
+root = false
+
+[*]
+end_of_line = crlf
