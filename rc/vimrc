@@ -4,24 +4,24 @@ set nocompatible
 " Show syntax colours
 syntax on
 
-set showcmd     " Show (partial) command in status line.
-set showmatch   " Show matching brackets.
-set ignorecase  " Do case insensitive matching
-set smartcase   " Do smart case matching
-"set incsearch  " Incremental search
-set autowrite   " Automatically save before commands like :next and :make
-set hidden      " Hide buffers when they are abandoned
-"set mouse=a    " Enable mouse usage (all modes)
+set showcmd		" Show (partial) command in status line.
+set showmatch	" Show matching brackets.
+set ignorecase	" Do case insensitive matching
+set smartcase	" Do smart case matching
+"set incsearch	" Incremental search
+set autowrite	" Automatically save before commands like :next and :make
+set hidden		" Hide buffers when they are abandoned
+"set mouse=a	" Enable mouse usage (all modes)
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
-        source /etc/vim/vimrc.local
+		source /etc/vim/vimrc.local
 endif
 
-set number      " Show line numbers.
+set number		" Show line numbers.
 
-set ruler       " Show the line and column number of the cursor position,
-                " separated by a comma.
+set ruler		" Show the line and column number of the cursor position,
+				" separated by a comma.
 
 set background=dark
 
@@ -30,8 +30,10 @@ set modeline
 
 " These may be difficult with multiple languages especially if Vim already
 " knows what to do
-"set tabstop=4   "four spaces is likely a tab
+set tabstop=4	"four spaces is likely a tab
 "set shiftwidth=4
+" For accessibility tabs instead of spaces (uncomment for spaces instead of
+" tabs)
 "set expandtab
 
 set autoindent
@@ -52,7 +54,7 @@ set visualbell
 
 " gvim has light background
 "if has('gui_running')
-"    set background=light
+"	 set background=light
 "endif
 
 " Show hidden characters via
@@ -77,27 +79,28 @@ filetype plugin indent on
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
-     \ if line("'\"") > 0 && line("'\"") <= line("$") |
-     \   exe "normal! g`\"" |
-     \ endif
+	 \ if line("'\"") > 0 && line("'\"") <= line("$") |
+	 \	 exe "normal! g`\"" |
+	 \ endif
 
+" I think leaving line endings to git may be more safe
 " dos2unix ^M copied from https://stackoverflow.com/a/5361702/1675649
-fun! Dos2unixFunction()
-    let _s=@/
-    let l = line(".")
-    let c = col(".")
-    try
-        set ff=unix
-        w!
-        "%s/\%x0d$//e
-    catch /E32:/
-        echo "Sorry, the file is not saved."
-    endtry
-    let @/=_s
-    call cursor(l, c)
-endfun
-com! Dos2Unix keepjumps call Dos2unixFunction()
-au BufReadPost * keepjumps call Dos2unixFunction()
+"fun! Dos2unixFunction()
+"	let _s=@/
+"	let l = line(".")
+"	let c = col(".")
+"	try
+"		set ff=unix
+"		w!
+"		"%s/\%x0d$//e
+"	catch /E32:/
+"		echo "Sorry, the file is not saved."
+"	endtry
+"	let @/=_s
+"	call cursor(l, c)
+"endfun
+"com! Dos2Unix keepjumps call Dos2unixFunction()
+"au BufReadPost * keepjumps call Dos2unixFunction()
 
 " Highlight all search results
 set hlsearch
