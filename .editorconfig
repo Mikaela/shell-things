@@ -1,7 +1,11 @@
+# Note: I use this file as ~/.editorconfig when something doesn't specify to
+# be root before reaching ~, so this contains files not seen in this repo
 root = true
 
+# Defaults
 [*]
 # Future: https://github.com/editorconfig/editorconfig/issues/89
+# Linux line endings, this repo/file is unlikely to be used in Windows
 end_of_line = lf
 trim_trailing_whitespace = true
 insert_final_newline = true
@@ -9,7 +13,32 @@ charset = utf-8
 # Accessibility reasons. Vim: :%retab! (note also :set ts=4)
 indent_style = tab
 indent_size = tab
+# Opinionated affecting only display, better to not set
 #tab_width =
 
+# Windows line-endings for Windows
 [*.{reg,bat,ahk}]
 end_of_line = crlf
+
+# Let's ensure *nix is lf although it comes from defaults
+# above
+[*.{bash,sh}]
+end_of_line = lf
+
+# Python https://peps.python.org/pep-0008/#indentation
+[*.py]
+indent_style = space
+indent_size = 4
+
+# YAML requires spaces
+[*.{yaml,yml}]
+indent_style = space
+indent_size = 2
+
+# Ruby
+#[*.rb]
+# Unofficial Ruby Style guide says two spaces, but Wikipedia says it doesn't
+# matter so I am going accessibility first and having this commented
+# https://rubystyle.guide/#spaces-indentation
+#indent_style = space
+#indent_size = 2
