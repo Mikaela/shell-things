@@ -1,70 +1,70 @@
 [user]
-    #name = Aminda Suomalainen
-    #email = suomalainen+git@mikaela.info
-    # Aminda Suomalainen FINEID 20.12.2021-20.12.2026
-    #signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCuq/w936y0Enjg7e+t27p6Hwj7RJpuDdhjV/FeikCitey23dx72yIFe3giHW10eBKHr0lhWbDhm2m0b74ZNKneR+oJ99Kl98KegGwjS/gRcjYILHWBJBCF7y61XNeJTlehEZ4zAXS3zLGaZ6DUWY3aqoMkoiAFDdHEAu5EfYITybR+eQZNiGOLVpEVC96bSgGYl4BtUjLib8YCkznllo1hbQWOJSeftIkCJj/XcOvX5kIHsnTMdkgPVd+JhBJ1ReYLf4mBYA0BVTBbHJVrMajz77Oo4iZua3XDw3RF9cekAHjh+x/zZntwiRu0k51xI0mX5nr9SsuiQccD/fxwCoI9P1u2xZHFthiHl4MxUvTRDuBTz8bktdUruqxJP+ZkKZmuozLhP738m+9nMRiavSJm0RQGDUMXfHoJ8+9VVB4uZRZq9Hprt7ReCYobgRaq4220Cpg/WADcm13o0jp0PKOl2uiS6MdIbReiLGJVf/XxeNun43K1+osv/Ermy6qL5WM=
-    #signingkey = ~/.ssh/id_ed25519.pub
-    ##wtop
-    #email = mikaela+digitalents@mikaela.info
-    #signingkey = 0xDF046339D69EB8C9
+	#name = Aminda Suomalainen
+	#email = suomalainen+git@mikaela.info
+	# Aminda Suomalainen FINEID 20.12.2021-20.12.2026
+	#signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCuq/w936y0Enjg7e+t27p6Hwj7RJpuDdhjV/FeikCitey23dx72yIFe3giHW10eBKHr0lhWbDhm2m0b74ZNKneR+oJ99Kl98KegGwjS/gRcjYILHWBJBCF7y61XNeJTlehEZ4zAXS3zLGaZ6DUWY3aqoMkoiAFDdHEAu5EfYITybR+eQZNiGOLVpEVC96bSgGYl4BtUjLib8YCkznllo1hbQWOJSeftIkCJj/XcOvX5kIHsnTMdkgPVd+JhBJ1ReYLf4mBYA0BVTBbHJVrMajz77Oo4iZua3XDw3RF9cekAHjh+x/zZntwiRu0k51xI0mX5nr9SsuiQccD/fxwCoI9P1u2xZHFthiHl4MxUvTRDuBTz8bktdUruqxJP+ZkKZmuozLhP738m+9nMRiavSJm0RQGDUMXfHoJ8+9VVB4uZRZq9Hprt7ReCYobgRaq4220Cpg/WADcm13o0jp0PKOl2uiS6MdIbReiLGJVf/XxeNun43K1+osv/Ermy6qL5WM=
+	#signingkey = ~/.ssh/id_ed25519.pub
+	##wtop
+	#email = mikaela+digitalents@mikaela.info
+	#signingkey = 0xDF046339D69EB8C9
 [alias]
-    cleandi = clean -di
-    cleandix = clean -dix
-    # From http://progit.org/book/ch2-7.html
-    last = cat-file commit HEAD
-    mergen = merge --no-ff
-    pulln = pull --no-ff
-    pullen = pull --no-ff
-    verify = verify-commit HEAD
+	cleandi = clean -di
+	cleandix = clean -dix
+	# From http://progit.org/book/ch2-7.html
+	last = cat-file commit HEAD
+	mergen = merge --no-ff
+	pulln = pull --no-ff
+	pullen = pull --no-ff
+	verify = verify-commit HEAD
 
 [core]
-    editor = vim
-    autocrlf = input
+	editor = vim
+	autocrlf = input
 [color]
-    # From git manpage and http://book.git-scm.com/5_customizing_git.html
-    branch = true
-    diff = true
-    grep = true
-    interactive = true
-    pager = true
-    showbranch = true
-    status = true
-    ui = true
+	# From git manpage and http://book.git-scm.com/5_customizing_git.html
+	branch = true
+	diff = true
+	grep = true
+	interactive = true
+	pager = true
+	showbranch = true
+	status = true
+	ui = true
 [push]
-    default = current
-    gpgSign = if-asked
+	default = current
+	gpgSign = if-asked
 	autoSetupRemote = true
 	recurseSubmodules = on-demand
 [credential]
-    helper = cache --timeout=86400
+	helper = cache --timeout=86400
 [merge]
-    ff = only
+	ff = only
 [format]
-    signOff = true
+	signOff = true
 [commit]
-    gpgsign = true
+	gpgsign = true
 [diff]
-    compactionHeuristic = true
+	compactionHeuristic = true
 [pager]
-#    log = diff-highlight | less
-#    show = diff-highlight | less
-#    diff = diff-highlight | less
+#	 log = diff-highlight | less
+#	 show = diff-highlight | less
+#	 diff = diff-highlight | less
 [interactive]
-#    diffFilter = diff-highlight
+#	 diffFilter = diff-highlight
 [gpg]
-    format = ssh
+	format = ssh
 [tag]
-    forceSignAnnotated = true
+	forceSignAnnotated = true
 [pull]
-    ff = only
+	ff = only
 [init]
-    defaultBranch = cxefa
+	defaultBranch = cxefa
 [gpg "ssh"]
-    allowedSignersFile = ~/src/gitea.blesmrt.net/Mikaela/ssh-allowed_signers/allowed_signers
+	allowedSignersFile = ~/src/gitea.blesmrt.net/Mikaela/ssh-allowed_signers/allowed_signers
 [advice]
-    # I am not developing in detached head state, I generally want to compile
-    # a specific version of a program and I know how to get out of it
-    detachedHead = false
+	# I am not developing in detached head state, I generally want to compile
+	# a specific version of a program and I know how to get out of it
+	detachedHead = false
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
