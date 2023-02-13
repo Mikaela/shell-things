@@ -25,6 +25,18 @@ end_of_line = crlf
 [*.{bash,sh}]
 end_of_line = lf
 
+# Markdown apparently allows linebreaks by two trailing spaces, while I
+# never seem to do that, maybe I should accept it
+[*.{markdown,md}]
+trim_trailing_whitespace = false
+
+# TAB Separated Values
+[*.{tsv,tab}]
+indent_style = tab
+indent_size = tab
+# empty last columns/fields
+trim_trailing_whitespace = false
+
 # Python https://peps.python.org/pep-0008/#indentation
 [*.py]
 indent_style = space
