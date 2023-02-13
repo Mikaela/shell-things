@@ -1,37 +1,37 @@
 {
-    "layer": "top",
-    "position": "left",
-    "modules-left": ["sway/workspaces", "sway/mode"],
-    "modules-right": ["cpu", "memory", "battery", "pulseaudio", "sway/language", "network", "bluetooth", "tray", "clock"],
-    "sway/window": {
-        "max-length": 50
-    },
-    "cpu": {
-        "format": "CPU {usage}%"
-    },
-    "memory": {
-        "format": "RAM {percentage}%"
-    },
+	"layer": "top",
+	"position": "left",
+	"modules-left": ["sway/workspaces", "sway/mode"],
+	"modules-right": ["cpu", "memory", "battery", "pulseaudio", "sway/language", "network", "bluetooth", "tray", "clock"],
+	"sway/window": {
+		"max-length": 50
+	},
+	"cpu": {
+		"format": "CPU {usage}%"
+	},
+	"memory": {
+		"format": "RAM {percentage}%"
+	},
 "bluetooth": {
-    "format": "BT {status}",
-    "format-connected": "BT {device_alias}",
-    "format-connected-battery": "BT {device_alias} {device_battery_percentage}%"
-    },
-    "pulseaudio": {
-        "format": "VOL {volume}%",
-        "format-bluetooth": "BT VOL {volume}%"
-    },
-    "battery": {
-        "states": {
-            "warning": 45,
-            "critical": 20
-    },
-        "format": "BAT {capacity}%"
-    },
-    "sway/language": {
-        "format": "KBD {short} {variant}",
-        "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
-    },
+	"format": "BT {status}",
+	"format-connected": "BT {device_alias}",
+	"format-connected-battery": "BT {device_alias} {device_battery_percentage}%"
+	},
+	"pulseaudio": {
+		"format": "VOL {volume}%",
+		"format-bluetooth": "BT VOL {volume}%"
+	},
+	"battery": {
+		"states": {
+			"warning": 45,
+			"critical": 20
+	},
+		"format": "BAT {capacity}%"
+	},
+	"sway/language": {
+		"format": "KBD {short} {variant}",
+		"on-click": "swaymsg input type:keyboard xkb_switch_layout next"
+	},
 "network": {
 	//"interface": "wlan0",
 	"format": "{ifname}",
@@ -44,7 +44,7 @@
 	"tooltip-format-disconnected": "Disconnected",
 	"max-length": 50
 },
-    "clock": {
-        "format": "{:%a. %d.\n%b.\n%Y-%j\n%G-W%V-%u\n%F\n%H.%M.%S}"
-    }
+	"clock": {
+		"format": "{:%a. %d.\n%b.\n%Y-%j\n%G-W%V-%u\n%F\n%H.%M.%S}"
+	}
 }
