@@ -1,0 +1,7 @@
+[crystal]
+name=Crystal
+type=rpm-md
+baseurl=https://download.opensuse.org/repositories/devel:languages:crystal/Fedora_$releasever/
+gpgcheck=1
+gpgkey=https://download.opensuse.org/repositories/devel:languages:crystal/Fedora_$releasever/repodata/repomd.xml.key
+enabled=1
