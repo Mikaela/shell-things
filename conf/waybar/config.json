@@ -19,7 +19,8 @@
 	},
 	"pulseaudio": {
 		"format": "VOL {volume}%",
-		"format-bluetooth": "BT VOL {volume}%"
+		"format-bluetooth": "BT VOL {volume}%",
+		"ignored-sinks": ["Easy Effects Sink", "Easy Effects Source"]
 	},
 	"battery": {
 		"states": {
