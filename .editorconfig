@@ -20,15 +20,27 @@ indent_size = tab
 [*.{bash,sh}]
 end_of_line = lf
 
+# Crystal https://crystal-lang.org/reference/1.7/conventions/coding_style.html#indentation
+[*.cr]
+indent_style = space
+indent_size = 2
+
 # Markdown apparently allows linebreaks by two trailing spaces, while I
 # never seem to do that, maybe I should accept it
 [*.{markdown,md}]
 trim_trailing_whitespace = false
 
+# Nim https://nim-lang.org/docs/nep1.html#introduction-spacing-and-whitespace-conventions
+[*.nim]
+indent_style = space
+indent_size = 2
+max_line_length = 80
+
 # Python https://peps.python.org/pep-0008/#indentation
 [*.py]
 indent_style = space
 indent_size = 4
+max_line_length = 79
 
 # Ruby
 #[*.rb]
