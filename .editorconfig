@@ -16,12 +16,7 @@ indent_size = tab
 # Opinionated affecting only display, better to not set
 #tab_width =
 
-# Windows line-endings for Windows
-[*.{reg,bat,ahk}]
-end_of_line = crlf
-
-# Let's ensure *nix is lf although it comes from defaults
-# above
+# *nix, just in case
 [*.{bash,sh}]
 end_of_line = lf
 
@@ -30,22 +25,10 @@ end_of_line = lf
 [*.{markdown,md}]
 trim_trailing_whitespace = false
 
-# TAB Separated Values
-[*.{tsv,tab}]
-indent_style = tab
-indent_size = tab
-# empty last columns/fields
-trim_trailing_whitespace = false
-
 # Python https://peps.python.org/pep-0008/#indentation
 [*.py]
 indent_style = space
 indent_size = 4
-
-# YAML requires spaces
-[*.{yaml,yml}]
-indent_style = space
-indent_size = 2
 
 # Ruby
 #[*.rb]
@@ -54,3 +37,20 @@ indent_size = 2
 # https://rubystyle.guide/#spaces-indentation
 #indent_style = space
 #indent_size = 2
+
+# TAB Separated Values
+[*.{tsv,tab}]
+indent_style = tab
+indent_size = tab
+# empty last columns/fields
+trim_trailing_whitespace = false
+
+# Windows line-endings for Windows
+[*.{reg,bat,ahk}]
+end_of_line = crlf
+
+# YAML requires spaces
+[*.{yaml,yml}]
+indent_style = space
+indent_size = 2
+
