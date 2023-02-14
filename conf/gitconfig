@@ -18,7 +18,7 @@
 	verify = verify-commit HEAD
 
 [core]
-	editor = vim
+	editor = nvim
 	autocrlf = input
 	safecrlf = warn
 [color]
