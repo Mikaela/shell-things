@@ -3,7 +3,7 @@ PATH=$HOME/.local/bin:$HOME/bin:$HOME/go/bin:$HOME/.local/share/flatpak/exports/
 
 # Add RubyGems to PATH
 if hash ruby 2>/dev/null; then
-    PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+	PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 fi
 
 # Set compose to menu, kill X with ctrl-alt-backspace,
@@ -22,7 +22,7 @@ ulimit -c unlimited
 
 # Numlock on at boot
 if hash numlockx 2>/dev/null; then
-    numlockx on
+	numlockx on
 fi
 
 # Workaround disappearing cursors, probably no harm in any case
@@ -30,10 +30,10 @@ export XCURSOR_DISCOVER=1
 
 # The environment was set to ~/.environment according to other files...
 if [ -f ~/.environment ]; then
-    . ~/.environment
+	. ~/.environment
 fi
 
 # Something that scripts here won't attempt to overwrite
 if [ -f ~/.environment2 ]; then
-    . ~/.environment2
+	. ~/.environment2
 fi
