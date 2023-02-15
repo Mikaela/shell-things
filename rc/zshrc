@@ -139,7 +139,7 @@ export TERM=screen-256color
 fi
 
 # Sets the default editor.
-#export EDITOR=vim # MIKAELA_GREP MIKAELA_GREP_ENVIRONMENT
+#export EDITOR=nvim # MIKAELA_GREP MIKAELA_GREP_ENVIRONMENT
 
 # Set TZ to local timezone for sending over SSH
 TZ=$(date +%Z)
@@ -512,6 +512,13 @@ fi
 
 # More simple SSH file signing, ~/.ssh/signingkey.pub should be a symlink
 alias ssh-sign-file="ssh-keygen -Y sign -f ~/.ssh/signingkey.pub -n file"
+
+# I use nvim, while I keep running vim instead
+if hash nvim 2>/dev/null; then
+	alias vim="echo 'using nvim instead' && nvim"
+else
+	alias vim="echo 'nvim not found' && \vim"
+fi
 
 # Allow custom aliases to be put in .aliases or .zsh_aliases .
 
