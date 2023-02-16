@@ -1,0 +1,7 @@
+# Why do I not have a sample .netrc or _netrc in somewhere I would actually
+# look at? Now I do
+# See also `man curl` which says to `man 5 netrc` which doesn't exist on my
+# system?
+machine git.example.net
+login Username
+password ThisWouldBeA-PAT-ButItIsNot
