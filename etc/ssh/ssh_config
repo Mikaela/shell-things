@@ -7,61 +7,61 @@ Include ~/.ssh/config.d/*.conf
 Include /etc/ssh/ssh_config.d/*.conf
 
 Host *
-    # Path for the control socket.
-    ControlPath ~/.ssh/sockets/socket-%r@%h:%p
-    # Multiple sessions over single connection
-    ControlMaster yes
-    # Keep connection open in the background even after connection has been
-    # closed.
-    ControlPersist yes
+	# Path for the control socket.
+	ControlPath ~/.ssh/sockets/socket-%r@%h:%p
+	# Multiple sessions over single connection
+	ControlMaster yes
+	# Keep connection open in the background even after connection has been
+	# closed.
+	ControlPersist yes
 
-    # SSH Agent forwarding is behind a lot of security breaches, never do it
-    # Most recently https://github.com/matrix-org/matrix.org/issues/371
-    ForwardAgent no
-    # Never do that either https://security.stackexchange.com/a/14817/234532
-    ForwardX11 no
+	# SSH Agent forwarding is behind a lot of security breaches, never do it
+	# Most recently https://github.com/matrix-org/matrix.org/issues/371
+	ForwardAgent no
+	# Never do that either https://security.stackexchange.com/a/14817/234532
+	ForwardX11 no
 
-    # Debian sets this as yes, upstream no. TODO: What is it?
-    #GSSAPIAuthentication yes
+	# Debian sets this as yes, upstream no. TODO: What is it?
+	#GSSAPIAuthentication yes
 
-    # Ensure KnownHosts are unreadable if leaked.
-    HashKnownHosts yes
+	# Ensure KnownHosts are unreadable if leaked.
+	HashKnownHosts yes
 
-    LogLevel VERBOSE
-    Protocol 2
+	LogLevel VERBOSE
+	Protocol 2
 
-    # Tor through openbsd netcat (Fedora: netcat)
-    ProxyCommand netcat -X 5 -x localhost:9050 %h %p
+	# Tor through openbsd netcat (Fedora: netcat)
+	ProxyCommand netcat -X 5 -x localhost:9050 %h %p
 
-    # Always try public key authentication.
-    PubkeyAuthentication yes
+	# Always try public key authentication.
+	PubkeyAuthentication yes
 
-    # Send needed environment variables. I don't like setting wildcards
-    # and LC_ALL is disabled on purpouse.
-    SendEnv EDITOR LANG LANGUAGE LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT LC_IDENTIFICATION TERM TZ
+	# Send needed environment variables. I don't like setting wildcards
+	# and LC_ALL is disabled on purpouse.
+	SendEnv EDITOR LANG LANGUAGE LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT LC_IDENTIFICATION TERM TZ
 
-    # If the server doesn't reply in three "pings", connection is dead.
-    # Defaults to 3 anyway, but I add it here for clearity and
-    # in case it decides to change in the future.
-    ServerAliveCountMax 3
+	# If the server doesn't reply in three "pings", connection is dead.
+	# Defaults to 3 anyway, but I add it here for clearity and
+	# in case it decides to change in the future.
+	ServerAliveCountMax 3
 
-    # "ping" the server every minute.
-    ServerAliveInterval 60
+	# "ping" the server every minute.
+	ServerAliveInterval 60
 
-    # OpenSSH 6.8+ - ask all host keys from servers.
-    # I trust the server admins and ways to identify the keys (DNSSEC,
-    # manual).
-    UpdateHostKeys yes
+	# OpenSSH 6.8+ - ask all host keys from servers.
+	# I trust the server admins and ways to identify the keys (DNSSEC,
+	# manual).
+	UpdateHostKeys yes
 
-    # Workaround CVE-2016-0777 & CVE-0778 on OpenSSH < 7.1p2
-    UseRoaming no
+	# Workaround CVE-2016-0777 & CVE-0778 on OpenSSH < 7.1p2
+	UseRoaming no
 
-    # Verify SSHFP records. If this is yes, the question is skipped when
-    # DNSSEC is used, but apparently only "ask" and "no" write known_hosts
-    # However with "ask" you won't be told whether the zone is signed, so
-    # I consider "yes" to be the least evil.
-    VerifyHostKeyDNS yes
+	# Verify SSHFP records. If this is yes, the question is skipped when
+	# DNSSEC is used, but apparently only "ask" and "no" write known_hosts
+	# However with "ask" you won't be told whether the zone is signed, so
+	# I consider "yes" to be the least evil.
+	VerifyHostKeyDNS yes
 
-    # Display key ascii art on connection. Makes noticing changed keys easier,
-    # although it's ambiguous and similar pattern may go past unnoticed.
-    VisualHostKey yes
+	# Display key ascii art on connection. Makes noticing changed keys easier,
+	# although it's ambiguous and similar pattern may go past unnoticed.
+	VisualHostKey yes
