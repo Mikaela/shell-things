@@ -1,6 +1,6 @@
-* text=auto eol=lf -linguist-detectable
+* text=auto eol=lf linguist-detectable
 # Windows files even in checkout
 # Ref: https://rehansaeed.com/gitattributes-best-practices/#line-endings
-*.{reg,[rR][eE][gG]} text eol=crlf -linguist-detectable
-*.{bat,[bB][aA][tT]} text eol=crlf -linguist-detectable
-*.{ahk,[aA][hH][kK]} text eol=crlf -linguist-detectable
+*.{reg,[rR][eE][gG]} text eol=crlf
+*.{bat,[bB][aA][tT]} text eol=crlf
+*.{ahk,[aA][hH][kK]} text eol=crlf
