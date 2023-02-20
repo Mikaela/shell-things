@@ -13,3 +13,13 @@ Requires Windows 11.
   * Mullvad
   * Mullvad Adblock
   * Quad9 ECS (Windows 11 defaults include Quad9 default)
+
+## Configuration
+
+Once Windows knows about the DoH servers (DohWellKnownServers.reg), DNS-over
+HTTPS can be enabled for:
+
+* All networks: `Windows-I (Settings) -> Network & Internet -> Advanced network settings -> WLAN -> View additional properties -> DNS Server assignment -> Edit`
+  * Same place for Ethernet etc.
+* Specific network: `Windows-I (Settings) -> Network & Internet -> WiFi -> Connected SSID -> DNS server assignment -> Edit`
+  * Note: if the all networks one is configured, there is a warning about it not being used.
