@@ -9,10 +9,10 @@ Windows Registry Editor Version 5.00
 
 - Make the file Windows Registry Editor script
 - Ask admins for password/PIN in UAC
-  - 2 would ask for yes or no, 0 disable entirely (don't do that).
+	- 2 would ask for yes or no, 0 disable entirely (don't do that).
 - prompt standard users for username and password. 2021-12-19: I don't understand this or the line below.
-  - The other option (1) doesn't even give them UAC prompt so you must
-    always login as admin to do anything.
+	- The other option (1) doesn't even give them UAC prompt so you must
+	always login as admin to do anything.
 
 ```
 "dontdisplaylastusername"=dword:00000000
@@ -39,8 +39,8 @@ Windows Registry Editor Version 5.00
 ```
 
 - Sets hardware clock to UTC time (doesn't affect system clock!)
-  - qword for 64-bit, dword for 32-bit systems. The actual reg file has
-    only qword as I haven't seen 32-bit Windowses lately.
+	- qword for 64-bit, dword for 32-bit systems. The actual reg file has
+	only qword as I haven't seen 32-bit Windowses lately.
 
 ```
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]

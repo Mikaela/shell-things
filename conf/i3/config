@@ -1,9 +1,9 @@
 # Packages expected (just break line-length!):
 # Debian: i3 suckless-tools j4-dmenu-desktop gnome-screenshot i3lock sudo hibernate playerctl galculator network-manager-gnome redshift-gtk x11-xserver-utils feh rofi libnotify-bin xcompmgr konsole fonts-dejavu dbus-x11 arandr numlockx fcitx-bin fcitx-mozc conky-all flatpak apparmor-notify caffeine kdocker mumble audacious telegram-desktop steam htop kdeconnect nextcloud-client parcimonie lxqt-powermanagement kteatime hsetroot tmux
 # ALSA: alsa-utils apulse coreutils pnmixer
-#    NOTE! apulse is a wrapper and `apulse` is put in front of pulseaudio
-#    requiring app. See also (shell-things) rc/asoundrc for USB headset and
-#    similar.
+#	 NOTE! apulse is a wrapper and `apulse` is put in front of pulseaudio
+#	 requiring app. See also (shell-things) rc/asoundrc for USB headset and
+#	 similar.
 # pulseaudio: pulseaudio-utils pasystray pulsemixer pavucontrol pulseeffects
 # insync: https://www.insynchq.com/downloads
 # Mullvad: https://mullvad.net/download
@@ -15,7 +15,7 @@
 # Debian theming: lxappearance gtk-chtheme qt4-qtconfig qt5ct
 # https://askubuntu.com/a/600946
 # + ~/.xprofile specifies GTK_THEME which hopefully gets detected/understood
-#   by browsers etc.
+#	by browsers etc.
 #
 # YES! This file is a monster and there really are that many weird
 # packages!
@@ -50,7 +50,7 @@ set $ScreenLockCmd i3lock -c 000000 -p win -f
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 # NOTE! Bigger font than 8 is too big for Kincarron
-#                        7 is too big for Sedric with dpi scaling 144
+#						 7 is too big for Sedric with dpi scaling 144
 #font pango:DejaVu Sans Mono Book 7
 font pango:OpenDyslexic 9
 
@@ -192,27 +192,27 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the EXIT shortcu
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+		# These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym odiaeresis resize grow width 10 px or 10 ppt
+		# Pressing left will shrink the window’s width.
+		# Pressing right will grow the window’s width.
+		# Pressing up will shrink the window’s height.
+		# Pressing down will grow the window’s height.
+		bindsym j resize shrink width 10 px or 10 ppt
+		bindsym k resize grow height 10 px or 10 ppt
+		bindsym l resize shrink height 10 px or 10 ppt
+		bindsym odiaeresis resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+		# same bindings, but for the arrow keys
+		bindsym Left resize shrink width 10 px or 10 ppt
+		bindsym Down resize grow height 10 px or 10 ppt
+		bindsym Up resize shrink height 10 px or 10 ppt
+		bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape or $mod+r
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+		# back to normal: Enter or Escape or $mod+r
+		bindsym Return mode "default"
+		bindsym Escape mode "default"
+		bindsym $mod+r mode "default"
 }
 
 bindsym $mod+r mode "resize"
@@ -277,30 +277,30 @@ set $br_violet #b891f5
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available) CHANGEME
 bar {
-        position top
-        #status_command LC_ALL=fi_FI.utf8 i3status
-        # Temporary workaround to broken i3status in Fedora
-        status_command LC_ALL=fi_FI.utf8 i3status-rs ~/.config/i3status-rs/config.toml
-        # Selenized black from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3-selenized-black.conf
-        colors {
-            separator $blue
-            background $bg
-            statusline $br_white
-            focused_workspace $green $green $bg
-            active_workspace $cyan $blue $black
-            inactive_workspace $black $black $fg
-            urgent_workspace $yellow $yellow $black
-               }
-        # Selenized light from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3-selenized-light.conf
-        #colors {
-        #    separator $blue
-        #    background $bg
-        #    statusline $br_white
-        #    focused_workspace $green $green $bg
-        #    active_workspace $cyan $blue $black
-        #    inactive_workspace $black $black $fg
-        #    urgent_workspace $yellow $yellow $black
-        #       }
+		position top
+		#status_command LC_ALL=fi_FI.utf8 i3status
+		# Temporary workaround to broken i3status in Fedora
+		status_command LC_ALL=fi_FI.utf8 i3status-rs ~/.config/i3status-rs/config.toml
+		# Selenized black from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3-selenized-black.conf
+		colors {
+			separator $blue
+			background $bg
+			statusline $br_white
+			focused_workspace $green $green $bg
+			active_workspace $cyan $blue $black
+			inactive_workspace $black $black $fg
+			urgent_workspace $yellow $yellow $black
+			}
+		# Selenized light from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3-selenized-light.conf
+		#colors {
+		#	 separator $blue
+		#	 background $bg
+		#	 statusline $br_white
+		#	 focused_workspace $green $green $bg
+		#	 active_workspace $cyan $blue $black
+		#	 inactive_workspace $black $black $fg
+		#	 urgent_workspace $yellow $yellow $black
+		#		}
 }
 
 # Selenized black from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3-selenized-black.conf
@@ -486,7 +486,7 @@ exec --no-startup-id redshift-gtk -l 60.15937:24.87530
 #exec --no-startup-id redshift-gtk -l 60.46742:26.94508
 
 # Sedric - 150 % display scaling (HiDPI), see also `xdpyinfo | grep resolution
-#          where 96 = 100 %
+#		 where 96 = 100 %
 #exec --no-startup-id xrandr --dpi 144
 
 # Sedric, external GPU as primary
@@ -535,5 +535,5 @@ exec --no-startup-id redshift-gtk -l 60.15937:24.87530
 # Special keyboard options that WILL CONFUSE YOU.
 # windows+space should change layout, but doesn't, both ctrls do
 # fi allows mostly typing fi/se (identicatal), cz/es.
-#  See also: `man xkeyboard-config` (layouts) `setxkbmap -query` (for current options)
+#	See also: `man xkeyboard-config` (layouts) `setxkbmap -query` (for current options)
 exec --no-startup-id setxkbmap -option compose:menu -option terminate:ctrl_alt_bksp -option nbsp:none -option caps:backspace -option shift:both_capslock -option grp:ctrls_toggle -option grp:win_space_toggle -layout fi,us,epo,ru -variant ,altgr-intl,,phonetic_winkeys

@@ -79,9 +79,9 @@ filetype plugin indent on
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
-	 \ if line("'\"") > 0 && line("'\"") <= line("$") |
-	 \	 exe "normal! g`\"" |
-	 \ endif
+	\ if line("'\"") > 0 && line("'\"") <= line("$") |
+	\	 exe "normal! g`\"" |
+	\ endif
 
 " I think leaving line endings to git may be more safe
 " dos2unix ^M copied from https://stackoverflow.com/a/5361702/1675649

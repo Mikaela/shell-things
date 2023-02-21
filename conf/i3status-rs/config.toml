@@ -2,10 +2,10 @@
 # based heavily on /usr/share/doc/i3status-rs/example_config.toml & https://github.com/greshake/i3status-rust/tree/master/examples
 # and manpage from search engine
 # Note: I am  not confident that "irstatus-rs" and "i3status-rust" are the same
-#       software.
+#		software.
 
 # WIP: migration from i3status
-    # contains: (disk /, disk/home,) load, ipv6, wireless, ethernet, battery, volume, (utc) time, (local time)
+	# contains: (disk /, disk/home,) load, ipv6, wireless, ethernet, battery, volume, (utc) time, (local time)
 
 [theme]
 name = "solarized-dark"

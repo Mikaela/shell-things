@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script removes permissions from other people than the owner to 
+# This script removes permissions from other people than the owner to
 # files/folders that they don't have access to and where they don't need
 # access.
 set -x

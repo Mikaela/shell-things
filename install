@@ -18,7 +18,7 @@ cat conf/makepkg.conf > ~/.makepkg.conf
 mkdir -p ~/.config/mpv/
 cat conf/mpv.conf > ~/.config/mpv/mpv.conf
 if [ ! -f ~/.oidentd.conf ]; then
-    cat conf/oidentd.conf > ~/.oidentd.conf
+	cat conf/oidentd.conf > ~/.oidentd.conf
 fi
 mkdir -p ~/.gnupg
 cat gpg/gpg.conf > ~/.gnupg/gpg.conf
@@ -37,12 +37,12 @@ bash -x ./chmod&
 
 if [ -f $HOME/.MIKAELAGREP ]
 then
-    mv $HOME/.MIKAELAGREP $MIKAELA_GREP
+	mv $HOME/.MIKAELAGREP $MIKAELA_GREP
 fi
 
 if [ -f "$MIKAELA_GREP" ]
 then
-    bash -x .mikaela_install
+	bash -x .mikaela_install
 fi
 
 set +x

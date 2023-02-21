@@ -15,8 +15,8 @@ chmod a+r /etc/systemd/system/oidentd.socket
 
 mkdir -p /etc/sysctl.d/
 if [ ! -f /etc/sysctl.d/60-mikaela.conf ]; then
-    cat sysctl.d/60-mikaela.conf > /etc/sysctl.d/60-mikaela.conf
-    chmod a+r /etc/sysctl.d/60-mikaela.conf
+	cat sysctl.d/60-mikaela.conf > /etc/sysctl.d/60-mikaela.conf
+	chmod a+r /etc/sysctl.d/60-mikaela.conf
 fi
 
 echo 'If you use systemd or oidentd you should "systemctl daemon-reload"'

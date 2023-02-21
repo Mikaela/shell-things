@@ -7,21 +7,21 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-        output_format = "i3bar"
-        colors = true
-        # 1 is horrible with battery status and possibly unnecessary
-        # weight for older devices. 5 appears to be Debian default, and I
-        # guess it's enough often for seeing if the system is frozen when
-        # staring at a clock.
-        interval = 5
-        # Selenized black from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3status-selenized-black.conf
-        color_good = "#70b433"
-        color_degraded = "#dbb32d"
-        color_bad = "#ed4a46"
-        # Selenized light from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3status-selenized-light.conf
-        #color_good = "#489100"
-        #color_degraded = "#ad8900"
-        #color_bad = "#d2212d"
+		output_format = "i3bar"
+		colors = true
+		# 1 is horrible with battery status and possibly unnecessary
+		# weight for older devices. 5 appears to be Debian default, and I
+		# guess it's enough often for seeing if the system is frozen when
+		# staring at a clock.
+		interval = 5
+		# Selenized black from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3status-selenized-black.conf
+		color_good = "#70b433"
+		color_degraded = "#dbb32d"
+		color_bad = "#ed4a46"
+		# Selenized light from https://github.com/jan-warchol/selenized/blob/master/other-apps/i3/i3status-selenized-light.conf
+		#color_good = "#489100"
+		#color_degraded = "#ad8900"
+		#color_bad = "#d2212d"
 }
 
 # Logicish: colour changing things at first (load is often red especially
@@ -44,50 +44,50 @@ order += "time"
 
 # Load is first as the treshold may need the most modification here
 load {
-        format = "%1min %5min %15min"
-        # Defaults to 5, nosmt MDS mitigation disables ½ of the cores
-        # X,7 ? https://scoutapm.com/blog/understanding-load-averages
-        # CHANGEME - apparently whether . or , works depends on locale -.-
-        # Rbtpzn, the oldest machine from 2006, single core
-        #max_threshold = "0,7"
-        # Dualcore, mostly everything else
-        max_threshold = "1,7"
-        # Zaldaryn, quadcore
-        #max_threshold = "3,7"
+		format = "%1min %5min %15min"
+		# Defaults to 5, nosmt MDS mitigation disables ½ of the cores
+		# X,7 ? https://scoutapm.com/blog/understanding-load-averages
+		# CHANGEME - apparently whether . or , works depends on locale -.-
+		# Rbtpzn, the oldest machine from 2006, single core
+		#max_threshold = "0,7"
+		# Dualcore, mostly everything else
+		max_threshold = "1,7"
+		# Zaldaryn, quadcore
+		#max_threshold = "3,7"
 }
 
 wireless _first_ {
-        #format_up = "W: (%quality at %essid, %bitrate / %frequency) %ip"
-        format_up = "W:%quality @ %essid (%frequency, %bitrate)"
-        #format_up = "W:%quality %frequency"
-        #format_down = "W:🢃"
-        format_down = ""
-        #format_quality = "%3d%s"
+		#format_up = "W: (%quality at %essid, %bitrate / %frequency) %ip"
+		format_up = "W:%quality @ %essid (%frequency, %bitrate)"
+		#format_up = "W:%quality %frequency"
+		#format_down = "W:🢃"
+		format_down = ""
+		#format_quality = "%3d%s"
 }
 
 ethernet _first_ {
-        # if you use %speed, i3status requires root privileges
-        #format_up = "E: %ip (%speed)"
-        #format_up = "E:🢁"
-        format_up = "E:%speed"
-        #format_down = "E:🢃"
-        format_down = ""
+		# if you use %speed, i3status requires root privileges
+		#format_up = "E: %ip (%speed)"
+		#format_up = "E:🢁"
+		format_up = "E:%speed"
+		#format_down = "E:🢃"
+		format_down = ""
 }
 
 battery all {
-        # %remaining looks horrible especially with updating every second
-        format = "🔌%status %percentage %remaining"
-        format_down = ""
-        status_full = "🔌☻"
-        #status_unk  = "?"
-        # kincarron battery fix
-        #path = "/sys/class/power_supply/%d/uevent"
+		# %remaining looks horrible especially with updating every second
+		format = "🔌%status %percentage %remaining"
+		format_down = ""
+		status_full = "🔌☻"
+		#status_unk  = "?"
+		# kincarron battery fix
+		#path = "/sys/class/power_supply/%d/uevent"
 }
 
 tztime utc {
-        timezone = "UTC"
-        # ISO 8601ish
-        format = "%Z: %Y-%m-%d %H:%M:%S%z"
+		timezone = "UTC"
+		# ISO 8601ish
+		format = "%Z: %Y-%m-%d %H:%M:%S%z"
 }
 
 # Date format explanations
@@ -106,29 +106,29 @@ tztime utc {
 
 #tztime local {
 time {
-        # Finnishish formatting with my adjustments
-        format = "%G-W%V-%u (%j/%a/%B) %F %H.%M.%S%z"
+		# Finnishish formatting with my adjustments
+		format = "%G-W%V-%u (%j/%a/%B) %F %H.%M.%S%z"
 }
 
 volume master {
-        format = "♪: %volume"
-        format_muted = "♪: muted (%volume)"
-        #device = "pulse"
+		format = "♪: %volume"
+		format_muted = "♪: muted (%volume)"
+		#device = "pulse"
 }
 
 ipv6 {
-        #format_up = "IPv6:🢁"
-        format_up = "6"
-        #format_down = "IPv6:🢃"
-        format_down = ""
+		#format_up = "IPv6:🢁"
+		format_up = "6"
+		#format_down = "IPv6:🢃"
+		format_down = ""
 }
 
 # %avail vs %free: https://github.com/i3/i3status/issues/349#issuecomment-506565599
 
 disk / {
-        format = "/: %avail"
+		format = "/: %avail"
 }
 
 disk /home {
-        format = "/home: %avail"
+		format = "/home: %avail"
 }

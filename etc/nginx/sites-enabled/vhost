@@ -1,67 +1,67 @@
 server {
 
-    # default_server from default vhost must exist somewhere!
-    listen 80;
-    listen [::]:80;
-    listen 443;
-    listen [::]:443;
+	# default_server from default vhost must exist somewhere!
+	listen 80;
+	listen [::]:80;
+	listen 443;
+	listen [::]:443;
 
-    # Enable this if your want HSTS (recommended)
-    add_header Strict-Transport-Security "max-age=15552000; includeSubdomains; preload";
-    add_header X-Frame-Options SAMEORIGIN;
-    add_header Content-Security-Policy upgrade-insecure-requests;
-    add_header X-Xss-Protection "1; mode=block" always;
-    add_header X-Content-Type-Options "nosniff" always;
+	# Enable this if your want HSTS (recommended)
+	add_header Strict-Transport-Security "max-age=15552000; includeSubdomains; preload";
+	add_header X-Frame-Options SAMEORIGIN;
+	add_header Content-Security-Policy upgrade-insecure-requests;
+	add_header X-Xss-Protection "1; mode=block" always;
+	add_header X-Content-Type-Options "nosniff" always;
 
-    root /var/www/vhostdir;
-    index index.php index.html index.htm;
+	root /var/www/vhostdir;
+	index index.php index.html index.htm;
 
-    # vhost address
-    server_name vhost.example.org;
+	# vhost address
+	server_name vhost.example.org;
 
-    location / {
-        # First attempt to serve request as file, then
-        # as directory, then fall back to displaying a 404.
-        try_files $uri $uri/ =404;
-        autoindex off;
-    }
+	location / {
+		# First attempt to serve request as file, then
+		# as directory, then fall back to displaying a 404.
+		try_files $uri $uri/ =404;
+		autoindex off;
+	}
 
-    # Userdir
-    #ilocation ~ ^/~(.+?)(/.*)?$ {
-    #    alias /home/$1/public_html$2;
-    #    index  index.html index.htm;
-    #    autoindex on;
-    #}
+	# Userdir
+	#ilocation ~ ^/~(.+?)(/.*)?$ {
+	#	 alias /home/$1/public_html$2;
+	#	 index	index.html index.htm;
+	#	 autoindex on;
+	#}
 
 
-    #error_page 404 /404.html;
+	#error_page 404 /404.html;
 
-    # redirect server error pages to the static page /50x.html
-    #
-    #error_page 500 502 503 504 /50x.html;
-    #location = /50x.html {
-    #   root /usr/share/nginx/html;
-    #}
+	# redirect server error pages to the static page /50x.html
+	#
+	#error_page 500 502 503 504 /50x.html;
+	#location = /50x.html {
+	#	root /usr/share/nginx/html;
+	#}
 
-    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
-    #
-    location ~ \.php$ {
-       fastcgi_split_path_info ^(.+\.php)(/.+)$;
-    #   # NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
-    #
-    #   # With php5-cgi alone:
-    #    fastcgi_pass 127.0.0.1:9000;
-    #   # With php5-fpm:
-       fastcgi_pass unix:/var/run/php5-fpm.sock;
-       fastcgi_index index.php;
-       #include fastcgi_params;
-       include fastcgi.conf;
-    }
+	# pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+	#
+	location ~ \.php$ {
+		fastcgi_split_path_info ^(.+\.php)(/.+)$;
+	#	# NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
+	#
+	#	# With php5-cgi alone:
+	#	 fastcgi_pass 127.0.0.1:9000;
+	#	# With php5-fpm:
+		fastcgi_pass unix:/var/run/php5-fpm.sock;
+		fastcgi_index index.php;
+		#include fastcgi_params;
+		include fastcgi.conf;
+	}
 
-    # deny access to .htaccess files, if Apache's document root
-    # concurs with nginx's one
-    #
-    location ~ /\.ht {
-       deny all;
-    }
+	# deny access to .htaccess files, if Apache's document root
+	# concurs with nginx's one
+	#
+	location ~ /\.ht {
+		deny all;
+	}
 }
