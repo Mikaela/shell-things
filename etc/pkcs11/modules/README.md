@@ -1,7 +1,7 @@
 Central configuration for PKCS#11 plugin using software and smartcards.
 
-* https://digisaatio.fi/wiki/P11-kit
-* https://www.systutorials.com/docs/linux/man/5-pkcs11.conf/
+- https://digisaatio.fi/wiki/P11-kit
+- https://www.systutorials.com/docs/linux/man/5-pkcs11.conf/
 
 Remember also [my FINEID notes in the gist/ repo](https://gitea.blesmrt.net/mikaela/gist/src/branch/master/fineid)
 

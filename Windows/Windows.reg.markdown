@@ -7,11 +7,11 @@ Windows Registry Editor Version 5.00
 "ConsentPromptBehaviorUser"=dword:00000001
 ```
 
-* Make the file Windows Registry Editor script
-* Ask admins for password/PIN in UAC
-    * 2 would ask for yes or no, 0 disable entirely (don't do that).
-* prompt standard users for username and password. 2021-12-19: I don't understand this or the line below.
-    * The other option (1) doesn't even give them UAC prompt so you must
+- Make the file Windows Registry Editor script
+- Ask admins for password/PIN in UAC
+  - 2 would ask for yes or no, 0 disable entirely (don't do that).
+- prompt standard users for username and password. 2021-12-19: I don't understand this or the line below.
+  - The other option (1) doesn't even give them UAC prompt so you must
     always login as admin to do anything.
 
 ```
@@ -24,13 +24,13 @@ Windows Registry Editor Version 5.00
 "EnableFirstLogonAnimation"=dword:00000000
 ```
 
-* Display the user list.
-* Allows shutdown without being logged in
-* Allows undocking without logging in
-* Shows verbose information on login (starting service...)
-* Shows output of startup scripts
-* Shows output of shutdown scripts
-* Disables the first logon animation on Windows 8 and newer
+- Display the user list.
+- Allows shutdown without being logged in
+- Allows undocking without logging in
+- Shows verbose information on login (starting service...)
+- Shows output of startup scripts
+- Shows output of shutdown scripts
+- Disables the first logon animation on Windows 8 and newer
 
 ```
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
@@ -38,16 +38,16 @@ Windows Registry Editor Version 5.00
 "RealTimeIsUniversal"=qword:00000001
 ```
 
-* Sets hardware clock to UTC time (doesn't affect system clock!)
-    * qword for 64-bit, dword for 32-bit systems. The actual reg file has
-      only qword as I haven't seen 32-bit Windowses lately.
+- Sets hardware clock to UTC time (doesn't affect system clock!)
+  - qword for 64-bit, dword for 32-bit systems. The actual reg file has
+    only qword as I haven't seen 32-bit Windowses lately.
 
 ```
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
 "AddrConfigControl"=dword:00000000
 ```
 
-* be able to resolve IPv6 even when connection isn't native.
+- be able to resolve IPv6 even when connection isn't native.
 
 ```
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\TCPIP\v6Transition]
@@ -56,13 +56,13 @@ Windows Registry Editor Version 5.00
 "Teredo_ServerName"="teredo.trex.fi"
 ```
 
-* Enable Teredo
-* Enable Teredo even when joined to domain.
-* Use `teredo.trex.fi` as Teredo server as it's in Finland where I am.
+- Enable Teredo
+- Enable Teredo even when joined to domain.
+- Use `teredo.trex.fi` as Teredo server as it's in Finland where I am.
 
 ```
 [HKEY_USERS\.DEFAULT\Control Panel\Keyboard]
 "InitialKeyboardIndicators"="2147483650"
 ```
 
-* Enable numlock on boot.
+- Enable numlock on boot.

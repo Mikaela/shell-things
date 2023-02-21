@@ -25,23 +25,22 @@ assume that means 2.
 Note: -N uses names specified in config instead of reverse name lookupping
 then.
 
-* `chrony -N activity` - what sources are doing
-* `chrony -N authdata` - can show that server uses NTS
-* `chrony -N ntpdata`  - a lot of data on the servers
-* `chronyc offline`    - offline mode
-* `chronyc online`     - reconnects servers
-* `chrony -N sources`  - used timeservers and their statuses
-* `chrony -N tracking` - local status (stratum and own clock etc.)
-
+- `chrony -N activity` - what sources are doing
+- `chrony -N authdata` - can show that server uses NTS
+- `chrony -N ntpdata` - a lot of data on the servers
+- `chronyc offline` - offline mode
+- `chronyc online` - reconnects servers
+- `chrony -N sources` - used timeservers and their statuses
+- `chrony -N tracking` - local status (stratum and own clock etc.)
 
 ### nmap
-
 
 Checking that something is an NTP server? Needs root:
 
 ```
 nmap -sU -p 123 --script=ntp-info 192.168.0.1
 ```
+
 Checking that something has NTS?
 
 ```

@@ -12,6 +12,6 @@ authors:
     family-names: Suomalainen
     email: suomalainen+git@mikaela.info
   - given-names: git shortlog -sne
-repository-code: 'https://gitea.blesmrt.net/Mikaela/shell-things'
+repository-code: "https://gitea.blesmrt.net/Mikaela/shell-things"
 abstract: dotfiles
 license: BSD-3-Clause

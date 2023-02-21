@@ -12,6 +12,6 @@ but that way you must trust DNSSEC, CloudFlare and wherever the CNAME
 points to who may not have DNSSEC. If you are using this file
 (you shouldn't), you are already trusting me.
 
-[dnscrypt-proxy]:https://github.com/jedisct1/dnscrypt-proxy
-[Hyperboria]:https://hyperboria.net/
-[Yggdrasil]:https://yggdrasil-network.github.io/
+[dnscrypt-proxy]: https://github.com/jedisct1/dnscrypt-proxy
+[hyperboria]: https://hyperboria.net/
+[yggdrasil]: https://yggdrasil-network.github.io/
