@@ -26,6 +26,30 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\1.0.0.2]
 "Template"="https://security.cloudflare-dns.com/dns-query"
 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a0f:fc80::]
+"Template"="https://dns0.eu"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a0f:fc81::]
+"Template"="https://dns0.eu"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\193.110.81.0]
+"Template"="https://dns0.eu"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\185.253.5.0]
+"Template"="https://dns0.eu"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a0f:fc80::9]
+"Template"="https://zero.dns0.eu"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a0f:fc81::9]
+"Template"="https://zero.dns0.eu"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\193.110.81.9]
+"Template"="https://zero.dns0.eu"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\185.253.5.9]
+"Template"="https://zero.dns0.eu"
+
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\193.19.108.2]
 "Template"="https://doh.mullvad.net/dns-query"
 
@@ -79,4 +103,3 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2001:67c:2b0::2]
 "Template"="https://dns.quad9.net/dns-query"
-
