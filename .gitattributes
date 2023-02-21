@@ -1,4 +1,9 @@
 * text=auto eol=lf linguist-detectable
+
+# These files are scary, let's not touch them
+LICENSE	text lockable
+CITATION.cff	text lockable
+
 # Windows files even in checkout
 # Ref: https://rehansaeed.com/gitattributes-best-practices/#line-endings
 *.{reg,[rR][eE][gG]} text eol=crlf
