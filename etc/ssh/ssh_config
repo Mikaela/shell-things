@@ -31,7 +31,7 @@ Host *
 	Protocol 2
 
 	# Tor through openbsd netcat (Fedora: netcat)
-	ProxyCommand netcat -X 5 -x localhost:9050 %h %p
+	#ProxyCommand netcat -X 5 -x localhost:9050 %h %p
 
 	# Always try public key authentication.
 	PubkeyAuthentication yes
