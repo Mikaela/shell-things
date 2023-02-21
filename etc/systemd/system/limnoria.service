@@ -21,4 +21,3 @@ User=BOTUSER
 
 [Install]
 WantedBy=multi-user.target
-

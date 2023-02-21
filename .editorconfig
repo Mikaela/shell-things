@@ -69,4 +69,3 @@ end_of_line = crlf
 [*.{cff,yaml,yml}]
 indent_style = space
 indent_size = 2
-
