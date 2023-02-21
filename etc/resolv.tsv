@@ -15,6 +15,7 @@ Cloudflare MozillaFirefox	https://mozilla.cloudflare-dns.com/dns-query
 CZ.NIC ODVR	https://odvr.nic.cz/dns-query	odvr.nic.cz	2001:148f:ffff::1	2001:148f:fffe::1	193.17.47.1	185.43.135.1	
 DNS0	https://dns0.eu	dns0.eu	2a0f:fc80::	2a0f:fc81::	193.110.81.0	185.253.5.0	https://www.dns0.eu/dns0.eu.mobileconfig
 DNS0 Kids	https://kids.dns0.eu	kids.dns0.eu	2a0f:fc80::1	2a0f:fc81::1	193.110.81.1	185.253.5.1	https://www.dns0.eu/kids.dns0.eu.mobileconfig
+DNS0 Open (unfiltered, discouraged)	https://open.dns0.eu	open.dns0.eu	2a0f:fc80::ffff	2a0f:fc81::ffff	193.110.81.254	185.253.5.254	https://dns0.eu/open.dns0.eu.mobileconfig
 DNS0 Zero	https://zero.dns0.eu	zero.dns0.eu	2a0f:fc80::9	2a0f:fc81::9	193.110.81.9	185.253.5.9	https://www.dns0.eu/zero.dns0.eu.mobileconfig
 Mullvad	https://doh.mullvad.net/dns-query	doh.mullvad.net	2a07:e340::2		194.242.2.2	193.19.108.2	
 Mullvad Adblock	https://adblock.doh.mullvad.net/dns-query	adblock.doh.mullvad.net	2a07:e340::3		194.242.2.3	193.19.108.3	
