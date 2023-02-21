@@ -33,9 +33,9 @@ don't exist by default anymore, they need to be copied and edited separately
 See also:
 
 - https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/1220
-	- marked as duplicate of: https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/207
+  - marked as duplicate of: https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/207
 
 ## Bluetooth
 
 - https://www.redpill-linpro.com/techblog/2021/05/31/better-bluetooth-headset-audio-with-msbc.html
-	- https://web.archive.org/web/20210614103423/https://www.redpill-linpro.com/techblog/2021/05/31/better-bluetooth-headset-audio-with-msbc.html
+  - https://web.archive.org/web/20210614103423/https://www.redpill-linpro.com/techblog/2021/05/31/better-bluetooth-headset-audio-with-msbc.html

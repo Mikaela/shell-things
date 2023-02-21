@@ -22,11 +22,11 @@ I think the first method is likely the best, but I cannot rule these working
 on another system out yet. They didn't work on my first system tried.
 
 - `00-AllowUpgradesWithUnsupportedTPMOrCPU.reg` - the official Microsoft
-	recommendation and the only one that should be used. If after reboot
-	nothing happens, maybe try the rest rebooting every failure.
-	- https://support.microsoft.com/windows/windows-11-n-asentaminen-e0edbbfb-cfc5-4011-868b-2ce77ac7c70e
+  recommendation and the only one that should be used. If after reboot
+  nothing happens, maybe try the rest rebooting every failure.
+  - https://support.microsoft.com/windows/windows-11-n-asentaminen-e0edbbfb-cfc5-4011-868b-2ce77ac7c70e
 - `01-LabConfig.reg` - widely reported to work
 - `01-Setup.reg` - ^
 - `02-DevRing.reg` - after joining the Insider program, this should enforce
-	joining to Dev ring which should offer Windows 11 instantly. It may be
-	advisable to leave after successful update.
+  joining to Dev ring which should offer Windows 11 instantly. It may be
+  advisable to leave after successful update.

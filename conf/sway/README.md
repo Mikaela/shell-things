@@ -25,7 +25,7 @@ methods setting fonts):
 - Document text: Noto Serif Regular 11
 - Monospace text: Noto Sans Mono Regular 10
 - Legacy window title text: Noto Serif Bold 11
-	- Apparently this means "apps that don't use client-side decorations"
+  - Apparently this means "apps that don't use client-side decorations"
 
 The number behind is obviously the number and it's based on what were the
 defaults before I touched them so I am hoping GNOME knows what they are
@@ -42,10 +42,10 @@ have trouble handling it, e.g. mpv (makes Ä and Ö and Å all Å) and Firefox
 Other font settings in GNOME-Tweak:
 
 - Hinting: _a bit_
-	- for no particular reason
+  - for no particular reason
 - Antialiasing: _Subpixel (for LCD-displays)_
-	- I have no idea where there are "standard grayscale" displays that aren't
-	LCD.
+  - I have no idea where there are "standard grayscale" displays that aren't
+    LCD.
 
 ### Screen mirroring
 
@@ -56,6 +56,6 @@ Workarounds:
 - Use VNC (see my Scripts repo [`bash/swaymirror.bash`](https://gitea.blesmrt.net/mikaela/scripts/src/branch/master/bash/swaymirror.bash))
 - Do something weird with OBS
 - Use a dedicated application that don't seem to be in Fedora repos, flatpak
-	or snap.
-	- [github.com/Ferdi265/wl-mirror](https://github.com/Ferdi265/wl-mirror)
-	- [github.com/progandy/wdomirror](https://github.com/progandy/wdomirror)
+  or snap.
+  - [github.com/Ferdi265/wl-mirror](https://github.com/Ferdi265/wl-mirror)
+  - [github.com/progandy/wdomirror](https://github.com/progandy/wdomirror)

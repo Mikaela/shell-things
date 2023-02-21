@@ -4,7 +4,7 @@ repository as dotfiles, but historical reasons...
 # Directories explained
 
 - .mikaela — files that most likely aren't suitable for places where other
-	people than me have access too
+  people than me have access too
 - Windows — files releated to Windows
 - conf — config files like .tmux.conf
 - etc — /etc/

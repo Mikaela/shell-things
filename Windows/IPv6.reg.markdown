@@ -3,6 +3,6 @@ Some kind of explaining for [IPv6.reg](IPv6.reg) like
 
 - Resolve IPv6 even without native connectivity.
 - Enable Teredo
-	- As EnterpriseClient so it also works when joined into domain.
+  - As EnterpriseClient so it also works when joined into domain.
 - Use `teredo.trex.fi` as Teredo server. This should be replaced with
-	something that is as near as possible.
+  something that is as near as possible.
