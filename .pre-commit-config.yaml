@@ -18,9 +18,8 @@ repos:
     rev: "v3.0.0-alpha.4"
     hooks:
       - id: prettier
-repos:
--   repo: https://github.com/editorconfig-checker/editorconfig-checker.python
-    rev: '2.7.1'
+  - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
+    rev: "2.7.1"
     hooks:
-    -   id: editorconfig-checker
+      - id: editorconfig-checker
         alias: ec
