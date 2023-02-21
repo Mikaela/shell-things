@@ -1,0 +1,17 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://citation-file-format.github.io/cff-initializer-javascript/#/ to generate yours today!
+
+cff-version: 1.2.0
+title: shell-things
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Aminda
+    family-names: Suomalainen
+    email: suomalainen+git@mikaela.info
+  - given-names: git shortlog -sne
+repository-code: 'https://gitea.blesmrt.net/Mikaela/shell-things'
+abstract: dotfiles
+license: BSD-3-Clause
