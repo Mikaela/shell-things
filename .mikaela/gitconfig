@@ -1,9 +1,11 @@
 [user]
 	name = Aminda Suomalainen
 	email = suomalainen+git@mikaela.info
+	#email = suomalainen@mikaela.info
 	# Aminda Suomalainen FINEID 20.12.2021-20.12.2026
 	signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCuq/w936y0Enjg7e+t27p6Hwj7RJpuDdhjV/FeikCitey23dx72yIFe3giHW10eBKHr0lhWbDhm2m0b74ZNKneR+oJ99Kl98KegGwjS/gRcjYILHWBJBCF7y61XNeJTlehEZ4zAXS3zLGaZ6DUWY3aqoMkoiAFDdHEAu5EfYITybR+eQZNiGOLVpEVC96bSgGYl4BtUjLib8YCkznllo1hbQWOJSeftIkCJj/XcOvX5kIHsnTMdkgPVd+JhBJ1ReYLf4mBYA0BVTBbHJVrMajz77Oo4iZua3XDw3RF9cekAHjh+x/zZntwiRu0k51xI0mX5nr9SsuiQccD/fxwCoI9P1u2xZHFthiHl4MxUvTRDuBTz8bktdUruqxJP+ZkKZmuozLhP738m+9nMRiavSJm0RQGDUMXfHoJ8+9VVB4uZRZq9Hprt7ReCYobgRaq4220Cpg/WADcm13o0jp0PKOl2uiS6MdIbReiLGJVf/XxeNun43K1+osv/Ermy6qL5WM=
 	#signingkey = ~/.ssh/id_ed25519.pub
+	#signingkey = 0x414E406A
 	##wtop
 	#email = mikaela+digitalents@mikaela.info
 	#signingkey = 0xDF046339D69EB8C9
@@ -54,6 +56,7 @@
 #	 diffFilter = diff-highlight
 [gpg]
 	format = ssh
+	#format = x509
 [tag]
 	forceSignAnnotated = true
 [pull]
@@ -78,3 +81,5 @@
 [lfs]
 	setlockablereadonly = true
 	locksverify = true
+#[gpg "x509"]
+#	program = gpgsm
