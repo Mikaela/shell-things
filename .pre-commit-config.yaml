@@ -1,5 +1,7 @@
 # Remember to run `pre-commit install` at least once!
 # Manual test run: `pre-commit run --all-files`
+# Update? `pre-commit autoupdate`
+#
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
