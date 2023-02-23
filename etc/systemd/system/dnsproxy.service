@@ -6,7 +6,7 @@ After=network-online.target
 
 [Service]
 Type=simple
-# -v is verbose output, journalctl --user -u dnsproxy
+# -v is verbose output, journalctl -u dnsproxy
 # 127.0.2.1@53 comes from https://gitea.blesmrt.net/mikaela/shell-things/src/branch/master/etc/unbound/unbound.conf.d/dnscrypt-proxy.conf
 # and it's not a privileged port https://gitea.blesmrt.net/mikaela/shell-things/src/branch/master/etc/sysctl.d/23-starts-unprivileged-ports.conf
 # The DoH server is self-explanatory, bootstrap is Quad9 with ECS
