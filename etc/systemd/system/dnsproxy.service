@@ -1,13 +1,8 @@
 # https://github.com/AdguardTeam/dnsproxy
-# SELinux takes an offence against the ExecStart so let's be an user service
-# instead
-
-# DON'T FORGET! loginctl enable-linger USERNAME
 [Unit]
 Description=DNS over HTTPS resolver
 # /etc/resolv.conf -> unbound -> dnsproxy
-After=network-online.target unbound.service
-Wants=unbound.service
+After=network-online.target
 
 [Service]
 Type=simple
@@ -15,9 +10,10 @@ Type=simple
 # 127.0.2.1@53 comes from https://gitea.blesmrt.net/mikaela/shell-things/src/branch/master/etc/unbound/unbound.conf.d/dnscrypt-proxy.conf
 # and it's not a privileged port https://gitea.blesmrt.net/mikaela/shell-things/src/branch/master/etc/sysctl.d/23-starts-unprivileged-ports.conf
 # The DoH server is self-explanatory, bootstrap is Quad9 with ECS
-ExecStart=/home/aminda/src/github.com/AdguardTeam/dnsproxy/dnsproxy -v -l 127.0.2.1 -p 53 -u https://dns0.eu/ -b 149.112.112.11:53 -b 9.9.9.11:53 -b [2620:fe::11]:53 -b [2620:fe::fe:11]:53 --http3
+ExecStart=/usr/local/bin/dnsproxy -v -l 127.0.2.1 -p 53 -u https://dns0.eu/ -b 149.112.112.11:53 -b 9.9.9.11:53 -b [2620:fe::11]:53 -b [2620:fe::fe:11]:53 --http3
 Restart=always
 RestartSec=5s
+User=unbound
 
 [Install]
 WantedBy=multi-user.target
