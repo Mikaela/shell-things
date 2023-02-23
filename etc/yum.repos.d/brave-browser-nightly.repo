@@ -1,0 +1,6 @@
+[brave-browser-nightly]
+name=Brave Browser - Nightly
+enabled=1
+autorefresh=1
+baseurl=https://brave-browser-rpm-nightly.s3.brave.com/$basearch
+gpgkey=https://brave-browser-rpm-nightly.s3.brave.com/brave-core-nightly.asc
