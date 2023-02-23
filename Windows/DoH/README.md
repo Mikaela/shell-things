@@ -10,7 +10,9 @@ Requires Windows 11.
   that Windows 11 isn't shipping by default, currently:
   - Adguard
   - Cloudflare antimalware
-  - DNS0 (& Zero)
+  - DNS0 standard
+    - Zero
+    - Open
   - Mullvad
   - Mullvad Adblock
   - Quad9 ECS (Windows 11 defaults include Quad9 default)
