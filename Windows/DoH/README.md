@@ -13,6 +13,7 @@ Requires Windows 11.
   - DNS0 standard
     - Zero
     - Open
+    - Kids
   - Mullvad
   - Mullvad Adblock
   - Quad9 ECS (Windows 11 defaults include Quad9 default)

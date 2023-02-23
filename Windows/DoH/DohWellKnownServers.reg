@@ -62,6 +62,18 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a0f:fc81::ffff]
 "Template"="https://open.dns0.eu"
 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\193.110.81.1]
+"Template"="https://kids.dns0.eu"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\185.253.5.1]
+"Template"="https://kids.dns0.eu"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a0f:fc80::1]
+"Template"="https://kids.dns0.eu"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a0f:fc81::1]
+"Template"="https://kids.dns0.eu"
+
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\193.19.108.2]
 "Template"="https://doh.mullvad.net/dns-query"
 
