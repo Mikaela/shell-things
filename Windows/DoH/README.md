@@ -17,6 +17,7 @@ Requires Windows 11.
   - Mullvad
   - Mullvad Adblock
   - Quad9 ECS (Windows 11 defaults include Quad9 default)
+  - TREX (actually points to Quad9 as per [their documentation](https://www.trex.fi/service/resolvers.html))
 
 ## Configuration
 
