@@ -3,16 +3,16 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers]
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a10:50c0::ad1:ff]
-"Template"="https://dns.adguard.com/dns-query"
+"Template"="https://dns.adguard-dns.com/dns-query"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a10:50c0::ad2:ff]
-"Template"="https://dns.adguard.com/dns-query"
+"Template"="https://dns.adguard-dns.com/dns-query"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\94.140.14.14]
-"Template"="https://dns.adguard.com/dns-query"
+"Template"="https://dns.adguard-dns.com/dns-query"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\94.140.15.15]
-"Template"="https://dns.adguard.com/dns-query"
+"Template"="https://dns.adguard-dns.com/dns-query"
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2606:4700:4700::1112]
 "Template"="https://security.cloudflare-dns.com/dns-query"
