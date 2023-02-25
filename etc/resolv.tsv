@@ -1,28 +1,28 @@
-Provider	DoH	DoT	IPv6	IPv6	IPv4	IPv4	Apple MobileConfig
-AdGuard	https://dns.adguard-dns.com/dns-query	dns.adguard-dns.com	2a10:50c0::ad1:ff	2a10:50c0::ad2:ff	94.140.14.14	94.140.15.15	https://adguard-dns.io/public-dns.html
-AdGuard Non-filtering	https://unfiltered.adguard-dns.com/dns-query	unfiltered.adguard-dns.com	2a10:50c0::1:ff	2a10:50c0::2:ff	94.140.14.140	94.140.14.141	https://adguard-dns.io/public-dns.html
-AdGuard Family	https://family.adguard-dns.com/dns-query	family.adguard-dns.com	2a10:50c0::bad1:ff	2a10:50c0::bad2:ff	94.140.14.15	94.140.15.16	https://adguard-dns.io/public-dns.html
-BlahDNS DoH-CDN Adblock	https://doh1.blahdns.com/dns-query						
-BlahDNS DoH-CDN Unfiltered	https://doh1.blahdns.com/uncensor						
-BlahDNS Finland (encrypted-only, needs SNI)	https://doh-fi.blahdns.com/dns-query	dot-fi.blahdns.com	2a01:4f9:c010:43ce::1		95.216.212.177		
-BlahDNS Germany (encrypted-only, needs SNI)	https://doh-de.blahdns.com/dns-query	dot-de.blahdns.com	2a01:4f8:c17:ec67::1		78.46.244.143		
-Cleanbrowsing adult	https://doh.cleanbrowsing.org/doh/adult-filter/	adult-filter-dns.cleanbrowsing.org	2a0d:2a00:1::1	2a0d:2a00:2::1	185.228.168.10	185.228.169.11	https://my.cleanbrowsing.org/download-mobile-config.php?filter=adult
-Cleanbrowsing family (anti-proxy/VPN/Reddit)	https://doh.cleanbrowsing.org/doh/family-filter/	family-filter-dns.cleanbrowsing.org	2a0d:2a00:1:: 	2a0d:2a00:2::	185.228.168.168	185.228.169.168	https://my.cleanbrowsing.org/download-mobile-config.php?filter=family
-Cleanbrowsing security	https://doh.cleanbrowsing.org/doh/security-filter/	security-filter-dns.cleanbrowsing.org	2a0d:2a00:1::2	2a0d:2a00:2::2	185.228.168.9	85.228.169.9	https://my.cleanbrowsing.org/download-mobile-config.php?filter=security
-Cloudflare	https://cloudflare-dns.com/dns-query	cloudflare-dns.com	2606:4700:4700::1001	2606:4700:4700::1111	1.1.1.1	1.0.0.1	
-Cloudflare antimalware	https://security.cloudflare-dns.com/dns-query		2606:4700:4700::1112	2606:4700:4700::1002	1.1.1.2	1.0.0.2	
-Cloudflare family	https://family.cloudflare-dns.com/dns-query		2606:4700:4700::1113	2606:4700:4700::1003	1.1.1.3	1.0.0.3	
-Cloudflare MozillaFirefox	https://mozilla.cloudflare-dns.com/dns-query						
-CZ.NIC ODVR	https://odvr.nic.cz/dns-query	odvr.nic.cz	2001:148f:ffff::1	2001:148f:fffe::1	193.17.47.1	185.43.135.1	
-DNS0	https://dns0.eu	dns0.eu	2a0f:fc80::	2a0f:fc81::	193.110.81.0	185.253.5.0	https://www.dns0.eu/dns0.eu.mobileconfig
-DNS0 Kids	https://kids.dns0.eu	kids.dns0.eu	2a0f:fc80::1	2a0f:fc81::1	193.110.81.1	185.253.5.1	https://www.dns0.eu/kids.dns0.eu.mobileconfig
-DNS0 Open (unfiltered, discouraged)	https://open.dns0.eu	open.dns0.eu	2a0f:fc80::ffff	2a0f:fc81::ffff	193.110.81.254	185.253.5.254	https://dns0.eu/open.dns0.eu.mobileconfig
-DNS0 Zero	https://zero.dns0.eu	zero.dns0.eu	2a0f:fc80::9	2a0f:fc81::9	193.110.81.9	185.253.5.9	https://www.dns0.eu/zero.dns0.eu.mobileconfig
-Mullvad	https://doh.mullvad.net/dns-query	doh.mullvad.net	2a07:e340::2		194.242.2.2	193.19.108.2	
-Mullvad Adblock	https://adblock.doh.mullvad.net/dns-query	adblock.doh.mullvad.net	2a07:e340::3		194.242.2.3	193.19.108.3	
-NextDNS	https://dns.nextdns.io	dns.nextdns.io	2a07:a8c1::	2a07:a8c0::	45.90.30.0	45.90.28.0	https://apple.nextdns.io/
-NextDNS Firefox	https://firefox.dns.nextdns.io						
-OpenDNS	https://doh.opendns.com/dns-query	dns.opendns.com ? (#127)	2620:119:35::35	2620:119:53::53	208.67.222.222	208.67.220.220	
-OpenDNS Family	https://doh.familyshield.opendns.com/dns-query				208.67.222.123	208.67.220.123	
-Quad9	https://dns.quad9.net/dns-query	dns.quad9.net	2620:fe::fe	2620:fe::9	9.9.9.9	149.112.112.112	
-Quad9 ECS	https://dns11.quad9.net/dns-query	dns11.quad9.net	2620:fe::11	2620:fe::fe:11	9.9.9.11	149.112.112.11	
+Provider	DoH	DoT	IPv6	IPv6	IPv4	IPv4	Apple MobileConfig	ECS	Source for EDNS Client Subnet (ECS)
+AdGuard	https://dns.adguard-dns.com/dns-query	dns.adguard-dns.com	2a10:50c0::ad1:ff	2a10:50c0::ad2:ff	94.140.14.14	94.140.15.15	https://adguard-dns.io/public-dns.html	private	https://adguard.com/en/blog/private-dns-v0-3-beta.html
+AdGuard Non-filtering	https://unfiltered.adguard-dns.com/dns-query	unfiltered.adguard-dns.com	2a10:50c0::1:ff	2a10:50c0::2:ff	94.140.14.140	94.140.14.141	https://adguard-dns.io/public-dns.html	private	https://adguard.com/en/blog/private-dns-v0-3-beta.html
+AdGuard Family	https://family.adguard-dns.com/dns-query	family.adguard-dns.com	2a10:50c0::bad1:ff	2a10:50c0::bad2:ff	94.140.14.15	94.140.15.16	https://adguard-dns.io/public-dns.html	private	https://adguard.com/en/blog/private-dns-v0-3-beta.html
+BlahDNS DoH-CDN Adblock	https://doh1.blahdns.com/dns-query							no	https://blahdns.com/
+BlahDNS DoH-CDN Unfiltered	https://doh1.blahdns.com/uncensor							no	https://blahdns.com/
+BlahDNS Finland (encrypted-only, needs SNI)	https://doh-fi.blahdns.com/dns-query	dot-fi.blahdns.com	2a01:4f9:c010:43ce::1		95.216.212.177			no	https://blahdns.com/
+BlahDNS Germany (encrypted-only, needs SNI)	https://doh-de.blahdns.com/dns-query	dot-de.blahdns.com	2a01:4f8:c17:ec67::1		78.46.244.143			no	https://blahdns.com/
+Cleanbrowsing adult	https://doh.cleanbrowsing.org/doh/adult-filter/	adult-filter-dns.cleanbrowsing.org	2a0d:2a00:1::1	2a0d:2a00:2::1	185.228.168.10	185.228.169.11	https://my.cleanbrowsing.org/download-mobile-config.php?filter=adult		
+Cleanbrowsing family (anti-proxy/VPN/Reddit)	https://doh.cleanbrowsing.org/doh/family-filter/	family-filter-dns.cleanbrowsing.org	2a0d:2a00:1:: 	2a0d:2a00:2::	185.228.168.168	185.228.169.168	https://my.cleanbrowsing.org/download-mobile-config.php?filter=family		
+Cleanbrowsing security	https://doh.cleanbrowsing.org/doh/security-filter/	security-filter-dns.cleanbrowsing.org	2a0d:2a00:1::2	2a0d:2a00:2::2	185.228.168.9	85.228.169.9	https://my.cleanbrowsing.org/download-mobile-config.php?filter=security		
+Cloudflare	https://cloudflare-dns.com/dns-query	cloudflare-dns.com	2606:4700:4700::1001	2606:4700:4700::1111	1.1.1.1	1.0.0.1		no	https://developers.cloudflare.com/1.1.1.1/faq/#does-1.1.1.1-send-edns-client-subnet-header
+Cloudflare antimalware	https://security.cloudflare-dns.com/dns-query		2606:4700:4700::1112	2606:4700:4700::1002	1.1.1.2	1.0.0.2		no	https://developers.cloudflare.com/1.1.1.1/faq/#does-1.1.1.1-send-edns-client-subnet-header
+Cloudflare family	https://family.cloudflare-dns.com/dns-query		2606:4700:4700::1113	2606:4700:4700::1003	1.1.1.3	1.0.0.3		no	https://developers.cloudflare.com/1.1.1.1/faq/#does-1.1.1.1-send-edns-client-subnet-header
+Cloudflare MozillaFirefox	https://mozilla.cloudflare-dns.com/dns-query							no	https://developers.cloudflare.com/1.1.1.1/faq/#does-1.1.1.1-send-edns-client-subnet-header
+CZ.NIC ODVR	https://odvr.nic.cz/dns-query	odvr.nic.cz	2001:148f:ffff::1	2001:148f:fffe::1	193.17.47.1	185.43.135.1			
+DNS0	https://dns0.eu	dns0.eu	2a0f:fc80::	2a0f:fc81::	193.110.81.0	185.253.5.0	https://www.dns0.eu/dns0.eu.mobileconfig	private	https://www.dns0.eu/fi/privacy
+DNS0 Kids	https://kids.dns0.eu	kids.dns0.eu	2a0f:fc80::1	2a0f:fc81::1	193.110.81.1	185.253.5.1	https://www.dns0.eu/kids.dns0.eu.mobileconfig	private	https://www.dns0.eu/fi/privacy
+DNS0 Open (unfiltered, discouraged)	https://open.dns0.eu	open.dns0.eu	2a0f:fc80::ffff	2a0f:fc81::ffff	193.110.81.254	185.253.5.254	https://dns0.eu/open.dns0.eu.mobileconfig	private	https://www.dns0.eu/fi/privacy
+DNS0 Zero	https://zero.dns0.eu	zero.dns0.eu	2a0f:fc80::9	2a0f:fc81::9	193.110.81.9	185.253.5.9	https://www.dns0.eu/zero.dns0.eu.mobileconfig	private	https://www.dns0.eu/fi/privacy
+Mullvad	https://doh.mullvad.net/dns-query	doh.mullvad.net	2a07:e340::2		194.242.2.2	193.19.108.2			
+Mullvad Adblock	https://adblock.doh.mullvad.net/dns-query	adblock.doh.mullvad.net	2a07:e340::3		194.242.2.3	193.19.108.3			
+NextDNS	https://dns.nextdns.io	dns.nextdns.io	2a07:a8c1::	2a07:a8c0::	45.90.30.0	45.90.28.0	https://apple.nextdns.io/	opt-in, private, upstream whitelist	https://medium.com/nextdns/how-we-made-dns-both-fast-and-private-with-ecs-4970d70401e5
+NextDNS Firefox	https://firefox.dns.nextdns.io							no	
+OpenDNS	https://doh.opendns.com/dns-query	dns.opendns.com ? (#127)	2620:119:35::35	2620:119:53::53	208.67.222.222	208.67.220.220		yes, upstream whitelist	https://support.opendns.com/hc/articles/227987647-EDNS-Client-Subnet-FAQ
+OpenDNS Family	https://doh.familyshield.opendns.com/dns-query				208.67.222.123	208.67.220.123		yes, upstream whitelist	https://support.opendns.com/hc/articles/227987647-EDNS-Client-Subnet-FAQ
+Quad9	https://dns.quad9.net/dns-query	dns.quad9.net	2620:fe::fe	2620:fe::9	9.9.9.9	149.112.112.112		no	https://www.quad9.net/support/faq/#edns
+Quad9 ECS	https://dns11.quad9.net/dns-query	dns11.quad9.net	2620:fe::11	2620:fe::fe:11	9.9.9.11	149.112.112.11		yes	https://www.quad9.net/support/faq/#edns
