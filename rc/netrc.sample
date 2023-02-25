@@ -1,7 +1,9 @@
-# Why do I not have a sample .netrc or _netrc in somewhere I would actually
-# look at? Now I do
+# Why do I not have a sample ~/.netrc or %userprofile%\_netrc in somewhere
+# I would actually look at? Now I do
 # See also `man curl` which says to `man 5 netrc` which doesn't exist on my
 # system?
+# NOTE: StackOverflow says COMMENTS ARE FORBIDDEN, don't add these
+# https://stackoverflow.com/q/62824831
 machine git.example.net
 login Username
 password ThisWouldBeA-PAT-ButItIsNot
