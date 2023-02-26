@@ -20,6 +20,11 @@ indent_size = tab
 [*.{bash,sh}]
 end_of_line = lf
 
+# Limnoria/Supybot config files use trailing spaces for empty config files,
+# let's try to not break them.
+[*.conf]
+trim_trailing_whitespace = false
+
 # Crystal https://crystal-lang.org/reference/1.7/conventions/coding_style.html#indentation
 [*.cr]
 indent_style = space
