@@ -3,6 +3,7 @@
 	"position": "left",
 	"modules-left": ["sway/workspaces", "sway/mode"],
 	"modules-right": [
+		"gamemode",
 		"cpu",
 		"memory",
 		"battery",
