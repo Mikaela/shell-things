@@ -2,13 +2,16 @@
 Name=eth0
 
 [Network]
-Address=172.16.1.2/16
-Gateway=172.16.0.1
-# DNS has no effect unless systemd-resolved is used
+# /24, /16, /8 are the the class C, B, A networks
+Address=192.168.0.2/24
+Gateway=192.168.0.1
+# DNS has no effect unless systemd-resolved is used. Why would it be used?
 # systemctl enable systemd-resolved && systemctl start systemd-resolved
 # ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
-DNS=127.0.0.1
-DNS=::1
-DNS=8.8.4.4
-# Enable systemd-timesyncd with `timedatectl set-ntp true`
-NTP=fi.pool.ntp.org
+#DNS=127.0.0.1
+#DNS=::1
+#DNS=8.8.4.4
+# Enable systemd-timesyncd with `timedatectl set-ntp true`, may be specified
+# multiple times, but you are using Chrony instead, right?
+#NTP=fi.pool.ntp.org
+#NTP=time.cloudflare.com
