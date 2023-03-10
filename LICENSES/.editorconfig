@@ -1,0 +1,7 @@
+# SPDX-FileCopyrightText: 2023 Aminda Suomalainen <suomalainen+git@mikaela.info>
+#
+# SPDX-License-Identifier: CC0-1.0
+root = false
+[*]
+indent_style = space
+trim_trailing_whitespace = false
