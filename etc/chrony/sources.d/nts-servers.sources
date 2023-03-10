@@ -1,4 +1,17 @@
-# NTS requires Chrony 4.0
+# SPDX-FileCopyrightText: 2020 Aminda Suomalainen <suomalainen+git@mikaela.info>
+# SPDX-FileCopyrightText: 2023 Mike Cifelli <26522946+macifell@users.noreply.github.com>
+#
+# SPDX-License-Identifier: BSD-3-Clause
+# SPDX-License-Identifier: CC0-1.0
+
+# LICENSE of this file? I don't consider this as a work that exceeds
+# copyright treshhold (while attribution is always nice) so for me this is
+# public domain aka CC0. However I have been following https://github.com/jauderho/nts-servers
+# which clearly states being BSD-3-Clause and as I am not a lawyer, I have
+# no idea how this works, so I am including both license informations.just
+# in case.
+
+# NOTE: NTS support requires Chrony 4.0 or newer!
 
 # Cloudflare NTS, anycast, works probably anywhere. No leap second smearing.
 pool time.cloudflare.com maxsources 2 iburst nts
@@ -10,6 +23,15 @@ server nts.netnod.se iburst nts
 server paris.time.system76.com iburst nts
 
 # https://nts.time.nl/ - regardless of name provides 1 v4 & v6 address
-# no pool directive
+# no pool directive. Also no leap second smearing.
 server ntppool1.time.nl iburst nts
 server ntppool2.time.nl iburst nts
+
+# Germany https://www.ptb.de/cms/en/ptb/fachabteilungen/abtq/gruppe-q4/ref-q42/time-synchronization-of-computers-using-the-network-time-protocol-ntp.html
+server ptbtime1.ptb.de iburst nts
+server ptbtime2.ptb.de iburst nts
+server ptbtime3.ptb.de iburst nts
+
+# Germany
+server www.jabber-germany.de iburst nts
+server www.masters-of-cloud.de iburst nts
