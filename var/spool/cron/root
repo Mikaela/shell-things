@@ -5,3 +5,5 @@
 @reboot /usr/sbin/duperemove -rdhq --hashfile=/root/home.hash /home
 @reboot /usr/sbin/duperemove -rdhq --hashfile=/root/flatpak.hash /var/lib/flatpak
 @reboot /usr/sbin/duperemove -rdhq --hashfile=/root/snap.hash /var/lib/snapd
+
+# vim: filetype=crontab
