@@ -1,0 +1,7 @@
+# 3rd party Xbox controller initialization. See Mikaela/gist/gayming/
+@reboot /root/fixcontroller.py
+
+# BTRFS deduplication (on Lumina at least)
+@reboot /usr/sbin/duperemove -rdhq --hashfile=/root/home.hash /home
+@reboot /usr/sbin/duperemove -rdhq --hashfile=/root/flatpak.hash /var/lib/flatpak
+@reboot /usr/sbin/duperemove -rdhq --hashfile=/root/snap.hash /var/lib/snapd
