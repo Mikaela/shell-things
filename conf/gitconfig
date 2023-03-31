@@ -45,6 +45,8 @@
 	helper = cache --timeout=86400
 [merge]
 	ff = only
+	verifySignatures = true
+	renormalize = true
 [format]
 	signOff = true
 [commit]
@@ -86,3 +88,6 @@
 [lfs]
 	setlockablereadonly = true
 	locksverify = true
+[log]
+	mailmap = true
+	showSignature = true
