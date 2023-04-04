@@ -15,6 +15,9 @@ charset = utf-8
 # Accessibility reasons. Vim: :%retab! (note also :set ts=4)
 indent_style = tab
 indent_size = tab
+# Usable in common Braille displays? Line continuation marker and diffing
+# take two. Prettier default 80. WCAG requirement 80.
+max_line_length = 78
 # Opinionated affecting only display, better to not set
 #tab_width =
 
@@ -67,6 +70,10 @@ indent_style = tab
 indent_size = tab
 # empty last columns/fields
 trim_trailing_whitespace = false
+
+# RFC 678
+#[*.txt]
+#max_line_length = 72
 
 # Windows line-endings for Windows
 [*.{reg,bat,ahk}]
