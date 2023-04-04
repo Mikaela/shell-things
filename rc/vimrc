@@ -105,6 +105,10 @@ autocmd BufReadPost *
 " Highlight all search results
 set hlsearch
 
-" Red column on the right as indication on what I wish to consider as the
-" maximum length of a line.
-set colorcolumn=76
+" Keep text under 78 chars. Common Braille displays have 80, one reserved for
+" line continuation, one for diffing?
+" https://github.com/prettier/prettier/issues/7475#issuecomment-1484238440
+set textwidth=78
+" Marginal/line just before that. Set separately so it gets affected by
+" editorconfig and modelines?
+set colorcolumn=-1
