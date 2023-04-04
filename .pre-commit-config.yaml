@@ -19,3 +19,5 @@ repos:
     hooks:
       - id: editorconfig-checker
         alias: ec
+        # I don't actually care about line lengths as more than a guideline
+        args: [-disable-max-line-length]
