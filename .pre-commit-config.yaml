@@ -28,6 +28,13 @@ repos:
       - id: check-github-workflows
       - id: check-gitlab-ci
 
+  - repo: https://github.com/jumanjihouse/pre-commit-hooks
+    rev: 3.0.0
+    hooks:
+      - id: bundler-audit
+      # https://github.com/jumanjihouse/pre-commit-hooks/issues/111
+      #- id: check-mailmap
+
   # Easierish licensing when attempting reuse compliancy
   #- repo: https://github.com/fsfe/reuse-tool
   #  rev: v1.1.2
