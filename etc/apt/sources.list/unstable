@@ -1,9 +1,9 @@
 ## Main repos
-deb https://deb.debian.org/debian unstable main contrib non-free
-deb-src https://deb.debian.org/debian unstable main contrib non-free
-deb https://deb.debian.org/debian-debug unstable-debug main contrib non-free
+deb https://deb.debian.org/debian unstable main contrib non-free non-free-firmware
+deb-src https://deb.debian.org/debian unstable main contrib non-free non-free-firmware
+deb https://deb.debian.org/debian-debug unstable-debug main contrib non-free non-free-firmware
 
 ## Main repos over Tor
-#deb tor+http://vwakviie2ienjx6t.onion/debian unstable main contrib non-free
-#deb-src tor+http://vwakviie2ienjx6t.onion/debian unstable main contrib non-free
-#deb tor+http://ktqxbqrhg5ai2c7f.onion/debian-debug unstable-debug main contrib non-free
+#deb tor+http://vwakviie2ienjx6t.onion/debian unstable main contrib non-free non-free-firmware
+#deb-src tor+http://vwakviie2ienjx6t.onion/debian unstable main contrib non-free non-free-firmware
+#deb tor+http://ktqxbqrhg5ai2c7f.onion/debian-debug unstable-debug main contrib non-free non-free-firmware
