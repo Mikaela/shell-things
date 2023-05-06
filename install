@@ -38,6 +38,7 @@ bash -x ./chmod&
 
 if hash pre-commit 2>/dev/null; then
 	pre-commit init-templatedir ~/.git-template
+	pre-commit gc
 fi
 
 if [ -f $HOME/.MIKAELAGREP ]
