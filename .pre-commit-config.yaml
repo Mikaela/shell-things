@@ -14,10 +14,11 @@ repos:
       - id: detect-private-key
       - id: end-of-file-fixer
       - id: fix-byte-order-marker
-      #- id: trailing-whitespace
-      # Two lines later must be prettierignored or it gets spaces and breaks
-      # prettier-ignore
-      #args: [--markdown-linebreak-ext=txt,tsv]
+      - id: trailing-whitespace
+        # Let's not touch LICENSE files or reuse.software directory
+        exclude: ^LICENSES\/.*|LICENSE$
+        # File types depending on trailing whitespace. Use identify-cli
+        exclude_types: [tsv, markdown]
 
   # Markdown Table of Contents generation.
   - repo: https://github.com/thlorenz/doctoc
