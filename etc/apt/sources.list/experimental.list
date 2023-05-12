@@ -1,9 +1,9 @@
 ## Experimental repos
-deb https://deb.debian.org/debian experimental main contrib non-free
-deb-src https://deb.debian.org/debian experimental main contrib non-free
-deb https://deb.debian.org/debian-debug experimental-debug main contrib non-free
+deb https://deb.debian.org/debian experimental main contrib non-free non-free-firmware
+deb-src https://deb.debian.org/debian experimental main contrib non-free non-free-firmware
+deb https://deb.debian.org/debian-debug experimental-debug main contrib non-free non-free-firmware
 
 ## Experimental repos over Tor
-#deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian experimental main contrib non-free
-#deb-src tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian experimental main contrib non-free
-#deb tor+http://3lz3irtzg5i4z2sz3qca3oz3sdk3p5a3xlmz3zqwornapeofvoudajid.onion/debian-debug experimental-debug main contrib non-free
+#deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian experimental main contrib non-free non-free-firmware
+#deb-src tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian experimental main contrib non-free non-free-firmware
+#deb tor+http://3lz3irtzg5i4z2sz3qca3oz3sdk3p5a3xlmz3zqwornapeofvoudajid.onion/debian-debug experimental-debug main contrib non-free non-free-firmware

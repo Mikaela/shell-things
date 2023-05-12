@@ -1,29 +1,29 @@
 ## Main repos
-deb https://deb.debian.org/debian stable main contrib non-free
-deb-src https://deb.debian.org/debian stable main contrib non-free
-deb https://deb.debian.org/debian-debug stable-debug main contrib non-free
+deb https://deb.debian.org/debian stable main contrib non-free non-free-firmware
+deb-src https://deb.debian.org/debian stable main contrib non-free non-free-firmware
+deb https://deb.debian.org/debian-debug stable-debug main contrib non-free non-free-firmware
 
 ## Main repos over Tor
-#deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian stable main contrib non-free
-#deb-src tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian stable main contrib non-free
-#deb tor+http://3lz3irtzg5i4z2sz3qca3oz3sdk3p5a3xlmz3zqwornapeofvoudajid.onion/debian-debug stable-debug main contrib non-free
+#deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian stable main contrib non-free non-free-firmware
+#deb-src tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian stable main contrib non-free non-free-firmware
+#deb tor+http://3lz3irtzg5i4z2sz3qca3oz3sdk3p5a3xlmz3zqwornapeofvoudajid.onion/debian-debug stable-debug main contrib non-free non-free-firmware
 
 ## Security repo CDN
-deb https://deb.debian.org/debian-security/ stable-security main contrib non-free
-deb-src https://deb.debian.org/debian-security/ stable-security main contrib non-free
+deb https://deb.debian.org/debian-security/ stable-security main contrib non-free non-free-firmware
+deb-src https://deb.debian.org/debian-security/ stable-security main contrib non-free non-free-firmware
 ## https://bugs.debian.org/894081
-deb https://deb.debian.org/debian-debug stable-proposed-updates-debug main contrib non-free
+deb https://deb.debian.org/debian-debug stable-proposed-updates-debug main contrib non-free non-free-firmware
 
 ## Security repo directly
 # To be enabled AFTER it gets https, meanwhile CDN & Tor must be enough.
-#deb http://security.debian.org/ stable-security main contrib non-free
-#deb-src http://security.debian.org/ stable-security main contrib non-free
+#deb http://security.debian.org/ stable-security main contrib non-free non-free-firmware
+#deb-src http://security.debian.org/ stable-security main contrib non-free non-free-firmware
 
 ## Security repos over Tor
-deb tor+http://5ajw6aqf3ep7sijnscdzw77t7xq4xjpsy335yb2wiwgouo7yfxtjlmid.onion/debian-security stable-security main contrib non-free
-deb-src tor+http://5ajw6aqf3ep7sijnscdzw77t7xq4xjpsy335yb2wiwgouo7yfxtjlmid.onion/debian-security stable-security main contrib non-free
+deb tor+http://5ajw6aqf3ep7sijnscdzw77t7xq4xjpsy335yb2wiwgouo7yfxtjlmid.onion/debian-security stable-security main contrib non-free non-free-firmware
+deb-src tor+http://5ajw6aqf3ep7sijnscdzw77t7xq4xjpsy335yb2wiwgouo7yfxtjlmid.onion/debian-security stable-security main contrib non-free non-free-firmware
 ## https://bugs.debian.org/894081
-#deb tor+http://3lz3irtzg5i4z2sz3qca3oz3sdk3p5a3xlmz3zqwornapeofvoudajid.onion/debian-debug stable-proposed-updates-debug main contrib non-free
+#deb tor+http://3lz3irtzg5i4z2sz3qca3oz3sdk3p5a3xlmz3zqwornapeofvoudajid.onion/debian-debug stable-proposed-updates-debug main contrib non-free non-free-firmware
 
 ## Updates repo
 deb https://deb.debian.org/debian stable-updates main contrib non-free non-free-firmware
