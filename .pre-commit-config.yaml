@@ -31,7 +31,7 @@ repos:
     hooks:
       - id: doctoc
         # https://github.com/Mikaela/gist/blob/master/doctoc.txt
-        args: [--update-only]
+        args: [--update-only, --notitle]
 
   # GitHub Actions etc. configuration validity checking
   - repo: https://github.com/python-jsonschema/check-jsonschema
