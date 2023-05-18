@@ -6,48 +6,46 @@ git verify-commit HEAD
 
 export MIKAELA_GREP=$HOME/.MIKAELA_GREP
 
-cat rc/bashrc > ~/.bashrc
-cat conf/tmux.conf > ~/.tmux.conf
-cat rc/zshrc > ~/.zshrc
-cat rc/profile > ~/.profile
-cat conf/gitconfig > ~/.gitconfig
+cat rc/bashrc >~/.bashrc
+cat conf/tmux.conf >~/.tmux.conf
+cat rc/zshrc >~/.zshrc
+cat rc/profile >~/.profile
+cat conf/gitconfig >~/.gitconfig
 mkdir -p ~/.git-template
-cat rc/vimrc > ~/.vimrc
+cat rc/vimrc >~/.vimrc
 mkdir -p ~/.config/nvim/
-cat conf/init.vim > ~/.config/nvim/init.vim
-cat conf/makepkg.conf > ~/.makepkg.conf
+cat conf/init.vim >~/.config/nvim/init.vim
+cat conf/makepkg.conf >~/.makepkg.conf
 mkdir -p ~/.config/mpv/
-cat conf/mpv.conf > ~/.config/mpv/mpv.conf
+cat conf/mpv.conf >~/.config/mpv/mpv.conf
 if [ ! -f ~/.oidentd.conf ]; then
-	cat conf/oidentd.conf > ~/.oidentd.conf
+	cat conf/oidentd.conf >~/.oidentd.conf
 fi
 mkdir -p ~/.gnupg
-cat gpg/gpg.conf > ~/.gnupg/gpg.conf
-cat gpg/gpg-agent.conf > ~/.gnupg/gpg-agent.conf
-cat gpg/dirmngr.conf > ~/.gnupg/dirmngr.conf
+cat gpg/gpg.conf >~/.gnupg/gpg.conf
+cat gpg/gpg-agent.conf >~/.gnupg/gpg-agent.conf
+cat gpg/dirmngr.conf >~/.gnupg/dirmngr.conf
 killall -HUP dirmngr
 #cat rc/xinitrc > ~/.xinitrc
-cat conf/pastebinit.xml > ~/.pastebinit.xml
-cat conf/Xresources > ~/.Xresources
+cat conf/pastebinit.xml >~/.pastebinit.xml
+cat conf/Xresources >~/.Xresources
 mkdir -p ~/.inxi
-cat conf/inxi.conf > ~/.inxi/inxi.conf
-gpg --quiet --import .mikaela/keys/*.asc&
+cat conf/inxi.conf >~/.inxi/inxi.conf
+gpg --quiet --import .mikaela/keys/*.asc &
 mkdir -p ~/.ssh/sockets/
 chmod a+xr chmod
-bash -x ./chmod&
+bash -x ./chmod &
 
 if hash pre-commit 2>/dev/null; then
 	pre-commit init-templatedir ~/.git-template
 	pre-commit gc
 fi
 
-if [ -f $HOME/.MIKAELAGREP ]
-then
+if [ -f $HOME/.MIKAELAGREP ]; then
 	mv $HOME/.MIKAELAGREP $MIKAELA_GREP
 fi
 
-if [ -f "$MIKAELA_GREP" ]
-then
+if [ -f "$MIKAELA_GREP" ]; then
 	bash -x .mikaela_install
 fi
 

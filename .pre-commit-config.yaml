@@ -80,6 +80,13 @@ repos:
   #     - id: black
   #- id: black-jupyter
 
+  # Shell code formatter, requires Go
+  - repo: https://github.com/scop/pre-commit-shfmt
+    rev: v3.6.0-2
+    hooks:
+      - id: shfmt
+        #- id: shfmt-docker
+
   # .editorconfig validity checking
   - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
     rev: "2.7.1"

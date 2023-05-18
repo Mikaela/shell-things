@@ -2,19 +2,19 @@
 # Do not use this script unless you know what you are doing!
 set -x
 git verify-commit HEAD
-cat .mikaela/bash_aliases> ~/.bash_aliases
-cat .mikaela/zsh_aliases > ~/.zsh_aliases
-cat .mikaela/gitconfig > ~/.gitconfig
-cat rc/xinitrc > ~/.xinitrc
+cat .mikaela/bash_aliases >~/.bash_aliases
+cat .mikaela/zsh_aliases >~/.zsh_aliases
+cat .mikaela/gitconfig >~/.gitconfig
+cat rc/xinitrc >~/.xinitrc
 mkdir -p ~/.gnupg
-cat .mikaela/gpg.conf> ~/.gnupg/gpg.conf
-cat .mikaela/pastebinit.xml > ~/.pastebinit.xml
-cat .mikaela/environment > ~/.environment
-cat .mikaela/gitconfig > ~/.gitconfig
+cat .mikaela/gpg.conf >~/.gnupg/gpg.conf
+cat .mikaela/pastebinit.xml >~/.pastebinit.xml
+cat .mikaela/environment >~/.environment
+cat .mikaela/gitconfig >~/.gitconfig
 mkdir -p ~/.ssh
-cat .mikaela/keys/authorized_keys > ~/.ssh/authorized_keys
-cat etc/ssh/ssh_config > ~/.ssh/config
-cat .editorconfig > ~/.editorconfig
+cat .mikaela/keys/authorized_keys >~/.ssh/authorized_keys
+cat etc/ssh/ssh_config >~/.ssh/config
+cat .editorconfig >~/.editorconfig
 touch ~/.MIKAELA_GREP
 set +x
 # vim : set ft=sh :
