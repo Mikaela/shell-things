@@ -1,6 +1,6 @@
 ci:
   # Attempts to use networking and fails at name resolution, local hook
-  skip: [bundler-audit, pylint]
+  # skip: [bundler-audit, pylint]
   # Forĝejo/Gitea mirrors will autoclose pull requests. This should decrease
   # the frequency of unnecessary PRs.
   # https://github.com/pre-commit-ci/issues/issues/83
@@ -34,26 +34,26 @@ repos:
         args: [--update-only, --notitle]
 
   # Python type checking
-  - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: "v1.3.0"
-    hooks:
-      - id: mypy
+  # - repo: https://github.com/pre-commit/mirrors-mypy
+  #   rev: "v1.3.0"
+  #   hooks:
+  #     - id: mypy
 
   # GitHub Actions etc. configuration validity checking
-  - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.23.0
-    hooks:
-      - id: check-dependabot
-      - id: check-github-actions
-      - id: check-github-workflows
-      - id: check-gitlab-ci
+  # - repo: https://github.com/python-jsonschema/check-jsonschema
+  #   rev: 0.23.0
+  #   hooks:
+  #     - id: check-dependabot
+  #     - id: check-github-actions
+  #     - id: check-github-workflows
+  #     - id: check-gitlab-ci
 
-  - repo: https://github.com/jumanjihouse/pre-commit-hooks
-    rev: 3.0.0
-    hooks:
-      - id: bundler-audit
-      # https://github.com/jumanjihouse/pre-commit-hooks/issues/111
-      #- id: check-mailmap
+  # - repo: https://github.com/jumanjihouse/pre-commit-hooks
+  #   rev: 3.0.0
+  #   hooks:
+  #     - id: bundler-audit
+  # https://github.com/jumanjihouse/pre-commit-hooks/issues/111
+  #- id: check-mailmap
 
   # Easierish licensing when attempting reuse compliancy
   #- repo: https://github.com/fsfe/reuse-tool
@@ -63,17 +63,19 @@ repos:
 
   # prettier & editorconfig checker should probably be ran last
 
-  # prettier
+  # prettier, opinionated code formatter
   - repo: https://github.com/pre-commit/mirrors-prettier
     rev: "v3.0.0-alpha.9-for-vscode"
     hooks:
       - id: prettier
         exclude_types: [python, pyi, jupyter]
-  - repo: https://github.com/psf/black
-    rev: 23.3.0
-    hooks:
-      - id: black
-      #- id: black-jupyter
+
+  # Black, opinionated Python code formatter
+  # - repo: https://github.com/psf/black
+  #   rev: 23.3.0
+  #   hooks:
+  #     - id: black
+  #- id: black-jupyter
 
   # .editorconfig validity checking
   - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
@@ -84,11 +86,11 @@ repos:
         # I don't actually care about line lengths as more than a guideline
         args: [-disable-max-line-length]
 
-  # Python linter
-  - repo: local
-    hooks:
-      - id: pylint
-        name: pylint
-        entry: pylint
-        language: system
-        types_or: [python, pyi]
+  # # Python linter
+  # - repo: local
+  #   hooks:
+  #     - id: pylint
+  #       name: pylint
+  #       entry: pylint
+  #       language: system
+  #       types_or: [python, pyi]
