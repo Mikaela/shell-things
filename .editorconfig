@@ -37,7 +37,7 @@ indent_style = space
 indent_size = 2
 
 [*.csv]
-max_line_length =
+max_line_length = off
 
 # Markdown apparently allows linebreaks by two trailing spaces, while I
 # never seem to do that, maybe I should accept it
@@ -75,7 +75,7 @@ indent_style = tab
 indent_size = tab
 # empty last columns/fields
 trim_trailing_whitespace = false
-max_line_length =
+max_line_length = off
 
 # RFC 678
 #[*.txt]
