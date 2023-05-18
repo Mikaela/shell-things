@@ -18,6 +18,7 @@ repos:
       - id: destroyed-symlinks
       - id: detect-private-key
       - id: end-of-file-fixer
+        exclude: .*\.nginx$
       - id: fix-byte-order-marker
       - id: trailing-whitespace
         # Let's not touch LICENSE files or reuse.software directory
@@ -69,7 +70,8 @@ repos:
     hooks:
       - id: prettier
         exclude_types: [python, pyi, jupyter]
-        additional_dependencies: ["prettier@2.8.8"]
+        additional_dependencies:
+          ["prettier@2.8.8", "prettier-plugin-nginx@1.0.3"]
 
   # Black, opinionated Python code formatter
   # - repo: https://github.com/psf/black
@@ -86,6 +88,7 @@ repos:
         alias: ec
         # I don't actually care about line lengths as more than a guideline
         args: [-disable-max-line-length]
+        exclude: .*\.nginx$
 
   # # Python linter
   # - repo: local

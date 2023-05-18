@@ -1,51 +1,47 @@
 server {
-	listen 80 default_server;
-	listen [::]:80 default_server ipv6only=on;
-	listen 443 default_server ssl http2;
-	listen [::]:443 default_server ssl http2 ipv6only=on;
-
-	root /var/www/default/;
-	index index.php index.html index.htm;
-
-### Generating SSL certificate:
-## mkdir -p /etc/nginx/ssl && cd /etc/nginx/ssl
-## openssl req -x509 -nodes -days 3650 -newkey rsa:4096 -keyout nginx.key -out nginx.crt
-### this takes forever and is used on line 23.
-## openssl dhparam -out dhparam.pem 4096
-	ssl_certificate /etc/nginx/ssl/nginx.crt;
-	ssl_certificate_key /etc/nginx/ssl/nginx.key;
-# ----- begin of Mozilla Server Side TLS recommendations -----
-# **2014-11-07** https://wiki.mozilla.org/Security/Server_Side_TLS
-	ssl_session_timeout 5m;
-	ssl_session_cache shared:SSL:50m;
-
+	listen                    80 default_server;
+	listen                    [::]:80 default_server ipv6only=on;
+	listen                    443 default_server ssl http2;
+	listen                    [::]:443 default_server ssl http2 ipv6only=on;
+	root                      /var/www/default/;
+	index                     index.php index.html index.htm;
+	### Generating SSL certificate:
+	## mkdir -p /etc/nginx/ssl && cd /etc/nginx/ssl
+	## openssl req -x509 -nodes -days 3650 -newkey rsa:4096 -keyout nginx.key -out nginx.crt
+	### this takes forever and is used on line 23.
+	## openssl dhparam -out dhparam.pem 4096
+	ssl_certificate           /etc/nginx/ssl/nginx.crt;
+	ssl_certificate_key       /etc/nginx/ssl/nginx.key;
+	# ----- begin of Mozilla Server Side TLS recommendations -----
+	# **2014-11-07** https://wiki.mozilla.org/Security/Server_Side_TLS
+	ssl_session_timeout       5m;
+	ssl_session_cache         shared:SSL:50m;
 	# Diffie-Hellman parameter for DHE ciphersuites, recommended 4096 bits
 	# See generation on line 14
-	ssl_dhparam /etc/nginx/ssl/dhparam.pem;
-
+	ssl_dhparam               /etc/nginx/ssl/dhparam.pem;
 	# Intermediate configuration. tweak to your needs.
 	# comment just for me, don't uncomment.
 	#ssl_ciphers '';
-	ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-	ssl_ciphers 'ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:AES:CAMELLIA:DES-CBC3-SHA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!aECDH:!EDH-DSS-DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!KRB5-DES-CBC3-SHA';
+	ssl_protocols             TLSv1 TLSv1.1 TLSv1.2;
+	ssl_ciphers               'ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:AES:CAMELLIA:DES-CBC3-SHA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!aECDH:!EDH-DSS-DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!KRB5-DES-CBC3-SHA';
 	ssl_prefer_server_ciphers on;
-
 	# Enable this if your want HSTS (recommended)
-	add_header Strict-Transport-Security "max-age=15552000; includeSubdomains; preload";
-	add_header X-Frame-Options SAMEORIGIN;
-	add_header Content-Security-Policy upgrade-insecure-requests;
-	add_header X-Xss-Protection "1; mode=block" always;
-	add_header X-Content-Type-Options "nosniff" always;
-
+	add_header                Strict-Transport-Security
+	  "max-age=15552000; includeSubdomains; preload";
+	add_header                X-Frame-Options SAMEORIGIN;
+	add_header                Content-Security-Policy
+	  upgrade-insecure-requests;
+	add_header                X-Xss-Protection "1; mode=block" always;
+	add_header                X-Content-Type-Options "nosniff" always;
 	# OCSP Stapling ---
 	# fetch OCSP records from URL in ssl_certificate and cache them
-	ssl_stapling on;
-	ssl_stapling_verify on;
+	ssl_stapling              on;
+	ssl_stapling_verify       on;
+
 	## verify chain of trust of OCSP response using Root CA and Intermediate certs
 	#ssl_trusted_certificate /path/to/root_CA_cert_plus_intermediates;
 	#resolver ::1;
-# ----- end of Mozilla Server Side TLS recommendations -----
-
+	# ----- end of Mozilla Server Side TLS recommendations -----
 	location / {
 		# First attempt to serve request as file, then
 		# as directory, then fall back to displaying a 404.
@@ -55,34 +51,31 @@ server {
 
 	# Userdir
 	location ~ ^/~(.+?)(/.*)?$ {
-		alias /home/$1/public_html$2;
-		index  index.html index.htm;
+		alias     /home/$1/public_html$2;
+		index     index.html index.htm;
 		autoindex on;
 	}
 
-
 	#error_page 404 /404.html;
-
 	# redirect server error pages to the static page /50x.html
 	#
 	#error_page 500 502 503 504 /50x.html;
 	#location = /50x.html {
 	#	root /usr/share/nginx/html;
 	#}
-
 	# pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
 	#
 	location ~ \.php$ {
 		fastcgi_split_path_info ^(.+\.php)(/.+)$;
-	#	# NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
-	#
-	#	# With php5-cgi alone:
-	#	 fastcgi_pass 127.0.0.1:9000;
-	#	# With php5-fpm:
-		fastcgi_pass unix:/var/run/php5-fpm.sock;
-		fastcgi_index index.php;
+		#	# NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
+		#
+		#	# With php5-cgi alone:
+		#	 fastcgi_pass 127.0.0.1:9000;
+		#	# With php5-fpm:
+		fastcgi_pass            unix:/var/run/php5-fpm.sock;
+		fastcgi_index           index.php;
 		#include fastcgi_params;
-		include fastcgi.conf;
+		include                 fastcgi.conf;
 	}
 
 	# deny access to .htaccess files, if Apache's document root

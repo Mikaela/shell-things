@@ -1,22 +1,20 @@
 server {
-	listen 80;
-	listen [::]:80;
-	listen 443;
-	listen [::]:443;
-
+	listen      80;
+	listen      [::]:80;
+	listen      443;
+	listen      [::]:443;
 	# Enable this if your want HSTS (recommended)
-	add_header Strict-Transport-Security "max-age=15552000; includeSubdomains; preload";
-	add_header X-Frame-Options SAMEORIGIN;
-	add_header Content-Security-Policy upgrade-insecure-requests;
-	add_header X-Xss-Protection "1; mode=block" always;
-	add_header X-Content-Type-Options "nosniff" always;
-
+	add_header  Strict-Transport-Security
+	  "max-age=15552000; includeSubdomains; preload";
+	add_header  X-Frame-Options SAMEORIGIN;
+	add_header  Content-Security-Policy upgrade-insecure-requests;
+	add_header  X-Xss-Protection "1; mode=block" always;
+	add_header  X-Content-Type-Options "nosniff" always;
 	server_name something.example.org;
 
-# NOTE: For X-Real-IP & X-Forwarded-For see ../conf.d/rproxy.conf
-# Behind CloudFlare see ../conf.d/cloudflare.conf
-
-location / {
-	proxy_pass http://localhost:8080;
+	# NOTE: For X-Real-IP & X-Forwarded-For see ../conf.d/rproxy.conf
+	# Behind CloudFlare see ../conf.d/cloudflare.conf
+	location / {
+		proxy_pass http://localhost:8080;
 	}
 }
