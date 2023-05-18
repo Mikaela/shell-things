@@ -1,6 +1,6 @@
 ci:
-  # Attempts to use networking and fails at name resolution
-  skip: [bundler-audit]
+  # Attempts to use networking and fails at name resolution, local hook
+  skip: [bundler-audit, pylint]
   # Forĝejo/Gitea mirrors will autoclose pull requests. This should decrease
   # the frequency of unnecessary PRs.
   # https://github.com/pre-commit-ci/issues/issues/83
@@ -33,6 +33,12 @@ repos:
         # https://github.com/Mikaela/gist/blob/master/doctoc.txt
         args: [--update-only, --notitle]
 
+  # Python type checking
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: "v1.3.0"
+    hooks:
+      - id: mypy
+
   # GitHub Actions etc. configuration validity checking
   - repo: https://github.com/python-jsonschema/check-jsonschema
     rev: 0.23.0
@@ -62,6 +68,12 @@ repos:
     rev: "v3.0.0-alpha.9-for-vscode"
     hooks:
       - id: prettier
+        exclude_types: [python, pyi, jupyter]
+  - repo: https://github.com/psf/black
+    rev: 23.3.0
+    hooks:
+      - id: black
+      #- id: black-jupyter
 
   # .editorconfig validity checking
   - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
@@ -71,3 +83,12 @@ repos:
         alias: ec
         # I don't actually care about line lengths as more than a guideline
         args: [-disable-max-line-length]
+
+  # Python linter
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types_or: [python, pyi]
