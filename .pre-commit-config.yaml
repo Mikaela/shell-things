@@ -69,6 +69,7 @@ repos:
     hooks:
       - id: prettier
         exclude_types: [python, pyi, jupyter]
+        additional_dependencies: ["prettier@2.8.8"]
 
   # Black, opinionated Python code formatter
   # - repo: https://github.com/psf/black
