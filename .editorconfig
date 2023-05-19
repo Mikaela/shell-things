@@ -1,3 +1,4 @@
+# See https://editorconfig.org for more information
 # Note: I use this file as ~/.editorconfig when something doesn't specify to
 # be root before reaching ~, so this contains files not seen in this repo
 root = true

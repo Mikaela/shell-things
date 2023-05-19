@@ -1,3 +1,5 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.ci for more information
 ci:
   # Attempts to use networking and fails at name resolution, local hook
   # skip: [bundler-audit, pylint]
