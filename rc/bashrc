@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 UNAME=$(uname)
 # TOC
 #	Defaults etc...				M0TZLS
@@ -7,9 +8,8 @@ UNAME=$(uname)
 
 # enable terminal bell
 
-if [ -f /usr/bin/xset ];
-then
-	(xset b on&)
+if [ -f /usr/bin/xset ]; then
+	(xset b on &)
 fi
 
 #####	Defaults etc...				M0TZLS	#####
@@ -45,19 +45,19 @@ fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-	xterm-color) color_prompt=yes;;
+xterm-color) color_prompt=yes ;;
 esac
 
 force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
 	if which tput >&/dev/null && tput setaf 1 >&/dev/null; then
-	# We have color support; assume it's compliant with Ecma-48
-	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	# a case would tend to support setf rather than setaf.)
-	color_prompt=yes
+		# We have color support; assume it's compliant with Ecma-48
+		# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+		# a case would tend to support setf rather than setaf.)
+		color_prompt=yes
 	else
-	color_prompt=
+		color_prompt=
 	fi
 fi
 
@@ -78,11 +78,10 @@ fi
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
-xterm*|*rxvt*)
+xterm* | *rxvt*)
 	PS1="\[\e]0;\u@\h: \w\a\]$PS1"
 	;;
-*)
-	;;
+*) ;;
 esac
 
 # enable color support of ls and also add handy aliases
@@ -102,7 +101,7 @@ if [[ $UNAME != Darwin ]]; then
 	alias ll='ls -alFh --color=always' && alias la='ls -A --color=always' && alias l='ls -CF --color=always'
 fi
 
-if [[ $UNAME = Darwin ]]; then
+if [[ $UNAME == Darwin ]]; then
 	alias ls="ls -Gp"
 	alias ll="ls -alFHGp"
 	alias l="ls -CFGp"
@@ -132,25 +131,24 @@ fi
 #shopt -s autocd
 
 # Show the hostname, uptime and users logged in on shell start
-(hostname&)
-(uptime&)
+(hostname &)
+(uptime &)
 (echo "")
 if [[ $UNAME != Darwin ]]; then
-	(who -H -w -u|head -n10&)
+	(who -H -w -u | head -n10 &)
 	(echo "")
 #	 (last -10 -w -x&)
 fi
 
-if [[ $UNAME = Darwin ]]; then
-	(who -H -u|head -n10&)
+if [[ $UNAME == Darwin ]]; then
+	(who -H -u | head -n10 &)
 	(echo "")
-	(last -10&)
+	(last -10 &)
 fi
-(printf "Aferoj emas funkcii sin mem.\n\tFaru jogon, sentu, ne provu perfektecon.\n\t\tDancu kiel neniu rigardas.\n" && echo&)
+(printf "Aferoj emas funkcii sin mem.\n\tFaru jogon, sentu, ne provu perfektecon.\n\t\tDancu kiel neniu rigardas.\n" && echo &)
 
 # fix dircolors for Selenized https://github.com/jan-warchol/selenized/blob/master/other-apps/dircolors/README.md
 export LS_COLORS="$LS_COLORS:ow=1;7;34:st=30;44:su=30;41"
-
 
 #####	Environment					7RS56S	#####
 # Environment should be placed to .environment or .bash_environment.
@@ -168,15 +166,15 @@ if [ -f ~/.bash_environment ]; then
 fi
 
 # Enable core files.
-(ulimit -c unlimited&)
+(ulimit -c unlimited &)
 
 # More colours
 if [[ $TERM == 'xterm' ]]; then
-export TERM=xterm-256color
+	export TERM=xterm-256color
 fi
 
 if [[ $TERM == 'screen' ]]; then
-export TERM=screen-256color
+	export TERM=screen-256color
 fi
 
 # Things after this are just examples and should be put to some other file, which is sourced above.
@@ -213,10 +211,10 @@ UNAME=$(uname)
 CPUARCH=$(uname -p)
 
 # If we are on Linux, enable apt progress bar and colours
-if [[ $USER = "root" ]]; then
+if [[ $USER == "root" ]]; then
 	mkdir -p /etc/apt/apt.conf.d/
-	echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
-	echo 'APT::Color "1";' > /etc/apt/apt.conf.d/99color
+	echo 'Dpkg::Progress-Fancy "1";' >/etc/apt/apt.conf.d/99progressbar
+	echo 'APT::Color "1";' >/etc/apt/apt.conf.d/99color
 fi
 
 # if gpg[-agent] has sshcontrol file, use it as ssh-agent. sshcontrol should
@@ -231,7 +229,7 @@ if [ -f ~/.gnupg/sshcontrol ]; then
 # otherwise use the normal ssh-agent
 else
 	# if the output is going to /dev/null, it's non/existence doesn't matter
-	(ssh-agent -a /tmp/$USER.sshagent > /dev/null 2>&1)
+	(ssh-agent -a /tmp/$USER.sshagent >/dev/null 2>&1)
 	export SSH_AUTH_SOCK=/tmp/$USER.sshagent
 fi
 
@@ -355,11 +353,11 @@ alias refreshgroups="exec su -l $USER"
 alias ssh-pubkey-length="ssh-keygen -lf "
 
 # MSDOS commands. MSDOS is after every alias line to get these lines easily by grepping.
-alias cls=clear # MSDOS
-alias help=man # MSDOS
+alias cls=clear         # MSDOS
+alias help=man          # MSDOS
 alias ipconfig=ifconfig # MSDOS
-alias copy=cp # MSDOS
-alias move=mv # MSDOS
+alias copy=cp           # MSDOS
+alias move=mv           # MSDOS
 
 # List git committers of repository
 alias git-committers="git shortlog -s"
@@ -528,8 +526,7 @@ alias mpvm="mpv --no-video"
 alias mpvms="mpv --no-video --shuffle"
 
 # Compatibility with my i3 alsactl mess
-if [ -f ~/.config/asound.state ]
-then
+if [ -f ~/.config/asound.state ]; then
 	alias alsactl="\alsactl -f ~/.config/asound.state"
 fi
 
@@ -568,33 +565,33 @@ function geoip() {
 ## for unit193 ;)
 ## use command "ex" to extract any archive files.
 ## "ex package.zip" for example
-function ex ()
-
-{
-if [ -f "$1" ] ; then
-case "$1" in
-	*.tar)				tar xvf $1			;;
-	*.tar.bz2 | *.tbz2 )	tar xjvf $1			;;
-	*.tar.gz | *.tgz )	tar xzvf $1			;;
-	*.bz2)				bunzip2 $1			;;
-	*.rar)				unrar x $1			;;
-	*.gz)					gunzip $1			;;
-	*.zip)				unzip $1			;;
-	*.Z)					uncompress $1		;;
-	*.7z)					7z x $1				;;
-	*.xz)					tar xJvf $1			;;
-	*.deb)
-		DIR=${1%%_*.deb}
-		ar xv $1
-		mkdir ${DIR}
-		tar -C ${DIR} -xzvf data.tar.gz		;;
-	*.rpm)			 rpm2cpio $1 | cpio -vid	;;
-	*) echo ""${1}" cannot be extracted via extract()"
-;;
-	esac
-else
-	echo ""${1}" is not a valid file"
-fi
+function ex() {
+	if [ -f "$1" ]; then
+		case "$1" in
+		*.tar) tar xvf $1 ;;
+		*.tar.bz2 | *.tbz2) tar xjvf $1 ;;
+		*.tar.gz | *.tgz) tar xzvf $1 ;;
+		*.bz2) bunzip2 $1 ;;
+		*.rar) unrar x $1 ;;
+		*.gz) gunzip $1 ;;
+		*.zip) unzip $1 ;;
+		*.Z) uncompress $1 ;;
+		*.7z) 7z x $1 ;;
+		*.xz) tar xJvf $1 ;;
+		*.deb)
+			DIR=${1%%_*.deb}
+			ar xv $1
+			mkdir ${DIR}
+			tar -C ${DIR} -xzvf data.tar.gz
+			;;
+		*.rpm) rpm2cpio $1 | cpio -vid ;;
+		*)
+			echo ""${1}" cannot be extracted via extract()"
+			;;
+		esac
+	else
+		echo ""${1}" is not a valid file"
+	fi
 }
 
 # Given by nyuszika7h. Shortens GitHub URLs with git.io
@@ -616,7 +613,7 @@ function gribble-gpg-everify() {
 
 	echo -n 'Enter Bitcoin OTC URL: '
 	read REPLY
-	lynx -hiddenlinks=ignore -dump $REPLY > bitcoin_otc.txt.asc
+	lynx -hiddenlinks=ignore -dump $REPLY >bitcoin_otc.txt.asc
 	$gpg --decrypt-file bitcoin_otc.txt.asc
 	echo -en '\e[1;32m;;everify '
 	cat bitcoin_otc.txt
@@ -628,60 +625,58 @@ function gribble-gpg-everify() {
 
 function shell-things {
 
-export SHELL_THINGS_REPO=$HOME/.shell-things
+	export SHELL_THINGS_REPO=$HOME/.shell-things
 
-# Check if ~/.shell-things exists and cd and pull.
-if [ -d $SHELL_THINGS_REPO ]; then
-	echo "shell-things: $SHELL_THINGS_REPO exists, git pulling..."
-	echo ""
-	cd $SHELL_THINGS_REPO
-	git remote set-url origin https://gitea.blesmrt.net/Mikaela/shell-things.git
-	git fetch --all
-	git pull
-	git verify-commit HEAD
-	sleep 10
-	echo ""
-	echo "shell-things: Installing/Upgrading..."
-	echo ""
-# If it doesn't exist...
-else
-	echo ""
-	echo "shell-things: $SHELL_THINGS_REPO doesn't exist, cloning..."
-	echo ""
-	git clone https://gitea.blesmrt.net/Mikaela/shell-things.git $SHELL_THINGS_REPO
-	cd $SHELL_THINGS_REPO
-	sleep 10
-	echo ""
-	echo "shell-things: Installing/Upgrading..."
-	echo ""
-fi
+	# Check if ~/.shell-things exists and cd and pull.
+	if [ -d $SHELL_THINGS_REPO ]; then
+		echo "shell-things: $SHELL_THINGS_REPO exists, git pulling..."
+		echo ""
+		cd $SHELL_THINGS_REPO
+		git remote set-url origin https://gitea.blesmrt.net/Mikaela/shell-things.git
+		git fetch --all
+		git pull
+		git verify-commit HEAD
+		sleep 10
+		echo ""
+		echo "shell-things: Installing/Upgrading..."
+		echo ""
+	# If it doesn't exist...
+	else
+		echo ""
+		echo "shell-things: $SHELL_THINGS_REPO doesn't exist, cloning..."
+		echo ""
+		git clone https://gitea.blesmrt.net/Mikaela/shell-things.git $SHELL_THINGS_REPO
+		cd $SHELL_THINGS_REPO
+		sleep 10
+		echo ""
+		echo "shell-things: Installing/Upgrading..."
+		echo ""
+	fi
 
-# Installing...
-bash -x ./install
-echo ""
-echo "shell-things: Installing finished."
-echo ""
+	# Installing...
+	bash -x ./install
+	echo ""
+	echo "shell-things: Installing finished."
+	echo ""
 
-echo ""
-echo "shell-things: Everything is now done :)"
-echo ""
+	echo ""
+	echo "shell-things: Everything is now done :)"
+	echo ""
 
-cd
+	cd
 
 }
 
 # This function fixes nodejs on Debian based systems.
 # (Everything expects nodejs to be called as node, but it's not with Debian.)
-fix-node () {
-		if [[ $USER = "root" && -f /usr/bin/nodejs && ! -f /usr/bin/node && ! -f /usr/local/bin/node ]]
-		then
-				ln -s /usr/bin/nodejs /usr/local/bin/node
-		fi
-		mkdir -p $HOME/.local/bin
-		if [[ -f /usr/bin/nodejs && ! -f /usr/bin/node && ! -f /usr/local/bin/node && ! -f $HOME/.local/bin/node ]]
-		then
-				ln -s /usr/bin/nodejs $HOME/.local/bin/node
-		fi
+fix-node() {
+	if [[ $USER == "root" && -f /usr/bin/nodejs && ! -f /usr/bin/node && ! -f /usr/local/bin/node ]]; then
+		ln -s /usr/bin/nodejs /usr/local/bin/node
+	fi
+	mkdir -p $HOME/.local/bin
+	if [[ -f /usr/bin/nodejs && ! -f /usr/bin/node && ! -f /usr/local/bin/node && ! -f $HOME/.local/bin/node ]]; then
+		ln -s /usr/bin/nodejs $HOME/.local/bin/node
+	fi
 }
 
 # This function removes and regenerates ssh host keys.
@@ -719,8 +714,8 @@ github-add-pulls() {
 
 # Get server SSL certificate fingerprint in MD5, SHA1 and SHA256.
 # Note that OpenSSL doesn't support IPv6 at time of writing (2015-01-13).
-serversslcertfp () {
-	SSSLCFFN=$(openssl s_client -showcerts -connect $1 < /dev/null)
+serversslcertfp() {
+	SSSLCFFN=$(openssl s_client -showcerts -connect $1 </dev/null)
 	# To see all validity information
 	echo "$SSSLCFFN"
 	# For getting the fingerprints
@@ -732,7 +727,7 @@ serversslcertfp () {
 }
 
 # The same for local certificate file
-sslcertfp () {
+sslcertfp() {
 	cat $1 | openssl x509 -md5 -fingerprint -noout
 	cat $1 | openssl x509 -sha1 -fingerprint -noout
 	cat $1 | openssl x509 -sha256 -fingerprint -noout
@@ -745,36 +740,36 @@ serversslciphers() {
 }
 
 # Generate SSL certificate
-sslgenpem () {
+sslgenpem() {
 	openssl req -nodes -newkey rsa:4096 -keyout $1.pem -x509 -days 3650 -out $1.pem -subj "/CN=$2"
 }
 
 # Managing SSL certificates of Google Chrome
-chrome-add-cert () {
+chrome-add-cert() {
 	echo "Please ensure that either libnss3-tools or nss-tools is installed."
 	certutil -d sql:$HOME/.pki/nssdb -A -t "P,," -n $1 -i $1
 }
 
-chrome-list-certs () {
+chrome-list-certs() {
 	echo "Please ensure that either libnss3-tools or nss-tools is installed."
 	certutil -d sql:$HOME/.pki/nssdb -L # add '-h all' to see all built-in certs
 }
 
-ssldownloadcert () {
+ssldownloadcert() {
 	echo "Please ensure that either libnss3-tools or nss-tools is installed."
 	echo QUIT | openssl s_client -connect $1:443 | sed -ne '/BEGIN CERT/,/END CERT/p' | tee $1.pem
 }
 
 # Getting magnet from transmission-daemon
-transmission-torrents () {
+transmission-torrents() {
 	transmission-remote -l
 }
-transmission-magnet () {
+transmission-magnet() {
 	transmission-remote -l -t $1 -i | \grep magnet | awk -F': ' '{print $2}'
 }
 
 # Merges the last $1 commits into one
-git-squash () {
+git-squash() {
 	git reset --soft HEAD~$1
 	git commit
 }
@@ -786,7 +781,7 @@ mtrp() {
 }
 
 # My IPv4 address
-myip4 () {
+myip4() {
 	if hash dig 2>/dev/null; then
 		dig +short myip.opendns.com. A @208.67.222.222
 	else
@@ -795,7 +790,7 @@ myip4 () {
 }
 
 # My IPv6 address
-myip6 () {
+myip6() {
 	if hash dig 2>/dev/null; then
 		dig +short myip.opendns.com. AAAA @2620:0:ccc::2
 	else
@@ -806,11 +801,10 @@ myip6 () {
 # Easier verifying of SSH signed files: ssh-verify-file whatever@mikaela.info file.txt
 # It's assumed that signature of file.txt is called as file.txt.sig
 sshAllowedSigners=$HOME/src/gitea.blesmrt.net/Mikaela/ssh-allowed_signers/allowed_signers
-ssh-verify-file () {
-	echo "$1 ${2:?Usage: ssh-verify-file <email> <file-to-verify>}" > /dev/null
-	ssh-keygen -Y verify -f $sshAllowedSigners -I $1 -n file -s $2.sig < $2
+ssh-verify-file() {
+	echo "$1 ${2:?Usage: ssh-verify-file <email> <file-to-verify>}" >/dev/null
+	ssh-keygen -Y verify -f $sshAllowedSigners -I $1 -n file -s $2.sig <$2
 }
-
 
 # Source files for miscannellious modifications.
 
