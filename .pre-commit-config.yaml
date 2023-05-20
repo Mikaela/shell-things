@@ -2,7 +2,7 @@
 # See https://pre-commit.ci for more information
 ci:
   # Attempts to use networking and fails at name resolution, local hook
-  # skip: [bundler-audit, pylint]
+  # skip: [bundler-audit, pylint, latexmk]
   # Forĝejo/Gitea mirrors will autoclose pull requests. This should decrease
   # the frequency of unnecessary PRs.
   # https://github.com/pre-commit-ci/issues/issues/83
@@ -107,3 +107,12 @@ repos:
   #       entry: pylint
   #       language: system
   #       types_or: [python, pyi]
+
+  # # Checking that LaTeX compiles
+  # - repo: local
+  #   hooks:
+  #     - id: latexmk
+  #       name: latexmk
+  #       entry: latexmk -quiet
+  #       language: system
+  #       types: [text, tex]
