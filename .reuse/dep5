@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: shell-things
+Upstream-Contact: Aminda Suomalainen <suomalainen@mikaela.info>
+Source: https://gitea.blesmrt.net/Mikaela/shell-things
+
+Files: *
+Copyright: 2011 Aminda Suomalainen <suomalainen@mikaela.info>
+License: BSD-3-Clause

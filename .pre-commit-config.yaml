@@ -59,10 +59,10 @@ repos:
   #- id: check-mailmap
 
   # Easierish licensing when attempting reuse compliancy
-  #- repo: https://github.com/fsfe/reuse-tool
-  #  rev: v1.1.2
-  #  hooks:
-  #    - id: reuse
+  - repo: https://github.com/fsfe/reuse-tool
+    rev: v1.1.2
+    hooks:
+      - id: reuse
 
   # prettier & editorconfig checker should probably be ran last
 
