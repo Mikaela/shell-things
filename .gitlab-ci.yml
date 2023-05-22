@@ -3,7 +3,7 @@ image: python:alpine
 gitlab-ci-pre-commit:
   stage: build
   before_script:
-    - apk update && apk add git gcc musl-dev go
+    - apk add --no-cache git gcc musl-dev go
     - pip install pre-commit
   script:
     - pre-commit run --all-files --show-diff-on-failure
