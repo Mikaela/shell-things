@@ -8,6 +8,7 @@ gitlab-ci-pre-commit:
   script:
     - pre-commit run --all-files --show-diff-on-failure
   variables:
+    # Remember to gitignore .cache/**
     PRE_COMMIT_HOME: ${CI_PROJECT_DIR}/.cache/pre-commit
     TERM: dumb
     # TODO: Figure out how to properly Go on Alpine
