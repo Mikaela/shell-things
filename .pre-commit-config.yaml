@@ -43,13 +43,13 @@ repos:
   #     - id: mypy
 
   # GitHub Actions etc. configuration validity checking
-  # - repo: https://github.com/python-jsonschema/check-jsonschema
-  #   rev: 0.23.0
-  #   hooks:
-  #     - id: check-dependabot
-  #     - id: check-github-actions
-  #     - id: check-github-workflows
-  #     - id: check-gitlab-ci
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.23.0
+    hooks:
+      #- id: check-dependabot
+      #- id: check-github-actions
+      #- id: check-github-workflows
+      - id: check-gitlab-ci
 
   # - repo: https://github.com/jumanjihouse/pre-commit-hooks
   #   rev: 3.0.0

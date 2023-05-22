@@ -1,0 +1,15 @@
+# Based on https://pre-commit.com
+image: python:alpine
+gitlab-ci-pre-commit:
+  stage: build
+  before_script:
+    - apk update && apk add git gcc musl-dev
+    - pip install pre-commit
+  script:
+    - pre-commit run --all-files --show-diff-on-failure
+  variables:
+    PRE_COMMIT_HOME: ${CI_PROJECT_DIR}/.cache/pre-commit
+    TERM: dumb
+  cache:
+    paths:
+      - ${PRE_COMMIT_HOME}
