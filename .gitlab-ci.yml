@@ -10,6 +10,8 @@ gitlab-ci-pre-commit:
   variables:
     PRE_COMMIT_HOME: ${CI_PROJECT_DIR}/.cache/pre-commit
     TERM: dumb
+    # TODO: Figure out how to properly Go on Alpine
+    SKIP: shfmt
   cache:
     paths:
       - ${PRE_COMMIT_HOME}
