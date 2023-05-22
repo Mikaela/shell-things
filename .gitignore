@@ -1,6 +1,10 @@
+# Editor swap files
 *~*
 *.swp
 *.tmp
-wwwuser
-openbox/*
+
+# .gitlab-ci.yml pre-commit directory
+.cache/**
+
+# Symlink
 install.run
