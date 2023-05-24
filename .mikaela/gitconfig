@@ -52,6 +52,7 @@
 	gpgsign = true
 [diff]
 	compactionHeuristic = true
+	algorithm = histogram
 [pager]
 #	 log = diff-highlight | less
 #	 show = diff-highlight | less
