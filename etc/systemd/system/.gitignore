@@ -1,2 +1,4 @@
 NetworkManager-wait-online.service
 systemd-networkd-wait-online.service
+power-profiles-daemon.service
+systemd-rfkill.service
