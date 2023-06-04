@@ -2,7 +2,7 @@
 # See https://pre-commit.ci for more information
 ci:
   # Attempts to use networking and fails at name resolution, local hook
-  # skip: [bundler-audit, pylint, latexmk]
+  # skip: [bundler-audit, pylint, latexmk, exiftool]
   # Forĝejo/Gitea mirrors will autoclose pull requests. This should decrease
   # the frequency of unnecessary PRs.
   # https://github.com/pre-commit-ci/issues/issues/83
@@ -116,3 +116,12 @@ repos:
   #       entry: latexmk -quiet
   #       language: system
   #       types: [text, tex]
+
+  # Fedora: perl-Image-ExifTool
+  # - repo: local
+  #   hooks:
+  #     - id: exiftool
+  #       name: Remove all EXIF metadata using exiftool
+  #       entry: exiftool -all=
+  #       language: system
+  #       types: [image]
