@@ -1,4 +1,4 @@
-# See main gitconfig, this is ~/src2/gitconfig
+# See main gitconfig, this is ~/2src/gitconfig
 [user]
 	email = aminda.suomalainen@example.org
 	signingkey = ~/.ssh/exampleorg.pub

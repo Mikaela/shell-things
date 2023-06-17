@@ -95,6 +95,6 @@
 	mailmap = true
 	showSignature = true
 # https://sandrotosi.blogspot.com/2020/10/multiple-git-configurations-depending.html?m=1
-# see also .mikaela/src2-gitconfig within the same shell-things repo
-[includeIf "gitdir:~/src2/"]
-	path = ~/src2/gitconfig
+# see also .mikaela/2src-gitconfig within the same shell-things repo
+[includeIf "gitdir:~/2src/"]
+	path = ~/2src/gitconfig
