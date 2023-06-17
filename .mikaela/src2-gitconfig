@@ -1,0 +1,7 @@
+# See main gitconfig, this is ~/src2/gitconfig
+[user]
+	email = aminda.suomalainen@example.org
+	signingkey = ~/.ssh/exampleorg.pub
+[init]
+	# Assuming Example Organization doesn't want Esperanto main, cxefa
+	defaultBranch = main
