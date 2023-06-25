@@ -60,7 +60,7 @@ repos:
 
   # Easierish licensing when attempting reuse compliancy
   - repo: https://github.com/fsfe/reuse-tool
-    rev: v1.1.2
+    rev: v2.0.0
     hooks:
       - id: reuse
 
@@ -84,14 +84,14 @@ repos:
 
   # Shell code formatter, requires Go
   - repo: https://github.com/scop/pre-commit-shfmt
-    rev: v3.6.0-2
+    rev: v3.7.0-1
     hooks:
       - id: shfmt
         #- id: shfmt-docker
 
   # .editorconfig validity checking
   - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
-    rev: "2.7.1"
+    rev: "2.7.2"
     hooks:
       - id: editorconfig-checker
         alias: ec
