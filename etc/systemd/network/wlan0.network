@@ -1,0 +1,8 @@
+[Match]
+Name=wlan0
+
+[Link]
+# Always set administrative state to up. Implies RequiredForOnline=yes
+ActivationPolicy=always-up
+# Managed by iwd
+Unmanaged=true
