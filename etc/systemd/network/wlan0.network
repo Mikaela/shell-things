@@ -6,3 +6,7 @@ Name=wlan0
 ActivationPolicy=always-up
 # Managed by iwd
 Unmanaged=true
+
+[Network]
+IPv6PrivacyExtensions=true
+IPv6LinkLocalAddressGenerationMode=stable-privacy
