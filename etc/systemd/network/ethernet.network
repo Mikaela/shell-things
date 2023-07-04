@@ -1,5 +1,8 @@
 [Match]
-Name=eth0
+#Name=*
+# Can be {colon,hyphen,dot}-delimited hexadecimal or IPv{4,6} address
+#MACAddress=
+Type=ether
 
 [Link]
 # My devices generally also have WiFi so lack of ethernet is not a reason

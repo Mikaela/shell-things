@@ -1,5 +1,8 @@
 [Match]
-Name=wlan0
+#Name=*
+# Can be {colon,hyphen,dot}-delimited hexadecimal or IPv{4,6} address
+#MACAddress=
+Type=wlan
 
 [Link]
 # Always set administrative state to up. Implies RequiredForOnline=yes
