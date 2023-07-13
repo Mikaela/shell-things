@@ -1,0 +1,6 @@
+[repository]
+name=LibreWolf Software Repository
+baseurl=https://rpm.librewolf.net
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://rpm.librewolf.net/pubkey.gpg
