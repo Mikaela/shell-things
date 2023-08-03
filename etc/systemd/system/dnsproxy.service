@@ -2,8 +2,7 @@
 [Unit]
 Description=DNS over HTTPS resolver
 # /etc/resolv.conf -> unbound -> dnsproxy
-#After=network-pre.target
-After=network-online.target
+After=network-pre.target
 
 [Service]
 Type=simple
