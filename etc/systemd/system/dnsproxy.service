@@ -2,7 +2,8 @@
 [Unit]
 Description=DNS over HTTPS resolver
 # /etc/resolv.conf -> unbound -> dnsproxy
-After=network-pre.target
+#After=network-pre.target
+After=network-online.target
 
 [Service]
 Type=simple
@@ -16,4 +17,4 @@ RestartSec=5s
 User=unbound
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=multi-user.target unbound.service
