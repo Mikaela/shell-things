@@ -2,6 +2,7 @@ Provider	DoH	DoT	IPv6	IPv6	IPv4	IPv4	Apple MobileConfig	ECS	Source for EDNS Clie
 AdGuard	https://dns.adguard-dns.com/dns-query	dns.adguard-dns.com	2a10:50c0::ad1:ff	2a10:50c0::ad2:ff	94.140.14.14	94.140.15.15	https://adguard-dns.io/public-dns.html	private	https://adguard.com/en/blog/private-dns-v0-3-beta.html
 AdGuard Non-filtering	https://unfiltered.adguard-dns.com/dns-query	unfiltered.adguard-dns.com	2a10:50c0::1:ff	2a10:50c0::2:ff	94.140.14.140	94.140.14.141	https://adguard-dns.io/public-dns.html	private	https://adguard.com/en/blog/private-dns-v0-3-beta.html
 AdGuard Family	https://family.adguard-dns.com/dns-query	family.adguard-dns.com	2a10:50c0::bad1:ff	2a10:50c0::bad2:ff	94.140.14.15	94.140.15.16	https://adguard-dns.io/public-dns.html	private	https://adguard.com/en/blog/private-dns-v0-3-beta.html
+Applied Privacy (encrypted only, DoT in ports 443,853)	https://doh.applied-privacy.net/query	dot1.applied-privacy.net	2a02:1b8:10:234::2		146.255.56.98			no	https://applied-privacy.net/services/dns/
 BlahDNS DoH-CDN Adblock	https://doh1.blahdns.com/dns-query							no	https://blahdns.com/
 BlahDNS DoH-CDN Unfiltered	https://doh1.blahdns.com/uncensor							no	https://blahdns.com/
 BlahDNS Finland (encrypted-only, needs SNI)	https://doh-fi.blahdns.com/dns-query	dot-fi.blahdns.com	2a01:4f9:c010:43ce::1		95.216.212.177			no	https://blahdns.com/
