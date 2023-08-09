@@ -73,7 +73,11 @@ repos:
       - id: prettier
         exclude_types: [python, pyi, jupyter]
         additional_dependencies:
-          ["prettier@3.0.1", "prettier-plugin-nginx@1.0.3"]
+          [
+            "prettier@3.0.1",
+            "prettier-plugin-nginx@1.0.3",
+            "prettier-plugin-toml@1.0.0",
+          ]
 
   # Black, opinionated Python code formatter
   # - repo: https://github.com/psf/black
