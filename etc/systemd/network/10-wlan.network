@@ -5,6 +5,8 @@
 Type=wlan
 
 [Link]
+# Takes "ipv4", "ipv6", "both", or "any" (default).
+RequiredFamilyForOnline=both
 # Always set administrative state to up. Implies RequiredForOnline=yes
 ActivationPolicy=always-up
 # Managed by iwd

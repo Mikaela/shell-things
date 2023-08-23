@@ -8,6 +8,8 @@ Type=ether
 # My devices generally also have WiFi so lack of ethernet is not a reason
 # to wait for systemd-networkd-wait-online.service
 RequiredForOnline=no
+# Takes "ipv4", "ipv6", "both", or "any" (default).
+RequiredFamilyForOnline=both
 # Always set administrative state to up. Implies RequiredForOnline=yes
 #ActivationPolicy=always-up
 
