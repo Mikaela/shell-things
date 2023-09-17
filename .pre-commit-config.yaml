@@ -26,7 +26,7 @@ repos:
         # Let's not touch LICENSE files or reuse.software directory
         exclude: ^LICENSES\/.*|LICENSE$
         # File types depending on trailing whitespace. Use identify-cli
-        exclude_types: [tsv, markdown]
+        exclude_types: [svg, markdown, tsv]
 
   # Markdown Table of Contents generation.
   - repo: https://github.com/thlorenz/doctoc
