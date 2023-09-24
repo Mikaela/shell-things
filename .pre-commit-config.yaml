@@ -32,6 +32,11 @@ repos:
         # File types depending on trailing whitespace. Use identify-cli
         exclude_types: [svg, markdown, tsv]
 
+  - repo: https://github.com/pre-commit-ci/pre-commit-ci-config
+    rev: v1.6.1
+    hooks:
+      - id: check-pre-commit-ci-config
+
   # Markdown Table of Contents generation.
   - repo: https://github.com/thlorenz/doctoc
     rev: v2.2.0
