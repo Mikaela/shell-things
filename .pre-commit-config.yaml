@@ -10,7 +10,7 @@ ci:
 
 # Override hook language versions from system defaults
 default_language_version:
-  python: pypy3
+  python: python3.10
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
