@@ -429,14 +429,16 @@ alias mtrp6="mtr -rw6c 10"
 alias python-httpd="python3 -m http.server"
 
 # pip
-alias pip="python -m pip"
+alias pip="python3 -m pip"
 alias pip3="python3 -m pip"
-alias pypypip="pypy -m pip"
+alias pypypip="pypy3 -m pip"
 alias pypypip3="pypy3 -m pip"
 
 # Python virtualenv/the new venv comparsion:
 # https://virtualenv.pypa.io/en/latest/#virtualenv / python3-venv (Debian)
 alias venv="python3 -m venv"
+alias pypyvenv="pypy3 -m venv"
+alias venvpypy=pypyvenv
 
 # cp/mv using rsync. rcp appears to be link to scp in my system, so I can
 # safely use this alias.
