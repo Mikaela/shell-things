@@ -8,6 +8,10 @@ ci:
   # https://github.com/pre-commit-ci/issues/issues/83
   autoupdate_schedule: quarterly
 
+# Override hook language versions from system defaults
+default_language_version:
+  python: pypy3
+
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
