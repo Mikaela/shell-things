@@ -70,6 +70,10 @@ max_line_length = 88
 #indent_style = space
 #indent_size = 2
 
+# LaTeX with git should be used one sentence per line for maximum efficiency
+[*.tex]
+max_line_length = unset
+
 # TAB Separated Values
 [*.{tsv,tab}]
 indent_style = tab
