@@ -2,18 +2,19 @@
 Description=Limnoria instance
 After=network-online.target
 # if sharing server with IRC server, add
-#oragono.service
-#Wants=oragono.service
+#ergo.service
+#Wants=ergo.service
 
 [Service]
 Type=simple
+Environment=PATH=/home/BOTUSER/venv/bin:/home/BOTUSER/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 Environment="TZ=Europe/Helsinki"
 # if supybot.commands.allowShell is True and this is not set, may default to /
 WorkingDirectory=/home/BOTUSER/
 # supybot.pidFile
 PIDFile=/home/BOTUSER/BOTNICKNAME/BOTNICKNAME.pid
-# python3 setup.py install --user
-ExecStart=/home/BOTUSER/.local/bin/supybot /home/BOTUSER/BOTNICKNAME/BOTNICKNAME.conf
+# mkdir venv && python3 -m venv venv && . venv/bin/activate && python3 -m pip install git+https://github.com/ProgVal/Limnoria.git@testing
+ExecStart=/home/BOTUSER/venv/bin/limnoria /home/BOTUSER/BOTNICKNAME/BOTNICKNAME.conf
 ExecReload=/bin/kill -HUP $MAINPID
 Restart=always
 RestartSec=5s
