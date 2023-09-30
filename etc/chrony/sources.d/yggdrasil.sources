@@ -9,7 +9,5 @@ server y.kincarron.mikaela.info iburst auto_offline xleave
 server y.sedric.mikaela.info iburst auto_offline xleave
 server y.zaldaryn.mikaela.info iburst auto_offline xleave
 server y.rbtpzn.mikaela.info iburst auto_offline xleave
-# jolly-roger @ Teknologia Avoimeksi Ry not a laptop, but not 24/7 either
-server 204:e3a7:47c0:f9a8:6c52:5cfc:5093:7f6b iburst auto_offline xleave
 # Actual 24/7 VPS
 server y.etro.mikaela.info iburst auto_offline xleave
