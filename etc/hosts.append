@@ -1,9 +1,0 @@
-
-# abusing this shell-things / this hosts.append file to cat into /etc/hosts
-# for blocking these specific domains with systemd-resolved like
-# /etc/unbound/unbound.conf.d/blocklist.conf to avoid logs/NextDNS spamming
-# about these hosts
-0.0.0.0	google-analytics.com
-0.0.0.0	www.google-analytics.com
-0.0.0.0	ssl.google-analytics.com
-0.0.0.0	incoming.telemetry.mozilla.org
