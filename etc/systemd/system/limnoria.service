@@ -19,6 +19,11 @@ ExecReload=/bin/kill -HUP $MAINPID
 Restart=always
 RestartSec=5s
 User=BOTUSER
+# Limit memory to 300 Mb after which throthhle use. Useful with pypy.
+# https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html
+MemoryHigh=300M
+# Also attempt to restrict CPU use to 9 %
+#CPUQuota=9%
 
 [Install]
 WantedBy=multi-user.target
