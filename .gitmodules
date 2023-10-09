@@ -7,3 +7,6 @@
 [submodule "submodules/opendyslexic"]
 	path = submodules/opendyslexic
 	url = https://github.com/antijingoist/opendyslexic.git
+[submodule "submodules/comic-shanns-mono"]
+	path = submodules/comic-shanns-mono
+	url = https://github.com/jesusmgg/comic-shanns-mono.git
