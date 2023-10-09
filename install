@@ -35,6 +35,7 @@ gpg --quiet --import .mikaela/keys/*.asc &
 mkdir -p ~/.ssh/sockets/
 chmod a+xr chmod
 bash -x ./chmod &
+git submodule update --init &
 
 if hash pre-commit 2>/dev/null; then
 	pre-commit init-templatedir ~/.git-template
