@@ -49,6 +49,8 @@ if [ -f "$MIKAELA_GREP" ]; then
 	bash -x .mikaela_install
 fi
 
+(git lfs install | true &)
+
 set +x
 # vim : set ft=sh :
 #chmod 700 $HOME -R
