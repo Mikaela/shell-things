@@ -131,7 +131,9 @@ fi
 #shopt -s autocd
 
 # Show the hostname, uptime and users logged in on shell start
-(hostname &)
+if hash hostname 2>/dev/null; then
+	(hostname &)
+fi
 (uptime &)
 (echo "")
 if [[ $UNAME != Darwin ]]; then
