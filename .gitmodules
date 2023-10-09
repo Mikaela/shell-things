@@ -4,3 +4,6 @@
 [submodule "submodules/SteamDeckScreenLock"]
 	path = submodules/SteamDeckScreenLock
 	url = https://github.com/RHOPKINS13/SteamDeckScreenLock.git
+[submodule "submodules/opendyslexic"]
+	path = submodules/opendyslexic
+	url = https://github.com/antijingoist/opendyslexic.git
