@@ -1,3 +1,6 @@
 [submodule "submodules/jauderho-nts-servers"]
 	path = submodules/jauderho-nts-servers
 	url = https://github.com/jauderho/nts-servers.git
+[submodule "submodules/SteamDeckScreenLock"]
+	path = submodules/SteamDeckScreenLock
+	url = https://github.com/RHOPKINS13/SteamDeckScreenLock.git
