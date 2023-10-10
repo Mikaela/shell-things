@@ -31,7 +31,8 @@ set $ScreenLockCmd swaylock -c 000000 -F -k -l -f
 set $TEXTEDITOR kate
 
 # Font
-font pango:Noto Sans Mono Regular 10
+#font pango:Noto Sans Mono Regular 10
+font pango:Comic Shanns Mono-Regular 10
 
 ### Output configuration
 #
