@@ -31,7 +31,19 @@ repos:
         exclude: ^LICENSES\/.*|LICENSE$
         # File types depending on trailing whitespace. Use identify-cli
         exclude_types: [svg, markdown, tsv]
-
+      #- id: check-docstring-first
+      #- id: check-json
+      - id: check-merge-conflict
+      - id: check-toml
+      - id: check-xml
+        #- id: debug-statements
+        #- id: fix-encoding-pragma
+        #args: [--remove]
+      - id: mixed-line-ending
+        args:
+          [--fix=auto]
+          #- id: pretty-format-json
+          #- id: requirements-txt-fixer
   - repo: https://github.com/pre-commit-ci/pre-commit-ci-config
     rev: v1.6.1
     hooks:
@@ -50,7 +62,18 @@ repos:
   #   rev: "v1.3.0"
   #   hooks:
   #     - id: mypy
-
+  # - repo: https://github.com/asottile/pyupgrade
+  #   rev: v3.15.0
+  #   hooks:
+  #     - id: pyupgrade
+  # - repo: https://github.com/asottile/reorder-python-imports
+  #   rev: v3.12.0
+  #   hooks:
+  #     - id: reorder-python-imports
+  # - repo: https://github.com/asottile/add-trailing-comma
+  #   rev: v3.1.0
+  #   hooks:
+  #     - id: add-trailing-comma
   # GitHub Actions etc. configuration validity checking
   - repo: https://github.com/python-jsonschema/check-jsonschema
     rev: 0.27.0
