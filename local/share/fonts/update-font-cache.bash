@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-fc-cache
+fc-cache -v $@
