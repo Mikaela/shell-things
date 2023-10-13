@@ -131,7 +131,7 @@ repos:
 
   # .editorconfig validity checking
   - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
-    rev: "2.7.2"
+    rev: "2.7.3"
     hooks:
       - id: editorconfig-checker
         alias: ec
