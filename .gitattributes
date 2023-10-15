@@ -2,6 +2,17 @@
 # languages. For more information: `man gitattributes`
 *	text=auto eol=lf linguist-detectable
 
+# Suggestions for inevitably encountering .gitattributeless repositories when
+# .gitattributes cannot be added:
+# git config --global core.autocrlf input
+#   - `*	text=auto` when there is no `.gitattributes`. In other words,
+#     commit eol=lf, check-out as it is.
+# git config --global core.safecrlf warn
+#   - Warn if EOL change is irreversible.
+# git config --global merge.renormalize true
+#   - Avoid merge-conflict when merging from .gitattributeless branch to
+#     .gitattributed branch
+
 # Built-in diff patterns (disabled by default). The attribute `diff` implies
 # `text` and the above attributes are inherited.
 # https://www.git-scm.com/docs/gitattributes#_defining_a_custom_hunk_header
