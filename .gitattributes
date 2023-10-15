@@ -4,16 +4,30 @@
 
 # Built-in diff patterns (disabled by default). The attribute `diff` implies
 # `text` and the above attributes are inherited.
+# https://www.git-scm.com/docs/gitattributes#_defining_a_custom_hunk_header
+# TODO
+#	diff=matlab
+#	diff=pascal
+*.{adb,ads}	diff=ada
 *.bibtex	diff=bibtex
+*.cs	diff=csharp
 *.{c,cpp}	diff=cpp
 *.css	diff=css
+*.dts	diff=dts
+*.{ex,exs}	diff=elixir
+*.{f90,f,for}	diff=fortran
+*.fountain	diff=fountain
 *.go	diff=golang
 *.html	diff=html
 *.java	diff=java
+*.{kt,kts}	diff=kotlin
+*.{h,m,mm,M}	diff=objc
 *.pl	diff=perl
 *.php	diff=php
 *.py	diff=python
 *.rb	diff=ruby
+*.{rs,rlib}	diff=rust
+*.{scm,ss}	diff=scheme
 *.tex	diff=tex
 
 # bash & co aren't often Windows, so alway have lf line-endings regarldess
@@ -21,6 +35,7 @@
 # requires lf line-endings.
 *.{sh,bash,zsh} diff=bash eol=lf
 *.{md,markdown}	text diff=markdown eol=lf
+
 # While this file is like .gitignore, negative patterns are forbidden and
 # directory/ wouldn't recurse, thus directory/**. Also !attribute would set
 # it back to unset.
