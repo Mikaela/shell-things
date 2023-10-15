@@ -1,29 +1,42 @@
-# See https://www.git-scm.com/docs/gitattributes#_effects for more information
+# If file is text, use lf line-endings and let forges show it in repo
+# languages. For more information: `man gitattributes`
 *	text=auto eol=lf linguist-detectable
 
-# Hunk headers for diff shipped with git
-# https://www.git-scm.com/docs/gitattributes#_defining_a_custom_hunk_header
-*.{sh,bash,zsh} text diff=bash eol=lf
-*.bibtex	text diff=bibtex eol=lf
-*.cpp	text diff=cpp eol=lf
-*.css	text diff=css eol=lf
-*.go	text diff=golang eol=lf
-*.html	text diff=html eol=lf
-*.java	text diff=java eol=lf
+# Built-in diff patterns (disabled by default). The attribute `diff` implies
+# `text` and the above attributes are inherited.
+*.bibtex	diff=bibtex
+*.{c,cpp}	diff=cpp
+*.css	diff=css
+*.go	diff=golang
+*.html	diff=html
+*.java	diff=java
+*.pl	diff=perl
+*.php	diff=php
+*.py	diff=python
+*.rb	diff=ruby
+*.tex	diff=tex
+
+# bash & co aren't often Windows, so alway have lf line-endings regarldess
+# of the above. Markdown is also included as I utilise doctoc, which
+# requires lf line-endings.
+*.{sh,bash,zsh} diff=bash eol=lf
 *.{md,markdown}	text diff=markdown eol=lf
-*.pl	text diff=perl eol=lf
-*.php	text diff=php eol=lf
-*.py	text diff=python eol=lf
-*.rb	text diff=ruby eol=lf
-*.tex	text diff=tex eol=lf
+# While this file is like .gitignore, negative patterns are forbidden and
+# directory/ wouldn't recurse, thus directory/**. Also !attribute would set
+# it back to unset.
+# In this case Windows/** may also contain binary files, thus auto-detection
+# is repeated and eol=crlf as it's unlikely to be of use outside of Windows.
+Windows/** text=auto eol=crlf
 
-# These files are scary, let's not touch them
-# Lockable is provided by git-lfs
-LICENSE	text lockable
-CITATION.cff	text lockable
-
-# Windows files even in checkout
+# Similarly these files are unlikely to be encountered outside of Windows.
+# The "text" attribute is used as otherwise they rely on auto-detection of
+# textness since there is no diff attribute set.
 # Ref: https://rehansaeed.com/gitattributes-best-practices/#line-endings
 *.{reg,[rR][eE][gG]}	text eol=crlf
 *.{bat,[bB][aA][tT]}	text eol=crlf
 *.{ahk,[aA][hH][kK]}	text eol=crlf
+
+# These files are scary, let's not touch them. The attribute "lockable" is
+# provided by git-lfs. https://github.com/git-lfs/git-lfs/wiki/File-Locking
+LICENSE	text lockable
+CITATION.cff	text lockable
