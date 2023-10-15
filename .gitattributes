@@ -1,6 +1,22 @@
 # See https://www.git-scm.com/docs/gitattributes#_effects for more information
 *	text=auto eol=lf linguist-detectable
 
+# Hunk headers for diff shipped with git
+# https://www.git-scm.com/docs/gitattributes#_defining_a_custom_hunk_header
+*.{sh,bash,zsh} text diff=bash eol=lf
+*.bibtex	text diff=bibtex eol=lf
+*.cpp	text diff=cpp eol=lf
+*.css	text diff=css eol=lf
+*.go	text diff=golang eol=lf
+*.html	text diff=html eol=lf
+*.java	text diff=java eol=lf
+*.{md,markdown}	text diff=markdown eol=lf
+*.pl	text diff=perl eol=lf
+*.php	text diff=php eol=lf
+*.py	text diff=python eol=lf
+*.rb	text diff=ruby eol=lf
+*.tex	text diff=tex eol=lf
+
 # These files are scary, let's not touch them
 # Lockable is provided by git-lfs
 LICENSE	text lockable
