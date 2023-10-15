@@ -2,6 +2,7 @@
 *	text=auto eol=lf linguist-detectable
 
 # These files are scary, let's not touch them
+# Lockable is provided by git-lfs
 LICENSE	text lockable
 CITATION.cff	text lockable
 
