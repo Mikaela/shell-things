@@ -27,6 +27,7 @@ repos:
         exclude: .*\.nginx$
       - id: fix-byte-order-marker
       - id: trailing-whitespace
+        args: ["--markdown-linebreak-ext", "md,markdown"]
         # Let's not touch LICENSE files or reuse.software directory
         exclude: ^LICENSES\/.*|LICENSE$
         # File types depending on trailing whitespace. Use identify-cli
