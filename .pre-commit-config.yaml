@@ -13,6 +13,7 @@ default_language_version:
   python: pypy3
 
 repos:
+  # The repo from `pre-commit sample-config`
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0
     hooks:
@@ -49,6 +50,8 @@ repos:
           [--fix=auto]
           #- id: pretty-format-json
           #- id: requirements-txt-fixer
+
+  # Checks the ci: section on top of the file
   - repo: https://github.com/pre-commit-ci/pre-commit-ci-config
     rev: v1.6.1
     hooks:
@@ -67,18 +70,22 @@ repos:
   #   rev: "v1.3.0"
   #   hooks:
   #     - id: mypy
+
   # - repo: https://github.com/asottile/pyupgrade
   #   rev: v3.15.0
   #   hooks:
   #     - id: pyupgrade
+
   # - repo: https://github.com/asottile/reorder-python-imports
   #   rev: v3.12.0
   #   hooks:
   #     - id: reorder-python-imports
+
   # - repo: https://github.com/asottile/add-trailing-comma
   #   rev: v3.1.0
   #   hooks:
   #     - id: add-trailing-comma
+
   # GitHub Actions etc. configuration validity checking
   - repo: https://github.com/python-jsonschema/check-jsonschema
     rev: 0.27.0
@@ -108,6 +115,7 @@ repos:
     rev: "v3.0.3"
     hooks:
       - id: prettier
+        # These are handled by Black below
         exclude_types:
           [python, pyi, jupyter]
           #additional_dependencies:
