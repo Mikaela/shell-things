@@ -13,6 +13,13 @@
 #   - Avoid merge-conflict when merging from .gitattributeless branch to
 #     .gitattributed branch
 
+# This is the default "binary" macro attribute, but with diffing allowed.
+# Use when file contains diffable text, but isn't actually plaintext and thus
+# shouldn't have EOL conversion done.
+[attr]binaryd diff -merge -text
+# Example:
+#*.db	binaryd
+
 # Built-in diff patterns (disabled by default). The attribute `diff` implies
 # `text` and the above attributes are inherited.
 # https://www.git-scm.com/docs/gitattributes#_defining_a_custom_hunk_header
