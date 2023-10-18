@@ -52,7 +52,7 @@
 # of the above. Markdown is also included as I utilise doctoc, which
 # requires lf line-endings.
 *.{sh,bash,zsh} diff=bash eol=lf
-*.{md,markdown}	diff=markdown eol=lf
+*.{md,markdown,[mM][dD],[mM][aA][rR][kK][dD][oO][wW][nN]}	diff=markdown eol=lf
 
 # While this file is like .gitignore, negative patterns are forbidden and
 # directory/ wouldn't recurse, thus directory/**. Also !attribute would set
