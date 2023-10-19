@@ -541,13 +541,6 @@ fi
 # More simple SSH file signing, ~/.ssh/signingkey.pub should be a symlink
 alias ssh-sign-file="ssh-keygen -Y sign -f ~/.ssh/signingkey.pub -n file"
 
-# I use nvim, while I keep running vim instead
-if hash nvim 2>/dev/null; then
-	alias vim="echo 'using nvim instead' && nvim"
-else
-	alias vim="echo 'nvim not found' && \vim"
-fi
-
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
@@ -813,6 +806,19 @@ ssh-verify-file() {
 	echo "$1 ${2:?Usage: ssh-verify-file <email> <file-to-verify>}" >/dev/null
 	ssh-keygen -Y verify -f $sshAllowedSigners -I $1 -n file -s $2.sig <$2
 }
+
+# I use nvim, while I keep running vim instead
+if hash nvim 2>/dev/null; then
+	vim() {
+		echo 'using nvim instead'
+		nvim $@
+	}
+else
+	vim() {
+		echo 'nvim not found'
+		\vim $@
+	}
+fi
 
 # Source files for miscannellious modifications.
 
