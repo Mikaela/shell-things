@@ -25,7 +25,6 @@ repos:
       - id: destroyed-symlinks
       - id: detect-private-key
       - id: end-of-file-fixer
-        exclude: .*\.nginx$
       - id: fix-byte-order-marker
       - id: trailing-whitespace
         # Markdown allows double trailing space for forced line change. The
@@ -118,17 +117,15 @@ repos:
     hooks:
       - id: prettier
         # These are handled by Black below
-        exclude_types:
-          [python, pyi, jupyter]
-          #additional_dependencies:
-          #[
-          # https://www.npmjs.com/package/prettier
-          #"prettier@3.0.1",
-          # https://www.npmjs.com/package/prettier-plugin-nginx
-          #"prettier-plugin-nginx@1.0.3",
-          # https://www.npmjs.com/package/prettier-plugin-toml
-          #"prettier-plugin-toml@1.0.0",
-          #]
+        exclude_types: [python, pyi, jupyter]
+        additional_dependencies: [
+            # https://www.npmjs.com/package/prettier
+            "prettier@3.0.3",
+            # https://www.npmjs.com/package/prettier-plugin-nginx
+            "prettier-plugin-nginx@1.0.3",
+            # https://www.npmjs.com/package/prettier-plugin-toml
+            "prettier-plugin-toml@1.0.0",
+          ]
 
   # Black, opinionated Python code formatter
   # - repo: https://github.com/psf/black
@@ -153,7 +150,6 @@ repos:
         alias: ec
         # I don't actually care about line lengths as more than a guideline
         args: [-disable-max-line-length]
-        exclude: .*\.nginx$
 
   # # Python linter
   # - repo: local
