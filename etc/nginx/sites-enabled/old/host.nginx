@@ -27,10 +27,10 @@ server {
 	ssl_prefer_server_ciphers on;
 	# Enable this if your want HSTS (recommended)
 	add_header                Strict-Transport-Security
-	  "max-age=15552000; includeSubdomains; preload";
+		"max-age=15552000; includeSubdomains; preload";
 	add_header                X-Frame-Options SAMEORIGIN;
 	add_header                Content-Security-Policy
-	  upgrade-insecure-requests;
+		upgrade-insecure-requests;
 	add_header                X-Xss-Protection "1; mode=block" always;
 	add_header                X-Content-Type-Options "nosniff" always;
 	# OCSP Stapling ---

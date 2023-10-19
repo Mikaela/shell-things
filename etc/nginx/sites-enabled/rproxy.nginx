@@ -5,7 +5,7 @@ server {
 	listen      [::]:443;
 	# Enable this if your want HSTS (recommended)
 	add_header  Strict-Transport-Security
-	  "max-age=15552000; includeSubdomains; preload";
+		"max-age=15552000; includeSubdomains; preload";
 	add_header  X-Frame-Options SAMEORIGIN;
 	add_header  Content-Security-Policy upgrade-insecure-requests;
 	add_header  X-Xss-Protection "1; mode=block" always;
