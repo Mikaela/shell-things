@@ -11,9 +11,9 @@ sudo systemctl restart systemd-resolved
 
 ## Files explained
 
-- `00-defaults.conf` - configuration not touching resolvers. Disables DNSSEC (as
-  systemd-resolved doesn't handle it properly), enables opportunistic DoT and
-  caching.
+- `00-defaults.conf` - configuration not touching resolvers. Enables DNSSEC
+  (regardless of systemd-resolved not handling it properly), enables
+  opportunistic DoT and caching.
 - `dot-*.conf` - configuration to use the DNS provider with DNS-over-TLS. If
   captive portals are a concern, `DNSOverTLS=no`.
 - `README.md` - you are reading it right now.
@@ -33,10 +33,12 @@ sudo systemctl restart systemd-resolved
   potential downgrade attack. There are also captive portals, affecting
   `DNSOverTLS`. Both take `yes` or `no` or their own special option,
   for DNNSEC the `allow-downgrade`, for DNSOverTLS `opportunistic`.
+  - Then again when was any system that outdated to not have working DNSSEC?
+    - TODO: return to this configuration should that actually happen?
 
 Other links I have found important and my files are based on:
 
 - https://wiki.archlinux.org/index.php/Systemd-resolved
   - Also provides the serious issues systemd-resolved+DNSSEC issues, https://github.com/systemd/systemd/issues/10579 & https://github.com/systemd/systemd/issues/9867
-- request for strict DOT: https://github.com/systemd/systemd/issues/10755
+- request for strict DoT: https://github.com/systemd/systemd/issues/10755
 - vulnerable to MITM: https://github.com/systemd/systemd/issues/9397
