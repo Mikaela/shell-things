@@ -17,15 +17,9 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0
     hooks:
-      - id: check-added-large-files
-      - id: check-case-conflict
-      - id: check-yaml
-      - id: check-executables-have-shebangs
-      - id: check-shebang-scripts-are-executable
-      - id: destroyed-symlinks
-      - id: detect-private-key
-      - id: end-of-file-fixer
-      - id: fix-byte-order-marker
+      # `pre-commit sample-config` puts these four on top:
+      # trailing-whitespace, end-of-file-fixer, check-yaml,
+      # check-added-large-files
       - id: trailing-whitespace
         # Markdown allows double trailing space for forced line change. The
         # hook appears to remove single ones.
@@ -36,6 +30,16 @@ repos:
         # and lack of it break things. Use identify-cli for figuring out more
         # types to add.
         exclude_types: [svg, tsv]
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+      # These are not from `pre-commit sample-config`
+      - id: check-case-conflict
+      - id: check-executables-have-shebangs
+      - id: check-shebang-scripts-are-executable
+      - id: destroyed-symlinks
+      - id: detect-private-key
+      - id: fix-byte-order-marker
       #- id: check-docstring-first
       #- id: check-json
       - id: check-merge-conflict
