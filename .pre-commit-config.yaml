@@ -41,7 +41,7 @@ repos:
       - id: detect-private-key
       - id: fix-byte-order-marker
       #- id: check-docstring-first
-      #- id: check-json
+      - id: check-json
       - id: check-merge-conflict
       - id: check-toml
       - id: check-xml
@@ -49,9 +49,10 @@ repos:
         #- id: fix-encoding-pragma
         #args: [--remove]
       - id: mixed-line-ending
+        args: [--fix=auto]
+      - id: pretty-format-json
         args:
-          [--fix=auto]
-          #- id: pretty-format-json
+          [--autofix, --no-ensure-ascii, --no-sort-keys]
           #- id: requirements-txt-fixer
 
   # Checks the ci: section on top of the file
@@ -120,8 +121,8 @@ repos:
     rev: "v3.0.3"
     hooks:
       - id: prettier
-        # These are handled by Black below
-        exclude_types: [python, pyi, jupyter]
+        # These are handled by Black below or pretty-format-json above
+        exclude_types: [python, pyi, jupyter, json]
         additional_dependencies: [
             # https://www.npmjs.com/package/prettier
             "prettier@3.0.3",

@@ -91,6 +91,6 @@ end_of_line = crlf
 
 # YAML requires spaces. The GitHub citation files look YAML to me.
 # https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files
-[*.{cff,yaml,yml}]
+[*.{cff,yaml,yml,json}]
 indent_style = space
 indent_size = 2
