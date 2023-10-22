@@ -1,6 +1,26 @@
 {
+  "battery": {
+    "format": "BAT {capacity}%",
+    "states": {
+      "critical": 20,
+      "warning": 45
+    }
+  },
+  "bluetooth": {
+    "format": "BT {status}",
+    "format-connected": "BT {device_alias}",
+    "format-connected-battery": "BT {device_alias} {device_battery_percentage}%"
+  },
+  "clock": {
+    "format": "{:%a. %d.\n%b.\n%Y-%j\n%G-W%V-%u\n%F\n%H.%M.%S}"
+  },
+  "cpu": {
+    "format": "CPU {usage}%"
+  },
   "layer": "top",
-  "position": "left",
+  "memory": {
+    "format": "RAM {percentage}%"
+  },
   "modules-left": [
     "sway/workspaces",
     "sway/mode"
@@ -17,20 +37,18 @@
     "tray",
     "clock"
   ],
-  "sway/window": {
-    "max-length": 50
+  "network": {
+    "format": "{ifname}",
+    "format-disconnected": "",
+    "format-ethernet": "{ifname} up",
+    "format-wifi": "{frequency}G {signalStrength}% {essid}",
+    "max-length": 50,
+    "tooltip-format": "{ifname}",
+    "tooltip-format-disconnected": "Disconnected",
+    "tooltip-format-ethernet": "{ifname} up",
+    "tooltip-format-wifi": "{frequency}G {signalStrength}% {essid}"
   },
-  "cpu": {
-    "format": "CPU {usage}%"
-  },
-  "memory": {
-    "format": "RAM {percentage}%"
-  },
-  "bluetooth": {
-    "format": "BT {status}",
-    "format-connected": "BT {device_alias}",
-    "format-connected-battery": "BT {device_alias} {device_battery_percentage}%"
-  },
+  "position": "left",
   "pulseaudio": {
     "format": "VOL {volume}%",
     "format-bluetooth": "BT VOL {volume}%",
@@ -39,29 +57,11 @@
       "Easy Effects Source"
     ]
   },
-  "battery": {
-    "states": {
-      "warning": 45,
-      "critical": 20
-    },
-    "format": "BAT {capacity}%"
-  },
   "sway/language": {
     "format": "KBD {short} {variant}",
     "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
   },
-  "network": {
-    "format": "{ifname}",
-    "format-wifi": "{frequency}G {signalStrength}% {essid}",
-    "format-ethernet": "{ifname} up",
-    "format-disconnected": "",
-    "tooltip-format": "{ifname}",
-    "tooltip-format-wifi": "{frequency}G {signalStrength}% {essid}",
-    "tooltip-format-ethernet": "{ifname} up",
-    "tooltip-format-disconnected": "Disconnected",
+  "sway/window": {
     "max-length": 50
-  },
-  "clock": {
-    "format": "{:%a. %d.\n%b.\n%Y-%j\n%G-W%V-%u\n%F\n%H.%M.%S}"
   }
 }

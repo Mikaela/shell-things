@@ -52,7 +52,8 @@ repos:
         args: [--fix=auto]
       - id: pretty-format-json
         args:
-          [--autofix, --no-ensure-ascii, --no-sort-keys]
+          # --no-sort-keys
+          [--autofix, --no-ensure-ascii]
           #- id: requirements-txt-fixer
 
   # Checks the ci: section on top of the file
