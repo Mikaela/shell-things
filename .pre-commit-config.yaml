@@ -35,26 +35,27 @@ repos:
       - id: check-added-large-files
       # These are not from `pre-commit sample-config`
       - id: check-case-conflict
-      - id: check-executables-have-shebangs
-      - id: check-shebang-scripts-are-executable
-      - id: destroyed-symlinks
-      - id: detect-private-key
-      - id: fix-byte-order-marker
       #- id: check-docstring-first
+      - id: check-executables-have-shebangs
       - id: check-json
       - id: check-merge-conflict
+      - id: check-shebang-scripts-are-executable
       - id: check-toml
       - id: check-xml
         #- id: debug-statements
+      - id: destroyed-symlinks
+      - id: detect-private-key
+      - id: fix-byte-order-marker
         #- id: fix-encoding-pragma
         #args: [--remove]
       - id: mixed-line-ending
         args: [--fix=auto]
       - id: pretty-format-json
         args:
-          # --no-sort-keys
+          # Remember also: --no-sort-keys
+          # ASCII excludes the älphäbet amongst others
           [--autofix, --no-ensure-ascii]
-          #- id: requirements-txt-fixer
+        #- id: requirements-txt-fixer
 
   # Checks the ci: section on top of the file
   - repo: https://github.com/pre-commit-ci/pre-commit-ci-config
@@ -94,13 +95,13 @@ repos:
   #     - id: add-trailing-comma
 
   # GitHub Actions etc. configuration validity checking
-  - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.27.0
-    hooks:
-      #- id: check-dependabot
-      #- id: check-github-actions
-      #- id: check-github-workflows
-      - id: check-gitlab-ci
+  #- repo: https://github.com/python-jsonschema/check-jsonschema
+  #rev: 0.27.0
+  #hooks:
+  #- id: check-dependabot
+  #- id: check-github-actions
+  #- id: check-github-workflows
+  #- id: check-gitlab-ci
 
   # - repo: https://github.com/jumanjihouse/pre-commit-hooks
   #   rev: 3.0.0
@@ -115,7 +116,8 @@ repos:
     hooks:
       - id: reuse
 
-  # prettier & editorconfig checker should probably be ran last
+  # Code formatters and especially editorconfig should probaly be last to
+  # ensure nothing breaks the rules.
 
   # prettier, opinionated code formatter
   - repo: https://github.com/pre-commit/mirrors-prettier
