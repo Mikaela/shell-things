@@ -7,7 +7,8 @@ as the links below.
 ## Additional repositories
 
 - Begin by `sudo fedora-third-party enable`
-- https://github.com/yggdrasil-network/yggdrasil-network.github.io/issues/127#issuecomment-766520311
+- `sudo dnf copr enable neilalexander/yggdrasil-go`
+  - https://yggdrasil-network.github.io/installation-linux-rpm.html
 - https://www.insynchq.com/
 - https://keybase.io/docs/the_app/install_linux
 - https://rpmfusion.org/Configuration
