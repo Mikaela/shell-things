@@ -24,8 +24,9 @@ repos:
         # Markdown allows double trailing space for forced line change. The
         # hook appears to remove single ones.
         args: ["--markdown-linebreak-ext", "md,markdown"]
-        # Let's not touch LICENSE files or reuse.software directory
-        exclude: ^LICENSES\/.*|LICENSE$
+        # Let's not touch LICENSE files or reuse.software directory. Or if we
+        # do, that is a good example case anyway to keep as a comment?
+        #exclude: ^LICENSES\/.*|LICENSE$
         # Other file extensions where trailing whitespace may be intentional
         # and lack of it break things. Use identify-cli for figuring out more
         # types to add.
