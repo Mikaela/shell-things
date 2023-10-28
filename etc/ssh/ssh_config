@@ -56,9 +56,6 @@ Host *
 	# manual).
 	UpdateHostKeys yes
 
-	# Workaround CVE-2016-0777 & CVE-0778 on OpenSSH < 7.1p2
-	UseRoaming no
-
 	# Verify SSHFP records. If this is yes, the question is skipped when
 	# DNSSEC is used, but apparently only "ask" and "no" write known_hosts
 	# However with "ask" you won't be told whether the zone is signed, so
