@@ -165,7 +165,8 @@ repos:
   #   hooks:
   #     - id: pylint
   #       name: pylint
-  #       entry: pylint
+  #       # Use as many jobs as CPU cores, disable TODO warnings
+  #       entry: pylint -j 0 -d W0511
   #       language: system
   #       types_or: [python, pyi]
 
