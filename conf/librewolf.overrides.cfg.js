@@ -14,9 +14,17 @@ defaultPref("network.http.referer.XOriginPolicy", 2);
 // Enable Firefox accounts
 defaultPref("identity.fxaccounts.enabled", true);
 
-// Keep history and downloads
+// Settings on what to clear on quit
+// - Goal: let Element Web & co stay logged in
+defaultPref("privacy.clearOnShutdown.cache", false);
+defaultPref("privacy.clearOnShutdown.cookies", false);
+//defaultPref("privacy.clearOnShutdown.downloads", false);
+//defaultPref("privacy.clearOnShutdown.formdata", false);
 defaultPref("privacy.clearOnShutdown.history", false);
-defaultPref("privacy.clearOnShutdown.downloads", false);
+defaultPref("privacy.clearOnShutdown.offlineApps", false);
+defaultPref("privacy.clearOnShutdown.openWindows", false);
+defaultPref("privacy.clearOnShutdown.sessions", false);
+defaultPref("privacy.clearOnShutdown.siteSettings", false);
 
 // Don't resume from crash (SSD)
 defaultPref("browser.sessionstore.resume_from_crash", false);
