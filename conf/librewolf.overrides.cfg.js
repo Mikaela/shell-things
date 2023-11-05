@@ -1,3 +1,5 @@
+// ~/.{librewolf,var/app/io.gitlab.librewolf-community/.librewolf}/librewolf.overrides.cfg
+
 // LibreWolf override configuration, begins with samples from
 // https://librewolf.net/docs/settings/
 // Also incorporates some of https://aminda.eu/browser-extensions#firefox-aboutconfig
