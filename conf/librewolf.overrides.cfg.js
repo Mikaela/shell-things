@@ -60,3 +60,8 @@ defaultPref(
 
 // Default UI scale
 defaultPref("layout.css.devPixelsPerPx", "1.5");
+
+// Keep cache on both disk & memory. This is required for
+// https://github.com/JimmXinu/FanFicFare/wiki/BrowserCacheFeature
+defaultPref("browser.cache.disk.enable", true);
+defaultPref("browser.cache.memory.enable", true);
