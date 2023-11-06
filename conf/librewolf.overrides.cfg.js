@@ -4,6 +4,17 @@
 // https://librewolf.net/docs/settings/
 // Also incorporates some of https://aminda.eu/browser-extensions#firefox-aboutconfig
 
+// Disable privacy.resistFingerprinting, use CanvasBlocker
+// <https://addons.mozilla.org/firefox/addon/canvasblocker/> as requested
+// to consider by LibreWolf documentation.
+// I consider Telemetry closer to voting than spying and I have no desire to
+// vote for Windows NT as the universal operating system to be supported by
+// everyone or English to be the only language in the world.
+// Additionally I get migraines and suffer from floaters when staring at
+// bright light screen so much and it's just easier to disable this than
+// continuously click around Midnight Lizard or similar.
+defaultPref("privacy.resistFingerprinting", false);
+
 // Enable letterboxing
 defaultPref("privacy.resistFingerprinting.letterboxing", true);
 
