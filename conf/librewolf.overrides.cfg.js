@@ -18,8 +18,8 @@ defaultPref("privacy.resistFingerprinting", false);
 // Enable letterboxing
 defaultPref("privacy.resistFingerprinting.letterboxing", true);
 
-// Stricter cross-origin policy
-defaultPref("network.http.referer.XOriginPolicy", 2);
+// Stricter cross-origin policy.
+//defaultPref("network.http.referer.XOriginPolicy", 2);
 
 // Enable WebGL
 //defaultPref("webgl.disabled", false);
