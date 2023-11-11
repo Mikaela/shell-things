@@ -1,3 +1,4 @@
+# https://librewolf.net/installation/fedora/
 [repository]
 name=LibreWolf Software Repository
 baseurl=https://rpm.librewolf.net

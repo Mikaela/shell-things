@@ -9,6 +9,8 @@ as the links below.
 - Begin by `sudo fedora-third-party enable`
 - `sudo dnf copr enable neilalexander/yggdrasil-go`
   - https://yggdrasil-network.github.io/installation-linux-rpm.html
+- `sudo dnf config-manager --add-repo https://rpm.librewolf.net/librewolf-repo.repo`
+  - https://librewolf.net/installation/fedora/
 - https://www.insynchq.com/
 - https://keybase.io/docs/the_app/install_linux
 - https://rpmfusion.org/Configuration
