@@ -73,3 +73,5 @@ Windows/** text=auto eol=crlf
 # provided by git-lfs. https://github.com/git-lfs/git-lfs/wiki/File-Locking
 LICENSE	text lockable
 CITATION.cff	text lockable
+
+# NOTE! .gitattributes doesn't support the case-insensitive style above!
