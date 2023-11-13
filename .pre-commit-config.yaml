@@ -122,14 +122,14 @@ repos:
 
   # prettier, opinionated code formatter
   - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: "v3.0.3"
+    rev: "v3.1.0"
     hooks:
       - id: prettier
         # These are handled by Black below or pretty-format-json above
         exclude_types: [python, pyi, jupyter, json]
         additional_dependencies: [
             # https://www.npmjs.com/package/prettier
-            "prettier@3.0.3",
+            "prettier@3.1.0",
             # https://www.npmjs.com/package/prettier-plugin-nginx
             "prettier-plugin-nginx@1.0.3",
             # https://www.npmjs.com/package/prettier-plugin-toml
@@ -146,7 +146,7 @@ repos:
 
   # Shell code formatter, requires Go
   - repo: https://github.com/scop/pre-commit-shfmt
-    rev: v3.7.0-1
+    rev: v3.7.0-2
     hooks:
       - id: shfmt
         #- id: shfmt-docker
