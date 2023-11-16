@@ -146,7 +146,7 @@ repos:
 
   # Shell code formatter, requires Go
   - repo: https://github.com/scop/pre-commit-shfmt
-    rev: v3.7.0-2
+    rev: v3.7.0-3
     hooks:
       - id: shfmt
         #- id: shfmt-docker
