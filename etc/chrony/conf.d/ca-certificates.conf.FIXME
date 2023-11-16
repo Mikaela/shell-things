@@ -1,0 +1,10 @@
+# CA-certificates for Chrony to trust NTS servers. Can be specified multiple
+# times. Uncomment the option for your system and clean this file up.
+# The default configuration should ignore this file due it not ending with
+# ".conf" as per "man chrony.conf" section for "confdir".
+
+# Debian
+#ntstrustedcerts /etc/ssl/certs/ca-certificates.crt
+
+# Fedora
+#ntstrustedcerts /etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
