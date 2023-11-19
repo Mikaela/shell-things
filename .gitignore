@@ -1,14 +1,19 @@
-# Editor swap files
-*~*
-*.swp
-*.tmp
+# All dotfiles
+.*
 
-# .gitlab-ci.yml pre-commit directory
-.cache/**
+# Except not these
+!.editorconfig
+!.gitattributes
+!.github
+!.gitignore
+!.gitlab-ci.yml
+!.gitmodules
+!.mailmap
+!.mikaela
+!.mikaela_install
+!.pre-commit-config.yaml
+!.reuse
 
-# Symlink
+# Symlinks
 install.run
 LICENSE
-
-# ???
-.git
