@@ -1,0 +1,8 @@
+# https://mullvad.net/en/help/install-mullvad-app-linux#fedora
+[mullvad-stable]
+name=Mullvad VPN
+baseurl=https://repository.mullvad.net/rpm/stable/$basearch
+type=rpm
+enabled=1
+gpgcheck=1
+gpgkey=https://repository.mullvad.net/rpm/mullvad-keyring.asc
