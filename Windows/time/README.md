@@ -1,5 +1,25 @@
 # Configuring SNTP Servers in Windows terminal
 
+<!-- editorconfig-checker-disable -->
+<!-- prettier-ignore-start -->
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Finland without particular ISP and explanations](#finland-without-particular-isp-and-explanations)
+- [Variations](#variations)
+  - [DNA](#dna)
+  - [Elisa](#elisa)
+- [Information about servers](#information-about-servers)
+- [Additional reading](#additional-reading)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<!-- prettier-ignore-end -->
+<!-- editorconfig-checker-enable -->
+
+## Finland without particular ISP and explanations
+
 ```
 w32tm /config /syncfromflags:manual /manualpeerlist:"time.cloudflare.com time.mikes.fi time1.mikes.fi time2.mikes.fi time3.mikes.fi 0.pool.ntp.org 1.pool.ntp.org 2.pool.ntp.org 3.pool.ntp.org"
 w32tm /resync
