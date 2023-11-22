@@ -17,21 +17,21 @@
 pool time.cloudflare.com maxsources 2 iburst nts
 
 # Swedish anycast https://www.netnod.se/time-and-frequency/how-to-use-nts
-server nts.netnod.se iburst nts
+#server nts.netnod.se iburst nts
 
 # https://system76.com/time
-server paris.time.system76.com iburst nts
+#server paris.time.system76.com iburst nts
 
 # https://nts.time.nl/ - regardless of name provides 1 v4 & v6 address
 # no pool directive. Also no leap second smearing.
-server ntppool1.time.nl iburst nts
-server ntppool2.time.nl iburst nts
+#server ntppool1.time.nl iburst nts
+#server ntppool2.time.nl iburst nts
 
 # Germany https://www.ptb.de/cms/en/ptb/fachabteilungen/abtq/gruppe-q4/ref-q42/time-synchronization-of-computers-using-the-network-time-protocol-ntp.html
-server ptbtime1.ptb.de iburst nts
-server ptbtime2.ptb.de iburst nts
-server ptbtime3.ptb.de iburst nts
+#server ptbtime1.ptb.de iburst nts
+#server ptbtime2.ptb.de iburst nts
+#server ptbtime3.ptb.de iburst nts
 
 # Germany
-server www.jabber-germany.de iburst nts
-server www.masters-of-cloud.de iburst nts
+#server www.jabber-germany.de iburst nts
+#server www.masters-of-cloud.de iburst nts
