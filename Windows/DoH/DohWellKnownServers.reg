@@ -86,6 +86,12 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\194.242.2.3]
 "Template"="https://adblock.dns.mullvad.net/dns-query"
 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a07:e340::4]
+"Template"="https://base.dns.mullvad.net/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\194.242.2.4]
+"Template"="https://base.dns.mullvad.net/dns-query"
+
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2620:fe::11]
 "Template"="https://dns11.quad9.net/dns-query"
 
