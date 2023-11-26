@@ -13,7 +13,7 @@
 // Additionally I get migraines and suffer from floaters when staring at
 // bright light screen so much and it's just easier to disable this than
 // continuously click around Midnight Lizard or similar.
-defaultPref("privacy.resistFingerprinting", false);
+defaultPref("privacy.resistFingerprinting", true);
 
 // Enable letterboxing
 defaultPref("privacy.resistFingerprinting.letterboxing", true);
