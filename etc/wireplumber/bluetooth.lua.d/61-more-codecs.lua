@@ -5,5 +5,7 @@
 bluez_monitor.properties = {
 	["bluez5.enable-sbc-xq"] = true,
 	["bluez5.enable-msbc"] = true,
+	-- The default is all, but for some reason that removes all the high
+	-- quality codecs.
 	["bluez5.codecs"] = "[sbc sbc_xq aac ldac aptx aptx_hd aptx_ll aptx_ll_duplex faststream faststream_duplex]",
 }
