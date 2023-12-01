@@ -60,8 +60,8 @@ defaultPref("reader.parse-on-load.force-enabled", true);
 // TRR & ECH
 defaultPref("network.trr.mode", 3);
 defaultPref("network.trr.early-AAAA", true);
-defaultPref("network.trr.uri", "https://base.dns.mullvad.net/dns-query");
-//defaultPref("network.trr.disable-ECS", false);
+defaultPref("network.trr.uri", "https://dns0.eu");
+defaultPref("network.trr.disable-ECS", false);
 defaultPref("network.dns.echconfig.enabled", true);
 defaultPref("network.dns.use_https_rr_as_altsvc", true);
 defaultPref(
