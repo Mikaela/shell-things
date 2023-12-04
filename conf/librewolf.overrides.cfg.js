@@ -64,6 +64,7 @@ defaultPref("network.trr.uri", "https://dns0.eu");
 defaultPref("network.trr.disable-ECS", false);
 defaultPref("network.dns.echconfig.enabled", true);
 defaultPref("network.dns.use_https_rr_as_altsvc", true);
+defaultPref("network.trr.exclude-etc-hosts", false);
 defaultPref(
 	"network.trr.excluded-domains",
 	"http.badssl.com,norwegianwifi.com",
