@@ -78,5 +78,11 @@ defaultPref("layout.css.devPixelsPerPx", "1.5");
 defaultPref("browser.cache.disk.enable", true);
 defaultPref("browser.cache.memory.enable", true);
 
+// Block cookie banners. Warning: may result to auto-accepting cookies.
+// https://www.ghacks.net/2022/12/24/configure-firefox-to-reject-cookie-banners-automatically/
+defaultPref("cookiebanners.service.mode", 2);
+defaultPref("cookiebanners.service.mode.privateBrowsing", 2);
+defaultPref("cookiebanners.bannerClicking.enabled", true);
+
 // Attempt to keep last line empty just in case
 //
