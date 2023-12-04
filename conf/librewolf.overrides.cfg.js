@@ -76,3 +76,6 @@ defaultPref("layout.css.devPixelsPerPx", "1.5");
 // https://github.com/JimmXinu/FanFicFare/wiki/BrowserCacheFeature
 defaultPref("browser.cache.disk.enable", true);
 defaultPref("browser.cache.memory.enable", true);
+
+// Attempt to keep last line empty just in case
+//
