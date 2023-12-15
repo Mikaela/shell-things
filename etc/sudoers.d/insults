@@ -1,0 +1,14 @@
+# Insults for wrong password. Fedora doesn't seem to come with the insults
+# database, while this works on Debian.
+
+# Enable insults for all users
+Defaults insults
+
+# Disable insults for all users
+#Defaults !insults
+
+# Enable insults for user aminda
+#Defaults:aminda insults
+
+# Disable insults for user aminda
+#Defaults:aminda !insults
