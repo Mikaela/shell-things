@@ -1,5 +1,25 @@
 # PipeWire notes
 
+<!-- editorconfig-checker-disable -->
+<!-- prettier-ignore-start -->
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [File moved](#file-moved)
+- [USB headset volume problem](#usb-headset-volume-problem)
+- [Bluetooth](#bluetooth)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<!-- prettier-ignore-end -->
+<!-- editorconfig-checker-enable -->
+
+## File moved
+
+This file moved here from `pipewire/media-session.d` since that is deprecated
+by wireplumber.
+
 ## USB headset volume problem
 
 2021-06-14: These files shouldn't even exist, the solution below is wrong,
@@ -39,3 +59,8 @@ See also:
 
 - https://www.redpill-linpro.com/techblog/2021/05/31/better-bluetooth-headset-audio-with-msbc.html
   - https://web.archive.org/web/20210614103423/https://www.redpill-linpro.com/techblog/2021/05/31/better-bluetooth-headset-audio-with-msbc.html
+
+The above may be somewhat deprecated. Refer to these instead:
+
+- https://steamdecki.org/Steam_Deck/Wireless/Bluetooth#Enabling_More_Codecs_and_Enabling_Headsets
+- Fedora: install `pipewire-codec-aptx` (from `rpmfusion-free-updates`)
