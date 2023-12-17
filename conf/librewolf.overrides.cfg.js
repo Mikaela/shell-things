@@ -13,7 +13,10 @@
 // Additionally I get migraines and suffer from floaters when staring at
 // bright light screen so much and it's just easier to disable this than
 // continuously click around Midnight Lizard or similar.
-defaultPref("privacy.resistFingerprinting", true);
+// Note that this also BREAKS Mobilizon through enforced UTC and thus all
+// timezones will be three hours off unless caution is exercised. I am not
+// sure if this also caused weird developery seeming errors about timezones.
+defaultPref("privacy.resistFingerprinting", false);
 
 // Enable letterboxing
 defaultPref("privacy.resistFingerprinting.letterboxing", true);
