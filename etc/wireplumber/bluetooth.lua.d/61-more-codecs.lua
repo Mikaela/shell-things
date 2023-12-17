@@ -1,3 +1,4 @@
+-- Fedora: install pipewire-codec-aptx (from rpmfusion-free-updates)
 -- https://steamdecki.org/Steam_Deck/Wireless/Bluetooth#Enabling_More_Codecs_and_Enabling_Headsets
 -- Note to self: don't start limiting the codecs, just select the correct one
 -- from pavucontrol, it will be remembered. SteamOS: add pavucontrol as a
