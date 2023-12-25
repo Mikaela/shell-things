@@ -11,5 +11,5 @@ and I forget to update this README file if that happens.
 
 - Waiting for network devices to have IP address (**I only use this for
   cables**) https://wiki.freedesktop.org/www/Software/systemd/NetworkTarget/#cutthecraphowdoimakenetwork.targetworkforme
-  _ systemctl enable NetworkManager-wait-online.service
-  _ systemctl enable systemd-networkd-wait-online.service
+  - `systemctl enable NetworkManager-wait-online.service`
+  - `systemctl enable systemd-networkd-wait-online.service`
