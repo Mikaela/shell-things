@@ -545,6 +545,9 @@ fi
 # More simple SSH file signing, ~/.ssh/signingkey.pub should be a symlink
 alias ssh-sign-file="ssh-keygen -Y sign -f ~/.ssh/signingkey.pub -n file"
 
+# Anywhere on Earth date, https://en.m.wikipedia.org/wiki/Anywhere_on_Earth
+alias aoedate="TZ=Etc/GMT+12 date"
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
