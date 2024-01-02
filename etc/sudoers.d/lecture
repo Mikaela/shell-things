@@ -1,0 +1,3 @@
+# Default is to give the sudo lecture only for the first time, but I think
+# reminders won't hurt.
+Defaults lecture = always
