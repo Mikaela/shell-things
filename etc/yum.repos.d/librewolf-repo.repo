@@ -1,5 +1,5 @@
 # https://librewolf.net/installation/fedora/
-[repository]
+[librewolf]
 name=LibreWolf Software Repository
 baseurl=https://rpm.librewolf.net
 gpgcheck=1
