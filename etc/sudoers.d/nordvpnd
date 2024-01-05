@@ -1,0 +1,4 @@
+# passwordless sudo systemctl ... for group nordvpn
+%nordvpn ALL=NOPASSWD: /bin/systemctl stop nordvpnd.service
+%nordvpn ALL=NOPASSWD: /bin/systemctl start nordvpnd.service
+%nordvpn ALL=NOPASSWD: /bin/systemctl restart nordvpnd.service
