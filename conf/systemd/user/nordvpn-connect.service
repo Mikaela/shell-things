@@ -9,8 +9,8 @@ Type=forking
 #ExecStartPre=sleep 60
 ExecStart=/usr/bin/nordvpn connect p2p
 # ExecStop runs after forking leading into immediate disconnect!
-TimeOutSec=infinity
 Restart=on-failure
+RestartSec=5s
 
 [Install]
 WantedBy=default.target
