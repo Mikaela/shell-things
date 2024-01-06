@@ -1,0 +1,16 @@
+[Unit]
+Description=Connect NordVPN on user login
+After=nordvpnd.service network-online.target dbus.socket
+Wants=nordvpnd.service network-online.target dbus.socket
+
+[Service]
+Type=forking
+# Not necessary as the daemon is already up at this time
+#ExecStartPre=sleep 60
+ExecStart=/usr/bin/nordvpn connect p2p
+# ExecStop runs after forking leading into immediate disconnect!
+TimeOutSec=infinity
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
