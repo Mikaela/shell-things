@@ -1,5 +1,5 @@
 [Unit]
-# This is ust copied from the Debian package
+# This is just copied from the Debian package
 Description=Transmission BitTorrent Daemon
 
 [Service]
