@@ -4,7 +4,7 @@ gitlab-ci-pre-commit:
   stage: build
   before_script:
     - apk add --no-cache git gcc musl-dev go
-    - pip install pre-commit
+    - pip install pre-commit --break-system-packages
   script:
     - pre-commit run --all-files --show-diff-on-failure
   variables:
