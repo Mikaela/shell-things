@@ -129,7 +129,7 @@ repos:
         exclude_types: [python, pyi, jupyter, json]
         additional_dependencies: [
             # https://www.npmjs.com/package/prettier
-            "prettier@3.2.1",
+            "prettier@3.2.2",
             # https://www.npmjs.com/package/prettier-plugin-nginx
             "prettier-plugin-nginx@1.0.3",
             # https://www.npmjs.com/package/prettier-plugin-toml
