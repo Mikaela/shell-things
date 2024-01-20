@@ -18,6 +18,11 @@
 // sure if this also caused weird developery seeming errors about timezones.
 defaultPref("privacy.resistFingerprinting", false);
 
+// Disable strict tracking protection for Ad Nauseam, don't use this without
+// it. Via https://github.com/dhowe/AdNauseam/issues/1747#issuecomment-1397068835
+// https://addons.mozilla.org/firefox/addon/adnauseam/
+defaultPref("browser.contentblocking.category", "standard");
+
 // Enable letterboxing
 defaultPref("privacy.resistFingerprinting.letterboxing", true);
 
