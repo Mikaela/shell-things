@@ -62,8 +62,8 @@ defaultPref("reader.parse-on-load.force-enabled", true);
 
 // TRR & ECH
 // Mode 2 allows fallback to system resolver, 3 is TTR-only
-//defaultPref("network.trr.mode", 3);
-defaultPref("network.trr.mode", 2);
+defaultPref("network.trr.mode", 3);
+//defaultPref("network.trr.mode", 2);
 defaultPref("network.trr.early-AAAA", true);
 defaultPref("network.trr.uri", "https://dns0.eu");
 // NOTE: ECH requires TRR, so mode 2 may not use it.
