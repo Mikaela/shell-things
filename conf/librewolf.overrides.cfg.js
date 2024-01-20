@@ -90,5 +90,10 @@ defaultPref("cookiebanners.service.mode", 2);
 defaultPref("cookiebanners.service.mode.privateBrowsing", 2);
 defaultPref("cookiebanners.bannerClicking.enabled", true);
 
+// Start from homepage, don't restore the previous session (excluding pinned tabs)'
+defaultPref("browser.startup.page", 1);
+// Simplified DDG experience without prompts for extension and all
+defaultPref("browser.startup.homepage", "https://start.duckduckgo.com");
+
 // Attempt to keep last line empty just in case
 //
