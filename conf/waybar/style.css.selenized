@@ -1,4 +1,4 @@
-/* Originally based upon, but heavily modified from https://github.com/jan-warchol/selenized/blob/master/other-apps/wofi/selenized-dark.css */
+/* https://github.com/jan-warchol/selenized/blob/master/other-apps/wofi/selenized-dark.css */
 
 * {
 	border: none;
@@ -11,29 +11,29 @@
 }
 
 window#waybar {
-	background: #000000;
-	border-bottom: 3px solid #ff0000;
-	color: #ff0000;
+	background: #103c48;
+	border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+	color: white;
 }
 
 tooltip {
 	background: rgba(43, 48, 59, 0.5);
-	border: 1px solid #ff0000;
+	border: 1px solid rgba(100, 114, 125, 0.5);
 }
 tooltip label {
-	color: #ff0000;
+	color: white;
 }
 
 #workspaces button {
 	padding: 0 5px;
-	background: #000000;
-	color: #ff0000;
-	border-bottom: 3px solid #000000;
+	background: #103c48;
+	color: white;
+	border-bottom: 3px solid #103c48;
 }
 
 #workspaces button.focused {
 	background: #64727d;
-	border-bottom: 3px solid #ff0000;
+	border-bottom: 3px solid white;
 }
 
 #mode,
@@ -43,34 +43,34 @@ tooltip label {
 }
 
 #mode {
-	background: #000000;
-	border-bottom: 3px solid #ff0000;
+	background: #103c48;
+	border-bottom: 3px solid white;
 }
 
 #clock {
-	background-color: #000000;
+	background-color: #103c48;
 }
 
 #battery {
-	background-color: #000000;
-	color: #ff0000;
+	background-color: #103c48;
+	color: white;
 }
 
 #battery.charging {
-	color: #ff0000;
-	background-color: #000000;
+	color: white;
+	background-color: #103c48;
 }
 
 @keyframes blink {
 	to {
-		background-color: #000000;
-		color: #ff0000;
+		background-color: #103c48;
+		color: white;
 	}
 }
 
 #battery.warning:not(.charging) {
-	background: #ffffff;
-	color: #0000ff;
+	background: #f53c3c;
+	color: white;
 	animation-name: blink;
 	animation-duration: 0.5s;
 	animation-timing-function: linear;
