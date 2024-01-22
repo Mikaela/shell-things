@@ -16,6 +16,9 @@
 # Cloudflare NTS, anycast, works probably anywhere. No leap second smearing.
 pool time.cloudflare.com maxsources 2 iburst nts
 
+# Finland, https://ntp.miuku.net
+server ntp.miuku.net iburst nts
+
 # <https://system76.com/time>, up here for pool entry, but uncomment only
 # it or the required servers? Might be useful with wildly differing VPN
 # endpoint locations.
@@ -42,6 +45,3 @@ pool time.cloudflare.com maxsources 2 iburst nts
 # Germany
 #server www.jabber-germany.de iburst nts
 #server www.masters-of-cloud.de iburst nts
-
-# Finland, https://ntp.miuku.net
-server ntp.miuku.net iburst nts
