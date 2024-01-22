@@ -19,10 +19,7 @@ pool time.cloudflare.com maxsources 2 iburst nts
 # Finland, https://ntp.miuku.net
 server ntp.miuku.net iburst nts
 
-# <https://system76.com/time>, up here for pool entry, but uncomment only
-# it or the required servers? Might be useful with wildly differing VPN
-# endpoint locations.
-#pool time.system76.com iburst nts
+# https://system76.com/time
 #server virginia.time.system76.com iburst nts
 #server ohio.time.system76.com iburst nts
 #server oregon.time.system76.com iburst nts
