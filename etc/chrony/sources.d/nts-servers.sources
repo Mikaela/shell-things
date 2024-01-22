@@ -16,11 +16,18 @@
 # Cloudflare NTS, anycast, works probably anywhere. No leap second smearing.
 pool time.cloudflare.com maxsources 2 iburst nts
 
+# <https://system76.com/time>, up here for pool entry, but uncomment only
+# it or the required servers? Might be useful with wildly differing VPN
+# endpoint locations.
+#pool time.system76.com iburst nts
+#server virginia.time.system76.com iburst nts
+#server ohio.time.system76.com iburst nts
+#server oregon.time.system76.com iburst nts
+#server paris.time.system76.com iburst nts
+#server brazil.time.system76.com iburst nts
+
 # Swedish anycast https://www.netnod.se/time-and-frequency/how-to-use-nts
 #server nts.netnod.se iburst nts
-
-# https://system76.com/time
-#server paris.time.system76.com iburst nts
 
 # https://nts.time.nl/ - regardless of name provides 1 v4 & v6 address
 # no pool directive. Also no leap second smearing.
