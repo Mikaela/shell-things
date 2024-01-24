@@ -1,0 +1,4 @@
+# Uncomment only one, the required one, if any
+#pool pool.ntp.org iburst
+#pool europe.pool.ntp.org iburst
+#pool fi.pool.ntp.org iburst
