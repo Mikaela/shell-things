@@ -1,2 +1,2 @@
 # Hetzner.de NTP servers
-pool ntp.hetzner.de iburst maxsources 3
+pool ntp.hetzner.de iburst maxsources 3 prefer
