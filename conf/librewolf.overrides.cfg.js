@@ -101,5 +101,9 @@ defaultPref("browser.startup.page", 1);
 // Simplified DDG experience without prompts for extension and all
 defaultPref("browser.startup.homepage", "https://start.duckduckgo.com");
 
+// https://globalprivacycontrol.org/ the successor of DNT
+defaultPref("privacy.globalprivacycontrol.enabled", true);
+defaultPref("privacy.globalprivacycontrol.functionality.enabled", true);
+
 // Attempt to keep last line empty just in case
 //
