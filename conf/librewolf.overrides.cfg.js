@@ -104,6 +104,9 @@ defaultPref("browser.startup.homepage", "https://start.duckduckgo.com");
 // https://globalprivacycontrol.org/ the successor of DNT
 defaultPref("privacy.globalprivacycontrol.enabled", true);
 defaultPref("privacy.globalprivacycontrol.functionality.enabled", true);
+// and DNT itself
+defaultPref("privacy.donottrackheader.enabled", true);
+defaultPref("privacy.donottrackheader.value", 1);
 
 // Attempt to keep last line empty just in case
 //
