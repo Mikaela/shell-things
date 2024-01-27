@@ -79,7 +79,7 @@ defaultPref("network.dns.use_https_rr_as_altsvc", true);
 defaultPref("network.trr.exclude-etc-hosts", false);
 defaultPref(
 	"network.trr.excluded-domains",
-	"http.badssl.com,norwegianwifi.com",
+	"http.badssl.com,norwegianwifi.com,mywifiext.net,tplinkrepeater.net,router.asus.com",
 );
 
 // Default UI scale
