@@ -108,5 +108,4 @@ defaultPref("privacy.globalprivacycontrol.functionality.enabled", true);
 defaultPref("privacy.donottrackheader.enabled", true);
 defaultPref("privacy.donottrackheader.value", 1);
 
-// Attempt to keep last line empty just in case
-//
+// vim: filetype=javascript
