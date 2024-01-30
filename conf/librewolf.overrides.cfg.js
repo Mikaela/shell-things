@@ -71,7 +71,8 @@ defaultPref("reader.parse-on-load.force-enabled", true);
 defaultPref("network.trr.mode", 3);
 //defaultPref("network.trr.mode", 2);
 defaultPref("network.trr.early-AAAA", true);
-defaultPref("network.trr.uri", "https://dns0.eu");
+//defaultPref("network.trr.uri", "https://dns0.eu");
+defaultPref("network.trr.uri", "https://dns.adguard-dns.com/dns-query");
 // NOTE: ECH requires TRR, so mode 2 may not use it.
 defaultPref("network.trr.disable-ECS", false);
 defaultPref("network.dns.echconfig.enabled", true);
