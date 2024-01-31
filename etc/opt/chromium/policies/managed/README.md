@@ -10,6 +10,7 @@
   - [Privacy Badger](#privacy-badger)
   - [Fedora User Agent](#fedora-user-agent)
 - [`dns0.json`](#dns0json)
+- [`https-everywhere.json`](#https-everywherejson)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -47,3 +48,7 @@ some offer rpm packages directly.
 ## `dns0.json`
 
 Simply enables DNS-over-HTTPS with DNS0.eu
+
+## `https-everywhere.json`
+
+Enforces https and attempts to upgrade http to https.

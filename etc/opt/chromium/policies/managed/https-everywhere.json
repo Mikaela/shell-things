@@ -1,0 +1,4 @@
+{
+  "HttpsOnlyMode": "force_enabled",
+  "HttpsUpgradesEnabled": true
+}
