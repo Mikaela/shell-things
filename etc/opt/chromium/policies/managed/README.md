@@ -8,6 +8,8 @@
 
 - [`aminda-extensions.json`](#aminda-extensionsjson)
   - [Privacy Badger](#privacy-badger)
+  - [Dark Reader](#dark-reader)
+  - [Bitwarden](#bitwarden)
   - [Fedora User Agent](#fedora-user-agent)
 - [`dns0.json`](#dns0json)
 - [`https-everywhere.json`](#https-everywherejson)
@@ -37,6 +39,18 @@ See also:
 
 - https://github.com/EFForg/privacybadger/blob/master/doc/admin-deployment.md
 - https://github.com/EFForg/privacybadger/blob/master/src/data/schema.json
+
+### Dark Reader
+
+- `eimadpbcbfnmbkopoojfekhnkhdbieeh`
+
+As playing around with these policies and constantly removing the profile directory doesn't help my migraine.
+
+### Bitwarden
+
+- `nngceckbapebfimnlniiiahkandclblb`
+
+The password manager of my choice.
 
 ### Fedora User Agent
 
