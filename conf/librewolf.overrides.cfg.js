@@ -5,8 +5,8 @@
 // Also incorporates some of https://aminda.eu/browser-extensions#firefox-aboutconfig
 
 // Disable privacy.resistFingerprinting, use CanvasBlocker
-// <https://addons.mozilla.org/firefox/addon/canvasblocker/> as requested
-// to consider by LibreWolf documentation.
+// as requested to consider by LibreWolf documentation. Alternatively I think
+// PrivacyBadger is enough considering it blocks canvas from third party sites.
 // I consider Telemetry closer to voting than spying and I have no desire to
 // vote for Windows NT as the universal operating system to be supported by
 // everyone or English to be the only language in the world.
