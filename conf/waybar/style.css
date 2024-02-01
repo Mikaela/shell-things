@@ -12,28 +12,28 @@
 
 window#waybar {
 	background: #000000;
-	border-bottom: 3px solid #ff0000;
-	color: #ff0000;
+	border-bottom: 3px solid #ffb700;
+	color: #ffb700;
 }
 
 tooltip {
 	background: rgba(43, 48, 59, 0.5);
-	border: 1px solid #ff0000;
+	border: 1px solid #ffb700;
 }
 tooltip label {
-	color: #ff0000;
+	color: #ffb700;
 }
 
 #workspaces button {
 	padding: 0 5px;
 	background: #000000;
-	color: #ff0000;
+	color: #ffb700;
 	border-bottom: 3px solid #000000;
 }
 
 #workspaces button.focused {
-	background: #ffffff;
-	border-bottom: 3px solid #ff0000;
+	background: #000000;
+	border-bottom: 3px solid #ffb700;
 }
 
 #mode,
@@ -44,7 +44,7 @@ tooltip label {
 
 #mode {
 	background: #000000;
-	border-bottom: 3px solid #ff0000;
+	border-bottom: 3px solid #ffb700;
 }
 
 #clock {
@@ -53,23 +53,23 @@ tooltip label {
 
 #battery {
 	background-color: #000000;
-	color: #ff0000;
+	color: #ffb700;
 }
 
 #battery.charging {
-	color: #ff0000;
+	color: #ffb700;
 	background-color: #000000;
 }
 
 @keyframes blink {
 	to {
 		background-color: #000000;
-		color: #ff0000;
+		color: #ffb700;
 	}
 }
 
 #battery.warning:not(.charging) {
-	background: #ffffff;
+	background: #000000;
 	color: #0000ff;
 	animation-name: blink;
 	animation-duration: 0.5s;
