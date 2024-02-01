@@ -24,6 +24,12 @@ defaultPref("privacy.resistFingerprinting", false);
 // DO NOT DO THIS! https://codeberg.org/librewolf/issues/issues/1439
 //defaultPref("browser.contentblocking.category", "standard");
 
+// Note to self on disabling protection of Mozilla pages. This may be a
+// LibreWolf default so thus commented:
+// via https://www.ghacks.net/2017/10/27/how-to-enable-firefox-webextensions-on-mozilla-websites/
+//defaultPref("extensions.webextensions.restrictedDomains", "");
+//defaultPref("privacy.resistFingerprinting.block_mozAddonManage", true);
+
 // Enable letterboxing
 defaultPref("privacy.resistFingerprinting.letterboxing", true);
 
