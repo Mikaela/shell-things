@@ -9,6 +9,11 @@
         }
       }
     },
+    "DNSOverHTTPS": {
+      "Enabled": true,
+      "Locked": false,
+      "ProviderURL": "https://dns0.eu"
+    },
     "ExtensionSettings": {
       "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
         "install_url": "https://www.eff.org/files/privacy-badger-latest.xpi",
