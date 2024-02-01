@@ -1,0 +1,19 @@
+{
+  "policies": {
+    "3rdparty": {
+      "Extensions": {
+        "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
+          "learnInIncognito": true,
+          "learnLocally": true,
+          "showIntroPage": false
+        }
+      }
+    },
+    "ExtensionSettings": {
+      "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
+        "install_url": "https://www.eff.org/files/privacy-badger-latest.xpi",
+        "installation_mode": "force_installed"
+      }
+    }
+  }
+}
