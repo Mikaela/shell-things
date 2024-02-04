@@ -1,0 +1,4 @@
+{
+  "EnableOnlineRevocationChecks": true,
+  "EncryptedClientHelloEnabled": true
+}
