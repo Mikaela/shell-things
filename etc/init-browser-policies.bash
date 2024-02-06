@@ -11,15 +11,15 @@ mkdir -p /etc/firefox/policies
 mkdir -p /etc/opt/chromium/policies/managed
 
 # Brave
-ln -s /etc/opt/chromium /etc/brave
+ln -siv /etc/opt/chromium /etc/brave
 
 # Vivaldi
-ln -s /etc/opt/chromium /etc/chromium
+ln -siv /etc/opt/chromium /etc/chromium
 
 # Google Chrome
-ln -s /etc/opt/chromium /etc/opt/chrome
+ln -siv /etc/opt/chromium /etc/opt/chrome
 
 # Microsoft Edge
-ln -s /etc/opt/chromium /etc/opt/edge
+ln -siv /etc/opt/chromium /etc/opt/edge
 
 set +x
