@@ -4,17 +4,35 @@
 // https://librewolf.net/docs/settings/
 // Also incorporates some of https://aminda.eu/browser-extensions#firefox-aboutconfig
 
-// I would like to use this, but forced light mode is a dealbreaker
-// (floaters), UTC makes Mobilizon difficult, Privacy Badger blocks 3rd party
-// canvas and I want to appear as a Finnish Linux user rather than English
-// Windows NT one (telemetry, voting vs spying).
-defaultPref("privacy.resistFingerprinting", false);
+// -----
+// I often need to refer to these options which aren't yet remembered by heart
 
 // Note to self on disabling protection of Mozilla pages. This may be a
 // LibreWolf default so thus commented:
 // via https://www.ghacks.net/2017/10/27/how-to-enable-firefox-webextensions-on-mozilla-websites/
 //defaultPref("extensions.webextensions.restrictedDomains", "");
 //defaultPref("privacy.resistFingerprinting.block_mozAddonManage", true);
+
+// Block cookie banners. Warning: may result to auto-accepting cookies.
+// https://www.ghacks.net/2022/12/24/configure-firefox-to-reject-cookie-banners-automatically/
+defaultPref("cookiebanners.service.mode", 2);
+defaultPref("cookiebanners.service.mode.privateBrowsing", 2);
+defaultPref("cookiebanners.bannerClicking.enabled", true);
+
+// https://globalprivacycontrol.org/ the successor of DNT
+defaultPref("privacy.globalprivacycontrol.enabled", true);
+defaultPref("privacy.globalprivacycontrol.functionality.enabled", true);
+// and DNT itself
+defaultPref("privacy.donottrackheader.enabled", true);
+defaultPref("privacy.donottrackheader.value", 1);
+
+// -----
+
+// I would like to use this, but forced light mode is a dealbreaker
+// (floaters), UTC makes Mobilizon difficult, Privacy Badger blocks 3rd party
+// canvas and I want to appear as a Finnish Linux user rather than English
+// Windows NT one (telemetry, voting vs spying).
+defaultPref("privacy.resistFingerprinting", false);
 
 // Enable letterboxing
 defaultPref("privacy.resistFingerprinting.letterboxing", true);
@@ -75,22 +93,9 @@ defaultPref("layout.css.devPixelsPerPx", "1.5");
 defaultPref("browser.cache.disk.enable", true);
 defaultPref("browser.cache.memory.enable", true);
 
-// Block cookie banners. Warning: may result to auto-accepting cookies.
-// https://www.ghacks.net/2022/12/24/configure-firefox-to-reject-cookie-banners-automatically/
-defaultPref("cookiebanners.service.mode", 2);
-defaultPref("cookiebanners.service.mode.privateBrowsing", 2);
-defaultPref("cookiebanners.bannerClicking.enabled", true);
-
 // Start from homepage, don't restore the previous session (excluding pinned tabs)'
 defaultPref("browser.startup.page", 1);
 // Simplified DDG experience without prompts for extension and all
 defaultPref("browser.startup.homepage", "https://start.duckduckgo.com");
-
-// https://globalprivacycontrol.org/ the successor of DNT
-defaultPref("privacy.globalprivacycontrol.enabled", true);
-defaultPref("privacy.globalprivacycontrol.functionality.enabled", true);
-// and DNT itself
-defaultPref("privacy.donottrackheader.enabled", true);
-defaultPref("privacy.donottrackheader.value", 1);
 
 // vim: filetype=javascript
