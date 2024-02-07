@@ -14,12 +14,12 @@
   - [Privacy Badger](#privacy-badger)
 - [`disable-floc.json`](#disable-flocjson)
 - [`disable-incognito.json`](#disable-incognitojson)
-- [`dns0.json`](#dns0json)
+- [`doh-automatic.json`](#doh-automaticjson)
+- [`doh-dns0.json`](#doh-dns0json)
 - [`enable-ech-ocsp.json`](#enable-ech-ocspjson)
 - [`enable-home-labs.json`](#enable-home-labsjson)
 - [`force-incognito.json`](#force-incognitojson)
 - [`https-everywhere.json`](#https-everywherejson)
-- [`restore-doh.json`](#restore-dohjson)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -83,7 +83,13 @@ Disables floc or ad topics that are against privacy.
 
 Disables incognito mode. I don't recommend this.
 
-## `dns0.json`
+## `doh-automatic.json`
+
+If no DNS over HTTPS policy is used, this unlocks the setting. Enabling managed policies disable it by default.
+
+Incompatible with any actual DoH policy.
+
+## `doh-dns0.json`
 
 Simply enables DNS-over-HTTPS with DNS0.eu
 
@@ -102,9 +108,3 @@ Forces incognito mode. I don't recommend this.
 ## `https-everywhere.json`
 
 Enforces https and attempts to upgrade http to https.
-
-## `restore-doh.json`
-
-If no DNS over HTTPS policy is used, this unlocks the setting. Enabling managed policies disable it by default.
-
-Incompatible with any actual DoH policy.
