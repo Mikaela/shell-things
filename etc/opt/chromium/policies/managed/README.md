@@ -11,6 +11,7 @@
   - [Dark Reader](#dark-reader)
   - [Bitwarden](#bitwarden)
   - [Fedora User Agent](#fedora-user-agent)
+  - [Privacy Manager](#privacy-manager)
 - [`dns0.json`](#dns0json)
 - [`https-everywhere.json`](#https-everywherejson)
 
@@ -58,6 +59,13 @@ Communicates websites that Ubuntu isn't the only Linux distribution and makes
 some offer rpm packages directly.
 
 - `hojggiaghnldpcknpbciehjcaoafceil`
+
+### Privacy Manager
+
+- `giccehglhacakcfemddmfhdkahamfcmd`
+
+Quick browser options and data removal on _startup_. Maybe beneficial if
+incognito is disabled (which again is not great idea for quick guest access?)
 
 ## `dns0.json`
 
