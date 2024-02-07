@@ -9,6 +9,12 @@
     }
   },
   "ExtensionSettings": {
+    "ajhmfdgkijocedmfjonnpjfojldioehi": {
+      "installation_mode": "normal_installed",
+      "override_update_url": true,
+      "toolbar_pin": "force_pinned",
+      "update_url": "https://clients2.google.com/service/update2/crx"
+    },
     "eimadpbcbfnmbkopoojfekhnkhdbieeh": {
       "installation_mode": "normal_installed",
       "override_update_url": true,
@@ -25,6 +31,12 @@
       "installation_mode": "normal_installed",
       "override_update_url": true,
       "toolbar_pin": "default_unpinned",
+      "update_url": "https://clients2.google.com/service/update2/crx"
+    },
+    "mafpmfcccpbjnhfhjnllmmalhifmlcie": {
+      "installation_mode": "normal_installed",
+      "override_update_url": true,
+      "toolbar_pin": "force_pinned",
       "update_url": "https://clients2.google.com/service/update2/crx"
     },
     "nngceckbapebfimnlniiiahkandclblb": {

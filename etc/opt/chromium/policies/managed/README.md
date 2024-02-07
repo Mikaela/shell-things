@@ -7,9 +7,11 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [`aminda-extensions.json`](#aminda-extensionsjson)
+  - [Silk - Privacy Pass Client for the browser](#silk---privacy-pass-client-for-the-browser)
   - [Dark Reader](#dark-reader)
   - [Privacy Manager](#privacy-manager)
   - [Fedora User Agent](#fedora-user-agent)
+  - [Snowflake](#snowflake)
   - [Bitwarden](#bitwarden)
   - [Privacy Badger](#privacy-badger)
 - [`disable-floc.json`](#disable-flocjson)
@@ -35,6 +37,13 @@ to overlap with someone else.
 Changing `normal_installed` to `force_installed` would also prevent
 uninstallation.
 
+### Silk - Privacy Pass Client for the browser
+
+- `ajhmfdgkijocedmfjonnpjfojldioehi`
+
+Silk or Privacy Pass has a chance of decreasing the amount of captchas
+especially from Cloudflare when "suspicious" traffic is detected.
+
 ### Dark Reader
 
 - `eimadpbcbfnmbkopoojfekhnkhdbieeh`
@@ -54,6 +63,12 @@ incognito is disabled (which again is not great idea for quick guest access?)
 
 Communicates websites that Ubuntu isn't the only Linux distribution and makes
 some offer rpm packages directly.
+
+### Snowflake
+
+- `mafpmfcccpbjnhfhjnllmmalhifmlcie`
+
+Helps bridge traffic to Tor by looking like WebRTC call.
 
 ### Bitwarden
 
