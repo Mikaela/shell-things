@@ -4,25 +4,11 @@
 // https://librewolf.net/docs/settings/
 // Also incorporates some of https://aminda.eu/browser-extensions#firefox-aboutconfig
 
-// Disable privacy.resistFingerprinting, use CanvasBlocker
-// as requested to consider by LibreWolf documentation. Alternatively I think
-// PrivacyBadger is enough considering it blocks canvas from third party sites.
-// I consider Telemetry closer to voting than spying and I have no desire to
-// vote for Windows NT as the universal operating system to be supported by
-// everyone or English to be the only language in the world.
-// Additionally I get migraines and suffer from floaters when staring at
-// bright light screen so much and it's just easier to disable this than
-// continuously click around Midnight Lizard or similar.
-// Note that this also BREAKS Mobilizon through enforced UTC and thus all
-// timezones will be three hours off unless caution is exercised. I am not
-// sure if this also caused weird developery seeming errors about timezones.
+// I would like to use this, but forced light mode is a dealbreaker
+// (floaters), UTC makes Mobilizon difficult, Privacy Badger blocks 3rd party
+// canvas and I want to appear as a Finnish Linux user rather than English
+// Windows NT one (telemetry, voting vs spying).
 defaultPref("privacy.resistFingerprinting", false);
-
-// Disable strict tracking protection for Ad Nauseam, don't use this without
-// it. Via https://github.com/dhowe/AdNauseam/issues/1747#issuecomment-1397068835
-// https://addons.mozilla.org/firefox/addon/adnauseam/
-// DO NOT DO THIS! https://codeberg.org/librewolf/issues/issues/1439
-//defaultPref("browser.contentblocking.category", "standard");
 
 // Note to self on disabling protection of Mozilla pages. This may be a
 // LibreWolf default so thus commented:
@@ -33,12 +19,6 @@ defaultPref("privacy.resistFingerprinting", false);
 // Enable letterboxing
 defaultPref("privacy.resistFingerprinting.letterboxing", true);
 
-// Stricter cross-origin policy.
-//defaultPref("network.http.referer.XOriginPolicy", 2);
-
-// Enable WebGL
-//defaultPref("webgl.disabled", false);
-
 // Enable Firefox accounts
 defaultPref("identity.fxaccounts.enabled", true);
 
@@ -46,8 +26,6 @@ defaultPref("identity.fxaccounts.enabled", true);
 // - Goal: let Element Web & co stay logged in
 defaultPref("privacy.clearOnShutdown.cache", false);
 defaultPref("privacy.clearOnShutdown.cookies", false);
-//defaultPref("privacy.clearOnShutdown.downloads", false);
-//defaultPref("privacy.clearOnShutdown.formdata", false);
 defaultPref("privacy.clearOnShutdown.history", false);
 defaultPref("privacy.clearOnShutdown.offlineApps", false);
 defaultPref("privacy.clearOnShutdown.openWindows", false);
@@ -74,8 +52,8 @@ defaultPref("reader.parse-on-load.force-enabled", true);
 
 // TRR & ECH
 // Mode 2 allows fallback to system resolver, 3 is TTR-only
-defaultPref("network.trr.mode", 3);
 //defaultPref("network.trr.mode", 2);
+defaultPref("network.trr.mode", 3);
 defaultPref("network.trr.early-AAAA", true);
 defaultPref("network.trr.uri", "https://dns0.eu");
 //defaultPref("network.trr.uri", "https://dns.adguard-dns.com/dns-query");
