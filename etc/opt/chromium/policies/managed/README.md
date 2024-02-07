@@ -12,8 +12,14 @@
   - [Fedora User Agent](#fedora-user-agent)
   - [Bitwarden](#bitwarden)
   - [Privacy Badger](#privacy-badger)
+- [`disable-floc.json`](#disable-flocjson)
+- [`disable-incognito.json`](#disable-incognitojson)
 - [`dns0.json`](#dns0json)
+- [`enable-ech-ocsp.json`](#enable-ech-ocspjson)
+- [`enable-home-labs.json`](#enable-home-labsjson)
+- [`force-incognito.json`](#force-incognitojson)
 - [`https-everywhere.json`](#https-everywherejson)
+- [`restore-doh.json`](#restore-dohjson)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -44,10 +50,10 @@ incognito is disabled (which again is not great idea for quick guest access?)
 
 ### Fedora User Agent
 
+- `hojggiaghnldpcknpbciehjcaoafceil`
+
 Communicates websites that Ubuntu isn't the only Linux distribution and makes
 some offer rpm packages directly.
-
-- `hojggiaghnldpcknpbciehjcaoafceil`
 
 ### Bitwarden
 
@@ -67,10 +73,38 @@ See also:
 - https://github.com/EFForg/privacybadger/blob/master/doc/admin-deployment.md
 - https://github.com/EFForg/privacybadger/blob/master/src/data/schema.json
 
+## `disable-floc.json`
+
+Disables floc or ad topics that are against privacy.
+
+- https://start.duckduckgo.com/?q=google+floc+privacy+topics
+
+## `disable-incognito.json`
+
+Disables incognito mode. I don't recommend this.
+
 ## `dns0.json`
 
 Simply enables DNS-over-HTTPS with DNS0.eu
 
+## `enable-ech-ocsp.json`
+
+Enables encrypted client hello and OCSP (or CRL?) checks.
+
+## `enable-home-labs.json`
+
+Enables home button and access to labs by default.
+
+## `force-incognito.json`
+
+Forces incognito mode. I don't recommend this.
+
 ## `https-everywhere.json`
 
 Enforces https and attempts to upgrade http to https.
+
+## `restore-doh.json`
+
+If no DNS over HTTPS policy is used, this unlocks the setting. Enabling managed policies disable it by default.
+
+Incompatible with any actual DoH policy.
