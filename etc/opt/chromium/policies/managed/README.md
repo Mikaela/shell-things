@@ -7,11 +7,11 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [`aminda-extensions.json`](#aminda-extensionsjson)
-  - [Privacy Badger](#privacy-badger)
   - [Dark Reader](#dark-reader)
-  - [Bitwarden](#bitwarden)
-  - [Fedora User Agent](#fedora-user-agent)
   - [Privacy Manager](#privacy-manager)
+  - [Fedora User Agent](#fedora-user-agent)
+  - [Bitwarden](#bitwarden)
+  - [Privacy Badger](#privacy-badger)
 - [`dns0.json`](#dns0json)
 - [`https-everywhere.json`](#https-everywherejson)
 
@@ -29,6 +29,32 @@ to overlap with someone else.
 Changing `normal_installed` to `force_installed` would also prevent
 uninstallation.
 
+### Dark Reader
+
+- `eimadpbcbfnmbkopoojfekhnkhdbieeh`
+
+As playing around with these policies and constantly removing the profile directory doesn't help my migraine.
+
+### Privacy Manager
+
+- `giccehglhacakcfemddmfhdkahamfcmd`
+
+Quick browser options and data removal on _startup_. Maybe beneficial if
+incognito is disabled (which again is not great idea for quick guest access?)
+
+### Fedora User Agent
+
+Communicates websites that Ubuntu isn't the only Linux distribution and makes
+some offer rpm packages directly.
+
+- `hojggiaghnldpcknpbciehjcaoafceil`
+
+### Bitwarden
+
+- `nngceckbapebfimnlniiiahkandclblb`
+
+The password manager of my choice.
+
 ### Privacy Badger
 
 - `pkehgijcmpdhfbdbbnkijodmdjhbjlgp`
@@ -40,32 +66,6 @@ See also:
 
 - https://github.com/EFForg/privacybadger/blob/master/doc/admin-deployment.md
 - https://github.com/EFForg/privacybadger/blob/master/src/data/schema.json
-
-### Dark Reader
-
-- `eimadpbcbfnmbkopoojfekhnkhdbieeh`
-
-As playing around with these policies and constantly removing the profile directory doesn't help my migraine.
-
-### Bitwarden
-
-- `nngceckbapebfimnlniiiahkandclblb`
-
-The password manager of my choice.
-
-### Fedora User Agent
-
-Communicates websites that Ubuntu isn't the only Linux distribution and makes
-some offer rpm packages directly.
-
-- `hojggiaghnldpcknpbciehjcaoafceil`
-
-### Privacy Manager
-
-- `giccehglhacakcfemddmfhdkahamfcmd`
-
-Quick browser options and data removal on _startup_. Maybe beneficial if
-incognito is disabled (which again is not great idea for quick guest access?)
 
 ## `dns0.json`
 
