@@ -12,6 +12,7 @@ per whatever I am doing.
 
 - [WARNING TO LIBREWOLF USERS](#warning-to-librewolf-users)
 - [Privacy Badger](#privacy-badger)
+- [See also](#see-also)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -35,3 +36,7 @@ See also:
 
 - https://github.com/EFForg/privacybadger/blob/master/doc/admin-deployment.md
 - https://github.com/EFForg/privacybadger/blob/master/src/data/schema.json
+
+## See also
+
+- https://mozilla.github.io/policy-templates/
