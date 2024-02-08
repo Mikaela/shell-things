@@ -49,6 +49,23 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/torproject-snowflake/latest.xpi",
         "installation_mode": "normal_installed"
       }
-    }
+    },
+    "FirefoxHome": {
+      "Highlights": false,
+      "Locked": false,
+      "Pocket": false,
+      "Search": true,
+      "Snippets": false,
+      "SponsoredPocket": false,
+      "SponsoredTopSites": false,
+      "TopSites": false
+    },
+    "FirefoxSuggest": {
+      "ImproveSuggest": false,
+      "Locked": false,
+      "SponsoredSuggestions": false,
+      "WebSuggestions": false
+    },
+    "SearchSuggestEnabled": false
   }
 }
