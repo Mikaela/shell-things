@@ -8,6 +8,7 @@
 
 - [`aminda-extensions.json`](#aminda-extensionsjson)
   - [Silk - Privacy Pass Client for the browser](#silk---privacy-pass-client-for-the-browser)
+  - [DuckDuckGo Privacy Essentials](#duckduckgo-privacy-essentials)
   - [Dark Reader](#dark-reader)
   - [Privacy Manager](#privacy-manager)
   - [Fedora User Agent](#fedora-user-agent)
@@ -43,6 +44,12 @@ uninstallation.
 
 Silk or Privacy Pass has a chance of decreasing the amount of captchas
 especially from Cloudflare when "suspicious" traffic is detected.
+
+### DuckDuckGo Privacy Essentials
+
+- `bkdgflcldnnnapblkhphbgpggdiikppg`
+
+Installed by default so Google won't be the default search engine.
 
 ### Dark Reader
 
