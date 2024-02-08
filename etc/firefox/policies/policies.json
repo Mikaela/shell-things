@@ -21,9 +21,29 @@
       "Value": true
     },
     "ExtensionSettings": {
+      "addon@darkreader.org": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/darkreader/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
       "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
         "install_url": "https://www.eff.org/files/privacy-badger-latest.xpi",
         "installation_mode": "force_installed"
+      },
+      "{3c078156-979c-498b-8990-85f7987dd929}": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/sidebery/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
+      "{446900e4-71c2-419f-a6a7-df9c091e268b}": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
+      "{48748554-4c01-49e8-94af-79662bf34d50}": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-pass/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
+      "{b11bea1f-a888-4332-8d8a-cec2be7d24b9}": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/torproject-snowflake/latest.xpi",
+        "installation_mode": "normal_installed"
       }
     }
   }
