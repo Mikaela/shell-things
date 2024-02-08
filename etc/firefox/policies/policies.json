@@ -41,6 +41,10 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-pass/latest.xpi",
         "installation_mode": "normal_installed"
       },
+      "{6a65273e-2b26-40f5-b66e-8eed317307da}": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/new-tab-suspender/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
       "{b11bea1f-a888-4332-8d8a-cec2be7d24b9}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/torproject-snowflake/latest.xpi",
         "installation_mode": "normal_installed"
