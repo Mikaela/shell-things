@@ -33,6 +33,9 @@ defaultPref("privacy.donottrackheader.value", 1);
 // canvas and I want to appear as a Finnish Linux user rather than English
 // Windows NT one (telemetry, voting vs spying).
 defaultPref("privacy.resistFingerprinting", false);
+// Or I could excempt things from it? Other than it not overriding timezone.
+//defaultPref("privacy.resistFingerprinting.testGranularityMask", 4);
+//defaultPref("privacy.resistFingerprinting.exemptedDomains", "jarkkaa.fi,*.element.io,*.google.com");
 
 // Enable letterboxing
 defaultPref("privacy.resistFingerprinting.letterboxing", true);
