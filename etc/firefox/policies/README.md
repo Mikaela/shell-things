@@ -47,8 +47,8 @@ See also:
 
 > Policy SearchEngines is only allowed on ESR.
 
-Thus DuckDuckGo extension is installed by default so when testing this policy
-I won't have to see Google.
+But who cares? Anyway thus DuckDuckGo extension is installed by default so
+when testing this policy I won't have to see Google.
 
 ## See also
 

@@ -14,6 +14,7 @@
       "Locked": false,
       "ProviderURL": "https://dns0.eu"
     },
+    "DisablePocket": false,
     "EnableTrackingProtection": {
       "Cryptomining": true,
       "Fingerprinting": true,
@@ -73,6 +74,27 @@
       "Locked": false,
       "SponsoredSuggestions": false,
       "WebSuggestions": false
+    },
+    "SearchEngines": {
+      "Add": [
+        {
+          "Alias": "",
+          "Description": "Minimal, ad-free version of DuckDuckGo",
+          "Method": "POST",
+          "Name": "DuckDuckGo Lite",
+          "PostData": "q={searchTerms}",
+          "URLTemplate": "https://duckduckgo.com/lite/?q={searchTerms}"
+        },
+        {
+          "Alias": "",
+          "Description": "Minimal, ad-free version of DuckDuckGo",
+          "Method": "POST",
+          "Name": "DuckDuckGo Start",
+          "PostData": "q={searchTerms}",
+          "URLTemplate": "https://start.duckduckgo.com/?q={searchTerms}"
+        }
+      ],
+      "Default": "DuckDuckGo Start"
     },
     "SearchSuggestEnabled": false
   }
