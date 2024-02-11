@@ -87,8 +87,8 @@
         },
         {
           "Alias": "",
-          "Description": "Minimal, ad-free version of DuckDuckGo",
-          "Method": "POST",
+          "Description": "DuckDuckGo Start page version",
+          "Method": "GET",
           "Name": "DuckDuckGo Start",
           "PostData": "q={searchTerms}",
           "URLTemplate": "https://start.duckduckgo.com/?q={searchTerms}"
