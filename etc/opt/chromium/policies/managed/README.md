@@ -46,6 +46,11 @@ uninstallation.
 Silk or Privacy Pass has a chance of decreasing the amount of captchas
 especially from Cloudflare when "suspicious" traffic is detected.
 
+To intentionally trigger it and what should be allowed in NoScript:
+
+- https://captcha.website
+- https://issuance.privacypass.cloudflare.com
+
 ### DuckDuckGo Privacy Essentials
 
 - `bkdgflcldnnnapblkhphbgpggdiikppg`
