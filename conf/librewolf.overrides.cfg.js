@@ -32,10 +32,13 @@ defaultPref("privacy.donottrackheader.value", 1);
 // (floaters), UTC makes Mobilizon difficult, Privacy Badger blocks 3rd party
 // canvas and I want to appear as a Finnish Linux user rather than English
 // Windows NT one (telemetry, voting vs spying).
-defaultPref("privacy.resistFingerprinting", false);
+defaultPref("privacy.resistFingerprinting", true);
 // Or I could excempt things from it? Other than it not overriding timezone.
-//defaultPref("privacy.resistFingerprinting.testGranularityMask", 4);
-//defaultPref("privacy.resistFingerprinting.exemptedDomains", "jarkkaa.fi,*.element.io,*.google.com");
+defaultPref("privacy.resistFingerprinting.testGranularityMask", 4);
+defaultPref(
+	"privacy.resistFingerprinting.exemptedDomains",
+	"jarkkaa.fi,*.element.io,*.google.com,*.pikaviestin.fi,*.envs.net,*.wikimedia.org,*.wikipedia.org,*.duckduckgo.com",
+);
 
 // Enable letterboxing
 defaultPref("privacy.resistFingerprinting.letterboxing", true);
