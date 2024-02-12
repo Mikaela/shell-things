@@ -37,7 +37,7 @@ defaultPref("privacy.resistFingerprinting", true);
 defaultPref("privacy.resistFingerprinting.testGranularityMask", 4);
 defaultPref(
 	"privacy.resistFingerprinting.exemptedDomains",
-	"jarkkaa.fi,*.element.io,*.google.com,*.pikaviestin.fi,*.envs.net,*.wikimedia.org,*.wikipedia.org,*.duckduckgo.com,*.blesmrt.net,*.piraatit.fi,*.piraattipuolue.fi",
+	"jarkkaa.fi,*.element.io,*.google.com,*.pikaviestin.fi,*.envs.net,*.wikimedia.org,*.wikipedia.org,*.duckduckgo.com,*.blesmrt.net,*.piraatit.fi,*.piraattipuolue.fi,*.apple.com",
 );
 
 // Enable letterboxing
