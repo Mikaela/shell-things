@@ -1,5 +1,7 @@
 # Firefox `policies.json`
 
+- https://mozilla.github.io/policy-templates/
+
 The file is pretty self-explanatory, but I prefer Chromium way of handling
 enterprise policies since it allows me to cut them to multiple different files
 per whatever I am doing.
@@ -14,7 +16,6 @@ per whatever I am doing.
 - [Extensions](#extensions)
   - [Privacy Badger](#privacy-badger)
 - [Search engines](#search-engines)
-- [See also](#see-also)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -49,7 +50,3 @@ See also:
 
 But who cares? Anyway thus DuckDuckGo extension is installed by default so
 when testing this policy I won't have to see Google.
-
-## See also
-
-- https://mozilla.github.io/policy-templates/

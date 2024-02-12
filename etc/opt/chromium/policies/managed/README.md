@@ -1,5 +1,7 @@
 # Chromium policies
 
+- https://chromeenterprise.google/policies/
+
 <!-- editorconfig-checker-disable -->
 <!-- prettier-ignore-start -->
 
