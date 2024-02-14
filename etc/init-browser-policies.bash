@@ -7,6 +7,9 @@ set -x
 mkdir -p /etc/firefox/policies
 #touch /etc/firefox/policies/policies.json
 
+# Firefox ESR
+ln -siv /etc/firefox /etc/firefox-esr
+
 # Chromium
 mkdir -p /etc/opt/chromium/policies/managed
 
