@@ -15,6 +15,9 @@ mkdir -p ~/.ssh
 cat .mikaela/keys/authorized_keys >~/.ssh/authorized_keys
 cat etc/ssh/ssh_config >~/.ssh/config
 cat .editorconfig >~/.editorconfig
+mkdir -p ~/.local/firefox/defaults/pref/
+cat conf/autoconfig.js >~/.local/firefox/defaults/pref/autoconfig.js
+cat conf/librewolf.overrides.cfg.js >~/.local/firefox/librewolf.overrides.cfg
 mkdir -p ~/.librewolf/ ~/.var/app/io.gitlab.librewolf-community/.librewolf/
 cat conf/librewolf.overrides.cfg.js >~/.librewolf/librewolf.overrides.cfg
 cat conf/librewolf.overrides.cfg.js >~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg
