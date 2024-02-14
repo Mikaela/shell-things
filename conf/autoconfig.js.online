@@ -1,0 +1,5 @@
+// This file belongs to Firefox `default/pref` directory as `autoconfig.js`.
+// E.g. /usr/lib64/firefox/defaults/pref/autoconfig.js
+pref("autoadmin.global_config_url","https://gitea.blesmrt.net/mikaela/shell-things/raw/branch/master/conf/librewolf.overrides.cfg");
+pref("general.config.obscure_value", 0);
+// vim: filetype=javascript
