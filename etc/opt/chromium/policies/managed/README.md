@@ -19,6 +19,7 @@
   - [Snowflake](#snowflake)
   - [Bitwarden](#bitwarden)
   - [Privacy Badger](#privacy-badger)
+  - [TODO/Inconsistencies](#todoinconsistencies)
 - [`disable-floc.json`](#disable-flocjson)
 - [`disable-incognito.json`](#disable-incognitojson)
 - [`doh-automatic.json`](#doh-automaticjson)
@@ -121,6 +122,12 @@ See also:
 
 - https://github.com/EFForg/privacybadger/blob/master/doc/admin-deployment.md
 - https://github.com/EFForg/privacybadger/blob/master/src/data/schema.json
+
+### TODO/Inconsistencies
+
+- I am not aware of any _New Tab Suspender_ equivalents, but it might be an
+  integrated feature on some Chromiums.
+- [Peertubeify doesn't support Chromium yet.](https://codeberg.org/Booteille/peertube-companion/issues/15)
 
 ## `disable-floc.json`
 
