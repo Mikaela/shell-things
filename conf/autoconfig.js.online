@@ -2,4 +2,7 @@
 // E.g. /usr/lib64/firefox/defaults/pref/autoconfig.js
 pref("autoadmin.global_config_url","https://gitea.blesmrt.net/mikaela/shell-things/raw/branch/master/conf/librewolf.overrides.cfg");
 pref("general.config.obscure_value", 0);
+pref("autoadmin.refresh_interval", 120);
+pref("autoadmin.offline_failover", true);
+pref("autoadmin.failover_to_cached", true);
 // vim: filetype=javascript
