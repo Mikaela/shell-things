@@ -13,6 +13,7 @@
   - [DuckDuckGo Privacy Essentials](#duckduckgo-privacy-essentials)
   - [NoScript](#noscript)
   - [Dark Reader](#dark-reader)
+  - [Indiewiki Buddy](#indiewiki-buddy)
   - [Privacy Manager](#privacy-manager)
   - [Fedora User Agent](#fedora-user-agent)
   - [Snowflake](#snowflake)
@@ -72,6 +73,16 @@ other people.
 - `eimadpbcbfnmbkopoojfekhnkhdbieeh`
 
 As playing around with these policies and constantly removing the profile directory doesn't help my migraine.
+
+### Indiewiki Buddy
+
+- `fkagelmloambgokoeokbpihmgpkbgbfm`
+
+I am spoilt by how nice Breezewiki is to use and wikis existing outside of
+Fandom is good to be reminded about occassionally. And I just happened to stay
+in not so hardened Chromium for a bit due to hardened Firefox being too much
+for my task and there is no reason occassionally needed Chromium shouldn't be
+tolerable for a few minutes.
 
 ### Privacy Manager
 

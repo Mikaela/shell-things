@@ -57,6 +57,10 @@
       "{b11bea1f-a888-4332-8d8a-cec2be7d24b9}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/torproject-snowflake/latest.xpi",
         "installation_mode": "normal_installed"
+      },
+      "{cb31ec5d-c49a-4e5a-b240-16c767444f62}": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/indie-wiki-buddy/latest.xpi",
+        "installation_mode": "normal_installed"
       }
     },
     "FirefoxHome": {
