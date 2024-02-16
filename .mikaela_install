@@ -18,6 +18,7 @@ cat .editorconfig >~/.editorconfig
 mkdir -p ~/.local/firefox/defaults/pref/
 cat conf/autoconfig.js >~/.local/firefox/defaults/pref/autoconfig.js
 cat conf/librewolf.overrides.cfg >~/.local/firefox/librewolf.overrides.cfg
+cat conf/librewolf.overrides.cfg >~/public_html/autoconfig.js
 mkdir -p ~/.librewolf/ ~/.var/app/io.gitlab.librewolf-community/.librewolf/
 cat conf/librewolf.overrides.cfg >~/.librewolf/librewolf.overrides.cfg
 cat conf/librewolf.overrides.cfg >~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg
