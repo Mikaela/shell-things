@@ -52,7 +52,7 @@
       },
       "{6a65273e-2b26-40f5-b66e-8eed317307da}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/new-tab-suspender/latest.xpi",
-        "installation_mode": "normal_installed"
+        "installation_mode": "force_installed"
       },
       "{73a6fe31-595d-460b-a920-fcc0f8843232}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/noscript/latest.xpi",
