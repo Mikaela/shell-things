@@ -59,7 +59,11 @@ To intentionally trigger it and what should be allowed in NoScript:
 
 - `bkdgflcldnnnapblkhphbgpggdiikppg`
 
-Installed by default so Google won't be the default search engine.
+Installed by default so Google won't be the default search engine, or that
+would be the idea, but Chromium doesn't seem to allow that.
+
+Additionally it's restricted only to `google.com` and `duckduckgo.com` domains
+so it won't interfere with other extensions.
 
 ### [NoScript](https://chrome.google.com/webstore/detail/doojmbjmlfjjnbmnoijecmcbfeoakpjm)
 
