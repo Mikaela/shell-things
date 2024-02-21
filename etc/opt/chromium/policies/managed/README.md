@@ -151,7 +151,8 @@ Incompatible with any actual DoH policy.
 
 ## `doh-dns0.json`
 
-Simply enables DNS-over-HTTPS with DNS0.eu
+Simply enables DNS-over-HTTPS with DNS0.eu. `automatic` means downgrade is
+allowed (the system resolver is encrypted), `secure` would lock it.
 
 ## `enable-ech-ocsp.json`
 
