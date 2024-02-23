@@ -34,7 +34,7 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/duckduckgo-for-firefox/latest.xpi",
         "installation_mode": "normal_installed"
       },
-      "{01175c8e-4506-4263-bad9-d3ddfd4f5a5f}": {
+      "peertube-companion@booteille": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/peertube-companion/latest.xpi",
         "installation_mode": "force_installed"
       },
