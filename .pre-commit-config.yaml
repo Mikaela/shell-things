@@ -58,6 +58,12 @@ repos:
           [--autofix, --no-ensure-ascii]
         #- id: requirements-txt-fixer
 
+  # Synchronize dependencies between this file and package managers
+  - repo: https://github.com/pre-commit/sync-pre-commit-deps
+    rev: v0.0.1
+    hooks:
+      - id: sync-pre-commit-deps
+
   # Checks the ci: section on top of the file
   - repo: https://github.com/pre-commit-ci/pre-commit-ci-config
     rev: v1.6.1
