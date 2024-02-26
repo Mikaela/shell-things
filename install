@@ -12,6 +12,7 @@ cat rc/zshrc >~/.zshrc
 cat rc/profile >~/.profile
 mkdir -p ~/.config/git
 cat conf/gitconfig >~/.config/git/config
+touch ~/.gitconfig
 rm ~/.gitconfig
 ln -sfv ~/.config/git/config ~/.gitconfig
 mkdir -p ~/.git-template
