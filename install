@@ -10,7 +10,10 @@ cat rc/bashrc >~/.bashrc
 cat conf/tmux.conf >~/.tmux.conf
 cat rc/zshrc >~/.zshrc
 cat rc/profile >~/.profile
-cat conf/gitconfig >~/.gitconfig
+mkdir -p ~/.config/git
+cat conf/gitconfig >~/.config/git/config
+rm ~/.gitconfig
+ln -sfv ~/.git/config ~/.gitconfig
 mkdir -p ~/.git-template
 cat rc/vimrc >~/.vimrc
 mkdir -p ~/.config/nvim/

@@ -1,16 +1,18 @@
 #!/usr/bin/env bash
-# Do not use this script unless you know what you are doing!
+# Do not use this script unless you know what you are doing! And even when you
+# are me and know what you are doing, this is a poor practice I really should
+# stop.
 set -x
 git verify-commit HEAD
 cat .mikaela/bash_aliases >~/.bash_aliases
 cat .mikaela/zsh_aliases >~/.zsh_aliases
-cat .mikaela/gitconfig >~/.gitconfig
 cat rc/xinitrc >~/.xinitrc
 mkdir -p ~/.gnupg
 cat .mikaela/gpg.conf >~/.gnupg/gpg.conf
 cat .mikaela/pastebinit.xml >~/.pastebinit.xml
 cat .mikaela/environment >~/.environment
-cat .mikaela/gitconfig >~/.gitconfig
+mkdir ~/.config/git
+cat .mikaela/gitconfig >~/.config/git/config
 mkdir -p ~/.ssh
 cat .mikaela/keys/authorized_keys >~/.ssh/authorized_keys
 cat etc/ssh/ssh_config >~/.ssh/config
