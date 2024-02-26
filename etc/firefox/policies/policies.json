@@ -26,6 +26,10 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/darkreader/latest.xpi",
         "installation_mode": "normal_installed"
       },
+      "jid0-3GUEt1r69sQNSrca5p8kx9Ezc3U@jetpack": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/terms-of-service-didnt-read/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
       "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
         "install_url": "https://www.eff.org/files/privacy-badger-latest.xpi",
         "installation_mode": "force_installed"

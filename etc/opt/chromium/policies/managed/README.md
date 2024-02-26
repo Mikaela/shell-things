@@ -15,6 +15,7 @@
   - [Dark Reader](#dark-reader)
   - [Indiewiki Buddy](#indiewiki-buddy)
   - [Privacy Manager](#privacy-manager)
+  - [Terms of Service; Didn't Read](#terms-of-service-didnt-read)
   - [Fedora User Agent](#fedora-user-agent)
   - [Snowflake](#snowflake)
   - [Bitwarden](#bitwarden)
@@ -95,6 +96,10 @@ tolerable for a few minutes.
 
 Quick browser options and data removal on _startup_. Maybe beneficial if
 incognito is disabled (which again is not great idea for quick guest access?)
+
+### [Terms of Service; Didn't Read](https://chrome.google.com/webstore/detail/hjdoplcnndgiblooccencgcggcoihigg)
+
+- `hjdoplcnndgiblooccencgcggcoihigg`
 
 ### [Fedora User Agent](https://chrome.google.com/webstore/detail/hojggiaghnldpcknpbciehjcaoafceil)
 
