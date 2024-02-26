@@ -13,7 +13,7 @@ cat rc/profile >~/.profile
 mkdir -p ~/.config/git
 cat conf/gitconfig >~/.config/git/config
 rm ~/.gitconfig
-ln -sfv ~/.git/config ~/.gitconfig
+ln -sfv ~/.config/git/config ~/.gitconfig
 mkdir -p ~/.git-template
 cat rc/vimrc >~/.vimrc
 mkdir -p ~/.config/nvim/
