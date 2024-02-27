@@ -58,10 +58,6 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/new-tab-suspender/latest.xpi",
         "installation_mode": "force_installed"
       },
-      "{73a6fe31-595d-460b-a920-fcc0f8843232}": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/noscript/latest.xpi",
-        "installation_mode": "normal_installed"
-      },
       "{b11bea1f-a888-4332-8d8a-cec2be7d24b9}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/torproject-snowflake/latest.xpi",
         "installation_mode": "force_installed"
