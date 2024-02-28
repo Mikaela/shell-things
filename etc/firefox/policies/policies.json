@@ -28,7 +28,7 @@
       },
       "adnauseam@rednoise.org": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/adnauseam/latest.xpi",
-        "installation_mode": "normal_installed"
+        "installation_mode": "force_installed"
       },
       "jid0-3GUEt1r69sQNSrca5p8kx9Ezc3U@jetpack": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/terms-of-service-didnt-read/latest.xpi",
@@ -36,7 +36,7 @@
       },
       "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
         "install_url": "https://www.eff.org/files/privacy-badger-latest.xpi",
-        "installation_mode": "force_installed"
+        "installation_mode": "normal_installed"
       },
       "jid1-ZAdIEUB7XOzOJw@jetpack": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/duckduckgo-for-firefox/latest.xpi",
