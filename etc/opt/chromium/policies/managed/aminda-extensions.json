@@ -65,6 +65,12 @@
       "toolbar_pin": "force_pinned",
       "update_url": "https://clients2.google.com/service/update2/crx"
     },
+    "mlojlfildnehdpnlmpkeiiglhhkofhpb": {
+      "installation_mode": "normal_installed",
+      "override_update_url": true,
+      "toolbar_pin": "force_pinned",
+      "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
+    },
     "nngceckbapebfimnlniiiahkandclblb": {
       "installation_mode": "normal_installed",
       "override_update_url": true,

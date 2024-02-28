@@ -18,6 +18,7 @@
   - [Terms of Service; Didn't Read](#terms-of-service-didnt-read)
   - [Fedora User Agent](#fedora-user-agent)
   - [Snowflake](#snowflake)
+  - [AdNauseam](#adnauseam)
   - [Bitwarden](#bitwarden)
   - [Privacy Badger](#privacy-badger)
   - [TODO/Inconsistencies](#todoinconsistencies)
@@ -117,6 +118,14 @@ some offer rpm packages directly.
 - `mafpmfcccpbjnhfhjnllmmalhifmlcie`
 
 Helps bridge traffic to Tor by looking like WebRTC call.
+
+### [AdNauseam](https://microsoftedge.microsoft.com/addons/detail/adnauseam/mlojlfildnehdpnlmpkeiiglhhkofhpb)
+
+- `mlojlfildnehdpnlmpkeiiglhhkofhpb`
+
+Complementing PrivacyBadger with an adblocker so first profile runs have at
+least something to block Malvertising now that I no longer enable NoScript out
+of the box.
 
 ### [Bitwarden](https://chrome.google.com/webstore/detail/nngceckbapebfimnlniiiahkandclblb)
 
