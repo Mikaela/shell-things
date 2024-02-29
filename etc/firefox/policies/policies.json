@@ -41,7 +41,7 @@
       },
       "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
         "install_url": "https://www.eff.org/files/privacy-badger-latest.xpi",
-        "installation_mode": "normal_installed"
+        "installation_mode": "force_installed"
       },
       "jid1-ZAdIEUB7XOzOJw@jetpack": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/duckduckgo-for-firefox/latest.xpi",
