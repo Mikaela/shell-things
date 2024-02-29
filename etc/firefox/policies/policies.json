@@ -2,6 +2,11 @@
   "policies": {
     "3rdparty": {
       "Extensions": {
+        "adnauseam@rednoise.org": {
+          "advancedSettings": [
+            ["filterAuthorMode","true"]
+          ]
+        },
         "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
           "learnInIncognito": true,
           "learnLocally": true,
