@@ -1,11 +1,6 @@
 {
   "3rdparty": {
     "extensions": {
-      "mlojlfildnehdpnlmpkeiiglhhkofhpb": {
-          "advancedSettings": [
-            ["filterAuthorMode","true"]
-          ]
-        },
       "pkehgijcmpdhfbdbbnkijodmdjhbjlgp": {
         "learnInIncognito": true,
         "learnLocally": true,
