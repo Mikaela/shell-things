@@ -54,7 +54,7 @@ repos:
       - id: pretty-format-json
         # Breaks AdNauseam/uBlock Origin rules as the browser interprets
         # values to be set for empty options.
-        exclude: ^etc\/firefox\/policies\/policies.json|etc\/opt\/chromium\/policies\/managed\/aminda-extensions.json$
+        #exclude: ^etc\/firefox\/policies\/policies.json|etc\/opt\/chromium\/policies\/managed\/aminda-extensions.json$
         args:
           # Remember also: --no-sort-keys
           # ASCII excludes the älphäbet amongst others
