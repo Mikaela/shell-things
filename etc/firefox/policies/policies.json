@@ -42,6 +42,10 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/duckduckgo-for-firefox/latest.xpi",
         "installation_mode": "normal_installed"
       },
+      "offline-qr-code@rugk.github.io": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/offline-qr-code-generator/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
       "peertube-companion@booteille": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/peertube-companion/latest.xpi",
         "installation_mode": "force_installed"
