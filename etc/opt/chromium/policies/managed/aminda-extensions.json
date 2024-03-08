@@ -44,6 +44,9 @@
     "fpnmgdkabkmnadcjpehmlllkndpkmiak": {
       "installation_mode": "normal_installed",
       "override_update_url": true,
+      "runtime_blocked_hosts": [
+        "<all_urls>"
+      ],
       "toolbar_pin": "force_pinned",
       "update_url": "https://clients2.google.com/service/update2/crx"
     },
