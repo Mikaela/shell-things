@@ -50,6 +50,10 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/peertube-companion/latest.xpi",
         "installation_mode": "force_installed"
       },
+      "wayback_machine@mozilla.org": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/wayback-machine_new/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
       "{3c078156-979c-498b-8990-85f7987dd929}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/sidebery/latest.xpi",
         "installation_mode": "force_installed"

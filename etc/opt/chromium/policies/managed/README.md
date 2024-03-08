@@ -14,6 +14,7 @@
   - [NoScript](#noscript)
   - [Dark Reader](#dark-reader)
   - [Indiewiki Buddy](#indiewiki-buddy)
+  - [Wayback Machine](#wayback-machine)
   - [Privacy Manager](#privacy-manager)
   - [Terms of Service; Didn't Read](#terms-of-service-didnt-read)
   - [Fedora User Agent](#fedora-user-agent)
@@ -95,6 +96,12 @@ Fandom is good to be reminded about occassionally. And I just happened to stay
 in not so hardened Chromium for a bit due to hardened Firefox being too much
 for my task and there is no reason occassionally needed Chromium shouldn't be
 tolerable for a few minutes.
+
+### [Wayback Machine](https://chrome.google.com/webstore/detail/fpnmgdkabkmnadcjpehmlllkndpkmiak)
+
+- `fpnmgdkabkmnadcjpehmlllkndpkmiak`
+
+[web.archive.org](https://web.archive.org) saving and discovering.
 
 ### [Privacy Manager](https://chrome.google.com/webstore/detail/giccehglhacakcfemddmfhdkahamfcmd)
 
