@@ -17,6 +17,7 @@
   - [Privacy Manager](#privacy-manager)
   - [Terms of Service; Didn't Read](#terms-of-service-didnt-read)
   - [Fedora User Agent](#fedora-user-agent)
+  - [Bias Finder](#bias-finder)
   - [Snowflake](#snowflake)
   - [AdNauseam](#adnauseam)
   - [Bitwarden](#bitwarden)
@@ -112,6 +113,10 @@ incognito is disabled (which again is not great idea for quick guest access?)
 
 Communicates websites that Ubuntu isn't the only Linux distribution and makes
 some offer rpm packages directly.
+
+### [Bias Finder](https://chromewebstore.google.com/detail/jojjlkfeofgcjeanbpghcapjcccbakop)
+
+Political bias of English language media sites powered by allsides.com
 
 ### [Snowflake](https://chrome.google.com/webstore/detail/mafpmfcccpbjnhfhjnllmmalhifmlcie)
 
