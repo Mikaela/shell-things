@@ -22,6 +22,7 @@
   - [Snowflake](#snowflake)
   - [AdNauseam](#adnauseam)
   - [Bitwarden](#bitwarden)
+  - [Blank New Tab](#blank-new-tab)
   - [Privacy Badger](#privacy-badger)
   - [TODO/Inconsistencies](#todoinconsistencies)
 - [`disable-floc.json`](#disable-flocjson)
@@ -144,6 +145,12 @@ of the box.
 - `nngceckbapebfimnlniiiahkandclblb`
 
 The password manager of my choice.
+
+### [Blank New Tab](https://microsoftedge.microsoft.com/addons/detail/blank-new-tab/pfbmpcgfjncjakgfpddijlbdpjnhnfem)
+
+- `pfbmpcgfjncjakgfpddijlbdpjnhnfem`
+
+Replaces new tab with `about:blank` bypassing excess Microsoft.
 
 ### [Privacy Badger](https://chrome.google.com/webstore/detail/pkehgijcmpdhfbdbbnkijodmdjhbjlgp)
 
