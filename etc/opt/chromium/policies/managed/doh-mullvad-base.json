@@ -1,0 +1,4 @@
+{
+  "DnsOverHttpsMode": "automatic",
+  "DnsOverHttpsTemplates": "https://base.dns.mullvad.net/dns-query"
+}
