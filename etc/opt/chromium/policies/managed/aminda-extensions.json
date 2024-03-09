@@ -19,9 +19,9 @@
       "installation_mode": "normal_installed",
       "override_update_url": true,
       "runtime_allowed_hosts": [
-        "*://*.duckduckgo.com",
-        "*://duckdukgo.com",
-        "*://google.com"
+        "*://*.duckduckgo.com/*",
+        "*://*.google.com",
+        "*://*.bing.com/*"
       ],
       "runtime_blocked_hosts": [
         "<all_urls>"
