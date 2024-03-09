@@ -50,6 +50,14 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/peertube-companion/latest.xpi",
         "installation_mode": "force_installed"
       },
+      "uBlock0@raymondhill.net": {
+        "blocked_install_message": "uBlock Origin on integroitu AdNauseamiin, joka on forkki siitä.",
+        "installation_mode": "blocked"
+      },
+      "uMatrix@raymondhill.net": {
+        "blocked_install_message": "uMatrixin kehitys on päättynyt ja samat ominaisuudet löytyvät AdNauseamista (ja uBlock Originista).",
+        "installation_mode": "blocked"
+      },
       "wayback_machine@mozilla.org": {
         "blocked_install_message": "https://bugzilla.mozilla.org/show_bug.cgi?id=1497075 hermostuttaa Amindaa.",
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/wayback-machine_new/latest.xpi",
