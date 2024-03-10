@@ -48,6 +48,9 @@
     "fpnmgdkabkmnadcjpehmlllkndpkmiak": {
       "installation_mode": "normal_installed",
       "override_update_url": true,
+      "runtime_allowed_hosts": [
+        "*://*.archive.org/*"
+      ],
       "runtime_blocked_hosts": [
         "<all_urls>"
       ],
