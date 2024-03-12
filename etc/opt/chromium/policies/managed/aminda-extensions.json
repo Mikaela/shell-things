@@ -2,9 +2,13 @@
   "3rdparty": {
     "extensions": {
       "pkehgijcmpdhfbdbbnkijodmdjhbjlgp": {
+        "checkForDNTPolicy": true,
         "learnInIncognito": true,
         "learnLocally": true,
-        "showIntroPage": false
+        "sendDNTSignal": true,
+        "showCounter": true,
+        "showIntroPage": false,
+        "socialWidgetReplacementEnabled": true
       }
     }
   },
