@@ -3,6 +3,12 @@
     "extensions": {
       "pkehgijcmpdhfbdbbnkijodmdjhbjlgp": {
         "checkForDNTPolicy": true,
+        "disabledSites": [
+          "app.element.io",
+          "staging.element.io",
+          "develop.element.io",
+          "chat.pikaviestin.fi"
+        ],
         "learnInIncognito": true,
         "learnLocally": true,
         "sendDNTSignal": true,
