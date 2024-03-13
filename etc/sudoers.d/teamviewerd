@@ -1,0 +1,8 @@
+# Fedora
+%wheel ALL=NOPASSWD: /bin/systemctl stop teamviewerd.service
+%wheel ALL=NOPASSWD: /bin/systemctl start teamviewerd.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart teamviewerd.service
+# Debian
+%sudo ALL=NOPASSWD: /bin/systemctl stop teamviewerd.service
+%sudo ALL=NOPASSWD: /bin/systemctl start teamviewerd.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart teamviewerd.service
