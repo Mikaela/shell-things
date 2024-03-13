@@ -18,6 +18,7 @@
   - [Privacy Manager](#privacy-manager)
   - [Terms of Service; Didn't Read](#terms-of-service-didnt-read)
   - [Fedora User Agent](#fedora-user-agent)
+  - [Chrome Remote Desktop](#chrome-remote-desktop)
   - [Bias Finder](#bias-finder)
   - [Snowflake](#snowflake)
   - [AdNauseam](#adnauseam)
@@ -121,6 +122,17 @@ incognito is disabled (which again is not great idea for quick guest access?)
 
 Communicates websites that Ubuntu isn't the only Linux distribution and makes
 some offer rpm packages directly.
+
+### [Chrome Remote Desktop](https://chrome.google.com/webstore/detail/inomeogfingihgjfjlpeplalcfajhgai)
+
+- `inomeogfingihgjfjlpeplalcfajhgai`
+
+Remote support integrated to Chrome.
+
+The additional component is:
+
+- Debian: `https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb`
+- Others: _unsupported_
 
 ### [Bias Finder](https://chromewebstore.google.com/detail/jojjlkfeofgcjeanbpghcapjcccbakop)
 
