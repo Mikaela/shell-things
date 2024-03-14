@@ -119,6 +119,12 @@
       "blocked_install_message": "uBlock Origin on integroitu AdNauseamiin, joka on forkki siitä.",
       "installation_mode": "blocked"
     },
+    "palihjnakafgffnompkdfgbgdbcagbko": {
+      "installation_mode": "normal_installed",
+      "override_update_url": true,
+      "toolbar_pin": "default_unpinned",
+      "update_url": "https://clients2.google.com/service/update2/crx"
+    },
     "pfbmpcgfjncjakgfpddijlbdpjnhnfem": {
       "installation_mode": "force_installed",
       "override_update_url": true,

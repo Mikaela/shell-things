@@ -23,6 +23,7 @@
   - [Snowflake](#snowflake)
   - [AdNauseam](#adnauseam)
   - [Bitwarden](#bitwarden)
+  - [UpdateSWH](#updateswh)
   - [Blank New Tab](#blank-new-tab)
   - [Privacy Badger](#privacy-badger)
   - [TODO/Inconsistencies](#todoinconsistencies)
@@ -157,6 +158,14 @@ of the box.
 - `nngceckbapebfimnlniiiahkandclblb`
 
 The password manager of my choice.
+
+### [UpdateSWH](palihjnakafgffnompkdfgbgdbcagbko)
+
+- `palihjnakafgffnompkdfgbgdbcagbko`
+
+Adds a floating coloured button to source code forges reflecting the status
+of it being in Software Heritage Archive and allows quick archiving requests
+to be made.
 
 ### [Blank New Tab](https://microsoftedge.microsoft.com/addons/detail/blank-new-tab/pfbmpcgfjncjakgfpddijlbdpjnhnfem)
 
