@@ -139,6 +139,14 @@
           "Name": "DuckDuckGo Start",
           "PostData": "q={searchTerms}",
           "URLTemplate": "https://start.duckduckgo.com/?q={searchTerms}"
+        },
+        {
+          "Alias": "b",
+          "Description": "Brave Search",
+          "Method": "GET",
+          "Name": "Brave Search",
+          "PostData": "q={searchTerms}",
+          "URLTemplate": "https://search.brave.com/search?q={searchTerms}"
         }
       ],
       "Default": "DuckDuckGo Start"
