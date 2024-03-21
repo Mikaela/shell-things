@@ -147,6 +147,14 @@
           "Name": "Brave Search",
           "PostData": "q={searchTerms}",
           "URLTemplate": "https://search.brave.com/search?q={searchTerms}"
+        },
+        {
+          "Alias": "bg",
+          "Description": "Brave Search Goggles",
+          "Method": "GET",
+          "Name": "Brave Search Goggles",
+          "PostData": "q={searchTerms}",
+          "URLTemplate": "https://search.brave.com/goggles?q={searchTerms}"
         }
       ],
       "Default": "DuckDuckGo Start"
