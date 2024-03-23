@@ -1,0 +1,8 @@
+{
+  "DefaultSearchProviderEnabled": true,
+  "DefaultSearchProviderKeyword": "d",
+  "DefaultSearchProviderName": "DuckDuckGo",
+  "DefaultSearchProviderNewTabURL": "",
+  "DefaultSearchProviderSearchURL": "https://start.duckduckgo.com/?q={searchTerms}",
+  "DefaultSearchProviderSuggestURL": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list"
+}
