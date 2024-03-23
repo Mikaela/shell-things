@@ -1,0 +1,8 @@
+{
+  "DefaultSearchProviderEnabled": true,
+  "DefaultSearchProviderKeyword": "b",
+  "DefaultSearchProviderName": "Brave",
+  "DefaultSearchProviderNewTabURL": "",
+  "DefaultSearchProviderSearchURL": "https://search.brave.com/search?q={searchTerms}",
+  "DefaultSearchProviderSuggestURL": "https://search.brave.com/api/suggest?q={searchTerms}"
+}
