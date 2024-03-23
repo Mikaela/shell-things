@@ -27,14 +27,18 @@
   - [Blank New Tab](#blank-new-tab)
   - [Privacy Badger](#privacy-badger)
   - [TODO/Inconsistencies](#todoinconsistencies)
+- [`brave-search.json`](#brave-searchjson)
 - [`disable-floc.json`](#disable-flocjson)
 - [`disable-incognito.json`](#disable-incognitojson)
 - [`doh-automatic.json`](#doh-automaticjson)
 - [`doh-dns0.json`](#doh-dns0json)
+- [`doh-mullvad-base.json`](#doh-mullvad-basejson)
+- [`duckduckgo.json`](#duckduckgojson)
 - [`enable-ech-ocsp.json`](#enable-ech-ocspjson)
-- [`enable-home-labs.json`](#enable-home-labsjson)
+- [`enable-home.json`](#enable-homejson)
 - [`force-incognito.json`](#force-incognitojson)
 - [`https-everywhere.json`](#https-everywherejson)
+- [`README.md`](#readmemd)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -191,6 +195,10 @@ See also:
   integrated feature on some Chromiums.
 - [Peertubeify doesn't support Chromium yet.](https://codeberg.org/Booteille/peertube-companion/issues/15)
 
+## `brave-search.json`
+
+Sets/forces the use of search.brave.com as a search engine.
+
 ## `disable-floc.json`
 
 Disables floc or ad topics that are against privacy.
@@ -212,13 +220,23 @@ Incompatible with any actual DoH policy.
 Simply enables DNS-over-HTTPS with DNS0.eu. `automatic` means downgrade is
 allowed (the system resolver is encrypted), `secure` would lock it.
 
+## `doh-mullvad-base.json`
+
+Enables DNS-over-HTTPS with Mullvad Base, which features ad, malware & tracker blocking.
+
+- https://mullvad.net/en/help/dns-over-https-and-dns-over-tls#specifications
+
+## `duckduckgo.json`
+
+Sets/forces the use of start.duckduckgo.com as a search engine.
+
 ## `enable-ech-ocsp.json`
 
 Enables encrypted client hello and OCSP (or CRL?) checks.
 
-## `enable-home-labs.json`
+## `enable-home.json`
 
-Enables home button and access to labs by default.
+Enables home button by default.
 
 ## `force-incognito.json`
 
@@ -227,3 +245,7 @@ Forces incognito mode. I don't recommend this.
 ## `https-everywhere.json`
 
 Enforces https and attempts to upgrade http to https.
+
+## `README.md`
+
+You are reading this file, are you not?
