@@ -25,20 +25,6 @@
       "toolbar_pin": "default_unpinned",
       "update_url": "https://clients2.google.com/service/update2/crx"
     },
-    "bkdgflcldnnnapblkhphbgpggdiikppg": {
-      "installation_mode": "normal_installed",
-      "override_update_url": true,
-      "runtime_allowed_hosts": [
-        "*://*.duckduckgo.com",
-        "*://*.google.com",
-        "*://*.bing.com"
-      ],
-      "runtime_blocked_hosts": [
-        "<all_urls>"
-      ],
-      "toolbar_pin": "default_unpinned",
-      "update_url": "https://clients2.google.com/service/update2/crx"
-    },
     "cjpalhdlnbpafiamejdnhcphjbkeiagm": {
       "blocked_install_message": "uBlock Origin on integroitu AdNauseamiin, joka on forkki siitä.",
       "installation_mode": "blocked"

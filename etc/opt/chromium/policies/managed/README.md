@@ -10,7 +10,6 @@
 
 - [`aminda-extensions.json`](#aminda-extensionsjson)
   - [Silk - Privacy Pass Client for the browser](#silk---privacy-pass-client-for-the-browser)
-  - [DuckDuckGo Privacy Essentials](#duckduckgo-privacy-essentials)
   - [NoScript](#noscript)
   - [Dark Reader](#dark-reader)
   - [Indiewiki Buddy](#indiewiki-buddy)
@@ -64,16 +63,6 @@ To intentionally trigger it and what should be allowed in NoScript:
 
 - https://captcha.website
 - https://issuance.privacypass.cloudflare.com
-
-### [DuckDuckGo Privacy Essentials](https://chrome.google.com/webstore/detail/bkdgflcldnnnapblkhphbgpggdiikppg)
-
-- `bkdgflcldnnnapblkhphbgpggdiikppg`
-
-Installed by default so Google won't be the default search engine, or that
-would be the idea, but Chromium doesn't seem to allow that.
-
-Additionally it's restricted only to `google.com` and `duckduckgo.com` domains
-so it won't interfere with other extensions.
 
 ### [NoScript](https://chrome.google.com/webstore/detail/doojmbjmlfjjnbmnoijecmcbfeoakpjm)
 
