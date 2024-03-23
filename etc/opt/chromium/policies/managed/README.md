@@ -24,7 +24,6 @@
   - [AdNauseam](#adnauseam)
   - [Bitwarden](#bitwarden)
   - [UpdateSWH](#updateswh)
-  - [Blank New Tab](#blank-new-tab)
   - [Privacy Badger](#privacy-badger)
   - [TODO/Inconsistencies](#todoinconsistencies)
 - [`brave-search.json`](#brave-searchjson)
@@ -170,12 +169,6 @@ The password manager of my choice.
 Adds a floating coloured button to source code forges reflecting the status
 of it being in Software Heritage Archive and allows quick archiving requests
 to be made.
-
-### [Blank New Tab](https://microsoftedge.microsoft.com/addons/detail/blank-new-tab/pfbmpcgfjncjakgfpddijlbdpjnhnfem)
-
-- `pfbmpcgfjncjakgfpddijlbdpjnhnfem`
-
-Replaces new tab with `about:blank` bypassing excess Microsoft.
 
 ### [Privacy Badger](https://chrome.google.com/webstore/detail/pkehgijcmpdhfbdbbnkijodmdjhbjlgp)
 
