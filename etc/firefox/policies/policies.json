@@ -157,7 +157,7 @@
           "URLTemplate": "https://search.brave.com/goggles?q={searchTerms}"
         }
       ],
-      "Default": "DuckDuckGo Start"
+      "Default": "Brave Search"
     },
     "SearchSuggestEnabled": false
   }
