@@ -50,3 +50,6 @@ See also:
 
 But who cares? Anyway thus DuckDuckGo extension is installed by default so
 when testing this policy I won't have to see Google.
+
+Additionally it's a lie since at least Nightly reads it too without
+complaining.
