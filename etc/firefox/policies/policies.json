@@ -125,7 +125,7 @@
     "SearchEngines": {
       "Add": [
         {
-          "Alias": "",
+          "Alias": "dl",
           "Description": "Minimal, ad-free version of DuckDuckGo",
           "Method": "POST",
           "Name": "DuckDuckGo Lite",
@@ -133,7 +133,7 @@
           "URLTemplate": "https://duckduckgo.com/lite/?q={searchTerms}"
         },
         {
-          "Alias": "",
+          "Alias": "d",
           "Description": "DuckDuckGo Start page version",
           "Method": "GET",
           "Name": "DuckDuckGo Start",
