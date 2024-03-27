@@ -25,15 +25,12 @@
   - [UpdateSWH](#updateswh)
   - [Privacy Badger](#privacy-badger)
   - [TODO/Inconsistencies](#todoinconsistencies)
-- [`brave-search.json`](#brave-searchjson)
 - [`disable-floc.json`](#disable-flocjson)
 - [`disable-incognito.json`](#disable-incognitojson)
 - [`doh-automatic.json`](#doh-automaticjson)
 - [`doh-dns0.json`](#doh-dns0json)
 - [`doh-mullvad-base.json`](#doh-mullvad-basejson)
-- [`duckduckgo.json`](#duckduckgojson)
 - [`enable-ech-ocsp.json`](#enable-ech-ocspjson)
-- [`enable-home.json`](#enable-homejson)
 - [`force-incognito.json`](#force-incognitojson)
 - [`https-everywhere.json`](#https-everywherejson)
 - [`README.md`](#readmemd)
@@ -177,10 +174,6 @@ See also:
   integrated feature on some Chromiums.
 - [Peertubeify doesn't support Chromium yet.](https://codeberg.org/Booteille/peertube-companion/issues/15)
 
-## `brave-search.json`
-
-Sets/forces the use of search.brave.com as a search engine.
-
 ## `disable-floc.json`
 
 Disables floc or ad topics that are against privacy.
@@ -208,17 +201,9 @@ Enables DNS-over-HTTPS with Mullvad Base, which features ad, malware & tracker b
 
 - https://mullvad.net/en/help/dns-over-https-and-dns-over-tls#specifications
 
-## `duckduckgo.json`
-
-Sets/forces the use of start.duckduckgo.com as a search engine.
-
 ## `enable-ech-ocsp.json`
 
 Enables encrypted client hello and OCSP (or CRL?) checks.
-
-## `enable-home.json`
-
-Enables home button by default.
 
 ## `force-incognito.json`
 
