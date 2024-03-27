@@ -12,6 +12,7 @@ ln -siv /etc/firefox /etc/firefox-esr
 
 # Chromium
 mkdir -p /etc/opt/chromium/policies/managed
+mkdir -p /etc/opt/chromium/policies/recommended
 
 # Brave
 ln -siv /etc/opt/chromium /etc/brave
