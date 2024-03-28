@@ -31,6 +31,7 @@
 - [`doh-dns0.json`](#doh-dns0json)
 - [`doh-mullvad-base.json`](#doh-mullvad-basejson)
 - [`enable-ech-ocsp.json`](#enable-ech-ocspjson)
+- [`fix-edge-search.json`](#fix-edge-searchjson)
 - [`force-incognito.json`](#force-incognitojson)
 - [`https-everywhere.json`](#https-everywherejson)
 - [`README.md`](#readmemd)
@@ -204,6 +205,12 @@ Enables DNS-over-HTTPS with Mullvad Base, which features ad, malware & tracker b
 ## `enable-ech-ocsp.json`
 
 Enables encrypted client hello and OCSP (or CRL?) checks.
+
+## `fix-edge-search.json`
+
+Tells Microsoft Edge to redirect queries from new tab search box to URL bar
+effectively forcing it to respect user configured search engine instead of
+stealthily sending those queries to Bing.
 
 ## `force-incognito.json`
 
