@@ -87,7 +87,7 @@
       },
       "{48748554-4c01-49e8-94af-79662bf34d50}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-pass/latest.xpi",
-        "installation_mode": "normal_installed"
+        "installation_mode": "force_installed"
       },
       "{6a65273e-2b26-40f5-b66e-8eed317307da}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/new-tab-suspender/latest.xpi",
