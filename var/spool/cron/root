@@ -6,4 +6,8 @@
 @reboot /usr/sbin/duperemove -rdhq --hashfile=/root/flatpak.hash /var/lib/flatpak
 @reboot /usr/sbin/duperemove -rdhq --hashfile=/root/snap.hash /var/lib/snapd
 
+# Another attempt at ensuring Yggdrasil works with nordvpnd
+@reboot /usr/bin/sleep 300 && /usr/sbin/sysctl net.ipv6.conf.all.disable_ipv6=0
+@reboot /usr/bin/sleep 315 && /usr/bin/systemctl systemctl restart yggdrasil.service --quiet
+
 # vim: filetype=crontab
