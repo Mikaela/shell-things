@@ -122,6 +122,11 @@
       "SponsoredSuggestions": false,
       "WebSuggestions": false
     },
+    "Homepage": {
+      "Locked": false,
+      "StartPage": "previous-session",
+      "URL": "about:mozilla"
+    },
     "SearchEngines": {
       "Add": [
         {
