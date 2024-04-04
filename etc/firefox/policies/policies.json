@@ -93,6 +93,10 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/new-tab-suspender/latest.xpi",
         "installation_mode": "force_installed"
       },
+      "{759dbb01-b646-4327-bf9e-69ca2543ef8d}": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/opendyslexic-for-firefox/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
       "{9a43830f-5a27-4114-8f98-aa191ebde62e}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/bias-finder/latest.xpi",
         "installation_mode": "normal_installed"
