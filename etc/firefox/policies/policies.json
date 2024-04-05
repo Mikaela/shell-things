@@ -139,6 +139,7 @@
           "Method": "POST",
           "Name": "DuckDuckGo Lite",
           "PostData": "q={searchTerms}",
+          "SuggestURLTemplate": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
           "URLTemplate": "https://duckduckgo.com/lite/?q={searchTerms}"
         },
         {
@@ -147,6 +148,7 @@
           "Method": "GET",
           "Name": "DuckDuckGo Start",
           "PostData": "q={searchTerms}",
+          "SuggestURLTemplate": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
           "URLTemplate": "https://start.duckduckgo.com/?q={searchTerms}"
         },
         {
@@ -155,6 +157,7 @@
           "Method": "GET",
           "Name": "Brave Search",
           "PostData": "q={searchTerms}",
+          "SuggestURLTemplate": "https://search.brave.com/api/suggest?q={searchTerms}",
           "URLTemplate": "https://search.brave.com/search?q={searchTerms}"
         },
         {
@@ -163,6 +166,7 @@
           "Method": "GET",
           "Name": "Brave Search Goggles",
           "PostData": "q={searchTerms}",
+          "SuggestURLTemplate": "https://search.brave.com/api/suggest?q={searchTerms}",
           "URLTemplate": "https://search.brave.com/goggles?q={searchTerms}"
         }
       ],
