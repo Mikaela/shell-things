@@ -22,6 +22,7 @@
   - [Bias Finder](#bias-finder)
   - [Snowflake](#snowflake)
   - [AdNauseam](#adnauseam)
+  - [IPFS Companion](#ipfs-companion)
   - [Bitwarden](#bitwarden)
   - [UpdateSWH](#updateswh)
   - [Privacy Badger](#privacy-badger)
@@ -152,6 +153,12 @@ Helps bridge traffic to Tor by looking like WebRTC call.
 Complementing PrivacyBadger with an adblocker so first profile runs have at
 least something to block Malvertising now that I no longer enable NoScript out
 of the box.
+
+### [IPFS Companion](https://chromewebstore.google.com/detail/nibjojkomfdiaoajekhjakgkdhaomnch?pli=1)
+
+- `nibjojkomfdiaoajekhjakgkdhaomnch`
+
+IPFS integration for web browsers.
 
 ### [Bitwarden](https://chrome.google.com/webstore/detail/nngceckbapebfimnlniiiahkandclblb)
 
