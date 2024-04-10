@@ -26,11 +26,13 @@
   - [UpdateSWH](#updateswh)
   - [Privacy Badger](#privacy-badger)
   - [TODO/Inconsistencies](#todoinconsistencies)
+- [`disable-brave-vpn.json`](#disable-brave-vpnjson)
 - [`disable-floc.json`](#disable-flocjson)
 - [`disable-incognito.json`](#disable-incognitojson)
 - [`doh-automatic.json`](#doh-automaticjson)
 - [`doh-dns0.json`](#doh-dns0json)
 - [`doh-mullvad-base.json`](#doh-mullvad-basejson)
+- [`doh-quad9-ecs.json`](#doh-quad9-ecsjson)
 - [`enable-ech-ocsp.json`](#enable-ech-ocspjson)
 - [`fix-edge-search.json`](#fix-edge-searchjson)
 - [`force-incognito.json`](#force-incognitojson)
@@ -183,6 +185,11 @@ See also:
   integrated feature on some Chromiums.
 - [Peertubeify doesn't support Chromium yet.](https://codeberg.org/Booteille/peertube-companion/issues/15)
 
+## `disable-brave-vpn.json`
+
+Disables Brave VPN, which is the most annoying feature that has group policy
+that I can see.
+
 ## `disable-floc.json`
 
 Disables floc or ad topics that are against privacy.
@@ -209,6 +216,10 @@ allowed (the system resolver is encrypted), `secure` would lock it.
 Enables DNS-over-HTTPS with Mullvad Base, which features ad, malware & tracker blocking.
 
 - https://mullvad.net/en/help/dns-over-https-and-dns-over-tls#specifications
+
+## `doh-quad9-ecs.json`
+
+Enables DNS over HTTPS with Quad9 ECS enabled server.
 
 ## `enable-ech-ocsp.json`
 
