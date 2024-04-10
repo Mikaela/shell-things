@@ -15,7 +15,7 @@ default_language_version:
 repos:
   # The repo from `pre-commit sample-config`
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v4.6.0
     hooks:
       # `pre-commit sample-config` puts these four on top:
       # trailing-whitespace, end-of-file-fixer, check-yaml,
@@ -122,7 +122,7 @@ repos:
 
   # Easierish licensing when attempting reuse compliancy
   - repo: https://github.com/fsfe/reuse-tool
-    rev: v3.0.1
+    rev: v3.0.2
     hooks:
       - id: reuse
 
