@@ -1,0 +1,4 @@
+{
+  "DnsOverHttpsMode": "automatic",
+  "DnsOverHttpsTemplates": "https://dns11.quad9.net/dns-query"
+}
