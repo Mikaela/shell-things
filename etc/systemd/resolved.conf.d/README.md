@@ -11,11 +11,12 @@ sudo systemctl restart systemd-resolved
 
 ## Files explained
 
-- `00-defaults.conf` - configuration not touching resolvers. Enables DNSSEC
-  (regardless of systemd-resolved not handling it properly), enables
-  opportunistic DoT and caching.
+- `00-defaults.conf` - configuration that should be used everywhere.
+  Enables DNSSEC (regardless of systemd-resolved not handling it properly),
+  enables opportunistic DoT, caching and local DNS servers.
 - `dot-*.conf` - configuration to use the DNS provider with DNS-over-TLS. If
-  captive portals are a concern, `DNSOverTLS=no`.
+  captive portals are a concern, `DNSOverTLS=no`. At least one of these
+  should be used in addition to `00-defaults.conf`
 - `README.md` - you are reading it right now.
 
 ## General commentary
