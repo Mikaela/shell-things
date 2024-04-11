@@ -1,5 +1,20 @@
 # systemd-resolved additional config files
 
+<!-- editorconfig-checker-disable -->
+<!-- prettier-ignore-start -->
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Quickstart](#quickstart)
+- [Files explained](#files-explained)
+- [General commentary](#general-commentary)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<!-- prettier-ignore-end -->
+<!-- editorconfig-checker-enable -->
+
 ## Quickstart
 
 ```bash
