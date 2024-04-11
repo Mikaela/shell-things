@@ -17,6 +17,7 @@ sudo systemctl restart systemd-resolved
 - `dot-*.conf` - configuration to use the DNS provider with DNS-over-TLS. If
   captive portals are a concern, `DNSOverTLS=opportunistic`. At least one of these
   should be used in addition to `00-defaults.conf`
+- `nordvpn.conf` - includes NordVPN's resolver addresses for hosts using it
 - `README.md` - you are reading it right now.
 
 ## General commentary
