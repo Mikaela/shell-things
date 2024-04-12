@@ -7,13 +7,19 @@ Type=wlan
 [Link]
 # Takes "ipv4", "ipv6", "both", or "any" (default).
 RequiredFamilyForOnline=both
-# Always set administrative state to up. Implies RequiredForOnline=yes
+# Always set administrative state to up. Implies RequiredForOnline=true
 ActivationPolicy=always-up
 # If something else (like iwd EnableNetworkConfiguration=true) manages network,
 # uncomment
 #Unmanaged=true
+# Required for mDNS
+Multicast=true
 
 [Network]
-DHCP=yes
+DHCP=true
 IPv6PrivacyExtensions=true
 IPv6LinkLocalAddressGenerationMode=stable-privacy
+# Enable mDNS/.local for systemd-resolved
+MulticastDNS=true
+# Windows
+LLMNR=true
