@@ -1,3 +1,6 @@
+# Ensure /etc/sysctl.d/ gets read
+@reboot /usr/sbin/sysctl -p --system >/dev/null 2>&1
+
 # 3rd party Xbox controller initialization. See Mikaela/gist/gayming/
 @reboot /root/fixcontroller.py
 
@@ -7,7 +10,7 @@
 @reboot /usr/sbin/duperemove -rdhq --hashfile=/root/snap.hash /var/lib/snapd
 
 # Another attempt at ensuring Yggdrasil works with nordvpnd
-@reboot /usr/bin/sleep 300 && /usr/sbin/sysctl net.ipv6.conf.all.disable_ipv6=0
-@reboot /usr/bin/sleep 315 && /usr/bin/systemctl systemctl restart yggdrasil.service --quiet
+@reboot /usr/bin/sleep 300 && /usr/sbin/sysctl net.ipv6.conf.all.disable_ipv6=0 >/dev/null 2>&1
+@reboot /usr/bin/sleep 315 && /usr/bin/systemctl restart yggdrasil.service --quiet
 
 # vim: filetype=crontab
