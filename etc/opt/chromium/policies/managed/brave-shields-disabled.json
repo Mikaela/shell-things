@@ -1,0 +1,11 @@
+{
+  "BraveShieldsDisabledForUrls": [
+    "https://app.element.io",
+    "https://staging.element.io",
+    "https://develop.element.io",
+    "https://chat.pikaviestin.fi",
+    "https://webchat.disroot.org",
+    "https://learn.microsoft.com",
+    "https://teams.microsoft.com"
+  ]
+}
