@@ -8,7 +8,10 @@
             "app.element.io",
             "staging.element.io",
             "develop.element.io",
-            "chat.pikaviestin.fi"
+            "chat.pikaviestin.fi",
+            "webchat.disroot.org",
+            "learn.microsoft.com",
+            "teams.microsoft.com"
           ],
           "learnInIncognito": true,
           "learnLocally": true,
