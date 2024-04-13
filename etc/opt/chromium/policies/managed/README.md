@@ -30,8 +30,9 @@
 - [`disable-brave-vpn.json`](#disable-brave-vpnjson)
 - [`disable-floc.json`](#disable-flocjson)
 - [`disable-incognito.json`](#disable-incognitojson)
-- [`doh-automatic.json`](#doh-automaticjson)
+- [`doh-allowed.json`](#doh-allowedjson)
 - [`doh-dns0.json`](#doh-dns0json)
+- [`doh-forced.json`](#doh-forcedjson)
 - [`doh-mullvad-base.json`](#doh-mullvad-basejson)
 - [`doh-quad9-ecs.json`](#doh-quad9-ecsjson)
 - [`enable-ech-ocsp.json`](#enable-ech-ocspjson)
@@ -207,16 +208,22 @@ Disables floc or ad topics that are against privacy.
 
 Disables incognito mode. I don't recommend this.
 
-## `doh-automatic.json`
+## `doh-allowed.json`
 
-If no DNS over HTTPS policy is used, this unlocks the setting. Enabling managed policies disable it by default.
+If no DNS over HTTPS policy is used, this unlocks the setting while still allowing downgrade to system DNS
+(think of DoT opportunistic mode, kind of?). Enabling managed policies disable it by default.
 
-Incompatible with any actual DoH policy.
+Incompatible with `doh-forced.json`. This must be used together with any other `doh-*.json` file, but only one of them.
 
 ## `doh-dns0.json`
 
-Simply enables DNS-over-HTTPS with DNS0.eu. `automatic` means downgrade is
-allowed (the system resolver is encrypted), `secure` would lock it.
+Simply enables DNS-over-HTTPS with DNS0.eu.
+
+## `doh-forced.json`
+
+Enforces use of DNS-over-HTTPS disabling the downgrade.
+
+Incompatible with `doh-allowed.json`. Use this together with any other `doh-*.json` file, but only one of them.
 
 ## `doh-mullvad-base.json`
 
