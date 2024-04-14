@@ -19,6 +19,8 @@ DNS0	https://dns0.eu	dns0.eu	2a0f:fc80::	2a0f:fc81::	193.110.81.0	185.253.5.0	ht
 DNS0 Kids	https://kids.dns0.eu	kids.dns0.eu	2a0f:fc80::1	2a0f:fc81::1	193.110.81.1	185.253.5.1	https://www.dns0.eu/kids.dns0.eu.mobileconfig	private	https://www.dns0.eu/privacy
 DNS0 Open (unfiltered, discouraged)	https://open.dns0.eu	open.dns0.eu	2a0f:fc80::ffff	2a0f:fc81::ffff	193.110.81.254	185.253.5.254	https://dns0.eu/open.dns0.eu.mobileconfig	private	https://www.dns0.eu/privacy
 DNS0 Zero	https://zero.dns0.eu	zero.dns0.eu	2a0f:fc80::9	2a0f:fc81::9	193.110.81.9	185.253.5.9	https://www.dns0.eu/zero.dns0.eu.mobileconfig	private	https://www.dns0.eu/privacy
+Google DNS (Android DoH3)	https://dns.google/dns-query	dns.google	2001:4860:4860::8888	2001:4860:4860::8844	8.8.8.8	8.8.4.4		yes	https://developers.google.com/speed/public-dns/docs/ecs
+Google DNS64 (Android DoH3)	https://dns64.dns.google/dns-query	dns64.dns.google	2001:4860:4860::6464	2001:4860:4860::64				probably	https://developers.google.com/speed/public-dns/docs/ecs
 Mullvad Vanilla	https://dns.mullvad.net/dns-query	dns.mullvad.net	2a07:e340::2		194.242.2.2		https://github.com/mullvad/encrypted-dns-profiles	No 2023-03-11	I tested with https://gitea.blesmrt.net/mikaela/scripts/src/branch/master/bash/dns-ecs-debug.bash
 Mullvad Adblock	https://adblock.dns.mullvad.net/dns-query	adblock.dns.mullvad.net	2a07:e340::3		194.242.2.3		https://github.com/mullvad/encrypted-dns-profiles	No 2023-03-11	I tested with https://gitea.blesmrt.net/mikaela/scripts/src/branch/master/bash/dns-ecs-debug.bash
 Mullvad Base	https://base.dns.mullvad.net/dns-query	base.dns.mullvad.net	2a07:e340::4		194.242.2.4		https://github.com/mullvad/encrypted-dns-profiles		
