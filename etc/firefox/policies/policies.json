@@ -43,6 +43,10 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/adnauseam/latest.xpi",
         "installation_mode": "force_installed"
       },
+      "floccus@handmadeideas.org": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/floccus/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
       "ipfs-firefox-addon@lidel.org": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ipfs-companion/latest.xpi",
         "installation_mode": "normal_installed"

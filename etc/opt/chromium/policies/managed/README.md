@@ -14,6 +14,7 @@
   - [OpenDyslexic](#opendyslexic)
   - [Dark Reader](#dark-reader)
   - [Indiewiki Buddy](#indiewiki-buddy)
+  - [Floccus bookmarks sync](#floccus-bookmarks-sync)
   - [Wayback Machine](#wayback-machine)
   - [Privacy Manager](#privacy-manager)
   - [Terms of Service; Didn't Read](#terms-of-service-didnt-read)
@@ -101,6 +102,13 @@ Fandom is good to be reminded about occassionally. And I just happened to stay
 in not so hardened Chromium for a bit due to hardened Firefox being too much
 for my task and there is no reason occassionally needed Chromium shouldn't be
 tolerable for a few minutes.
+
+### [Floccus bookmarks sync](https://chromewebstore.google.com/detail/floccus-bookmarks-sync/fnaicdffflnofjppbagibeoednhnbjhg)
+
+- `fnaicdffflnofjppbagibeoednhnbjhg`
+
+Bookmarks sync either through selfhosted webdav or Google Drive working even
+across different web browsers.
 
 ### [Wayback Machine](https://chrome.google.com/webstore/detail/fpnmgdkabkmnadcjpehmlllkndpkmiak)
 
