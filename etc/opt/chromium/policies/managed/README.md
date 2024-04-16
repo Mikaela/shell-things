@@ -28,6 +28,8 @@
   - [UpdateSWH](#updateswh)
   - [Privacy Badger](#privacy-badger)
   - [TODO/Inconsistencies](#todoinconsistencies)
+- [`disable-brave-rewards-wallet.json`](#disable-brave-rewards-walletjson)
+- [`disable-brave-tor.json`](#disable-brave-torjson)
 - [`disable-brave-vpn.json`](#disable-brave-vpnjson)
 - [`disable-floc.json`](#disable-flocjson)
 - [`disable-incognito.json`](#disable-incognitojson)
@@ -200,6 +202,16 @@ See also:
 - I am not aware of any _New Tab Suspender_ equivalents, but it might be an
   integrated feature on some Chromiums.
 - [Peertubeify doesn't support Chromium yet.](https://codeberg.org/Booteille/peertube-companion/issues/15)
+
+## `disable-brave-rewards-wallet.json`
+
+Disables Brave rewards and wallet by default while allowing the user to enable
+it regardless of the prompt that organization recommends them disabled.
+
+## `disable-brave-tor.json`
+
+Suggests disabling Tor in Brave as I recommend using Tor Browser instead, but
+again leaving it up to the user.
 
 ## `disable-brave-vpn.json`
 
