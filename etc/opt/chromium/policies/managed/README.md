@@ -28,6 +28,7 @@
   - [UpdateSWH](#updateswh)
   - [Privacy Badger](#privacy-badger)
   - [TODO/Inconsistencies](#todoinconsistencies)
+- [`brave-shields-disabled.json`](#brave-shields-disabledjson)
 - [`disable-brave-rewards-wallet.json`](#disable-brave-rewards-walletjson)
 - [`disable-brave-tor.json`](#disable-brave-torjson)
 - [`disable-brave-vpn.json`](#disable-brave-vpnjson)
@@ -39,6 +40,7 @@
 - [`doh-mullvad-base.json`](#doh-mullvad-basejson)
 - [`doh-quad9-ecs.json`](#doh-quad9-ecsjson)
 - [`enable-ech-ocsp.json`](#enable-ech-ocspjson)
+- [`enable-labs.json`](#enable-labsjson)
 - [`fix-edge-search.json`](#fix-edge-searchjson)
 - [`force-incognito.json`](#force-incognitojson)
 - [`https-everywhere.json`](#https-everywherejson)
@@ -203,15 +205,18 @@ See also:
   integrated feature on some Chromiums.
 - [Peertubeify doesn't support Chromium yet.](https://codeberg.org/Booteille/peertube-companion/issues/15)
 
+## `brave-shields-disabled.json`
+
+Allowlist for sites where I think Brave Shields may be breaking things. Similar is also in
+`aminda-extensions.json` for Privacy Badger.
+
 ## `disable-brave-rewards-wallet.json`
 
-Disables Brave rewards and wallet by default while allowing the user to enable
-it regardless of the prompt that organization recommends them disabled.
+Disables Brave rewards and wallet.
 
 ## `disable-brave-tor.json`
 
-Suggests disabling Tor in Brave as I recommend using Tor Browser instead, but
-again leaving it up to the user.
+Disables Tor in Brave as I recommend using Tor Browser instead.
 
 ## `disable-brave-vpn.json`
 
@@ -258,6 +263,10 @@ Enables DNS over HTTPS with Quad9 ECS enabled server.
 ## `enable-ech-ocsp.json`
 
 Enables encrypted client hello and OCSP (or CRL?) checks.
+
+## `enable-labs.json`
+
+Enables the beaker button "Experiments" for easier management than `about:flags`.
 
 ## `fix-edge-search.json`
 
