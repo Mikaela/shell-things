@@ -30,5 +30,5 @@ NextDNS	https://dns.nextdns.io	dns.nextdns.io	2a07:a8c1::	2a07:a8c0::	45.90.30.0
 NextDNS Firefox	https://firefox.dns.nextdns.io							no	
 OpenDNS	https://doh.opendns.com/dns-query	dns.opendns.com ? (#127)	2620:119:35::35	2620:119:53::53	208.67.222.222	208.67.220.220		yes, upstream whitelist	https://support.opendns.com/hc/articles/227987647-EDNS-Client-Subnet-FAQ
 OpenDNS Family	https://doh.familyshield.opendns.com/dns-query				208.67.222.123	208.67.220.123		yes, upstream whitelist	https://support.opendns.com/hc/articles/227987647-EDNS-Client-Subnet-FAQ
-Quad9	https://dns.quad9.net/dns-query	dns.quad9.net	2620:fe::fe	2620:fe::9	9.9.9.9	149.112.112.112		no	https://www.quad9.net/support/faq/#edns
-Quad9 ECS	https://dns11.quad9.net/dns-query	dns11.quad9.net	2620:fe::11	2620:fe::fe:11	9.9.9.11	149.112.112.11		yes	https://www.quad9.net/support/faq/#edns
+Quad9	https://dns.quad9.net/dns-query	dns.quad9.net	2620:fe::fe	2620:fe::9	9.9.9.9	149.112.112.112	https://docs.quad9.net/Setup_Guides/iOS/iOS_14_and_later_%28Encrypted%29/#download-profile	no	https://www.quad9.net/support/faq/#edns
+Quad9 ECS	https://dns11.quad9.net/dns-query	dns11.quad9.net	2620:fe::11	2620:fe::fe:11	9.9.9.11	149.112.112.11	https://docs.quad9.net/Setup_Guides/iOS/iOS_14_and_later_%28Encrypted%29/#download-profile	yes	https://www.quad9.net/support/faq/#edns
