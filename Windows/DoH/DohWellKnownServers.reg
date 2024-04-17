@@ -127,3 +127,27 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2001:67c:2b0::2]
 "Template"="https://dns.quad9.net/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\9.9.9.10]
+"Template"="https://dns10.quad9.net/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\149.112.112.10]
+"Template"="https://dns10.quad9.net/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2620:fe::10]
+"Template"="https://dns10.quad9.net/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2620:fe::fe:10]
+"Template"="https://dns10.quad9.net/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\9.9.9.12]
+"Template"="https://dns12.quad9.net/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\149.112.112.12]
+"Template"="https://dns12.quad9.net/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2620:fe::12]
+"Template"="https://dns12.quad9.net/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2620:fe::fe:12]
+"Template"="https://dns12.quad9.net/dns-query"
