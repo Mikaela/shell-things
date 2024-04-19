@@ -25,7 +25,7 @@
     "DNSOverHTTPS": {
       "Enabled": true,
       "Locked": false,
-      "ProviderURL": "https://dns0.eu"
+      "ProviderURL": "https://dns11.quad9.net/dns-query"
     },
     "DisablePocket": false,
     "EnableTrackingProtection": {
