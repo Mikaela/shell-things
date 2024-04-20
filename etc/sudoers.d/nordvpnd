@@ -7,3 +7,6 @@
 # used in my scripts and nordvpn.service.d and yggdrasil.service.d to ensure
 # it works
 %nordvpn ALL=NOPASSWD: /bin/systemctl restart yggdrasil.service
+# used in my scripts of disconnecting from nordvpn and restoring IPv6
+%nordvpn ALL=NOPASSWD: /bin/systemctl restart iwd.service
+%nordvpn ALL=NOPASSWD: /bin/systemctl restart systemd-networkd.service
