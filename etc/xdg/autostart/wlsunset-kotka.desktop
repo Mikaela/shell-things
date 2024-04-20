@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Exec=wlsunset -l 60.46742 -L 26.94508 -t 1000
+Name=wlsunset @ Kotka
+Icon=wlsunset

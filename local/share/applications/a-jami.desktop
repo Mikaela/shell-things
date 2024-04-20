@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=JAMI
-Exec=flatpak run --env=TZ=UTC net.jami.Jami
-Icon=net.jami.Jami
-Type=Application

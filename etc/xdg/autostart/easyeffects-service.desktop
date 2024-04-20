@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=PulseEffects
+Name=EasyEffects
 Exec=/usr/bin/flatpak run com.github.wwmm.easyeffects --gapplication-service
 Type=Application
 Icon=com.github.wwmm.easyeffects
