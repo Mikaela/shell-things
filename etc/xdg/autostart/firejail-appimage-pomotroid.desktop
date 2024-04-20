@@ -1,6 +1,0 @@
-[Desktop Entry]
-Comment=Pomotroid in Firejail
-Terminal=false
-Name=Firejailed Pomotroid
-Exec=sh -c 'mkdir -p ~/.config/firejailed/pomotroid/ && firejail --appimage --private=~/.config/firejailed/pomotroid/ ~/.local/bin/pomotroid --no-sandbox'
-Type=Application

@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=Telegram Desktop
-Exec=env LANG=en telegram-desktop -startintray
-Icon=telegram
-Type=Application

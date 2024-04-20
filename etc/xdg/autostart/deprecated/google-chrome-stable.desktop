@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Exec=google-chrome-stable --no-startup-window
-Hidden=false
-X-MATE-Autostart-enabled=true
-Name[fi_FI]=chrome-stable
-Name=chrome-stable
-Comment[fi_FI]=autostart Google Chome to tray (Arch)
-Comment=autostart Google Chome to tray (Arch)

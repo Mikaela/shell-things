@@ -1,6 +1,0 @@
-[Desktop Entry]
-Comment=mirage in Firejail
-Terminal=false
-Name=Firejailed mirage
-Exec=sh -c 'mkdir -p ~/.config/firejailed/mirage/ && firejail --noprofile --appimage --private=~/.config/firejailed/mirage/ ~/.local/bin/mirage'
-Type=Application

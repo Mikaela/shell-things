@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=Wire
-Exec=/usr/bin/flatpak run com.wire.WireDesktop --startup
-Type=Application
-Icon=com.wire.WireDesktop
