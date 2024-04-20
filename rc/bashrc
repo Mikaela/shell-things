@@ -148,7 +148,9 @@ if [[ $UNAME == Darwin ]]; then
 	(last -10 &)
 fi
 
-(printf "⚧ Aferoj emas funkcii sin mem.\n\tFaru jogon, sentu, ne provu perfektecon.\n\t\tDancu kiel neniu rigardas, kvankam estu vidita kaj aŭdata.\n")
+# Tavun OM värähtely poistaa ylpeyttä, MA kateutta, NI takertumista. PE leikkaa tietämättömyyden läpi, ME hälventää ahneuden ja rintakehässä värähtelevä HUNG muuntaa vihan.
+# Kuinka asiat ovat (s. 74-75) - Lama Ole Nydahl
+(printf "⚧ Aferoj emas funkcii sin mem.\n\tFaru jogon, sentu, ne provu perfektecon.\n\t\tDancu kiel neniu rigardas, kvankam estu vidita kaj aŭdata.\nOM MANI PEME HUNG\n")
 (printf "⚧ Any movement at any time is better than nothing.\n")
 (printf "❄️ Take the cold showers, hot ones are a disservice. And walk in cold, which is no excuse just like rain.\n\tOtherwise there will be dry skin and the vagus nerve will be upset leading to anxiety, depression and poor mental health.\n\t\tBesides the environment thanks.\n")
 # Tempus Finis -  Takeharu Ishimoto
