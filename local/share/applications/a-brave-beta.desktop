@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=BRAVE BETA
+Name=BETA BRAVE
 Exec=/usr/local/bin/brave-beta %U
 StartupNotify=true
 Terminal=false

@@ -1,8 +1,8 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=BRAVE NIGHTLY
-Name[fi]=BRAVE EPÄVAKAIN
+Name=NIGHTLY BRAVE
+Name[fi]=EPÄVAKAIN BRAVE
 Exec=/usr/local/bin/brave-nightly %U
 StartupNotify=true
 Terminal=false
