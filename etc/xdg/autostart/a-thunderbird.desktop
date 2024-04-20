@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=THUNDERBIRD
+Exec=/usr/local/bin/thunderbird %U
+Icon=thunderbird
+Terminal=false
+Type=Application
+MimeType=message/rfc822;x-scheme-handler/mailto;
+StartupNotify=true
+Categories=Network;Email;

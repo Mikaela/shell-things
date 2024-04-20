@@ -1,0 +1,55 @@
+[Desktop Entry]
+Name=STEAM
+Exec=/usr/local/bin/steam %U
+Icon=steam
+Terminal=false
+Type=Application
+Categories=Game;
+MimeType=x-scheme-handler/steam;x-scheme-handler/steamlink;
+Actions=Store;Community;Library;Servers;Screenshots;News;Settings;BigPicture;Friends;
+PrefersNonDefaultGPU=true
+
+[Desktop Action Store]
+Name=Store
+Name[fi]=Kauppa
+Exec=/usr/local/bin/steam steam://store
+
+[Desktop Action Community]
+Name=Community
+Name[fi]=Yhteisö
+Exec=/usr/local/bin/steam steam://url/SteamIDControlPage
+
+[Desktop Action Library]
+Name=Library
+Name[fi]=Kokoelma
+Exec=/usr/local/bin/steam steam://open/games
+
+[Desktop Action Servers]
+Name=Servers
+Name[fi]=Palvelimet
+Exec=/usr/local/bin/steam steam://open/servers
+
+[Desktop Action Screenshots]
+Name=Screenshots
+Name[fi]=Kuvankaappaukset
+
+Exec=/usr/local/bin/steam steam://open/screenshots
+
+[Desktop Action News]
+Name=News
+Name[fi]=Uutiset
+Exec=/usr/local/bin/steam steam://open/news
+
+[Desktop Action Settings]
+Name=Settings
+Name[fi]=Asetukset
+Exec=/usr/local/bin/steam steam://open/settings
+
+[Desktop Action BigPicture]
+Name=Big Picture
+Exec=/usr/local/bin/steam steam://open/bigpicture
+
+[Desktop Action Friends]
+Name=Friends
+Name[fi]=Kaverit
+Exec=/usr/local/bin/steam steam://open/friends
