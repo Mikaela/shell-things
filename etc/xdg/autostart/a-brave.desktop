@@ -8,8 +8,19 @@ Terminal=false
 Icon=brave-browser
 Categories=Network;WebBrowser;
 MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ipfs;x-scheme-handler/ipns;
-Actions=Guest
+Actions=new-window;new-private-window;Guest;
+
+[Desktop Action new-window]
+Name=New Window
+Name[fi]=Uusi ikkuna
+Exec=/usr/local/bin/brave
+
+[Desktop Action new-private-window]
+Name=New Incognito Window
+Name[fi]=Uusi incognito-ikkuna
+Exec=/usr/local/bin/brave --incognito
 
 [Desktop Action Guest]
-Name=Vierasistunto
-Exec=/usr/local/bin/brave --guest %U
+Name=Guest session
+Name[fi]=Vierasistunto
+Exec=/usr/local/bin/brave --guest
