@@ -10,3 +10,5 @@
 # used in my scripts of disconnecting from nordvpn and restoring IPv6
 %nordvpn ALL=NOPASSWD: /bin/systemctl restart iwd.service
 %nordvpn ALL=NOPASSWD: /bin/systemctl restart systemd-networkd.service
+# Tells Chrony we are connected and thus maybe connects to IPv6 NTP servers
+%nordvpn ALL=NOPASSWD: /usr/bin/chronyc online
