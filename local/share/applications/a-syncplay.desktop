@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=SYNCPLAY
 Exec=/usr/local/bin/syncplay %u
+Terminal=true
 Type=Application
 Icon=syncplay
 Categories=AudioVideo;Audio;Video;
