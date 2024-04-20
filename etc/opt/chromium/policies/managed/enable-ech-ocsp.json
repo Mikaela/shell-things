@@ -1,6 +1,4 @@
 {
-  "AdditionalDnsQueryTypesEnabled": true,
-  "BuiltInDnsClientEnabled": true,
   "EnableOnlineRevocationChecks": true,
   "EncryptedClientHelloEnabled": true
 }
