@@ -17,7 +17,7 @@ Actions=new-window;new-private-window;safe-mode;preferences;
 
 [Desktop Action new-window]
 Name=New Window
-Exec=/usr/local/bin/libreawoo
+Exec=/usr/local/bin/libreawoo --new-window %U
 [Desktop Action new-private-window]
 Name=New Private Window
 Exec=/usr/local/bin/libreawoo --private-window %U
