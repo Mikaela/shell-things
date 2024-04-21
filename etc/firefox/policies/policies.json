@@ -27,6 +27,7 @@
       "Locked": false,
       "ProviderURL": "https://dns0.eu/"
     },
+    "DisableEncryptedClientHello": false,
     "DisablePocket": false,
     "EnableTrackingProtection": {
       "Cryptomining": true,
