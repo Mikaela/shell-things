@@ -37,9 +37,8 @@
 - [`disable-floc.json`](#disable-flocjson)
 - [`disable-incognito.json`](#disable-incognitojson)
 - [`doh-cloudflare-secure.json`](#doh-cloudflare-securejson)
-- [`doh-allowed.json`](#doh-allowedjson)
+- [`doh-unlocked-unset.json`](#doh-unlocked-unsetjson)
 - [`doh-dns0.json`](#doh-dns0json)
-- [`doh-forced.json`](#doh-forcedjson)
 - [`doh-mullvad-base.json`](#doh-mullvad-basejson)
 - [`doh-quad9-ecs.json`](#doh-quad9-ecsjson)
 - [`doh-quad9-insecure-ecs.json`](#doh-quad9-insecure-ecsjson)
@@ -254,58 +253,51 @@ Disables incognito mode. I don't recommend this.
 
 ## `doh-cloudflare-secure.json`
 
-Sets Cloudflare with malware protection as the DNS-over-HTTPS server.
+Sets Cloudflare with malware protection as the forced DNS-over-HTTPS server.
 
-## `doh-allowed.json`
+## `doh-unlocked-unset.json`
 
-If no DNS over HTTPS policy is used, this unlocks the setting while still allowing downgrade to system DNS
-(think of DoT opportunistic mode, kind of?). Enabling managed policies disable it by default.
+If no DNS over HTTPS policy is used, this unlocks the setting. Enabling managed policies disable it by default.
 
-Incompatible with `doh-forced.json`. This must be used together with any other `doh-*.json` file, but only one of them.
+Incompatible with other `doh-*.json` file, because they set `"DnsOverHttpsMode": "secure",`.
 
-**_No ECH._**
+**_This also causes there to not be ECH._**
 
 ## `doh-dns0.json`
 
-Simply enables DNS-over-HTTPS with DNS0.eu.
-
-## `doh-forced.json`
-
-Enforces use of DNS-over-HTTPS disabling the downgrade.
-
-Incompatible with `doh-allowed.json`. Use this together with any other `doh-*.json` file, but only one of them.
-
-**_Required for ECH._**
+Simply forces DNS-over-HTTPS with DNS0.eu.
 
 ## `doh-mullvad-base.json`
 
-Enables DNS-over-HTTPS with Mullvad Base, which features ad, malware & tracker blocking.
+Forces DNS-over-HTTPS with Mullvad Base, which features ad, malware & tracker blocking.
 
 - https://mullvad.net/en/help/dns-over-https-and-dns-over-tls#specifications
 
 ## `doh-quad9-ecs.json`
 
-Enables DNS over HTTPS with Quad9 ECS enabled threat-blocking server and also contains
+Forces DNS over HTTPS with Quad9 ECS enabled threat-blocking server and also contains
 their alternative port.
 
 ## `doh-quad9-insecure-ecs.json`
 
-Enables DNS over HTTPS with Quad9 ECS enabled unfiltered server and also contains
+Forces DNS over HTTPS with Quad9 ECS enabled unfiltered server and also contains
 their alternative port. **No DNSSEC either.**
 
 ## `doh-quad9-insecure.json`
 
-Enables DNS over HTTPS with Quad9 unfiltered server and also contains
+Forces DNS over HTTPS with Quad9 unfiltered server and also contains
 their alternative port. **No DNSSEC either.**
 
 ## `doh-quad9.json`
 
-Enables DNS over HTTPS with Quad9 threat-blocking server and also contains
+Forces DNS over HTTPS with Quad9 threat-blocking server and also contains
 their alternative port.
 
 ## `enable-ech-ocsp.json`
 
-Enables encrypted client hello and OCSP (or CRL?) checks.
+Enables encrypted client hello (ECH) and Online Certificate Status Protocol (OCSP) (or Certificate Revocation List (CRL)?) checks.
+
+However ECH seems to require `"DnsOverHttpsMode": "secure"` from the `doh-*` files and OCSP seems to bypass that going to the system resolver.
 
 ## `enable-labs.json`
 

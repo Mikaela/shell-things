@@ -1,3 +1,4 @@
 {
+  "DnsOverHttpsMode": "secure",
   "DnsOverHttpsTemplates": "https://dns0.eu/"
 }

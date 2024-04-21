@@ -1,3 +1,4 @@
 {
+  "DnsOverHttpsMode": "secure",
   "DnsOverHttpsTemplates": "https://dns10.quad9.net/dns-query https://dns10.quad9.net:5053/dns-query"
 }

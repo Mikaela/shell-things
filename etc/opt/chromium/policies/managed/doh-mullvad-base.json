@@ -1,3 +1,4 @@
 {
+  "DnsOverHttpsMode": "secure",
   "DnsOverHttpsTemplates": "https://base.dns.mullvad.net/dns-query"
 }
