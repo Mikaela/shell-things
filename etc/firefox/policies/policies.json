@@ -51,6 +51,14 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ipfs-companion/latest.xpi",
         "installation_mode": "normal_installed"
       },
+      "ipvfoo@pmarks.net": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ipvfoo/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
+      "ipvfoobar@napr.eu": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest//ipvfoobar/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
       "jid0-3GUEt1r69sQNSrca5p8kx9Ezc3U@jetpack": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/terms-of-service-didnt-read/latest.xpi",
         "installation_mode": "normal_installed"
