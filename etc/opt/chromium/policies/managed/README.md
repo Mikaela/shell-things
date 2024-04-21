@@ -42,6 +42,9 @@
 - [`doh-forced.json`](#doh-forcedjson)
 - [`doh-mullvad-base.json`](#doh-mullvad-basejson)
 - [`doh-quad9-ecs.json`](#doh-quad9-ecsjson)
+- [`doh-quad9-insecure-ecs.json`](#doh-quad9-insecure-ecsjson)
+- [`doh-quad9-insecure.json`](#doh-quad9-insecurejson)
+- [`doh-quad9.json`](#doh-quad9json)
 - [`enable-ech-ocsp.json`](#enable-ech-ocspjson)
 - [`enable-labs.json`](#enable-labsjson)
 - [`fix-edge-search.json`](#fix-edge-searchjson)
@@ -282,7 +285,23 @@ Enables DNS-over-HTTPS with Mullvad Base, which features ad, malware & tracker b
 
 ## `doh-quad9-ecs.json`
 
-Enables DNS over HTTPS with Quad9 ECS enabled server.
+Enables DNS over HTTPS with Quad9 ECS enabled threat-blocking server and also contains
+their alternative port.
+
+## `doh-quad9-insecure-ecs.json`
+
+Enables DNS over HTTPS with Quad9 ECS enabled unfiltered server and also contains
+their alternative port. **No DNSSEC either.**
+
+## `doh-quad9-insecure.json`
+
+Enables DNS over HTTPS with Quad9 unfiltered server and also contains
+their alternative port. **No DNSSEC either.**
+
+## `doh-quad9.json`
+
+Enables DNS over HTTPS with Quad9 threat-blocking server and also contains
+their alternative port.
 
 ## `enable-ech-ocsp.json`
 
