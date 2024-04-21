@@ -1,3 +1,3 @@
 {
-  "DnsOverHttpsTemplates": "https://dns11.quad9.net/dns-query"
+  "DnsOverHttpsTemplates": "https://dns11.quad9.net/dns-query https://dns11.quad9.net:5053/dns-query"
 }
