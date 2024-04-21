@@ -12,6 +12,7 @@
   - [Silk - Privacy Pass Client for the browser](#silk---privacy-pass-client-for-the-browser)
   - [NoScript](#noscript)
   - [OpenDyslexic](#opendyslexic)
+  - [IPvFoo](#ipvfoo)
   - [Dark Reader](#dark-reader)
   - [Indiewiki Buddy](#indiewiki-buddy)
   - [Floccus bookmarks sync](#floccus-bookmarks-sync)
@@ -19,6 +20,7 @@
   - [Privacy Manager](#privacy-manager)
   - [Terms of Service; Didn't Read](#terms-of-service-didnt-read)
   - [Fedora User Agent](#fedora-user-agent)
+  - [IPvFooBar](#ipvfoobar)
   - [Chrome Remote Desktop](#chrome-remote-desktop)
   - [Bias Finder](#bias-finder)
   - [Snowflake](#snowflake)
@@ -61,6 +63,11 @@ to overlap with someone else.
 Changing `normal_installed` to `force_installed` would also prevent
 uninstallation.
 
+This does contain some bloat or something not necessary in all situations or
+even overlapping extensions, but there is an important side goal of _teaching
+users to disable extraneous extensions they don't need_ (unless I decide they
+do need something and thus it's `force_installed`.
+
 ### [Silk - Privacy Pass Client for the browser](https://chrome.google.com/webstore/detail/ajhmfdgkijocedmfjonnpjfojldioehi)
 
 - `ajhmfdgkijocedmfjonnpjfojldioehi`
@@ -91,6 +98,10 @@ other people.
 
 OpenDyslexic font + highlighting for currently pointed paragraph. Improves my
 reading especially with more busy articles, even without dyslexia.
+
+### [IPvFoo](https://chromewebstore.google.com/detail/ipvfoo/ecanpcehffngcegjmadlcijfolapggal)
+
+- `ecanpcehffngcegjmadlcijfolapggal`
 
 ### [Dark Reader](https://chrome.google.com/webstore/detail/eimadpbcbfnmbkopoojfekhnkhdbieeh)
 
@@ -138,6 +149,10 @@ incognito is disabled (which again is not great idea for quick guest access?)
 
 Communicates websites that Ubuntu isn't the only Linux distribution and makes
 some offer rpm packages directly.
+
+### [IPvFooBar](https://chromewebstore.google.com/detail/ipvfoobar/iimpkhokkfekbpmoamlmcndclohnehhk)
+
+- `iimpkhokkfekbpmoamlmcndclohnehhk`
 
 ### [Chrome Remote Desktop](https://chrome.google.com/webstore/detail/inomeogfingihgjfjlpeplalcfajhgai)
 
