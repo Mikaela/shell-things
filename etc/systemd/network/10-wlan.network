@@ -29,7 +29,7 @@ MulticastDNS=true
 LLMNR=true
 # systemd-resolved configuration
 DNSSEC=true
-DNSSEC=false
-DNSOverTLS=opportunistic
+#DNSOverTLS=opportunistic
+DNSOverTLS=true
 # Search domains
 Domains=.

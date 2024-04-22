@@ -31,7 +31,8 @@ DNS=::1
 DNS=127.0.0.1
 DNS=127.0.0.53
 DNSSEC=true
-DNSOverTLS=opportunistic
+#DNSOverTLS=opportunistic
+DNSOverTLS=true
 # Search domains
 Domains=.
 # Enable systemd-timesyncd with `timedatectl set-ntp true`, may be specified
