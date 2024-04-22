@@ -29,7 +29,9 @@ LLMNR=true
 # systemd-resolved configuration
 #DNSSEC=true
 #DNSSEC=allow-downgrade
+DNSSEC=false
 #DNSOverTLS=true
 #DNSOverTLS=opportunistic
+DNSOverTLS=false
 # Search domains
 Domains=.
