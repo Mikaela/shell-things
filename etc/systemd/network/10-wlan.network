@@ -28,11 +28,8 @@ MulticastDNS=true
 # Windows
 LLMNR=true
 # systemd-resolved configuration
-#DNSSEC=true
-#DNSSEC=allow-downgrade
+DNSSEC=true
 DNSSEC=false
-#DNSOverTLS=true
-#DNSOverTLS=opportunistic
-DNSOverTLS=false
+DNSOverTLS=opportunistic
 # Search domains
 Domains=.
