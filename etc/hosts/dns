@@ -1,3 +1,5 @@
+##### BEGIN DNS RESOLVER LIST #####
+
 # Well known DNS servers to be appended to /etc/hosts
 
 # Quad 9 Secure
@@ -79,4 +81,4 @@
 2001:4860:4860::6464 dns64.dns.google
 2001:4860:4860::64 dns64.dns.google
 
-# vim: filetype=unbound.conf
+##### END DNS RESOLVER LIST #####
