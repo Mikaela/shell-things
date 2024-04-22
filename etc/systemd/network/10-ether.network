@@ -25,9 +25,9 @@ IPv6LinkLocalAddressGenerationMode=stable-privacy
 # DNS has no effect unless systemd-resolved is used. Why would it be used?
 # systemctl enable systemd-resolved && systemctl start systemd-resolved
 # ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
-#DNS=127.0.0.1
-#DNS=::1
-#DNS=8.8.4.4
+DNS=::1
+DNS=127.0.0.1
+DNS=127.0.0.53
 #DNSSEC=true
 #DNSSEC=allow-downgrade
 #DNSOverTLS=true
