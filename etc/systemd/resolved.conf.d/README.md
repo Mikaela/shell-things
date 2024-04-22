@@ -26,19 +26,15 @@ sudo systemctl restart systemd-resolved
 
 ## Files explained
 
-- `00-no-local-resolver.conf` - configuration that should be used everywhere.
+- `00-defaults.conf` - configuration that should be used everywhere.
   Enables DNSSEC (regardless of systemd-resolved not handling it properly),
   enables opportunistic DoT, caching and local DNS servers (because they
   should exist anyway as I don't trust systemd-resolved entirely. Anyway if
   there truly is no local resolver, systemd-resolved will detect that and act accordingly.)
-  - To rephrase, this is sto be used together with other files, especially
+  - To rephrase, this is to be used together with other files, especially
     some of those beginning with `dot-`.
-- `00-only-local-resolver.conf` - for when there is known local resolver.
-  **_Don't combine this with the other files._**
-- `dot-*.conf` - configuration to use the DNS provider with DNS-over-TLS. If
-  captive portals are a concern, `DNSOverTLS=opportunistic`. At least one of these
-  should be used in addition to `00-defaults.conf`
-- `nordvpn.conf` - includes NordVPN's resolver addresses for hosts using it
+- `dot-*.conf` - configuration to use the DNS provider with DNS-over-TLS.
+  At least one of these should be used in addition to `00-defaults.conf`
 - `README.md` - you are reading it right now.
 
 ## General commentary
