@@ -22,7 +22,6 @@ Address=192.168.0.2/24
 Gateway=192.168.0.1
 IPv6PrivacyExtensions=true
 IPv6LinkLocalAddressGenerationMode=stable-privacy
-# DNS has no effect unless systemd-resolved is used. Why would it be used?
 # systemctl enable systemd-resolved && systemctl start systemd-resolved
 # ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
 DNS=::1
