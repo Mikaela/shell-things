@@ -19,6 +19,7 @@ Multicast=true
 DHCP=true
 IPv6PrivacyExtensions=true
 IPv6LinkLocalAddressGenerationMode=stable-privacy
+DNS=
 DNS=::1
 DNS=127.0.0.1
 DNS=127.0.0.53

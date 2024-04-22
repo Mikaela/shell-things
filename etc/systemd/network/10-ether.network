@@ -26,6 +26,7 @@ IPv6PrivacyExtensions=true
 IPv6LinkLocalAddressGenerationMode=stable-privacy
 # systemctl enable systemd-resolved && systemctl start systemd-resolved
 # ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
+DNS=
 DNS=::1
 DNS=127.0.0.1
 DNS=127.0.0.53
