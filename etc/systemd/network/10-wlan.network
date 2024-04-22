@@ -17,9 +17,3 @@ Multicast=true
 
 [Network]
 DHCP=true
-IPv6PrivacyExtensions=true
-IPv6LinkLocalAddressGenerationMode=stable-privacy
-# Enable mDNS/.local for systemd-resolved
-MulticastDNS=true
-# Windows
-LLMNR=true

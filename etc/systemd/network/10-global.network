@@ -1,0 +1,32 @@
+[Match]
+Name=*
+
+[Link]
+# required for mDNS
+Multicast=true
+
+[Network]
+# Enable privacy extensions
+IPv6PrivacyExtensions=true
+IPv6LinkLocalAddressGenerationMode=stable-privacy
+# systemd-resolved configuration
+DNSSEC=true
+#DNSSEC=allow-downgrade
+DNSOverTLS=true
+#DNSOverTLS=opportunistic
+# Search domains
+Domains=.
+# Enable mDNS/.local for systemd-resolved
+MulticastDNS=true
+# Windows
+LLMNR=true
+# DNS has no effect unless systemd-resolved is used. Why would it be used?
+# systemctl enable systemd-resolved && systemctl start systemd-resolved
+# ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
+#DNS=127.0.0.1
+#DNS=::1
+#DNS=8.8.4.4
+# Enable systemd-timesyncd with `timedatectl set-ntp true`, may be specified
+# multiple times, but you are using Chrony instead, right?
+#NTP=fi.pool.ntp.org
+#NTP=time.cloudflare.com
