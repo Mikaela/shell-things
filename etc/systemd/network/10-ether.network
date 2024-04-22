@@ -28,6 +28,12 @@ IPv6LinkLocalAddressGenerationMode=stable-privacy
 #DNS=127.0.0.1
 #DNS=::1
 #DNS=8.8.4.4
+#DNSSEC=true
+#DNSSEC=allow-downgrade
+#DNSOverTLS=true
+#DNSOverTLS=opportunistic
+# Search domains
+Domains=.
 # Enable systemd-timesyncd with `timedatectl set-ntp true`, may be specified
 # multiple times, but you are using Chrony instead, right?
 #NTP=fi.pool.ntp.org

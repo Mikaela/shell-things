@@ -23,3 +23,10 @@ IPv6LinkLocalAddressGenerationMode=stable-privacy
 MulticastDNS=true
 # Windows
 LLMNR=true
+# systemd-resolved configuration
+#DNSSEC=true
+#DNSSEC=allow-downgrade
+#DNSOverTLS=true
+#DNSOverTLS=opportunistic
+# Search domains
+Domains=.
