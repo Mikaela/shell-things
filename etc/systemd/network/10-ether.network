@@ -10,6 +10,8 @@ Type=ether
 RequiredForOnline=false
 # Takes "ipv4", "ipv6", "both", or "any" (default).
 RequiredFamilyForOnline=both
+# If something else (like NetworkManager) manages network, uncomment
+#Unmanaged=true
 # Always set administrative state to up. Implies RequiredForOnline=true
 #ActivationPolicy=always-up
 # Required for mDNS
