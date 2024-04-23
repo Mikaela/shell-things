@@ -213,6 +213,12 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 # znc uses this variable for figuring out hostname
 #export HOSTNAME=$(hostname --fqdn)
 
+# Ensure not leaking queries to upstream nameservers (resolv.conf)
+export LOCALDOMAIN=.
+# Secureish resolv.conf options (except trust-ad, but systemd also sets it
+# regardless of whether DNSSEC=true or not.
+export RES_OPTIONS="edns0 trust-ad timeout:1 attempts:5"
+
 #####	Aliases						RJ706I	#####
 
 # To get sudo work with aliases.
