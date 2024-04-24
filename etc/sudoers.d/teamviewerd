@@ -6,3 +6,5 @@
 %sudo ALL=NOPASSWD: /bin/systemctl stop teamviewerd.service
 %sudo ALL=NOPASSWD: /bin/systemctl start teamviewerd.service
 %sudo ALL=NOPASSWD: /bin/systemctl restart teamviewerd.service
+
+# vim: filetype=sudoers

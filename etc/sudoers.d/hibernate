@@ -3,3 +3,5 @@
 %plugdev   ALL = NOPASSWD: /usr/sbin/hibernate
 # suspend
 %plugdev   ALL = NOPASSWD: /usr/sbin/s2ram
+
+# vim: filetype=sudoers

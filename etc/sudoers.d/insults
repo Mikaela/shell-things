@@ -12,3 +12,5 @@ Defaults insults
 
 # Disable insults for user aminda
 #Defaults:aminda !insults
+
+# vim: filetype=sudoers

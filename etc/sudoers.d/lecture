@@ -3,3 +3,5 @@
 # For more information, see https://superuser.com/a/500125
 # & https://serverfault.com/a/333640
 Defaults lecture = always
+
+# vim: filetype=sudoers
