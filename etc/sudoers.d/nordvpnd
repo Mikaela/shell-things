@@ -12,3 +12,7 @@
 %nordvpn ALL=NOPASSWD: /bin/systemctl restart systemd-networkd.service
 # Tells Chrony we are connected and thus maybe connects to IPv6 NTP servers
 %nordvpn ALL=NOPASSWD: /usr/bin/chronyc online
+# Clearing DNS caches once we are disconnected
+%nordvpn ALL=NOPASSWD: /bin/systemctl restart unbound.service
+%nordvpn ALL=NOPASSWD: /bin/systemctl restart systemd-resolved.service
+# vim: filetype=sudoers
