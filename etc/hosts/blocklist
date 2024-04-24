@@ -1,0 +1,12 @@
+##### BEGIN AMINDA BLOCKLIST #####
+
+# Facebook API that a lot of things call, will break things for Facebook
+# users, so don't apply on hosts those use
+:: graph.facebook.com
+0.0.0.0 graph.facebook.com
+
+# Unnecessary service for Matrix rooms. I was dared to block it.
+:: matrix.to www.matrix.to
+0.0.0.0 matrix.to www.matrix.to
+
+##### END AMINDA BLOCKLIST #####
