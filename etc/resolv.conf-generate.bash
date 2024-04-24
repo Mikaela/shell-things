@@ -9,8 +9,8 @@ fi
 
 # In case I am behind the /etc/resolv.conf, it's immutable and read-only,
 # which won't allow it to be rewritten.
-chattr -i /etc/resolv.conf
-chmod +w /etc/resolv.conf
+chattr -V -i /etc/resolv.conf
+chmod -v +w /etc/resolv.conf
 # Or it's a symlink to e.g. /run/systemd/resolve/stub-resolv.conf
 rm -v /etc/resolv.conf
 
@@ -20,9 +20,9 @@ rm -v /etc/resolv.conf
 printf 'nameserver ::1\nnameserver 127.0.0.1\nnameserver 127.0.0.53\noptions edns0 trust-ad timeout:1 attempts:5\nsearch .\n' | tee -p /etc/resolv.conf
 
 # Remove all other permissions than everyone reading resolv.conf
-chmod a=r /etc/resolv.conf
+chmod -v a=r /etc/resolv.conf
 # Make resolv.conf immutable again so it's pretty sure nothing else edits it.
-chattr +i /etc/resolv.conf
+chattr -V +i /etc/resolv.conf
 
 # Let's just see it's ok
 ls -l /etc/resolv.conf
