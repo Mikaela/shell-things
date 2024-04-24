@@ -8,7 +8,8 @@ This file is DNS before DNS and legacy remain which is still used.
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [dns](#dns)
+- [`blocklist`](#blocklist)
+- [`dns`](#dns)
 - [`hosts.fedora`](#hostsfedora)
 - [`hosts.debian`](#hostsdebian)
 
@@ -17,7 +18,11 @@ This file is DNS before DNS and legacy remain which is still used.
 <!-- prettier-ignore-end -->
 <!-- editorconfig-checker-enable -->
 
-## dns
+## `blocklist`
+
+Hosts that I dislike enough to mention in my `hosts` file.
+
+## `dns`
 
 This began from question why should I have DNS to have DNS, but having it
 on DNS resolver level broke DNSSEC due to my weird mixing of systemd-resolved
