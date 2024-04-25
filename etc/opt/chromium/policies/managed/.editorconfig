@@ -1,5 +1,5 @@
 root = false
 
-[*.badidea]
+[*.json.badidea]
 indent_style = space
 indent_size = 2

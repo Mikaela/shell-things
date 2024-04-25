@@ -35,19 +35,19 @@
 - [`disable-brave-tor.json`](#disable-brave-torjson)
 - [`disable-brave-vpn.json`](#disable-brave-vpnjson)
 - [`disable-floc.json`](#disable-flocjson)
-- [`disable-incognito.json`](#disable-incognitojson)
+- [`disable-incognito.json.badidea`](#disable-incognitojsonbadidea)
 - [`doh-cloudflare-secure.json`](#doh-cloudflare-securejson)
 - [`doh-unlocked-unset.json`](#doh-unlocked-unsetjson)
 - [`doh-dns0.json`](#doh-dns0json)
 - [`doh-mullvad-base.json`](#doh-mullvad-basejson)
 - [`doh-quad9-ecs.json`](#doh-quad9-ecsjson)
-- [`doh-quad9-insecure-ecs.json`](#doh-quad9-insecure-ecsjson)
-- [`doh-quad9-insecure.json`](#doh-quad9-insecurejson)
+- [`doh-quad9-insecure-ecs.json.badidea`](#doh-quad9-insecure-ecsjsonbadidea)
+- [`doh-quad9-insecure.json.badidea`](#doh-quad9-insecurejsonbadidea)
 - [`doh-quad9.json`](#doh-quad9json)
 - [`enable-ech-ocsp.json`](#enable-ech-ocspjson)
 - [`enable-labs.json`](#enable-labsjson)
 - [`fix-edge-search.json`](#fix-edge-searchjson)
-- [`force-incognito.json`](#force-incognitojson)
+- [`force-incognito.json.badidea`](#force-incognitojsonbadidea)
 - [`https-everywhere.json`](#https-everywherejson)
 - [`README.md`](#readmemd)
 
@@ -247,7 +247,7 @@ Disables floc or ad topics that are against privacy.
 
 - https://start.duckduckgo.com/?q=google+floc+privacy+topics
 
-## `disable-incognito.json`
+## `disable-incognito.json.badidea`
 
 Disables incognito mode. I don't recommend this.
 
@@ -280,12 +280,12 @@ Forces DNS-over-HTTPS with Mullvad Base, which features ad, malware & tracker bl
 Forces DNS over HTTPS with Quad9 ECS enabled threat-blocking server and also contains
 their alternative port.
 
-## `doh-quad9-insecure-ecs.json`
+## `doh-quad9-insecure-ecs.json.badidea`
 
 Forces DNS over HTTPS with Quad9 ECS enabled unfiltered server and also contains
 their alternative port. **No DNSSEC either.**
 
-## `doh-quad9-insecure.json`
+## `doh-quad9-insecure.json.badidea`
 
 Forces DNS over HTTPS with Quad9 unfiltered server and also contains
 their alternative port. **No DNSSEC either.**
@@ -314,7 +314,7 @@ Tells Microsoft Edge to redirect queries from new tab search box to URL bar
 effectively forcing it to respect user configured search engine instead of
 stealthily sending those queries to Bing.
 
-## `force-incognito.json`
+## `force-incognito.json.badidea`
 
 Forces incognito mode. I don't recommend this.
 
