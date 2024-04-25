@@ -1,3 +1,4 @@
+#
 ##### BEGIN HOSTNAME #####
 
 ::1 fully.qualified.hostname.example.net friendlyhostname
@@ -5,3 +6,4 @@
 #0200:0000:0000:0000:0000:0000:0000:0000 y.friendlyhostname.example.net
 
 ##### END HOSTNAME #####
+#

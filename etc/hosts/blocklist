@@ -1,3 +1,4 @@
+#
 ##### BEGIN AMINDA BLOCKLIST #####
 
 # Facebook API that a lot of things call, will break things for Facebook
@@ -10,3 +11,4 @@
 0.0.0.0 matrix.to www.matrix.to
 
 ##### END AMINDA BLOCKLIST #####
+#

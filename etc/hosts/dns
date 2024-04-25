@@ -1,3 +1,4 @@
+#
 ##### BEGIN DNS RESOLVER LIST #####
 
 # Well known DNS servers to be appended to /etc/hosts
@@ -82,3 +83,4 @@
 2001:4860:4860::64 dns64.dns.google
 
 ##### END DNS RESOLVER LIST #####
+#
