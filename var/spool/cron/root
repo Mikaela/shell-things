@@ -1,6 +1,9 @@
 # Ensure /etc/sysctl.d/ gets read
 @reboot /usr/sbin/sysctl -p --system >/dev/null 2>&1
 
+# Ensure we really allow ICMPv6 on FEDORA
+@reboot /usr/bin/firewall-cmd --add-protocol=ipv6-icmp >/dev/null 2>&1
+
 # 3rd party Xbox controller initialization. See Mikaela/gist/gayming/
 @reboot /root/fixcontroller.py
 
