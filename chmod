@@ -4,28 +4,29 @@
 # access.
 set -x
 
-chmod g-rwx,o-rwx $HOME -R
+# You don't want to make this verbose.
+chmod g-rwx,o-rwx "$HOME" -R
 
 touch ~/.oidentd.conf
 
-chmod u+rw,g-wx+r,o-wx+r ~/.oidentd.conf
+chmod -v u+rw,g-wx+r,o-wx+r ~/.oidentd.conf
 
 touch ~/.ICEauthority
-chmod o-rw+x,g-rw+x ~
+chmod -v o-rw+x,g-rw+x ~
 
 mkdir -p ~/public_html/
-chmod -R 755 ~/public_html/
+chmod -v -R 755 ~/public_html/
 
 touch ~/.face
 touch ~/.forward
 touch ~/.netrc
-chmod a+r-wx,u+rw ~/.face
-chmod a+r-wx,u+rw ~/.forward
-chmod 600 ~/.netrc
+chmod -v a+r-wx,u+rw ~/.face
+chmod -v a+r-wx,u+rw ~/.forward
+chmod -v 600 ~/.netrc
 
 mkdir -p ~/.ssh
-chmod 700 ~/.ssh
+chmod -v 700 ~/.ssh
 touch ~/.ssh/authorized_keys
-chmod 600 ~/.ssh/authorized_keys
+chmod -v 600 ~/.ssh/authorized_keys
 
 set +x
