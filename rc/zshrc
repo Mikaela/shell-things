@@ -396,8 +396,8 @@ alias suu="su -"
 alias cwho="who -H -w -u"
 
 # inxi - https://smxi.org/docs/inxi.htm
-#alias inxi-install="mkdir -p ~/.local/bin && cd ~/.local/bin && \wget -Nc https://github.com/smxi/inxi/raw/master/inxi && chmod +x inxi && cd"
-#alias inxi-install-root="cd /usr/local/bin;\wget -Nc https://github.com/smxi/inxi/raw/master/inxi;chmod +x inxi;./inxi -U;cd"
+#alias inxi-install="mkdir -p ~/.local/bin && cd ~/.local/bin && \wget -Nc https://github.com/smxi/inxi/raw/master/inxi && \chmod -v +x inxi && cd"
+#alias inxi-install-root="cd /usr/local/bin;\wget -Nc https://github.com/smxi/inxi/raw/master/inxi;\chmod -v +x inxi;./inxi -U;cd"
 #alias inxi-update="inxi -U"
 
 # FINEID to ssh-agent
@@ -405,9 +405,9 @@ alias fineid="ssh-add -s /usr/lib64/libcryptoki.so"
 
 # Homebrew
 #alias homebrew-install="cd ~;git clone https://github.com/Homebrew/homebrew.git --depth=1;mkdir -p .local;rsync -aP homebrew/* .local;rsync -aP homebrew/.* .local;rm -rf homebrew"
-#alias homebrew-install-root="cd /usr;git clone https://github.com/Homebrew/homebrew.git --depth=1;mkdir -p local;rsync -aP homebrew/* local;rsync -aP homebrew/.* local/;chmod -R 755 local;chown -R root:wheel local;rm -rf homebrew"
+#alias homebrew-install-root="cd /usr;git clone https://github.com/Homebrew/homebrew.git --depth=1;mkdir -p local;rsync -aP homebrew/* local;rsync -aP homebrew/.* local/;chmod -v -R 755 local;chown -R root:wheel local;rm -rf homebrew"
 #alias linuxbrew-install="cd ~;git clone https://github.com/Homebrew/linuxbrew.git --depth=1;mkdir -p .local;rsync -aP linuxbrew/* .local;rsync -aP linuxbrew/.* .local;rm -rf linuxbrew"
-#alias linuxbrew-install-root="cd /usr;git clone https://github.com/Homebrew/linuxbrew.git --depth=1;mkdir -p local;rsync -aP linuxbrew/* local;rsync -aP linuxbrew/.* local/;chmod -R 755 local;chown -R root:wheel local;rm -rf linuxbrew"
+#alias linuxbrew-install-root="cd /usr;git clone https://github.com/Homebrew/linuxbrew.git --depth=1;mkdir -p local;rsync -aP linuxbrew/* local;rsync -aP linuxbrew/.* local/;chmod -v -R 755 local;chown -R root:wheel local;rm -rf linuxbrew"
 #export HOMEBREW_LOGS=$HOME/.cache/Homebrew/Logs
 
 # OS X
