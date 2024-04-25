@@ -259,9 +259,11 @@ Sets Cloudflare with malware protection as the forced DNS-over-HTTPS server.
 
 If no DNS over HTTPS policy is used, this unlocks the setting. Enabling managed policies disable it by default.
 
-Incompatible with other `doh-*.json` file, because they set `"DnsOverHttpsMode": "secure",`.
-
-**_This also causes there to not be ECH._**
+My other `doh-*.json` set this as well, because `secure` doesn't allow
+downgrade to system resolver and Chromium seems somewhat unreliable with it often reporting
+`DNS_PROBE_POSSIBLE` and while this occassionally disables ECH, it works and
+my system resolvers are encrypted. I hope they will implement ECH with system
+resolver soon to fix this.
 
 ## `doh-dns0.json`
 
@@ -297,7 +299,10 @@ their alternative port.
 
 Enables encrypted client hello (ECH) and Online Certificate Status Protocol (OCSP) (or Certificate Revocation List (CRL)?) checks.
 
-However ECH seems to require `"DnsOverHttpsMode": "secure"` from the `doh-*` files and OCSP seems to bypass that going to the system resolver.
+However ECH requires `"DnsOverHttpsMode": "secure"` which will break things
+(and thus my files don't enable it),
+or it will occassionally get disabled (I hope they implement it with system
+resolver soon).
 
 ## `enable-labs.json`
 
