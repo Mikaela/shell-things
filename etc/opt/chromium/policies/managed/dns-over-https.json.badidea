@@ -1,0 +1,9 @@
+{
+  "comment": "This is a bad idea, because I don't know other DNS servers that
+  perform DNSSEC in addition to DNS-over-HTTPS, I just know these two do and
+  Quad9 doesn't. This would otherwise be the unbound.conf.d/dns-over-tls.conf
+  equivalent.",
+  "DnsOverHttpsMode": "automatic",
+  "DnsOverHttpsTemplates": "https://open.dns0.eu/
+  https://doh.applied-privacy.net/query"
+}
