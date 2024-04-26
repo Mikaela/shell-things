@@ -2,7 +2,7 @@
 Description=Run matterbridge cleanup every minute
 
 [Timer]
-OnCalendar=*-*-* *:*:00
+OnCalendar=minutely
 OnBootSec=0
 Persistent=true
 
