@@ -1,0 +1,14 @@
+[Unit]
+Description=Run Aminda's crontab delayed boot tasks for when there is no cron
+
+[Timer]
+OnBootSec=3min
+RandomizedDelaySec=2min
+# User services
+#OnStartupSec=5min
+Persistent=true
+# There is no need to stay loaded after the boot and first run.
+RemainAfterElapse=false
+
+[Install]
+WantedBy=timers.target

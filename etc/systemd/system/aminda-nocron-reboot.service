@@ -8,18 +8,17 @@ TimeoutStartSec=infinity
 # I always want DNS.
 ExecStartPre=-/usr/bin/systemctl enable --now unbound.service
 ExecStartPre=-/usr/bin/systemctl enable --now systemd-resolved.service
+ExecStartPre=-/usr/sbin/sysctl net.ipv6.conf.all.disable_ipv6=0
 # These services are called here, so
 ExecStartPre=-/usr/bin/systemctl start firewalld.service
-ExecStartPre=-/usr/bin/systemctl start yggdrasil.service
 # Ensure /etc/sysctl.d/ gets read
 ExecStart=-/usr/sbin/sysctl -p --system
 # Ensure we really allow ICMPv6 on FEDORA (or firewalld)
 ExecStart=-/usr/bin/firewall-cmd --add-protocol=ipv6-icmp
 # 3rd party Xbox controller initialization. See Mikaela/gist/gayming/
 #ExecStart=-/root/fixcontroller.py
-# Another attempt at ensuring Yggdrasil works with nordvpnd
-ExecStart=-/usr/sbin/sysctl net.ipv6.conf.all.disable_ipv6=0
-ExecStart=-/usr/bin/systemctl restart yggdrasil.service
+# This is actually in the delayed variant of this service, but anyway
+ExecStart=-/usr/bin/systemctl start yggdrasil.service
 # BTRFS deduplication
 #ExecStart=-/usr/sbin/duperemove -rdhq --hashfile=/root/home.hash /home
 #ExecStart=-/usr/sbin/duperemove -rdhq --hashfile=/root/flatpak.hash /var/lib/flatpak
