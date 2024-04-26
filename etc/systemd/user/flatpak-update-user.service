@@ -1,0 +1,7 @@
+[Unit]
+Description=Install user level flatpak updates and uninstall unused flatpaks
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/flatpak update --user --assumeyes --noninteractive
+ExecStartPost=/usr/bin/flatpak uninstall --user --unused --assumeyes --noninteractive

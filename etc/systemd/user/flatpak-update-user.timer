@@ -1,0 +1,15 @@
+[Unit]
+Description=Install user level flatpak updates and uninstall unused flatpaks regularly
+
+[Timer]
+#OnCalendar=*-*-* 19:00:00
+# Executed every 4 hours
+OnUnitActiveSec=4h
+# Executed 5 minutes from boot
+OnBootSec=300
+# Delay execution by something between 0 seconds and 3 hours
+RandomizedDelaySec=3h
+Persistent=true
+
+[Install]
+WantedBy=timers.target
