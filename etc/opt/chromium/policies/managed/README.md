@@ -297,7 +297,8 @@ their alternative port.
 
 ## `enable-ech-ocsp.json`
 
-Enables encrypted client hello (ECH) and Online Certificate Status Protocol (OCSP) (or Certificate Revocation List (CRL)?) checks.
+Enables encrypted client hello (ECH) and Online Certificate Status Protocol
+(OCSP)/Certificate Revocation List (CRL) checks.
 
 However ECH requires `"DnsOverHttpsMode": "secure"` which will break things
 (and thus my files don't enable it),
