@@ -4,7 +4,7 @@ Description=Run Aminda's crontab boot tasks for when there is no cron
 [Timer]
 OnBootSec=0
 # User services
-#OnStartupSec5
+#OnStartupSec=5
 Persistent=true
 # There is no need to stay loaded after the boot and first run.
 RemainAfterElapse=false
