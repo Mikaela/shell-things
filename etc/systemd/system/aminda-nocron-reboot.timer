@@ -6,6 +6,8 @@ OnBootSec=0
 # User services
 #OnStartupSec5
 Persistent=true
+# There is no need to stay loaded after the boot and first run.
+RemainAfterElapse=false
 
 [Install]
 WantedBy=timers.target
