@@ -5,6 +5,9 @@ Description=Aminda's cronless boot tasks
 Type=oneshot
 TimeoutStartSec=infinity
 # - means it can fail, without failing those after it
+# I always want DNS.
+ExecStartPre=-/usr/bin/systemctl enable --now unbound.service
+ExecStartPre=-/usr/bin/systemctl enable --now systemd-resolved.service
 # These services are called here, so
 ExecStartPre=-/usr/bin/systemctl start firewalld.service
 ExecStartPre=-/usr/bin/systemctl start yggdrasil.service
