@@ -8,6 +8,9 @@ TimeoutStartSec=infinity
 # Another attempt at ensuring Yggdrasil works with nordvpnd
 ExecStartPre=-/usr/sbin/sysctl net.ipv6.conf.all.disable_ipv6=0
 ExecStart=-/usr/bin/systemctl restart yggdrasil.service
+# If they somehow managed to not start already
+ExecStart=-/usr/bin/systemctl enable --now unbound.service
+ExecStart=-/usr/bin/systemctl enable --now systemd-resolved.service
 User=root
 StandardOutput=journal
 StandardError=journal
