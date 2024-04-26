@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Aminda's crontab boot tasks for when there is no cron
+
+[Timer]
+OnBootSec=0
+# User services
+#OnStartupSec5
+Persistent=true
+
+[Install]
+WantedBy=timers.target
