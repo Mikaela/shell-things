@@ -106,7 +106,7 @@
       },
       "{446900e4-71c2-419f-a6a7-df9c091e268b}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi",
-        "installation_mode": "normal_installed"
+        "installation_mode": "force_installed"
       },
       "{48748554-4c01-49e8-94af-79662bf34d50}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-pass/latest.xpi",
