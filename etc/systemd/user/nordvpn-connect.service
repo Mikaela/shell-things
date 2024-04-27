@@ -1,7 +1,7 @@
 [Unit]
 Description=Connect NordVPN on user login
 After=nordvpnd.service network-online.target dbus.socket
-Wants=nordvpnd.service network-online.target dbus.socket
+Requires=nordvpnd.service network-online.target dbus.socket
 
 [Service]
 Type=forking
