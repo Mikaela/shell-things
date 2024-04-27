@@ -15,4 +15,7 @@
 # Clearing DNS caches once we are disconnected
 %nordvpn ALL=NOPASSWD: /bin/systemctl restart unbound.service
 %nordvpn ALL=NOPASSWD: /bin/systemctl restart systemd-resolved.service
+# Tor complains about failures for a while and then notes IP change and
+# regenerates keys, so it should probably be here too.
+%nordvpn ALL=NOPASSWD: /bin/systemctl restart tor.service
 # vim: filetype=sudoers
