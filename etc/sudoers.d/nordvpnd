@@ -18,4 +18,5 @@
 # Tor complains about failures for a while and then notes IP change and
 # regenerates keys, so it should probably be here too.
 %nordvpn ALL=NOPASSWD: /bin/systemctl restart tor.service
+%nordvpn ALL=NOPASSWD: /bin/systemctl restart tor-client.service
 # vim: filetype=sudoers
