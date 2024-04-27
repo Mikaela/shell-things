@@ -30,6 +30,7 @@
   - [UpdateSWH](#updateswh)
   - [Privacy Badger](#privacy-badger)
   - [TODO/Inconsistencies](#todoinconsistencies)
+- [`black-theme-colour.json`](#black-theme-colourjson)
 - [`brave-shields-disabled.json`](#brave-shields-disabledjson)
 - [`disable-brave-rewards-wallet.json`](#disable-brave-rewards-walletjson)
 - [`disable-brave-tor.json`](#disable-brave-torjson)
@@ -222,6 +223,11 @@ See also:
 - I am not aware of any _New Tab Suspender_ equivalents, but it might be an
   integrated feature on some Chromiums.
 - [Peertubeify doesn't support Chromium yet.](https://codeberg.org/Booteille/peertube-companion/issues/15)
+
+## `black-theme-colour.json`
+
+Sets the theme colour as black. This is managed instead of recommended,
+because even the recommended policy seems to block theme changing.
 
 ## `brave-shields-disabled.json`
 
