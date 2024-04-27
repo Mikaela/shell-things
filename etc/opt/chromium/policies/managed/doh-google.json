@@ -1,0 +1,4 @@
+{
+  "DnsOverHttpsMode": "automatic",
+  "DnsOverHttpsTemplates": "https://dns.google/dns-query"
+}
