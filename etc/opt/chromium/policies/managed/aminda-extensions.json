@@ -11,7 +11,9 @@
           "webchat.disroot.org",
           "learn.microsoft.com",
           "teams.microsoft.com",
-          "bittimittari.fi"
+          "bittimittari.fi",
+          "pp-attester-turnstile.research.cloudflare.com",
+          "keyoxide.org"
         ],
         "learnInIncognito": true,
         "learnLocally": true,
