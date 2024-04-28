@@ -1,0 +1,12 @@
+[Resolve]
+# These could be used in some business
+#DNS=10.0.0.1
+#DNS=172.16.0.1
+# Average router
+#DNS=192.168.0.1
+# Huawei?
+#DNS=192.168.8.1
+# Mikrotik
+#DNS=192.168.88.1
+
+# vim: filetype=systemd
