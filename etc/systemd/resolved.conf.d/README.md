@@ -32,9 +32,14 @@ sudo systemctl restart systemd-resolved
   should exist anyway as I don't trust systemd-resolved entirely. Anyway if
   there truly is no local resolver, systemd-resolved will detect that and act accordingly.)
   - To rephrase, this is to be used together with other files, especially
-    some of those beginning with `dot-`.
-- `dot-*.conf` - configuration to use the DNS provider with DNS-over-TLS.
+    some of those beginning with `10-dot-`.
+- `10-dot-*.conf` - configuration to use the DNS provider with DNS-over-TLS.
   At least one of these should be used in addition to `00-defaults.conf`
+- `98-local-resolver.conf` attempts to configure localhost resolver and
+  disables unnecessary features for that scenario.
+- `99-lan-resolver.conf.sample` when renamed would allow enabling resolvers on
+  LAN assuming they are trusted. Note that if used together with
+  `98-local-resolver.conf`, DNSSEC would be disabled.
 - `README.md` - you are reading it right now.
 
 ## General commentary
