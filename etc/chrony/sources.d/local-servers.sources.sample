@@ -1,0 +1,20 @@
+# In my experience local routers are unlikely to support xleave
+# I don't remember if this does NTP, probably not, but auto_offline.
+server 192.168.8.1 iburst auto_offline prefer
+# Local router, MikroTik
+server 192.168.88.1 iburst auto_offline prefer
+
+# Local machines/Chronys
+server sedric.local iburst auto_offline xleave prefer
+server lumina.local iburst auto_offline xleave prefer
+server rbtpzn.local iburst auto_offline xleave prefer
+server zaldaryn.local iburst auto_offline xleave prefer
+
+# Or alternatively reciprocally TODO: how do `key` options work? This
+#  apparently should only be done in trusted LAN.
+# xleave is probably best to be used with other local Chronys, I somehow
+#  doubt potential router NTP might have it.
+#   A lot of reading say that it's better to use "server" on both sides
+#   rather than peer, I think even Chrony manual and that is where I took
+#   trusted LAN
+#peer LOCALMACHINE.local auto_offline xleave prefer
