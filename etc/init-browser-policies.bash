@@ -4,31 +4,38 @@
 set -x
 
 # Firefox and LibreWolf (caution! https://codeberg.org/librewolf/issues/issues/1767)
-mkdir -p /etc/firefox/policies
-#touch /etc/firefox/policies/policies.json
+mkdir -vp /etc/firefox/policies
+chmod -v a+rx /etc/firefox/
+chmod -v a+rx /etc/firefox/policies/
+touch /etc/firefox/policies/policies.json
+chmod -v a+r /etc/firefox/policies/policies.json
+printf "WARNING! LibreWolf default profile may be masked!\nhttps://codeberg.org/librewolf/issues/issues/1767\n"
 
 # Firefox ESR
-ln -siv /etc/firefox /etc/firefox-esr
+ln -sfv /etc/firefox /etc/firefox-esr
 
 # Chromium
-mkdir -p /etc/opt/chromium/policies/managed
-mkdir -p /etc/opt/chromium/policies/recommended
+mkdir -vp /etc/opt/chromium/policies/managed
+chmod -v a+rx /etc/opt/chromium/policies/
+mkdir -vp /etc/opt/chromium/policies/recommended
+chmod -v a+rx /etc/opt/chromium/policies/{managed,recommended}/
 
 # Brave
-ln -siv /etc/opt/chromium /etc/brave
+ln -sfv /etc/opt/chromium /etc/brave
 
 # Vivaldi
-ln -siv /etc/opt/chromium /etc/chromium
+ln -sfv /etc/opt/chromium /etc/chromium
 
 # Google Chrome
-ln -siv /etc/opt/chromium /etc/opt/chrome
+ln -sfv /etc/opt/chromium /etc/opt/chrome
 
 # Microsoft Edge
 # NOTE! It breaks chrome:// URLs so the recommended policy apps as new tab page
 # won't work and wants to open Firefox instead, so I am managing the recommended
 # policy separately
-#ln -siv /etc/opt/chromium /etc/opt/edge
-mkdir -p /etc/opt/edge/policies/recommended
-ln -siv /etc/opt/chromium/policies/managed /etc/opt/edge/policies/managed
+#ln -sfv /etc/opt/chromium /etc/opt/edge
+mkdir -vp /etc/opt/edge/policies/recommended
+ln -sfv /etc/opt/chromium/policies/managed /etc/opt/edge/policies/managed
+printf "WARNING! Edge recommended profiles are managed separately.\n"
 
 set +x
