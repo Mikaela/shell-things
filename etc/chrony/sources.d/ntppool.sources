@@ -1,10 +1,10 @@
 # Uncomment only one, if any. https://www.ntppool.org/en/use.html
 
 # https://www.ntppool.org/zone/@
-#pool pool.ntp.org iburst
+#pool pool.ntp.org iburst xleave
 
 # https://www.ntppool.org/zone/europe
-#pool europe.pool.ntp.org iburst
+#pool europe.pool.ntp.org iburst xleave
 
 # https://www.ntppool.org/zone/fi
-#pool fi.pool.ntp.org iburst
+#pool fi.pool.ntp.org iburst xleave
