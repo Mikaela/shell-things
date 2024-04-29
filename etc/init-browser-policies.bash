@@ -24,6 +24,11 @@ ln -siv /etc/opt/chromium /etc/chromium
 ln -siv /etc/opt/chromium /etc/opt/chrome
 
 # Microsoft Edge
-ln -siv /etc/opt/chromium /etc/opt/edge
+# NOTE! It breaks chrome:// URLs so the recommended policy apps as new tab page
+# won't work and wants to open Firefox instead, so I am managing the recommended
+# policy separately
+#ln -siv /etc/opt/chromium /etc/opt/edge
+mkdir -p /etc/opt/edge/policies/recommended
+ln -siv /etc/opt/chromium/policies/managed /etc/opt/edge/policies/managed
 
 set +x
