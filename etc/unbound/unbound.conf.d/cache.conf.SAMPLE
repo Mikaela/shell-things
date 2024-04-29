@@ -21,9 +21,10 @@ server:
 	# dares setting the minimum cache to something between 40 minute and 60,
 	# so how about 50 minutes? However it predates RFC 8767.
 	# TODO FIXME
-	cache-min-ttl: 3000
+	#cache-min-ttl: 3000
 	# Why not just make it hour directly, while that is considered as a
 	# maximum reasonableish value?
+	# TODO FIXME
 	cache-min-ttl: 3600
 	# Update cache for popular items before they expire. ~10 % traffic
 	# increase according to `man unbound.conf`
