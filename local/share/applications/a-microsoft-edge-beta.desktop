@@ -1,6 +1,6 @@
 [Desktop Entry]
 Version=1.0
-Name=MICROSOFT EDGE BETA
+Name=BETA MICROSOFT EDGE
 Exec=/usr/local/bin/microsoft-edge-beta %U
 StartupNotify=true
 Terminal=false

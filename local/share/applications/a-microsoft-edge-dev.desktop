@@ -1,6 +1,6 @@
 [Desktop Entry]
 Version=1.0
-Name=MICROSOFT EDGE DEV
+Name=DEV MICROSOFT EDGE
 Exec=/usr/local/bin/microsoft-edge-dev %U
 StartupNotify=true
 Terminal=false
