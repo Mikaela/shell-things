@@ -25,6 +25,11 @@ cat conf/librewolf.overrides.cfg >~/public_html/autoconfig.js
 mkdir -p ~/.librewolf/ ~/.var/app/io.gitlab.librewolf-community/.librewolf/
 cat conf/librewolf.overrides.cfg >~/.librewolf/librewolf.overrides.cfg
 cat conf/librewolf.overrides.cfg >~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg
+mkdir -p ~/.local/share/applications
+ln -sfv ~/.shell-things/local/share/applications ~/.local/share/applications/shell-things
+if hash update-desktop-database 2>/dev/null; then
+	update-desktop-database ~/.local/share/applications
+fi
 touch ~/.MIKAELA_GREP
 set +x
 # vim : set ft=sh :
