@@ -28,6 +28,9 @@ to `/usr/local/share/applications` and are named so to
 avoid masking package manager. They have clearly different names such as using
 all caps.
 
+Apparently one can also have subdirectories in `/usr/local/share/applications/`
+and `~/.local/share/applications/` making life easier.
+
 ## Refreshing the menus
 
 ```bash
