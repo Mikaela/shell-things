@@ -79,6 +79,9 @@ font pango:Comic Shanns Mono-Regular 10
 	# Start a terminal
 	bindsym $mod+Return exec $term
 
+	# Start a foot (outside of server)
+	bindsym $mod+Shift+Return exec foot
+
 	# Kill focused window
 	bindsym $mod+Shift+q kill
 
