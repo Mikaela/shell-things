@@ -1,2 +1,2 @@
 # DNA & Moi NTP server, no idea on smearing, I hope not
-pool ntp.dnainternet.fi maxsources 3 iburst prefer
+pool ntp.dnainternet.fi maxsources 3 iburst xleave prefer

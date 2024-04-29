@@ -1,4 +1,4 @@
 # Elisa NTP servers, no idea on smearing, I hope not
-server ntp1.kolumbus.fi iburst prefer
-server ntp2.kolumbus.fi iburst prefer
-server ntp.saunalahti.fi iburst prefer
+server ntp1.kolumbus.fi iburst xleave prefer
+server ntp2.kolumbus.fi iburst xleave prefer
+server ntp.saunalahti.fi iburst xleave prefer

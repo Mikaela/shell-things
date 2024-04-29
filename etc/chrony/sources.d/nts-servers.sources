@@ -14,31 +14,31 @@
 # NOTE: NTS support requires Chrony 4.0 or newer!
 
 # Cloudflare NTS, anycast, works probably anywhere. No leap second smearing.
-pool time.cloudflare.com maxsources 2 iburst nts prefer
+pool time.cloudflare.com maxsources 2 iburst nts xleave prefer
 
 # Finland, https://ntp.miuku.net
-server ntp.miuku.net iburst nts
+server ntp.miuku.net iburst nts xleave
 
 # https://system76.com/time
-#server virginia.time.system76.com iburst nts
-#server ohio.time.system76.com iburst nts
-#server oregon.time.system76.com iburst nts
-#server paris.time.system76.com iburst nts
-#server brazil.time.system76.com iburst nts
+#server virginia.time.system76.com iburst nts xleave
+#server ohio.time.system76.com iburst nts xleave
+#server oregon.time.system76.com iburst nts xleave
+#server paris.time.system76.com iburst nts xleave
+#server brazil.time.system76.com iburst nts xleave
 
 # Swedish anycast https://www.netnod.se/time-and-frequency/how-to-use-nts
-#server nts.netnod.se iburst nts
+#server nts.netnod.se iburst nts xleave
 
 # https://nts.time.nl/ - regardless of name provides 1 v4 & v6 address
 # no pool directive. Also no leap second smearing.
-#server ntppool1.time.nl iburst nts
-#server ntppool2.time.nl iburst nts
+#server ntppool1.time.nl iburst nts xleave
+#server ntppool2.time.nl iburst nts xleave
 
 # Germany https://www.ptb.de/cms/en/ptb/fachabteilungen/abtq/gruppe-q4/ref-q42/time-synchronization-of-computers-using-the-network-time-protocol-ntp.html
-#server ptbtime1.ptb.de iburst nts
-#server ptbtime2.ptb.de iburst nts
-#server ptbtime3.ptb.de iburst nts
+#server ptbtime1.ptb.de iburst nts xleave
+#server ptbtime2.ptb.de iburst nts xleave
+#server ptbtime3.ptb.de iburst nts xleave
 
 # Germany
-#server www.jabber-germany.de iburst nts
-#server www.masters-of-cloud.de iburst nts
+#server www.jabber-germany.de iburst nts xleave
+#server www.masters-of-cloud.de iburst nts xleave
