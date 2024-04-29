@@ -1,0 +1,26 @@
+[Desktop Entry]
+Version=1.0
+Name=MICROSOFT EDGE BETA
+Exec=/usr/local/bin/microsoft-edge-beta %U
+StartupNotify=true
+Terminal=false
+Icon=microsoft-edge-beta
+Type=Application
+Categories=Network;WebBrowser;
+MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/chrome;
+Actions=new-window;new-private-window;Guest;
+
+[Desktop Action new-window]
+Name=New Window
+Name[fi]=Uusi ikkuna
+Exec=/usr/local/bin/microsoft-edge-beta
+
+[Desktop Action new-private-window]
+Name=New InPrivate Window
+Name[fi]=Uusi InPrivate-ikkuna
+Exec=/usr/local/bin/microsoft-edge-beta --inprivate
+
+[Desktop Action Guest]
+Name=Guest session
+Name[fi]=Vierasistunto
+Exec=/usr/local/bin/microsoft-edge-beta --guest
