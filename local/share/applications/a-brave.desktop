@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=BRAVE
-Exec=/usr/local/bin/brave %U
+Exec=/usr/bin/env brave %U
 StartupNotify=true
 Terminal=false
 Icon=brave-browser
@@ -13,14 +13,14 @@ Actions=new-window;new-private-window;Guest;
 [Desktop Action new-window]
 Name=New Window
 Name[fi]=Uusi ikkuna
-Exec=/usr/local/bin/brave
+Exec=/usr/bin/env brave
 
 [Desktop Action new-private-window]
 Name=New Incognito Window
 Name[fi]=Uusi incognito-ikkuna
-Exec=/usr/local/bin/brave --incognito
+Exec=/usr/bin/env brave --incognito
 
 [Desktop Action Guest]
 Name=Guest session
 Name[fi]=Vierasistunto
-Exec=/usr/local/bin/brave --guest
+Exec=/usr/bin/env brave --guest

@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=SIGNAL
-Exec=/usr/local/bin/signal
+Exec=/usr/bin/env signal
 Type=Application
 Icon=org.signal.Signal

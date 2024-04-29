@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=STEAM
-Exec=/usr/local/bin/steam %U
+Exec=/usr/bin/env steam %U
 Icon=steam
 Terminal=false
 Type=Application
@@ -12,44 +12,44 @@ PrefersNonDefaultGPU=true
 [Desktop Action Store]
 Name=Store
 Name[fi]=Kauppa
-Exec=/usr/local/bin/steam steam://store
+Exec=/usr/bin/env steam steam://store
 
 [Desktop Action Community]
 Name=Community
 Name[fi]=Yhteisö
-Exec=/usr/local/bin/steam steam://url/SteamIDControlPage
+Exec=/usr/bin/env steam steam://url/SteamIDControlPage
 
 [Desktop Action Library]
 Name=Library
 Name[fi]=Kokoelma
-Exec=/usr/local/bin/steam steam://open/games
+Exec=/usr/bin/env steam steam://open/games
 
 [Desktop Action Servers]
 Name=Servers
 Name[fi]=Palvelimet
-Exec=/usr/local/bin/steam steam://open/servers
+Exec=/usr/bin/env steam steam://open/servers
 
 [Desktop Action Screenshots]
 Name=Screenshots
 Name[fi]=Kuvankaappaukset
 
-Exec=/usr/local/bin/steam steam://open/screenshots
+Exec=/usr/bin/env steam steam://open/screenshots
 
 [Desktop Action News]
 Name=News
 Name[fi]=Uutiset
-Exec=/usr/local/bin/steam steam://open/news
+Exec=/usr/bin/env steam steam://open/news
 
 [Desktop Action Settings]
 Name=Settings
 Name[fi]=Asetukset
-Exec=/usr/local/bin/steam steam://open/settings
+Exec=/usr/bin/env steam steam://open/settings
 
 [Desktop Action BigPicture]
 Name=Big Picture
-Exec=/usr/local/bin/steam steam://open/bigpicture
+Exec=/usr/bin/env steam steam://open/bigpicture
 
 [Desktop Action Friends]
 Name=Friends
 Name[fi]=Kaverit
-Exec=/usr/local/bin/steam steam://open/friends
+Exec=/usr/bin/env steam steam://open/friends

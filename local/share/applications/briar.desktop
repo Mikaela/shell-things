@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=BRIAR
-Exec=/usr/local/bin/briar
+Exec=/usr/bin/env briar
 Type=Application
 Icon=org.briarproject.Briar

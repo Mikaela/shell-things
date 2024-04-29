@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Name=DEV MICROSOFT EDGE
-Exec=/usr/local/bin/microsoft-edge-dev %U
+Exec=/usr/bin/env microsoft-edge-dev %U
 StartupNotify=true
 Terminal=false
 Icon=microsoft-edge-dev
@@ -13,14 +13,14 @@ Actions=new-window;new-private-window;Guest;
 [Desktop Action new-window]
 Name=New Window
 Name[fi]=Uusi ikkuna
-Exec=/usr/local/bin/microsoft-edge-dev
+Exec=/usr/bin/env microsoft-edge-dev
 
 [Desktop Action new-private-window]
 Name=New InPrivate Window
 Name[fi]=Uusi InPrivate-ikkuna
-Exec=/usr/local/bin/microsoft-edge-dev --inprivate
+Exec=/usr/bin/env microsoft-edge-dev --inprivate
 
 [Desktop Action Guest]
 Name=Guest session
 Name[fi]=Vierasistunto
-Exec=/usr/local/bin/microsoft-edge-dev --guest
+Exec=/usr/bin/env microsoft-edge-dev --guest

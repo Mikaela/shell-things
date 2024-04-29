@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Name=BETA MICROSOFT EDGE
-Exec=/usr/local/bin/microsoft-edge-beta %U
+Exec=/usr/bin/env microsoft-edge-beta %U
 StartupNotify=true
 Terminal=false
 Icon=microsoft-edge-beta
@@ -13,14 +13,14 @@ Actions=new-window;new-private-window;Guest;
 [Desktop Action new-window]
 Name=New Window
 Name[fi]=Uusi ikkuna
-Exec=/usr/local/bin/microsoft-edge-beta
+Exec=/usr/bin/env microsoft-edge-beta
 
 [Desktop Action new-private-window]
 Name=New InPrivate Window
 Name[fi]=Uusi InPrivate-ikkuna
-Exec=/usr/local/bin/microsoft-edge-beta --inprivate
+Exec=/usr/bin/env microsoft-edge-beta --inprivate
 
 [Desktop Action Guest]
 Name=Guest session
 Name[fi]=Vierasistunto
-Exec=/usr/local/bin/microsoft-edge-beta --guest
+Exec=/usr/bin/env microsoft-edge-beta --guest

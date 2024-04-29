@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Name=GOOGLE CHROME
-Exec=/usr/local/bin/google-chrome %U
+Exec=/usr/bin/env google-chrome %U
 StartupNotify=true
 Terminal=false
 Icon=google-chrome
@@ -13,14 +13,14 @@ Actions=new-window;new-private-window;Guest;
 [Desktop Action new-window]
 Name=New Window
 Name[fi]=Uusi ikkuna
-Exec=/usr/local/bin/google-chrome
+Exec=/usr/bin/env google-chrome
 
 [Desktop Action new-private-window]
 Name=New Incognito Window
 Name[fi]=Uusi incognito-ikkuna
-Exec=/usr/local/bin/google-chrome --incognito
+Exec=/usr/bin/env google-chrome --incognito
 
 [Desktop Action Guest]
 Name=Guest session
 Name[fi]=Vierasistunto
-Exec=/usr/local/bin/google-chrome --guest
+Exec=/usr/bin/env google-chrome --guest

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=SYNCPLAY
-Exec=/usr/local/bin/syncplay %u
+Exec=/usr/bin/env syncplay %u
 Terminal=true
 Type=Application
 Icon=~/src/github.com/syncplay/syncplay/syncplay/resources/syncplay.png

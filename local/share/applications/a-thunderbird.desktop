@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Name=THUNDERBIRD
-Exec=/usr/local/bin/thunderbird %U
+Exec=/usr/bin/env thunderbird %U
 Icon=thunderbird
 Terminal=false
 Type=Application

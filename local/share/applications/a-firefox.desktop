@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Name=FIREFOX
-Exec=/usr/local/bin/firefox %U
+Exec=/usr/bin/env firefox %U
 Icon=firefox
 Terminal=false
 Type=Application
@@ -14,9 +14,9 @@ StartupWMClass=firefox
 [Desktop Action new-window]
 Name=Open a New Window
 Name[fi]=Uusi ikkuna
-Exec=/usr/local/bin/firefox --new-window %U
+Exec=/usr/bin/env firefox --new-window %U
 
 [Desktop Action new-private-window]
 Name=Open a New Private Window
 Name[fi]=Uusi yksityinen ikkuna
-Exec=/usr/local/bin/firefox --private-window %U
+Exec=/usr/bin/env firefox --private-window %U

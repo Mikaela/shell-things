@@ -10,20 +10,20 @@ Comment[fi]=LibreAwoo verkkoselain
 Comment[eo]=LibreAwoo retumiulo
 Categories=Network;WebBrowser;Security;
 StartupWMClass=librewolf-default
-Exec=/usr/local/bin/libreawoo %U
+Exec=/usr/bin/env libreawoo %U
 Icon=librewolf
 
 Actions=new-window;new-private-window;safe-mode;preferences;
 
 [Desktop Action new-window]
 Name=New Window
-Exec=/usr/local/bin/libreawoo --new-window %U
+Exec=/usr/bin/env libreawoo --new-window %U
 [Desktop Action new-private-window]
 Name=New Private Window
-Exec=/usr/local/bin/libreawoo --private-window %U
+Exec=/usr/bin/env libreawoo --private-window %U
 [Desktop Action safe-mode]
 Name=Start in Safe Mode
-Exec=/usr/local/bin/libreawoo --safe-mode
+Exec=/usr/bin/env libreawoo --safe-mode
 [Desktop Action preferences]
 Name=Show Preferences
-Exec=/usr/local/bin/libreawoo --preferences
+Exec=/usr/bin/env libreawoo --preferences

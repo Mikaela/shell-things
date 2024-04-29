@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=JOPLIN
-Exec=/usr/local/bin/joplin %U
+Exec=/usr/bin/env joplin %U
 Icon=net.cozic.joplin_desktop
 StartupWMClass=Joplin
 Type=Application
