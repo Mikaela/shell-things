@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=JOPLIN
+Exec=/usr/local/bin/joplin %U
+Icon=net.cozic.joplin_desktop
+StartupWMClass=Joplin
+Type=Application
+Categories=Office;
+MimeType=x-scheme-handler/joplin;
