@@ -2,12 +2,11 @@ server:
 	# Increases TTL of all queries to 900 seconds (5 minutes) if upstream has
 	# a lower one. I have been using this since August 2019 without issues.
 	#cache-min-ttl: 900
+	#statistics-interval: 900
 	# https://blog.apnic.net/2019/11/12/stop-using-ridiculously-low-dns-ttls/
 	# dares setting the minimum cache to something between 40 minute and 60,
 	# so how about 50 minutes? However it predates RFC 8767.
 	#cache-min-ttl: 3000
-	# Why not just make it hour directly, while that is considered as a
-	# maximum reasonableish value?
-	#cache-min-ttl: 3600
+	#statistics-interval: 3000
 
 # vim: filetype=unbound.conf
