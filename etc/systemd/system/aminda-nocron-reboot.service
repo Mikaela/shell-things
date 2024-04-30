@@ -11,6 +11,8 @@ ExecStartPre=-/usr/bin/systemctl enable --now systemd-resolved.service
 ExecStartPre=-/usr/sbin/sysctl net.ipv6.conf.all.disable_ipv6=0
 # These services are called here, so
 ExecStartPre=-/usr/bin/systemctl start firewalld.service
+# https://github.com/systemd/zram-generator
+ExecStart=-/usr/bin/systemctl start /dev/zram0
 # Ensure /etc/sysctl.d/ gets read
 ExecStart=-/usr/sbin/sysctl -p --system
 # Ensure we really allow ICMPv6 on FEDORA (or firewalld)
