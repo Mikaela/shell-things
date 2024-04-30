@@ -1,0 +1,12 @@
+# This file is only when one wants to replace systemd-resolved with unbound
+# and to avoid having to mess up with resolv.conf or similar.
+
+server:
+# Change to yes for 0.0.0.0 and ::
+interface-automatic: no
+interface: ::1@53
+interface: 127.0.0.1@53
+interface: 127.0.0.53@53
+interface: 127.0.0.54@53
+
+# vim: filetype=unbound.conf
