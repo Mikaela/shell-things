@@ -1,0 +1,10 @@
+[Unit]
+Description=Run reading of /etc/sysctl.conf and /etc/sysctl.d/
+
+[Timer]
+OnBootSec=0
+Persistent=true
+RemainAfterElapse=false
+
+[Install]
+WantedBy=timers.target

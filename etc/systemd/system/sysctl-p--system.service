@@ -1,0 +1,13 @@
+[Unit]
+Description=Read /etc/sysctl.conf and /etc/sysctl.d/
+
+[Service]
+Type=oneshot
+TimeoutStartSec=infinity
+ExecStart=-/usr/sbin/sysctl -p --system
+User=root
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

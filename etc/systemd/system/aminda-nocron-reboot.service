@@ -1,5 +1,6 @@
 [Unit]
 Description=Aminda's cronless boot tasks
+Wants=sysctl-p--system.service
 
 [Service]
 Type=oneshot
@@ -13,18 +14,12 @@ ExecStartPre=-/usr/sbin/sysctl net.ipv6.conf.all.disable_ipv6=0
 ExecStartPre=-/usr/bin/systemctl start firewalld.service
 # https://github.com/systemd/zram-generator
 ExecStart=-/usr/bin/systemctl start /dev/zram0
-# Ensure /etc/sysctl.d/ gets read
-ExecStart=-/usr/sbin/sysctl -p --system
 # Ensure we really allow ICMPv6 on FEDORA (or firewalld)
 ExecStart=-/usr/bin/firewall-cmd --add-protocol=ipv6-icmp
 # 3rd party Xbox controller initialization. See Mikaela/gist/gayming/
 #ExecStart=-/root/fixcontroller.py
 # This is actually in the delayed variant of this service, but anyway
 ExecStart=-/usr/bin/systemctl start yggdrasil.service
-# BTRFS deduplication
-#ExecStart=-/usr/sbin/duperemove -rdhq --hashfile=/root/home.hash /home
-#ExecStart=-/usr/sbin/duperemove -rdhq --hashfile=/root/flatpak.hash /var/lib/flatpak
-#ExecStart=-/usr/sbin/duperemove -rdhq --hashfile=/root/snap.hash /var/lib/snapd
 User=root
 StandardOutput=journal
 StandardError=journal

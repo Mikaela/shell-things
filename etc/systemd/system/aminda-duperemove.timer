@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Aminda's deduplication tasks
+
+[Timer]
+OnBootSec=0
+Persistent=true
+RemainAfterElapse=false
+
+[Install]
+WantedBy=timers.target
