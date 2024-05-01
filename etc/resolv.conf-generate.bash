@@ -17,7 +17,7 @@ rm -v /etc/resolv.conf
 # Actual resolv.conf creation. OK, this could read resolv.conf in this
 # directory, but I like this being self-contained.
 # tee -p = operate in a more appropriate MODE with pipes.
-printf 'nameserver ::1\nnameserver 127.0.0.1\nnameserver 127.0.0.53\noptions edns0 trust-ad timeout:2 attempts:2 rotate\nsearch .\n' | tee -p /etc/resolv.conf
+printf 'nameserver ::1\nnameserver 127.0.0.1\nnameserver 127.0.0.53\nsearch .\noptions timeout:2 attempts:2 rotate edns0 trust-ad\n' | tee -p /etc/resolv.conf
 
 # Remove all other permissions than everyone reading resolv.conf
 chmod -v a=r /etc/resolv.conf
