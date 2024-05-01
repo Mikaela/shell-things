@@ -13,7 +13,8 @@ ExecStartPre=-/usr/sbin/sysctl net.ipv6.conf.all.disable_ipv6=0
 # These services are called here, so
 ExecStartPre=-/usr/bin/systemctl start firewalld.service
 # https://github.com/systemd/zram-generator
-ExecStart=-/usr/bin/systemctl start /dev/zram0
+#ExecStart=-/usr/bin/systemctl start /dev/zram0
+ExecStart=-/usr/bin/systemctl enable --now systemd-zram-setup@zram0.service
 # Ensure we really allow ICMPv6 on FEDORA (or firewalld)
 ExecStart=-/usr/bin/firewall-cmd --add-protocol=ipv6-icmp
 # 3rd party Xbox controller initialization. See Mikaela/gist/gayming/
