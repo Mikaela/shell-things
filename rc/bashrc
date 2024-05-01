@@ -258,7 +258,7 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export LOCALDOMAIN=.
 # Secureish resolv.conf options (except trust-ad, but systemd also sets it
 # regardless of whether DNSSEC=true or not.
-export RES_OPTIONS="edns0 trust-ad timeout:1 attempts:5"
+export RES_OPTIONS="edns0 trust-ad timeout:2 attempts:2 rotate"
 
 #####	Aliases						RJ706I	#####
 
