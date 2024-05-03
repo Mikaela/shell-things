@@ -1,0 +1,3 @@
+# This is Lumina's kernel command line. When using
+# UEFI UNIFIED KERNEL IMAGES, this file is very important to have.
+kernel_cmdline="root=UUID=805c850d-d923-45ba-b55c-9b95309b58b5 ro rootflags=subvol=root rd.luks.uuid=luks-2f03d7ba-c447-43b9-b62b-6d76362774ee quiet mitigations=auto acpi_osi=Linux rw fsck.mode=force fsck.repair=yes lockdown=confidentiality"
