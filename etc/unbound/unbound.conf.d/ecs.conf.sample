@@ -1,16 +1,18 @@
+# This will only affect servers that are accessed with public IP address!
 server:
+#module-config: "ipsecmod validator iterator"
+# subnetcache must be loaded for ecs
+module-config: "subnetcache validator iterator"
 # Send ECS everywhere always
 client-subnet-zone: "."
-#client-subnet-always-forward: yes
+client-subnet-always-forward: yes
 # Send different subnet size
 #max-client-subnet-ipv6: "16"
-max-client-subnet-ipv4: "0"
+#max-client-subnet-ipv4: "0"
 
-# IP address to send as client subnet. Optionally /CIDR can be appended.
-#
-# These are actual Moi.fi IP addresses (dynamic, so they will likely
-# change very soon and thus kind of become "anonymized" :D)
-#send-client-subnet: "82.203.160.208"
-send-client-subnet: "2001:14bb:653:a161:9d7b:be7a:1e40:ad7"
+# IP address to send client subnets TO. Optionally /CIDR can be appended.
+# This actually means AUTHORITY servers!
+#send-client-subnet:
+#send-client-subnet:
 
 # vim: filetype=unbound.conf
