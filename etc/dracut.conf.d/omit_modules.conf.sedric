@@ -1,0 +1,1 @@
+omit_dracutmodules+=" plymouth tpm2-tss kernel-modules-extra network-manager network-legacy connman "
