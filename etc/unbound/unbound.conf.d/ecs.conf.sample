@@ -4,13 +4,13 @@ client-subnet-zone: "."
 #client-subnet-always-forward: yes
 # Send different subnet size
 #max-client-subnet-ipv6: "16"
-#max-client-subnet-ipv4: "48"
+max-client-subnet-ipv4: "0"
 
 # IP address to send as client subnet. Optionally /CIDR can be appended.
 #
 # These are actual Moi.fi IP addresses (dynamic, so they will likely
 # change very soon and thus kind of become "anonymized" :D)
-send-client-subnet: "82.203.160.208/17"
-send-client-subnet: "2001:14bb:653:a161:9d7b:be7a:1e40:ad7/29"
+#send-client-subnet: "82.203.160.208"
+send-client-subnet: "2001:14bb:653:a161:9d7b:be7a:1e40:ad7"
 
 # vim: filetype=unbound.conf
