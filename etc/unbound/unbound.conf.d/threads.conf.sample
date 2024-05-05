@@ -1,0 +1,9 @@
+server:
+	# Use two threads, I think more than 1 threads will help with Firefox
+	# at times telling name resolution failed. Common advice is either one
+	# to disable threading or the amount of CPU cores.
+	#  However I am unsure if more than one thread is actually needed if web
+	#  browser is using encrypted DNS by itself (for ECH).
+	num-threads: 2
+
+# vim: filetype=unbound.conf
