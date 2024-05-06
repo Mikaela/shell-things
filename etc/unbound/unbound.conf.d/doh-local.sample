@@ -1,0 +1,9 @@
+# semanage port -a -t dns_port_t -p tcp 4433
+interface: ::1@53
+interface: 127.0.0.1@53
+interface: ::1@4433
+interface: 127.0.0.1@4433
+https-port: 4433
+#http-notls-downstream: yes
+tls-service-key: /etc/unbound/conf.d/unbound.pem
+tls-service-pem: /etc/unbound/conf.d/unbound.pem

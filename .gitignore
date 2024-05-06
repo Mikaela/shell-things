@@ -14,6 +14,9 @@
 !.pre-commit-config.yaml
 !.reuse
 
+# Certificates (unlikely to happen, but better safe than sorry)
+*.pem
+
 # Symlinks
 install.run
 LICENSE
