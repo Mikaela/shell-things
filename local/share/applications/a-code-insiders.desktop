@@ -1,0 +1,18 @@
+[Desktop Entry]
+Name=UNSTABLE VS CODE
+Name[fi]=EPÄVAKAA VS CODE
+Exec=/usr/bin/env code-insiders %F
+Icon=vscode-insiders
+#Icon=/var/lib/snapd/snap/code/158/meta/gui/vscode-insiders.png
+Type=Application
+Categories=TextEditor;Development;IDE;Utility;
+MimeType=application/x-code-workspace;
+Actions=new-empty-window;
+Keywords=vscode-insiders;
+
+[Desktop Action new-empty-window]
+Name=New Empty Window
+Name[fi]=Uusi tyhjä ikkuna
+Exec=/usr/bin/env code-insiders --new-window %F
+#Icon=/var/lib/snapd/snap/code/158/meta/gui/vscode-insiders.png
+Icon=vscode-insiders

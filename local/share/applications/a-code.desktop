@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=VISUAL STUDIO CODE
+Exec=/usr/bin/env code %F
+Icon=vscode
+#Icon=/var/lib/snapd/snap/code/158/meta/gui/vscode.png
+Type=Application
+Categories=TextEditor;Development;IDE;Utility;
+MimeType=application/x-code-workspace;
+Actions=new-empty-window;
+Keywords=vscode;
+
+[Desktop Action new-empty-window]
+Name=New Empty Window
+Name[fi]=Uusi tyhjä ikkuna
+Exec=/usr/bin/env code --new-window %F
+#Icon=/var/lib/snapd/snap/code/158/meta/gui/vscode.png
+Icon=vscode
