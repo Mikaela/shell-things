@@ -30,26 +30,46 @@
 # DNS0 default
 193.110.81.0 dns0.eu
 185.253.5.0 dns0.eu
-2a0f:fc80:: dns0.eu
-2a0f:fc81:: dns0.eu
+# Uses private ECS, which gets inaccurate with IPv6 directing traffic to
+# other side of the country at best and different country at worst. Thus
+# attempt to make everything only use it for IPv4 (browser fallback is system
+# resolver which does IPv6 if IPv4 breaks, even if ECH will break).
+#2a0f:fc80:: dns0.eu
+#2a0f:fc81:: dns0.eu
+::1 dns0.eu
 
 # DNS0 Zero
 193.110.81.9 zero.dns0.eu
 185.253.5.9 zero.dns0.eu
-2a0f:fc80::9 zero.dns0.eu
-2a0f:fc81::9 zero.dns0.eu
+# Uses private ECS, which gets inaccurate with IPv6 directing traffic to
+# other side of the country at best and different country at worst. Thus
+# attempt to make everything only use it for IPv4 (browser fallback is system
+# resolver which does IPv6 if IPv4 breaks, even if ECH will break).
+#2a0f:fc80::9 zero.dns0.eu
+#2a0f:fc81::9 zero.dns0.eu
+::1 zero.dns0.eu
 
 # DNS0 Kids
 193.110.81.1 kids.dns0.eu
 185.253.5.1 kids.dns0.eu
-2a0f:fc80::1 kids.dns0.eu
-2a0f:fc81::1 kids.dns0.eu
+# Uses private ECS, which gets inaccurate with IPv6 directing traffic to
+# other side of the country at best and different country at worst. Thus
+# attempt to make everything only use it for IPv4 (browser fallback is system
+# resolver which does IPv6 if IPv4 breaks, even if ECH will break).
+#2a0f:fc80::1 kids.dns0.eu
+#2a0f:fc81::1 kids.dns0.eu
+::1 kids.dns0.eu
 
 # DNS0 Open
 193.110.81.254 open.dns0.eu
 185.253.5.254 open.dns0.eu
-2a0f:fc80::ffff open.dns0.eu
-2a0f:fc81::ffff open.dns0.eu
+# Uses private ECS, which gets inaccurate with IPv6 directing traffic to
+# other side of the country at best and different country at worst. Thus
+# attempt to make everything only use it for IPv4 (browser fallback is system
+# resolver which does IPv6 if IPv4 breaks, even if ECH will break).
+#2a0f:fc80::ffff open.dns0.eu
+#2a0f:fc81::ffff open.dns0.eu
+::1 open.dns0.eu
 
 # Cloudflare
 1.1.1.1 cloudflare-dns.com one.one.one.one
@@ -69,8 +89,13 @@
 # AdGuard Default
 94.140.14.14 dns.adguard-dns.com
 94.140.15.15 dns.adguard-dns.com
-2a10:50c0::ad1:ff dns.adguard-dns.com
-2a10:50c0::ad2:ff dns.adguard-dns.com
+# Uses private ECS, which gets inaccurate with IPv6 directing traffic to
+# other side of the country at best and different country at worst. Thus
+# attempt to make everything only use it for IPv4 (browser fallback is system
+# resolver which does IPv6 if IPv4 breaks, even if ECH will break).
+#2a10:50c0::ad1:ff dns.adguard-dns.com
+#2a10:50c0::ad2:ff dns.adguard-dns.com
+::1 dns.adguard-dns.com
 
 # Google DNS
 8.8.8.8 dns.google dns.google.com
