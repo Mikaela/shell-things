@@ -1,4 +1,1 @@
-{
-  "DnsOverHttpsMode": "automatic",
-  "DnsOverHttpsTemplates": "https://security.cloudflare-dns.com/dns-query"
-}
+doh-cloudflare-security.json
