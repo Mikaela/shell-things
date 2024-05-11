@@ -36,7 +36,8 @@
               "adnauseam-filters",
               "eff-dnt-whitelist",
               "ublock-quick-fixes",
-              "FIN-0"
+              "FIN-0",
+              "https://big.oisd.nl"
             ]
           }
         },
