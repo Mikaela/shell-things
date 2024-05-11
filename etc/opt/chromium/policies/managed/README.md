@@ -33,8 +33,16 @@
 - [`doh-quad9-insecure-ecs.json.badidea`](#doh-quad9-insecure-ecsjsonbadidea)
 - [`doh-quad9-insecure.json.badidea`](#doh-quad9-insecurejsonbadidea)
 - [`doh-quad9.json`](#doh-quad9json)
+- [`doh-unlocked-unset.json`](#doh-unlocked-unsetjson-1)
+- [`edge-appsfavorites.json`](#edge-appsfavoritesjson)
+- [`edge-newtabapps.json`](#edge-newtabappsjson)
+- [`edge-screenshots.json`](#edge-screenshotsjson)
+- [`enable-chromecast.json`](#enable-chromecastjson)
 - [`enable-ech-ocsp.json`](#enable-ech-ocspjson)
+- [`enable-google-safebrowsing.json`](#enable-google-safebrowsingjson)
 - [`enable-labs.json`](#enable-labsjson)
+- [`enable-passwordleakdetection.json`](#enable-passwordleakdetectionjson)
+- [`enable-tab-suspend.json`](#enable-tab-suspendjson)
 - [`fix-edge-search.json`](#fix-edge-searchjson)
 - [`force-incognito.json.badidea`](#force-incognitojsonbadidea)
 - [`https-everywhere.json`](#https-everywherejson)
@@ -151,7 +159,8 @@ that I can see.
 
 ## `disable-floc.json`
 
-Disables floc or ad topics that are against privacy.
+Disables floc or ad topics that are against privacy. Additionally allows
+Manifest v2 extensions (as v3 is kind of floc too).
 
 - https://start.duckduckgo.com/?q=google+floc+privacy+topics
 
@@ -203,6 +212,26 @@ their alternative port. **No DNSSEC either.**
 Forces DNS over HTTPS with Quad9 threat-blocking server and also contains
 their alternative port.
 
+## `doh-unlocked-unset.json`
+
+Allows configuring DoH even with managed policies present (unless another DoH rule is in force) since enabling any managed policy will otherwise gray out the option.
+
+## `edge-appsfavorites.json`
+
+Edge apps in favorites bar.
+
+## `edge-newtabapps.json`
+
+Should enable apps in new tab page, although I am not seeing it.
+
+## `edge-screenshots.json`
+
+Explicitly enables screenshotting-
+
+## `enable-chromecast.json`
+
+Explicitly enables Chromecast support.
+
 ## `enable-ech-ocsp.json`
 
 Enables encrypted client hello (ECH) and Online Certificate Status Protocol
@@ -213,9 +242,23 @@ However ECH requires `"DnsOverHttpsMode": "secure"` which will break things
 or it will occassionally get disabled (I hope they implement it with system
 resolver soon).
 
+## `enable-google-safebrowsing.json`
+
+Enforces Google Safe Browsing in standard mode. For advanced mode and sending data to Google, increase to 2.
+
+I just don't trust my family to not find and disable the feature, especially if there was an unfiltered DNS server.
+
 ## `enable-labs.json`
 
 Enables the beaker button "Experiments" for easier management than `about:flags`.
+
+## `enable-passwordleakdetection.json`
+
+Warns about password reuse, although that may only be with Google account.
+
+## `enable-tab-suspend.json`
+
+Enables the efficiency mode which suspends background tabs.
 
 ## `fix-edge-search.json`
 

@@ -14,6 +14,7 @@
 - [`duckduckgo.json`](#duckduckgojson)
 - [`ecosia.json`](#ecosiajson)
 - [`enable-home.json`](#enable-homejson)
+- [`no-bookmarks-bar.json`](#no-bookmarks-barjson)
 - [`README.md`](#readmemd)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -47,6 +48,10 @@ Sets and displays recommendation on the use of Ecosia as a search engine by defa
 ## `enable-home.json`
 
 Enables home button by default.
+
+## `no-bookmarks-bar.json`
+
+Hides bookmarks bar by default. I just dislike it greatly.
 
 ## `README.md`
 
