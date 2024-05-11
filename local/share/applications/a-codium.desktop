@@ -1,16 +1,17 @@
 [Desktop Entry]
 Name=CODIUM
 Exec=/usr/bin/env codium %F
-Icon=com.vscodium.codium
+#Icon=com.vscodium.codium
+Icon=/var/lib/snapd/snap/codium/394/meta/gui/codium.png
 Type=Application
 Categories=TextEditor;Development;IDE;Utility;
-MimeType=application/x-code-workspace;
+MimeType=text/plain;inode/directory;application/x-codium-workspace;
 Actions=new-empty-window;
-Keywords=codium;
+Keywords=vscodium;codium;vscode;
 
 [Desktop Action new-empty-window]
 Name=New Empty Window
 Name[fi]=Uusi tyhjä ikkuna
 Exec=/usr/bin/env codium --new-window %F
-#Icon=/var/lib/snapd/snap/code/158/meta/gui/vscode.png
-Icon=com.vscodium.codium
+Icon=/var/lib/snapd/snap/codium/394/meta/gui/codium.png
+#Icon=com.vscodium.codium
