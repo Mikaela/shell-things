@@ -15,6 +15,7 @@ so graphical desktop environments started the apps on login.
 
 - [`a-*.desktop`](#a-desktop)
 - [Refreshing the menus](#refreshing-the-menus)
+- [Default applications](#default-applications)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -37,3 +38,21 @@ and `~/.local/share/applications/` making life easier.
 update-desktop-database -v ~/.local/share/applications
 sudo update-desktop-database -v /usr/local/share/applications
 ```
+
+## Default applications
+
+[Codium documentation](https://github.com/VSCodium/vscodium/blob/1.89.1.24130/docs/index.md#how-do-i-fix-the-default-file-manager-linux)
+points out the existence of `~/.config/mimeapps.list` and gives these two
+examples:
+
+```toml
+[Default Applications]
+inode/directory=org.gnome.Nautilus.desktop;
+```
+
+```bash
+% grep directory /usr/share/applications/mimeinfo.cache
+inode/directory=codium.desktop;org.gnome.Nautilus.desktop;
+```
+
+TODO: I wonder if it needs an `update-desktop-database` or similar though.
