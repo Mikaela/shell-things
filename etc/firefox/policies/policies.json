@@ -89,7 +89,7 @@
         "installation_mode": "force_installed"
       },
       "ipvfoobar@napr.eu": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest//ipvfoobar/latest.xpi",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ipvfoobar/latest.xpi",
         "installation_mode": "normal_installed"
       },
       "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
@@ -128,6 +128,10 @@
       "{6a65273e-2b26-40f5-b66e-8eed317307da}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/new-tab-suspender/latest.xpi",
         "installation_mode": "force_installed"
+      },
+      "{6a911b41-b1ee-4d0f-b23b-890229bff0ec}": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/http-indicator/latest.xpi",
+        "installation_mode": "normal_installed"
       },
       "{759dbb01-b646-4327-bf9e-69ca2543ef8d}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/opendyslexic-for-firefox/latest.xpi",

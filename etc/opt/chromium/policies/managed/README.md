@@ -11,6 +11,7 @@
 - [`aminda-extensions.json`](#aminda-extensionsjson)
   - [Silk - Privacy Pass Client for the browser](#silk---privacy-pass-client-for-the-browser)
   - [uBlock Origin](#ublock-origin)
+  - [HTTP Indicator](#http-indicator)
   - [Fedora User Agent](#fedora-user-agent)
   - [IPvFooBar](#ipvfoobar)
   - [AdNauseam](#adnauseam)
@@ -75,6 +76,12 @@ To intentionally trigger it and what should be allowed in NoScript:
 - `cjpalhdlnbpafiamejdnhcphjbkeiagm`
 
 Blocked for Ad Nauseam
+
+### [HTTP Indicator](https://chromewebstore.google.com/detail/http-indicator/hgcomhbcacfkpffiphlmnlhpppcjgmbl)
+
+- `hgcomhbcacfkpffiphlmnlhpppcjgmbl`
+
+Displays whether a web page was loaded over HTTP/2 or HTTP/3 etc.
 
 ### [Fedora User Agent](https://chrome.google.com/webstore/detail/hojggiaghnldpcknpbciehjcaoafceil)
 
