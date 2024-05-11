@@ -2,6 +2,44 @@
   "policies": {
     "3rdparty": {
       "Extensions": {
+        "adnauseam@rednoise.org": {
+          "toAdd": {
+            "trustedSiteDirectives": [
+              "app.element.io",
+              "staging.element.io",
+              "develop.element.io",
+              "chat.pikaviestin.fi",
+              "webchat.disroot.org",
+              "learn.microsoft.com",
+              "teams.microsoft.com",
+              "bittimittari.fi",
+              "pp-attester-turnstile.research.cloudflare.com",
+              "keyoxide.org",
+              "one.one.one.one",
+              "www.ecosia.org",
+              "ac.ecosia.org"
+            ]
+          },
+          "toOverwrite": {
+            "filterLists": [
+              "user-filters",
+              "ublock-filters",
+              "ublock-badware",
+              "ublock-privacy",
+              "ublock-abuse",
+              "ublock-unbreak",
+              "easylist",
+              "easyprivacy",
+              "urlhaus-1",
+              "plowe-0",
+              "https://gitea.blesmrt.net/mikaela/gist/raw/branch/master/DNS/blocklist.txt",
+              "adnauseam-filters",
+              "eff-dnt-whitelist",
+              "ublock-quick-fixes",
+              "FIN-0"
+            ]
+          }
+        },
         "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
           "checkForDNTPolicy": true,
           "disabledSites": [
