@@ -12,6 +12,7 @@
 - [`brave-search.json`](#brave-searchjson)
 - [`disable-default-browser-check.json`](#disable-default-browser-checkjson)
 - [`duckduckgo.json`](#duckduckgojson)
+- [`ecosia.json`](#ecosiajson)
 - [`enable-home.json`](#enable-homejson)
 - [`README.md`](#readmemd)
 
@@ -38,6 +39,10 @@ suggested policy, allows the user to set as default in browser settings.
 ## `duckduckgo.json`
 
 Sets and displays recommendation on the use of start.duckduckgo.com as a search engine by default.
+
+## `ecosia.json`
+
+Sets and displays recommendation on the use of Ecosia as a search engine by default.
 
 ## `enable-home.json`
 

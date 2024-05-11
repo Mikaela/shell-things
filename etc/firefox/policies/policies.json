@@ -15,7 +15,9 @@
             "bittimittari.fi",
             "pp-attester-turnstile.research.cloudflare.com",
             "keyoxide.org",
-            "one.one.one.one"
+            "one.one.one.one",
+            "www.ecosia.org",
+            "ac.ecosia.org"
           ],
           "learnInIncognito": true,
           "learnLocally": true,
@@ -174,6 +176,15 @@
           "PostData": "q={searchTerms}",
           "SuggestURLTemplate": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
           "URLTemplate": "https://start.duckduckgo.com/?q={searchTerms}"
+        },
+        {
+          "Alias": "e",
+          "Description": "Ecosia Search Engine",
+          "Method": "GET",
+          "Name": "Ecosia",
+          "PostData": "q={searchTerms}",
+          "SuggestURLTemplate": "https://ac.ecosia.org/autocomplete?q={searchTerms}",
+          "URLTemplate": "https://www.ecosia.org/search?q={searchTerms}"
         },
         {
           "Alias": "b",
