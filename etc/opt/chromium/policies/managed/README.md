@@ -18,7 +18,7 @@
   - [uBlock Origin](#ublock-origin-1)
   - [Bitwarden](#bitwarden)
   - [Privacy Badger](#privacy-badger)
-- [`black-theme-colour.json`](#black-theme-colourjson)
+- [`black-theme-colour.json.sample`](#black-theme-colourjsonsample)
 - [`brave-shields-disabled.json`](#brave-shields-disabledjson)
 - [`disable-brave-rewards-wallet.json`](#disable-brave-rewards-walletjson)
 - [`disable-brave-tor.json`](#disable-brave-torjson)
@@ -135,10 +135,13 @@ See also:
 - https://github.com/EFForg/privacybadger/blob/master/doc/admin-deployment.md
 - https://github.com/EFForg/privacybadger/blob/master/src/data/schema.json
 
-## `black-theme-colour.json`
+## `black-theme-colour.json.sample`
 
 Sets the theme colour as black. This is managed instead of recommended,
 because even the recommended policy seems to block theme changing.
+
+`.sample` suffix is there so maybe I will stop applying this policy and thus
+disabling GTK/Qt themes.
 
 ## `brave-shields-disabled.json`
 
