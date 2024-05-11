@@ -1,5 +1,5 @@
 {
-  "ExtensionManifestV2Availability": true,
+  "ExtensionManifestV2Availability": 2,
   "PrivacySandboxAdMeasurementEnabled": false,
   "PrivacySandboxAdTopicsEnabled": false,
   "PrivacySandboxPromptEnabled": false,
