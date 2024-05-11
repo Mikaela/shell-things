@@ -34,63 +34,9 @@
       "toolbar_pin": "default_unpinned",
       "update_url": "https://clients2.google.com/service/update2/crx"
     },
-    "cdnapgfjopgaggbmfgbiinmmbdcglnam": {
-      "installation_mode": "normal_installed",
-      "override_update_url": true,
-      "toolbar_pin": "force_pinned",
-      "update_url": "https://clients2.google.com/service/update2/crx"
-    },
     "cjpalhdlnbpafiamejdnhcphjbkeiagm": {
       "blocked_install_message": "uBlock Origin on integroitu AdNauseamiin, joka on forkki siitä.",
       "installation_mode": "blocked"
-    },
-    "ecanpcehffngcegjmadlcijfolapggal": {
-      "installation_mode": "normal_installed",
-      "override_update_url": true,
-      "toolbar_pin": "force_pinned",
-      "update_url": "https://clients2.google.com/service/update2/crx"
-    },
-    "eimadpbcbfnmbkopoojfekhnkhdbieeh": {
-      "installation_mode": "normal_installed",
-      "override_update_url": true,
-      "toolbar_pin": "force_pinned",
-      "update_url": "https://clients2.google.com/service/update2/crx"
-    },
-    "fkagelmloambgokoeokbpihmgpkbgbfm": {
-      "installation_mode": "normal_installed",
-      "override_update_url": true,
-      "toolbar_pin": "default_unpinned",
-      "update_url": "https://clients2.google.com/service/update2/crx"
-    },
-    "fnaicdffflnofjppbagibeoednhnbjhg": {
-      "installation_mode": "normal_installed",
-      "override_update_url": true,
-      "toolbar_pin": "default_unpinned",
-      "update_url": "https://clients2.google.com/service/update2/crx"
-    },
-    "fpnmgdkabkmnadcjpehmlllkndpkmiak": {
-      "installation_mode": "normal_installed",
-      "override_update_url": true,
-      "runtime_allowed_hosts": [
-        "*://*.archive.org"
-      ],
-      "runtime_blocked_hosts": [
-        "<all_urls>"
-      ],
-      "toolbar_pin": "force_pinned",
-      "update_url": "https://clients2.google.com/service/update2/crx"
-    },
-    "giccehglhacakcfemddmfhdkahamfcmd": {
-      "installation_mode": "normal_installed",
-      "override_update_url": true,
-      "toolbar_pin": "force_pinned",
-      "update_url": "https://clients2.google.com/service/update2/crx"
-    },
-    "hjdoplcnndgiblooccencgcggcoihigg": {
-      "installation_mode": "normal_installed",
-      "override_update_url": true,
-      "toolbar_pin": "force_pinned",
-      "update_url": "https://clients2.google.com/service/update2/crx"
     },
     "hojggiaghnldpcknpbciehjcaoafceil": {
       "installation_mode": "normal_installed",
@@ -104,35 +50,11 @@
       "toolbar_pin": "force_pinned",
       "update_url": "https://clients2.google.com/service/update2/crx"
     },
-    "inomeogfingihgjfjlpeplalcfajhgai": {
-      "installation_mode": "normal_installed",
-      "override_update_url": true,
-      "toolbar_pin": "default_unpinned",
-      "update_url": "https://clients2.google.com/service/update2/crx"
-    },
-    "jojjlkfeofgcjeanbpghcapjcccbakop": {
-      "installation_mode": "normal_installed",
-      "override_update_url": true,
-      "toolbar_pin": "force_pinned",
-      "update_url": "https://clients2.google.com/service/update2/crx"
-    },
-    "mafpmfcccpbjnhfhjnllmmalhifmlcie": {
-      "installation_mode": "force_installed",
-      "override_update_url": true,
-      "toolbar_pin": "force_pinned",
-      "update_url": "https://clients2.google.com/service/update2/crx"
-    },
     "mlojlfildnehdpnlmpkeiiglhhkofhpb": {
       "installation_mode": "force_installed",
       "override_update_url": true,
       "toolbar_pin": "force_pinned",
       "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
-    },
-    "nibjojkomfdiaoajekhjakgkdhaomnch": {
-      "installation_mode": "normal_installed",
-      "override_update_url": true,
-      "toolbar_pin": "force_pinned",
-      "update_url": "https://clients2.google.com/service/update2/crx"
     },
     "nngceckbapebfimnlniiiahkandclblb": {
       "installation_mode": "force_installed",
@@ -143,12 +65,6 @@
     "odfafepnkmbhccpbejgmiehpchacaeak": {
       "blocked_install_message": "uBlock Origin on integroitu AdNauseamiin, joka on forkki siitä.",
       "installation_mode": "blocked"
-    },
-    "palihjnakafgffnompkdfgbgdbcagbko": {
-      "installation_mode": "normal_installed",
-      "override_update_url": true,
-      "toolbar_pin": "default_unpinned",
-      "update_url": "https://clients2.google.com/service/update2/crx"
     },
     "pkehgijcmpdhfbdbbnkijodmdjhbjlgp": {
       "installation_mode": "force_installed",
