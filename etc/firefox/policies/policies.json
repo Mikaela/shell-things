@@ -70,10 +70,10 @@
     "DNSOverHTTPS": {
       "Enabled": true,
       "Locked": false,
-      "ProviderURL": "https://dns.quad9.net/dns-query"
+      "ProviderURL": "https://dns11.quad9.net/dns-query"
     },
     "DisableEncryptedClientHello": false,
-    "DisablePocket": false,
+    "DisablePocket": true,
     "EnableTrackingProtection": {
       "Cryptomining": true,
       "Fingerprinting": true,
@@ -212,7 +212,7 @@
           "URLTemplate": "https://search.brave.com/goggles?q={searchTerms}"
         }
       ],
-      "Default": "Ecosia Search Engine"
+      "Default": "Ecosia"
     },
     "SearchSuggestEnabled": false
   }
