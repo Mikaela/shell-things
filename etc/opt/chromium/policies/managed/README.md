@@ -10,6 +10,7 @@
 
 - [`aminda-extensions.json`](#aminda-extensionsjson)
   - [Silk - Privacy Pass Client for the browser](#silk---privacy-pass-client-for-the-browser)
+  - [Plasma Integration](#plasma-integration)
   - [uBlock Origin](#ublock-origin)
   - [HTTP Indicator](#http-indicator)
   - [Fedora User Agent](#fedora-user-agent)
@@ -79,6 +80,14 @@ To intentionally trigger it and what should be allowed in NoScript:
 
 - https://captcha.website
 - https://issuance.privacypass.cloudflare.com
+
+### [Plasma Integration](https://chrome.google.com/webstore/detail/cimiefiiaegbelhefglklhhakcgmhkai)
+
+- `cimiefiiaegbelhefglklhhakcgmhkai`
+
+Does a lot of small things on KDE Plasma which my family uses (and me too,
+when I am not on Sway). For example media player integration to Plasma,
+downloads indicator/control, KDE Connect, alt-f2, etc.
 
 ### uBlock Origin
 
