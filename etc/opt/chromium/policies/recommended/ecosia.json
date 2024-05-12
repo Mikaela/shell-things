@@ -4,6 +4,5 @@
   "DefaultSearchProviderName": "Ecosia",
   "DefaultSearchProviderNewTabURL": "https://www.ecosia.org/newtab/",
   "DefaultSearchProviderSearchURL": "https://www.ecosia.org/search?q={searchTerms}",
-  "DefaultSearchProviderSuggestURL": "https://ac.ecosia.org/autocomplete?q={searchTerms}",
-  "NewTabPageLocation": "https://www.ecosia.org/newtab/"
+  "DefaultSearchProviderSuggestURL": "https://ac.ecosia.org/autocomplete?q={searchTerms}"
 }
