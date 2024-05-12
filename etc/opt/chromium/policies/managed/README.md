@@ -40,8 +40,6 @@
 - [`edge-screenshots.json`](#edge-screenshotsjson)
 - [`enable-chromecast.json`](#enable-chromecastjson)
 - [`enable-ech-ocsp.json`](#enable-ech-ocspjson)
-- [`enable-google-safebrowsing.json`](#enable-google-safebrowsingjson)
-- [`enable-google-safebrowsing-less-private.json.sample`](#enable-google-safebrowsing-less-privatejsonsample)
 - [`enable-labs.json`](#enable-labsjson)
 - [`enable-passwordleakdetection.json`](#enable-passwordleakdetectionjson)
 - [`enable-tab-suspend.json`](#enable-tab-suspendjson)
@@ -254,17 +252,6 @@ However ECH requires `"DnsOverHttpsMode": "secure"` which will break things
 (and thus my files don't enable it),
 or it will occassionally get disabled (I hope they implement it with system
 resolver soon).
-
-## `enable-google-safebrowsing.json`
-
-Enforces Google Safe Browsing in standard mode. For advanced mode and sending data to Google, increase to 2.
-
-I just don't trust my family to not find and disable the feature, especially if there was an unfiltered DNS server.
-
-## `enable-google-safebrowsing-less-private.json.sample`
-
-This would enable Google Safebrowsing and send additional data to Google
-including downloads etc.
 
 ## `enable-labs.json`
 

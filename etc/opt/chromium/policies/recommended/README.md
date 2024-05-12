@@ -13,6 +13,8 @@
 - [`disable-default-browser-check.json`](#disable-default-browser-checkjson)
 - [`duckduckgo.json`](#duckduckgojson)
 - [`ecosia.json`](#ecosiajson)
+- [`enable-google-safebrowsing.json`](#enable-google-safebrowsingjson)
+- [`enable-google-safebrowsing-less-private.json.sample`](#enable-google-safebrowsing-less-privatejsonsample)
 - [`enable-home.json`](#enable-homejson)
 - [`no-bookmarks-bar.json`](#no-bookmarks-barjson)
 - [`README.md`](#readmemd)
@@ -44,6 +46,16 @@ Sets and displays recommendation on the use of start.duckduckgo.com as a search 
 ## `ecosia.json`
 
 Sets and displays recommendation on the use of Ecosia as a search engine by default.
+
+## `enable-google-safebrowsing.json`
+
+Enforces Google Safe Browsing in standard mode. For advanced mode and
+sending data to Google, increase to 2 or see the sample below.
+
+## `enable-google-safebrowsing-less-private.json.sample`
+
+This would enable Google Safebrowsing and send additional data to Google
+including downloads etc.
 
 ## `enable-home.json`
 
