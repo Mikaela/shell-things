@@ -102,6 +102,30 @@
 ::ffff:94.140.14.14 dns.adguard-dns.com
 ::ffff:94.140.15.15 dns.adguard-dns.com
 
+# AdGuard Unfiltered
+94.140.14.140 unfiltered.adguard-dns.com
+94.140.14.141 unfiltered.adguard-dns.com
+# Uses private ECS, which gets inaccurate with IPv6 directing traffic to
+# other side of the country at best and different country at worst. Thus
+# attempt to make everything only use it for IPv4 (browser fallback is system
+# resolver which does IPv6 if IPv4 breaks, even if ECH will break).
+#2a10:50c0::1:ff unfiltered.adguard-dns.com
+#2a10:50c0::2:ff unfiltered.adguard-dns.com
+::ffff:94.140.14.140 unfiltered.adguard-dns.com
+::ffff:94.140.14.141 unfiltered.adguard-dns.com
+
+# AdGuard Family
+94.140.14.15 family.adguard-dns.com
+94.140.15.16 family.adguard-dns.com
+# Uses private ECS, which gets inaccurate with IPv6 directing traffic to
+# other side of the country at best and different country at worst. Thus
+# attempt to make everything only use it for IPv4 (browser fallback is system
+# resolver which does IPv6 if IPv4 breaks, even if ECH will break).
+#2a10:50c0::bad1:ff family.adguard-dns.com
+#2a10:50c0::bad2:ff family.adguard-dns.com
+::ffff:94.140.14.15 family.adguard-dns.com
+::ffff:94.140.15.16 family.adguard-dns.com
+
 # Google DNS
 8.8.8.8 dns.google dns.google.com
 8.8.4.4 dns.google dns.google.com
