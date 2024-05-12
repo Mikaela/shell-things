@@ -8,6 +8,7 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+- [`amber-theme-colour.json.sample`](#amber-theme-colourjsonsample)
 - [`aminda-extensions.json`](#aminda-extensionsjson)
   - [Silk - Privacy Pass Client for the browser](#silk---privacy-pass-client-for-the-browser)
   - [Plasma Integration](#plasma-integration)
@@ -45,6 +46,7 @@
 - [`enable-tab-suspend.json`](#enable-tab-suspendjson)
 - [`fix-edge-search.json`](#fix-edge-searchjson)
 - [`force-incognito.json.badidea`](#force-incognitojsonbadidea)
+- [`generative-ai.json`](#generative-aijson)
 - [`https-everywhere.json`](#https-everywherejson)
 - [`README.md`](#readmemd)
 
@@ -52,6 +54,11 @@
 
 <!-- prettier-ignore-end -->
 <!-- editorconfig-checker-enable -->
+
+## `amber-theme-colour.json.sample`
+
+Automatically generated theme colour based on "amber" (`#ffb700`), it looks
+kind of fancy, but doesn't feel like it's for me.
 
 ## `aminda-extensions.json`
 
@@ -274,6 +281,11 @@ stealthily sending those queries to Bing.
 ## `force-incognito.json.badidea`
 
 Forces incognito mode. I don't recommend this.
+
+## `generative-ai.json`
+
+Allows using the AI features that I am not seeing anyway, but won't send data
+back to Google about them.
 
 ## `https-everywhere.json`
 
