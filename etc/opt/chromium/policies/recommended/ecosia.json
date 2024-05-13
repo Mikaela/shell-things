@@ -1,8 +1,9 @@
 {
   "DefaultSearchProviderEnabled": true,
+  "DefaultSearchProviderImageURL": "https://cdn-static.ecosia.org/static/icons/favicon.ico",
   "DefaultSearchProviderKeyword": "e",
   "DefaultSearchProviderName": "Ecosia",
-  "DefaultSearchProviderNewTabURL": "https://www.ecosia.org/newtab/",
-  "DefaultSearchProviderSearchURL": "https://www.ecosia.org/search?q={searchTerms}",
+  "DefaultSearchProviderNewTabURL": "https://www.ecosia.org/newtab/?addon=chromegpo",
+  "DefaultSearchProviderSearchURL": "https://www.ecosia.org/search?q={searchTerms}&addon=chromegpo",
   "DefaultSearchProviderSuggestURL": "https://ac.ecosia.org/autocomplete?q={searchTerms}"
 }

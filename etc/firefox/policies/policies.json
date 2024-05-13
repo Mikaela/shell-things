@@ -199,25 +199,23 @@
           "Description": "DuckDuckGo Start page version",
           "Method": "GET",
           "Name": "DuckDuckGo Start",
-          "PostData": "q={searchTerms}",
           "SuggestURLTemplate": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
           "URLTemplate": "https://start.duckduckgo.com/?q={searchTerms}"
         },
         {
           "Alias": "e",
           "Description": "Ecosia Search Engine",
+          "IconURL": "https://cdn-static.ecosia.org/static/icons/favicon.ico",
           "Method": "GET",
           "Name": "Ecosia",
-          "PostData": "q={searchTerms}",
           "SuggestURLTemplate": "https://ac.ecosia.org/autocomplete?q={searchTerms}",
-          "URLTemplate": "https://www.ecosia.org/search?q={searchTerms}"
+          "URLTemplate": "https://www.ecosia.org/search?q={searchTerms}&addon=firefoxgpo"
         },
         {
           "Alias": "b",
           "Description": "Brave Search",
           "Method": "GET",
           "Name": "Brave Search",
-          "PostData": "q={searchTerms}",
           "SuggestURLTemplate": "https://search.brave.com/api/suggest?q={searchTerms}",
           "URLTemplate": "https://search.brave.com/search?q={searchTerms}"
         },
@@ -226,7 +224,6 @@
           "Description": "Brave Search Goggles",
           "Method": "GET",
           "Name": "Brave Search Goggles",
-          "PostData": "q={searchTerms}",
           "SuggestURLTemplate": "https://search.brave.com/api/suggest?q={searchTerms}",
           "URLTemplate": "https://search.brave.com/goggles?q={searchTerms}"
         }
