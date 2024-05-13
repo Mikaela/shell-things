@@ -17,6 +17,8 @@ per whatever I am doing.
 - [Extensions](#extensions)
   - [Privacy Badger](#privacy-badger)
 - [Search engines](#search-engines)
+- [Useful looking things for the future](#useful-looking-things-for-the-future)
+  - [Certificate installations](#certificate-installations)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -59,3 +61,15 @@ when testing this policy I won't have to see Google.
 
 Additionally it's a lie since at least Nightly reads it too without
 complaining.
+
+## Useful looking things for the future
+
+### Certificate installations
+
+In the `certificates` section
+
+```json
+{
+  "Install": ["my_certificate_here.pem"]
+}
+```

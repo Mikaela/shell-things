@@ -67,6 +67,18 @@
         }
       }
     },
+    "Certificates": {
+      "ImportEnterpriseRoots": false
+    },
+    "Containers": {
+      "Default": [
+        {
+          "color": "red",
+          "icon": "fence",
+          "name": "DIY"
+        }
+      ]
+    },
     "DNSOverHTTPS": {
       "Enabled": true,
       "Locked": true,
@@ -78,6 +90,7 @@
     "DontCheckDefaultBrowser": true,
     "EnableTrackingProtection": {
       "Cryptomining": true,
+      "EmailTracking": true,
       "Exceptions": [
         "https://app.element.io",
         "https://staging.element.io",
@@ -98,6 +111,10 @@
       "Fingerprinting": true,
       "Locked": false,
       "Value": true
+    },
+    "EncryptedMediaExtensions": {
+      "Enabled": true,
+      "Locked": false
     },
     "ExtensionSettings": {
       "addon@darkreader.org": {
@@ -183,6 +200,17 @@
       "StartPage": "previous-session",
       "URL": "about:mozilla"
     },
+    "OverrideFirstRunPage": "about:mozilla",
+    "PDFjs": {
+      "EnablePermissions": false,
+      "Enabled": true
+    },
+    "Preferences": {
+      "pdfjs.enableScripting": {
+        "Status": "locked",
+        "Value": false
+      }
+    },
     "SearchEngines": {
       "Add": [
         {
@@ -230,6 +258,12 @@
       ],
       "Default": "Ecosia"
     },
-    "SearchSuggestEnabled": false
+    "SearchSuggestEnabled": false,
+    "SecurityDevices": {
+      "Add": {
+        "Fujitsu mPollux DigiSignApplication": "/usr/lib64/libcryptoki.so"
+      }
+    },
+    "ShowHomeButton": true
   }
 }
