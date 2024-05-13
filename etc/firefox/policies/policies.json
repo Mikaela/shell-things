@@ -74,8 +74,27 @@
     },
     "DisableEncryptedClientHello": false,
     "DisablePocket": true,
+    "DisplayBookmarksToolbar": "never",
+    "DontCheckDefaultBrowser": true,
     "EnableTrackingProtection": {
       "Cryptomining": true,
+      "Exceptions": [
+        "https://app.element.io",
+        "https://staging.element.io",
+        "https://develop.element.io",
+        "https://chat.pikaviestin.fi",
+        "https://webchat.disroot.org",
+        "https://learn.microsoft.com",
+        "https://teams.microsoft.com",
+        "https://glowing-bear.org",
+        "https://latest.glowing-bear.org",
+        "https://bittimittari.fi",
+        "https://pp-attester-turnstile.research.cloudflare.com",
+        "https://keyoxide.org",
+        "https://one.one.one.one",
+        "https://www.ecosia.org",
+        "https://ac.ecosia.org"
+      ],
       "Fingerprinting": true,
       "Locked": false,
       "Value": true
