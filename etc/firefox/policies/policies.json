@@ -69,7 +69,7 @@
     },
     "DNSOverHTTPS": {
       "Enabled": true,
-      "Locked": false,
+      "Locked": true,
       "ProviderURL": "https://dns11.quad9.net/dns-query"
     },
     "DisableEncryptedClientHello": false,
