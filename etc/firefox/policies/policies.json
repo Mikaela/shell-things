@@ -91,7 +91,7 @@
       ],
       "Fallback": false,
       "Locked": false,
-      "ProviderURL": "https://dns11.quad9.net/dns-query"
+      "ProviderURL": "https://dns.quad9.net/dns-query"
     },
     "DisableEncryptedClientHello": false,
     "DisablePocket": true,
@@ -312,9 +312,9 @@
         "Value": false
       },
       "network.trr.disable-ECS": {
-        "Status": "default",
+        "Status": "locked",
         "Type": "boolean",
-        "Value": false
+        "Value": true
       },
       "network.trr.display_fallback_warning": {
         "Status": "locked",
