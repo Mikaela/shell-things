@@ -252,6 +252,41 @@
         "Type": "string",
         "Value": "fi, en"
       },
+      "media.autoplay.default": {
+        "Status": "user",
+        "Type": "number",
+        "Value": 5
+      },
+      "network.IDN_show_punycode": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "network.dns.echconfig.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "network.dns.use_https_rr_as_altsvc": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "network.http.referer.XOriginTrimmingPolicy": {
+        "Status": "user",
+        "Type": "number",
+        "Value": 2
+      },
+      "network.http.referer.defaultPolicy": {
+        "Status": "user",
+        "Type": "number",
+        "Value": 1
+      },
+      "network.http.speculative-parallel-limit": {
+        "Status": "locked",
+        "Type": "number",
+        "Value": 0
+      },
       "network.predictor.enabled": {
         "Status": "locked",
         "Type": "boolean",
@@ -281,6 +316,16 @@
         "Status": "locked",
         "Type": "boolean",
         "Value": false
+      },
+      "privacy.userContext.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "privacy.userContext.ui.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
       },
       "security.OCSP.require": {
         "Status": "locked",
