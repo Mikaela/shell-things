@@ -19,6 +19,8 @@ per whatever I am doing.
 - [Search engines](#search-engines)
 - [Useful looking things for the future](#useful-looking-things-for-the-future)
   - [Certificate installations](#certificate-installations)
+- [Things that look useful, but aren't](#things-that-look-useful-but-arent)
+  - [WebSiteFilter](#websitefilter)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -73,3 +75,24 @@ In the `certificates` section
   "Install": ["my_certificate_here.pem"]
 }
 ```
+
+## Things that look useful, but aren't
+
+### WebSiteFilter
+
+```json
+{
+  "policies": {
+    "WebsiteFilter": {
+      "Block": ["<all_urls>"],
+      "Exceptions": ["http://example.org/*"]
+    }
+  }
+}
+```
+
+Ok, nice, but my policy is already forcing AdNauseam which enforces my
+blocklist which is more practical.
+
+Granted users can use private browsing mode to get past it, but I am not
+blocking actively malicious domains.
