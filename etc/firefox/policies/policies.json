@@ -212,6 +212,26 @@
       "Enabled": true
     },
     "Preferences": {
+      "browser.contentblocking.report.hide_vpn_banner": {
+        "Status": "user",
+        "Type": "boolean",
+        "Value": true
+      },
+      "browser.contentblocking.report.lockwise.enabled": {
+        "Status": "user",
+        "Type": "boolean",
+        "Value": false
+      },
+      "browser.contentblocking.report.show_mobile_app": {
+        "Status": "user",
+        "Type": "boolean",
+        "Value": false
+      },
+      "browser.contentblocking.report.vpn.enabled": {
+        "Status": "user",
+        "Type": "boolean",
+        "Value": false
+      },
       "extensions.webextensions.restrictedDomains": {
         "Status": "locked",
         "Type": "string",
