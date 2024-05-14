@@ -211,6 +211,11 @@
       "Enabled": true
     },
     "Preferences": {
+      "extensions.webextensions.restrictedDomains": {
+        "Status": "locked",
+        "Type": "string",
+        "Value": ""
+      },
       "pdfjs.enableScripting": {
         "Status": "locked",
         "Type": "boolean",
