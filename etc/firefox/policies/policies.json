@@ -41,7 +41,7 @@
             ]
           }
         },
-        "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
+        "jid1-MnnxcxisBPnSXQ@jetpack": {
           "checkForDNTPolicy": true,
           "disabledSites": [
             "app.element.io",
@@ -139,7 +139,11 @@
         "installation_mode": "normal_installed"
       },
       "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
-        "install_url": "https://www.eff.org/files/privacy-badger-latest.xpi",
+        "blocked_install_message": "Kaksoiskappale samasta lisäosasta.",
+        "installation_mode": "blocked"
+      },
+      "jid1-MnnxcxisBPnSXQ@jetpack": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi",
         "installation_mode": "force_installed"
       },
       "peertube-companion@booteille": {

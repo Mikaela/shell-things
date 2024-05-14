@@ -15,6 +15,7 @@ per whatever I am doing.
 - [WARNING TO LIBREWOLF USERS](#warning-to-librewolf-users)
 - [Extensions](#extensions)
   - [Privacy Badger](#privacy-badger)
+    - [Duplicate](#duplicate)
 - [Search engines](#search-engines)
 - [Useful looking things for the future](#useful-looking-things-for-the-future)
   - [Certificate installations](#certificate-installations)
@@ -47,6 +48,18 @@ See also:
 
 - https://github.com/EFForg/privacybadger/blob/master/doc/admin-deployment.md
 - https://github.com/EFForg/privacybadger/blob/master/src/data/schema.json
+
+#### Duplicate
+
+```diff
+-      "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
+-        "install_url": "https://www.eff.org/files/privacy-badger-latest.xpi",
++      "jid1-MnnxcxisBPnSXQ@jetpack": {
++        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi",
+```
+
+The EFF.org version won't sync and if you sync with unmanaged computer, you
+will have two PrivacyBadgers. Congratulations?
 
 ## Search engines
 
