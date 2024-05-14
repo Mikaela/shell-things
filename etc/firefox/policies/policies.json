@@ -212,6 +212,16 @@
       "Enabled": true
     },
     "Preferences": {
+      "browser.aboutConfig.showWarning": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": false
+      },
+      "browser.contentblocking.category": {
+        "Status": "locked",
+        "Type": "string",
+        "Value": "strict"
+      },
       "browser.contentblocking.report.hide_vpn_banner": {
         "Status": "user",
         "Type": "boolean",
@@ -237,12 +247,22 @@
         "Type": "string",
         "Value": ""
       },
+      "intl.accept_languages": {
+        "Status": "user",
+        "Type": "string",
+        "Value": "fi, en"
+      },
       "network.predictor.enabled": {
         "Status": "locked",
         "Type": "boolean",
         "Value": false
       },
       "network.prefetch-next": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": false
+      },
+      "network.trr.disable-ECS": {
         "Status": "locked",
         "Type": "boolean",
         "Value": false
