@@ -89,7 +89,7 @@
         "http.badssl.com",
         "norwegianwifi.com"
       ],
-      "Fallback": true,
+      "Fallback": false,
       "Locked": true,
       "ProviderURL": "https://dns11.quad9.net/dns-query"
     },
