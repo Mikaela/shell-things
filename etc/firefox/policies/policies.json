@@ -205,6 +205,7 @@
       "StartPage": "previous-session",
       "URL": "about:mozilla"
     },
+    "NetworkPrediction": false,
     "OverrideFirstRunPage": "about:mozilla",
     "PDFjs": {
       "EnablePermissions": false,
@@ -215,6 +216,16 @@
         "Status": "locked",
         "Type": "string",
         "Value": ""
+      },
+      "network.predictor.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": false
+      },
+      "network.prefetch-next": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": false
       },
       "pdfjs.enableScripting": {
         "Status": "locked",
