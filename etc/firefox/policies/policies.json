@@ -90,7 +90,7 @@
         "norwegianwifi.com"
       ],
       "Fallback": false,
-      "Locked": true,
+      "Locked": false,
       "ProviderURL": "https://dns11.quad9.net/dns-query"
     },
     "DisableEncryptedClientHello": false,
@@ -312,7 +312,7 @@
         "Value": false
       },
       "network.trr.disable-ECS": {
-        "Status": "locked",
+        "Status": "default",
         "Type": "boolean",
         "Value": false
       },
