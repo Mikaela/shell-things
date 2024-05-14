@@ -81,6 +81,11 @@
     },
     "DNSOverHTTPS": {
       "Enabled": true,
+      "ExcludedDomains": [
+        "http.badssl.com",
+        "norwegianwifi.com"
+      ],
+      "Fallback": true,
       "Locked": true,
       "ProviderURL": "https://dns11.quad9.net/dns-query"
     },
