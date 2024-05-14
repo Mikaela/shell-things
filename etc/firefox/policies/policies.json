@@ -331,6 +331,11 @@
         "Type": "boolean",
         "Value": false
       },
+      "pdfjs.viewerCssTheme": {
+        "Status": "default",
+        "Type": "number",
+        "Value": 2
+      },
       "privacy.userContext.enabled": {
         "Status": "locked",
         "Type": "boolean",
@@ -360,6 +365,11 @@
         "Status": "locked",
         "Type": "boolean",
         "Value": true
+      },
+      "ui.systemUsesDarkTheme": {
+        "Status": "default",
+        "Type": "number",
+        "Value": 1
       }
     },
     "SearchEngines": {
