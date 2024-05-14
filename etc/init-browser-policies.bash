@@ -13,6 +13,7 @@ printf "WARNING! LibreWolf default profile may be masked!\nhttps://codeberg.org/
 
 # Firefox ESR
 ln -sfv /etc/firefox /etc/firefox-esr
+rm -fv /etc/firefox-esr/firefox-esr
 
 # Chromium
 mkdir -vp /etc/opt/chromium/policies/managed
@@ -22,12 +23,15 @@ chmod -v a+rx /etc/opt/chromium/policies/{managed,recommended}/
 
 # Brave
 ln -sfv /etc/opt/chromium /etc/brave
+rm -fv /etc/brave/brave
 
 # Vivaldi
 ln -sfv /etc/opt/chromium /etc/chromium
+rm -fv /etc/chromium/chromium
 
 # Google Chrome
 ln -sfv /etc/opt/chromium /etc/opt/chrome
+rm -fv /etc/etc/opt/chrome/chrome
 
 # Microsoft Edge
 # NOTE! It breaks chrome:// URLs so the recommended policy apps as new tab page
@@ -36,6 +40,7 @@ ln -sfv /etc/opt/chromium /etc/opt/chrome
 #ln -sfv /etc/opt/chromium /etc/opt/edge
 mkdir -vp /etc/opt/edge/policies/recommended
 ln -sfv /etc/opt/chromium/policies/managed /etc/opt/edge/policies/managed
+rm -fv /etc/opt/edge/policies/managed/managed
 printf "WARNING! Edge recommended profiles are managed separately.\n"
 
 set +x
