@@ -13,7 +13,6 @@ per whatever I am doing.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [WARNING TO LIBREWOLF USERS](#warning-to-librewolf-users)
-- [WARNING TO TRR/ENCRYPTED DNS USERS!](#warning-to-trrencrypted-dns-users)
 - [Extensions](#extensions)
   - [Privacy Badger](#privacy-badger)
 - [Search engines](#search-engines)
@@ -32,11 +31,6 @@ per whatever I am doing.
 This file takes priority over
 `/usr/share/librewolf/distribution/policies.json` so don't apply this or
 a lot of LibreWolf specific customizations stops being in force.
-
-## WARNING TO TRR/ENCRYPTED DNS USERS!
-
-If `policies.json` locks DNS over HTTPS, `trr.mode` gets locked into `2` which
-means fallback to system resolver.
 
 ## Extensions
 
