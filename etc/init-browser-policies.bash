@@ -3,6 +3,12 @@
 # their policies. The user is trusted to setup those manually.
 set -x
 
+# Require root or exit
+if [ "$(id -u)" != "0" ]; then
+	echo "This script requires root for managing /etc/" 1>&2
+	exit 1
+fi
+
 # Firefox and LibreWolf (caution! https://codeberg.org/librewolf/issues/issues/1767)
 mkdir -vp /etc/firefox/policies
 chmod -v a+rx /etc/firefox/
