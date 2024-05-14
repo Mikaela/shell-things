@@ -227,22 +227,22 @@
         "Value": "strict"
       },
       "browser.contentblocking.report.hide_vpn_banner": {
-        "Status": "user",
+        "Status": "default",
         "Type": "boolean",
         "Value": true
       },
       "browser.contentblocking.report.lockwise.enabled": {
-        "Status": "user",
+        "Status": "default",
         "Type": "boolean",
         "Value": false
       },
       "browser.contentblocking.report.show_mobile_app": {
-        "Status": "user",
+        "Status": "default",
         "Type": "boolean",
         "Value": false
       },
       "browser.contentblocking.report.vpn.enabled": {
-        "Status": "user",
+        "Status": "default",
         "Type": "boolean",
         "Value": false
       },
@@ -252,12 +252,17 @@
         "Value": ""
       },
       "intl.accept_languages": {
-        "Status": "user",
+        "Status": "default",
         "Type": "string",
         "Value": "fi, en"
       },
+      "layout.css.devPixelsPerPx": {
+        "Status": "default",
+        "Type": "string",
+        "Value": "1.5"
+      },
       "media.autoplay.default": {
-        "Status": "user",
+        "Status": "default",
         "Type": "number",
         "Value": 5
       },
@@ -277,12 +282,12 @@
         "Value": true
       },
       "network.http.referer.XOriginTrimmingPolicy": {
-        "Status": "user",
+        "Status": "default",
         "Type": "number",
         "Value": 2
       },
       "network.http.referer.defaultPolicy": {
-        "Status": "user",
+        "Status": "default",
         "Type": "number",
         "Value": 1
       },
