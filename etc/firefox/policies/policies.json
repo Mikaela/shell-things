@@ -67,6 +67,10 @@
         }
       }
     },
+    "BlockAboutAddons": false,
+    "BlockAboutConfig": false,
+    "BlockAboutProfiles": false,
+    "BlockAboutSupport": false,
     "Certificates": {
       "ImportEnterpriseRoots": false
     },
