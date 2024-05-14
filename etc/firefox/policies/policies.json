@@ -208,7 +208,28 @@
     "Preferences": {
       "pdfjs.enableScripting": {
         "Status": "locked",
+        "Type": "boolean",
         "Value": false
+      },
+      "security.OCSP.require": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "security.insecure_connection_text.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "security.insecure_connection_text.pbmode.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "security.ssl.enable_ocsp_stapling": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
       }
     },
     "SearchEngines": {
