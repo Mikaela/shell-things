@@ -336,10 +336,20 @@
         "Type": "boolean",
         "Value": false
       },
-      "pdfjs.viewerCssTheme": {
+      "pdfjs.forcePageColors": {
         "Status": "default",
-        "Type": "number",
-        "Value": 2
+        "Type": "boolean",
+        "Value": true
+      },
+      "pdfjs.pageColorsBackground": {
+        "Status": "default",
+        "Type": "string",
+        "Value": "#000000"
+      },
+      "pdfjs.pageColorsForeground": {
+        "Status": "default",
+        "Type": "string",
+        "Value": "#ffb700"
       },
       "privacy.userContext.enabled": {
         "Status": "locked",
