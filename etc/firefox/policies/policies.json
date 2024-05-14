@@ -306,6 +306,11 @@
         "Type": "boolean",
         "Value": false
       },
+      "network.trr.display_fallback_warning": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
       "network.trr.early-AAAA": {
         "Status": "locked",
         "Type": "boolean",
