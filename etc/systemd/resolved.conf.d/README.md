@@ -70,6 +70,10 @@ sudo systemctl restart systemd-resolved
     - I am actually running Unbound simultaneously with `resolv.conf` pointing
       to both with `options rotate edns0 trust-ad` which might workaround that
       potential issue.
+- DNS server priority is the one they are specified in. The first working one
+  will be used when it won't work anymore and then the next is used as long
+  as it works and then it's back to the beginning.
+  - https://github.com/systemd/systemd/issues/16322#issuecomment-724143641
 
 Other links I have found important and my files are based on:
 
