@@ -34,10 +34,10 @@
 # other side of the country at best and different country at worst. Thus
 # attempt to make everything only use it for IPv4 (browser fallback is system
 # resolver which does IPv6 if IPv4 breaks, even if ECH will break).
-#2a0f:fc80:: dns0.eu
-#2a0f:fc81:: dns0.eu
-::ffff:193.110.81.0 dns0.eu
-::ffff:185.253.5.0 dns0.eu
+2a0f:fc80:: dns0.eu
+2a0f:fc81:: dns0.eu
+#::ffff:193.110.81.0 dns0.eu
+#::ffff:185.253.5.0 dns0.eu
 
 # DNS0 Zero
 193.110.81.9 zero.dns0.eu
@@ -46,10 +46,10 @@
 # other side of the country at best and different country at worst. Thus
 # attempt to make everything only use it for IPv4 (browser fallback is system
 # resolver which does IPv6 if IPv4 breaks, even if ECH will break).
-#2a0f:fc80::9 zero.dns0.eu
-#2a0f:fc81::9 zero.dns0.eu
-::ffff:193.110.81.9 zero.dns0.eu
-::ffff:185.253.5.9 zero.dns0.eu
+2a0f:fc80::9 zero.dns0.eu
+2a0f:fc81::9 zero.dns0.eu
+#::ffff:193.110.81.9 zero.dns0.eu
+#::ffff:185.253.5.9 zero.dns0.eu
 
 # DNS0 Kids
 193.110.81.1 kids.dns0.eu
@@ -70,10 +70,10 @@
 # other side of the country at best and different country at worst. Thus
 # attempt to make everything only use it for IPv4 (browser fallback is system
 # resolver which does IPv6 if IPv4 breaks, even if ECH will break).
-#2a0f:fc80::ffff open.dns0.eu
-#2a0f:fc81::ffff open.dns0.eu
-::ffff:193.110.81.254 open.dns0.eu
-::ffff:185.253.5.254 open.dns0.eu
+2a0f:fc80::ffff open.dns0.eu
+2a0f:fc81::ffff open.dns0.eu
+#::ffff:193.110.81.254 open.dns0.eu
+#::ffff:185.253.5.254 open.dns0.eu
 
 # Cloudflare
 1.1.1.1 cloudflare-dns.com one.one.one.one
@@ -97,10 +97,10 @@
 # other side of the country at best and different country at worst. Thus
 # attempt to make everything only use it for IPv4 (browser fallback is system
 # resolver which does IPv6 if IPv4 breaks, even if ECH will break).
-#2a10:50c0::ad1:ff dns.adguard-dns.com
-#2a10:50c0::ad2:ff dns.adguard-dns.com
-::ffff:94.140.14.14 dns.adguard-dns.com
-::ffff:94.140.15.15 dns.adguard-dns.com
+2a10:50c0::ad1:ff dns.adguard-dns.com
+2a10:50c0::ad2:ff dns.adguard-dns.com
+#::ffff:94.140.14.14 dns.adguard-dns.com
+#::ffff:94.140.15.15 dns.adguard-dns.com
 
 # AdGuard Unfiltered
 94.140.14.140 unfiltered.adguard-dns.com
@@ -109,10 +109,10 @@
 # other side of the country at best and different country at worst. Thus
 # attempt to make everything only use it for IPv4 (browser fallback is system
 # resolver which does IPv6 if IPv4 breaks, even if ECH will break).
-#2a10:50c0::1:ff unfiltered.adguard-dns.com
-#2a10:50c0::2:ff unfiltered.adguard-dns.com
-::ffff:94.140.14.140 unfiltered.adguard-dns.com
-::ffff:94.140.14.141 unfiltered.adguard-dns.com
+2a10:50c0::1:ff unfiltered.adguard-dns.com
+2a10:50c0::2:ff unfiltered.adguard-dns.com
+#::ffff:94.140.14.140 unfiltered.adguard-dns.com
+#::ffff:94.140.14.141 unfiltered.adguard-dns.com
 
 # AdGuard Family
 94.140.14.15 family.adguard-dns.com
@@ -121,10 +121,10 @@
 # other side of the country at best and different country at worst. Thus
 # attempt to make everything only use it for IPv4 (browser fallback is system
 # resolver which does IPv6 if IPv4 breaks, even if ECH will break).
-#2a10:50c0::bad1:ff family.adguard-dns.com
-#2a10:50c0::bad2:ff family.adguard-dns.com
-::ffff:94.140.14.15 family.adguard-dns.com
-::ffff:94.140.15.16 family.adguard-dns.com
+2a10:50c0::bad1:ff family.adguard-dns.com
+2a10:50c0::bad2:ff family.adguard-dns.com
+#::ffff:94.140.14.15 family.adguard-dns.com
+#::ffff:94.140.15.16 family.adguard-dns.com
 
 # Google DNS
 8.8.8.8 dns.google dns.google.com
