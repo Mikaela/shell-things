@@ -17,12 +17,19 @@
 
 ## Quickstart
 
+This is also done by `../../systemd-resolv.conf-restore.bash` which takes
+into account more circumstances...
+
 ```bash
 sudo systemctl enable --now systemd-resolved.service
 sudo ln -rsf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 # After changing configuration
 sudo systemctl restart systemd-resolved
 ```
+
+...but `../../systemd-resolv.conf-generate.bash` **is better.** Although
+`../../resolv.conf-generate.bash` **is the best** this repository has to
+offer.
 
 ## Files explained
 
