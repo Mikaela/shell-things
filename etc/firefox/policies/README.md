@@ -13,6 +13,7 @@ per whatever I am doing.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [WARNING TO LIBREWOLF USERS](#warning-to-librewolf-users)
+- [General warning](#general-warning)
 - [Extensions](#extensions)
   - [Privacy Badger](#privacy-badger)
     - [Duplicate](#duplicate)
@@ -32,6 +33,12 @@ per whatever I am doing.
 This file takes priority over
 `/usr/share/librewolf/distribution/policies.json` so don't apply this or
 a lot of LibreWolf specific customizations stops being in force.
+
+## General warning
+
+This is meant for me and devices I maintain for self-dogfooding so there are
+opinions. Including those Firefox won't accept and will appear as warnings or
+errors in `about:config` depending on the release channel or even all of them.
 
 ## Extensions
 

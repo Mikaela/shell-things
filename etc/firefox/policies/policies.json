@@ -251,6 +251,16 @@
         "Type": "boolean",
         "Value": false
       },
+      "dom.block_download_insecure": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "dom.security.https_only_mode": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
       "extensions.webextensions.restrictedDomains": {
         "Status": "locked",
         "Type": "string",
@@ -351,6 +361,26 @@
         "Type": "string",
         "Value": "#ffb700"
       },
+      "privacy.donottrackheader.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "privacy.donottrackheader.value": {
+        "Status": "locked",
+        "Type": "number",
+        "Value": 1
+      },
+      "privacy.globalprivacycontrol.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "privacy.globalprivacycontrol.functionality.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
       "security.OCSP.require": {
         "Status": "locked",
         "Type": "boolean",
@@ -362,6 +392,11 @@
         "Value": true
       },
       "security.insecure_connection_text.pbmode.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "security.ssl.enable_ocsp_must_staple": {
         "Status": "locked",
         "Type": "boolean",
         "Value": true
