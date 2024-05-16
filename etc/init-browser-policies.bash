@@ -17,9 +17,16 @@ touch /etc/firefox/policies/policies.json
 chmod -v a+r /etc/firefox/policies/policies.json
 printf "WARNING! LibreWolf default profile may be masked!\nhttps://codeberg.org/librewolf/issues/issues/1767\n"
 
+# Note to self on ln:
+# -s is obviously symbolic link.
+# -n will not follow symlink if it's a directory stopping the symlinks.
+#    pointing to the directory containing them.
+# -v is obviously verbose.
+# -f is obviously force so there won't be error message about it already
+#    existing.
+
 # Firefox ESR
-ln -sfv /etc/firefox /etc/firefox-esr
-rm -fv /etc/firefox-esr/firefox-esr
+ln -fnsv /etc/firefox /etc/firefox-esr
 
 # Chromium
 mkdir -vp /etc/opt/chromium/policies/managed
@@ -28,21 +35,17 @@ mkdir -vp /etc/opt/chromium/policies/recommended
 chmod -v a+rx /etc/opt/chromium/policies/{managed,recommended}/
 
 # Brave
-ln -sfv /etc/opt/chromium /etc/brave
-rm -fv /etc/brave/brave
+ln -fnsv /etc/opt/chromium /etc/brave
 
 # Vivaldi
-ln -sfv /etc/opt/chromium /etc/chromium
-rm -fv /etc/chromium/chromium
+ln -fnsv /etc/opt/chromium /etc/chromium
 
 # Google Chrome
-ln -sfv /etc/opt/chromium /etc/opt/chrome
-rm -fv /etc/etc/opt/chrome/chrome
+ln -fnsv /etc/opt/chromium /etc/opt/chrome
 
 # Microsoft Edge
 # I used to have a separate policy for it so remember to remove this manually
 # if it exists!
-ln -sfv /etc/opt/chromium /etc/opt/edge
-rm -fv /etc/opt/edge/edge
+ln -fnsv /etc/opt/chromium /etc/opt/edge
 
 set +x
