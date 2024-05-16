@@ -92,7 +92,8 @@
       "Fallback": false,
       "Locked": true,
       "ProviderURL": "https://dns0.eu/",
-      "ProviderURL_outside_europe_aminda_comment": "Swap to https://unfiltered.adguard-dns.com/dns-query if device is expected to cross continents from Europe?"
+      "ProviderURL_outside_europe_aminda_comment": "Swap to https://unfiltered.adguard-dns.com/dns-query if device is expected to cross continents from Europe?",
+      "ProviderURL_with_ECS_comment": "If changing this to something with non-private ECS, remember to disable ECS in preferences of TRR!"
     },
     "DisableEncryptedClientHello": false,
     "DisableFirefoxAccounts": false,
@@ -331,7 +332,7 @@
       "network.trr.disable-ECS": {
         "Status": "locked",
         "Type": "boolean",
-        "Value": true
+        "Value": false
       },
       "network.trr.display_fallback_warning": {
         "Status": "locked",
