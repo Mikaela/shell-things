@@ -1,5 +1,6 @@
 {
   "DefaultSearchProviderEnabled": true,
+  "DefaultSearchProviderImageURL": "https://cdn.search.brave.com/serp/v2/_app/immutable/assets/favicon.acxxetWH.ico",
   "DefaultSearchProviderKeyword": "b",
   "DefaultSearchProviderName": "Brave",
   "DefaultSearchProviderNewTabURL": "",

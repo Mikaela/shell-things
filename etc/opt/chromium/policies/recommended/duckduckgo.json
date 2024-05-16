@@ -1,5 +1,6 @@
 {
   "DefaultSearchProviderEnabled": true,
+  "DefaultSearchProviderImageURL": "https://start.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
   "DefaultSearchProviderKeyword": "d",
   "DefaultSearchProviderName": "DuckDuckGo",
   "DefaultSearchProviderNewTabURL": "https://start.duckduckgo.com/chrome_newtab?addon=newext",

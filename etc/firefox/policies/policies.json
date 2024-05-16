@@ -434,6 +434,7 @@
         {
           "Alias": "dl",
           "Description": "Minimal, ad-free version of DuckDuckGo",
+          "IconURL": "https://start.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
           "Method": "POST",
           "Name": "DuckDuckGo Lite",
           "PostData": "q={searchTerms}",
@@ -443,6 +444,7 @@
         {
           "Alias": "d",
           "Description": "DuckDuckGo Start page version",
+          "IconURL": "https://start.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
           "Method": "GET",
           "Name": "DuckDuckGo Start",
           "SuggestURLTemplate": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
@@ -460,6 +462,7 @@
         {
           "Alias": "b",
           "Description": "Brave Search",
+          "IconURL": "https://cdn.search.brave.com/serp/v2/_app/immutable/assets/favicon.acxxetWH.ico",
           "Method": "GET",
           "Name": "Brave Search",
           "SuggestURLTemplate": "https://search.brave.com/api/suggest?q={searchTerms}",
@@ -468,6 +471,7 @@
         {
           "Alias": "bg",
           "Description": "Brave Search Goggles",
+          "IconURL": "https://cdn.search.brave.com/serp/v2/_app/immutable/assets/favicon.acxxetWH.ico",
           "Method": "GET",
           "Name": "Brave Search Goggles",
           "SuggestURLTemplate": "https://search.brave.com/api/suggest?q={searchTerms}",
