@@ -91,7 +91,8 @@
       ],
       "Fallback": false,
       "Locked": false,
-      "ProviderURL": "https://dns.quad9.net/dns-query"
+      "ProviderURL": "https://dns0.eu/",
+      "ProviderURL_outside_europe_aminda_comment": "Swap to https://unfiltered.adguard-dns.com/dns-query if device is expected to cross continents from Europe?"
     },
     "DisableEncryptedClientHello": false,
     "DisablePocket": true,
