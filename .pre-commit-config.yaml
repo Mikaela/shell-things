@@ -47,8 +47,6 @@ repos:
       - id: destroyed-symlinks
       - id: detect-private-key
       - id: fix-byte-order-marker
-        #- id: fix-encoding-pragma
-        #args: [--remove]
       - id: mixed-line-ending
         args: [--fix=auto]
       - id: pretty-format-json
