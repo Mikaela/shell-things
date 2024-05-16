@@ -4,5 +4,6 @@
   "DefaultSearchProviderName": "DuckDuckGo",
   "DefaultSearchProviderNewTabURL": "https://start.duckduckgo.com/chrome_newtab?addon=newext",
   "DefaultSearchProviderSearchURL": "https://start.duckduckgo.com/?q={searchTerms}&addon=newext",
-  "DefaultSearchProviderSuggestURL": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list"
+  "DefaultSearchProviderSuggestURL": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
+  "NewTabPageLocation": "https://start.duckduckgo.com/chrome_newtab?addon=newext"
 }
