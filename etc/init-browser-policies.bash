@@ -40,13 +40,9 @@ ln -sfv /etc/opt/chromium /etc/opt/chrome
 rm -fv /etc/etc/opt/chrome/chrome
 
 # Microsoft Edge
-# NOTE! It breaks chrome:// URLs so the recommended policy apps as new tab page
-# won't work and wants to open Firefox instead, so I am managing the recommended
-# policy separately
-#ln -sfv /etc/opt/chromium /etc/opt/edge
-mkdir -vp /etc/opt/edge/policies/recommended
-ln -sfv /etc/opt/chromium/policies/managed /etc/opt/edge/policies/managed
-rm -fv /etc/opt/edge/policies/managed/managed
-printf "WARNING! Edge recommended profiles are managed separately.\n"
+# I used to have a separate policy for it so remember to remove this manually
+# if it exists!
+ln -sfv /etc/opt/chromium /etc/opt/edge
+rm -fv /etc/opt/edge/edge
 
 set +x

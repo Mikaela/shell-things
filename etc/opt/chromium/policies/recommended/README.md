@@ -8,7 +8,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [`apps-as-homepage.json`](#apps-as-homepagejson)
 - [`brave-search.json`](#brave-searchjson)
 - [`disable-default-browser-check.json`](#disable-default-browser-checkjson)
 - [`duckduckgo.json`](#duckduckgojson)
@@ -23,12 +22,6 @@
 
 <!-- prettier-ignore-end -->
 <!-- editorconfig-checker-enable -->
-
-## `apps-as-homepage.json`
-
-Sets the new tab page to `chrome://apps` and homepage as the new tab page.
-However regardless of allowing the user to change homepage, the new tab page
-won't change.
 
 ## `brave-search.json`
 
