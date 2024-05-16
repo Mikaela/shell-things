@@ -381,6 +381,16 @@
         "Type": "boolean",
         "Value": true
       },
+      "privacy.userContext.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "privacy.userContext.ui.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
       "security.OCSP.require": {
         "Status": "locked",
         "Type": "boolean",
