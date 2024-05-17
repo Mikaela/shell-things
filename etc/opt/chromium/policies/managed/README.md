@@ -13,6 +13,7 @@
   - [Silk - Privacy Pass Client for the browser](#silk---privacy-pass-client-for-the-browser)
   - [Plasma Integration](#plasma-integration)
   - [uBlock Origin](#ublock-origin)
+  - [Ruffle](#ruffle)
   - [HTTP Indicator](#http-indicator)
   - [Fedora User Agent](#fedora-user-agent)
   - [IPvFooBar](#ipvfoobar)
@@ -99,6 +100,12 @@ downloads indicator/control, KDE Connect, alt-f2, etc.
 - `cjpalhdlnbpafiamejdnhcphjbkeiagm`
 
 Blocked for Ad Nauseam
+
+### [Ruffle](https://chrome.google.com/webstore/detail/donbcfbmhbcapadipfkeojnmajbakjdc)
+
+Actively developed open source extension to revive Flash content on the web.
+It can also be embedded to webpages, but I would prefer my family to use a
+newer version than hope everyone keeps their websites up-to-date.
 
 ### [HTTP Indicator](https://chromewebstore.google.com/detail/http-indicator/hgcomhbcacfkpffiphlmnlhpppcjgmbl)
 

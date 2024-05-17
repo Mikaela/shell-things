@@ -198,6 +198,10 @@
       "{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/user-agent-string-switcher/latest.xpi",
         "installation_mode": "normal_installed"
+      },
+      "{b5501fd1-7084-45c5-9aa6-567c2fcf5dc6}": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ruffle_rs/latest.xpi",
+        "installation_mode": "normal_installed"
       }
     },
     "FirefoxHome": {
