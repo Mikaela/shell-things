@@ -42,7 +42,6 @@
 - [`edge-newtabapps.json`](#edge-newtabappsjson)
 - [`edge-screenshots.json`](#edge-screenshotsjson)
 - [`enable-chromecast.json`](#enable-chromecastjson)
-- [`enable-ech-ocsp.json`](#enable-ech-ocspjson)
 - [`enable-labs.json`](#enable-labsjson)
 - [`enable-passwordleakdetection.json`](#enable-passwordleakdetectionjson)
 - [`enable-tab-suspend.json`](#enable-tab-suspendjson)
@@ -265,16 +264,6 @@ Explicitly enables screenshotting-
 
 Explicitly enables Chromecast support.
 
-## `enable-ech-ocsp.json`
-
-Enables encrypted client hello (ECH) and Online Certificate Status Protocol
-(OCSP)/Certificate Revocation List (CRL) checks.
-
-However ECH requires `"DnsOverHttpsMode": "secure"` which will break things
-(and thus my files don't enable it),
-or it will occassionally get disabled (I hope they implement it with system
-resolver soon).
-
 ## `enable-labs.json`
 
 Enables the beaker button "Experiments" for easier management than `about:flags`.
@@ -304,7 +293,14 @@ back to Google about them.
 
 ## `https-everywhere.json`
 
-Enforces https and attempts to upgrade http to https.
+This file evolved to merge another one, so now it:
+
+- Online Certificate Status Protocol (OCSP), and Certivicate Revokation List
+  (CRL) checks.
+- Enables Encrypted Client-Hello (ECH), which however requires DNS-Over-HTTPS
+  to be used.
+- Forces HTTPS-only mode to be enabled.
+- Attempts to upgrade `http://` queries to `https://`
 
 ## `README.md`
 

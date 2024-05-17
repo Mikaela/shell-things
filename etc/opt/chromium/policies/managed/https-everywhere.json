@@ -1,4 +1,6 @@
 {
+  "EnableOnlineRevocationChecks": true,
+  "EncryptedClientHelloEnabled": true,
   "HttpsOnlyMode": "force_enabled",
   "HttpsUpgradesEnabled": true
 }
