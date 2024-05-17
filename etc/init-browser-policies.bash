@@ -29,9 +29,8 @@ printf "WARNING! LibreWolf default profile may be masked!\nhttps://codeberg.org/
 ln -fnsv /etc/firefox /etc/firefox-esr
 
 # Chromium
-mkdir -vp /etc/opt/chromium/policies/managed
+mkdir -vp /etc/opt/chromium/policies/{managed,recommended}
 chmod -v a+rx /etc/opt/chromium/policies/
-mkdir -vp /etc/opt/chromium/policies/recommended
 chmod -v a+rx /etc/opt/chromium/policies/{managed,recommended}/
 
 # Brave
