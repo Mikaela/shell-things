@@ -15,6 +15,7 @@ per whatever I am doing.
 - [WARNING TO LIBREWOLF USERS](#warning-to-librewolf-users)
 - [General warning](#general-warning)
 - [Extensions](#extensions)
+  - [DuckDuckGo](#duckduckgo)
   - [Privacy Badger](#privacy-badger)
     - [Duplicate](#duplicate)
 - [Search engines](#search-engines)
@@ -43,6 +44,13 @@ errors in `about:config` depending on the release channel or even all of them.
 ## Extensions
 
 They are mostly self-explanatory.
+
+### DuckDuckGo
+
+- `jid1-ZAdIEUB7XOzOJw@jetpack`
+
+Although it's not installed, I accidentally learned to manage it to tell it to
+shut up on install, because I know what is DuckDuckGo.
 
 ### Privacy Badger
 

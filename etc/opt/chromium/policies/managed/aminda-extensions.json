@@ -1,6 +1,12 @@
 {
   "3rdparty": {
     "extensions": {
+      "bkdgflcldnnnapblkhphbgpggdiikppg": {
+        "hasSeenPostInstall": true
+      },
+      "caoacbimdbbljakfhgikoodekdnlcgpk": {
+        "hasSeenPostInstall": true
+      },
       "mlojlfildnehdpnlmpkeiiglhhkofhpb": {
         "toAdd": {
           "trustedSiteDirectives": [

@@ -10,6 +10,7 @@
 
 - [`amber-theme-colour.json.sample`](#amber-theme-colourjsonsample)
 - [`aminda-extensions.json`](#aminda-extensionsjson)
+  - [3rdparty](#3rdparty)
   - [Silk - Privacy Pass Client for the browser](#silk---privacy-pass-client-for-the-browser)
   - [Plasma Integration](#plasma-integration)
   - [uBlock Origin](#ublock-origin)
@@ -74,6 +75,13 @@ This does contain some bloat or something not necessary in all situations or
 even overlapping extensions, but there is an important side goal of _teaching
 users to disable extraneous extensions they don't need_ (unless I decide they
 do need something and thus it's `force_installed`.
+
+### 3rdparty
+
+- `bkdgflcldnnnapblkhphbgpggdiikppg` - DuckDuckGo
+- `caoacbimdbbljakfhgikoodekdnlcgpk` - DuckDuckGo
+- `mlojlfildnehdpnlmpkeiiglhhkofhpb` - AdNauseam
+- `pkehgijcmpdhfbdbbnkijodmdjhbjlgp` - PrivacyBadger
 
 ### [Silk - Privacy Pass Client for the browser](https://chrome.google.com/webstore/detail/ajhmfdgkijocedmfjonnpjfojldioehi)
 
