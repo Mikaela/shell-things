@@ -231,7 +231,7 @@
       "StartPage": "previous-session",
       "URL": "about:mozilla"
     },
-    "NetworkPrediction": false,
+    "NetworkPrediction": true,
     "NewTabPage": false,
     "OverrideFirstRunPage": "about:mozilla",
     "PDFjs": {
@@ -417,19 +417,17 @@
         "Value": 1
       },
       "network.http.speculative-parallel-limit": {
-        "Status": "locked",
-        "Type": "number",
-        "Value": 0
+        "Status": "clear"
       },
       "network.predictor.enabled": {
         "Status": "locked",
         "Type": "boolean",
-        "Value": false
+        "Value": true
       },
       "network.prefetch-next": {
         "Status": "locked",
         "Type": "boolean",
-        "Value": false
+        "Value": true
       },
       "network.trr.disable-ECS": {
         "Status": "locked",
