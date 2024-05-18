@@ -374,6 +374,11 @@
         "Type": "boolean",
         "Value": true
       },
+      "network.dns.http3_echconfig.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
       "network.dns.native_https_query": {
         "Status": "locked",
         "Type": "boolean",
@@ -560,6 +565,12 @@
         "Value": true
       },
       "security.ssl.enable_ocsp_stapling": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "security.tls.ech.grease_http3": {
+        "Comment": "Seems to be required for http3. This defaults to true on Nightly 128 and false on 115.11.0esr. However again not allowed to be deployed here for security :()",
         "Status": "locked",
         "Type": "boolean",
         "Value": true
