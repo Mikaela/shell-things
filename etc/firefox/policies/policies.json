@@ -266,6 +266,24 @@
         "Type": "boolean",
         "Value": false
       },
+      "cookiebanners.bannerClicking.enabled": {
+        "Comment": "Preference not allowed for stability reasons. :(",
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "cookiebanners.service.mode": {
+        "Comment": "Preference not allowed for stability reasons. :(",
+        "Status": "locked",
+        "Type": "number",
+        "Value": 2
+      },
+      "cookiebanners.service.mode.privateBrowsing": {
+        "Comment": "Preference not allowed for stability reasons. :(",
+        "Status": "locked",
+        "Type": "number",
+        "Value": 2
+      },
       "dom.block_download_insecure": {
         "Status": "locked",
         "Type": "boolean",
@@ -281,7 +299,12 @@
         "Type": "string",
         "Value": ""
       },
+      "geo.provider.network.url": {
+        "Comment": "This might point to discontinued Mozilla Location Services, so better to restore it to default.",
+        "Status": "clear"
+      },
       "image.animation.mode": {
+        "Comment": "Preference not allowed for stability reasons. :(",
         "Status": "default",
         "Type": "string",
         "Value": "once"
@@ -291,10 +314,21 @@
         "Type": "string",
         "Value": "fi, en"
       },
+      "javascript.use_us_english_locale": {
+        "Comment": "Preference not allowed for stability reasons. :(",
+        "Status": "default",
+        "Type": "boolean",
+        "Value": true
+      },
       "layout.css.devPixelsPerPx": {
         "Status": "default",
         "Type": "string",
         "Value": "1.5"
+      },
+      "layout.css.prefers-color-scheme.content-override": {
+        "Status": "default",
+        "Type": "number",
+        "Value": 0
       },
       "media.autoplay.default": {
         "Status": "default",
@@ -402,24 +436,63 @@
         "Value": "#ffb700"
       },
       "privacy.donottrackheader.enabled": {
+        "Comment": "Preference not allowed for stability reasons. :(",
         "Status": "locked",
         "Type": "boolean",
         "Value": true
       },
       "privacy.donottrackheader.value": {
+        "Comment": "Preference not allowed for stability reasons. :(",
         "Status": "locked",
         "Type": "number",
         "Value": 1
+      },
+      "privacy.fingerprintingProtection": {
+        "Comment": "Preference not allowed for stability reasons. :(",
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "privacy.fingerprintingProtection.overrides": {
+        "Comment": "Preference not allowed for stability reasons. :(",
+        "Status": "locked",
+        "Type": "string",
+        "Value": "+AllTargets,-KeyboardEvents,-SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-NavigatorPlatform,-NavigatorUserAgent,-JSDateTimeUTC,-HttpUserAgent,-FontVisibilityRestrictGenerics,-FontVisibilityBaseSystem,-FontVisibilityLangPack"
+      },
+      "privacy.fingerprintingProtection.pbmode": {
+        "Comment": "Preference not allowed for stability reasons. :(",
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
       },
       "privacy.globalprivacycontrol.enabled": {
         "Status": "locked",
         "Type": "boolean",
         "Value": true
       },
-      "privacy.globalprivacycontrol.functionality.enabled": {
+      "privacy.resistFingerprinting": {
+        "Comment": "Preference not allowed for stability reasons. :(",
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": false
+      },
+      "privacy.resistFingerprinting.block_mozAddonManage": {
+        "Comment": "Preference not allowed for stability reasons. :(",
         "Status": "locked",
         "Type": "boolean",
         "Value": true
+      },
+      "privacy.resistFingerprinting.letterboxing": {
+        "Comment": "Preference not allowed for stability reasons. :(",
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "privacy.resistFingerprinting.pbmode": {
+        "Comment": "Preference not allowed for stability reasons. :(",
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": false
       },
       "privacy.userContext.enabled": {
         "Status": "locked",
@@ -427,6 +500,12 @@
         "Value": true
       },
       "privacy.userContext.ui.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "reader.parse-on-load.force-enabled": {
+        "Comment": "Preference not allowed for stability reasons. :(",
         "Status": "locked",
         "Type": "boolean",
         "Value": true
@@ -447,6 +526,7 @@
         "Value": true
       },
       "security.ssl.enable_ocsp_must_staple": {
+        "Comment": "Preference not allowed for security reasons. :(",
         "Status": "locked",
         "Type": "boolean",
         "Value": true
