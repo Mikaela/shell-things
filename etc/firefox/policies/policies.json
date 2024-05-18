@@ -385,9 +385,8 @@
         "Value": true
       },
       "network.dns.native_https_query_win10": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
+        "Comment": "This is here just as a reminder that it exists. I don't have a Windows 10 and it will likely switch to true when it exists.",
+        "Status": "clear"
       },
       "network.dns.preferIPv6": {
         "Status": "locked",
