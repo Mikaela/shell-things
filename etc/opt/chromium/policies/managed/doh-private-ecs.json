@@ -1,0 +1,4 @@
+{
+  "DnsOverHttpsMode": "secure",
+  "DnsOverHttpsTemplates": "https://unfiltered.adguard-dns.com/dns-query https://open.dns0.eu/"
+}
