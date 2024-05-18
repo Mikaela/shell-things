@@ -87,12 +87,12 @@
       ]
     },
     "DNSOverHTTPS": {
-      "Enabled": true,
+      "Enabled": false,
       "ExcludedDomains": [
         "http.badssl.com",
         "norwegianwifi.com"
       ],
-      "Fallback": false,
+      "Fallback": true,
       "Locked": true,
       "ProviderURL": "https://dns0.eu/",
       "ProviderURL_outside_europe_aminda_comment": "Swap to https://unfiltered.adguard-dns.com/dns-query if device is expected to cross continents from Europe?",
@@ -281,6 +281,11 @@
         "Type": "string",
         "Value": ""
       },
+      "image.animation.mode": {
+        "Status": "default",
+        "Type": "string",
+        "Value": "once"
+      },
       "intl.accept_languages": {
         "Status": "default",
         "Type": "string",
@@ -302,6 +307,26 @@
         "Value": true
       },
       "network.dns.echconfig.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "network.dns.native_https_query": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "network.dns.native_https_query_in_automation": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "network.dns.native_https_query_win10": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "network.dns.preferIPv6": {
         "Status": "locked",
         "Type": "boolean",
         "Value": true
