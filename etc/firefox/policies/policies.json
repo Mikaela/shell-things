@@ -37,7 +37,9 @@
               "eff-dnt-whitelist",
               "ublock-quick-fixes",
               "FIN-0",
-              "https://big.oisd.nl"
+              "https://big.oisd.nl",
+              "ublock-annoyances",
+              "adguard-mobile-app-banners"
             ]
           }
         },
