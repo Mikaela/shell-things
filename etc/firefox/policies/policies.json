@@ -236,6 +236,30 @@
       "Enabled": true
     },
     "Preferences": {
+      "autoadmin.failover_to_cached": {
+        "Comment": "Preference not allowed for stability reasons. :(",
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "autoadmin.global_config_url": {
+        "Comment": "Preference not allowed for stability reasons. :(",
+        "Status": "locked",
+        "Type": "string",
+        "Value": "https://gitea.blesmrt.net/mikaela/shell-things/raw/branch/master/conf/librewolf.overrides.cfg"
+      },
+      "autoadmin.offline_failover": {
+        "Comment": "Preference not allowed for stability reasons. :(",
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "autoadmin.refresh_interval": {
+        "Comment": "Preference not allowed for stability reasons. :(",
+        "Status": "locked",
+        "Type": "number",
+        "Value": 120
+      },
       "browser.aboutConfig.showWarning": {
         "Status": "locked",
         "Type": "boolean",
@@ -298,6 +322,11 @@
         "Status": "locked",
         "Type": "string",
         "Value": ""
+      },
+      "general.config.obscure_value": {
+        "Status": "locked",
+        "Type": "number",
+        "Value": 0
       },
       "geo.provider.network.url": {
         "Comment": "This might point to discontinued Mozilla Location Services, so better to restore it to default.",
