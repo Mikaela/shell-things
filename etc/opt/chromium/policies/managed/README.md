@@ -24,20 +24,27 @@
   - [Privacy Badger](#privacy-badger)
 - [`black-theme-colour.json.sample`](#black-theme-colourjsonsample)
 - [`brave-shields-disabled.json`](#brave-shields-disabledjson)
+- [`disable-brave-ipfs.json`](#disable-brave-ipfsjson)
 - [`disable-brave-rewards-wallet.json`](#disable-brave-rewards-walletjson)
 - [`disable-brave-tor.json`](#disable-brave-torjson)
 - [`disable-brave-vpn.json`](#disable-brave-vpnjson)
 - [`disable-floc.json`](#disable-flocjson)
 - [`disable-incognito.json.badidea`](#disable-incognitojsonbadidea)
+- [`doh-adguard-dns0.json`](#doh-adguard-dns0json)
+- [`dph-adguard.json`](#dph-adguardjson)
+- [`doh-adguard-unfiltered.json`](#doh-adguard-unfilteredjson)
 - [`doh-cloudflare-secure.json`](#doh-cloudflare-securejson)
-- [`doh-unlocked-unset.json`](#doh-unlocked-unsetjson)
+- [`doh-disabled`](#doh-disabled)
 - [`doh-dns0.json`](#doh-dns0json)
+- [`doh-dns0-kids.json`](#doh-dns0-kidsjson)
+- [`doh-dns0-open.json`](#doh-dns0-openjson)
+- [`doh-dns0-zero.json`](#doh-dns0-zerojson)
+- [`doh-google64.json`](#doh-google64json)
+- [`doh-google.json`](#doh-googlejson)
 - [`doh-mullvad-base.json`](#doh-mullvad-basejson)
 - [`doh-quad9-ecs.json`](#doh-quad9-ecsjson)
-- [`doh-quad9-insecure-ecs.json.badidea`](#doh-quad9-insecure-ecsjsonbadidea)
-- [`doh-quad9-insecure.json.badidea`](#doh-quad9-insecurejsonbadidea)
 - [`doh-quad9.json`](#doh-quad9json)
-- [`doh-unlocked-unset.json`](#doh-unlocked-unsetjson-1)
+- [`doh-unlocked-unset.json`](#doh-unlocked-unsetjson)
 - [`edge-appsfavorites.json`](#edge-appsfavoritesjson)
 - [`edge-newtabapps.json`](#edge-newtabappsjson)
 - [`edge-screenshots.json`](#edge-screenshotsjson)
@@ -46,7 +53,6 @@
 - [`enable-passwordleakdetection.json`](#enable-passwordleakdetectionjson)
 - [`enable-tab-suspend.json`](#enable-tab-suspendjson)
 - [`fix-edge-search.json`](#fix-edge-searchjson)
-- [`force-incognito.json.badidea`](#force-incognitojsonbadidea)
 - [`generative-ai.json`](#generative-aijson)
 - [`https-everywhere.json`](#https-everywherejson)
 - [`README.md`](#readmemd)
@@ -178,6 +184,10 @@ disabling GTK/Qt themes.
 Allowlist for sites where I think Brave Shields may be breaking things. Similar is also in
 `aminda-extensions.json` for Privacy Badger.
 
+## `disable-brave-ipfs.json`
+
+Disables Brave integrated IPFS node.
+
 ## `disable-brave-rewards-wallet.json`
 
 Disables Brave rewards and wallet.
@@ -202,23 +212,31 @@ Manifest v2 extensions (as v3 is kind of floc too).
 
 Disables incognito mode. I don't recommend this.
 
+## `doh-adguard-dns0.json`
+
+## `dph-adguard.json`
+
+## `doh-adguard-unfiltered.json`
+
 ## `doh-cloudflare-secure.json`
 
 Sets Cloudflare with malware protection as the forced DNS-over-HTTPS server.
 
-## `doh-unlocked-unset.json`
-
-If no DNS over HTTPS policy is used, this unlocks the setting. Enabling managed policies disable it by default.
-
-My other `doh-*.json` set this as well, because `secure` doesn't allow
-downgrade to system resolver and Chromium seems somewhat unreliable with it often reporting
-`DNS_PROBE_POSSIBLE` and while this occassionally disables ECH, it works and
-my system resolvers are encrypted. I hope they will implement ECH with system
-resolver soon to fix this.
+## `doh-disabled`
 
 ## `doh-dns0.json`
 
 Simply forces DNS-over-HTTPS with DNS0.eu.
+
+## `doh-dns0-kids.json`
+
+## `doh-dns0-open.json`
+
+## `doh-dns0-zero.json`
+
+## `doh-google64.json`
+
+## `doh-google.json`
 
 ## `doh-mullvad-base.json`
 
@@ -231,16 +249,6 @@ Forces DNS-over-HTTPS with Mullvad Base, which features ad, malware & tracker bl
 Forces DNS over HTTPS with Quad9 ECS enabled threat-blocking server and also contains
 their alternative port.
 
-## `doh-quad9-insecure-ecs.json.badidea`
-
-Forces DNS over HTTPS with Quad9 ECS enabled unfiltered server and also contains
-their alternative port. **No DNSSEC either.**
-
-## `doh-quad9-insecure.json.badidea`
-
-Forces DNS over HTTPS with Quad9 unfiltered server and also contains
-their alternative port. **No DNSSEC either.**
-
 ## `doh-quad9.json`
 
 Forces DNS over HTTPS with Quad9 threat-blocking server and also contains
@@ -249,6 +257,14 @@ their alternative port.
 ## `doh-unlocked-unset.json`
 
 Allows configuring DoH even with managed policies present (unless another DoH rule is in force) since enabling any managed policy will otherwise gray out the option.
+
+If no DNS over HTTPS policy is used, this unlocks the setting. Enabling managed policies disable it by default.
+
+My other `doh-*.json` set this as well, because `secure` doesn't allow
+downgrade to system resolver and Chromium seems somewhat unreliable with it often reporting
+`DNS_PROBE_POSSIBLE` and while this occassionally disables ECH, it works and
+my system resolvers are encrypted. I hope they will implement ECH with system
+resolver soon to fix this.
 
 ## `edge-appsfavorites.json`
 
@@ -283,10 +299,6 @@ Enables the efficiency mode which suspends background tabs.
 Tells Microsoft Edge to redirect queries from new tab search box to URL bar
 effectively forcing it to respect user configured search engine instead of
 stealthily sending those queries to Bing.
-
-## `force-incognito.json.badidea`
-
-Forces incognito mode. I don't recommend this.
 
 ## `generative-ai.json`
 
