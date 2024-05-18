@@ -55,6 +55,8 @@
 - [`fix-edge-search.json`](#fix-edge-searchjson)
 - [`generative-ai.json`](#generative-aijson)
 - [`https-everywhere.json`](#https-everywherejson)
+- [`prefetch.json`](#prefetchjson)
+- [`profilemanager.json`](#profilemanagerjson)
 - [`README.md`](#readmemd)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -315,6 +317,17 @@ This file evolved to merge another one, so now it:
   to be used.
 - Forces HTTPS-only mode to be enabled.
 - Attempts to upgrade `http://` queries to `https://`
+
+## `prefetch.json`
+
+Enables prefetching. Will make sites very speedy, but decreases privacy and may
+conflict with uBlock Origin. However AdNauseam is already clicking those ads, so
+maybe it's not that big of an issue.
+
+## `profilemanager.json`
+
+Forces the profile screen even with only one profile. I love the feature in Firefox
+and want to see it here too, now that I accidentally noticed it.
 
 ## `README.md`
 
