@@ -149,7 +149,9 @@ yes, it's the second time ,one is edge, one is chrome
 
 - `nngceckbapebfimnlniiiahkandclblb`
 
-The password manager of my choice.
+The password manager of my choice. For the managed settings
+[see here](https://bitwarden.com/help/deploy-clients/), although that only
+applies to self-hosters.
 
 ### [Privacy Badger](https://chrome.google.com/webstore/detail/pkehgijcmpdhfbdbbnkijodmdjhbjlgp)
 
