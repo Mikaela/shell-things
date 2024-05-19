@@ -1,3 +1,4 @@
+//
 // Remember to start writing at line 2. This is my second attempt at Firefox
 // autoconfig after being taught by LibreAwoo, but this time I am trying to
 // avoid duplicating my browser policy, which you can find from the same
@@ -29,19 +30,25 @@ pref("privacy.donottrackheader.value", 1);
 
 // More tunable privacy.resistfingerprinting. I have lost the privacy game
 // many times before this point, so this is nothing.
-pref("privacy.fingerprintingProtection", true);
-pref(
-	"privacy.fingerprintingProtection.overrides",
-	"+AllTargets,-KeyboardEvents,-SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-NavigatorPlatform,-NavigatorUserAgent,-JSDateTimeUTC,-HttpUserAgent,-FontVisibilityRestrictGenerics,-FontVisibilityBaseSystem,-FontVisibilityLangPack",
-);
-pref("privacy.fingerprintingProtection.pbmode", true);
+//pref("privacy.fingerprintingProtection", true);
+clearPref("privacy.fingerprintingProtection");
+//pref(
+//	"privacy.fingerprintingProtection.overrides",
+//	"+AllTargets,-KeyboardEvents,-SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-NavigatorPlatform,-NavigatorUserAgent,-JSDateTimeUTC,-HttpUserAgent,-FontVisibilityRestrictGenerics,-FontVisibilityBaseSystem,-FontVisibilityLangPack",
+//);
+clearPref("privacy.fingerprintingProtection.overrides");
+//pref("privacy.fingerprintingProtection.pbmode", true);
+clearPref("privacy.fingerprintingProtection.pbmode");
 // (Incompatible with the above)
-pref("privacy.resistFingerprinting", false);
-pref("privacy.resistFingerprinting.block_mozAddonManage", true);
+//pref("privacy.resistFingerprinting", false);
+clearPref("privacy.resistFingerprinting");
+//pref("privacy.resistFingerprinting.block_mozAddonManage", true);
+clearPref("privacy.resistFingerprinting.block_mozAddonManage");
 // Letterboxing from Tor Browser, I like it in general.
-pref("privacy.resistFingerprinting.letterboxing", true);
+lockPref("privacy.resistFingerprinting.letterboxing", true);
 // Still Incompatible with the above
-pref("privacy.resistFingerprinting.pbmode", false);
+//pref("privacy.resistFingerprinting.pbmode", false);
+clearPref("privacy.resistFingerprinting.pbmode");
 
 // Enable containers without extensions (although those are forced by the
 // policy. TODO: Remove these as they are in the policy, but disallowed by

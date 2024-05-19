@@ -521,19 +521,19 @@
       },
       "privacy.fingerprintingProtection": {
         "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
+        "Status": "clear",
         "Type": "boolean",
         "Value": true
       },
       "privacy.fingerprintingProtection.overrides": {
         "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
+        "Status": "clear",
         "Type": "string",
         "Value": "+AllTargets,-KeyboardEvents,-SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-NavigatorPlatform,-NavigatorUserAgent,-JSDateTimeUTC,-HttpUserAgent,-FontVisibilityRestrictGenerics,-FontVisibilityBaseSystem,-FontVisibilityLangPack"
       },
       "privacy.fingerprintingProtection.pbmode": {
         "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
+        "Status": "clear",
         "Type": "boolean",
         "Value": true
       },
@@ -544,13 +544,13 @@
       },
       "privacy.resistFingerprinting": {
         "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
+        "Status": "clear",
         "Type": "boolean",
         "Value": false
       },
       "privacy.resistFingerprinting.block_mozAddonManage": {
         "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
+        "Status": "clear",
         "Type": "boolean",
         "Value": true
       },
@@ -562,7 +562,7 @@
       },
       "privacy.resistFingerprinting.pbmode": {
         "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
+        "Status": "clear",
         "Type": "boolean",
         "Value": false
       },
