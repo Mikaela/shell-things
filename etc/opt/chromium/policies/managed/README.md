@@ -205,8 +205,7 @@ that I can see.
 
 ## `disable-floc.json`
 
-Disables floc or ad topics that are against privacy. Additionally allows
-Manifest v2 extensions (as v3 is kind of floc too).
+Disables floc or ad topics that are against privacy.
 
 - https://start.duckduckgo.com/?q=google+floc+privacy+topics
 

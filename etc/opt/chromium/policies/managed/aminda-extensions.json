@@ -75,6 +75,7 @@
       }
     }
   },
+  "ExtensionManifestV2Availability": 2,
   "ExtensionSettings": {
     "ajhmfdgkijocedmfjonnpjfojldioehi": {
       "installation_mode": "force_installed",
