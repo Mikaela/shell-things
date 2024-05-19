@@ -71,19 +71,10 @@
       "pkehgijcmpdhfbdbbnkijodmdjhbjlgp": {
         "checkForDNTPolicy": true,
         "disabledSites": [
-          "app.element.io",
-          "bittimittari.fi",
           "challenges.cloudflare.com",
-          "chat.pikaviestin.fi",
-          "develop.element.io",
           "ecosia.org",
           "keyoxide.org",
-          "learn.microsoft.com",
-          "one.one",
-          "pp-attester-turnstile.research.cloudflare.com",
-          "staging.element.io",
-          "teams.microsoft.com",
-          "webchat.disroot.org"
+          "pp-attester-turnstile.research.cloudflare.com"
         ],
         "learnInIncognito": true,
         "learnLocally": true,
