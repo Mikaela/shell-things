@@ -18,6 +18,15 @@ pref("cookiebanners.bannerClicking.enabled", true);
 pref("cookiebanners.service.mode", 2);
 pref("cookiebanners.service.mode.privateBrowsing", 2);
 
+// I can set my preferred fonts in an order! :O
+// but obviously this is forbidden in policies.json!
+pref("font.name-list.monospace.x-cyrillic", "Noto Shanns Mono, monospace");
+pref("font.name-list.monospace.x-western", "Noto Shanns Mono, monospace");
+pref("font.name-list.sans-serif.x-cyrillic", "Noto Sans, sans-serif");
+pref("font.name-list.sans-serif.x-western", "Noto Sans, sans-serif");
+pref("font.name-list.serif.x-cyrillic", "Noto Serif, serif");
+pref("font.name-list.serif.x-western", "Noto Serif, serif");
+
 // Play animated images only once, accessibility.
 pref("image.animation.mode", "once");
 

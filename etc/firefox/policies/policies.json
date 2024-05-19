@@ -423,6 +423,42 @@
         "Type": "string",
         "Value": ""
       },
+      "font.name-list.monospace.x-cyrillic": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
+        "Type": "string",
+        "Value": "Noto Shanns Mono, monospace"
+      },
+      "font.name-list.monospace.x-western": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
+        "Type": "string",
+        "Value": "Noto Shanns Mono, monospace"
+      },
+      "font.name-list.sans-serif.x-cyrillic": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
+        "Type": "string",
+        "Value": "Noto Sans, sans-serif"
+      },
+      "font.name-list.sans-serif.x-western": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
+        "Type": "string",
+        "Value": "Noto Sans, sans-serif"
+      },
+      "font.name-list.serif.x-cyrillic": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
+        "Type": "string",
+        "Value": "Noto Serif, serif"
+      },
+      "font.name-list.serif.x-western": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
+        "Type": "string",
+        "Value": "Noto Serif, serif"
+      },
       "general.config.obscure_value": {
         "Comment": "Required for autoconfig.",
         "Status": "locked",
