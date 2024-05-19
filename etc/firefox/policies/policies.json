@@ -410,6 +410,52 @@
         "Type": "string",
         "Value": "1.5"
       },
+      "browser.safebrowsing.downloads.remote.url": {
+        "Status": "clear"
+      },
+
+      "browser.safebrowsing.provider.google.gethashURL": {
+        "Status": "clear"
+      },
+
+      "browser.safebrowsing.provider.google.lists": {
+        "Status": "clear"
+      },
+
+      "browser.safebrowsing.provider.google.updateURL": {
+        "Status": "clear"
+      },
+
+      "browser.safebrowsing.provider.google4.dataSharingURL": {
+        "Status": "clear"
+      },
+
+      "browser.safebrowsing.provider.google4.gethashURL": {
+        "Status": "clear"
+      },
+
+      "browser.safebrowsing.provider.google4.updateURL": {
+        "Status": "clear"
+      },
+
+      "browser.safebrowsing.provider.mozilla.gethashURL": {
+        "Status": "clear"
+      },
+
+      "browser.safebrowsing.provider.mozilla.lists": {
+        "Status": "clear"
+      },
+
+      "browser.safebrowsing.provider.mozilla.lists.base": {
+        "Status": "clear"
+      },
+
+      "browser.safebrowsing.provider.mozilla.lists.content": {
+        "Status": "clear"
+      },
+      "browser.safebrowsing.provider.mozilla.updateURL": {
+        "Status": "clear"
+      },
       "layout.css.prefers-color-scheme.content-override": {
         "Comment": "Dark theme by default, disabling allowed",
         "Status": "default",
