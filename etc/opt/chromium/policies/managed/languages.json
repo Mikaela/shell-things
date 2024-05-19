@@ -1,7 +1,3 @@
 {
-  "ForcedLanguages": [
-    "fi",
-    "en",
-    "ru"
-  ]
+  "ForcedLanguages": ["fi", "en", "ru"]
 }

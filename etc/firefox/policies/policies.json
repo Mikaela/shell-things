@@ -4,9 +4,7 @@
       "Extensions": {
         "adnauseam@rednoise.org": {
           "toAdd": {
-            "trustedSiteDirectives": [
-              ""
-            ]
+            "trustedSiteDirectives": [""]
           },
           "toOverwrite": {
             "filterLists": [
@@ -18,11 +16,7 @@
         },
         "jid1-MnnxcxisBPnSXQ@jetpack": {
           "checkForDNTPolicy": true,
-          "disabledSites": [
-            "cloudflare.com",
-            "ecosia.org",
-            "keyoxide.org"
-          ],
+          "disabledSites": ["cloudflare.com", "ecosia.org", "keyoxide.org"],
           "learnInIncognito": true,
           "learnLocally": true,
           "sendDNTSignal": true,
@@ -100,10 +94,7 @@
     },
     "DNSOverHTTPS": {
       "Enabled": false,
-      "ExcludedDomains": [
-        "http.badssl.com",
-        "norwegianwifi.com"
-      ],
+      "ExcludedDomains": ["http.badssl.com", "norwegianwifi.com"],
       "Fallback": true,
       "Locked": true,
       "ProviderURL": "https://dns0.eu/",

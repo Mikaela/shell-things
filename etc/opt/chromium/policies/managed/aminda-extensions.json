@@ -56,9 +56,7 @@
       },
       "mlojlfildnehdpnlmpkeiiglhhkofhpb": {
         "toAdd": {
-          "trustedSiteDirectives": [
-            ""
-          ]
+          "trustedSiteDirectives": [""]
         },
         "toOverwrite": {
           "filterLists": [
@@ -70,11 +68,7 @@
       },
       "pkehgijcmpdhfbdbbnkijodmdjhbjlgp": {
         "checkForDNTPolicy": true,
-        "disabledSites": [
-          "cloudflare.com",
-          "ecosia.org",
-          "keyoxide.org"
-        ],
+        "disabledSites": ["cloudflare.com", "ecosia.org", "keyoxide.org"],
         "learnInIncognito": true,
         "learnLocally": true,
         "sendDNTSignal": true,
