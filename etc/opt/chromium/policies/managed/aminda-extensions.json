@@ -10,20 +10,22 @@
       "cjpalhdlnbpafiamejdnhcphjbkeiagm": {
         "toAdd": {
           "trustedSiteDirectives": [
-            "app.element.io",
-            "staging.element.io",
-            "develop.element.io",
-            "chat.pikaviestin.fi",
-            "webchat.disroot.org",
-            "learn.microsoft.com",
-            "teams.microsoft.com",
             "bittimittari.fi",
-            "challenges.cloudflare.com",
-            "pp-attester-turnstile.research.cloudflare.com",
+            "chrome-extension-scheme",
+            "cloudflare.com",
+            "disroot.org",
+            "duckduckgo.com",
+            "ecosia.org",
+            "element.io",
+            "google",
+            "google.com",
             "keyoxide.org",
-            "one.one.one.one",
-            "www.ecosia.org",
-            "ac.ecosia.org"
+            "live.com",
+            "matrix.org",
+            "microsoft.com",
+            "moz-extension-scheme",
+            "one.one",
+            "pikaviestin.fi"
           ]
         },
         "toOverwrite": {
@@ -70,19 +72,18 @@
         "checkForDNTPolicy": true,
         "disabledSites": [
           "app.element.io",
-          "staging.element.io",
-          "develop.element.io",
-          "chat.pikaviestin.fi",
-          "webchat.disroot.org",
-          "learn.microsoft.com",
-          "teams.microsoft.com",
           "bittimittari.fi",
           "challenges.cloudflare.com",
-          "pp-attester-turnstile.research.cloudflare.com",
+          "chat.pikaviestin.fi",
+          "develop.element.io",
+          "ecosia.org",
           "keyoxide.org",
-          "one.one.one.one",
-          "www.ecosia.org",
-          "ac.ecosia.org"
+          "learn.microsoft.com",
+          "one.one",
+          "pp-attester-turnstile.research.cloudflare.com",
+          "staging.element.io",
+          "teams.microsoft.com",
+          "webchat.disroot.org"
         ],
         "learnInIncognito": true,
         "learnLocally": true,
