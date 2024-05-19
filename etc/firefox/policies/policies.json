@@ -668,6 +668,12 @@
         "Type": "boolean",
         "Value": true
       },
+      "privacy.userContext.extension": {
+        "Comment": "Displays in settings which extension requires container tabs. None. it's this policy. Preference not allowed for stability reasons.",
+        "Status": "locked",
+        "Type": "string",
+        "Value": ""
+      },
       "privacy.userContext.ui.enabled": {
         "Comment": "Tab containers UI without extensions",
         "Status": "locked",
