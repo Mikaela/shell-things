@@ -352,6 +352,21 @@
         "Type": "boolean",
         "Value": true
       },
+      "browser.safebrowsing.blockedURIs.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "browser.safebrowsing.malware.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "browser.safebrowsing.phishing.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
       "dom.security.https_only_mode": {
         "Status": "locked",
         "Type": "boolean",
