@@ -311,6 +311,22 @@
         "Type": "string",
         "Value": "en, fi"
       },
+      "browser.discovery.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": false
+      },
+      "extensions.htmlaboutaddons.recommendations.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": false
+      },
+
+      "browser.crashReports.unsubmittedCheck.autoSubmit2": {
+        "Status": "default",
+        "Type": "boolean",
+        "Value": true
+      },
       "cookiebanners.bannerClicking.enabled": {
         "Comment": "Preference not allowed for stability reasons. :(",
         "Status": "locked",
