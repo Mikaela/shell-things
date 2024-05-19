@@ -143,6 +143,8 @@ repos:
             "prettier-plugin-nginx@1.0.3",
             # https://www.npmjs.com/package/prettier-plugin-toml
             "prettier-plugin-toml@2.0.1",
+            # https://www.npmjs.com/package/prettier-plugin-sort-json
+            "prettier-plugin-sort-json@4.0.0",
           ]
 
   # Black, opinionated Python code formatter
