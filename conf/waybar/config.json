@@ -21,7 +21,10 @@
   "memory": {
     "format": "RAM {percentage}%"
   },
-  "modules-left": ["sway/workspaces", "sway/mode"],
+  "modules-left": [
+    "sway/workspaces",
+    "sway/mode"
+  ],
   "modules-right": [
     "gamemode",
     "cpu",
@@ -49,7 +52,10 @@
   "pulseaudio": {
     "format": "VOL {volume}%",
     "format-bluetooth": "BT VOL {volume}%",
-    "ignored-sinks": ["Easy Effects Sink", "Easy Effects Source"]
+    "ignored-sinks": [
+      "Easy Effects Sink",
+      "Easy Effects Source"
+    ]
   },
   "sway/language": {
     "format": "KBD {short} {variant}",

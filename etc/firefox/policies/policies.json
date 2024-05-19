@@ -4,7 +4,9 @@
       "Extensions": {
         "adnauseam@rednoise.org": {
           "toAdd": {
-            "trustedSiteDirectives": [""]
+            "trustedSiteDirectives": [
+              ""
+            ]
           },
           "toOverwrite": {
             "filterLists": [
@@ -16,7 +18,11 @@
         },
         "jid1-MnnxcxisBPnSXQ@jetpack": {
           "checkForDNTPolicy": true,
-          "disabledSites": ["cloudflare.com", "ecosia.org", "keyoxide.org"],
+          "disabledSites": [
+            "cloudflare.com",
+            "ecosia.org",
+            "keyoxide.org"
+          ],
           "learnInIncognito": true,
           "learnLocally": true,
           "sendDNTSignal": true,
@@ -101,7 +107,10 @@
     },
     "DNSOverHTTPS": {
       "Enabled": false,
-      "ExcludedDomains": ["http.badssl.com", "norwegianwifi.com"],
+      "ExcludedDomains": [
+        "http.badssl.com",
+        "norwegianwifi.com"
+      ],
       "Fallback": true,
       "Locked": true,
       "ProviderURL": "https://dns0.eu/",
@@ -144,6 +153,10 @@
       "Locked": false
     },
     "ExtensionSettings": {
+      "@contain-facebook": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/facebook-container/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
       "adnauseam@rednoise.org": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/adnauseam/latest.xpi",
         "installation_mode": "blocked"
@@ -184,10 +197,6 @@
       "{3c078156-979c-498b-8990-85f7987dd929}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/sidebery/latest.xpi",
         "installation_mode": "force_installed"
-      },
-      "@contain-facebook": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/facebook-container/latest.xpi",
-        "installation_mode": "normal_installed"
       },
       "{446900e4-71c2-419f-a6a7-df9c091e268b}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi",
@@ -301,6 +310,69 @@
         "Type": "boolean",
         "Value": false
       },
+      "browser.crashReports.unsubmittedCheck.autoSubmit2": {
+        "Comment": "Automatically sending crash reports, but letting the user say no.",
+        "Status": "default",
+        "Type": "boolean",
+        "Value": true
+      },
+      "browser.discovery.enabled": {
+        "Comment": "This means personalized extension recommendations in extension management.",
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": false
+      },
+      "browser.safebrowsing.blockedURIs.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "browser.safebrowsing.downloads.remote.url": {
+        "Status": "clear"
+      },
+      "browser.safebrowsing.malware.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "browser.safebrowsing.phishing.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "browser.safebrowsing.provider.google.gethashURL": {
+        "Status": "clear"
+      },
+      "browser.safebrowsing.provider.google.lists": {
+        "Status": "clear"
+      },
+      "browser.safebrowsing.provider.google.updateURL": {
+        "Status": "clear"
+      },
+      "browser.safebrowsing.provider.google4.dataSharingURL": {
+        "Status": "clear"
+      },
+      "browser.safebrowsing.provider.google4.gethashURL": {
+        "Status": "clear"
+      },
+      "browser.safebrowsing.provider.google4.updateURL": {
+        "Status": "clear"
+      },
+      "browser.safebrowsing.provider.mozilla.gethashURL": {
+        "Status": "clear"
+      },
+      "browser.safebrowsing.provider.mozilla.lists": {
+        "Status": "clear"
+      },
+      "browser.safebrowsing.provider.mozilla.lists.base": {
+        "Status": "clear"
+      },
+      "browser.safebrowsing.provider.mozilla.lists.content": {
+        "Status": "clear"
+      },
+      "browser.safebrowsing.provider.mozilla.updateURL": {
+        "Status": "clear"
+      },
       "browser.translation.neverForLanguages": {
         "Status": "default",
         "Type": "string",
@@ -310,24 +382,6 @@
         "Status": "default",
         "Type": "string",
         "Value": "en, fi"
-      },
-      "browser.discovery.enabled": {
-        "Comment": "This means personalized extension recommendations in extension management.",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": false
-      },
-      "extensions.htmlaboutaddons.recommendations.enabled": {
-        "Comment": "This means the same, but without personalization.",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": false
-      },
-      "browser.crashReports.unsubmittedCheck.autoSubmit2": {
-        "Comment": "Automatically sending crash reports, but letting the user say no.",
-        "Status": "default",
-        "Type": "boolean",
-        "Value": true
       },
       "cookiebanners.bannerClicking.enabled": {
         "Comment": "Preference not allowed for stability reasons. :(",
@@ -352,25 +406,16 @@
         "Type": "boolean",
         "Value": true
       },
-      "browser.safebrowsing.blockedURIs.enabled": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "browser.safebrowsing.malware.enabled": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "browser.safebrowsing.phishing.enabled": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
       "dom.security.https_only_mode": {
         "Status": "locked",
         "Type": "boolean",
         "Value": true
+      },
+      "extensions.htmlaboutaddons.recommendations.enabled": {
+        "Comment": "This means the same, but without personalization.",
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": false
       },
       "extensions.webextensions.restrictedDomains": {
         "Comment": "Don't protect Mozilla domains from privacy extensions.",
@@ -409,52 +454,6 @@
         "Status": "default",
         "Type": "string",
         "Value": "1.5"
-      },
-      "browser.safebrowsing.downloads.remote.url": {
-        "Status": "clear"
-      },
-
-      "browser.safebrowsing.provider.google.gethashURL": {
-        "Status": "clear"
-      },
-
-      "browser.safebrowsing.provider.google.lists": {
-        "Status": "clear"
-      },
-
-      "browser.safebrowsing.provider.google.updateURL": {
-        "Status": "clear"
-      },
-
-      "browser.safebrowsing.provider.google4.dataSharingURL": {
-        "Status": "clear"
-      },
-
-      "browser.safebrowsing.provider.google4.gethashURL": {
-        "Status": "clear"
-      },
-
-      "browser.safebrowsing.provider.google4.updateURL": {
-        "Status": "clear"
-      },
-
-      "browser.safebrowsing.provider.mozilla.gethashURL": {
-        "Status": "clear"
-      },
-
-      "browser.safebrowsing.provider.mozilla.lists": {
-        "Status": "clear"
-      },
-
-      "browser.safebrowsing.provider.mozilla.lists.base": {
-        "Status": "clear"
-      },
-
-      "browser.safebrowsing.provider.mozilla.lists.content": {
-        "Status": "clear"
-      },
-      "browser.safebrowsing.provider.mozilla.updateURL": {
-        "Status": "clear"
       },
       "layout.css.prefers-color-scheme.content-override": {
         "Comment": "Dark theme by default, disabling allowed",
