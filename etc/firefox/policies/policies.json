@@ -19,10 +19,9 @@
         "jid1-MnnxcxisBPnSXQ@jetpack": {
           "checkForDNTPolicy": true,
           "disabledSites": [
-            "challenges.cloudflare.com",
+            "cloudflare.com",
             "ecosia.org",
-            "keyoxide.org",
-            "pp-attester-turnstile.research.cloudflare.com"
+            "keyoxide.org"
           ],
           "learnInIncognito": true,
           "learnLocally": true,
