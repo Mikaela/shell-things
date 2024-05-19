@@ -49,14 +49,15 @@ repos:
       - id: fix-byte-order-marker
       - id: mixed-line-ending
         args: [--fix=auto]
-      - id: pretty-format-json
+        # Remember to check that prettier excludes it, if used!
+        #- id: pretty-format-json
         # Breaks AdNauseam/uBlock Origin rules as the browser interprets
         # values to be set for empty options.
         #exclude: ^etc\/firefox\/policies\/policies.json|etc\/opt\/chromium\/policies\/managed\/aminda-extensions.json$
-        args:
-          # Remember also: --no-sort-keys
-          # ASCII excludes the älphäbet amongst others
-          [--autofix, --no-ensure-ascii]
+        #args:
+        # Remember also: --no-sort-keys
+        # ASCII excludes the älphäbet amongst others
+        #[--autofix, --no-ensure-ascii]
         #- id: requirements-txt-fixer
 
   # Synchronize dependencies between this file and package managers
@@ -133,8 +134,8 @@ repos:
     rev: "v3.2.5"
     hooks:
       - id: prettier
-        # These are handled by Black below or pretty-format-json above
-        exclude_types: [python, pyi, jupyter, json]
+        # These are handled by Black below
+        exclude_types: [python, pyi, jupyter]
         additional_dependencies: [
             # https://www.npmjs.com/package/prettier
             "prettier@3.2.5",
