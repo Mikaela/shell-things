@@ -31,7 +31,11 @@ pref("privacy.donottrackheader.value", 1);
 // More tunable privacy.resistfingerprinting. I have lost the privacy game
 // many times before this point, so this is nothing.
 //pref("privacy.fingerprintingProtection", true);
-clearPref("privacy.fingerprintingProtection");
+
+// Somehow I cannot clearPref this, so...
+//clearPref("privacy.fingerprintingProtection");
+lockPref("privacy.fingerprintingProtection", false);
+
 //pref(
 //	"privacy.fingerprintingProtection.overrides",
 //	"+AllTargets,-KeyboardEvents,-SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-NavigatorPlatform,-NavigatorUserAgent,-JSDateTimeUTC,-HttpUserAgent,-FontVisibilityRestrictGenerics,-FontVisibilityBaseSystem,-FontVisibilityLangPack",
