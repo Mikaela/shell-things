@@ -478,7 +478,7 @@
       "intl.accept_languages": {
         "Status": "locked",
         "Type": "string",
-        "Value": "fi, fi-FI, en, en-FI, en-EU, en-IE, en-US, ru, ru-RU"
+        "Value": "fi, fi-FI, en, en-FI, en-EU, en-IE, en-GB, en-US, ru, ru-RU"
       },
       "javascript.use_us_english_locale": {
         "Comment": "Preference not allowed for stability reasons. :(",
