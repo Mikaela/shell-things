@@ -251,7 +251,7 @@
         "Comment": "Preference not allowed for stability reasons. :(",
         "Status": "locked",
         "Type": "string",
-        "Value": "https://gitea.blesmrt.net/mikaela/shell-things/raw/branch/master/conf/librewolf.overrides.cfg"
+        "Value": "https://gitea.blesmrt.net/mikaela/shell-things/raw/branch/master/conf/firefox-forbidden-policies.js"
       },
       "autoadmin.offline_failover": {
         "Comment": "Preference not allowed for stability reasons. :(",
