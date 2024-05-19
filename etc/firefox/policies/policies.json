@@ -77,6 +77,7 @@
               "https://gitea.blesmrt.net/mikaela/gist/raw/branch/master/DNS/blocklist.txt",
               "ublock-quick-fixes",
               "FIN-0",
+              "RUS-0",
               "https://big.oisd.nl",
               "ublock-annoyances",
               "adguard-mobile-app-banners"
@@ -355,9 +356,9 @@
         "Value": "once"
       },
       "intl.accept_languages": {
-        "Status": "default",
+        "Status": "locked",
         "Type": "string",
-        "Value": "fi, en"
+        "Value": "fi, en, ru"
       },
       "javascript.use_us_english_locale": {
         "Comment": "Preference not allowed for stability reasons. :(",
