@@ -1,3 +1,13 @@
 {
-  "ForcedLanguages": ["fi", "en", "ru"]
+  "ForcedLanguages": [
+    "fi",
+    "fi-FI",
+    "en",
+    "en-FI",
+    "en-EU",
+    "en-IE",
+    "en-US",
+    "ru",
+    "ru-RU"
+  ]
 }
