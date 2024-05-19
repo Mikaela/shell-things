@@ -272,7 +272,7 @@
         "Value": 120
       },
       "browser.aboutConfig.showWarning": {
-        "Status": "locked",
+        "Status": "default",
         "Type": "boolean",
         "Value": false
       },
@@ -312,17 +312,19 @@
         "Value": "en, fi"
       },
       "browser.discovery.enabled": {
+        "Comment": "This means personalized extension recommendations in extension management.",
         "Status": "locked",
         "Type": "boolean",
         "Value": false
       },
       "extensions.htmlaboutaddons.recommendations.enabled": {
+        "Comment": "This means the same, but without personalization.",
         "Status": "locked",
         "Type": "boolean",
         "Value": false
       },
-
       "browser.crashReports.unsubmittedCheck.autoSubmit2": {
+        "Comment": "Automatically sending crash reports, but letting the user say no.",
         "Status": "default",
         "Type": "boolean",
         "Value": true
@@ -356,11 +358,13 @@
         "Value": true
       },
       "extensions.webextensions.restrictedDomains": {
+        "Comment": "Don't protect Mozilla domains from privacy extensions.",
         "Status": "locked",
         "Type": "string",
         "Value": ""
       },
       "general.config.obscure_value": {
+        "Comment": "Required for autoconfig.",
         "Status": "locked",
         "Type": "number",
         "Value": 0
@@ -392,16 +396,19 @@
         "Value": "1.5"
       },
       "layout.css.prefers-color-scheme.content-override": {
+        "Comment": "Dark theme by default, disabling allowed",
         "Status": "default",
         "Type": "number",
         "Value": 0
       },
       "media.autoplay.default": {
+        "Comment": "Not even autoplaying silently?",
         "Status": "default",
         "Type": "number",
         "Value": 5
       },
       "network.IDN_show_punycode": {
+        "Comment": "Protection against identically looking unicode domain names",
         "Status": "locked",
         "Type": "boolean",
         "Value": true
@@ -441,14 +448,10 @@
         "Value": true
       },
       "network.http.referer.XOriginTrimmingPolicy": {
-        "Status": "default",
-        "Type": "number",
-        "Value": 2
+        "Status": "clear"
       },
       "network.http.referer.defaultPolicy": {
-        "Status": "default",
-        "Type": "number",
-        "Value": 1
+        "Status": "clear"
       },
       "network.http.speculative-parallel-limit": {
         "Status": "clear"
@@ -484,6 +487,7 @@
         "Value": false
       },
       "pdfjs.enableScripting": {
+        "Comment": "I don't see a good reason for allowing scripts in pdf files in a web browser.",
         "Status": "locked",
         "Type": "boolean",
         "Value": false
@@ -563,11 +567,13 @@
         "Value": false
       },
       "privacy.userContext.enabled": {
+        "Comment": "Tab containers",
         "Status": "locked",
         "Type": "boolean",
         "Value": true
       },
       "privacy.userContext.ui.enabled": {
+        "Comment": "Tab containers UI without extensions",
         "Status": "locked",
         "Type": "boolean",
         "Value": true
@@ -611,6 +617,7 @@
         "Value": true
       },
       "ui.systemUsesDarkTheme": {
+        "Comment": "Another defaulting to dark theme.",
         "Status": "default",
         "Type": "number",
         "Value": 1
