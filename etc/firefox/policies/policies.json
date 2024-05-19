@@ -307,6 +307,16 @@
         "Type": "boolean",
         "Value": false
       },
+      "browser.translation.neverForLanguages": {
+        "Status": "default",
+        "Type": "string",
+        "Value": "en, fi"
+      },
+      "browser.translations.neverTranslateLanguages": {
+        "Status": "default",
+        "Type": "string",
+        "Value": "en, fi"
+      },
       "cookiebanners.bannerClicking.enabled": {
         "Comment": "Preference not allowed for stability reasons. :(",
         "Status": "locked",
