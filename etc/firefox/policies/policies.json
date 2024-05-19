@@ -79,8 +79,11 @@
               "FIN-0",
               "RUS-0",
               "https://big.oisd.nl",
-              "ublock-annoyances",
-              "adguard-mobile-app-banners"
+              "adguard-mobile-app-banners",
+              "fanboy-cookiemonster",
+              "ublock-cookies-easylist",
+              "adguard-cookies",
+              "ublock-cookies-adguard"
             ]
           }
         }
