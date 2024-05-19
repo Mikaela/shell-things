@@ -5,42 +5,14 @@
         "adnauseam@rednoise.org": {
           "toAdd": {
             "trustedSiteDirectives": [
-              "app.element.io",
-              "staging.element.io",
-              "develop.element.io",
-              "chat.pikaviestin.fi",
-              "webchat.disroot.org",
-              "learn.microsoft.com",
-              "teams.microsoft.com",
-              "bittimittari.fi",
-              "pp-attester-turnstile.research.cloudflare.com",
-              "keyoxide.org",
-              "one.one.one.one",
-              "www.ecosia.org",
-              "ac.ecosia.org"
+              ""
             ]
           },
           "toOverwrite": {
             "filterLists": [
-              "user-filters",
-              "ublock-filters",
-              "ublock-badware",
-              "ublock-privacy",
-              "ublock-abuse",
-              "ublock-unbreak",
               "easylist",
-              "easyprivacy",
-              "urlhaus-1",
-              "plowe-0",
-              "https://gitea.blesmrt.net/mikaela/gist/raw/branch/master/DNS/blocklist.txt",
               "adnauseam-filters",
-              "eff-dnt-whitelist",
-              "ublock-quick-fixes",
-              "FIN-0",
-              "https://big.oisd.nl",
-              "ublock-annoyances",
-              "adguard-mobile-app-banners",
-              "curben-phishing"
+              "eff-dnt-whitelist"
             ]
           }
         },
@@ -70,6 +42,46 @@
         },
         "jid1-ZAdIEUB7XOzOJw@jetpack": {
           "hasSeenPostInstall": true
+        },
+        "uBlock0@raymondhill.net": {
+          "toAdd": {
+            "trustedSiteDirectives": [
+              "app.element.io",
+              "staging.element.io",
+              "develop.element.io",
+              "chat.pikaviestin.fi",
+              "webchat.disroot.org",
+              "learn.microsoft.com",
+              "teams.microsoft.com",
+              "bittimittari.fi",
+              "pp-attester-turnstile.research.cloudflare.com",
+              "keyoxide.org",
+              "one.one.one.one",
+              "www.ecosia.org",
+              "ac.ecosia.org"
+            ]
+          },
+          "toOverwrite": {
+            "filterLists": [
+              "user-filters",
+              "ublock-filters",
+              "ublock-badware",
+              "ublock-privacy",
+              "ublock-abuse",
+              "ublock-unbreak",
+              "easylist",
+              "easyprivacy",
+              "urlhaus-1",
+              "plowe-0",
+              "https://www.eff.org/files/effdntlist.txt",
+              "https://gitea.blesmrt.net/mikaela/gist/raw/branch/master/DNS/blocklist.txt",
+              "ublock-quick-fixes",
+              "FIN-0",
+              "https://big.oisd.nl",
+              "ublock-annoyances",
+              "adguard-mobile-app-banners"
+            ]
+          }
         }
       }
     },
@@ -142,7 +154,7 @@
       },
       "adnauseam@rednoise.org": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/adnauseam/latest.xpi",
-        "installation_mode": "force_installed"
+        "installation_mode": "blocked"
       },
       "ipvfoobar@napr.eu": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ipvfoobar/latest.xpi",
@@ -166,10 +178,11 @@
       },
       "uBlock0@raymondhill.net": {
         "blocked_install_message": "uBlock Origin on integroitu AdNauseamiin, joka on forkki siitä.",
-        "installation_mode": "blocked"
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
+        "installation_mode": "force_installed"
       },
       "uMatrix@raymondhill.net": {
-        "blocked_install_message": "uMatrixin kehitys on päättynyt ja samat ominaisuudet löytyvät AdNauseamista (ja uBlock Originista).",
+        "blocked_install_message": "uMatrixin kehitys on päättynyt ja samat ominaisuudet löytyvät uBlock Originista (ja AdNauseamista).",
         "installation_mode": "blocked"
       },
       "wayback_machine@mozilla.org": {

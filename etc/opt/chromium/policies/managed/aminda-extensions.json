@@ -7,7 +7,7 @@
       "caoacbimdbbljakfhgikoodekdnlcgpk": {
         "hasSeenPostInstall": true
       },
-      "mlojlfildnehdpnlmpkeiiglhhkofhpb": {
+      "cjpalhdlnbpafiamejdnhcphjbkeiagm": {
         "toAdd": {
           "trustedSiteDirectives": [
             "app.element.io",
@@ -37,15 +37,27 @@
             "easyprivacy",
             "urlhaus-1",
             "plowe-0",
+            "https://www.eff.org/files/effdntlist.txt",
             "https://gitea.blesmrt.net/mikaela/gist/raw/branch/master/DNS/blocklist.txt",
-            "adnauseam-filters",
-            "eff-dnt-whitelist",
             "ublock-quick-fixes",
             "FIN-0",
             "https://big.oisd.nl",
             "ublock-annoyances",
-            "adguard-mobile-app-banners",
-            "curben-phishing"
+            "adguard-mobile-app-banners"
+          ]
+        }
+      },
+      "mlojlfildnehdpnlmpkeiiglhhkofhpb": {
+        "toAdd": {
+          "trustedSiteDirectives": [
+            ""
+          ]
+        },
+        "toOverwrite": {
+          "filterLists": [
+            "easylist",
+            "adnauseam-filters",
+            "eff-dnt-whitelist"
           ]
         }
       },
@@ -90,8 +102,10 @@
       "update_url": "https://clients2.google.com/service/update2/crx"
     },
     "cjpalhdlnbpafiamejdnhcphjbkeiagm": {
-      "blocked_install_message": "uBlock Origin on integroitu AdNauseamiin, joka on forkki siitä.",
-      "installation_mode": "blocked"
+      "installation_mode": "force_installed",
+      "override_update_url": true,
+      "toolbar_pin": "force_pinned",
+      "update_url": "https://clients2.google.com/service/update2/crx"
     },
     "donbcfbmhbcapadipfkeojnmajbakjdc": {
       "installation_mode": "normal_installed",
@@ -118,7 +132,8 @@
       "update_url": "https://clients2.google.com/service/update2/crx"
     },
     "mlojlfildnehdpnlmpkeiiglhhkofhpb": {
-      "installation_mode": "force_installed",
+      "blocked_install_message": "AdNauseam on protestityökalu, kun taas Aminda yrittää olla sysadmin.",
+      "installation_mode": "blocked",
       "override_update_url": true,
       "toolbar_pin": "force_pinned",
       "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
@@ -130,7 +145,7 @@
       "update_url": "https://clients2.google.com/service/update2/crx"
     },
     "odfafepnkmbhccpbejgmiehpchacaeak": {
-      "blocked_install_message": "uBlock Origin on integroitu AdNauseamiin, joka on forkki siitä.",
+      "blocked_install_message": "uBlock Origin pitäisi olla jo asennettu Chrome-kaupasta.",
       "installation_mode": "blocked"
     },
     "pkehgijcmpdhfbdbbnkijodmdjhbjlgp": {
