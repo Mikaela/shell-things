@@ -76,7 +76,8 @@
               "fanboy-cookiemonster",
               "ublock-cookies-easylist",
               "adguard-cookies",
-              "ublock-cookies-adguard"
+              "ublock-cookies-adguard",
+              "https://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt"
             ]
           }
         }
