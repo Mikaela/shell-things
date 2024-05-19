@@ -222,6 +222,10 @@
       "{b5501fd1-7084-45c5-9aa6-567c2fcf5dc6}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ruffle_rs/latest.xpi",
         "installation_mode": "normal_installed"
+      },
+      "{d04b0b40-3dab-4f0b-97a6-04ec3eddbfb0}": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ecosia-the-green-search/latest.xpi",
+        "installation_mode": "normal_installed"
       }
     },
     "FirefoxHome": {
