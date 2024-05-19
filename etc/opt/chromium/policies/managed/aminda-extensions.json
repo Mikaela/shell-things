@@ -10,6 +10,7 @@
       "cjpalhdlnbpafiamejdnhcphjbkeiagm": {
         "toAdd": {
           "trustedSiteDirectives": [
+            "azure.com",
             "bittimittari.fi",
             "chrome-extension-scheme",
             "cloudflare.com",
@@ -23,7 +24,10 @@
             "live.com",
             "matrix.org",
             "microsoft.com",
+            "microsoft365.com",
+            "microsoftonline.com",
             "moz-extension-scheme",
+            "office.com",
             "one.one",
             "pikaviestin.fi"
           ]

@@ -1,20 +1,6 @@
 {
   "BraveShieldsDisabledForUrls": [
-    "https://ac.ecosia.org",
-    "https://app.element.io",
-    "https://bittimittari.fi",
-    "https://challenges.cloudflare.com",
-    "https://chat.pikaviestin.fi",
-    "https://develop.element.io",
-    "https://glowing-bear.org",
-    "https://keyoxide.org",
-    "https://latest.glowing-bear.org",
-    "https://learn.microsoft.com",
-    "https://one.one.one.one",
-    "https://pp-attester-turnstile.research.cloudflare.com",
-    "https://staging.element.io",
-    "https://teams.microsoft.com",
-    "https://webchat.disroot.org",
     "https://www.ecosia.org"
-  ]
+  ],
+  "BraveShieldsDisabledForUrls_comment": "Managing tracking protection is left for the user unless there is a heavy reason to do otherwise."
 }
