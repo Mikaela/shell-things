@@ -4,10 +4,10 @@ Description=Aminda's deduplication service
 [Service]
 Type=oneshot
 TimeoutStartSec=infinity
-ExecStart=-/usr/sbin/duperemove -rdhq --hashfile=/root/home.hash /home
-ExecStart=-/usr/sbin/duperemove -rdhq --hashfile=/root/usr-local-bin.hash /usr/local/bin
-ExecStart=-/usr/sbin/duperemove -rdhq --hashfile=/root/flatpak.hash /var/lib/flatpak
-ExecStart=-/usr/sbin/duperemove -rdhq --hashfile=/root/snap.hash /var/lib/snapd
+ExecStart=-/usr/bin/duperemove -rdhq --hashfile=/root/home.hash /home
+ExecStart=-/usr/bin/duperemove -rdhq --hashfile=/root/usr-local-bin.hash /usr/local/bin
+ExecStart=-/usr/bin/duperemove -rdhq --hashfile=/root/flatpak.hash /var/lib/flatpak
+ExecStart=-/usr/bin/duperemove -rdhq --hashfile=/root/snap.hash /var/lib/snapd
 User=root
 StandardOutput=journal
 StandardError=journal
