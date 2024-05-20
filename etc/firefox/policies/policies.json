@@ -466,9 +466,9 @@
         "Value": "once"
       },
       "intl.accept_languages": {
-        "Status": "locked",
+        "Status": "clear",
         "Type": "string",
-        "Value": "fi, fi-FI, en, en-FI, en-EU, en-IE, en-GB, en-US, ru, ru-RU"
+        "Value": "fi-FI, fi, en-US, en"
       },
       "javascript.use_us_english_locale": {
         "Comment": "Preference not allowed for stability reasons. :(",
