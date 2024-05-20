@@ -228,6 +228,10 @@
       "Enabled": true
     },
     "Preferences": {
+      "app.update.download.attempts": {
+        "Comment": "If this is what it looks like, it will stop the prompts to download Firefox manually.",
+        "Status": "clear"
+      },
       "autoadmin.failover_to_cached": {
         "Comment": "Preference not allowed for stability reasons. :(",
         "Status": "locked",
