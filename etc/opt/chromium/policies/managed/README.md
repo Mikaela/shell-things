@@ -29,7 +29,6 @@
 - [`disable-brave-tor.json`](#disable-brave-torjson)
 - [`disable-brave-vpn.json`](#disable-brave-vpnjson)
 - [`disable-floc.json`](#disable-flocjson)
-- [`disable-incognito.json.badidea`](#disable-incognitojsonbadidea)
 - [`doh-adguard-dns0.json`](#doh-adguard-dns0json)
 - [`dph-adguard.json`](#dph-adguardjson)
 - [`doh-adguard-unfiltered.json`](#doh-adguard-unfilteredjson)
@@ -208,10 +207,6 @@ that I can see.
 Disables floc or ad topics that are against privacy.
 
 - https://start.duckduckgo.com/?q=google+floc+privacy+topics
-
-## `disable-incognito.json.badidea`
-
-Disables incognito mode. I don't recommend this.
 
 ## `doh-adguard-dns0.json`
 
