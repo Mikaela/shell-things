@@ -18,10 +18,11 @@ mkdir -p ~/.ssh
 cat .mikaela/keys/authorized_keys >~/.ssh/authorized_keys
 cat etc/ssh/ssh_config >~/.ssh/config
 cat .editorconfig >~/.editorconfig
-mkdir -p ~/.local/firefox/defaults/pref/
-cat conf/autoconfig.js >~/.local/firefox/defaults/pref/autoconfig.js
-#cat conf/librewolf.overrides.cfg >~/.local/firefox/librewolf.overrides.cfg
-cat conf/firefox-forbidden-policies.js >~/.local/firefox/firefox-forbidden-policies.js
+if [ -d ~/.local/firefox/defaults/pref/ ]; then
+	cat conf/autoconfig.js >~/.local/firefox/defaults/pref/autoconfig.js
+	#cat conf/librewolf.overrides.cfg >~/.local/firefox/librewolf.overrides.cfg
+	cat conf/firefox-forbidden-policies.js >~/.local/firefox/firefox-forbidden-policies.js
+fi
 #cat conf/librewolf.overrides.cfg >~/public_html/autoconfig.js
 cat conf/firefox-forbidden-policies.js >~/public_html/autoconfig.js
 mkdir -p ~/.librewolf/ ~/.var/app/io.gitlab.librewolf-community/.librewolf/
