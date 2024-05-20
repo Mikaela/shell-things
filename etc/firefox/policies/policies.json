@@ -72,22 +72,12 @@
               "plowe-0",
               "https://www.eff.org/files/effdntlist.txt",
               "https://gitea.blesmrt.net/mikaela/gist/raw/branch/master/DNS/blocklist.txt",
-              "ublock-quick-fixes",
               "FIN-0",
-              "RUS-0",
-              "BGR-0",
-              "CZE-0",
-              "EST-0",
-              "SPA-0",
-              "NOR-0",
-              "SWE-1",
               "https://big.oisd.nl",
-              "adguard-mobile-app-banners",
               "fanboy-cookiemonster",
               "ublock-cookies-easylist",
               "adguard-cookies",
-              "ublock-cookies-adguard",
-              "https://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt"
+              "ublock-cookies-adguard"
             ]
           }
         }
