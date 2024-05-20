@@ -68,7 +68,8 @@
               "ublock-cookies-easylist",
               "adguard-cookies",
               "ublock-cookies-adguard",
-              "ublock-quick-fixes"
+              "ublock-quick-fixes",
+              "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt"
             ]
           }
         }
