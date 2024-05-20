@@ -10,26 +10,13 @@
       "cjpalhdlnbpafiamejdnhcphjbkeiagm": {
         "toAdd": {
           "trustedSiteDirectives": [
-            "azure.com",
-            "bittimittari.fi",
             "chrome-extension-scheme",
-            "cloudflare.com",
-            "disroot.org",
+            "challenges.cloudflare.com",
             "duckduckgo.com",
             "ecosia.org",
-            "element.io",
-            "google",
-            "google.com",
             "keyoxide.org",
-            "live.com",
-            "matrix.org",
-            "microsoft.com",
-            "microsoft365.com",
-            "microsoftonline.com",
             "moz-extension-scheme",
-            "office.com",
-            "one.one",
-            "pikaviestin.fi"
+            "research.cloudflare.com"
           ]
         },
         "toOverwrite": {
@@ -73,9 +60,12 @@
       "pkehgijcmpdhfbdbbnkijodmdjhbjlgp": {
         "checkForDNTPolicy": true,
         "disabledSites": [
-          "cloudflare.com",
+          "challenges.cloudflare.com",
+          "chrome-extension-scheme",
           "ecosia.org",
-          "keyoxide.org"
+          "keyoxide.org",
+          "moz-extension-scheme",
+          "research.cloudflare.com"
         ],
         "learnInIncognito": true,
         "learnLocally": true,
