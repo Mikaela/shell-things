@@ -75,3 +75,6 @@ LICENSE	text lockable
 CITATION.cff	text lockable
 
 # NOTE! .gitattributes doesn't support the case-insensitive style above!
+
+package.json	text linguist-vendored
+pnpm-lock.yaml	text linguist-vendored

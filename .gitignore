@@ -12,6 +12,8 @@
 !.mikaela
 !.mikaela_install
 !.pre-commit-config.yaml
+!.prettierignore
+!.prettierrc
 !.reuse
 
 # Certificates (unlikely to happen, but better safe than sorry)
@@ -20,3 +22,6 @@
 # Symlinks
 install.run
 LICENSE
+
+
+node_modules/
