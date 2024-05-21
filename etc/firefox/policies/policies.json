@@ -5,14 +5,38 @@
         "adnauseam@rednoise.org": {
           "toAdd": {
             "trustedSiteDirectives": [
-              ""
+              "chrome-extension-scheme",
+              "challenges.cloudflare.com",
+              "duckduckgo.com",
+              "ecosia.org",
+              "keyoxide.org",
+              "moz-extension-scheme",
+              "research.cloudflare.com"
             ]
           },
           "toOverwrite": {
             "filterLists": [
               "easylist",
               "adnauseam-filters",
-              "eff-dnt-whitelist"
+              "eff-dnt-whitelist",
+              "user-filters",
+              "ublock-filters",
+              "ublock-badware",
+              "ublock-privacy",
+              "ublock-abuse",
+              "ublock-unbreak",
+              "easylist",
+              "easyprivacy",
+              "urlhaus-1",
+              "plowe-0",
+              "FIN-0",
+              "https://big.oisd.nl",
+              "fanboy-cookiemonster",
+              "ublock-cookies-easylist",
+              "adguard-cookies",
+              "ublock-cookies-adguard",
+              "ublock-quick-fixes",
+              "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt"
             ]
           }
         },
@@ -38,38 +62,11 @@
         },
         "uBlock0@raymondhill.net": {
           "toAdd": {
-            "trustedSiteDirectives": [
-              "chrome-extension-scheme",
-              "challenges.cloudflare.com",
-              "duckduckgo.com",
-              "ecosia.org",
-              "keyoxide.org",
-              "moz-extension-scheme",
-              "research.cloudflare.com"
-            ]
+            "trustedSiteDirectives": []
           },
           "toOverwrite": {
             "filterLists": [
-              "user-filters",
-              "ublock-filters",
-              "ublock-badware",
-              "ublock-privacy",
-              "ublock-abuse",
-              "ublock-unbreak",
-              "easylist",
-              "easyprivacy",
-              "urlhaus-1",
-              "plowe-0",
-              "https://www.eff.org/files/effdntlist.txt",
-              "https://gitea.blesmrt.net/mikaela/gist/raw/branch/master/DNS/blocklist.txt",
-              "FIN-0",
-              "https://big.oisd.nl",
-              "fanboy-cookiemonster",
-              "ublock-cookies-easylist",
-              "adguard-cookies",
-              "ublock-cookies-adguard",
-              "ublock-quick-fixes",
-              "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt"
+              "https://www.eff.org/files/effdntlist.txt"
             ]
           }
         }
@@ -92,14 +89,13 @@
       ]
     },
     "DNSOverHTTPS": {
-      "Enabled": false,
+      "Enabled": true,
       "ExcludedDomains": [
-        "http.badssl.com",
-        "norwegianwifi.com"
+        ""
       ],
-      "Fallback": true,
-      "Locked": true,
-      "ProviderURL": "https://dns0.eu/",
+      "Fallback": false,
+      "Locked": false,
+      "ProviderURL": "https://dns.quad9.net/dns-query",
       "ProviderURL_outside_europe_aminda_comment": "Swap to https://unfiltered.adguard-dns.com/dns-query if device is expected to cross continents from Europe?",
       "ProviderURL_with_ECS_comment": "If changing this to something with non-private ECS, remember to disable ECS in preferences of TRR!"
     },
@@ -110,15 +106,16 @@
     "DisplayBookmarksToolbar": "never",
     "DontCheckDefaultBrowser": true,
     "EnableTrackingProtection": {
-      "Comment": "Managing tracking protection is left for the user unless there is a heavy reason to do otherwise.",
-      "Cryptomining": true,
-      "EmailTracking": true,
+      "Comment": "We are radical and leaving everything for AdNauseam",
+      "Cookies": false,
+      "Cryptomining": false,
+      "EmailTracking": false,
       "Exceptions": [
         "https://www.ecosia.org"
       ],
-      "Fingerprinting": true,
-      "Locked": false,
-      "Value": true
+      "Fingerprinting": false,
+      "Locked": true,
+      "Value": false
     },
     "EncryptedMediaExtensions": {
       "Enabled": true,
@@ -131,7 +128,7 @@
       },
       "adnauseam@rednoise.org": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/adnauseam/latest.xpi",
-        "installation_mode": "blocked"
+        "installation_mode": "force_installed"
       },
       "ipvfoobar@napr.eu": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ipvfoobar/latest.xpi",
@@ -143,7 +140,7 @@
       },
       "jid1-MnnxcxisBPnSXQ@jetpack": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi",
-        "installation_mode": "force_installed"
+        "installation_mode": "blocked"
       },
       "peertube-companion@booteille": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/peertube-companion/latest.xpi",
@@ -155,7 +152,7 @@
       },
       "uBlock0@raymondhill.net": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
-        "installation_mode": "force_installed"
+        "installation_mode": "blocked"
       },
       "uMatrix@raymondhill.net": {
         "blocked_install_message": "uMatrixin kehitys on päättynyt ja samat ominaisuudet löytyvät uBlock Originista (ja AdNauseamista).",
@@ -264,7 +261,7 @@
       "browser.contentblocking.category": {
         "Status": "locked",
         "Type": "string",
-        "Value": "strict"
+        "Value": "standard"
       },
       "browser.contentblocking.report.hide_vpn_banner": {
         "Status": "default",
@@ -546,7 +543,7 @@
       "network.trr.disable-ECS": {
         "Status": "locked",
         "Type": "boolean",
-        "Value": false
+        "Value": true
       },
       "network.trr.display_fallback_warning": {
         "Status": "locked",
