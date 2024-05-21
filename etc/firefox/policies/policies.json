@@ -5,38 +5,14 @@
         "adnauseam@rednoise.org": {
           "toAdd": {
             "trustedSiteDirectives": [
-              "chrome-extension-scheme",
-              "challenges.cloudflare.com",
-              "duckduckgo.com",
-              "ecosia.org",
-              "keyoxide.org",
-              "moz-extension-scheme",
-              "research.cloudflare.com"
+              ""
             ]
           },
           "toOverwrite": {
             "filterLists": [
               "easylist",
               "adnauseam-filters",
-              "eff-dnt-whitelist",
-              "user-filters",
-              "ublock-filters",
-              "ublock-badware",
-              "ublock-privacy",
-              "ublock-abuse",
-              "ublock-unbreak",
-              "easylist",
-              "easyprivacy",
-              "urlhaus-1",
-              "plowe-0",
-              "FIN-0",
-              "https://big.oisd.nl",
-              "fanboy-cookiemonster",
-              "ublock-cookies-easylist",
-              "adguard-cookies",
-              "ublock-cookies-adguard",
-              "ublock-quick-fixes",
-              "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt"
+              "eff-dnt-whitelist"
             ]
           }
         },
@@ -62,11 +38,38 @@
         },
         "uBlock0@raymondhill.net": {
           "toAdd": {
-            "trustedSiteDirectives": []
+            "trustedSiteDirectives": [
+              "chrome-extension-scheme",
+              "challenges.cloudflare.com",
+              "duckduckgo.com",
+              "ecosia.org",
+              "keyoxide.org",
+              "moz-extension-scheme",
+              "research.cloudflare.com"
+            ]
           },
           "toOverwrite": {
             "filterLists": [
-              "https://www.eff.org/files/effdntlist.txt"
+              "user-filters",
+              "ublock-filters",
+              "ublock-badware",
+              "ublock-privacy",
+              "ublock-abuse",
+              "ublock-unbreak",
+              "easylist",
+              "easyprivacy",
+              "urlhaus-1",
+              "plowe-0",
+              "https://www.eff.org/files/effdntlist.txt",
+              "https://gitea.blesmrt.net/mikaela/gist/raw/branch/master/DNS/blocklist.txt",
+              "FIN-0",
+              "https://big.oisd.nl",
+              "fanboy-cookiemonster",
+              "ublock-cookies-easylist",
+              "adguard-cookies",
+              "ublock-cookies-adguard",
+              "ublock-quick-fixes",
+              "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt"
             ]
           }
         }
@@ -89,13 +92,14 @@
       ]
     },
     "DNSOverHTTPS": {
-      "Enabled": true,
+      "Enabled": false,
       "ExcludedDomains": [
-        ""
+        "http.badssl.com",
+        "norwegianwifi.com"
       ],
-      "Fallback": false,
-      "Locked": false,
-      "ProviderURL": "https://dns.quad9.net/dns-query",
+      "Fallback": true,
+      "Locked": true,
+      "ProviderURL": "https://dns0.eu/",
       "ProviderURL_outside_europe_aminda_comment": "Swap to https://unfiltered.adguard-dns.com/dns-query if device is expected to cross continents from Europe?",
       "ProviderURL_with_ECS_comment": "If changing this to something with non-private ECS, remember to disable ECS in preferences of TRR!"
     },
@@ -106,16 +110,15 @@
     "DisplayBookmarksToolbar": "never",
     "DontCheckDefaultBrowser": true,
     "EnableTrackingProtection": {
-      "Comment": "We are radical and leaving everything for AdNauseam",
-      "Cookies": false,
-      "Cryptomining": false,
-      "EmailTracking": false,
+      "Comment": "Managing tracking protection is left for the user unless there is a heavy reason to do otherwise.",
+      "Cryptomining": true,
+      "EmailTracking": true,
       "Exceptions": [
         "https://www.ecosia.org"
       ],
-      "Fingerprinting": false,
-      "Locked": true,
-      "Value": false
+      "Fingerprinting": true,
+      "Locked": false,
+      "Value": true
     },
     "EncryptedMediaExtensions": {
       "Enabled": true,
@@ -128,7 +131,7 @@
       },
       "adnauseam@rednoise.org": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/adnauseam/latest.xpi",
-        "installation_mode": "force_installed"
+        "installation_mode": "blocked"
       },
       "ipvfoobar@napr.eu": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ipvfoobar/latest.xpi",
@@ -140,7 +143,7 @@
       },
       "jid1-MnnxcxisBPnSXQ@jetpack": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi",
-        "installation_mode": "blocked"
+        "installation_mode": "force_installed"
       },
       "peertube-companion@booteille": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/peertube-companion/latest.xpi",
@@ -152,7 +155,7 @@
       },
       "uBlock0@raymondhill.net": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
-        "installation_mode": "blocked"
+        "installation_mode": "force_installed"
       },
       "uMatrix@raymondhill.net": {
         "blocked_install_message": "uMatrixin kehitys on päättynyt ja samat ominaisuudet löytyvät uBlock Originista (ja AdNauseamista).",
@@ -259,6 +262,7 @@
         "Value": false
       },
       "browser.contentblocking.category": {
+        "Comment": "The best option would be strict, but amongst other things that disables system font visibility and may cause accessibility issues for me. There is also other content blocking already such as PrivacyBadger and uBlock Origin.",
         "Status": "locked",
         "Type": "string",
         "Value": "standard"
@@ -543,7 +547,7 @@
       "network.trr.disable-ECS": {
         "Status": "locked",
         "Type": "boolean",
-        "Value": true
+        "Value": false
       },
       "network.trr.display_fallback_warning": {
         "Status": "locked",
