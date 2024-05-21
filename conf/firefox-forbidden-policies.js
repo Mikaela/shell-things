@@ -65,16 +65,6 @@ lockPref("privacy.resistFingerprinting.letterboxing", true);
 //lockPref("privacy.resistFingerprinting.pbmode", false);
 clearPref("privacy.resistFingerprinting.pbmode");
 
-// Which extension requires container tabs? My policy and this file. This
-// particular option is so forbidden, it cannot be set either in the policy
-// or autoconfig.js
-lockPref("privacy.userContext.extension", "");
-// Enable containers without extensions (although those are forced by the
-// policy. TODO: Remove these as they are in the policy, but disallowed by
-// current ESR
-lockPref("privacy.userContext.enabled", true);
-lockPref("privacy.userContext.ui.enabled", true);
-
 // Enables reading mode for all pages (at least in theory)
 lockPref("reader.parse-on-load.force-enabled", true);
 
