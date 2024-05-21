@@ -399,8 +399,8 @@
         "Value": false
       },
       "extensions.webextensions.restrictedDomains": {
-        "Comment": "Don't protect Mozilla domains from privacy extensions.",
-        "Status": "locked",
+        "Comment": "Don't protect Mozilla domains from privacy extensions. Always reset it to modified/empty so I can access the original value if I ever need it.",
+        "Status": "user",
         "Type": "string",
         "Value": ""
       },
