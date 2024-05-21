@@ -528,6 +528,11 @@
       "network.http.speculative-parallel-limit": {
         "Status": "clear"
       },
+      "network.predictor.enable-prefetch": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
       "network.predictor.enabled": {
         "Status": "locked",
         "Type": "boolean",
