@@ -467,6 +467,12 @@
         "Type": "boolean",
         "Value": true
       },
+      "layout.css.always_underline_links": {
+        "Comment": "Underscore links by default, disabling allowed",
+        "Status": "default",
+        "Type": "boolean",
+        "Value": true
+      },
       "layout.css.devPixelsPerPx": {
         "Status": "default",
         "Type": "string",
