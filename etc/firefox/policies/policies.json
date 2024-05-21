@@ -610,19 +610,19 @@
       },
       "privacy.fingerprintingProtection": {
         "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "clear",
+        "Status": "locked",
         "Type": "boolean",
         "Value": true
       },
       "privacy.fingerprintingProtection.overrides": {
-        "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "clear",
+        "Comment": "Preference not allowed for stability reasons. :( https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc",
+        "Status": "locked",
         "Type": "string",
         "Value": "+AllTargets,-KeyboardEvents,-SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-NavigatorPlatform,-NavigatorUserAgent,-JSDateTimeUTC,-HttpUserAgent,-FontVisibilityRestrictGenerics,-FontVisibilityBaseSystem,-FontVisibilityLangPack"
       },
       "privacy.fingerprintingProtection.pbmode": {
         "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "clear",
+        "Status": "locked",
         "Type": "boolean",
         "Value": true
       },
@@ -633,7 +633,7 @@
       },
       "privacy.resistFingerprinting": {
         "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "clear",
+        "Status": "locked",
         "Type": "boolean",
         "Value": false
       },

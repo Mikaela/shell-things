@@ -41,25 +41,24 @@ lockPref("privacy.donottrackheader.enabled", true);
 lockPref("privacy.donottrackheader.value", 1);
 
 // More tunable privacy.resistfingerprinting. I have lost the privacy game
-// many times before this point, so this is nothing.
-//lockPref("privacy.fingerprintingProtection", true);
-
+// many times before this point, so this is nothing.  For the options,
+// refer to https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc
+lockPref("privacy.fingerprintingProtection", true);
 // Somehow I cannot clearPref this, so...
 //clearPref("privacy.fingerprintingProtection");
-lockPref("privacy.fingerprintingProtection", false);
-
-//pref(
-//	"privacy.fingerprintingProtection.overrides",
-//	"+AllTargets,-KeyboardEvents,-SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-NavigatorPlatform,-NavigatorUserAgent,-JSDateTimeUTC,-HttpUserAgent,-FontVisibilityRestrictGenerics,-FontVisibilityBaseSystem,-FontVisibilityLangPack",
-//);
-clearPref("privacy.fingerprintingProtection.overrides");
-//lockPref("privacy.fingerprintingProtection.pbmode", true);
-clearPref("privacy.fingerprintingProtection.pbmode");
+//lockPref("privacy.fingerprintingProtection", false);
+pref(
+	"privacy.fingerprintingProtection.overrides",
+	"+AllTargets,-KeyboardEvents,-SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-NavigatorPlatform,-NavigatorUserAgent,-JSDateTimeUTC,-HttpUserAgent,-FontVisibilityRestrictGenerics,-FontVisibilityBaseSystem,-FontVisibilityLangPack",
+);
+//clearPref("privacy.fingerprintingProtection.overrides");
+lockPref("privacy.fingerprintingProtection.pbmode", true);
+//clearPref("privacy.fingerprintingProtection.pbmode");
 // (Incompatible with the above)
-//lockPref("privacy.resistFingerprinting", false);
-clearPref("privacy.resistFingerprinting");
-//lockPref("privacy.resistFingerprinting.block_mozAddonManage", true);
-clearPref("privacy.resistFingerprinting.block_mozAddonManage");
+lockPref("privacy.resistFingerprinting", false);
+//clearPref("privacy.resistFingerprinting");
+lockPref("privacy.resistFingerprinting.block_mozAddonManage", true);
+//clearPref("privacy.resistFingerprinting.block_mozAddonManage");
 // Letterboxing from Tor Browser, I like it in general.
 lockPref("privacy.resistFingerprinting.letterboxing", true);
 // Still Incompatible with the above
