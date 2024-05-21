@@ -558,6 +558,11 @@
         "Type": "boolean",
         "Value": false
       },
+      "network.trr.useGET": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
       "pdfjs.enableScripting": {
         "Comment": "I don't see a good reason for allowing scripts in pdf files in a web browser.",
         "Status": "locked",

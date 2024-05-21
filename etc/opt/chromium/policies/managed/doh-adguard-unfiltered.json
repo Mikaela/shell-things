@@ -1,4 +1,4 @@
 {
   "DnsOverHttpsMode": "automatic",
-  "DnsOverHttpsTemplates": "https://unfiltered.adguard-dns.com/dns-query"
+  "DnsOverHttpsTemplates": "https://unfiltered.adguard-dns.com/dns-query?dns"
 }
