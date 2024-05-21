@@ -49,7 +49,7 @@ lockPref("privacy.fingerprintingProtection", true);
 //lockPref("privacy.fingerprintingProtection", false);
 pref(
 	"privacy.fingerprintingProtection.overrides",
-	"+AllTargets,-KeyboardEvents,-SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-NavigatorPlatform,-NavigatorUserAgent,-JSDateTimeUTC",
+	"+AllTargets,-KeyboardEvents,-SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-NavigatorUserAgent,-JSDateTimeUTC",
 );
 //clearPref("privacy.fingerprintingProtection.overrides");
 lockPref("privacy.fingerprintingProtection.pbmode", true);
