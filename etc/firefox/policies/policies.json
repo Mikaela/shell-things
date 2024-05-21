@@ -569,6 +569,12 @@
         "Type": "boolean",
         "Value": true
       },
+      "pdfjs.isEvalSupported": {
+        "Comment": "CVE-2024-4367 and hardening. I don't think pdf files should be that clever.",
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": false
+      },
       "pdfjs.pageColorsBackground": {
         "Status": "default",
         "Type": "string",
