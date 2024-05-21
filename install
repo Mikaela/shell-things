@@ -3,15 +3,13 @@
 set -x
 
 if [ -d ~/src/gitea.blesmrt.net/Mikaela/ssh-allowed_signers ]; then
-	printf "\n[OK] ssh-allowed_signers exists\n\n"
+	git verify-commit HEAD
+	sleep 3
 else
 	echo "Keys not found, cloning..."
 	mkdir -vp ~/src/gitea.blesmrt.net/Mikaela/
 	git clone https://gitea.blesmrt.net/Mikaela/ssh-allowed_signers.git ~/src/gitea.blesmrt.net/Mikaela/ssh-allowed_signers
 fi
-
-git verify-commit HEAD
-sleep 3
 
 export MIKAELA_GREP=$HOME/.MIKAELA_GREP
 
