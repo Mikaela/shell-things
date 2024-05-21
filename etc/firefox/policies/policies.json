@@ -186,6 +186,10 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/http-indicator/latest.xpi",
         "installation_mode": "normal_installed"
       },
+      "{759dbb01-b646-4327-bf9e-69ca2543ef8d}": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/opendyslexic-for-firefox/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
       "{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/user-agent-string-switcher/latest.xpi",
         "installation_mode": "normal_installed"
