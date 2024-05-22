@@ -357,6 +357,11 @@
       "browser.safebrowsing.provider.mozilla.updateURL": {
         "Status": "clear"
       },
+      "browser.tabs.inTitlebar": {
+        "Status": "default",
+        "Type": "number",
+        "Value": 0
+      },
       "browser.translation.neverForLanguages": {
         "Status": "default",
         "Type": "string",
