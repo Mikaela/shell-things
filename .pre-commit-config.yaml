@@ -130,9 +130,6 @@ repos:
     rev: "v3.2.5"
     hooks:
       - id: prettier
-        # These are handled by Black below or pretty-format-json above, which
-        # can also sort keys.
-        exclude_types: [python, pyi, jupyter, json]
         additional_dependencies: [
             # https://www.npmjs.com/package/prettier
             "prettier@3.2.5",
