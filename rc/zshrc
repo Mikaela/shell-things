@@ -117,8 +117,13 @@ if [[ $(whoami) == aminda ]] || [[ $(whoami) == mikaela ]]; then
 	#(printf "⚧ Your adventure begins in the dead of night.\n⚧ Your road won't be easy, but a rising sun awaits your journey's end.\n\n")
 	#(printf "⚧ The darker than black is, the brighter the moon is\n")
 	(printf "⚧ Agoraphobia/social anxiety advice: \n\tAct like you belong! Like you own the place, but keep everyone comfortable! Remember the Spotlight Effect!\n \t\tMaybe even wear hi-viz so you really belong anywhere 😝\n\t\t\tAnd as always, fake it till you make it!\n")
-	# (printf "\n⚧\tThat's what I am, that's what I'll always be\n⚧\tI don't wanna be silent 'cause this is my destiny\n⚧\tThat's what I was, that's what feels good to me\n⚧\tAnd nothing will change me, that's what I'm meant to be.\n⚧\t\t­—Conchita Wurst: That's What I Am\n\n")
-	#(printf "https://en.m.wikipedia.org/wiki/First_they_came_...#Text\n")
+# (printf "\n⚧\tThat's what I am, that's what I'll always be\n⚧\tI don't wanna be silent 'cause this is my destiny\n⚧\tThat's what I was, that's what feels good to me\n⚧\tAnd nothing will change me, that's what I'm meant to be.\n⚧\t\t­—Conchita Wurst: That's What I Am\n\n")
+#(printf "https://en.m.wikipedia.org/wiki/First_they_came_...#Text\n")
+elif [[ "$(id -u)" == "0" ]]; then
+	# This comes from Charybdis IRCd
+	(printf "\nWe would like to take this moment to remind you that we accept absolutely no liability for the insanity you're about to endure.\n\n")
+	# And this from sudo + the general advice for auditability
+	(printf "We trust you have received the usual lecture from the local System\nAdministrator. It usually boils down to these three things:\n\n\t#1) Respect the privacy of others.\n\t#2) Think before you type.\n\t#3) With great power comes great responsibility.\n\nAdditionally you shouldn't be logging in as root directly.\n\n")
 fi
 
 # fix dircolors for Selenized https://github.com/jan-warchol/selenized/blob/master/other-apps/dircolors/README.md
