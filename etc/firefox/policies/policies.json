@@ -171,7 +171,7 @@
       },
       "{3c078156-979c-498b-8990-85f7987dd929}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/sidebery/latest.xpi",
-        "installation_mode": "force_installed"
+        "installation_mode": "default_installed"
       },
       "{446900e4-71c2-419f-a6a7-df9c091e268b}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi",
@@ -726,6 +726,12 @@
       "security.tls.ech.grease_http3": {
         "Comment": "Seems to be required for http3. This defaults to true on Nightly 128 and false on 115.11.0esr. However again not allowed to be deployed here for security :()",
         "Status": "locked",
+        "Type": "boolean",
+        "Value": true
+      },
+      "sidebar.revamp": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
         "Type": "boolean",
         "Value": true
       },

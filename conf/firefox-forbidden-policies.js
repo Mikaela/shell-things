@@ -75,5 +75,8 @@ lockPref("security.ssl.enable_ocsp_must_staple", true);
 // ECH, which is otherwise the default=
 lockPref("security.tls.ech.grease_http3", true);
 
+// New sidebar
+lockPref("sidebar.revamp", true);
+
 // No making configuration on the last line of the file!
 //
