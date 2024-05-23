@@ -148,18 +148,21 @@ if [[ $UNAME == Darwin ]]; then
 	(last -10 &)
 fi
 
-# Tavun OM värähtely poistaa ylpeyttä, MA kateutta, NI takertumista. PE leikkaa tietämättömyyden läpi, ME hälventää ahneuden ja rintakehässä värähtelevä HUNG muuntaa vihan.
-# Kuinka asiat ovat (s. 74-75) - Lama Ole Nydahl
-(printf "⚧ Aferoj emas funkcii sin mem.\n\tFaru jogon, sentu, ne provu perfektecon.\n\t\tDancu kiel neniu rigardas, kvankam estu vidita kaj aŭdata.\nOM MANI PEME HUNG\n")
-(printf "⚧ Any movement at any time is better than nothing.\n")
-(printf "❄️ Take the cold showers, hot ones are a disservice. And walk in cold, which is no excuse just like rain.\n\tOtherwise there will be dry skin and the vagus nerve will be upset leading to anxiety, depression and poor mental health.\n\t\tBesides the environment thanks.\n")
-# Tempus Finis -  Takeharu Ishimoto
-(printf "🕊️ \tFine fortasse nihil est vobis dire\n\tFine fortasse nihil est vobis Lucrari\n\tFine fortasse nihil est tamen\n")
-#(printf "⚧ Your adventure begins in the dead of night.\n⚧ Your road won't be easy, but a rising sun awaits your journey's end.\n\n")
-#(printf "⚧ The darker than black is, the brighter the moon is\n")
-(printf "⚧ Agoraphobia/social anxiety advice: \n\tAct like you belong! Like you own the place, but keep everyone comfortable! Remember the Spotlight Effect!\n \t\tMaybe even wear hi-viz so you really belong anywhere 😝\n\t\t\tAnd as always, fake it till you make it!\n")
-# (printf "\n⚧\tThat's what I am, that's what I'll always be\n⚧\tI don't wanna be silent 'cause this is my destiny\n⚧\tThat's what I was, that's what feels good to me\n⚧\tAnd nothing will change me, that's what I'm meant to be.\n⚧\t\t­—Conchita Wurst: That's What I Am\n\n")
-#(printf "https://en.m.wikipedia.org/wiki/First_they_came_...#Text\n")
+# Only print motivational phrases if username is aminda or mikaela
+if [[ $(whoami) == aminda ]] || [[ $(whoami) == mikaela ]]; then
+	# Tavun OM värähtely poistaa ylpeyttä, MA kateutta, NI takertumista. PE leikkaa tietämättömyyden läpi, ME hälventää ahneuden ja rintakehässä värähtelevä HUNG muuntaa vihan.
+	# Kuinka asiat ovat (s. 74-75) - Lama Ole Nydahl
+	(printf "⚧ Aferoj emas funkcii sin mem.\n\tFaru jogon, sentu, ne provu perfektecon.\n\t\tDancu kiel neniu rigardas, kvankam estu vidita kaj aŭdata.\nOM MANI PEME HUNG\n")
+	(printf "⚧ Any movement at any time is better than nothing.\n")
+	(printf "❄️ Take the cold showers, hot ones are a disservice. And walk in cold, which is no excuse just like rain.\n\tOtherwise there will be dry skin and the vagus nerve will be upset leading to anxiety, depression and poor mental health.\n\t\tBesides the environment thanks.\n")
+	# Tempus Finis -  Takeharu Ishimoto
+	(printf "🕊️ \tFine fortasse nihil est vobis dire\n\tFine fortasse nihil est vobis Lucrari\n\tFine fortasse nihil est tamen\n")
+	#(printf "⚧ Your adventure begins in the dead of night.\n⚧ Your road won't be easy, but a rising sun awaits your journey's end.\n\n")
+	#(printf "⚧ The darker than black is, the brighter the moon is\n")
+	(printf "⚧ Agoraphobia/social anxiety advice: \n\tAct like you belong! Like you own the place, but keep everyone comfortable! Remember the Spotlight Effect!\n \t\tMaybe even wear hi-viz so you really belong anywhere 😝\n\t\t\tAnd as always, fake it till you make it!\n")
+	# (printf "\n⚧\tThat's what I am, that's what I'll always be\n⚧\tI don't wanna be silent 'cause this is my destiny\n⚧\tThat's what I was, that's what feels good to me\n⚧\tAnd nothing will change me, that's what I'm meant to be.\n⚧\t\t­—Conchita Wurst: That's What I Am\n\n")
+	#(printf "https://en.m.wikipedia.org/wiki/First_they_came_...#Text\n")
+fi
 
 # fix dircolors for Selenized https://github.com/jan-warchol/selenized/blob/master/other-apps/dircolors/README.md
 export LS_COLORS="$LS_COLORS:ow=1;7;34:st=30;44:su=30;41"
