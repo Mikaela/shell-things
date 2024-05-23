@@ -372,6 +372,16 @@
         "Type": "string",
         "Value": "en, fi"
       },
+      "browser.urlbar.trimHttps": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": false
+      },
+      "browser.urlbar.trimURL": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": false
+      },
       "cookiebanners.bannerClicking.enabled": {
         "Comment": "Preference not allowed for stability reasons. :(",
         "Status": "locked",
