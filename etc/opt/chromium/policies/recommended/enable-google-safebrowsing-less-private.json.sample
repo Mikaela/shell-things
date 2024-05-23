@@ -1,6 +1,7 @@
 {
-	"SafeBrowsingProtectionLevel": 2,
-	"SafeBrowsingProxiedRealTimeChecksAllowed": true,
+	"AbusiveExperienceInterventionEnforce": 1,
+	"AdvancedProtectionAllowed": true,
 	"SafeBrowsingExtendedReportingEnabled": true,
-	"AdvancedProtectionAllowed": true
+	"SafeBrowsingProtectionLevel": 2,
+	"SafeBrowsingProxiedRealTimeChecksAllowed": true
 }
