@@ -191,7 +191,7 @@
       },
       "{6a65273e-2b26-40f5-b66e-8eed317307da}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/new-tab-suspender/latest.xpi",
-        "installation_mode": "force_installed"
+        "installation_mode": "normal_installed"
       },
       "{6a911b41-b1ee-4d0f-b23b-890229bff0ec}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/http-indicator/latest.xpi",
@@ -365,10 +365,20 @@
       "browser.safebrowsing.provider.mozilla.updateURL": {
         "Status": "clear"
       },
+      "browser.tabs.closeWindowWithLastTab": {
+        "Status": "default",
+        "Type": "boolean",
+        "Value": false
+      },
       "browser.tabs.inTitlebar": {
         "Status": "default",
         "Type": "number",
         "Value": 0
+      },
+      "browser.tabs.unloadOnLowMemory": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": true
       },
       "browser.translation.neverForLanguages": {
         "Status": "default",
