@@ -20,11 +20,14 @@
           "checkForDNTPolicy": true,
           "disabledSites": [
             "challenges.cloudflare.com",
+            "*.challenges.cloudflare.com",
             "chrome-extension-scheme",
             "ecosia.org",
+            "*.ecosia.org",
             "keyoxide.org",
             "moz-extension-scheme",
-            "research.cloudflare.com"
+            "research.cloudflare.com",
+            "*.research.cloudflare.com"
           ],
           "learnInIncognito": true,
           "learnLocally": true,
