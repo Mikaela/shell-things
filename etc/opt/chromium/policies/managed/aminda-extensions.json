@@ -35,7 +35,9 @@
             "https://raw.githubusercontent.com/jjjxu/NSO_Pegasus_Blocklist/master/Pegasus-Hosts-Formatted.txt",
             "https://dl.red.flag.domains/adguard/red.flag.domains.txt",
             "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/malware/domains",
-            "curben-phishing"
+            "curben-phishing",
+            "ublock-filters",
+            "easylist"
           ]
         }
       },
