@@ -69,7 +69,12 @@
               "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/malware/domains",
               "curben-phishing",
               "ublock-filters",
-              "easylist"
+              "easylist",
+              "ublock-quick-fixes",
+              "ublock-privacy",
+              "easyprivacy",
+              "FIN-0",
+              "https://big.oisd.nl/"
             ]
           }
         }
