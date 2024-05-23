@@ -34,17 +34,21 @@ chmod -v a+rx /etc/opt/chromium/policies/
 chmod -v a+rx /etc/opt/chromium/policies/{managed,recommended}/
 
 # Brave
-ln -fnsv /etc/opt/chromium /etc/brave
+mkdir -p /etc/brave
+ln -fnsv /etc/opt/chromium/policies /etc/brave/policies
 
 # Vivaldi
-ln -fnsv /etc/opt/chromium /etc/chromium
+mkdir -p /etc/chromium
+ln -fnsv /etc/opt/chromium/policies /etc/chromium/policies
 
 # Google Chrome
-ln -fnsv /etc/opt/chromium /etc/opt/chrome
+mkdir -p /etc/opt/chrome
+ln -fnsv /etc/opt/chromium/policies /etc/opt/chrome/policies
 
 # Microsoft Edge
 # I used to have a separate policy for it so remember to remove this manually
 # if it exists!
-ln -fnsv /etc/opt/chromium /etc/opt/edge
+mkdir -p /etc/opt/edge
+ln -fnsv /etc/opt/chromium/policies /etc/opt/edge/policies
 
 set +x
