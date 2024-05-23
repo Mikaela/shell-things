@@ -1,5 +1,5 @@
 {
-  "AbusiveExperienceInterventionEnforce": 1,
+  "AbusiveExperienceInterventionEnforce": true,
   "SafeBrowsingProtectionLevel": 1,
   "SafeBrowsingProxiedRealTimeChecksAllowed": true
 }

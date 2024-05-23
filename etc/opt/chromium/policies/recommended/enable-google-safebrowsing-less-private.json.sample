@@ -1,5 +1,5 @@
 {
-	"AbusiveExperienceInterventionEnforce": 1,
+	"AbusiveExperienceInterventionEnforce": true,
 	"AdvancedProtectionAllowed": true,
 	"SafeBrowsingExtendedReportingEnabled": true,
 	"SafeBrowsingProtectionLevel": 2,
