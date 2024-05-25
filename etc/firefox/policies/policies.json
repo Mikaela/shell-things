@@ -470,6 +470,60 @@
         "Type": "string",
         "Value": "Noto Serif, serif"
       },
+      "font.name.monospace.el": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
+        "Type": "string",
+        "Value": "Liberation Mono"
+      },
+      "font.name.monospace.x-cyrillic": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
+        "Type": "string",
+        "Value": "Liberation Mono"
+      },
+      "font.name.monospace.x-western": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
+        "Type": "string",
+        "Value": "Liberation Mono"
+      },
+      "font.name.sans-serif.el": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
+        "Type": "string",
+        "Value": "Liberation Sans"
+      },
+      "font.name.sans-serif.x-cyrillic": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
+        "Type": "string",
+        "Value": "Liberation Sans"
+      },
+      "font.name.sans-serif.x-western": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
+        "Type": "string",
+        "Value": "Liberation Sans"
+      },
+      "font.name.serif.el": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
+        "Type": "string",
+        "Value": "Liberation Serif"
+      },
+      "font.name.serif.x-cyrillic": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
+        "Type": "string",
+        "Value": "Liberation Serif"
+      },
+      "font.name.serif.x-western": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
+        "Type": "string",
+        "Value": "Liberation Serif"
+      },
       "general.config.obscure_value": {
         "Comment": "Required for autoconfig.",
         "Status": "locked",

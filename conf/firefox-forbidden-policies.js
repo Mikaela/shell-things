@@ -35,6 +35,18 @@ clearPref("font.name-list.sans-serif.x-cyrillic");
 clearPref("font.name-list.sans-serif.x-western");
 clearPref("font.name-list.serif.x-cyrillic");
 clearPref("font.name-list.serif.x-western");
+//
+lockPref("font.name.monospace.el", "Liberation Mono");
+lockPref("font.name.monospace.x-cyrillic", "Liberation Mono");
+lockPref("font.name.monospace.x-western", "Liberation Mono");
+//
+lockPref("font.name.sans-serif.el", "Liberation Sans");
+lockPref("font.name.sans-serif.x-cyrillic", "Liberation Sans");
+lockPref("font.name.sans-serif.x-western", "Liberation Sans");
+//
+lockPref("font.name.serif.el", "Liberation Serif");
+lockPref("font.name.serif.x-cyrillic", "Liberation Serif");
+lockPref("font.name.serif.x-western", "Liberation Serif");
 
 // Play animated images only once, accessibility.
 lockPref("image.animation.mode", "once");
