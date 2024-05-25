@@ -434,6 +434,24 @@
         "Type": "string",
         "Value": ""
       },
+      "font.default.el": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
+        "Type": "string",
+        "Value": "serif"
+      },
+      "font.default.x-cyrillic": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
+        "Type": "string",
+        "Value": "serif"
+      },
+      "font.default.x-western": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
+        "Type": "string",
+        "Value": "serif"
+      },
       "font.name-list.monospace.x-cyrillic": {
         "Comment": "Preference not allowed for stability reasons.",
         "Status": "clear",

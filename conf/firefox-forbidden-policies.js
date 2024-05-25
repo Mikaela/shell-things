@@ -20,6 +20,9 @@ lockPref("cookiebanners.service.mode.privateBrowsing", 2);
 
 // I can set my preferred fonts in an order! :O
 // but obviously this is forbidden in policies.json!
+lockPref("font.default.el", "serif");
+lockPref("font.default.x-cyrillic", "serif");
+lockPref("font.default.x-western", "serif");
 // lockPref(
 // 	"font.name-list.monospace.x-cyrillic",
 // 	"Noto Shanns Mono, monospace",
