@@ -20,15 +20,21 @@ lockPref("cookiebanners.service.mode.privateBrowsing", 2);
 
 // I can set my preferred fonts in an order! :O
 // but obviously this is forbidden in policies.json!
-lockPref(
-	"font.name-list.monospace.x-cyrillic",
-	"Noto Shanns Mono, monospace",
-);
-lockPref("font.name-list.monospace.x-western", "Noto Shanns Mono, monospace");
-lockPref("font.name-list.sans-serif.x-cyrillic", "Noto Sans, sans-serif");
-lockPref("font.name-list.sans-serif.x-western", "Noto Sans, sans-serif");
-lockPref("font.name-list.serif.x-cyrillic", "Noto Serif, serif");
-lockPref("font.name-list.serif.x-western", "Noto Serif, serif");
+// lockPref(
+// 	"font.name-list.monospace.x-cyrillic",
+// 	"Noto Shanns Mono, monospace",
+// );
+// lockPref("font.name-list.monospace.x-western", "Noto Shanns Mono, monospace");
+// lockPref("font.name-list.sans-serif.x-cyrillic", "Noto Sans, sans-serif");
+// lockPref("font.name-list.sans-serif.x-western", "Noto Sans, sans-serif");
+// lockPref("font.name-list.serif.x-cyrillic", "Noto Serif, serif");
+// lockPref("font.name-list.serif.x-western", "Noto Serif, serif");
+clearPref("font.name-list.monospace.x-cyrillic");
+clearPref("font.name-list.monospace.x-western");
+clearPref("font.name-list.sans-serif.x-cyrillic");
+clearPref("font.name-list.sans-serif.x-western");
+clearPref("font.name-list.serif.x-cyrillic");
+clearPref("font.name-list.serif.x-western");
 
 // Play animated images only once, accessibility.
 lockPref("image.animation.mode", "once");
