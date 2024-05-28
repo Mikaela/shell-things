@@ -317,6 +317,11 @@
         "Type": "boolean",
         "Value": false
       },
+      "browser.preferences.moreFromMozilla": {
+        "Status": "default",
+        "Type": "boolean",
+        "Value": false
+      },
       "browser.safebrowsing.blockedURIs.enabled": {
         "Status": "locked",
         "Type": "boolean",
