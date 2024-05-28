@@ -140,6 +140,7 @@
         "installation_mode": "normal_installed"
       },
       "adnauseam@rednoise.org": {
+        "blocked_install_message": "Ristiriidassa vähän kaiken kanssa, uBlock Origin on sysadmin-ystävällisempi.",
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/adnauseam/latest.xpi",
         "installation_mode": "blocked"
       },
