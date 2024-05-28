@@ -74,7 +74,12 @@
               "ublock-privacy",
               "easyprivacy",
               "FIN-0",
-              "https://big.oisd.nl/"
+              "https://big.oisd.nl/",
+              "fanboy-cookiemonster",
+              "ublock-cookies-easylist",
+              "adguard-cookies",
+              "ublock-cookies-adguard",
+              "ublock-quick-fixes"
             ]
           }
         }
