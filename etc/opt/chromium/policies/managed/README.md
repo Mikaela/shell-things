@@ -14,6 +14,7 @@
   - [Silk - Privacy Pass Client for the browser](#silk---privacy-pass-client-for-the-browser)
   - [Plasma Integration](#plasma-integration)
   - [uBlock Origin](#ublock-origin)
+  - [LocalCDN](#localcdn)
   - [Ruffle](#ruffle)
   - [HTTP Indicator](#http-indicator)
   - [Fedora User Agent](#fedora-user-agent)
@@ -114,6 +115,12 @@ downloads indicator/control, KDE Connect, alt-f2, etc.
 - `cjpalhdlnbpafiamejdnhcphjbkeiagm`
 
 Blocked for Ad Nauseam
+
+### [LocalCDN](https://chrome.google.com/webstore/detail/njdfdhgcmkocbgbhcioffdbicglldapd)
+
+- `njdfdhgcmkocbgbhcioffdbicglldapd`
+
+I just feel bad about including so much CDN content recently...
 
 ### [Ruffle](https://chrome.google.com/webstore/detail/donbcfbmhbcapadipfkeojnmajbakjdc)
 

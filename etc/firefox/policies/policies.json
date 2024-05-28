@@ -208,6 +208,10 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ruffle_rs/latest.xpi",
         "installation_mode": "normal_installed"
       },
+      "{b86e4813-687a-43e6-ab65-0bde4ab75758}": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/localcdn-fork-of-decentraleyes/latest.xpi",
+        "installation_mode": "force_installed"
+      },
       "{d04b0b40-3dab-4f0b-97a6-04ec3eddbfb0}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ecosia-the-green-search/latest.xpi",
         "installation_mode": "normal_installed"
