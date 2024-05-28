@@ -240,7 +240,7 @@
     },
     "NetworkPrediction": true,
     "NewTabPage": false,
-    "OverrideFirstRunPage": "about:mozilla",
+    "OverrideFirstRunPage": "about:mozilla|https://addons.mozilla.org/firefox/addon/noscript/",
     "PDFjs": {
       "EnablePermissions": false,
       "Enabled": true
