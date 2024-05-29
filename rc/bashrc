@@ -575,7 +575,27 @@ alias rm="\rm --verbose"
 alias ln="\ln --verbose"
 alias mkdir="\mkdir --verbose"
 alias chattr="\chattr -V"
-alias chmod=--"\chmod --verbose"
+alias chmod="\chmod --verbose"
+
+# pnpm does less duplicating around
+if hash pnpm 2>/dev/null; then
+	alias npm=pnpm
+	alias npmx=pnpx
+	alias npx=pnpx
+	alias pnpmx=pnpx
+	if ! hash prettier 2>/dev/null; then
+		alias prettier="pnpx prettier"
+	fi
+fi
+
+# github-pages etc.
+if hash bundle 2>/dev/null; then
+	alias jekyll="bundle exec jekyll"
+fi
+
+# Helpful tool for increasing permissions on Android, for me mainly unattended
+# installations.
+alias shizuku="adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh"
 
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
