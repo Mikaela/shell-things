@@ -271,7 +271,7 @@ export RES_OPTIONS="timeout:2 attempts:2 rotate edns0 trust-ad"
 #####	Aliases						RJ706I	#####
 
 # To get sudo work with aliases.
-alias sudo="sudo "
+alias sudo="\sudo "
 
 # Moving between directories:
 alias ..="cd .."
@@ -569,6 +569,13 @@ alias ssh-sign-file="ssh-keygen -Y sign -f ~/.ssh/signingkey.pub -n file"
 
 # Anywhere on Earth date, https://en.m.wikipedia.org/wiki/Anywhere_on_Earth
 alias aoedate="TZ=Etc/GMT+12 date"
+
+# verbosity to common actions
+alias rm="\rm --verbose"
+alias ln="\ln --verbose"
+alias mkdir="\mkdir --verbose"
+alias chattr="\chattr -V"
+alias chmod=--"\chmod --verbose"
 
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
