@@ -87,18 +87,18 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
 	test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-	alias ls='ls --color=always'
-	alias dir='dir --color=always'
-	alias vdir='vdir --color=always'
+	alias ls='ls --color=auto'
+	alias dir='dir --color=auto'
+	alias vdir='vdir --color=auto'
 
-	alias grep='grep -i --color=always'
-	alias fgrep='fgrep -i --color=always'
-	alias egrep='egrep -i --color=always'
+	alias grep='grep --color=auto'
+	alias fgrep='grep -F --color=auto'
+	alias egrep='grep -E --color=auto'
 fi
 
 # some more ls aliases
 if [[ $UNAME != Darwin ]]; then
-	alias ll='ls -alFh --color=always' && alias la='ls -A --color=always' && alias l='ls -CF --color=always'
+	alias ll='ls -alFh --color=auto' && alias la='ls -A --color=auto' && alias l='ls -CF --color=auto'
 fi
 
 if [[ $UNAME == Darwin ]]; then
@@ -329,11 +329,11 @@ alias supybot-generate-messages.pot-mass="find . -type d -exec sh -c '(cd {} && 
 
 # enable color support of ls and also add handy aliases
 if [[ $UNAME != Darwin ]]; then
-	alias ls='ls --color=always'
+	alias ls='ls --color=auto'
 fi
 # some more ls aliases
 if [[ $UNAME != Darwin ]]; then
-	alias ll='ls -alFh --color=always' && alias la='ls -A --color=always' && alias l='ls -CF --color=always'
+	alias ll='ls -alFh --color=auto' && alias la='ls -A --color=auto' && alias l='ls -CF --color=auto'
 fi
 
 ## -- End of aliases which are saved from Ubuntu default bashrc. --

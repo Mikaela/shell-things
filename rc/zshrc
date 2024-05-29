@@ -299,16 +299,18 @@ alias theme="prompt "
 
 # enable color support of ls and also add handy aliases
 if [[ $UNAME != Darwin ]]; then
-	alias ls='ls --color=always'
+	alias ls='ls --color=auto'
 fi
-alias dir='dir --color=always'
-alias vdir='vdir --color=always'
-alias grep='grep -i --color=always'
-alias fgrep='fgrep -i --color=always'
-alias egrep='egrep -i --color=always'
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep -F --color=auto'
+alias egrep='egrep -E --color=auto'
+
 # some more ls aliases
 if [[ "$UNAME" != "Darwin" ]]; then
-	alias ll='ls -alFh --color=always' && alias la='ls -A --color=always' && alias l='ls -CF --color=always'
+	alias ll='ls -alFh --color=auto' && alias la='ls -A --color=auto' && alias l='ls -CF --color=auto'
 fi
 
 if [[ $UNAME = Darwin ]]; then
