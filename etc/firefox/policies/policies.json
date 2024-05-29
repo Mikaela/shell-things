@@ -318,6 +318,10 @@
         "Type": "boolean",
         "Value": false
       },
+      "browser.display.use_document_fonts": {
+        "Comment": "Allow remote fonts to not break e.g. Mastodon buttons.",
+        "Status": "clear"
+      },
       "browser.preferences.moreFromMozilla": {
         "Status": "default",
         "Type": "boolean",
