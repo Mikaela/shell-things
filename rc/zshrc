@@ -59,6 +59,13 @@ else
 	prompt elite2 green
 fi
 
+# Newline before new prompt
+precmd() {
+	precmd() {
+		printf "\n"
+	}
+}
+
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
 
