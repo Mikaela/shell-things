@@ -1,0 +1,7 @@
+version = 1
+
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 Aminda Suomalainen <suomalainen@mikaela.info>"
+SPDX-License-Identifier = "BSD-3-Clause"
