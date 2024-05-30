@@ -319,8 +319,10 @@
         "Value": false
       },
       "browser.display.use_document_fonts": {
-        "Comment": "Allow remote fonts to not break e.g. Mastodon buttons.",
-        "Status": "clear"
+        "Comment": "Don't allow webpages to set their own fonts by default. Breaks Mastodon buttons etc.",
+        "Status": "default",
+        "Type": "number",
+        "Value": 0
       },
       "browser.preferences.moreFromMozilla": {
         "Status": "default",
