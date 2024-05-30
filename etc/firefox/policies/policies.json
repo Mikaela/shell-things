@@ -319,8 +319,8 @@
         "Value": false
       },
       "browser.display.use_document_fonts": {
-        "Comment": "Don't allow webpages to set their own fonts by default. Breaks Mastodon buttons etc.",
-        "Status": "default",
+        "Comment": "Are webpages allowed to set their own fonts by default? 0 blocks them breaking Mastodon buttons etc.",
+        "Status": "clear",
         "Type": "number",
         "Value": 0
       },
