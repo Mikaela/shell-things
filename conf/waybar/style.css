@@ -4,6 +4,8 @@
 	border: none;
 	border-radius: 0;
 	font-family:
+		system-ui,
+		ui-monospace,
 		Liberation Mono,
 		Noto Sans Mono monospace;
 	font-size: 10px;
