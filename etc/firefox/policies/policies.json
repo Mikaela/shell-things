@@ -172,6 +172,10 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-pass/latest.xpi",
         "installation_mode": "force_installed"
       },
+      "{b11bea1f-a888-4332-8d8a-cec2be7d24b9}": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/torproject-snowflake/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
       "{d04b0b40-3dab-4f0b-97a6-04ec3eddbfb0}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ecosia-the-green-search/latest.xpi",
         "installation_mode": "normal_installed"

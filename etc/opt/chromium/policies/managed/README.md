@@ -18,6 +18,7 @@
   - [Ruffle](#ruffle)
   - [HTTP Indicator](#http-indicator)
   - [Fedora User Agent](#fedora-user-agent)
+  - [Snowflake](#snowflake)
   - [IPvFooBar](#ipvfoobar)
   - [AdNauseam](#adnauseam)
   - [uBlock Origin](#ublock-origin-1)
@@ -134,6 +135,10 @@ Displays whether a web page was loaded over HTTP/2 or HTTP/3 etc.
 
 Communicates websites that Ubuntu isn't the only Linux distribution and makes
 some offer rpm packages directly.
+
+### [Snowflake](https://chromewebstore.google.com/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie?pli=1)
+
+- `mafpmfcccpbjnhfhjnllmmalhifmlcie`
 
 ### [IPvFooBar](https://chromewebstore.google.com/detail/ipvfoobar/iimpkhokkfekbpmoamlmcndclohnehhk)
 
