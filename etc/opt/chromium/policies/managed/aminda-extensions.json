@@ -107,28 +107,10 @@
       "toolbar_pin": "force_pinned",
       "update_url": "https://clients2.google.com/service/update2/crx"
     },
-    "donbcfbmhbcapadipfkeojnmajbakjdc": {
-      "installation_mode": "normal_installed",
-      "override_update_url": true,
-      "toolbar_pin": "default_unpinned",
-      "update_url": "https://clients2.google.com/service/update2/crx"
-    },
-    "hgcomhbcacfkpffiphlmnlhpppcjgmbl": {
-      "installation_mode": "normal_installed",
-      "override_update_url": true,
-      "toolbar_pin": "force_pinned",
-      "update_url": "https://clients2.google.com/service/update2/crx"
-    },
     "hojggiaghnldpcknpbciehjcaoafceil": {
       "installation_mode": "normal_installed",
       "override_update_url": true,
       "toolbar_pin": "default_unpinned",
-      "update_url": "https://clients2.google.com/service/update2/crx"
-    },
-    "iimpkhokkfekbpmoamlmcndclohnehhk": {
-      "installation_mode": "normal_installed",
-      "override_update_url": true,
-      "toolbar_pin": "force_pinned",
       "update_url": "https://clients2.google.com/service/update2/crx"
     },
     "mlojlfildnehdpnlmpkeiiglhhkofhpb": {
@@ -137,12 +119,6 @@
       "override_update_url": true,
       "toolbar_pin": "force_pinned",
       "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
-    },
-    "njdfdhgcmkocbgbhcioffdbicglldapd": {
-      "installation_mode": "force_installed",
-      "override_update_url": true,
-      "toolbar_pin": "force_pinned",
-      "update_url": "https://clients2.google.com/service/update2/crx"
     },
     "nngceckbapebfimnlniiiahkandclblb": {
       "installation_mode": "force_installed",

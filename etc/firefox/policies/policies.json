@@ -144,10 +144,6 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/adnauseam/latest.xpi",
         "installation_mode": "blocked"
       },
-      "ipvfoobar@napr.eu": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ipvfoobar/latest.xpi",
-        "installation_mode": "normal_installed"
-      },
       "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
         "blocked_install_message": "Kaksoiskappale samasta lisäosasta.",
         "installation_mode": "blocked"
@@ -156,10 +152,6 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi",
         "installation_mode": "force_installed"
       },
-      "peertube-companion@booteille": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/peertube-companion/latest.xpi",
-        "installation_mode": "normal_installed"
-      },
       "plasma-browser-integration@kde.org": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/plasma-integration/latest.xpi",
         "installation_mode": "force_installed"
@@ -167,15 +159,6 @@
       "uBlock0@raymondhill.net": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
         "installation_mode": "force_installed"
-      },
-      "uMatrix@raymondhill.net": {
-        "blocked_install_message": "uMatrixin kehitys on päättynyt ja samat ominaisuudet löytyvät uBlock Originista (ja AdNauseamista).",
-        "installation_mode": "blocked"
-      },
-      "wayback_machine@mozilla.org": {
-        "blocked_install_message": "https://bugzilla.mozilla.org/show_bug.cgi?id=1497075 hermostuttaa Amindaa.",
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/wayback-machine_new/latest.xpi",
-        "installation_mode": "blocked"
       },
       "{3c078156-979c-498b-8990-85f7987dd929}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/sidebery/latest.xpi",
@@ -187,30 +170,6 @@
       },
       "{48748554-4c01-49e8-94af-79662bf34d50}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-pass/latest.xpi",
-        "installation_mode": "force_installed"
-      },
-      "{6a65273e-2b26-40f5-b66e-8eed317307da}": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/new-tab-suspender/latest.xpi",
-        "installation_mode": "normal_installed"
-      },
-      "{6a911b41-b1ee-4d0f-b23b-890229bff0ec}": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/http-indicator/latest.xpi",
-        "installation_mode": "normal_installed"
-      },
-      "{759dbb01-b646-4327-bf9e-69ca2543ef8d}": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/opendyslexic-for-firefox/latest.xpi",
-        "installation_mode": "normal_installed"
-      },
-      "{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/user-agent-string-switcher/latest.xpi",
-        "installation_mode": "normal_installed"
-      },
-      "{b5501fd1-7084-45c5-9aa6-567c2fcf5dc6}": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ruffle_rs/latest.xpi",
-        "installation_mode": "normal_installed"
-      },
-      "{b86e4813-687a-43e6-ab65-0bde4ab75758}": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/localcdn-fork-of-decentraleyes/latest.xpi",
         "installation_mode": "force_installed"
       },
       "{d04b0b40-3dab-4f0b-97a6-04ec3eddbfb0}": {

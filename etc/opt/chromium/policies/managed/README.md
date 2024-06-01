@@ -120,13 +120,7 @@ Blocked for Ad Nauseam
 
 - `njdfdhgcmkocbgbhcioffdbicglldapd`
 
-I just feel bad about including so much CDN content recently...
-
 ### [Ruffle](https://chrome.google.com/webstore/detail/donbcfbmhbcapadipfkeojnmajbakjdc)
-
-Actively developed open source extension to revive Flash content on the web.
-It can also be embedded to webpages, but I would prefer my family to use a
-newer version than hope everyone keeps their websites up-to-date.
 
 ### [HTTP Indicator](https://chromewebstore.google.com/detail/http-indicator/hgcomhbcacfkpffiphlmnlhpppcjgmbl)
 
