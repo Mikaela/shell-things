@@ -8,7 +8,6 @@ My dracut configuration files mainly for generating unified kerneil images
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [WARNING!](#warning)
-  - [network](#network)
   - [hostonly](#hostonly)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -23,26 +22,6 @@ attempts for decreasing the kernel size. Since moving it to UKI, I am yet to
 go through what of it is actually useful and worth keeping around and at least
 disabling recovery seems dangerous if I can save space by omitting somnething
 else.
-
-## network
-
-```
-dracut[E]: Module 'cifs' depends on 'network', which can't be installed
-dracut[E]: Module 'iscsi' depends on 'network', which can't be installed
-dracut[E]: Module 'nvmf' depends on 'network', which can't be installed
-```
-
-I think nvmf might be relevant on ThinkPads, so it gets out of `omit_modules`
-
-At least it resolves these two…
-
-<code style="color: red">
-Error registering initrd: Already started
-Error starting kernel image: Already started
-</code>
-
-…which cause fallback to the next UEFI boot entry (why is that grub still
-around?)
 
 ## hostonly
 
