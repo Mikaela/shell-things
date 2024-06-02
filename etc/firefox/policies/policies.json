@@ -564,6 +564,11 @@
         "Type": "string",
         "Value": "1.5"
       },
+      "layout.css.font-variant-emoji.enabled": {
+        "Comment": "Experimental, disabled by default.",
+        "Status": "default",
+        "Value": true
+      },
       "layout.css.prefers-color-scheme.content-override": {
         "Comment": "Dark theme by default, disabling allowed",
         "Status": "default",
