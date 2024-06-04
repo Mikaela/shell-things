@@ -39,15 +39,16 @@
         "jid1-ZAdIEUB7XOzOJw@jetpack": {
           "hasSeenPostInstall": true
         },
+        "uBOLite@raymondhill.net": {
+          "disableFirstRunPage": true
+        },
         "uBlock0@raymondhill.net": {
           "toAdd": {
             "trustedSiteDirectives": [
               "chrome-extension-scheme",
               "challenges.cloudflare.com",
-              "duckduckgo.com",
               "ecosia.org",
               "firefox.com",
-              "keyoxide.org",
               "mozilla.net",
               "mozilla.org",
               "moz-extension-scheme",
@@ -156,9 +157,13 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/plasma-integration/latest.xpi",
         "installation_mode": "force_installed"
       },
+      "uBOLite@raymondhill.net": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin-lite/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
       "uBlock0@raymondhill.net": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
-        "installation_mode": "force_installed"
+        "installation_mode": "normal_installed"
       },
       "{3c078156-979c-498b-8990-85f7987dd929}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/sidebery/latest.xpi",

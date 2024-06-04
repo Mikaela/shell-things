@@ -12,10 +12,8 @@
           "trustedSiteDirectives": [
             "chrome-extension-scheme",
             "challenges.cloudflare.com",
-            "duckduckgo.com",
             "ecosia.org",
             "firefox.com",
-            "keyoxide.org",
             "mozilla.net",
             "mozilla.org",
             "moz-extension-scheme",
@@ -50,6 +48,9 @@
             "ublock-quick-fixes"
           ]
         }
+      },
+      "ddkjiahejlhfcafbddmgiahcphecmpfh": {
+        "disableFirstRunPage": true
       },
       "mlojlfildnehdpnlmpkeiiglhhkofhpb": {
         "toAdd": {
@@ -102,7 +103,13 @@
       "update_url": "https://clients2.google.com/service/update2/crx"
     },
     "cjpalhdlnbpafiamejdnhcphjbkeiagm": {
-      "installation_mode": "force_installed",
+      "installation_mode": "normal_installed",
+      "override_update_url": true,
+      "toolbar_pin": "force_pinned",
+      "update_url": "https://clients2.google.com/service/update2/crx"
+    },
+    "ddkjiahejlhfcafbddmgiahcphecmpfh": {
+      "installation_mode": "normal_installed",
       "override_update_url": true,
       "toolbar_pin": "force_pinned",
       "update_url": "https://clients2.google.com/service/update2/crx"

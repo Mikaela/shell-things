@@ -20,6 +20,7 @@
   - [Fedora User Agent](#fedora-user-agent)
   - [Snowflake](#snowflake)
   - [IPvFooBar](#ipvfoobar)
+  - [uBlock Origin Lite](#ublock-origin-lite)
   - [AdNauseam](#adnauseam)
   - [uBlock Origin](#ublock-origin-1)
   - [Bitwarden](#bitwarden)
@@ -88,6 +89,8 @@ do need something and thus it's `force_installed`.
 
 - `bkdgflcldnnnapblkhphbgpggdiikppg` - DuckDuckGo
 - `caoacbimdbbljakfhgikoodekdnlcgpk` - DuckDuckGo
+- `cjpalhdlnbpafiamejdnhcphjbkeiagm` - uBlock Origin
+- `ddkjiahejlhfcafbddmgiahcphecmpfh` - uBlock Origin Lite
 - `mlojlfildnehdpnlmpkeiiglhhkofhpb` - AdNauseam
 - `pkehgijcmpdhfbdbbnkijodmdjhbjlgp` - PrivacyBadger
 
@@ -143,6 +146,10 @@ some offer rpm packages directly.
 ### [IPvFooBar](https://chromewebstore.google.com/detail/ipvfoobar/iimpkhokkfekbpmoamlmcndclohnehhk)
 
 - `iimpkhokkfekbpmoamlmcndclohnehhk`
+
+### [uBlock Origin Lite](https://chromewebstore.google.com/detail/ddkjiahejlhfcafbddmgiahcphecmpfh)
+
+- `ddkjiahejlhfcafbddmgiahcphecmpfh`
 
 ### [AdNauseam](https://microsoftedge.microsoft.com/addons/detail/adnauseam/mlojlfildnehdpnlmpkeiiglhhkofhpb)
 
