@@ -164,7 +164,7 @@ if [[ $(whoami) == aminda ]] || [[ $(whoami) == mikaela ]]; then
 #(printf "https://en.m.wikipedia.org/wiki/First_they_came_...#Text\n")
 elif [[ "$(id -u)" == "0" ]]; then
 	# This comes from Charybdis IRCd
-	(printf "\nWe would like to take this moment to remind you that we accept absolutely no liability for the insanity you're about to endure.\n\n")
+	(printf "\nWe would like to take this moment to remind you that we accept\nabsolutely no liability for the insanity you're about to endure.\n\n")
 	# And this from sudo + the general advice for auditability
 	(printf "We trust you have received the usual lecture from the local System\nAdministrator. It usually boils down to these three things:\n\n\t#1) Respect the privacy of others.\n\t#2) Think before you type.\n\t#3) With great power comes great responsibility.\n\nAdditionally you shouldn't be logging in as root directly.\n\n")
 fi
