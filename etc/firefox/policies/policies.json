@@ -40,7 +40,11 @@
           "hasSeenPostInstall": true
         },
         "uBOLite@raymondhill.net": {
-          "disableFirstRunPage": true
+          "disableFirstRunPage": true,
+          "noFiltering": [
+            "ecosia.org",
+            "cloudflare.com"
+          ]
         },
         "uBlock0@raymondhill.net": {
           "toAdd": {

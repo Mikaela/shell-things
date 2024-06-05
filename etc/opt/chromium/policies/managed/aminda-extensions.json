@@ -50,7 +50,11 @@
         }
       },
       "ddkjiahejlhfcafbddmgiahcphecmpfh": {
-        "disableFirstRunPage": true
+        "disableFirstRunPage": true,
+        "noFiltering": [
+          "ecosia.org",
+          "cloudflare.com"
+        ]
       },
       "mlojlfildnehdpnlmpkeiiglhhkofhpb": {
         "toAdd": {
