@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=TELEGRAM 64GRAM
+Exec=/usr/bin/env telegram-desktop %U
+Icon=io.github.tdesktop_x64.TDesktop
+StartupWMClass=64Gram
+Type=Application
+Categories=Chat;Network;InstantMessaging;Qt;
+MimeType=x-scheme-handler/tg;
+Keywords=tg;chat;im;messaging;messenger;sms;tdesktop;
+Actions=quit;
+
+[Desktop Action quit]
+Exec=/usr/bin/env telegram-desktop --quit
+Name=Quit Telegram
+Name[fi]=Sulje Telegram
+Icon=application-exit
