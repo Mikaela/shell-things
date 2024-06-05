@@ -12,6 +12,7 @@
 - [`aminda-extensions.json`](#aminda-extensionsjson)
   - [3rdparty](#3rdparty)
   - [Silk - Privacy Pass Client for the browser](#silk---privacy-pass-client-for-the-browser)
+  - [QR Code](#qr-code)
   - [Plasma Integration](#plasma-integration)
   - [uBlock Origin](#ublock-origin)
   - [LocalCDN](#localcdn)
@@ -105,6 +106,10 @@ To intentionally trigger it and what should be allowed in NoScript:
 
 - https://captcha.website
 - https://issuance.privacypass.cloudflare.com
+
+### [QR Code](https://chromewebstore.google.com/detail/qr-code/cbimgpnbgalffiohilfglgkkhpegpjlo)
+
+- `cbimgpnbgalffiohilfglgkkhpegpjlo`
 
 ### [Plasma Integration](https://chrome.google.com/webstore/detail/cimiefiiaegbelhefglklhhakcgmhkai)
 

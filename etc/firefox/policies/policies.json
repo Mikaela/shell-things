@@ -153,6 +153,10 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi",
         "installation_mode": "force_installed"
       },
+      "offline-qr-code@rugk.github.io": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/offline-qr-code-generator/latest.xpi",
+        "installation_mode": "force_installed"
+      },
       "plasma-browser-integration@kde.org": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/plasma-integration/latest.xpi",
         "installation_mode": "force_installed"
