@@ -1,0 +1,4 @@
+{
+	"plugins": ["prettier-plugin-nginx", "prettier-plugin-toml"],
+	"overrides": [{ "files": ".prettierrc", "options": { "parser": "json" } }]
+}
