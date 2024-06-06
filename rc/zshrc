@@ -574,7 +574,7 @@ if hash pnpm 2>/dev/null; then
 	alias npx=pnpx
 	alias pnpmx=pnpx
 	if ! hash prettier 2>/dev/null; then
-		alias prettier="pnpm exec prettier"
+		alias prettier="pnpm exec prettier --cache --ignore-unknown"
 	fi
 fi
 
