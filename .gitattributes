@@ -1,6 +1,6 @@
 # If file is text, use lf line-endings and let forges show it in repo
 # languages. For more information: `man gitattributes`
-*	text=auto eol=lf linguist-detectable
+* text=auto eol=lf linguist-detectable
 
 # Suggestions for inevitably encountering .gitattributeless repositories when
 # .gitattributes cannot be added:
@@ -26,33 +26,33 @@
 # TODO
 #	diff=matlab
 #	diff=pascal
-*.{adb,ads}	diff=ada
-*.bibtex	diff=bibtex
-*.cs	diff=csharp
-*.{c,cpp}	diff=cpp
-*.css	diff=css
-*.dts	diff=dts
-*.{ex,exs}	diff=elixir
-*.{f90,f,for}	diff=fortran
-*.fountain	diff=fountain
-*.go	diff=golang
-*.html	diff=html
-*.java	diff=java
-*.{kt,kts}	diff=kotlin
-*.{h,m,mm,M}	diff=objc
-*.pl	diff=perl
-*.php	diff=php
-*.py	diff=python
-*.rb	diff=ruby
-*.{rs,rlib}	diff=rust
-*.{scm,ss}	diff=scheme
-*.tex	diff=tex
+*.{adb,ads} diff=ada
+*.bibtex diff=bibtex
+*.cs diff=csharp
+*.{c,cpp} diff=cpp
+*.css diff=css
+*.dts diff=dts
+*.{ex,exs} diff=elixir
+*.{f90,f,for} diff=fortran
+*.fountain diff=fountain
+*.go diff=golang
+*.html diff=html
+*.java diff=java
+*.{kt,kts} diff=kotlin
+*.{h,m,mm,M} diff=objc
+*.pl diff=perl
+*.php diff=php
+*.py diff=python
+*.rb diff=ruby
+*.{rs,rlib} diff=rust
+*.{scm,ss} diff=scheme
+*.tex diff=tex
 
 # bash & co aren't often Windows, so alway have lf line-endings regarldess
 # of the above. Markdown is also included as I utilise doctoc, which
 # requires lf line-endings.
 *.{sh,bash,zsh} diff=bash eol=lf
-*.{md,markdown,[mM][dD],[mM][aA][rR][kK][dD][oO][wW][nN]}	diff=markdown eol=lf
+*.{md,markdown,[mM][dD],[mM][aA][rR][kK][dD][oO][wW][nN]} diff=markdown eol=lf
 
 # While this file is like .gitignore, negative patterns are forbidden and
 # directory/ wouldn't recurse, thus directory/**. Also !attribute would set
@@ -65,16 +65,16 @@ Windows/** text=auto eol=crlf
 # The "text" attribute is used as otherwise they rely on auto-detection of
 # textness since there is no diff attribute set.
 # Ref: https://rehansaeed.com/gitattributes-best-practices/#line-endings
-*.{reg,[rR][eE][gG]}	text eol=crlf
-*.{bat,[bB][aA][tT]}	text eol=crlf
-*.{ahk,[aA][hH][kK]}	text eol=crlf
+*.{reg,[rR][eE][gG]} text eol=crlf
+*.{bat,[bB][aA][tT]} text eol=crlf
+*.{ahk,[aA][hH][kK]} text eol=crlf
 
 # These files are scary, let's not touch them. The attribute "lockable" is
 # provided by git-lfs. https://github.com/git-lfs/git-lfs/wiki/File-Locking
-LICENSE	text lockable
-CITATION.cff	text lockable
+LICENSE text lockable
+CITATION.cff text lockable
 
 # NOTE! .gitattributes doesn't support the case-insensitive style above!
 
-package.json	text linguist-vendored
-pnpm-lock.yaml	text linguist-vendored
+package.json text linguist-vendored
+pnpm-lock.yaml text linguist-vendored

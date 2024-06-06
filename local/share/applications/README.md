@@ -52,7 +52,8 @@ inode/directory=org.gnome.Nautilus.desktop;
 
 ```bash
 % grep directory /usr/share/applications/mimeinfo.cache
-inode/directory=codium.desktop;org.gnome.Nautilus.desktop;
+inode/directory=codium.desktop
+org.gnome.Nautilus.desktop
 ```
 
 TODO: I wonder if it needs an `update-desktop-database` or similar though.
