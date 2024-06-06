@@ -1,4 +1,8 @@
 {
-	"plugins": ["prettier-plugin-nginx", "prettier-plugin-toml"],
+	"plugins": [
+		"prettier-plugin-nginx",
+		"prettier-plugin-toml",
+		"prettier-plugin-sh"
+	],
 	"overrides": [{ "files": ".prettierrc", "options": { "parser": "json" } }]
 }

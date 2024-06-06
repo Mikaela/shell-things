@@ -32,8 +32,7 @@ repos:
         # and lack of it break things. Use identify-cli for figuring out more
         # types to add.
         exclude_types: [svg, tsv]
-      - id: end-of-file-fixer
-        exclude: ^etc\/nginx\/.*$
+        #- id: end-of-file-fixer
       - id: check-yaml
       - id: check-added-large-files
       # These are not from `pre-commit sample-config`
@@ -161,11 +160,11 @@ repos:
   #- id: black-jupyter
 
   # Shell code formatter, requires Go
-  - repo: https://github.com/scop/pre-commit-shfmt
-    rev: v3.8.0-1
-    hooks:
-      - id: shfmt
-        #- id: shfmt-docker
+  # - repo: https://github.com/scop/pre-commit-shfmt
+  #   rev: v3.8.0-1
+  #   hooks:
+  #     - id: shfmt
+  #- id: shfmt-docker
 
   # .editorconfig validity checking
   - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
