@@ -3,6 +3,7 @@
 ci:
   # Attempts to use networking and fails at name resolution, local hook
   # skip: [bundler-audit, pylint, latexmk, exiftool]
+  skip: [pnpm-prettier]
   # Forĝejo/Gitea mirrors will autoclose pull requests. This should decrease
   # the frequency of unnecessary PRs.
   # https://github.com/pre-commit-ci/issues/issues/83
@@ -125,21 +126,30 @@ repos:
   # ensure nothing breaks the rules.
 
   # prettier, opinionated code formatter
-  #- repo: https://github.com/pre-commit/mirrors-prettier
-  - repo: https://github.com/rbubley/mirrors-prettier
-    rev: "v3.2.5"
+
+  - repo: local
     hooks:
-      - id: prettier
-        additional_dependencies: [
-            # https://www.npmjs.com/package/prettier
-            "prettier@3.2.5",
-            # https://www.npmjs.com/package/prettier-plugin-nginx
-            "prettier-plugin-nginx@1.0.3",
-            # https://www.npmjs.com/package/prettier-plugin-toml
-            "prettier-plugin-toml@2.0.1",
-            # https://www.npmjs.com/package/prettier-plugin-sort-json
-            #"prettier-plugin-sort-json@4.0.0",
-          ]
+      - id: pnpm-prettier
+        name: prettier
+        entry: pnpm exec prettier --write
+        language: system
+        exclude_types: [json]
+
+  #- repo: https://github.com/pre-commit/mirrors-prettier
+  # - repo: https://github.com/rbubley/mirrors-prettier
+  #   rev: "v3.2.5"
+  #   hooks:
+  #     - id: prettier
+  #       additional_dependencies: [
+  #           # https://www.npmjs.com/package/prettier
+  #           "prettier@3.2.5",
+  #           # https://www.npmjs.com/package/prettier-plugin-nginx
+  #           "prettier-plugin-nginx@1.0.3",
+  #           # https://www.npmjs.com/package/prettier-plugin-toml
+  #           "prettier-plugin-toml@2.0.1",
+  #           # https://www.npmjs.com/package/prettier-plugin-sort-json
+  #           #"prettier-plugin-sort-json@4.0.0",
+  #         ]
 
   # Black, opinionated Python code formatter
   # - repo: https://github.com/psf/black
