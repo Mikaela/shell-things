@@ -22,6 +22,11 @@ max_line_length = 78
 # Opinionated affecting only display, better to not set
 #tab_width =
 
+# https://github.com/jxddk/prettier-plugin-nginx/issues/8
+[*.nginx]
+insert_final_newline = unset
+indent_style = unset
+
 # *nix, just in case
 [*.{bash,sh}]
 # .gitattributes !

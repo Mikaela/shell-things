@@ -33,6 +33,7 @@ repos:
         # types to add.
         exclude_types: [svg, tsv]
       - id: end-of-file-fixer
+        exclude: ^etc\/nginx\/.*$
       - id: check-yaml
       - id: check-added-large-files
       # These are not from `pre-commit sample-config`

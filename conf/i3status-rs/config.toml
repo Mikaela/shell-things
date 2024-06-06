@@ -5,7 +5,7 @@
 #		software.
 
 # WIP: migration from i3status
-	# contains: (disk /, disk/home,) load, ipv6, wireless, ethernet, battery, volume, (utc) time, (local time)
+# contains: (disk /, disk/home,) load, ipv6, wireless, ethernet, battery, volume, (utc) time, (local time)
 
 [theme]
 name = "solarized-dark"
