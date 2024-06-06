@@ -131,7 +131,7 @@ repos:
     hooks:
       - id: pnpm-prettier
         name: prettier
-        entry: pnpm exec prettier --write
+        entry: pnpm exec prettier --cache --ignore-unknown --write
         language: system
         exclude_types: [json]
 
