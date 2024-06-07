@@ -861,7 +861,7 @@ ssh-verify-file () {
 if hash nvim 2>/dev/null; then
 	vim() {
 		echo 'using nvim instead'
-		nvim "$@"
+		\nvim "$@"
 	}
 else
 	vim() {

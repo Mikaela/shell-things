@@ -45,7 +45,7 @@ fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-xterm-color) color_prompt=yes ;;
+	xterm-color) color_prompt=yes ;;
 esac
 
 force_color_prompt=yes
@@ -78,10 +78,10 @@ fi
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
-xterm* | *rxvt*)
-	PS1="\[\e]0;\u@\h: \w\a\]$PS1"
-	;;
-*) ;;
+	xterm* | *rxvt*)
+		PS1="\[\e]0;\u@\h: \w\a\]$PS1"
+		;;
+	*) ;;
 esac
 
 # enable color support of ls and also add handy aliases
@@ -131,7 +131,7 @@ fi
 #shopt -s autocd
 
 # Show the hostname, uptime and users logged in on shell start
-if hash hostname 2>/dev/null; then
+if hash hostname 2> /dev/null; then
 	(hostname &)
 fi
 (uptime &)
@@ -211,7 +211,7 @@ TZ=$(date +%Z)
 PATH=$HOME/.local/bin:$HOME/bin:$HOME/go/bin:$HOME/.local/share/flatpak/exports/bin:/var/lib/flatpak/exports/bin:/usr/local/bin:/usr/local/sbin:/usr/local/games:/snap/bin:/usr/bin:/usr/sbin:/usr/games:/bin:/sbin:/games:$PATH
 
 # Add RubyGems to PATH
-if hash ruby 2>/dev/null; then
+if hash ruby 2> /dev/null; then
 	PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 fi
 
@@ -235,8 +235,8 @@ CPUARCH=$(uname -p)
 # If we are on Linux, enable apt progress bar and colours
 if [[ $USER == "root" ]]; then
 	mkdir -p /etc/apt/apt.conf.d/
-	echo 'Dpkg::Progress-Fancy "1";' >/etc/apt/apt.conf.d/99progressbar
-	echo 'APT::Color "1";' >/etc/apt/apt.conf.d/99color
+	echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
+	echo 'APT::Color "1";' > /etc/apt/apt.conf.d/99color
 fi
 
 # if gpg[-agent] has sshcontrol file, use it as ssh-agent. sshcontrol should
@@ -247,11 +247,11 @@ fi
 if [ -f ~/.gnupg/sshcontrol ]; then
 	export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 	gpgconf --launch gpg-agent
-	gpg-connect-agent updatestartuptty /bye >/dev/null 2>&1
+	gpg-connect-agent updatestartuptty /bye > /dev/null 2>&1
 # otherwise use the normal ssh-agent
 else
 	# if the output is going to /dev/null, it's non/existence doesn't matter
-	(ssh-agent -a /tmp/$USER.sshagent >/dev/null 2>&1)
+	(ssh-agent -a /tmp/$USER.sshagent > /dev/null 2>&1)
 	export SSH_AUTH_SOCK=/tmp/$USER.sshagent
 fi
 
@@ -277,7 +277,7 @@ alias sudo="\sudo "
 alias ..="cd .."
 
 # Use htop instead of top if available
-if hash htop 2>/dev/null; then
+if hash htop 2> /dev/null; then
 	alias top="htop"
 fi
 
@@ -361,7 +361,7 @@ alias rsync-folder="rsync -h --progress -azvv "
 #fi
 
 # Use GPG2 instead of GPG!
-if hash gpg2 2>/dev/null; then
+if hash gpg2 2> /dev/null; then
 	alias gpg=gpg2
 	export KEYBASE_GPG=gpg2
 fi
@@ -493,7 +493,7 @@ alias venvpypy=pypyvenv
 
 # cp/mv using rsync. rcp appears to be link to scp in my system, so I can
 # safely use this alias.
-if hash rsync 2>/dev/null; then
+if hash rsync 2> /dev/null; then
 	alias rcp="rsync -a --progress"
 	alias rmv="rsync -a --progress --remove-source-files"
 fi
@@ -578,18 +578,18 @@ alias chattr="\chattr -V"
 alias chmod="\chmod --verbose"
 
 # pnpm does less duplicating around
-if hash pnpm 2>/dev/null; then
+if hash pnpm 2> /dev/null; then
 	alias npm=pnpm
 	alias npmx=pnpx
 	alias npx=pnpx
 	alias pnpmx=pnpx
-	if ! hash prettier 2>/dev/null; then
+	if ! hash prettier 2> /dev/null; then
 		alias prettier="pnpm exec prettier --cache --ignore-unknown"
 	fi
 fi
 
 # github-pages etc.
-if hash bundle 2>/dev/null; then
+if hash bundle 2> /dev/null; then
 	alias jekyll="bundle exec jekyll"
 fi
 
@@ -625,26 +625,26 @@ function geoip() {
 function ex() {
 	if [ -f "$1" ]; then
 		case "$1" in
-		*.tar) tar xvf $1 ;;
-		*.tar.bz2 | *.tbz2) tar xjvf $1 ;;
-		*.tar.gz | *.tgz) tar xzvf $1 ;;
-		*.bz2) bunzip2 $1 ;;
-		*.rar) unrar x $1 ;;
-		*.gz) gunzip $1 ;;
-		*.zip) unzip $1 ;;
-		*.Z) uncompress $1 ;;
-		*.7z) 7z x $1 ;;
-		*.xz) tar xJvf $1 ;;
-		*.deb)
-			DIR=${1%%_*.deb}
-			ar xv $1
-			mkdir ${DIR}
-			tar -C ${DIR} -xzvf data.tar.gz
-			;;
-		*.rpm) rpm2cpio $1 | cpio -vid ;;
-		*)
-			echo ""${1}" cannot be extracted via extract()"
-			;;
+			*.tar) tar xvf $1 ;;
+			*.tar.bz2 | *.tbz2) tar xjvf $1 ;;
+			*.tar.gz | *.tgz) tar xzvf $1 ;;
+			*.bz2) bunzip2 $1 ;;
+			*.rar) unrar x $1 ;;
+			*.gz) gunzip $1 ;;
+			*.zip) unzip $1 ;;
+			*.Z) uncompress $1 ;;
+			*.7z) 7z x $1 ;;
+			*.xz) tar xJvf $1 ;;
+			*.deb)
+				DIR=${1%%_*.deb}
+				ar xv $1
+				mkdir ${DIR}
+				tar -C ${DIR} -xzvf data.tar.gz
+				;;
+			*.rpm) rpm2cpio $1 | cpio -vid ;;
+			*)
+				echo ""${1}" cannot be extracted via extract()"
+				;;
 		esac
 	else
 		echo ""${1}" is not a valid file"
@@ -670,7 +670,7 @@ function gribble-gpg-everify() {
 
 	echo -n 'Enter Bitcoin OTC URL: '
 	read REPLY
-	lynx -hiddenlinks=ignore -dump $REPLY >bitcoin_otc.txt.asc
+	lynx -hiddenlinks=ignore -dump $REPLY > bitcoin_otc.txt.asc
 	$gpg --decrypt-file bitcoin_otc.txt.asc
 	echo -en '\e[1;32m;;everify '
 	cat bitcoin_otc.txt
@@ -754,12 +754,12 @@ fix-node() {
 # Use clang if installed. It seems interesting and this is probably good
 # way to test it. This might not be a function, but I don't have any better
 # place for this.
-if hash clang 2>/dev/null; then
+if hash clang 2> /dev/null; then
 	export CC=clang
 	export HOMEBREW_CC=clang
 fi
 
-if hash clang++ 2>/dev/null; then
+if hash clang++ 2> /dev/null; then
 	export CXX=clang++
 fi
 
@@ -772,7 +772,7 @@ github-add-pulls() {
 # Get server SSL certificate fingerprint in MD5, SHA1 and SHA256.
 # Note that OpenSSL doesn't support IPv6 at time of writing (2015-01-13).
 serversslcertfp() {
-	SSSLCFFN=$(openssl s_client -showcerts -connect $1 </dev/null)
+	SSSLCFFN=$(openssl s_client -showcerts -connect $1 < /dev/null)
 	# To see all validity information
 	echo "$SSSLCFFN"
 	# For getting the fingerprints
@@ -839,7 +839,7 @@ mtrp() {
 
 # My IPv4 address
 myip4() {
-	if hash dig 2>/dev/null; then
+	if hash dig 2> /dev/null; then
 		dig +short myip.opendns.com. A @208.67.222.222
 	else
 		curl -L4s https://icanhazip.com/
@@ -848,7 +848,7 @@ myip4() {
 
 # My IPv6 address
 myip6() {
-	if hash dig 2>/dev/null; then
+	if hash dig 2> /dev/null; then
 		dig +short myip.opendns.com. AAAA @2620:0:ccc::2
 	else
 		curl -L6s https://icanhazip.com/
@@ -859,15 +859,15 @@ myip6() {
 # It's assumed that signature of file.txt is called as file.txt.sig
 sshAllowedSigners=$HOME/src/gitea.blesmrt.net/Mikaela/ssh-allowed_signers/allowed_signers
 ssh-verify-file() {
-	echo "$1 ${2:?Usage: ssh-verify-file <email> <file-to-verify>}" >/dev/null
-	ssh-keygen -Y verify -f $sshAllowedSigners -I $1 -n file -s $2.sig <$2
+	echo "$1 ${2:?Usage: ssh-verify-file <email> <file-to-verify>}" > /dev/null
+	ssh-keygen -Y verify -f $sshAllowedSigners -I $1 -n file -s $2.sig < $2
 }
 
 # I use nvim, while I keep running vim instead
-if hash nvim 2>/dev/null; then
+if hash nvim 2> /dev/null; then
 	vim() {
 		echo 'using nvim instead'
-		nvim "$@"
+		\nvim "$@"
 	}
 else
 	vim() {
