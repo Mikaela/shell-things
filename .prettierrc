@@ -4,5 +4,15 @@
 		"prettier-plugin-toml",
 		"prettier-plugin-sh"
 	],
-	"overrides": [{ "files": ".prettierrc", "options": { "parser": "json" } }]
+	"overrides": [
+		{ "files": ".prettierrc", "options": { "parser": "json" } },
+		{
+			"files": "conf/librewolf.overrides.cfg",
+			"options": { "parser": "javascript" }
+		},
+		{
+			"files": "conf/autoconfig.js.online",
+			"options": { "parser": "javascript" }
+		}
+	]
 }
