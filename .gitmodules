@@ -10,3 +10,9 @@
 [submodule "submodules/comic-shanns-mono"]
 	path = submodules/comic-shanns-mono
 	url = https://github.com/jesusmgg/comic-shanns-mono.git
+[submodule "submodules/comicneue"]
+	path = submodules/comicneue
+	url = https://github.com/crozynski/comicneue.git
+[submodule "submodules/serious-sans"]
+	path = submodules/serious-sans
+	url = https://github.com/kaBeech/serious-sans.git
