@@ -539,6 +539,12 @@
         "Type": "string",
         "Value": "Liberation Serif"
       },
+      "font.system.whitelist": {
+        "Comment": "Preference not allowed for stability reasons.",
+        "Status": "default",
+        "Type": "string",
+        "Value": "Liberation Serif, Tinos, Times New Roman, Liberation Sans, Arimo, Arial, Liberation Mono, Cousine, Courier New, Noto Sans, Noto Serif, Noto Mono, OpenDyslexic, Noto Emoji, Noto Color Emoji, Comic Neue"
+      },
       "general.config.obscure_value": {
         "Comment": "Required for autoconfig.",
         "Status": "locked",
