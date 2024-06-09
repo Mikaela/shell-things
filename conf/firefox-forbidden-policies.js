@@ -22,18 +22,22 @@ lockPref("cookiebanners.service.mode.privateBrowsing", 2);
 // but obviously this is forbidden in policies.json!
 lockPref("font.default.el", "serif");
 lockPref("font.default.x-cyrillic", "serif");
-lockPref("font.default.x-western", "serif");
+//lockPref("font.default.x-western", "serif");
+lockPref("font.default.x-western", "sans-serif");
 // lockPref(
 // 	"font.name-list.monospace.x-cyrillic",
 // 	"Noto Shanns Mono, monospace",
 // );
 // lockPref("font.name-list.monospace.x-western", "Noto Shanns Mono, monospace");
 // lockPref("font.name-list.sans-serif.x-cyrillic", "Noto Sans, sans-serif");
-// lockPref("font.name-list.sans-serif.x-western", "Noto Sans, sans-serif");
+lockPref(
+	"font.name-list.sans-serif.x-western",
+	"Comic Neue, Liberation Sans, Arimo, Arial, Noto Sans, sans-serif",
+);
 // lockPref("font.name-list.serif.x-cyrillic", "Noto Serif, serif");
 // lockPref("font.name-list.serif.x-western", "Noto Serif, serif");
 clearPref("font.name-list.monospace.x-cyrillic");
-clearPref("font.name-list.monospace.x-western");
+//clearPref("font.name-list.monospace.x-western");
 clearPref("font.name-list.sans-serif.x-cyrillic");
 clearPref("font.name-list.sans-serif.x-western");
 clearPref("font.name-list.serif.x-cyrillic");
@@ -43,7 +47,8 @@ lockPref("font.name.monospace.el", "Liberation Mono");
 lockPref("font.name.monospace.x-cyrillic", "Liberation Mono");
 lockPref("font.name.monospace.x-western", "Liberation Mono");
 //
-lockPref("font.name.sans-serif.el", "Liberation Sans");
+//lockPref("font.name.sans-serif.el", "Liberation Sans");
+clearPref("font.name.sans-serif.el");
 lockPref("font.name.sans-serif.x-cyrillic", "Liberation Sans");
 lockPref("font.name.sans-serif.x-western", "Liberation Sans");
 //
