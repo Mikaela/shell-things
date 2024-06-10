@@ -23,7 +23,7 @@ lockPref("cookiebanners.service.mode.privateBrowsing", 2);
 lockPref("font.default.el", "serif");
 lockPref("font.default.x-cyrillic", "serif");
 //lockPref("font.default.x-western", "serif");
-lockPref("font.default.x-western", "sans-serif");
+lockPref("font.default.x-western", "serif");
 // lockPref(
 // 	"font.name-list.monospace.x-cyrillic",
 // 	"Noto Shanns Mono, monospace",
@@ -32,7 +32,7 @@ lockPref("font.default.x-western", "sans-serif");
 // lockPref("font.name-list.sans-serif.x-cyrillic", "Noto Sans, sans-serif");
 lockPref(
 	"font.name-list.sans-serif.x-western",
-	"Comic Neue, Liberation Sans, Arimo, Arial, Noto Sans, sans-serif",
+	"Liberation Sans, Arimo, Arial, Noto Sans, sans-serif",
 );
 // lockPref("font.name-list.serif.x-cyrillic", "Noto Serif, serif");
 // lockPref("font.name-list.serif.x-western", "Noto Serif, serif");
