@@ -13,6 +13,7 @@ cat .mikaela/pastebinit.xml >~/.pastebinit.xml
 cat .mikaela/environment >~/.environment
 mkdir ~/.config/git
 #cat .mikaela/gitconfig >~/.config/git/config
+git config --global --add include.path '~/.shell-things/.mikaela/gitconfig'
 cat .gitattributes >~/.config/git/attributes
 mkdir -p ~/.ssh
 cat .mikaela/keys/authorized_keys >~/.ssh/authorized_keys

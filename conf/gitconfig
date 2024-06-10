@@ -76,7 +76,6 @@
 	mailmap = true
 	showSignature = true
 [include]
-	path = ~/.shell-things/.mikaela/gitconfig
 	path = ~/.gitconfig2
 # https://sandrotosi.blogspot.com/2020/10/multiple-git-configurations-depending.html?m=1
 # see also .mikaela/2src-gitconfig within the same shell-things repo
