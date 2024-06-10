@@ -58,7 +58,7 @@ lockPref("font.name.serif.x-western", "Liberation Serif");
 // Allow these fonts regardless of the fingerprinting resistance
 lockPref(
 	"font.system.whitelist",
-	"Liberation Serif, Tinos, Times New Roman, Liberation Sans, Arimo, Arial, Liberation Mono, Cousine, Courier New, Noto Sans, Noto Serif, Noto Mono, OpenDyslexic, Noto Emoji, Noto Color Emoji, Comic Neue, Comic Neue Angular, Comic Neue Angular Light, Comic Neue Angular Light Italic, Comic Neue Light, Twemoji Mozilla",
+	"Liberation Serif, Tinos, Times New Roman, Liberation Sans, Arimo, Arial, Liberation Mono, Cousine, Courier New, Noto Sans, Noto Serif, Noto Mono, OpenDyslexic, Noto Emoji, Noto Color Emoji, Comic Neue, Comic Neue Angular, Comic Neue Angular Light, Comic Neue Angular Light Italic, Comic Neue Light, Twemoji Mozilla, Noto Sans CJK JP, Noto Math, Noto Music",
 );
 
 // Play animated images only once, accessibility.
