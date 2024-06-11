@@ -1,5 +1,3 @@
 *.py*
 *.jupyter
 *.json
-# prettier-plugin-sh is very unhappy with it
-rc/zshrc

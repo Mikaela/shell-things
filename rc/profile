@@ -2,7 +2,7 @@
 PATH=$HOME/.local/bin:$HOME/bin:$HOME/go/bin:$HOME/.local/share/flatpak/exports/bin:/var/lib/flatpak/exports/bin:/snap/bin:/usr/local/bin:/usr/local/sbin:/usr/local/games:/usr/bin:/usr/sbin:/usr/games:/bin:/sbin:/games:$PATH
 
 # Add RubyGems to PATH
-if hash ruby 2>/dev/null; then
+if hash ruby 2> /dev/null; then
 	PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 fi
 
@@ -21,7 +21,7 @@ PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS;
 ulimit -c unlimited
 
 # Numlock on at boot
-if hash numlockx 2>/dev/null; then
+if hash numlockx 2> /dev/null; then
 	numlockx on
 fi
 

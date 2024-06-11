@@ -1,21 +1,21 @@
 <config>
 	<!-- Client Control -->
-	<client-threads v='2'/>
-	<fold-anon v='true'/>
+	<client-threads v='2' />
+	<fold-anon v='true' />
 
 	<!-- Folding Core -->
-	<cpu-usage v='50'/>
-	<gpu-usage v='50'/>
+	<cpu-usage v='50' />
+	<gpu-usage v='50' />
 
 	<!-- Slot Control -->
-	<power v='MEDIUM'/>
+	<power v='MEDIUM' />
 
 	<!-- User Information -->
-	<passkey v=''/>
-	<team v='201753'/>
-	<user v='Mikaela'/>
+	<passkey v='' />
+	<team v='201753' />
+	<user v='Mikaela' />
 
 	<!-- Folding Slots -->
-	<slot id='0' type='CPU'/>
-	<slot id='1' type='GPU'/>
+	<slot id='0' type='CPU' />
+	<slot id='1' type='GPU' />
 </config>
