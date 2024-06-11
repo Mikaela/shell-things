@@ -8,17 +8,17 @@ importers:
   .:
     devDependencies:
       prettier:
-        specifier: 3.2.5
-        version: 3.2.5
+        specifier: 3.3.2
+        version: 3.3.2
       prettier-plugin-nginx:
         specifier: 1.0.3
         version: 1.0.3
       prettier-plugin-sh:
         specifier: 0.14.0
-        version: 0.14.0(prettier@3.2.5)
+        version: 0.14.0(prettier@3.3.2)
       prettier-plugin-toml:
         specifier: 2.0.1
-        version: 2.0.1(prettier@3.2.5)
+        version: 2.0.1(prettier@3.3.2)
 
 packages:
   "@taplo/core@0.1.1":
@@ -63,10 +63,10 @@ packages:
     peerDependencies:
       prettier: ^3.0.3
 
-  prettier@3.2.5:
+  prettier@3.3.2:
     resolution:
       {
-        integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==,
+        integrity: sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==,
       }
     engines: { node: ">=14" }
     hasBin: true
@@ -95,18 +95,18 @@ snapshots:
 
   prettier-plugin-nginx@1.0.3: {}
 
-  prettier-plugin-sh@0.14.0(prettier@3.2.5):
+  prettier-plugin-sh@0.14.0(prettier@3.3.2):
     dependencies:
       mvdan-sh: 0.10.1
-      prettier: 3.2.5
+      prettier: 3.3.2
       sh-syntax: 0.4.2
 
-  prettier-plugin-toml@2.0.1(prettier@3.2.5):
+  prettier-plugin-toml@2.0.1(prettier@3.3.2):
     dependencies:
       "@taplo/lib": 0.4.0-alpha.2
-      prettier: 3.2.5
+      prettier: 3.3.2
 
-  prettier@3.2.5: {}
+  prettier@3.3.2: {}
 
   sh-syntax@0.4.2:
     dependencies:
