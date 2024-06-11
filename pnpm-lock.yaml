@@ -7,6 +7,9 @@ settings:
 importers:
   .:
     devDependencies:
+      "@prettier/plugin-xml":
+        specifier: 3.4.1
+        version: 3.4.1(prettier@3.3.2)
       prettier:
         specifier: 3.3.2
         version: 3.3.2
@@ -21,6 +24,14 @@ importers:
         version: 2.0.1(prettier@3.3.2)
 
 packages:
+  "@prettier/plugin-xml@3.4.1":
+    resolution:
+      {
+        integrity: sha512-Uf/6/+9ez6z/IvZErgobZ2G9n1ybxF5BhCd7eMcKqfoWuOzzNUxBipNo3QAP8kRC1VD18TIo84no7LhqtyDcTg==,
+      }
+    peerDependencies:
+      prettier: ^3.0.0
+
   "@taplo/core@0.1.1":
     resolution:
       {
@@ -31,6 +42,18 @@ packages:
     resolution:
       {
         integrity: sha512-DV/Re3DPVY+BhBtLZ3dmP4mP6YMLSsgq9qGLXwOV38lvNF/fBlgvQswzlXmzCEefL/3q2eMoefZpOI/+GLuCNA==,
+      }
+
+  "@xml-tools/parser@1.0.11":
+    resolution:
+      {
+        integrity: sha512-aKqQ077XnR+oQtHJlrAflaZaL7qZsulWc/i/ZEooar5JiWj1eLt0+Wg28cpa+XLney107wXqneC+oG1IZvxkTA==,
+      }
+
+  chevrotain@7.1.1:
+    resolution:
+      {
+        integrity: sha512-wy3mC1x4ye+O+QkEinVJkPf5u2vsrDIYW9G7ZuwFl6v/Yu0LwUuT2POsb+NUWApebyxfkQq6+yDfRExbnI5rcw==,
       }
 
   mvdan-sh@0.10.1:
@@ -71,6 +94,12 @@ packages:
     engines: { node: ">=14" }
     hasBin: true
 
+  regexp-to-ast@0.5.0:
+    resolution:
+      {
+        integrity: sha512-tlbJqcMHnPKI9zSrystikWKwHkBqu2a/Sgw01h3zFjvYrMxEDYHzzoMZnUrbIfpTFEsoRnnviOXNCzFiSc54Qw==,
+      }
+
   sh-syntax@0.4.2:
     resolution:
       {
@@ -85,11 +114,24 @@ packages:
       }
 
 snapshots:
+  "@prettier/plugin-xml@3.4.1(prettier@3.3.2)":
+    dependencies:
+      "@xml-tools/parser": 1.0.11
+      prettier: 3.3.2
+
   "@taplo/core@0.1.1": {}
 
   "@taplo/lib@0.4.0-alpha.2":
     dependencies:
       "@taplo/core": 0.1.1
+
+  "@xml-tools/parser@1.0.11":
+    dependencies:
+      chevrotain: 7.1.1
+
+  chevrotain@7.1.1:
+    dependencies:
+      regexp-to-ast: 0.5.0
 
   mvdan-sh@0.10.1: {}
 
@@ -107,6 +149,8 @@ snapshots:
       prettier: 3.3.2
 
   prettier@3.3.2: {}
+
+  regexp-to-ast@0.5.0: {}
 
   sh-syntax@0.4.2:
     dependencies:
