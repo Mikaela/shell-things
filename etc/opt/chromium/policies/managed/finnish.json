@@ -2,7 +2,10 @@
   "ForcedLanguages": [
     "fi-FI",
     "fi",
+    "en-FI",
     "en-US",
-    "en"
+    "en",
+    "ru-RU",
+    "ru"
   ]
 }

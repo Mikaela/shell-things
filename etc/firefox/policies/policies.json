@@ -562,9 +562,9 @@
         "Value": "once"
       },
       "intl.accept_languages": {
-        "Status": "clear",
+        "Status": "user",
         "Type": "string",
-        "Value": "fi-FI, fi, en-US, en"
+        "Value": "fi-FI, fi, en-FI, en-US, en, ru-RU, ru"
       },
       "javascript.use_us_english_locale": {
         "Comment": "Preference not allowed for stability reasons. :(",
