@@ -33,6 +33,8 @@ cat conf/firefox-forbidden-policies.js >~/.librewolf/librewolf.overrides.cfg
 cat conf/firefox-forbidden-policies.js >~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg
 mkdir -p ~/.local/share/applications
 ln -nsfv ~/.shell-things/local/share/applications ~/.local/share/applications/shell-things
+mkdir -p ~/.local/share/icons/hicolor/128x128/apps/
+ln -nsfv ~/.local/firefox/browser/chrome/icons/default/default128.png ~/.local/share/icons/hicolor/128x128/apps/a-firefox.png
 if hash update-desktop-database 2>/dev/null; then
 	update-desktop-database ~/.local/share/applications
 fi
