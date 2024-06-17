@@ -227,6 +227,7 @@
       "EnablePermissions": false,
       "Enabled": true
     },
+    "PasswordManagerEnabled": false,
     "Preferences": {
       "app.update.download.attempts": {
         "Comment": "If this is what it looks like, it will stop the prompts to download Firefox manually.",
