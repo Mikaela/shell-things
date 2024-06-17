@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@prettier/plugin-ruby": "4.0.4",
     "@prettier/plugin-xml": "3.4.1",
     "prettier": "3.3.2",
     "prettier-plugin-nginx": "1.0.3",

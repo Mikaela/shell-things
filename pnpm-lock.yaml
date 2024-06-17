@@ -7,6 +7,9 @@ settings:
 importers:
   .:
     devDependencies:
+      "@prettier/plugin-ruby":
+        specifier: 4.0.4
+        version: 4.0.4(prettier@3.3.2)
       "@prettier/plugin-xml":
         specifier: 3.4.1
         version: 3.4.1(prettier@3.3.2)
@@ -24,6 +27,14 @@ importers:
         version: 2.0.1(prettier@3.3.2)
 
 packages:
+  "@prettier/plugin-ruby@4.0.4":
+    resolution:
+      {
+        integrity: sha512-lCpvfS/dQU5WrwN3AQ5vR8qrvj2h5gE41X08NNzAAXvHdM4zwwGRcP2sHSxfu6n6No+ljWCVx95NvJPFTTjCTg==,
+      }
+    peerDependencies:
+      prettier: ^3.0.0
+
   "@prettier/plugin-xml@3.4.1":
     resolution:
       {
@@ -114,6 +125,10 @@ packages:
       }
 
 snapshots:
+  "@prettier/plugin-ruby@4.0.4(prettier@3.3.2)":
+    dependencies:
+      prettier: 3.3.2
+
   "@prettier/plugin-xml@3.4.1(prettier@3.3.2)":
     dependencies:
       "@xml-tools/parser": 1.0.11
