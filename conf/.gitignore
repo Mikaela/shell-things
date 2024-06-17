@@ -1,3 +1,4 @@
 librewolf.overrides.cfg.js
 wireplumber
 autostart
+pre-commit-config.yaml
