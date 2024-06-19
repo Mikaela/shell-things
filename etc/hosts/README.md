@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # `/etc/hosts`
 
 This file is DNS before DNS and legacy remain which is still used.
@@ -27,16 +29,15 @@ Hosts that I dislike enough to mention in my `hosts` file.
 
 ## `dns`
 
-This began from question why should I have DNS to have DNS, but having it
-on DNS resolver level broke DNSSEC due to my weird mixing of systemd-resolved
-and Unbound, so now it's something I can attempt to `/etc/hosts`.
+This began from question why should I have DNS to have DNS, but having it on
+DNS resolver level broke DNSSEC due to my weird mixing of systemd-resolved and
+Unbound, so now it's something I can attempt to `/etc/hosts`.
 
 **_EXCERCISE CAUTION!_**
 
 ## `hostname`
 
-As can be seen in `hosts.debian`, Debian specifies hostname in format
-such as:
+As can be seen in `hosts.debian`, Debian specifies hostname in format such as:
 
 ```
 ::1 localhost

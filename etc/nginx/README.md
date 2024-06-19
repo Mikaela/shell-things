@@ -1,3 +1,5 @@
+<!-- @format -->
+
 Useful nginx files that I will probably need and which I will forget if I
 cannot read them from here.
 
@@ -7,18 +9,20 @@ cannot read them from here.
 
 These files may age badly, so here are some hopefully timeless pointers:
 
-- Generate the config file with https://ssl-config.mozilla.org/ (and if
-  time eats it, try https://github.com/mozilla/ssl-config-generator/ in
-  hope of finding where it is now. \* Name it 00-something so it will be the first file read and make
-  everything a different file.
+- Generate the config file with https://ssl-config.mozilla.org/ (and if time
+  eats it, try https://github.com/mozilla/ssl-config-generator/ in hope of
+  finding where it is now. \* Name it 00-something so it will be the first
+  file read and make everything a different file.
 - If using my acmesh-ssl.bash script, the files to fill should be like:
 
-(the script runs `$ACMESH --key-file $NGINXDIR/key.pem --fullchain-file $NGINXDIR/cert.pem --reloadcmd "$SYSTEMCTLRESTART nginx"`)
+(the script runs
+`$ACMESH --key-file $NGINXDIR/key.pem --fullchain-file $NGINXDIR/cert.pem --reloadcmd "$SYSTEMCTLRESTART nginx"`)
 
 - `ssl_certificate`, `ssl_trusted_certificate` are `cert.pem`
 - `ssl_certificate_key` is `key.pem`
 
-The header syntax is following, **_THIS LIKELY WON'T TIME WELL, ESPECIALLY CSP_**
+The header syntax is following, **_THIS LIKELY WON'T TIME WELL, ESPECIALLY
+CSP_**
 
 ```
   add_header Strict-Transport-Security "max-age=63072000; includeSubDomains" always;

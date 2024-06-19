@@ -1,3 +1,5 @@
+<!-- @format -->
+
 My dracut configuration files mainly for generating unified kerneil images
 (uki).
 

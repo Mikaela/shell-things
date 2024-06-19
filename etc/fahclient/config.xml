@@ -16,6 +16,12 @@
 	<user v='Mikaela' />
 
 	<!-- Folding Slots -->
-	<slot id='0' type='CPU' />
-	<slot id='1' type='GPU' />
+	<slot
+		id='0'
+		type='CPU'
+	/>
+	<slot
+		id='1'
+		type='GPU'
+	/>
 </config>

@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Chrony config files
 
 For some reason Debian package for Chrony doesn't include other config files
@@ -13,10 +15,10 @@ Refer to ../../Windows/time/README.md
 
 ## Other random notes
 
-On pools, the default maxsources is 4 and pools would be resolved until
-there would be 4 names while the documentation for Telia and Snopyta says
-they have only 3. Cloudflare again resolves to two per IP version, so I
-assume that means 2.
+On pools, the default maxsources is 4 and pools would be resolved until there
+would be 4 names while the documentation for Telia and Snopyta says they have
+only 3. Cloudflare again resolves to two per IP version, so I assume that
+means 2.
 
 ## Commands of interest:
 
@@ -47,8 +49,10 @@ Checking that something has NTS?
 nmap -p 4460 -Pn ntp.example.net
 ```
 
-In [GitHub user jauderho's curated NTS list](https://gist.github.com/jauderho/2ad0d441760fc5ed69d8d4e2d6b35f8d)
-user [cadusilva suggests this command instead](https://gist.github.com/jauderho/2ad0d441760fc5ed69d8d4e2d6b35f8d?permalink_comment_id=4192632#gistcomment-4192632):
+In
+[GitHub user jauderho's curated NTS list](https://gist.github.com/jauderho/2ad0d441760fc5ed69d8d4e2d6b35f8d)
+user
+[cadusilva suggests this command instead](https://gist.github.com/jauderho/2ad0d441760fc5ed69d8d4e2d6b35f8d?permalink_comment_id=4192632#gistcomment-4192632):
 
 ```'
 chronyd -Q -t 3 'server NTP_SERVER_HERE iburst nts maxsamples 1'

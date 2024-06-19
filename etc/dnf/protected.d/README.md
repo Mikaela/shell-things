@@ -1,7 +1,9 @@
+<!-- @format -->
+
 # dnf protected packages
 
-In normal operation, packages listed here will not be removed by dnf even
-when told it to do so.
+In normal operation, packages listed here will not be removed by dnf even when
+told it to do so.
 
 <!-- editorconfig-checker-disable -->
 <!-- prettier-ignore-start -->

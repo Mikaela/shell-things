@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Configuring SNTP Servers in Windows terminal
 
 <!-- editorconfig-checker-disable -->
@@ -26,15 +28,15 @@ w32tm /resync
 w32tm /query /peers
 ```
 
-- The list is space separated NTP servers, while I think Windows uses SNTP instead
-  of NTP.
-- `/resync` may sync current time, but is also required for the GUI
-  (Windows + I, Date & time) and following command to get aware of peers.
+- The list is space separated NTP servers, while I think Windows uses SNTP
+  instead of NTP.
+- `/resync` may sync current time, but is also required for the GUI (Windows +
+  I, Date & time) and following command to get aware of peers.
 - Shows where time is synced from and statistics.
   - There is also `net time` to sync, I am unsure of the differences while
-    that may be blocked while the second keeps working. It may also not
-    show all the peers, just the primary one, while `w32tm` is more verbose
-    and has all of them.
+    that may be blocked while the second keeps working. It may also not show
+    all the peers, just the primary one, while `w32tm` is more verbose and has
+    all of them.
 - As Windows doesn't support NTS and probably won't in near future, there is
   no point in listing distant foreign servers.
 

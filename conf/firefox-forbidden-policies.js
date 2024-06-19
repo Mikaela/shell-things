@@ -1,3 +1,5 @@
+/** @format */
+
 //
 // Remember to start writing at line 2. This is my second attempt at Firefox
 // autoconfig after being taught by LibreAwoo, but this time I am trying to

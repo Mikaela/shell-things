@@ -1,4 +1,8 @@
-/* Originally based upon, but heavily modified from https://github.com/jan-warchol/selenized/blob/master/other-apps/wofi/selenized-dark.css */
+/**
+ * Originally based upon, but heavily modified from https://github.com/jan-warchol/selenized/blob/master/other-apps/wofi/selenized-dark.css
+ *
+ * @format
+ */
 
 * {
 	border: none;

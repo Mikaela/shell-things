@@ -1,3 +1,5 @@
+<!-- @format -->
+
 Some kind of explaining for [IPv6.reg](IPv6.reg) like
 [Windows.reg](Windows.reg) which includes this file has.
 
