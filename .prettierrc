@@ -1,4 +1,7 @@
 {
+	"insertPragma": true,
+	"proseWrap": "always",
+	"singleAttributePerLine": true,
 	"plugins": [
 		"@prettier/plugin-ruby",
 		"@prettier/plugin-xml",
