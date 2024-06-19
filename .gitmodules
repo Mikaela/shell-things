@@ -1,18 +1,24 @@
 [submodule "submodules/jauderho-nts-servers"]
 	path = submodules/jauderho-nts-servers
 	url = https://github.com/jauderho/nts-servers.git
+	branch = main
 [submodule "submodules/SteamDeckScreenLock"]
 	path = submodules/SteamDeckScreenLock
 	url = https://github.com/RHOPKINS13/SteamDeckScreenLock.git
+	branch = main
 [submodule "submodules/opendyslexic"]
 	path = submodules/opendyslexic
 	url = https://github.com/antijingoist/opendyslexic.git
+	branch = master
 [submodule "submodules/comic-shanns-mono"]
 	path = submodules/comic-shanns-mono
 	url = https://github.com/jesusmgg/comic-shanns-mono.git
+	branch = master
 [submodule "submodules/comicneue"]
 	path = submodules/comicneue
 	url = https://github.com/crozynski/comicneue.git
+	branch = master
 [submodule "submodules/serious-sans"]
 	path = submodules/serious-sans
 	url = https://github.com/kaBeech/serious-sans.git
+	branch = main
