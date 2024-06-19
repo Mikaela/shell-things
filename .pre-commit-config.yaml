@@ -84,6 +84,7 @@ repos:
   #   rev: "v1.6.0"
   #   hooks:
   #     - id: mypy
+  #       args: [--install-types, --non-interactive]
 
   # - repo: https://github.com/asottile/pyupgrade
   #   rev: v3.15.0
