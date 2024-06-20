@@ -5,7 +5,7 @@
 ci:
   # Attempts to use networking and fails at name resolution, local hook
   # skip: [bundler-audit, pylint, latexmk, exiftool]
-  skip: [prettier]
+  skip: [pnpm-install-dev, prettier]
   # Forĝejo/Gitea mirrors will autoclose pull requests. This should decrease
   # the frequency of unnecessary PRs.
   # https://github.com/pre-commit-ci/issues/issues/83
@@ -132,6 +132,13 @@ repos:
 
   - repo: local
     hooks:
+      - id: pnpm-install-dev
+        name: Install pnpm dev dependencies
+        entry: pnpm install -D
+        language: system
+        always_run: true
+        verbose: true
+        pass_filenames: false
       - id: prettier
         name: prettier
         entry: pnpm exec prettier --cache --ignore-unknown --write
