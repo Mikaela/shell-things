@@ -147,7 +147,7 @@
     "ExtensionSettings": {
       "@contain-facebook": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/facebook-container/latest.xpi",
-        "installation_mode": "normal_installed"
+        "installation_mode": "force_installed"
       },
       "adnauseam@rednoise.org": {
         "blocked_install_message": "Ristiriidassa vähän kaiken kanssa, uBlock Origin on sysadmin-ystävällisempi.",
