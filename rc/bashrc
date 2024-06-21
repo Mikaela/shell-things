@@ -577,15 +577,19 @@ alias mkdir="\mkdir --verbose"
 alias chattr="\chattr -V"
 alias chmod="\chmod --verbose"
 
-# pnpm does less duplicating around
-if hash pnpm 2> /dev/null; then
-	alias npm=pnpm
-	alias npmx=pnpx
-	alias npx=pnpx
-	alias pnpmx=pnpx
+# https://github.com/nodejs/corepack/blob/v0.28.2/README.md#corepack-enable--name
+if hash corepack 2> /dev/null; then
+	alias yarn="corepack yarn"
+	alias yarnpkg="corepack yarnpkg"
+	alias pnpm="corepack pnpm"
+	alias pnpx="corepack pnpx"
+	alias npm="corepack npm"
+	alias npx="corepack npx"
 	if ! hash prettier 2> /dev/null; then
 		alias prettier="pnpm exec prettier --cache --ignore-unknown"
 	fi
+else
+	echo "WARNING! corepack is not installed."
 fi
 
 # github-pages etc.
