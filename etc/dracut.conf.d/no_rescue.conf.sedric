@@ -1,1 +1,2 @@
 dracut_rescue_image="no"
+# vim: filetype=conf
