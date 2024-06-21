@@ -592,6 +592,9 @@ else
 	echo "WARNING! corepack is not installed."
 fi
 
+# https://pnpm.io/installation#using-a-shorter-alias
+alias pn=pnpm
+
 # github-pages etc.
 if hash bundle 2> /dev/null; then
 	alias jekyll="bundle exec jekyll"
