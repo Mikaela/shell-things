@@ -1,11 +1,12 @@
+# @format
+
 # This CITATION.cff file was generated with cffinit.
 # Visit https://citation-file-format.github.io/cff-initializer-javascript/#/ to generate yours today!
 
 cff-version: 1.2.0
 title: shell-things
 message: >-
-  If you use this dataset, please cite it using the metadata
-  from this file.
+  If you use this dataset, please cite it using the metadata from this file.
 type: dataset
 authors:
   - given-names: Aminda
