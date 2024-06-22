@@ -745,7 +745,7 @@
         "Comment": "Preference not allowed for stability reasons. :( https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc",
         "Status": "locked",
         "Type": "string",
-        "Value": "+AllTargets,-KeyboardEvents,-SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-NavigatorUserAgent,-JSDateTimeUTC"
+        "Value": "+AllTargets,-KeyboardEvents,-SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-NavigatorUserAgent,-JSDateTimeUTC,-HttpUserAgent"
       },
       "privacy.fingerprintingProtection.pbmode": {
         "Comment": "Preference not allowed for stability reasons. :(",
