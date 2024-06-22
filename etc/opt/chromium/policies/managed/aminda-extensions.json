@@ -72,7 +72,8 @@
       },
       "nngceckbapebfimnlniiiahkandclblb": {
         "environment": {
-          "base": "https://bitwarden.eu"
+          "base": "https://vault.bitwarden.eu",
+          "notifications": "https://notifications.bitwarden.eu"
         }
       },
       "pkehgijcmpdhfbdbbnkijodmdjhbjlgp": {
