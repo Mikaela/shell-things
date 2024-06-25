@@ -14,7 +14,7 @@
 
 window#waybar {
 	background: #000000;
-	border-bottom: 3px solid #ffb700;
+	border-right: 1px solid #ffb700;
 	color: #ffb700;
 }
 
@@ -30,23 +30,26 @@ tooltip label {
 	padding: 0 5px;
 	background: #000000;
 	color: #ffb700;
-	border-bottom: 3px solid #000000;
+	border-right: 1px solid #ffb700;
 }
 
 #workspaces button.focused {
+	color: #ff0000;
 	background: #000000;
-	border-bottom: 3px solid #ffb700;
+	border-top: 1px solid #ffb700;
+	border-bottom: 1px solid #ffb700;
 }
 
 #mode,
 #clock,
 #battery {
 	padding: 0 10px;
+	border-right: 1px solid #ffb700;
 }
 
 #mode {
 	background: #000000;
-	border-bottom: 3px solid #ffb700;
+	border-bottom: 1px solid #ffb700;
 }
 
 #clock {
