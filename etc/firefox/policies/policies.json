@@ -136,6 +136,10 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/facebook-container/latest.xpi",
         "installation_mode": "force_installed"
       },
+      "@testpilot-containers": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/multi-account-container/latest.xpi",
+        "installation_mode": "force_installed"
+      },
       "jid1-MnnxcxisBPnSXQ@jetpack": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi",
         "installation_mode": "force_installed"
@@ -147,6 +151,10 @@
       "plasma-browser-integration@kde.org": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/plasma-integration/latest.xpi",
         "installation_mode": "force_installed"
+      },
+      "regrets-reporter@mozillafoundation.org": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/regretsreporter/latest.xpi",
+        "installation_mode": "normal_installed"
       },
       "uBOLite@raymondhill.net": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin-lite/latest.xpi",
@@ -168,9 +176,17 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-pass/latest.xpi",
         "installation_mode": "force_installed"
       },
+      "{8e41107d-2be2-454d-b4b8-c3d7e54d77de}": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/igplus-extension/latest.xpi",
+        "installation_mode": "normal_installed"
+      },
       "{b11bea1f-a888-4332-8d8a-cec2be7d24b9}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/torproject-snowflake/latest.xpi",
         "installation_mode": "normal_installed"
+      },
+      "{c607c8df-14a7-4f28-894f-29e8722976af}": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/temporary-containers/latest.xpi",
+        "installation_mode": "force_installed"
       },
       "{d04b0b40-3dab-4f0b-97a6-04ec3eddbfb0}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ecosia-the-green-search/latest.xpi",
