@@ -559,8 +559,9 @@
         "Value": 0
       },
       "geo.provider.network.url": {
-        "Comment": "This might point to discontinued Mozilla Location Services, so better to restore it to default.",
-        "Status": "clear"
+        "Status": "default",
+        "Type": "string",
+        "Value": "https://beacondb.net/v1/geolocate"
       },
       "image.animation.mode": {
         "Comment": "Preference not allowed for stability reasons. :(",
