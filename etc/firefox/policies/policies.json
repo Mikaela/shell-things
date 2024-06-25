@@ -2,20 +2,6 @@
   "policies": {
     "3rdparty": {
       "Extensions": {
-        "adnauseam@rednoise.org": {
-          "toAdd": {
-            "trustedSiteDirectives": [
-              ""
-            ]
-          },
-          "toOverwrite": {
-            "filterLists": [
-              "easylist",
-              "adnauseam-filters",
-              "eff-dnt-whitelist"
-            ]
-          }
-        },
         "jid1-MnnxcxisBPnSXQ@jetpack": {
           "checkForDNTPolicy": true,
           "disabledSites": [
@@ -149,15 +135,6 @@
       "@contain-facebook": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/facebook-container/latest.xpi",
         "installation_mode": "force_installed"
-      },
-      "adnauseam@rednoise.org": {
-        "blocked_install_message": "Ristiriidassa vähän kaiken kanssa, uBlock Origin on sysadmin-ystävällisempi.",
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/adnauseam/latest.xpi",
-        "installation_mode": "blocked"
-      },
-      "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
-        "blocked_install_message": "Kaksoiskappale samasta lisäosasta.",
-        "installation_mode": "blocked"
       },
       "jid1-MnnxcxisBPnSXQ@jetpack": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi",
