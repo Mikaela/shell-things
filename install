@@ -53,6 +53,19 @@ if hash pre-commit 2> /dev/null; then
 	pre-commit gc
 fi
 
+if hash corepack 2> /dev/null; then
+	corepack enable --install-directory ~/.local/bin/
+	corepack enable npm --install-directory ~/.local/bin/
+else
+	echo "WARNING! corepack is not installed."
+fi
+
+if [ "$(id -u)" == "0" ]; then
+	mkdir -vp /etc/apt/apt.conf.d/
+	echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
+	echo 'APT::Color "1";' > /etc/apt/apt.conf.d/99color
+fi
+
 if [ -f "$MIKAELA_GREP" ]; then
 	bash -x .mikaela_install
 fi

@@ -233,11 +233,11 @@ UNAME=$(uname)
 CPUARCH=$(uname -p)
 
 # If we are on Linux, enable apt progress bar and colours
-if [[ $USER == "root" ]]; then
-	mkdir -p /etc/apt/apt.conf.d/
-	echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
-	echo 'APT::Color "1";' > /etc/apt/apt.conf.d/99color
-fi
+#if [[ $USER == "root" ]]; then
+#	mkdir -p /etc/apt/apt.conf.d/
+#	echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
+#	echo 'APT::Color "1";' > /etc/apt/apt.conf.d/99color
+#fi
 
 # if gpg[-agent] has sshcontrol file, use it as ssh-agent. sshcontrol should
 # include the authentication subkey keygrip from
@@ -578,19 +578,19 @@ alias chattr="\chattr -V"
 alias chmod="\chmod --verbose"
 
 # https://github.com/nodejs/corepack/blob/v0.28.2/README.md#corepack-enable--name
-if hash corepack 2> /dev/null; then
-	alias yarn="corepack yarn"
-	alias yarnpkg="corepack yarnpkg"
-	alias pnpm="corepack pnpm"
-	alias pnpx="corepack pnpx"
-	alias npm="corepack npm"
-	alias npx="corepack npx"
-	if ! hash prettier 2> /dev/null; then
-		alias prettier="pnpm exec prettier --cache --ignore-unknown"
-	fi
-else
-	echo "WARNING! corepack is not installed."
-fi
+#if hash corepack 2> /dev/null; then
+#	alias yarn="corepack yarn"
+#	alias yarnpkg="corepack yarnpkg"
+#	alias pnpm="corepack pnpm"
+#	alias pnpx="corepack pnpx"
+#	alias npm="corepack npm"
+#	alias npx="corepack npx"
+#	if ! hash prettier 2> /dev/null; then
+#		alias prettier="pnpm exec prettier --cache --ignore-unknown"
+#	fi
+#else
+#	echo "WARNING! corepack is not installed."
+#fi
 
 # https://pnpm.io/installation#using-a-shorter-alias
 alias pn="corepack pnpm"
@@ -735,11 +735,11 @@ function shell-things {
 # (Everything expects nodejs to be called as node, but it's not with Debian.)
 fix-node() {
 	if [[ $USER == "root" && -f /usr/bin/nodejs && ! -f /usr/bin/node && ! -f /usr/local/bin/node ]]; then
-		ln -s /usr/bin/nodejs /usr/local/bin/node
+		ln -fnsv /usr/bin/nodejs /usr/local/bin/node
 	fi
-	mkdir -p $HOME/.local/bin
+	mkdir -vp "$HOME/.local/bin"
 	if [[ -f /usr/bin/nodejs && ! -f /usr/bin/node && ! -f /usr/local/bin/node && ! -f $HOME/.local/bin/node ]]; then
-		ln -s /usr/bin/nodejs $HOME/.local/bin/node
+		ln -fnsv /usr/bin/nodejs "$HOME/.local/bin/node"
 	fi
 }
 
