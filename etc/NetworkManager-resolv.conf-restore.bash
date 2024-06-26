@@ -7,7 +7,7 @@ set -x
 
 # I know there are old versions that used something else, but I don't remember
 # that name and they are ancient.
-if ! hash nmcli 2>/dev/null; then
+if ! hash nmcli 2> /dev/null; then
 	echo "You don't seem to have NetworkManager (or nmcli) installed." 1>&2
 	exit 1
 fi
