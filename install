@@ -64,6 +64,9 @@ if [ "$(id -u)" == "0" ]; then
 	mkdir -vp /etc/apt/apt.conf.d/
 	echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
 	echo 'APT::Color "1";' > /etc/apt/apt.conf.d/99color
+	if hash updatedb 2> /dev/null; then
+		(updatedb &)
+	fi
 fi
 
 if [ -f "$MIKAELA_GREP" ]; then
