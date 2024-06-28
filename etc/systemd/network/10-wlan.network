@@ -24,9 +24,9 @@ DNS=::1
 DNS=127.0.0.1
 DNS=127.0.0.53
 # Enable mDNS/.local for systemd-resolved
-MulticastDNS=true
+#MulticastDNS=true
 # Windows
-LLMNR=true
+#LLMNR=true
 # systemd-resolved configuration
 DNSSEC=true
 #DNSOverTLS=opportunistic

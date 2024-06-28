@@ -40,6 +40,6 @@ Domains=.
 #NTP=fi.pool.ntp.org
 #NTP=time.cloudflare.com
 # Enable mDNS/.local for systemd-resolved
-MulticastDNS=true
+#MulticastDNS=true
 # Windows
-LLMNR=true
+#LLMNR=true
