@@ -79,7 +79,7 @@ lockPref("privacy.donottrackheader.value", 1);
 lockPref("privacy.fingerprintingProtection", true);
 // Somehow I cannot clearPref this, so...
 //clearPref("privacy.fingerprintingProtection");
-//lockPref("privacy.fingerprintingProtection", false);
+lockPref("privacy.fingerprintingProtection", false);
 pref(
 	"privacy.fingerprintingProtection.overrides",
 	"+AllTargets,-KeyboardEvents,-SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-NavigatorUserAgent,-JSDateTimeUTC,-HttpUserAgent",

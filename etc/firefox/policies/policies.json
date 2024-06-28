@@ -558,6 +558,11 @@
         "Type": "string",
         "Value": "https://beacondb.net/v1/geolocate"
       },
+      "geo.provider.use_geoclue": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": false
+      },
       "image.animation.mode": {
         "Comment": "Preference not allowed for stability reasons. :(",
         "Status": "default",
