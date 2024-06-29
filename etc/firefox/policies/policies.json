@@ -554,7 +554,8 @@
         "Value": 0
       },
       "geo.provider.network.url": {
-        "Status": "default",
+        "Comment": "Firefox only sends connected AP that won't work due to _nomap and the server side requires more than one as well. beacondb/beacondb#8",
+        "Status": "clear",
         "Type": "string",
         "Value": "https://beacondb.net/v1/geolocate"
       },
