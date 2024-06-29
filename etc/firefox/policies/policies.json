@@ -2,7 +2,7 @@
   "policies": {
     "3rdparty": {
       "Extensions": {
-        "jid1-MnnxcxisBPnSXQ@jetpack": {
+        "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
           "checkForDNTPolicy": true,
           "disabledSites": [
             "challenges.cloudflare.com",
@@ -142,9 +142,15 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/multi-account-container/latest.xpi",
         "installation_mode": "force_installed"
       },
-      "jid1-MnnxcxisBPnSXQ@jetpack": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi",
+      "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
+        "comment": "While this won't sync and requires manually enabling the other one when the policy is missing, it's less confusing for the automatic configuration not existing. Additionally I have some suspicion towards Mozilla Anonym.",
+        "install_url": "https://www.eff.org/files/privacy-badger-latest.xpi",
         "installation_mode": "force_installed"
+      },
+      "jid1-MnnxcxisBPnSXQ@jetpack": {
+        "blocked_install_message": "Already force_installed through EFF.",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi",
+        "installation_mode": "blocked"
       },
       "offline-qr-code@rugk.github.io": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/offline-qr-code-generator/latest.xpi",
