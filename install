@@ -17,22 +17,22 @@ cat rc/bashrc > ~/.bashrc
 cat conf/tmux.conf > ~/.tmux.conf
 cat rc/zshrc > ~/.zshrc
 cat rc/profile > ~/.profile
-mkdir -p ~/.config/git
+mkdir -vp ~/.config/git
 cat conf/gitconfig > ~/.config/git/config
 touch ~/.gitconfig
 rm ~/.gitconfig
 ln -nsfv ~/.config/git/config ~/.gitconfig
-mkdir -p ~/.git-template
+mkdir -vp ~/.git-template
 cat rc/vimrc > ~/.vimrc
-mkdir -p ~/.config/nvim/
+mkdir -vp ~/.config/nvim/
 cat conf/init.vim > ~/.config/nvim/init.vim
 cat conf/makepkg.conf > ~/.makepkg.conf
-mkdir -p ~/.config/mpv/
+mkdir -vp ~/.config/mpv/
 cat conf/mpv.conf > ~/.config/mpv/mpv.conf
 if [ ! -f ~/.oidentd.conf ]; then
 	cat conf/oidentd.conf > ~/.oidentd.conf
 fi
-mkdir -p ~/.gnupg
+mkdir -vp ~/.gnupg
 cat gpg/gpg.conf > ~/.gnupg/gpg.conf
 cat gpg/gpg-agent.conf > ~/.gnupg/gpg-agent.conf
 cat gpg/dirmngr.conf > ~/.gnupg/dirmngr.conf
@@ -40,10 +40,11 @@ killall -HUP dirmngr
 #cat rc/xinitrc > ~/.xinitrc
 cat conf/pastebinit.xml > ~/.pastebinit.xml
 cat conf/Xresources > ~/.Xresources
-mkdir -p ~/.inxi
+mkdir -vp ~/.inxi
 cat conf/inxi.conf > ~/.inxi/inxi.conf
 gpg --quiet --import .mikaela/keys/*.asc &
-mkdir -p ~/.ssh/sockets/
+mkdir -vp ~/.ssh/sockets/
+mkdir -vp ~/.local/bin/
 chmod a+xr chmod
 bash -x ./chmod &
 git submodule update --init &
