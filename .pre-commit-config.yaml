@@ -121,7 +121,7 @@ repos:
 
   # Easierish licensing when attempting reuse compliancy
   - repo: https://github.com/fsfe/reuse-tool
-    rev: v3.1.0a1
+    rev: v4.0.1
     hooks:
       - id: reuse
 
