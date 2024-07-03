@@ -13,11 +13,11 @@
 		{ "files": ".prettierrc", "options": { "parser": "json" } },
 		{
 			"files": "conf/librewolf.overrides.cfg",
-			"options": { "parser": ".js" }
+			"options": { "parser": "babel" }
 		},
 		{
 			"files": "conf/autoconfig.js.online",
-			"options": { "parser": ".js" }
+			"options": { "parser": "babel" }
 		}
 	]
 }

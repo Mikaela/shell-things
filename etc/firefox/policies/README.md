@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Firefox `policies.json`
 
 - https://mozilla.github.io/policy-templates/
@@ -32,8 +34,8 @@ per whatever I am doing.
 ## WARNING TO LIBREWOLF USERS
 
 This file takes priority over
-`/usr/share/librewolf/distribution/policies.json` so don't apply this or
-a lot of LibreWolf specific customizations stops being in force.
+`/usr/share/librewolf/distribution/policies.json` so don't apply this or a lot
+of LibreWolf specific customizations stops being in force.
 
 ## General warning
 

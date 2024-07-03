@@ -1,10 +1,15 @@
+/** @format */
+
 // This file belongs to Firefox `default/pref` directory as `autoconfig.js`.
 // E.g. /usr/lib64/firefox/defaults/pref/autoconfig.js
 
 // WARNING: lockPref() IS NOT ALLOWED HERE!
 
 //pref("autoadmin.global_config_url","https://gitea.blesmrt.net/mikaela/shell-things/raw/branch/master/conf/firefox-forbidden-policies.js");
-pref("autoadmin.global_config_url","file:///home/aminda/public_html/autoconfig.js");
+pref(
+	"autoadmin.global_config_url",
+	"file:///home/aminda/public_html/autoconfig.js",
+);
 pref("general.config.obscure_value", 0);
 pref("autoadmin.refresh_interval", 120);
 pref("autoadmin.offline_failover", true);

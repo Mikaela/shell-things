@@ -1,3 +1,5 @@
+# @format
+
 # Based on https://pre-commit.com
 image: python:alpine
 gitlab-ci-pre-commit:

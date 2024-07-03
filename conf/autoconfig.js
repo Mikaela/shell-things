@@ -1,3 +1,5 @@
+/** @format */
+
 // This file belongs to Firefox `default/pref` directory.
 // E.g. /usr/lib64/firefox/defaults/pref/ or ~/.local/firefox/defaults/pref/
 

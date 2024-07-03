@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Custom app menu entries
 
 These can be used for either `~/.local/share/applications` or
@@ -25,12 +27,12 @@ so graphical desktop environments started the apps on login.
 ## `a-*.desktop`
 
 These files are companions to my script repos `bash/usr-local-bin/*` belonging
-to `/usr/local/share/applications` and are named so to
-avoid masking package manager. They have clearly different names such as using
-all caps.
+to `/usr/local/share/applications` and are named so to avoid masking package
+manager. They have clearly different names such as using all caps.
 
-Apparently one can also have subdirectories in `/usr/local/share/applications/`
-and `~/.local/share/applications/` making life easier.
+Apparently one can also have subdirectories in
+`/usr/local/share/applications/` and `~/.local/share/applications/` making
+life easier.
 
 ## Refreshing the menus
 

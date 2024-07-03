@@ -1,3 +1,5 @@
+<!-- @format -->
+
 Config files that I wish to have everywhere. You could probably call this
 repository as dotfiles, but historical reasons...
 

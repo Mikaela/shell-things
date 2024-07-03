@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Chromium policies
 
 - https://chromeenterprise.google/policies/
@@ -200,8 +202,8 @@ disabling GTK/Qt themes.
 
 ## `brave-shields-disabled.json`
 
-Allowlist for sites where I think Brave Shields may be breaking things. Similar is also in
-`aminda-extensions.json` for Privacy Badger.
+Allowlist for sites where I think Brave Shields may be breaking things.
+Similar is also in `aminda-extensions.json` for Privacy Badger.
 
 ## `disable-brave-ipfs.json`
 
@@ -254,14 +256,15 @@ Simply forces DNS-over-HTTPS with DNS0.eu.
 
 ## `doh-mullvad-base.json`
 
-Forces DNS-over-HTTPS with Mullvad Base, which features ad, malware & tracker blocking.
+Forces DNS-over-HTTPS with Mullvad Base, which features ad, malware & tracker
+blocking.
 
 - https://mullvad.net/en/help/dns-over-https-and-dns-over-tls#specifications
 
 ## `doh-quad9-ecs.json`
 
-Forces DNS over HTTPS with Quad9 ECS enabled threat-blocking server and also contains
-their alternative port.
+Forces DNS over HTTPS with Quad9 ECS enabled threat-blocking server and also
+contains their alternative port.
 
 ## `doh-quad9.json`
 
@@ -270,15 +273,18 @@ their alternative port.
 
 ## `doh-unlocked-unset.json`
 
-Allows configuring DoH even with managed policies present (unless another DoH rule is in force) since enabling any managed policy will otherwise gray out the option.
+Allows configuring DoH even with managed policies present (unless another DoH
+rule is in force) since enabling any managed policy will otherwise gray out
+the option.
 
-If no DNS over HTTPS policy is used, this unlocks the setting. Enabling managed policies disable it by default.
+If no DNS over HTTPS policy is used, this unlocks the setting. Enabling
+managed policies disable it by default.
 
 My other `doh-*.json` set this as well, because `secure` doesn't allow
-downgrade to system resolver and Chromium seems somewhat unreliable with it often reporting
-`DNS_PROBE_POSSIBLE` and while this occassionally disables ECH, it works and
-my system resolvers are encrypted. I hope they will implement ECH with system
-resolver soon to fix this.
+downgrade to system resolver and Chromium seems somewhat unreliable with it
+often reporting `DNS_PROBE_POSSIBLE` and while this occassionally disables
+ECH, it works and my system resolvers are encrypted. I hope they will
+implement ECH with system resolver soon to fix this.
 
 ## `edge-appsfavorites.json`
 
@@ -298,7 +304,8 @@ Explicitly enables Chromecast support.
 
 ## `enable-labs.json`
 
-Enables the beaker button "Experiments" for easier management than `about:flags`.
+Enables the beaker button "Experiments" for easier management than
+`about:flags`.
 
 ## `enable-passwordleakdetection.json`
 
@@ -332,14 +339,14 @@ This file evolved to merge another one, so now it:
 
 ## `prefetch.json`
 
-Enables prefetching. Will make sites very speedy, but decreases privacy and may
-conflict with uBlock Origin. However AdNauseam is already clicking those ads, so
-maybe it's not that big of an issue.
+Enables prefetching. Will make sites very speedy, but decreases privacy and
+may conflict with uBlock Origin. However AdNauseam is already clicking those
+ads, so maybe it's not that big of an issue.
 
 ## `profilemanager.json`
 
-Forces the profile screen even with only one profile. I love the feature in Firefox
-and want to see it here too, now that I accidentally noticed it.
+Forces the profile screen even with only one profile. I love the feature in
+Firefox and want to see it here too, now that I accidentally noticed it.
 
 ## `README.md`
 
