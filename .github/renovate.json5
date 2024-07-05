@@ -1,0 +1,5 @@
+/** @format */
+
+{
+	extends: ["local>Mikaela/shell-things:rc//renovate"],
+}
