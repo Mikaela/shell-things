@@ -14,6 +14,7 @@
 !.pre-commit-config.yaml
 !.prettierignore
 !.prettierrc
+!.renovate-shared.json*
 !.reuse
 
 # Certificates (unlikely to happen, but better safe than sorry)
