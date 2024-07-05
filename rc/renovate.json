@@ -1,7 +1,4 @@
 {
-  "extends": [
-    "config:recommended"
-  ],
   "pre-commit": {
     "enabled": true
   }
