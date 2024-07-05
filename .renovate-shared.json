@@ -9,5 +9,9 @@
   "mode": "full",
   "pre-commit": {
     "enabled": true
-  }
+  },
+  "schedule": [
+    "before 6am"
+  ],
+  "timezone": "Europe/Helsinki"
 }
