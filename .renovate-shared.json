@@ -1,6 +1,7 @@
 {
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    "group:allDigest"
   ],
   "git-submodules": {
     "enabled": true
