@@ -5,6 +5,7 @@
   "git-submodules": {
     "enabled": true
   },
+  "mode": "full",
   "pre-commit": {
     "enabled": true
   }
