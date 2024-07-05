@@ -1,8 +1,5 @@
 /** @format */
 
 {
-	extends: [
-		"config:recommended",
-		"local>Mikaela/shell-things:.renovate-shared",
-	],
+	extends: ["local>Mikaela/shell-things:.renovate-shared"],
 }
