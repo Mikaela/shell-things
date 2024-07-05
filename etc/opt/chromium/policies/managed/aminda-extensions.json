@@ -100,7 +100,8 @@
       }
     }
   },
-  "ExtensionManifestV2Availability": 3,
+  "ExtensionManifestV2Availability": 2,
+  "ExtensionManifestV2Availability_comment": "0 for default, 1 for disable, 2 for enable, 3 for those extensions specified here.",
   "ExtensionSettings": {
     "ajhmfdgkijocedmfjonnpjfojldioehi": {
       "installation_mode": "force_installed",
