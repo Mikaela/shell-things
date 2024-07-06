@@ -210,14 +210,6 @@ TZ=$(date +%Z)
 # Sets PATH. To add another path, add :</path/to/new/path> to string below.
 PATH=$HOME/.local/bin:$HOME/bin:$HOME/go/bin:$HOME/.local/share/flatpak/exports/bin:/var/lib/flatpak/exports/bin:/usr/local/bin:/usr/local/sbin:/usr/local/games:/snap/bin:/usr/bin:/usr/sbin:/usr/games:/bin:/sbin:/games:$PATH
 
-# Add RubyGems to PATH
-if hash ruby 2> /dev/null; then
-	PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
-fi
-
-# Removes duplicates from $PATH. Copied from https://unix.stackexchange.com/a/14896
-PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS; printf $a[$1]}')
-
 # Colours to less
 # Copied from https://nion.modprobe.de/blog/archives/572-less-colors-for-man-pages.html
 export LESS_TERMCAP_mb=$'\E[01;31m'
@@ -276,10 +268,15 @@ fi
 
 # https://github.com/rbenv/rbenv
 if [ -d ~/.rbenv/bin ]; then
-	PATH="$HOME/.rbenv/bin:$PATH"
+	PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 	rbenv init > /dev/null 2>&1
 	# Remember! And verify it before running!
 	# git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+fi
+
+# Add RubyGems to PATH
+if hash ruby 2> /dev/null; then
+	PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 fi
 
 # https://github.com/pyenv/pyenv
@@ -295,6 +292,9 @@ if [ -d ~/.nodenv/bin ]; then
 	# Remember! And verify it before running!
 	# git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
 fi
+
+# Removes duplicates from $PATH. Copied from https://unix.stackexchange.com/a/14896
+PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS; printf $a[$1]}')
 
 #####	Aliases						RJ706I	#####
 
