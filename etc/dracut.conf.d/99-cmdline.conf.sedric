@@ -1,2 +1,2 @@
-kernel_cmdline="root=UUID=c3df30ca-878b-4125-bcb4-ba3ba4398efd rw rd.lvm.lv=fedora_localhost-live/root rd.luks.uuid=luks-f9a33e19-4176-44b3-8e06-2ee7fb70f3d0 mitigations=auto,nosmt btusb.force_scofix=1 btusb.enable_autosuspend=0 cpufreq.default_governor=schedutil"
+kernel_cmdline="root=UUID=c3df30ca-878b-4125-bcb4-ba3ba4398efd rw rd.lvm.lv=fedora_localhost-live/root rd.luks.uuid=luks-f9a33e19-4176-44b3-8e06-2ee7fb70f3d0 mitigations=auto,nosmt btusb.force_scofix=1 btusb.enable_autosuspend=0 cpufreq.default_governor=schedutil rd.driver.blacklist=nouveau modprobe.blacklist=nouveau"
 # vim: filetype=conf
