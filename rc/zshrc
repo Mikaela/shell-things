@@ -249,6 +249,9 @@ fi
 if [ -d ~/.pyenv/bin ]; then
 	PATH="$HOME/.pyenv/bin:$PATH"
 	pyenv init >/dev/null 2>&1
+	# Worth considering (and verifying before running)
+	# git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
+	# git clone https://github.com/pyenv/pyenv-virtualenvwrapper.git $(pyenv root)/plugins/pyenv-virtualenvwrapper
 fi
 
 # https://github.com/nodenv/nodenv
