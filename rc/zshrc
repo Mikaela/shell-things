@@ -234,6 +234,14 @@ export LOCALDOMAIN=.
 # regardless of whether DNSSEC=true or not.
 export RES_OPTIONS="timeout:2 attempts:2 rotate edns0 trust-ad"
 
+# https://github.com/nodenv/nodenv
+if [ -d ~/.nodenv/bin ]; then
+	PATH="$HOME/.nodenv/bin:$PATH"
+	eval "$(nodenv init - zsh)"
+	# Remember! And verify it before running!
+	# git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
+fi
+
 #####	Aliases						RJ706I	#####
 
 # To get sudo work with aliases.
