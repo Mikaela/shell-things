@@ -278,6 +278,8 @@ fi
 if [ -d ~/.rbenv/bin ]; then
 	PATH="$HOME/.rbenv/bin:$PATH"
 	rbenv init > /dev/null 2>&1
+	# Remember! And verify it before running!
+	# git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 fi
 
 # https://github.com/pyenv/pyenv
