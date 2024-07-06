@@ -274,6 +274,18 @@ if [ -d ~/.nvm ]; then
 	. ~/.nvm/bash_completition
 fi
 
+# https://github.com/rbenv/rbenv
+if [ -d ~/.rbenv/bin ]; then
+	PATH="$HOME/.rbenv/bin:$PATH"
+	rbenv init > /dev/null 2>&1
+fi
+
+# https://github.com/pyenv/pyenv
+if [ -d ~/.pyenv/bin ]; then
+	PATH="$HOME/.pyenv/bin:$PATH"
+	pyenv init > /dev/null 2>&1
+fi
+
 # https://github.com/nodenv/nodenv
 if [ -d ~/.nodenv/bin ]; then
 	PATH="$HOME/.nodenv/bin:$PATH"
