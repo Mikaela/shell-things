@@ -94,9 +94,44 @@
     "Containers": {
       "Default": [
         {
-          "color": "red",
+          "color": "white",
           "icon": "fence",
-          "name": "DIY"
+          "name": "Facebook"
+        },
+        {
+          "color": "white",
+          "icon": "chill",
+          "name": "ff"
+        },
+        {
+          "color": "pink",
+          "icon": "briefcase",
+          "name": "Git"
+        },
+        {
+          "color": "orange",
+          "icon": "chill",
+          "name": "Google"
+        },
+        {
+          "color": "blue",
+          "icon": "vacation",
+          "name": "HSL"
+        },
+        {
+          "color": "purple",
+          "icon": "chill",
+          "name": "IM"
+        },
+        {
+          "color": "cyan",
+          "icon": "briefcase",
+          "name": "LinkedIn"
+        },
+        {
+          "color": "green",
+          "icon": "pet",
+          "name": "WhatsApp"
         }
       ]
     },
