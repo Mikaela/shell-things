@@ -268,6 +268,12 @@ export LOCALDOMAIN=.
 # regardless of whether DNSSEC=true or not.
 export RES_OPTIONS="timeout:2 attempts:2 rotate edns0 trust-ad"
 
+# https://github.com/nvm-sh/nvm
+if [ -d ~/.nvm ]; then
+	. ~/.nvm/nvm.sh
+	. ~/.nvm/bash_completition
+fi
+
 # https://github.com/nodenv/nodenv
 if [ -d ~/.nodenv/bin ]; then
 	PATH="$HOME/.nodenv/bin:$PATH"
