@@ -593,7 +593,7 @@ if hash corepack 2>/dev/null; then
 		alias prettier="pnpm exec prettier --cache --ignore-unknown"
 	fi
 else
-	echo "WARNING! corepack is not installed."
+	echo "Information: corepack is not installed."
 fi
 
 # https://pnpm.io/installation#using-a-shorter-alias
