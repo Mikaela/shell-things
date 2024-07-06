@@ -11,7 +11,7 @@
 !.mailmap
 !.mikaela
 !.mikaela_install
-!.node-version
+!.nvmrc
 !.pre-commit-config.yaml
 !.prettierignore
 !.prettierrc
