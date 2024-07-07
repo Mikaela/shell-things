@@ -7,6 +7,14 @@
     "enabled": true
   },
   "mode": "full",
+  "packageRules": [
+    {
+      "automerge": false,
+      "matchPackagePatterns": [
+        "*"
+      ]
+    }
+  ],
   "pre-commit": {
     "enabled": true
   },
