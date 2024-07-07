@@ -14,7 +14,7 @@
 !.nvmrc
 !.pre-commit-config.yaml
 !.prettierignore
-!.prettierrc
+!.prettierrc.json
 !.renovate-shared.json*
 !.reuse
 
