@@ -137,7 +137,7 @@ repos:
         entry: corepack pnpm install -D
         language: system
         always_run: true
-        verbose: true
+        #verbose: true
         pass_filenames: false
       - id: prettier
         name: prettier
