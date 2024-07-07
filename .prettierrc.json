@@ -1,4 +1,6 @@
 {
+  "bracketSameLine": true,
+  "endOfLine": "auto",
   "insertPragma": true,
   "overrides": [
     {
@@ -28,5 +30,7 @@
     "prettier-plugin-toml"
   ],
   "proseWrap": "always",
+  "quoteProps": "consistent",
+  "requirePragma": false,
   "singleAttributePerLine": true
 }
