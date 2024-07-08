@@ -595,10 +595,12 @@
         "Value": 0
       },
       "geo.provider.network.url": {
-        "Comment": "Firefox only sends connected AP that won't work due to _nomap and the server side requires more than one as well. beacondb/beacondb#8",
+        "Comment_beacondb": "Firefox only sends connected AP that won't work due to _nomap and the server side requires more than one as well. beacondb/beacondb#8",
+        "Comment_positon": "https://github.com/microg/GmsCore/issues/2237#issuecomment-2169193229",
         "Status": "clear",
         "Type": "string",
-        "Value": "https://beacondb.net/v1/geolocate"
+        "Value": "https://beacondb.net/v1/geolocate",
+        "Value_positon": "https://api.positon.xyz/?key=74600654-2aec-11ef-aa95-3b7218da6865"
       },
       "image.animation.mode": {
         "Comment": "Preference not allowed for stability reasons. :(",
