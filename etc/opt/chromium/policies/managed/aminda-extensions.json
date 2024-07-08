@@ -168,5 +168,6 @@
       "toolbar_pin": "force_pinned",
       "update_url": "https://clients2.google.com/service/update2/crx"
     }
-  }
+  },
+  "PasswordManagerEnabled": false
 }
