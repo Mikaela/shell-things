@@ -1,2 +1,2 @@
 * text=auto eol=crlf
-*.{md,markdown} text eol=lf
+*.md text eol=lf

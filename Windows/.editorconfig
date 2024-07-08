@@ -2,3 +2,6 @@ root = false
 
 [*]
 end_of_line = crlf
+
+[*.md]
+end_of_line = lf

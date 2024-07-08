@@ -52,6 +52,7 @@ trim_trailing_whitespace = false
 # Prettier seems to believe spaces are the only way to markdown
 indent_style = space
 indent_size = 2
+end_of_line = lf
 
 # Nim https://nim-lang.org/docs/nep1.html#introduction-spacing-and-whitespace-conventions
 [*.nim]
