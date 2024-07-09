@@ -95,13 +95,13 @@
       "Default": [
         {
           "color": "white",
-          "icon": "fence",
-          "name": "Facebook"
-        },
-        {
-          "color": "white",
           "icon": "chill",
           "name": "ff"
+        },
+        {
+          "color": "green",
+          "icon": "tree",
+          "name": "Fedi"
         },
         {
           "color": "pink",
