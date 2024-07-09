@@ -18,8 +18,6 @@
   "pre-commit": {
     "enabled": true
   },
-  "schedule": [
-    "before 6am"
-  ],
+  "schedule": [],
   "timezone": "Europe/Helsinki"
 }
