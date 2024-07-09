@@ -42,6 +42,13 @@ cat conf/firefox-forbidden-policies.js >~/.librewolf/librewolf.overrides.cfg
 #cat conf/librewolf.overrides.cfg >~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg
 cat conf/firefox-forbidden-policies.js >~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg
 
+mkdir -p ~/.mozilla/native-messaging-hosts
+if [ -d /usr/lib64/mozilla/native-messaging-hosts/ ]; then
+	cp -v /usr/lib64/mozilla/native-messaging-hosts/* ~/.mozilla/native-messaging-hosts
+elif [ -d /usr/lib/mozilla/native-messaging-hosts/ ]; then
+	cp -v /usr/lib/mozilla/native-messaging-hosts/ ~/.mozilla/native-messaging-hosts
+fi
+
 mkdir -p ~/.local/share/applications
 ln -nsfv ~/.shell-things/local/share/applications ~/.local/share/applications/shell-things
 mkdir -p ~/.local/share/icons/hicolor/128x128/apps/
