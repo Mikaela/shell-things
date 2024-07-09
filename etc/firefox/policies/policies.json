@@ -175,7 +175,7 @@
       },
       "@testpilot-containers": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/multi-account-container/latest.xpi",
-        "installation_mode": "force_installed"
+        "installation_mode": "normal_installed"
       },
       "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
         "comment": "While this won't sync and requires manually enabling the other one when the policy is missing, it's less confusing for the automatic configuration not existing. Additionally I have some suspicion towards Mozilla Anonym.",
@@ -229,7 +229,7 @@
       },
       "{c607c8df-14a7-4f28-894f-29e8722976af}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/temporary-containers/latest.xpi",
-        "installation_mode": "force_installed"
+        "installation_mode": "normal_installed"
       },
       "{d04b0b40-3dab-4f0b-97a6-04ec3eddbfb0}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ecosia-the-green-search/latest.xpi",
