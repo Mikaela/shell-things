@@ -3,22 +3,32 @@
 # are me and know what you are doing, this is a poor practice I really should
 # stop.
 set -x
+
 git verify-commit HEAD
+
 cat .mikaela/bash_aliases >~/.bash_aliases
 cat .mikaela/zsh_aliases >~/.zsh_aliases
+
 cat rc/xinitrc >~/.xinitrc
+
 mkdir -p ~/.gnupg
 cat .mikaela/gpg.conf >~/.gnupg/gpg.conf
+
 cat .mikaela/pastebinit.xml >~/.pastebinit.xml
+
 cat .mikaela/environment >~/.environment
+
 mkdir ~/.config/git
 #cat .mikaela/gitconfig >~/.config/git/config
 git config --global --add include.path '~/.shell-things/.mikaela/gitconfig'
 cat .gitattributes >~/.config/git/attributes
+
 mkdir -p ~/.ssh
 cat .mikaela/keys/authorized_keys >~/.ssh/authorized_keys
 cat etc/ssh/ssh_config >~/.ssh/config
+
 cat .editorconfig >~/.editorconfig
+
 if [ -d ~/.local/firefox/defaults/pref/ ]; then
 	cat conf/autoconfig.js >~/.local/firefox/defaults/pref/autoconfig.js
 	#cat conf/librewolf.overrides.cfg >~/.local/firefox/librewolf.overrides.cfg
@@ -31,13 +41,18 @@ mkdir -p ~/.librewolf/ ~/.var/app/io.gitlab.librewolf-community/.librewolf/
 cat conf/firefox-forbidden-policies.js >~/.librewolf/librewolf.overrides.cfg
 #cat conf/librewolf.overrides.cfg >~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg
 cat conf/firefox-forbidden-policies.js >~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg
+
 mkdir -p ~/.local/share/applications
 ln -nsfv ~/.shell-things/local/share/applications ~/.local/share/applications/shell-things
 mkdir -p ~/.local/share/icons/hicolor/128x128/apps/
 ln -nsfv ~/.local/firefox/browser/chrome/icons/default/default128.png ~/.local/share/icons/hicolor/128x128/apps/a-firefox.png
+
 if hash update-desktop-database 2>/dev/null; then
 	update-desktop-database ~/.local/share/applications
 fi
+
 touch ~/.MIKAELA_GREP
+
 set +x
+
 # vim : set ft=sh :
