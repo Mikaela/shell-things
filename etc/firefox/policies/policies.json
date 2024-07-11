@@ -84,6 +84,8 @@
         }
       }
     },
+    "AutofillAddressEnabled": false,
+    "AutofillCreditCardEnabled": false,
     "BlockAboutAddons": false,
     "BlockAboutConfig": false,
     "BlockAboutProfiles": false,
@@ -150,7 +152,13 @@
     "DisableEncryptedClientHello": false,
     "DisableFirefoxAccounts": false,
     "DisableFirefoxScreenshots": false,
+    "DisableFirefoxStudies": true,
+    "DisableForgetButton": false,
     "DisablePocket": true,
+    "DisableSecurityBypass": {
+      "InvalidCertificate": true,
+      "SafeBrowsing": false
+    },
     "DisplayBookmarksToolbar": "never",
     "DontCheckDefaultBrowser": true,
     "EnableTrackingProtection": {
@@ -257,6 +265,7 @@
       "StartPage": "previous-session",
       "URL": "about:mozilla"
     },
+    "LegacySameSiteCookieBehaviorEnabled": false,
     "NetworkPrediction": true,
     "NewTabPage": false,
     "OverrideFirstRunPage": "about:mozilla|https://addons.mozilla.org/firefox/addon/noscript/",
@@ -892,6 +901,7 @@
       }
     },
     "PromptForDownloadLocation": true,
+    "RequestedLocales": "fi-FI, fi, en-FI, en-US, en, ru-RU, ru",
     "SearchEngines": {
       "Add": [
         {
@@ -950,6 +960,15 @@
       }
     },
     "ShowHomeButton": true,
-    "StartDownloadsInTempDirectory": true
+    "StartDownloadsInTempDirectory": true,
+    "UserMessaging": {
+      "ExtensionRecommendations": false,
+      "FeatureRecommendations": false,
+      "Locked": false,
+      "MoreFromMozilla": false,
+      "SkipOnboarding": false,
+      "UrlbarInterventions": false
+    },
+    "WindowsSSO": true
   }
 }
