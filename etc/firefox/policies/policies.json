@@ -466,6 +466,11 @@
         "Type": "boolean",
         "Value": true
       },
+      "dom.private-attribution.submission.enabled": {
+        "Status": "locked",
+        "Type": "boolean",
+        "Value": false
+      },
       "dom.security.https_only_mode": {
         "Status": "locked",
         "Type": "boolean",
