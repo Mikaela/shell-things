@@ -267,8 +267,8 @@ PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS;
 
 #####	Aliases						RJ706I	#####
 
-# To get sudo work with aliases.
-alias sudo="\sudo "
+# To get sudo work with aliases. And workaround nvim/tmux crash.
+alias sudo="\sudo --preserve-env=tmux"
 
 # Moving between directories:
 alias ..="cd .."
@@ -436,9 +436,11 @@ alias history="history -i "
 # To have less handle ls colours
 alias less="less -R "
 
-# "su -" with/without sudo
-alias ssu="sudo su -"
-alias suu="su -"
+# "su -" with/without sudo. Conflicts with SailfishOS, to learn to use sui
+# instead.
+alias ssu="sudo -i"
+alias sui="sudo -i"
+#alias suu="su -"
 
 # Who command which I use with Conky
 alias cwho="who -H -w -u"
