@@ -3,50 +3,29 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.ci for more information
 ci:
-  # Attempts to use networking and fails at name resolution, local hook
-  # skip: [bundler-audit, pylint, latexmk, exiftool]
   skip: [install-dev-deps, prettier]
   # Forĝejo/Gitea mirrors will autoclose pull requests. This should decrease
   # the frequency of unnecessary PRs.
   # https://github.com/pre-commit-ci/issues/issues/83
   autoupdate_schedule: quarterly
 
-# Override hook language versions from system defaults
-default_language_version:
-  python: pypy3
-
 repos:
-  # The repo from `pre-commit sample-config`
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
     hooks:
-      # `pre-commit sample-config` puts these four on top:
-      # trailing-whitespace, end-of-file-fixer, check-yaml,
-      # check-added-large-files
       - id: trailing-whitespace
-        # Markdown allows double trailing space for forced line change. The
-        # hook appears to remove single ones.
         args: ["--markdown-linebreak-ext", "md,markdown"]
-        # Let's not touch LICENSE files or reuse.software directory. Or if we
-        # do, that is a good example case anyway to keep as a comment?
-        #exclude: ^LICENSES\/.*|LICENSE$
-        # Other file extensions where trailing whitespace may be intentional
-        # and lack of it break things. Use identify-cli for figuring out more
-        # types to add.
         exclude_types: [svg, tsv]
         #- id: end-of-file-fixer
       - id: check-yaml
       - id: check-added-large-files
-      # These are not from `pre-commit sample-config`
       - id: check-case-conflict
-      #- id: check-docstring-first
       - id: check-executables-have-shebangs
       - id: check-json
       - id: check-merge-conflict
       - id: check-shebang-scripts-are-executable
       - id: check-toml
       - id: check-xml
-        #- id: debug-statements
       - id: destroyed-symlinks
       - id: detect-private-key
       - id: fix-byte-order-marker
@@ -57,19 +36,6 @@ repos:
           # Remember also: --no-sort-keys
           # ASCII excludes the älphäbet amongst others
           [--autofix, --no-ensure-ascii]
-        #- id: requirements-txt-fixer
-
-  # Synchronize dependencies between this file and package managers
-  - repo: https://github.com/pre-commit/sync-pre-commit-deps
-    rev: v0.0.1
-    hooks:
-      - id: sync-pre-commit-deps
-
-  # Checks the ci: section on top of the file
-  - repo: https://github.com/pre-commit-ci/pre-commit-ci-config
-    rev: v1.6.1
-    hooks:
-      - id: check-pre-commit-ci-config
 
   # Markdown Table of Contents generation.
   - repo: https://github.com/thlorenz/doctoc
@@ -79,56 +45,23 @@ repos:
         # https://github.com/Mikaela/gist/blob/master/doctoc.txt
         args: [--update-only, --notitle]
 
-  # Python type checking
-  # - repo: https://github.com/pre-commit/mirrors-mypy
-  #   rev: "v1.6.0"
-  #   hooks:
-  #     - id: mypy
-  #       args: [--install-types, --non-interactive]
-
-  # - repo: https://github.com/asottile/pyupgrade
-  #   rev: v3.15.0
-  #   hooks:
-  #     - id: pyupgrade
-  #       args: [--py311-plus]
-
-  # - repo: https://github.com/asottile/reorder-python-imports
-  #   rev: v3.12.0
-  #   hooks:
-  #     - id: reorder-python-imports
-  #       args: [--py311-plus]
-
-  # - repo: https://github.com/asottile/add-trailing-comma
-  #   rev: v3.1.0
-  #   hooks:
-  #     - id: add-trailing-comma
-
   # GitHub Actions etc. configuration validity checking
-  #- repo: https://github.com/python-jsonschema/check-jsonschema
-  #rev: 0.27.0
-  #hooks:
-  #- id: check-dependabot
-  #- id: check-github-actions
-  #- id: check-github-workflows
-  #- id: check-gitlab-ci
-
-  # - repo: https://github.com/jumanjihouse/pre-commit-hooks
-  #   rev: 3.0.0
-  #   hooks:
-  #     - id: bundler-audit
-  # https://github.com/jumanjihouse/pre-commit-hooks/issues/111
-  #- id: check-mailmap
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.29.0
+    hooks:
+      #- id: check-jsonschema
+      - id: check-dependabot
+      - id: check-github-actions
+      - id: check-github-workflows
+      - id: check-gitlab-ci
+      - id: check-renovate
+        additional_dependencies: ["pyjson5"]
 
   # Easierish licensing when attempting reuse compliancy
   - repo: https://github.com/fsfe/reuse-tool
     rev: v4.0.3
     hooks:
       - id: reuse
-
-  # Code formatters and especially editorconfig should probaly be last to
-  # ensure nothing breaks the rules.
-
-  # prettier, opinionated code formatter
 
   - repo: local
     hooks:
@@ -145,21 +78,6 @@ repos:
         language: system
         exclude_types: [json]
 
-  # Black, opinionated Python code formatter
-  # - repo: https://github.com/psf/black
-  #   rev: 23.9.1
-  #   hooks:
-  #     - id: black
-  #       args: ["--line-length", "79", "--target-version", "py311"]
-  #- id: black-jupyter
-
-  # Shell code formatter, requires Go
-  # - repo: https://github.com/scop/pre-commit-shfmt
-  #   rev: v3.8.0-1
-  #   hooks:
-  #     - id: shfmt
-  #- id: shfmt-docker
-
   # .editorconfig validity checking
   - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
     rev: "2.7.3"
@@ -168,31 +86,3 @@ repos:
         alias: ec
         # I don't actually care about line lengths as more than a guideline
         args: [-disable-max-line-length]
-
-  # # Python linter
-  # - repo: local
-  #   hooks:
-  #     - id: pylint
-  #       name: pylint
-  #       # Use as many jobs as CPU cores, disable TODO warnings
-  #       entry: pylint -j 0 -d W0511
-  #       language: system
-  #       types_or: [python, pyi]
-
-  # # Checking that LaTeX compiles
-  # - repo: local
-  #   hooks:
-  #     - id: latexmk
-  #       name: latexmk
-  #       entry: latexmk -quiet
-  #       language: system
-  #       types: [text, tex]
-
-  # Fedora: perl-Image-ExifTool
-  # - repo: local
-  #   hooks:
-  #     - id: exiftool
-  #       name: Remove all EXIF metadata using exiftool
-  #       entry: exiftool -all=
-  #       language: system
-  #       types: [image]
