@@ -11,6 +11,7 @@ ExecStart=-/usr/bin/systemctl restart yggdrasil.service
 # If they somehow managed to not start already
 ExecStart=-/usr/bin/systemctl enable --now unbound.service
 ExecStart=-/usr/bin/systemctl enable --now systemd-resolved.service
+ExecStart=-/usr/sbin/tlp setcharge
 User=root
 StandardOutput=journal
 StandardError=journal
