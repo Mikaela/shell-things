@@ -65,18 +65,10 @@ repos:
 
   - repo: local
     hooks:
-      - id: install-dev-deps
-        name: Install pnpm dev dependencies
-        entry: corepack pnpm install -D
-        language: system
-        always_run: true
-        #verbose: true
-        pass_filenames: false
       - id: prettier
         name: prettier
-        entry: corepack pnpm exec prettier --cache --ignore-unknown --write
+        entry: corepack pnpx prettier --cache --ignore-unknown --write
         language: system
-        exclude_types: [json]
 
   # .editorconfig validity checking
   - repo: https://github.com/editorconfig-checker/editorconfig-checker.python

@@ -9,26 +9,17 @@ settings:
 importers:
   .:
     devDependencies:
-      "@prettier/plugin-ruby":
-        specifier: 4.0.4
-        version: 4.0.4(prettier@3.3.2)
-      "@prettier/plugin-xml":
-        specifier: 3.4.1
-        version: 3.4.1(prettier@3.3.2)
-      prettier:
-        specifier: 3.3.2
-        version: 3.3.2
-      prettier-plugin-nginx:
-        specifier: 1.0.3
-        version: 1.0.3
-      prettier-plugin-sh:
-        specifier: 0.14.0
-        version: 0.14.0(prettier@3.3.2)
-      prettier-plugin-toml:
-        specifier: 2.0.1
-        version: 2.0.1(prettier@3.3.2)
+      "@aminda/global-prettier-config":
+        specifier: ^2024.28.3
+        version: 2024.28.3
 
 packages:
+  "@aminda/global-prettier-config@2024.28.3":
+    resolution:
+      {
+        integrity: sha512-hb0F/AEbeuA8TM5Z7VJBbFhc5zHMXUZfVZ+QbfTt2V1kD/zKFYf8Tl99se1ZaIegxSDdfhdMpQO75+CRy5eqhA==,
+      }
+
   "@prettier/plugin-ruby@4.0.4":
     resolution:
       {
@@ -99,10 +90,10 @@ packages:
     peerDependencies:
       prettier: ^3.0.3
 
-  prettier@3.3.2:
+  prettier@3.3.3:
     resolution:
       {
-        integrity: sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==,
+        integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==,
       }
     engines: { node: ">=14" }
     hasBin: true
@@ -127,14 +118,23 @@ packages:
       }
 
 snapshots:
-  "@prettier/plugin-ruby@4.0.4(prettier@3.3.2)":
+  "@aminda/global-prettier-config@2024.28.3":
     dependencies:
-      prettier: 3.3.2
+      "@prettier/plugin-ruby": 4.0.4(prettier@3.3.3)
+      "@prettier/plugin-xml": 3.4.1(prettier@3.3.3)
+      prettier: 3.3.3
+      prettier-plugin-nginx: 1.0.3
+      prettier-plugin-sh: 0.14.0(prettier@3.3.3)
+      prettier-plugin-toml: 2.0.1(prettier@3.3.3)
 
-  "@prettier/plugin-xml@3.4.1(prettier@3.3.2)":
+  "@prettier/plugin-ruby@4.0.4(prettier@3.3.3)":
+    dependencies:
+      prettier: 3.3.3
+
+  "@prettier/plugin-xml@3.4.1(prettier@3.3.3)":
     dependencies:
       "@xml-tools/parser": 1.0.11
-      prettier: 3.3.2
+      prettier: 3.3.3
 
   "@taplo/core@0.1.1": {}
 
@@ -154,18 +154,18 @@ snapshots:
 
   prettier-plugin-nginx@1.0.3: {}
 
-  prettier-plugin-sh@0.14.0(prettier@3.3.2):
+  prettier-plugin-sh@0.14.0(prettier@3.3.3):
     dependencies:
       mvdan-sh: 0.10.1
-      prettier: 3.3.2
+      prettier: 3.3.3
       sh-syntax: 0.4.2
 
-  prettier-plugin-toml@2.0.1(prettier@3.3.2):
+  prettier-plugin-toml@2.0.1(prettier@3.3.3):
     dependencies:
       "@taplo/lib": 0.4.0-alpha.2
-      prettier: 3.3.2
+      prettier: 3.3.3
 
-  prettier@3.3.2: {}
+  prettier@3.3.3: {}
 
   regexp-to-ast@0.5.0: {}
 
