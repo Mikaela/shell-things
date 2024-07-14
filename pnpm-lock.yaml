@@ -1,5 +1,3 @@
-# @format
-
 lockfileVersion: "9.0"
 
 settings:
@@ -10,14 +8,14 @@ importers:
   .:
     devDependencies:
       "@aminda/global-prettier-config":
-        specifier: ^2024.28.3
-        version: 2024.28.3
+        specifier: 2024.28.4
+        version: 2024.28.4
 
 packages:
-  "@aminda/global-prettier-config@2024.28.3":
+  "@aminda/global-prettier-config@2024.28.4":
     resolution:
       {
-        integrity: sha512-hb0F/AEbeuA8TM5Z7VJBbFhc5zHMXUZfVZ+QbfTt2V1kD/zKFYf8Tl99se1ZaIegxSDdfhdMpQO75+CRy5eqhA==,
+        integrity: sha512-VjyTd8fFRnLgZRAMDRr9pm5hknnsVxpTCshvvE7RAiuH72hUzC82rm5vXDJjrhkedWJir2qZjmiC5Vo2LoR4tw==,
       }
 
   "@prettier/plugin-ruby@4.0.4":
@@ -118,7 +116,7 @@ packages:
       }
 
 snapshots:
-  "@aminda/global-prettier-config@2024.28.3":
+  "@aminda/global-prettier-config@2024.28.4":
     dependencies:
       "@prettier/plugin-ruby": 4.0.4(prettier@3.3.3)
       "@prettier/plugin-xml": 3.4.1(prettier@3.3.3)
