@@ -133,6 +133,10 @@
       "toolbar_pin": "force_pinned",
       "update_url": "https://clients2.google.com/service/update2/crx"
     },
+    "gphhapmejobijbbhgpjhcjognlahblep": {
+      "blocked_install_message": "Tämä on KDE-talous, jossa kukaan ei tietääkseni käytä GNOMEa. Tämä lisäosa KDEn vastaavasta poiketen on riippuvainen GNOMEsta.",
+      "installation_mode": "blocked"
+    },
     "hojggiaghnldpcknpbciehjcaoafceil": {
       "installation_mode": "normal_installed",
       "override_update_url": true,
