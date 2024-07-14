@@ -612,7 +612,7 @@ if hash corepack 2> /dev/null; then
 	alias npm="corepack npm"
 	alias npx="corepack npx"
 	if ! hash prettier 2> /dev/null; then
-		alias prettier="pnpm exec prettier --cache --ignore-unknown"
+		alias prettier="pnpx prettier --cache --ignore-unknown"
 	fi
 else
 	echo "Information: corepack is not installed."
