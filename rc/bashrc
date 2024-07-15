@@ -444,8 +444,11 @@ alias less="less -R "
 
 # "su -" with/without sudo. Conflicts with SailfishOS, to learn to use sui
 # instead.
-alias ssu="sudo -i"
+if ! hash ssu 2> /dev/null; then
+	alias ssu="echo 'No.'"
+fi
 alias sui="sudo -i"
+alias sudoi="sudo -i"
 #alias suu="su -"
 
 # systemd runlevels/targets
