@@ -958,7 +958,7 @@
       ],
       "Default": "Ecosia"
     },
-    "SearchSuggestEnabled": false,
+    "SearchSuggestEnabled": true,
     "SecurityDevices": {
       "Add": {
         "Fujitsu mPollux DigiSignApplication": "/usr/lib64/libcryptoki.so"
