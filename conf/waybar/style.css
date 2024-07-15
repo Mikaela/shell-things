@@ -7,7 +7,7 @@
 * {
 	border: none;
 	border-radius: 0;
-	font-family: "Liberation Mono", "Noto Sans Mono", monospace;
+	font-family: Terminus, "Liberation Mono", "Noto Sans Mono", monospace;
 	font-size: 10px;
 	min-height: 0;
 }

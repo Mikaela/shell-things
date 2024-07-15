@@ -33,7 +33,8 @@ set $TEXTEDITOR kate
 # Font
 #font pango:Noto Sans Mono Regular 10
 #font pango:Comic Shanns Mono-Regular 10
-font pango:Liberation Mono 10
+#font pango:Liberation Mono 10
+font pango:Terminus 10
 
 ### Output configuration
 #
