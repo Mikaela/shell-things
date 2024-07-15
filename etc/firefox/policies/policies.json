@@ -58,6 +58,7 @@
               "https://raw.githubusercontent.com/jjjxu/NSO_Pegasus_Blocklist/master/Pegasus-Hosts-Formatted.txt",
               "https://dl.red.flag.domains/adguard/red.flag.domains.txt",
               "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/malware/domains",
+              "https://big.oisd.nl",
               "curben-phishing",
               "ublock-filters",
               "easylist",
@@ -213,7 +214,7 @@
       },
       "uBlock0@raymondhill.net": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
-        "installation_mode": "normal_installed"
+        "installation_mode": "force_installed"
       },
       "{3c078156-979c-498b-8990-85f7987dd929}": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/sidebery/latest.xpi",

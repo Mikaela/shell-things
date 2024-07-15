@@ -33,6 +33,7 @@
             "https://raw.githubusercontent.com/jjjxu/NSO_Pegasus_Blocklist/master/Pegasus-Hosts-Formatted.txt",
             "https://dl.red.flag.domains/adguard/red.flag.domains.txt",
             "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/malware/domains",
+            "https://big.oisd.nl",
             "curben-phishing",
             "ublock-filters",
             "easylist",
@@ -122,7 +123,7 @@
       "update_url": "https://clients2.google.com/service/update2/crx"
     },
     "cjpalhdlnbpafiamejdnhcphjbkeiagm": {
-      "installation_mode": "normal_installed",
+      "installation_mode": "force_installed",
       "override_update_url": true,
       "toolbar_pin": "force_pinned",
       "update_url": "https://clients2.google.com/service/update2/crx"
