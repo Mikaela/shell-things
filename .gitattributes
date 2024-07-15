@@ -1,80 +1,42 @@
-# If file is text, use lf line-endings and let forges show it in repo
-# languages. For more information: `man gitattributes`
 * text=auto eol=lf linguist-detectable
+# doctoc doesn't support other line endings
+*.md diff=markdown eol=lf
+*.markdown diff=markdown eol=lf
 
-# Suggestions for inevitably encountering .gitattributeless repositories when
-# .gitattributes cannot be added:
-# git config --global core.autocrlf input
-#   - `*	text=auto` when there is no `.gitattributes`. In other words,
-#     commit eol=lf, check-out as it is.
-# git config --global core.safecrlf warn
-#   - Warn if EOL change is irreversible.
-# git config --global merge.renormalize true
-#   - Avoid merge-conflict when merging from .gitattributeless branch to
-#     .gitattributed branch
-
-# This is the default "binary" macro attribute, but with diffing allowed.
-# Use when file contains diffable text, but isn't actually plaintext and thus
-# shouldn't have EOL conversion done.
+# Set for not-normalized/unmergeable diffable
+# files
 [attr]binaryd diff -merge -text
-# Example:
-#*.db	binaryd
 
-# Built-in diff patterns (disabled by default). The attribute `diff` implies
-# `text` and the above attributes are inherited.
-# https://www.git-scm.com/docs/gitattributes#_defining_a_custom_hunk_header
-# TODO
-#	diff=matlab
-#	diff=pascal
-*.{adb,ads} diff=ada
+# Windows
+*.reg text eol=crlf
+*.bat text eol=crlf
+*.ahk text eol=crlf
+
+# Files I want to exclude from language detection
+package.json text linguist-vendored
+pnpm-lock.yaml text linguist-vendored
+
+# `man gitattributes`, "Defining a custom hunk-header"
+# mainly here for being template
 *.bibtex diff=bibtex
 *.cs diff=csharp
-*.{c,cpp} diff=cpp
+*.c diff=cpp
+*.cpp diff=cpp
 *.css diff=css
 *.dts diff=dts
-*.{ex,exs} diff=elixir
-*.{f90,f,for} diff=fortran
-*.fountain diff=fountain
+*.ex diff=elixir
+*.exs diff=elixir
 *.go diff=golang
 *.html diff=html
 *.java diff=java
-*.{kt,kts} diff=kotlin
-*.{h,m,mm,M} diff=objc
+*.kt diff=kotlin
+*.kts diff=kotlin
 *.pl diff=perl
 *.php diff=php
 *.py diff=python
 *.rb diff=ruby
-*.{rs,rlib} diff=rust
-*.{scm,ss} diff=scheme
+*.rs diff=rust
+*.rlib diff=rust
+*.scm diff=scheme
+*.ss diff=scheme
 *.tex diff=tex
-
-# bash & co aren't often Windows, so alway have lf line-endings regarldess
-# of the above. Markdown is also included as I utilise doctoc, which
-# requires lf line-endings.
-*.{sh,bash,zsh} diff=bash eol=lf
-*.{md,markdown,[mM][dD],[mM][aA][rR][kK][dD][oO][wW][nN]} diff=markdown eol=lf
-
-# While this file is like .gitignore, negative patterns are forbidden and
-# directory/ wouldn't recurse, thus directory/**. Also !attribute would set
-# it back to unset.
-# In this case Windows/** may also contain binary files, thus auto-detection
-# is repeated and eol=crlf as it's unlikely to be of use outside of Windows.
-Windows/** text=auto eol=crlf
-
-# Similarly these files are unlikely to be encountered outside of Windows.
-# The "text" attribute is used as otherwise they rely on auto-detection of
-# textness since there is no diff attribute set.
-# Ref: https://rehansaeed.com/gitattributes-best-practices/#line-endings
-*.{reg,[rR][eE][gG]} text eol=crlf
-*.{bat,[bB][aA][tT]} text eol=crlf
-*.{ahk,[aA][hH][kK]} text eol=crlf
-
-# These files are scary, let's not touch them. The attribute "lockable" is
-# provided by git-lfs. https://github.com/git-lfs/git-lfs/wiki/File-Locking
-LICENSE text lockable
-CITATION.cff text lockable
-
-# NOTE! .gitattributes doesn't support the case-insensitive style above!
-
-package.json text linguist-vendored
-pnpm-lock.yaml text linguist-vendored
