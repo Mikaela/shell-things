@@ -661,7 +661,7 @@
       },
       "layout.css.prefers-color-scheme.content-override": {
         "Comment": "Dark theme by default, disabling allowed",
-        "Status": "default",
+        "Status": "clear",
         "Type": "number",
         "Value": 0
       },
@@ -910,7 +910,7 @@
       },
       "ui.systemUsesDarkTheme": {
         "Comment": "Another defaulting to dark theme.",
-        "Status": "default",
+        "Status": "clear",
         "Type": "number",
         "Value": 1
       }
