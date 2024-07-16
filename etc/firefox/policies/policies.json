@@ -308,6 +308,16 @@
         "Type": "boolean",
         "Value": false
       },
+      "browser.cache.disk.enable": {
+        "Status": "default",
+        "Type": "boolean",
+        "Value": false
+      },
+      "browser.cache.memory.enable": {
+        "Status": "default",
+        "Type": "boolean",
+        "Value": true
+      },
       "browser.contentblocking.category": {
         "Comment": "The best option would be strict, but amongst other things that disables system font visibility and may cause accessibility issues for me. There is also other content blocking already such as PrivacyBadger and uBlock Origin.",
         "Status": "locked",
