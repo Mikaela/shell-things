@@ -261,6 +261,16 @@ if [ -d ~/.nodenv/bin ]; then
 	# git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
 fi
 
+# https://github.com/go-nv/goenv
+if [ -d ~/.goenv/bin ]; then
+	export GOENV_ROOT="$HOME/.goenv"
+	PATH="$HOME/.goenv/bin:$PATH"
+	#goenv init > /dev/null 2>&1
+	eval "$(goenv init -)"
+	PATH="$GOROOT/bin:$PATH"
+	PATH="$PATH:$GOPATH/bin"
+fi
+
 # Removes duplicates from $PATH. Copied from https://unix.stackexchange.com/a/14896
 PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS; printf $a[$1]}')
 
