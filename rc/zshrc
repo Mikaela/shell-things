@@ -225,6 +225,16 @@ export LOCALDOMAIN=.
 # regardless of whether DNSSEC=true or not.
 export RES_OPTIONS="timeout:2 attempts:2 rotate edns0 trust-ad"
 
+# https://github.com/go-nv/goenv
+if [ -d ~/.goenv/bin ]; then
+	export GOENV_ROOT="$HOME/.goenv"
+	PATH="$HOME/.goenv/bin:$PATH"
+	#goenv init > /dev/null 2>&1
+	eval "$(goenv init -)"
+	PATH="$GOROOT/bin:$PATH"
+	PATH="$PATH:$GOPATH/bin"
+fi
+
 # https://github.com/nvm-sh/nvm
 if [ -d ~/.nvm ]; then
 	. ~/.nvm/nvm.sh
@@ -259,16 +269,6 @@ if [ -d ~/.nodenv/bin ]; then
 	eval "$(nodenv init - zsh)"
 	# Remember! And verify it before running!
 	# git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
-fi
-
-# https://github.com/go-nv/goenv
-if [ -d ~/.goenv/bin ]; then
-	export GOENV_ROOT="$HOME/.goenv"
-	PATH="$HOME/.goenv/bin:$PATH"
-	#goenv init > /dev/null 2>&1
-	eval "$(goenv init -)"
-	PATH="$GOROOT/bin:$PATH"
-	PATH="$PATH:$GOPATH/bin"
 fi
 
 # Removes duplicates from $PATH. Copied from https://unix.stackexchange.com/a/14896
