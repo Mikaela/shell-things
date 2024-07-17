@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+# Kotka
+Exec=wlsunset -l 60.4 -L 26.9 -t 1000
+# Helsinki
+#Exec=wlsunset -l 60.1 -L 29.6 -t 1000
+Name=wlsunset
+Icon=wlsunset
