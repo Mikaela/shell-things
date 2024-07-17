@@ -1,4 +1,4 @@
-#export QT_QPA_PLATFORMTHEME="kde"
+export QT_QPA_PLATFORMTHEME="kde"
 export GDK_BACKEND=wayland
 export QT_QPA_PLATFORM=wayland
 export CLUTTER_BACKEND=wayland
