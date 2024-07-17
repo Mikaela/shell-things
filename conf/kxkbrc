@@ -1,0 +1,7 @@
+[Layout]
+LayoutList=fi,se,epo,us,ru
+Model=pc105
+Options=grp:alt_shift_toggle,shift:both_capslock,caps:backspace,nbsp:none,terminate:ctrl_alt_bksp,compose:menu,esperanto:qwerty
+ResetOldOptions=true
+Use=true
+VariantList=,,,altgr-intl,phonetic_winkeys
