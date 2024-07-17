@@ -1,0 +1,10 @@
+# ~/.config/darkman/config.yaml
+# Kotka
+lat: 60.4
+lng: 26.9
+# Helsinki
+#lat: 60.1
+#lng: 24.8
+usegeoclue: true
+dbusserver: true
+portal: true
