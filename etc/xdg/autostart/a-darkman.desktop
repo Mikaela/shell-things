@@ -1,8 +1,5 @@
 [Desktop Entry]
 Type=Application
-# Helsinki
-#Exec=env DARKMAN_LAT=60.1 DARKMAN_LNG=24.8 darkman run
-# Kotka
-Exec=env DARKMAN_LAT=60.4 DARKMAN_LNG=26.9 darkman run
+Exec=darkman run
 Name=darkman
 Icon=darkman
