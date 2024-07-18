@@ -626,6 +626,18 @@
         "Value": "https://beacondb.net/v1/geolocate",
         "Value_positon": "https://api.positon.xyz/?key=74600654-2aec-11ef-aa95-3b7218da6865"
       },
+      "geo.provider.use_geoclue": {
+        "Comment": "Helpful especially with /etc/geolocation",
+        "Status": "default",
+        "Type": "boolean",
+        "Value": true
+      },
+      "geo.provider.use_gpsd": {
+        "Comment": "I am trying to see if gpsd will speak to other apps too.",
+        "Status": "default",
+        "Type": "boolean",
+        "Value": true
+      },
       "image.animation.mode": {
         "Comment": "Preference not allowed for stability reasons. :(",
         "Status": "default",
