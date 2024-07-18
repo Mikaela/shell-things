@@ -1,0 +1,19 @@
+# Geoclue static location (man geoclue)
+# Remember https://wiki.openstreetmap.org/wiki/Precision_of_coordinates
+# and https://m.xkcd.com/2170/ !
+
+# Kotka
+60.45	# Latitude (positive values mean north, negative south)
+26.94	# Longitude (positive values mean east, negative west)
+0		# Altitude
+2000	# Accuracy radius in metres
+
+# Lauttasaari
+#60.16	#Latitude (positive values mean north, negative south)
+#24.87	# Longitude (positive values mean east, negative west)
+#0		# Altitude
+#2000	# Accuracy radius in metres
+
+# For extra security:
+# sudo chown geoclue /etc/geolocation
+# sudo chmod 600 /etc/geolocation
