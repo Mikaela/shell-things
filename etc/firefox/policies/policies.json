@@ -619,24 +619,26 @@
         "Value": 0
       },
       "geo.provider.network.url": {
+        "Comment": "See geoclue below.",
         "Comment_beacondb": "Firefox only sends connected AP that won't work due to _nomap and the server side requires more than one as well. beacondb/beacondb#8",
         "Comment_positon": "https://github.com/microg/GmsCore/issues/2237#issuecomment-2169193229",
-        "Status": "clear",
+        "Status": "locked",
         "Type": "string",
-        "Value": "https://beacondb.net/v1/geolocate",
+        "Value": "",
+        "Value_beacondb": "https://beacondb.net/v1/geolocate",
         "Value_positon": "https://api.positon.xyz/?key=74600654-2aec-11ef-aa95-3b7218da6865"
       },
       "geo.provider.use_geoclue": {
-        "Comment": "Helpful especially with /etc/geolocation",
-        "Status": "default",
+        "Comment": "/etc/geolocation, gpsd and global WPS configuration.",
+        "Status": "locked",
         "Type": "boolean",
         "Value": true
       },
       "geo.provider.use_gpsd": {
-        "Comment": "I am trying to see if gpsd will speak to other apps too.",
-        "Status": "default",
+        "Comment": "My geoclue should be using gpsd already.",
+        "Status": "locked",
         "Type": "boolean",
-        "Value": true
+        "Value": false
       },
       "image.animation.mode": {
         "Comment": "Preference not allowed for stability reasons. :(",
