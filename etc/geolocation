@@ -2,6 +2,8 @@
 # Remember https://wiki.openstreetmap.org/wiki/Precision_of_coordinates
 # and https://m.xkcd.com/2170/ !
 
+# Finland: 4 decimal points with radius of 20 metres circles buildings.
+
 # Kotka
 60.45	# Latitude (positive values mean north, negative south)
 26.94	# Longitude (positive values mean east, negative west)
@@ -15,5 +17,4 @@
 #2000	# Accuracy radius in metres
 
 # For extra security:
-# sudo chown geoclue /etc/geolocation
-# sudo chmod 600 /etc/geolocation
+# sudo chown geoclue:geoclue /etc/geolocation;sudo chmod 600 /etc/geolocation
