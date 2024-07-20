@@ -6,6 +6,7 @@
 (notify-send --app-name="darkman" --urgency=low --icon=moon-phase-full "Moonlights" &)
 
 # GTK Theme
+(gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark' &)
 (gsettings set org.gnome.desktop.interface gtk-theme Breeze-Dark &)
 (dbus-send --session --dest=org.kde.GtkConfig --type=method_call /GtkConfig org.kde.GtkConfig.setGtkTheme "string:Breeze" &)
 
