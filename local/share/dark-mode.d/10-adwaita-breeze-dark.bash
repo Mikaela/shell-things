@@ -2,9 +2,6 @@
 
 # This is all adapted from /usr/share/doc/darkman/examples/dark-mode.d/
 
-# Notify of light theme switch
-(notify-send --app-name="darkman" --urgency=low --icon=moon-phase-full "Moonlights" &)
-
 # GTK Theme
 (gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark' &)
 (gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark &)

@@ -11,3 +11,5 @@ export DISTROREL=$(lsb_release -sr)
 export DARKMANGET=$(darkman get)
 
 printf "Distribution: $DISTROID\nRelease: $DISTROREL\nMode: $DARKMANGET\n"
+
+(notify-send --app-name="darkman" --urgency=low --icon=darkman "Teema: $DARKMANGET" &)

@@ -2,9 +2,6 @@
 
 # This is all adapted from /usr/share/doc/darkman/examples/light-mode.d/
 
-# Notify of light theme switch
-(notify-send --app-name="darkman" --urgency=low --icon=weather-clear "Let there be light" &)
-
 # GTK Theme
 (gsettings set org.gnome.desktop.interface color-scheme 'prefer-light' &)
 (gsettings set org.gnome.desktop.interface gtk-theme Breeze &)
