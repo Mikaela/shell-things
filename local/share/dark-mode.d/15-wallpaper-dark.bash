@@ -10,7 +10,9 @@ fi
 export DISTROID=$(lsb_release -si)
 export DISTROREL=$(lsb_release -sr)
 
-if [ "$DISTROID" == "Fedora" ]; then
+if [ -f ~/.wallpaper.dark ]; then
+	export WALLPAPER_PATH="$HOME/.wallpaper.dark"
+elif [ "$DISTROID" == "Fedora" ]; then
 	export WALLPAPER_PATH="/usr/share/wallpapers/F$DISTROREL/contents/images_dark/3840x2160.png"
 fi
 
