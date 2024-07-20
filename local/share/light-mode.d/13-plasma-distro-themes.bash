@@ -4,4 +4,6 @@
 
 if [[ "$DISTROID" == "Kali" ]]; then
 	lookandfeeltool --apply "Kali-Purple-Light"
+elif [[ "$DISTROID" == "Fedora" ]]; then
+	lookandfeeltool --apply "org.fedoraproject.fedora.desktop"
 fi
