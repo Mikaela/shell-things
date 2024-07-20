@@ -8,4 +8,6 @@ fi
 export DISTROID=$(lsb_release -si)
 export DISTROREL=$(lsb_release -sr)
 
-echo "$DISTROID $DISTROREL"
+export DARKMANGET=$(darkman get)
+
+printf "Distribution: $DISTROID\nRelease: $DISTROREL\nMode: $DARKMANGET\n"
