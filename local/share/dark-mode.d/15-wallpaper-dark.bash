@@ -1,14 +1,6 @@
 #!/usr/bin/env bash
 
-if ! hash lsb_release 2> /dev/null; then
-	ERRORMESSAGE="lsb_release was not found, the wallpaper scripts cannot figure out the distribution"
-	echo $ERRORMESSAGE
-	notify-send $ERRORMESSAGE
-	exit 1
-fi
-
-export DISTROID=$(lsb_release -si)
-export DISTROREL=$(lsb_release -sr)
+. 00-do-not-repeat-yourself.sh
 
 if [ -f ~/.wallpaper.dark ]; then
 	export WALLPAPER_PATH="$HOME/.wallpaper.dark"

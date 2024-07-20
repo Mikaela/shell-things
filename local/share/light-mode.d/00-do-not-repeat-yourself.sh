@@ -1,0 +1,1 @@
+../dark-mode.d/00-do-not-repeat-yourself.sh
