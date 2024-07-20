@@ -7,3 +7,5 @@ fi
 
 export DISTROID=$(lsb_release -si)
 export DISTROREL=$(lsb_release -sr)
+
+echo "$DISTROID $DISTROREL"
