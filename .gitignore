@@ -20,6 +20,9 @@
 # Certificates (unlikely to happen, but better safe than sorry)
 *.pem
 
+# I tend to have files with that name around on occassion
+*.gitignore.*
+
 # Symlinks
 install.run
 LICENSE
