@@ -1,6 +1,7 @@
 # European/standardizedish English for root
 if [[ "$(id -u)" == "0" ]]; then
 	unset LC_ALL
+	unset LANGUAGE
 	export LANG="en_DK.UTF-8"
 	export LC_CTYPE="en_DK.UTF-8"
 	export LC_NUMERIC="en_DK.UTF-8"
