@@ -675,6 +675,12 @@ fi
 # installations.
 alias shizuku="adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh"
 
+# journalctl commands I often seem to type by hand
+alias journalf="journalctl --no-hostname --follow"
+alias journalfu="journalctl --utc --no-hostname --follow"
+alias journalb="journalctl --no-hostname --boot"
+alias journalbu="journalctl --utc --no-hostname --boot"
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
