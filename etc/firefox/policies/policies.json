@@ -664,7 +664,7 @@
         "Value": true
       },
       "layout.css.devPixelsPerPx": {
-        "Status": "default",
+        "Status": "clear",
         "Type": "string",
         "Value": "1.5"
       },
@@ -927,6 +927,14 @@
         "Status": "clear",
         "Type": "number",
         "Value": 1
+      },
+      "ui.textScaleFactor": {
+        "Status": "default",
+        "Type": "number",
+        "Value": 90
+      },
+      "widget.wayland.fractional-scale.enabled": {
+        "Status": "clear"
       }
     },
     "PromptForDownloadLocation": true,
