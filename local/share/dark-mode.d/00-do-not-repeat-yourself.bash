@@ -24,9 +24,9 @@ export DARKMANGET="$(darkman get)"
 printf "Distribution: $DISTROID\nRelease: $DISTROREL\nMode: $DARKMANGET\n"
 
 if [[ "$DARKMANGET" -eq "dark" ]]; then
-	(notify-send --app-name="darkman" --urgency=low --icon=weather-clear-night "Teema: $DARKMANGET" &)
+	notify-send --app-name="darkman" --urgency=low --icon=weather-clear-night "Teema: $DARKMANGET"
 elif [[ "$DARKMANGET" -eq "light" ]]; then
-	(notify-send --app-name="darkman" --urgency=low --icon=weather-clear "Teema: $DARKMANGET" &)
+	notify-send --app-name="darkman" --urgency=low --icon=weather-clear "Teema: $DARKMANGET"
 else
 	ERRORMESSAGE="Something went wrong?"
 	echo "$ERRORMESSAGE"
