@@ -309,12 +309,12 @@
         "Value": false
       },
       "browser.cache.disk.enable": {
-        "Status": "default",
+        "Status": "user",
         "Type": "boolean",
         "Value": false
       },
       "browser.cache.memory.enable": {
-        "Status": "default",
+        "Status": "user",
         "Type": "boolean",
         "Value": true
       },
