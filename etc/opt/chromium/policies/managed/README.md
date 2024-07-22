@@ -12,23 +12,6 @@
 
 - [`amber-theme-colour.json.sample`](#amber-theme-colourjsonsample)
 - [`aminda-extensions.json`](#aminda-extensionsjson)
-  - [3rdparty](#3rdparty)
-  - [Silk - Privacy Pass Client for the browser](#silk---privacy-pass-client-for-the-browser)
-  - [QR Code](#qr-code)
-  - [Plasma Integration](#plasma-integration)
-  - [uBlock Origin](#ublock-origin)
-  - [LocalCDN](#localcdn)
-  - [Ruffle](#ruffle)
-  - [HTTP Indicator](#http-indicator)
-  - [Fedora User Agent](#fedora-user-agent)
-  - [Snowflake](#snowflake)
-  - [IPvFooBar](#ipvfoobar)
-  - [uBlock Origin Lite](#ublock-origin-lite)
-  - [AdNauseam](#adnauseam)
-  - [RegretsReporter](#regretsreporter)
-  - [uBlock Origin](#ublock-origin-1)
-  - [Bitwarden](#bitwarden)
-  - [Privacy Badger](#privacy-badger)
 - [`black-theme-colour.json.sample`](#black-theme-colourjsonsample)
 - [`brave-shields-disabled.json`](#brave-shields-disabledjson)
 - [`disable-brave-ipfs.json`](#disable-brave-ipfsjson)
@@ -88,6 +71,10 @@ This does contain some bloat or something not necessary in all situations or
 even overlapping extensions, but there is an important side goal of _teaching
 users to disable extraneous extensions they don't need_ (unless I decide they
 do need something and thus it's `force_installed`.
+
+**_Explanations have moved to `aminda-extensions.tsv`!_**
+
+<!--
 
 ### 3rdparty
 
@@ -196,6 +183,8 @@ See also:
 
 - https://github.com/EFForg/privacybadger/blob/master/doc/admin-deployment.md
 - https://github.com/EFForg/privacybadger/blob/master/src/data/schema.json
+
+-->
 
 ## `black-theme-colour.json.sample`
 
