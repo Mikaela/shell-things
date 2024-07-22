@@ -1,6 +1,7 @@
-# Visit qt6ct and set theme to kvantum for darkman!
-export QT_QPA_PLATFORMTHEME=qt6ct
-export QT_STYLE_OVERRIDE=kvantum
+unset QT_QPA_PLATFORMTHEME
+unset QT_STYLE_OVERRIDE
+export XDG_CURRENT_DESKTOP=KDE
+export XDG_SESSION_DESKTOP=KDE
 # Strongly imply these that wayland is preferred
 export GDK_BACKEND=wayland
 export QT_QPA_PLATFORM=wayland
