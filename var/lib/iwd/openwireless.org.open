@@ -6,7 +6,7 @@ TransitionDisable=true
 DisabledTransitionModes=open
 
 [IPv4]
-DNS=127.0.0.1
+DNS=127.0.0.1 127.0.0.53
 DomainName=.
 
 [IPv6]
