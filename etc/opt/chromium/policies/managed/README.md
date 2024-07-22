@@ -25,6 +25,7 @@
   - [IPvFooBar](#ipvfoobar)
   - [uBlock Origin Lite](#ublock-origin-lite)
   - [AdNauseam](#adnauseam)
+  - [RegretsReporter](#regretsreporter)
   - [uBlock Origin](#ublock-origin-1)
   - [Bitwarden](#bitwarden)
   - [Privacy Badger](#privacy-badger)
@@ -165,6 +166,10 @@ some offer rpm packages directly.
 Complementing PrivacyBadger with an adblocker so first profile runs have at
 least something to block Malvertising now that I no longer enable NoScript out
 of the box.
+
+### RegretsReporter
+
+- `obpoeflheeknapimliioeoefbfaakefn`
 
 ### uBlock Origin
 

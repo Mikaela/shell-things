@@ -162,6 +162,12 @@
       "toolbar_pin": "force_pinned",
       "update_url": "https://clients2.google.com/service/update2/crx"
     },
+    "obpoeflheeknapimliioeoefbfaakefn": {
+      "installation_mode": "force_installed",
+      "override_update_url": true,
+      "toolbar_pin": "default_unpinned",
+      "update_url": "https://clients2.google.com/service/update2/crx"
+    },
     "odfafepnkmbhccpbejgmiehpchacaeak": {
       "blocked_install_message": "uBlock Origin pitäisi olla jo asennettu Chrome-kaupasta.",
       "installation_mode": "blocked"

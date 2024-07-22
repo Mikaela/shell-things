@@ -205,7 +205,7 @@
       },
       "regrets-reporter@mozillafoundation.org": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/regretsreporter/latest.xpi",
-        "installation_mode": "normal_installed"
+        "installation_mode": "force_installed"
       },
       "uBOLite@raymondhill.net": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin-lite/latest.xpi",
