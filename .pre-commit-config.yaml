@@ -9,6 +9,10 @@ ci:
   # https://github.com/pre-commit-ci/issues/issues/83
   autoupdate_schedule: quarterly
 
+default_language_version:
+  node: lts
+  ruby: .ruby-version
+
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
