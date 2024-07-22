@@ -3,13 +3,25 @@
 AutoConnect=true
 # MAC address override. Takes priority over AlwaysRandomizeAddress
 #AddressOverride=
+# Disables TKIP and connections without Management Frame Protection
+TransitionDisable=true
+# Disables WPA2-{Personal,Enterprise} and requires WiFi Enhanced Open (OWE)
+DisabledTransitionModes=personal,enterprise,open
 
 [Security]
 Passphrase=MySuperSecretPassphraseThatDoesNotReadHere
 
 [IPv4]
+# If iwd main.conf has EnableNetworkConfiguration=true and we should have
+# static network configuration
+#Address=192.168.1.2
+#Gateway=192.168.1.1
+#DNS=127.0.0.1
+#DomainName=.
 # In home network recognising the device may be a quality of life feature
-SendHostname=true
+#SendHostname=true
 
 [IPv6]
 Enabled=true
+DNS=::1
+DomainName=.

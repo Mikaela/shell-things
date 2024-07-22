@@ -1,9 +1,19 @@
 # This SSID is "private-cafe-sample", it comes from the filename
 [Settings]
 #AlwaysRandomizeAddress=true
+# Disables TKIP and connections without Management Frame Protection
+TransitionDisable=true
+# Disables WPA2-{Personal,Enterprise} and requires WiFi Enhanced Open (OWE)
+DisabledTransitionModes=personal,enterprise,open
 
 [Security]
 Passphrase=MySuperSecretPassphraseThatDoesNotReadHere
 
+[IPv4]
+DNS=127.0.0.1
+DomainName=.
+
 [IPv6]
 Enabled=true
+DNS=::1
+DomainName=.
