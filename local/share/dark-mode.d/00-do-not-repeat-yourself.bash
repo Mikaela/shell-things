@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 if ! hash lsb_release 2> /dev/null; then
 	ERRORMESSAGE="lsb_release was not found, the wallpaper scripts cannot figure out the distribution"
 	echo $ERRORMESSAGE
