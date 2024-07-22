@@ -16,4 +16,4 @@
 (lookandfeeltool --apply "org.kde.breeze.desktop" &)
 
 # Kvantum Qt
-(kvantummanager --set KvGnome &)
+(kvantummanager --set KvGnome --noAssign-All &)

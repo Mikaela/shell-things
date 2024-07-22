@@ -16,4 +16,4 @@
 (lookandfeeltool --apply "org.kde.breezedark.desktop" &)
 
 # Kvantum Qt
-(kvantummanager --set KvGnomeDark &)
+(kvantummanager --set KvGnomeDark --noAssign-All &)
