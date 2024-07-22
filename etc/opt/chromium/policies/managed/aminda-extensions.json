@@ -146,7 +146,8 @@
       "update_url": "https://clients2.google.com/service/update2/crx"
     },
     "gecgipfabdickgidpmbicneamekgbaej": {
-      "installation_mode": "force_installed",
+      "blocked_install_message": "Harhaanjohtava, ei koske PWA vaan vanhentuneita Chrome-sovelluksia.",
+      "installation_mode": "blocked",
       "override_update_url": true,
       "toolbar_pin": "force_pinned",
       "update_url": "https://clients2.google.com/service/update2/crx"
