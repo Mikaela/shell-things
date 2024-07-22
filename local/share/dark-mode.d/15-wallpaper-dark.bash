@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-. ~/.local/share/dark-mode.d/00-do-not-repeat-yourself.sh
+. ~/.local/share/dark-mode.d/00-do-not-repeat-yourself.bash
 
 if [ -f ~/.wallpaper.dark ]; then
 	export WALLPAPER_PATH="$HOME/.wallpaper.dark"
