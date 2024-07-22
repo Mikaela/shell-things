@@ -8,7 +8,7 @@
 (dbus-send --session --dest=org.kde.GtkConfig --type=method_call /GtkConfig org.kde.GtkConfig.setGtkTheme "string:Breeze" &)
 
 # Xfce theme?
-(exec xfconf-query -c xsettings -p /Net/ThemeName -s 'Breeze' &)
+(xfconf-query --channel xsettings --create --type string --property /Net/ThemeName --set Breeze &)
 
 # Plasma
 (lookandfeeltool --apply "org.kde.breeze.desktop" &)
