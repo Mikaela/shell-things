@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+. ~/.local/share/dark-mode.d/00-do-not-repeat-yourself.sh
+
 # This is all adapted from /usr/share/doc/darkman/examples/light-mode.d/
 
 # GTK Theme
@@ -12,3 +14,6 @@
 
 # Plasma
 (lookandfeeltool --apply "org.kde.breeze.desktop" &)
+
+# Kvantum Qt
+(kvantummanager --set KvGnome &)

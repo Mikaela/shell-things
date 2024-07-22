@@ -1,3 +1,4 @@
+export QT_STYLE_OVERRIDE=kvantum
 export QT_QPA_PLATFORMTHEME="kde"
 export GDK_BACKEND=wayland
 export QT_QPA_PLATFORM=wayland
