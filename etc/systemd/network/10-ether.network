@@ -1,12 +1,8 @@
 [Match]
-#Name=*
-# Can be {colon,hyphen,dot}-delimited hexadecimal or IPv{4,6} address
 #MACAddress=
 Type=ether
 
 [Link]
-# My devices generally also have WiFi so lack of ethernet is not a reason
-# to wait for systemd-networkd-wait-online.service
 RequiredForOnline=false
 # Takes "ipv4", "ipv6", "both", or "any" (default).
 RequiredFamilyForOnline=both
@@ -15,7 +11,7 @@ RequiredFamilyForOnline=both
 # Always set administrative state to up. Implies RequiredForOnline=true
 #ActivationPolicy=always-up
 # Required for mDNS
-Multicast=true
+#Multicast=true
 
 [Network]
 #DHCP=true

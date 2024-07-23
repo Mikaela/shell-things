@@ -6,14 +6,14 @@ Type=wlan
 
 [Link]
 # Takes "ipv4", "ipv6", "both", or "any" (default).
-RequiredFamilyForOnline=both
+#RequiredFamilyForOnline=both
 # Always set administrative state to up. Implies RequiredForOnline=true
 ActivationPolicy=always-up
 # If something else (like iwd EnableNetworkConfiguration=true) manages network,
 # uncomment
 #Unmanaged=true
 # Required for mDNS
-Multicast=true
+#Multicast=true
 
 [Network]
 DHCP=true

@@ -4,7 +4,7 @@ Type=none
 
 [Link]
 Unmanaged=true
-Multicast=false
+#Multicast=false
 
 [Network]
 IPv6PrivacyExtensions=true
