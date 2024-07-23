@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+NoDisplay=true
+Terminal=true
+Exec=kgx --command="sh --norc -c tmux"
+Name=Tmux in Console
+Name[fi]=Tmux Consolessa
+Comment=Command line autostart
+Comment[fi]=Komentorivin automaattikäynnistys
