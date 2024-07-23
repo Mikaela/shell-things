@@ -5,8 +5,10 @@ Wants=sysctl-p--system.service
 [Service]
 Type=oneshot
 TimeoutStartSec=infinity
-# - means it can fail, without failing those after it
-# I always want DNS.
+# - means it can fail, without failing those after it.
+# These aren't given --now as THEY WOULD INFINITE LOOP.
+ExecStartPre=-/usr/bin/systemctl enable aminda-nocron-rebootish.service
+ExecStartPre=-/usr/bin/systemctl enable  aminda-nocron-rebootish.timer
 ExecStartPre=-/usr/bin/systemctl enable --now unbound.service
 ExecStartPre=-/usr/bin/systemctl enable --now systemd-resolved.service
 ExecStartPre=-/usr/sbin/sysctl net.ipv6.conf.all.disable_ipv6=0
