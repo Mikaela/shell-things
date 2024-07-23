@@ -1,0 +1,11 @@
+[Unit]
+Description=Turn off NordVPN on login
+
+[Timer]
+OnUnitActiveSec=1
+OnBootSec=2
+RandomizedDelaySec=3
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,6 @@
+[Unit]
+Description=Disconnect and disable NordVPN on user systemd start
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/nordvpn-off
