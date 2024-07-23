@@ -311,7 +311,7 @@ fi
 
 # https://github.com/pyenv/pyenv
 if [ -d ~/.pyenv/bin ]; then
-	PATH="$HOME/.pyenv/bin:$PATH"
+	PATH="$HOME/.pyenv/bin:$HOME/.pyenv/shims:$PATH"
 	pyenv init > /dev/null 2>&1
 	# Worth considering (and verifying before running)
 	# git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
