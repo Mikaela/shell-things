@@ -11,6 +11,9 @@ ci:
 
 default_language_version:
   node: lts
+  # 2024-07-23: Kali Linux python3 is 3.11.9, which apparently is incompatible
+  # with the rest of this config.
+  python: python3.12
   ruby: .ruby-version
 
 repos:
