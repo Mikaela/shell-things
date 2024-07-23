@@ -1,3 +1,6 @@
+# Workaround it appearing to break SSH especially on family PC
+@reboot /bin/bash -c "/bin/nordvpn set killswitch off;/usr/bin/systemctl disable --now nordvpnd.{service.socket} --quiet"
+
 # Ensure /etc/sysctl.d/ gets read
 @reboot /usr/sbin/sysctl -p --system >/dev/null 2>&1
 
