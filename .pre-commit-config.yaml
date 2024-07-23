@@ -10,10 +10,10 @@ ci:
   autoupdate_schedule: quarterly
 
 default_language_version:
-  node: lts
+  node: "lts"
   # Remember .python-version !
-  python: 3.12.4
-  ruby: .ruby-version
+  python: "3.12"
+  ruby: ".ruby-version"
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
