@@ -1,9 +1,0 @@
-[Unit]
-Description=poke unbound as a stupid workaround for it not wanting to start with wireless devices
-
-[Service]
-Type=oneshot
-ExecStart=/usr/bin/systemctl start unbound --quiet
-
-[Install]
-WantedBy=multi-user.target

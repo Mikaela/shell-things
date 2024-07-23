@@ -29,7 +29,12 @@ ExecStart=-/usr/bin/firewall-cmd --permanent --add-port=6771/udp
 #ExecStart=-/root/fixcontroller.py
 # This is actually in the delayed variant of this service, but anyway
 ExecStart=-/usr/bin/systemctl enable --now yggdrasil.service
+ExecStart=-/usr/bin/systemctl enable --now ssh.service
+ExecStart=-/usr/bin/systemctl enable --now sshd.service
 ExecStart=-/usr/bin/systemctl enable --now sshguard.service
+ExecStart=-/usr/bin/systemctl enable --now unbound.service
+ExecStart=-/usr/bin/systemctl enable --now chrony.service
+ExecStart=-/usr/bin/systemctl enable --now chronyd.service
 User=root
 StandardOutput=journal
 StandardError=journal
