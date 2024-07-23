@@ -199,6 +199,10 @@
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/offline-qr-code-generator/latest.xpi",
         "installation_mode": "force_installed"
       },
+      "optout@google.com": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/interest-advertising-opt-out/latest.xpi",
+        "installation_mode": "force_installed"
+      },
       "plasma-browser-integration@kde.org": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/plasma-integration/latest.xpi",
         "installation_mode": "force_installed"
@@ -213,6 +217,10 @@
       },
       "uBlock0@raymondhill.net": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
+        "installation_mode": "force_installed"
+      },
+      "{2f182d41-fd03-4a6d-938d-081419586c37}": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/google-analytics-opt-out/latest.xpi",
         "installation_mode": "force_installed"
       },
       "{3c078156-979c-498b-8990-85f7987dd929}": {
