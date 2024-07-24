@@ -8,3 +8,4 @@ Name=Tmux in Console
 Name[fi]=Tmux Consolessa
 Comment=Command line autostart
 Comment[fi]=Komentorivin automaattikäynnistys
+Icon=org.gnome.Console
