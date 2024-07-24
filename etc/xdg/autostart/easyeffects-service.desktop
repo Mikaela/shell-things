@@ -1,5 +1,6 @@
 [Desktop Entry]
-Name=EasyEffects
+Name=EasyEffects gapplication service
 Exec=/usr/bin/flatpak run com.github.wwmm.easyeffects --gapplication-service
 Type=Application
 Icon=com.github.wwmm.easyeffects
+NoDisplay=true
