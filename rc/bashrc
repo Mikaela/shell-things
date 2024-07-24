@@ -137,8 +137,7 @@ fi
 # the system, so I can do away with a lot of checks for Darwin
 if hash lsb_release 2> /dev/null; then
 	(
-		LC_ALL="en_DK.UTF-8"
-		LANGUAGE=en
+		export LC_ALL="en_DK.UTF-8"
 		hostname --all-fqdns
 		hostname --all-ip-addresses
 		printf "\n"
@@ -152,6 +151,7 @@ if hash lsb_release 2> /dev/null; then
 
 		printf "\n"
 		df / $HOME --human-readable --output=source,fstype,size,used,avail,pcent | uniq
+		unset LC_ALL
 	)
 
 	# Only print motivational phrases if username is aminda or mikaela
