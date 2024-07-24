@@ -1,25 +1,15 @@
 [Match]
-#MACAddress=
 Type=ether
 
 [Link]
 RequiredForOnline=false
-# Takes "ipv4", "ipv6", "both", or "any" (default).
-RequiredFamilyForOnline=both
 # If something else (like NetworkManager) manages network, uncomment
 #Unmanaged=true
-# Always set administrative state to up. Implies RequiredForOnline=true
-#ActivationPolicy=always-up
 # Required for mDNS
 #Multicast=true
 
 [Network]
-#DHCP=true
-# /24, /16, /8 are the the class C, B, A networks
-Address=192.168.0.2/24
-Gateway=192.168.0.1
-IPv6PrivacyExtensions=true
-IPv6LinkLocalAddressGenerationMode=stable-privacy
+DHCP=true
 # systemctl enable systemd-resolved && systemctl start systemd-resolved
 # ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
 DNS=
