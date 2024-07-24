@@ -1,0 +1,8 @@
+# As opposed to 00-mikaela.preset, this will just enable the units I have
+# written by myself, although they may call others.
+enable aminda-duperemove.service
+enable aminda-duperemove.timer
+enable aminda-nocron-rebootish.service
+enable aminda-nocron-rebootish.timer
+enable aminda-nocron-reboot.service
+enable aminda-nocron-reboot.timer
