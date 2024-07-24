@@ -25,10 +25,6 @@ fi
 #	Aliases						RJ706I
 #	Functions					ZGC5QQ
 
-# uname should be readable in $uname
-uname=$(uname)
-UNAME=$(uname)
-
 # Dynamic window title via https://stackoverflow.com/a/20772424
 ## BREAKS TMUX TITLE CHANGING WHICH IS BETTER THAN THIS.
 #case $TERM in
@@ -97,9 +93,6 @@ zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*' format 'Completing %d'
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' menu select=2
-if [[ $UNAME != Darwin ]]; then
-	eval "$(dircolors -b)"
-fi
 #zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
@@ -119,41 +112,8 @@ fi
 (uptime &)
 (echo "")
 
-#if [[ $UNAME != Darwin	]] then;
-#	(who -H -w -u|head -n10&)
-#	(echo "")
-#	 (last -10 -w -x&)
-#fi
-
-#if [[ $UNAME = Darwin ]]; then
-#	(who -H -u|head -n10&)
-#	(echo "")
-#	(last -10&)
-#fi
-
-# Only print motivational phrases if username is aminda or mikaela
-if [[ $(whoami) == aminda ]] || [[ $(whoami) == mikaela ]]; then
-	# Tavun OM värähtely poistaa ylpeyttä, MA kateutta, NI takertumista. PE leikkaa tietämättömyyden läpi, ME hälventää ahneuden ja rintakehässä värähtelevä HUNG muuntaa vihan.
-	# Kuinka asiat ovat (s. 74-75) - Lama Ole Nydahl
-	(printf "\u26A7\ufe0e Aferoj emas funkcii sin mem.\n\tFaru jogon, sentu, ne provu perfektecon.\n\t\tDancu kiel neniu rigardas, kvankam estu vidita kaj aŭdata.\nOM MANI PEME HUNG\n")
-	(printf "\u26A7\ufe0e Any movement at any time is better than nothing.\n")
-	(printf "\u2744\ufe0e Take the cold showers, hot ones are a disservice. And walk in cold, which is no excuse just like rain.\n\tOtherwise there will be dry skin and the vagus nerve will be upset leading to anxiety, depression and poor mental health.\n\t\tBesides the environment thanks.\n")
-	# Tempus Finis -  Takeharu Ishimoto
-	(printf "\u1f54a\ufe0e \tFine fortasse nihil est vobis dire\n\tFine fortasse nihil est vobis Lucrari\n\tFine fortasse nihil est tamen\n")
-	#(printf "\u26A7\ufe0e Your adventure begins in the dead of night.\n\u26A7\ufe0e Your road won't be easy, but a rising sun awaits your journey's end.\n\n")
-	#(printf "\u26A7\ufe0e The darker than black is, the brighter the moon is\n")
-	(printf "\u26A7\ufe0e Agoraphobia/social anxiety advice: \n\tAct like you belong! Like you own the place, but keep everyone comfortable! Remember the Spotlight Effect!\n \t\tMaybe even wear hi-viz so you really belong anywhere \U1F61D \n\t\t\tAnd as always, fake it till you make it!\n")
-# (printf "\n\u26A7\ufe0e\tThat's what I am, that's what I'll always be\n\u26A7\ufe0e\tI don't wanna be silent 'cause this is my destiny\n\u26A7\ufe0e\tThat's what I was, that's what feels good to me\n\u26A7\ufe0e\tAnd nothing will change me, that's what I'm meant to be.\n\u26A7\ufe0e\t\t­—Conchita Wurst: That's What I Am\n\n")
-#(printf "https://en.m.wikipedia.org/wiki/First_they_came_...#Text\n")
-elif [[ "$(id -u)" == "0" ]]; then
-	# This comes from Charybdis IRCd
-	(printf "\nWe would like to take this moment to remind you that we accept\nabsolutely no liability for the insanity you're about to endure.\n\n")
-	# And this from sudo + the general advice for auditability
-	(printf "We trust you have received the usual lecture from the local System\nAdministrator. It usually boils down to these three things:\n\n\t#1) Respect the privacy of others.\n\t#2) Think before you type.\n\t#3) With great power comes great responsibility.\n\nAdditionally you shouldn't be logging in as root directly.\n\n")
-fi
-
 # fix dircolors for Selenized https://github.com/jan-warchol/selenized/blob/master/other-apps/dircolors/README.md
-export LS_COLORS="$LS_COLORS:ow=1;7;34:st=30;44:su=30;41"
+#export LS_COLORS="$LS_COLORS:ow=1;7;34:st=30;44:su=30;41"
 
 #####	Environment					7RS56S	#####
 # Environment should be placed to .environment or .zsh_environment (or .zshenv).
@@ -205,9 +165,6 @@ export LESS_TERMCAP_se=$'\E[0m'
 export LESS_TERMCAP_so=$'\E[01;44;33m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
-
-# Sets environment variable CPUARCH to output of "uname -p" & UNAME to "uname"
-CPUARCH=$(uname -p)
 
 # if gpg[-agent] has sshcontrol file, use it as ssh-agent. sshcontrol should
 # include the authentication subkey keygrip from
@@ -357,27 +314,13 @@ alias theme="prompt "
 
 ## -- Start of aliases which are saved from Ubuntu default bashrc. --
 
-# enable color support of ls and also add handy aliases
-if [[ $UNAME != Darwin ]]; then
-	alias ls='ls --color=auto'
-fi
+alias ls='ls --color=auto'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep -F --color=auto'
 alias egrep='egrep -E --color=auto'
-
-# some more ls aliases
-if [[ "$UNAME" != "Darwin" ]]; then
-	alias ll='ls -alFh --color=auto' && alias la='ls -A --color=auto' && alias l='ls -CF --color=auto'
-fi
-
-if [[ $UNAME = Darwin ]]; then
-	alias ls="ls -Gp"
-	alias ll="ls -alFHGp"
-	alias l="ls -CFGp"
-fi
 
 # Add an "alert" alias for long running commands. Use like so:
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -402,9 +345,6 @@ alias sshguard6-unban-all="sudo ip6tables -F sshguard"
 alias rsync-folder="rsync -h --progress -azvv "
 
 # SSHGuard seems to prefer users to run this always when connecting with keys in ssh-agent...
-#if [[ $UNAME != Darwin ]]; then
-#	 alias ssh-add="\ssh-add -D && \ssh-add "
-#fi
 
 # Use GPG2 instead of GPG!
 if hash gpg2 2> /dev/null; then
@@ -945,3 +885,5 @@ fi
 if [ -f ~/.warnings ]; then
 	source ~/.warnings
 fi
+
+# vim: filetype=zsh
