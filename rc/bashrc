@@ -98,16 +98,16 @@ case "$TERM" in
 esac
 
 # enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-	test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+if hash dircolors 2> /dev/null; then
+	#test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+	eval $(dircolors --bourne-shell)
 	alias ls='ls --color=auto'
 	alias dir='dir --color=auto'
 	alias vdir='vdir --color=auto'
-
-	alias grep='grep --color=auto'
-	alias fgrep='grep -F --color=auto'
-	alias egrep='grep -E --color=auto'
 fi
+alias grep='grep --color=auto'
+alias fgrep='grep -F --color=auto'
+alias egrep='grep -E --color=auto'
 
 # Add an "alert" alias for long running commands. Use like so:
 #	sleep 10; alert
@@ -131,9 +131,6 @@ fi
 
 #Shopt settings.
 #shopt -s autocd
-
-# fix dircolors for Selenized https://github.com/jan-warchol/selenized/blob/master/other-apps/dircolors/README.md
-#export LS_COLORS="$LS_COLORS:ow=1;7;34:st=30;44:su=30;41"
 
 #####	Environment					7RS56S	#####
 # Environment should be placed to .environment or .bash_environment.
