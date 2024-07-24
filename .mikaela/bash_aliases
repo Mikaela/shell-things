@@ -1,0 +1,1 @@
+alias yggdrasil-to-json="yggdrasil -useconffile yggdrasil.conf.bak -normaliseconf -json > yggdrasil.conf"
