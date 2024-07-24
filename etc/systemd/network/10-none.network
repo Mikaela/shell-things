@@ -4,17 +4,3 @@ Type=none
 
 [Link]
 Unmanaged=true
-#Multicast=false
-
-[Network]
-IPv6PrivacyExtensions=true
-IPv6LinkLocalAddressGenerationMode=stable-privacy
-Domains=.
-#MulticastDNS=false
-#LLMNR=false
-DNSSEC=true
-DNSOverTLS=opportunistic
-DNS=
-DNS=::1
-DNS=127.0.0.1
-DNS=127.0.0.53
