@@ -672,6 +672,7 @@
         "Value": true
       },
       "layout.css.devPixelsPerPx": {
+        "Comment": "ui.textScaleFactor 90 does practically the same with less side effects.",
         "Status": "clear",
         "Type": "string",
         "Value": "1.5"
