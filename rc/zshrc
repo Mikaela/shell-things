@@ -25,24 +25,51 @@ fi
 #	Aliases						RJ706I
 #	Functions					ZGC5QQ
 
-# Dynamic window title via https://stackoverflow.com/a/20772424
-## BREAKS TMUX TITLE CHANGING WHICH IS BETTER THAN THIS.
-#case $TERM in
-#	(*xterm* | *rxvt*)
+# Kind of my welcome screen when I open a terminal?
+# Existence of lsb_release implies both being on Linux and me having touched
+# the system, so I can do away with a lot of checks for Darwin
+if hash lsb_release 2> /dev/null; then
+	(
+		LC_ALL="en_DK.UTF-8"
+		LANGUAGE=en
+		hostname --all-fqdns
+		hostname --all-ip-addresses
+		printf "\n"
+		printf "$(uptime --pretty)\t$(uptime)\n"
+		printf "\nPresent:\n"
+		last --hostlast --dns --present $(date +%R) --fullnames --system --time-format notime
+		printf "\n"
+		df / $HOME --human-readable --output=source,fstype,size,used,avail,pcent | uniq
+	)
 
-# Write some info to terminal title.
-# This is seen when the shell prompts for input.
-#	 function precmd {
-#		print -Pn "\e]0;zsh%L %(1j,%j job%(2j|s|); ,)%~\a"
-#	 }
-# Write command and args to terminal title.
-# This is seen while the shell waits for a command to complete.
-#	 function preexec {
-#		printf "\033]0;%s\a" "$1"
-#	 }
-#
-#;;
-#esac
+	# Only print motivational phrases if username is aminda or mikaela
+	if [[ $(whoami) == aminda ]] || [[ $(whoami) == mikaela ]]; then
+		(
+			printf "\n"
+			# Tavun OM värähtely poistaa ylpeyttä, MA kateutta, NI takertumista. PE leikkaa tietämättömyyden läpi, ME hälventää ahneuden ja rintakehässä värähtelevä HUNG muuntaa vihan.
+			# Kuinka asiat ovat (s. 74-75) - Lama Ole Nydahl
+			printf "\tAferoj emas funkcii sin mem... \t OM MANI PEME HUNG...\n"
+			printf "\tAlways remember the existence of spotlight effect...\n"
+			#(printf "\u26A7\ufe0e Aferoj emas funkcii sin mem.\n\tFaru jogon, sentu, ne provu perfektecon.\n\t\tDancu kiel neniu rigardas, kvankam estu vidita kaj aŭdata.\nOM MANI PEME HUNG\n")
+			#(printf "\u26A7\ufe0e Any movement at any time is better than nothing.\n")
+			#(printf "\u2744\ufe0e Take the cold showers, hot ones are a disservice. And walk in cold, which is no excuse just like rain.\n\tOtherwise there will be dry skin and the vagus nerve will be upset leading to anxiety, depression and poor mental health.\n\t\tBesides the environment thanks.\n")
+			# Tempus Finis -  Takeharu Ishimoto
+			#(printf "\u1f54a\ufe0e \tFine fortasse nihil est vobis dire\n\tFine fortasse nihil est vobis Lucrari\n\tFine fortasse nihil est tamen\n")
+			#(printf "\u26A7\ufe0e Your adventure begins in the dead of night.\n\u26A7\ufe0e Your road won't be easy, but a rising sun awaits your journey's end.\n\n")
+			#(printf "\u26A7\ufe0e The darker than black is, the brighter the moon is\n")
+			#(printf "\u26A7\ufe0e Agoraphobia/social anxiety advice: \n\tAct like you belong! Like you own the place, but keep everyone comfortable! Remember the Spotlight Effect!\n \t\tMaybe even wear hi-viz so you really belong anywhere \U1F61D \n\t\t\tAnd as always, fake it till you make it!\n")
+			# (printf "\n\u26A7\ufe0e\tThat's what I am, that's what I'll always be\n\u26A7\ufe0e\tI don't wanna be silent 'cause this is my destiny\n\u26A7\ufe0e\tThat's what I was, that's what feels good to me\n\u26A7\ufe0e\tAnd nothing will change me, that's what I'm meant to be.\n\u26A7\ufe0e\t\t­—Conchita Wurst: That's What I Am\n\n")
+			#(printf "https://en.m.wikipedia.org/wiki/First_they_came_...#Text\n")
+			printf "\tMay your heart be your guiding key ;)"
+			printf "\n"
+		)
+	elif [[ "$(id -u)" == "0" ]]; then
+		# This comes from Charybdis IRCd
+		(printf "\nWe would like to take this moment to remind you that we accept\nabsolutely no liability for the insanity you're about to endure.\n\n")
+		# And this from sudo + the general advice for auditability
+		(printf "We trust you have received the usual lecture from the local System\nAdministrator. It usually boils down to these three things:\n\n\t#1) Respect the privacy of others.\n\t#2) Think before you type.\n\t#3) With great power comes great responsibility.\n\nAdditionally you shouldn't be logging in as root directly.\n\n")
+	fi
+fi
 
 #####	Defaults etc...				M0TZLS	#####
 
