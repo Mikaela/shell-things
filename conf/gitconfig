@@ -81,3 +81,7 @@
 # see also .mikaela/2src-gitconfig within the same shell-things repo
 [includeIf "gitdir:~/2src/"]
 	path = ~/2src/gitconfig
+
+# Don't complain about this path
+[safe]
+	directory = /home/linuxbrew/.linuxbrew
