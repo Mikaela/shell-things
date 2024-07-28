@@ -240,8 +240,8 @@ if [ -d ~/.nvm ]; then
 elif [ -d /home/linuxbrew/.linuxbrew/opt/nvm ]; then
 	mkdir -p /home/linuxbrew/.nvm
 	export NVM_DIR=/home/linuxbrew/.nvm
-	[ -s "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh"                                       # This loads nvm
-	[ -s "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+	[ -s "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh >/dev/null 2>&1"                                       # This loads nvm
+	[ -s "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm >/dev/null 2>&1" # This loads nvm bash_completion
 fi
 
 # https://github.com/rbenv/rbenv

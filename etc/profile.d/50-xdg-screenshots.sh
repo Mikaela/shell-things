@@ -5,11 +5,11 @@
 # thread of what the fluff was I doing again.
 
 if [ $(hash xdg-user-dir 2> /dev/null) ] && [ $(hash xdg-user-dir-update 2> /dev/null) ]; then
-	echo "50-xdg-screenshots.sh ok"
+	echo "50-xdg-screenshots.sh ok" > /dev/null 2>&1
 fi
 
 if [[ $(xdg-user-dir SCREENSHOTS) != $(xdg-user-dir) ]]; then
-	echo "50-xdg-screenshots.sh ok"
+	echo "50-xdg-screenshots.sh ok" > /dev/null 2>&1
 fi
 
 # Check if the user has a locale preference
