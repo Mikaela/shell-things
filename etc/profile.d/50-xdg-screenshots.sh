@@ -1,26 +1,27 @@
-# This script currently sets just the xdg screenshots directory, while I am
-# unsure of whether anything else than grimshot utilizes it.
+# OK, so this could be a lot more pretty, but it works for ensuring users have
+# a screenshot directory (even if I still don't know does anything else than
+# grimshot care about that).
 
-# WARNING: my train of thought got disturbed writing this and I lost the red
-# thread of what the fluff was I doing again.
-
-if [ $(hash xdg-user-dir 2> /dev/null) ] && [ $(hash xdg-user-dir-update 2> /dev/null) ]; then
-	echo "50-xdg-screenshots.sh ok" > /dev/null 2>&1
+# root is neither taking screenshots nor using gui
+if [[ "$(id -u)" != "0" ]]; then
+	# if the configuration file exists, that is good enough indication for me
+	# that the tools are supported.
+	if [[ -f "$(xdg-user-dir)/.config/user-dirs.locale)" ]]; then
+		# If the output differs, the path is set and there is no need to
+		# continue.
+		if [[ $(xdg-user-dir SCREENSHOTS) != $(xdg-user-dir) ]]; then
+			# If we are continuing anyway, ensure existence of locale file and see if it's something I support.
+			touch "$(cat $(xdg-user-dir)/.config/user-dirs.locale)"
+			XDGLOCALE="$(cat $(xdg-user-dir)/.config/user-dirs.locale)"
+			if [[ "$XDGLOCALE" == "fi" || "$XDGLOCALE" == "fi_FI" ]]; then
+				# I would say Kuvankaappaukset, but for some reason KDE Plasma says Kuvakaappaukset, and I don't care enough.
+				xdg-user-dirs-update --set SCREENSHOTS $(xdg-user-dir PICTURES)/Kuvakaappaukset
+			else
+				# Generic English fallack, like I think upstream does.
+				xdg-user-dirs-update --set SCREENSHOTS $(xdg-user-dir PICTURES)/Screenshots
+			fi
+			# Ensure the directory exists.
+			mkdir -p "$(xdg-user-dir SCREENSHOTS)"
+		fi
+	fi
 fi
-
-if [[ $(xdg-user-dir SCREENSHOTS) != $(xdg-user-dir) ]]; then
-	echo "50-xdg-screenshots.sh ok" > /dev/null 2>&1
-fi
-
-# Check if the user has a locale preference
-XDGLOCALE="$(cat $(xdg-user-dir)/.config/user-dirs.locale)"
-
-# If the user wants Finnish, then let's respect that...
-if [[ "$XDGLOCALE" == "fi" || "$XDGLOCALE" == "fi_FI" ]]; then
-	xdg-user-dirs-update --set SCREENSHOTS $(xdg-user-dir PICTURES)/Kuvakaappaukset
-# ...otherwise English it is.
-else
-	xdg-user-dirs-update --set SCREENSHOTS $(xdg-user-dir PICTURES)/Screenshots
-fi
-
-mkdir -p "$(xdg-user-dir SCREENSHOTS)"
