@@ -270,13 +270,16 @@ export RES_OPTIONS="timeout:2 attempts:2 rotate edns0 trust-ad"
 # https://github.com/go-nv/goenv
 if [ -d ~/.goenv/bin ]; then
 	export GOENV_ROOT="$HOME/.goenv"
-	PATH="$HOME/.goenv/bin:$PATH"
-	#goenv init > /dev/null 2>&1
+	PATH="$GOENV_ROOT/bin:$PATH"
 	eval "$(goenv init -)"
 	PATH="$GOROOT/bin:$PATH"
 	PATH="$PATH:$GOPATH/bin"
-elif hash goenv 2> /dev/null; then
-	eval $(goenv init -)
+elif [ -d /home/linuxbrew/.linuxbrew/opt/goenv ]; then
+	export GOENV_ROOT="$/home/linuxbrew/.linuxbrew/opt/goenv"
+	PATH="$GOENV_ROOT/bin:$PATH"
+	eval "$(goenv init -)"
+	PATH="$GOROOT/bin:$PATH"
+	PATH="$PATH:$GOPATH/bin"
 fi
 
 # https://github.com/nvm-sh/nvm
@@ -287,7 +290,7 @@ elif [ -d /home/linuxbrew/.linuxbrew/opt/nvm ]; then
 	mkdir -p /home/linuxbrew/.nvm
 	export NVM_DIR=/home/linuxbrew/.nvm
 	. /home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh
-	. /home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm
+	#. /home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm
 fi
 
 # https://github.com/rbenv/rbenv
@@ -296,7 +299,8 @@ if [ -d ~/.rbenv/bin ]; then
 	eval "$(rbenv init -)"
 	# Remember! And verify it before running!
 	# git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
-elif hash rbenv 2> /dev/null; then
+elif [ -d /home/linuxbrew/.linuxbrew/opt/rbenv/bin ]; then
+	PATH="/home/linuxbrew/.linuxbrew/opt/rbenv/bin:/home/linuxbrew/.linuxbrew/opt/rbenv/bin/shims:$PATH"
 	eval "$(rbenv init -)"
 fi
 
@@ -312,7 +316,8 @@ if [ -d ~/.pyenv/bin ]; then
 	# Worth considering (and verifying before running)
 	# git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
 	# git clone https://github.com/pyenv/pyenv-virtualenvwrapper.git $(pyenv root)/plugins/pyenv-virtualenvwrapper
-elif hash pyenv 2> /dev/null; then
+elif [ -d /home/linuxbrew/.linuxbrew/opt/pyenv/bin ]; then
+	PATH="/home/linuxbrew/.linuxbrew/opt/pyenv/bin:/home/linuxbrew/.linuxbrew/opt/pyenv/shims:$PATH"
 	eval "$(pyenv init -)"
 fi
 
@@ -322,7 +327,8 @@ if [ -d ~/.nodenv/bin ]; then
 	eval "$(nodenv init -)"
 	# Remember! And verify it before running!
 	# git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
-elif hash nodenv 2> /dev/null; then
+elif [ -d /home/linuxbrew/.linuxbrew/opt/nodenv/bin ]; then
+	PATH="/home/linuxbrew/.linuxbrew/opt/nodenv/bin:$PATH"
 	eval "$(nodenv init -)"
 fi
 
