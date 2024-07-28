@@ -37,9 +37,9 @@ if hash lsb_release 2> /dev/null; then
 		printf "$(uptime --pretty)\t$(uptime)\n"
 		printf "\nPresent:\n"
 		if hash who 2> /dev/null; then
-			who --heading --lookup --mesg --users
+			who --heading --mesg --users
 		elif hash last 2> /dev/null; then
-			last --hostlast --dns --present $(date +%R) --fullnames --system --time-format notime
+			last --hostlast --present $(date +%R) --fullnames --system --time-format notime
 		fi
 		printf "\n"
 		df / $HOME --human-readable --output=source,fstype,size,used,avail,pcent | uniq
