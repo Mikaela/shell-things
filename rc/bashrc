@@ -275,20 +275,29 @@ if [ -d ~/.goenv/bin ]; then
 	eval "$(goenv init -)"
 	PATH="$GOROOT/bin:$PATH"
 	PATH="$PATH:$GOPATH/bin"
+elif hash goenv 2> /dev/null; then
+	eval $(goenv init -)
 fi
 
 # https://github.com/nvm-sh/nvm
 if [ -d ~/.nvm ]; then
 	. ~/.nvm/nvm.sh
 	. ~/.nvm/bash_completion
+elif [ -f /home/linuxbrew/.linuxbrew/bin/nvm ]; then
+	mkdir -p /home/linuxbrew/.nvm
+	export NVM_DIR=/home/linuxbrew/.nvm
+	[ -s "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh"                                       # This loads nvm
+	[ -s "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 fi
 
 # https://github.com/rbenv/rbenv
 if [ -d ~/.rbenv/bin ]; then
 	PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
-	rbenv init > /dev/null 2>&1
+	eval "$(rbenv init -)"
 	# Remember! And verify it before running!
 	# git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+elif hash rbenv 2> /dev/null; then
+	eval "$(rbenv init -)"
 fi
 
 # Add RubyGems to PATH
@@ -299,18 +308,22 @@ fi
 # https://github.com/pyenv/pyenv
 if [ -d ~/.pyenv/bin ]; then
 	PATH="$HOME/.pyenv/bin:$HOME/.pyenv/shims:$PATH"
-	pyenv init > /dev/null 2>&1
+	eval "$(pyenv init -)"
 	# Worth considering (and verifying before running)
 	# git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
 	# git clone https://github.com/pyenv/pyenv-virtualenvwrapper.git $(pyenv root)/plugins/pyenv-virtualenvwrapper
+elif hash pyenv 2> /dev/null; then
+	eval "$(pyenv init -)"
 fi
 
 # https://github.com/nodenv/nodenv
 if [ -d ~/.nodenv/bin ]; then
 	PATH="$HOME/.nodenv/bin:$PATH"
-	eval "$(nodenv init - bash)"
+	eval "$(nodenv init -)"
 	# Remember! And verify it before running!
 	# git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
+elif hash nodenv 2> /dev/null; then
+	eval "$(nodenv init -)"
 fi
 
 # https://github.com/Homebrew/brew
