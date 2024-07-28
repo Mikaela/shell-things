@@ -267,6 +267,12 @@ if [ -d ~/.nodenv/bin ]; then
 	# git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
 fi
 
+# https://github.com/Homebrew/brew
+if [ -d /home/linuxbrew/.linuxbrew/bin ]; then
+	PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+	eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+fi
+
 # Removes duplicates from $PATH. Copied from https://unix.stackexchange.com/a/14896
 PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS; printf $a[$1]}')
 
