@@ -901,6 +901,12 @@ else
 	}
 fi
 
+# In Debian there is "sudo adduser whoever whatever", but I keep forgetting
+# that the more common way is usermod -aG whatever,whereever whoever
+adduser-to-group() {
+	usermod -aG "$2" "$1"
+}
+
 # Source files for miscannellious modifications.
 
 # acme.sh
