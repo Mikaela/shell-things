@@ -222,40 +222,31 @@ export LOCALDOMAIN=.
 export RES_OPTIONS="timeout:2 attempts:2 rotate edns0 trust-ad"
 
 # https://github.com/go-nv/goenv
-if [ -d ~/.goenv/bin ]; then
-	export GOENV_ROOT="$HOME/.goenv"
-	PATH="$GOENV_ROOT/bin:$PATH"
-	eval "$(goenv init -)"
-	PATH="$GOROOT/bin:$PATH"
-	PATH="$PATH:$GOPATH/bin"
-elif [ -d /home/linuxbrew/.linuxbrew/opt/goenv ]; then
-	export GOENV_ROOT="$/home/linuxbrew/.linuxbrew/opt/goenv"
-	PATH="$GOENV_ROOT/bin:$PATH"
-	eval "$(goenv init -)"
-	PATH="$GOROOT/bin:$PATH"
-	PATH="$PATH:$GOPATH/bin"
+if [ -f /home/linuxbrew/.linuxbrew/opt/goenv/bin/goenv ]; then
+	eval "$(/home/linuxbrew/.linuxbrew/opt/goenv/bin/goenv init -)"
+	PATH=/home/linuxbrew/.linuxbrew/opt/goenv/bin/shims:$PATH
+elif [ -f ~/.goenv/bin/goenv ]; then
+	eval "$(~/.goenv/bin/goenv init -)"
 fi
 
 # https://github.com/nvm-sh/nvm
-if [ -d ~/.nvm ]; then
-	. ~/.nvm/nvm.sh
-	. ~/.nvm/bash_completion
-elif [ -d /home/linuxbrew/.linuxbrew/opt/nvm ]; then
+if [ -d /home/linuxbrew/.linuxbrew/opt/nvm ]; then
 	mkdir -p /home/linuxbrew/.nvm
 	export NVM_DIR=/home/linuxbrew/.nvm
 	. /home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh
-	#. /home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm
+elif [ -d ~/.nvm ]; then
+	. ~/.nvm/nvm.sh
+	. ~/.nvm/bash_completion
 fi
 
 # https://github.com/rbenv/rbenv
-if [ -d ~/.rbenv/bin ]; then
-	PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
-	eval "$(rbenv init -)"
+if [ -f /home/linuxbrew/.linuxbrew/opt/rbenv/bin/rbenv ]; then
+	eval "$(/home/linuxbrew/.linuxbrew/opt/rbenv/bin/rbenv init -)"
+	PATH=/home/linuxbrew/.linuxbrew/opt/rbenv/bin/shims:$PATH
+elif [ -f ~/.rbenv/bin/rbenv ]; then
+	eval "$(~/.rbenv/bin/rbenv init -)"
 	# Remember! And verify it before running!
 	# git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
-elif [ -d /home/linuxbrew/.linuxbrew/opt/rbenv/bin ]; then
-	PATH="/home/linuxbrew/.linuxbrew/opt/rbenv/bin:/home/linuxbrew/.linuxbrew/opt/rbenv/bin/shims:$PATH"
-	eval "$(rbenv init -)"
 fi
 
 # Add RubyGems to PATH
@@ -264,26 +255,24 @@ if hash ruby 2> /dev/null; then
 fi
 
 # https://github.com/pyenv/pyenv
-if [ -d ~/.pyenv/bin ]; then
-	PATH="$HOME/.pyenv/bin:$HOME/.pyenv/shims:$PATH"
-	eval "$(pyenv init -)"
+if [ -f /home/linuxbrew/.linuxbrew/opt/pyenv/bin/pyenv ]; then
+	eval "$(/home/linuxbrew/.linuxbrew/opt/pyenv/bin/pyenv init -)"
+	PATH=/home/linuxbrew/.linuxbrew/opt/pyenv/bin/shims:$PATH
+elif [ -d ~/.pyenv/bin ]; then
+	eval "$(~/.pyenv/bin/pyenv init -)"
 	# Worth considering (and verifying before running)
 	# git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
 	# git clone https://github.com/pyenv/pyenv-virtualenvwrapper.git $(pyenv root)/plugins/pyenv-virtualenvwrapper
-elif [ -d /home/linuxbrew/.linuxbrew/opt/pyenv/bin ]; then
-	PATH="/home/linuxbrew/.linuxbrew/opt/pyenv/bin:/home/linuxbrew/.linuxbrew/opt/pyenv/shims:$PATH"
-	eval "$(pyenv init -)"
 fi
 
 # https://github.com/nodenv/nodenv
-if [ -d ~/.nodenv/bin ]; then
-	PATH="$HOME/.nodenv/bin:$PATH"
-	eval "$(nodenv init -)"
+if [ -f /home/linuxbrew/.linuxbrew/opt/nodenv/bin/nodenv ]; then
+	eval "$(/home/linuxbrew/.linuxbrew/opt/nodenv/bin/nodenv init -)"
+	PATH=/home/linuxbrew/.linuxbrew/opt/nodenv/bin/shims:$PATH
+elif [ -d ~/.nodenv/bin/nodenv ]; then
+	eval "$(~/.nodenv/bin/nodenv init -)"
 	# Remember! And verify it before running!
 	# git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
-elif [ -d /home/linuxbrew/.linuxbrew/opt/nodenv/bin ]; then
-	PATH="/home/linuxbrew/.linuxbrew/opt/nodenv/bin:$PATH"
-	eval "$(nodenv init -)"
 fi
 
 # https://github.com/Homebrew/brew
