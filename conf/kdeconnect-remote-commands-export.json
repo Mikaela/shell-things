@@ -34,5 +34,9 @@
   {
     "name": "Unlock",
     "command": "loginctl unlock-session"
+  },
+  {
+    "name": "Do [Not] Disturb",
+    "command": "qdbus org.kde.kglobalaccel /component/plasmashell invokeShortcut \"toggle do not disturb\""
   }
 ]
