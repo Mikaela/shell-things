@@ -1,4 +1,4 @@
 {
-  "DnsOverHttpsMode": "automatic",
-  "DnsOverHttpsTemplates": "https://open.dns0.eu/?dns"
+	"DnsOverHttpsMode": "automatic",
+	"DnsOverHttpsTemplates": "https://open.dns0.eu/?dns"
 }

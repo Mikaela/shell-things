@@ -1,10 +1,10 @@
 {
-  "DefaultSearchProviderEnabled": true,
-  "DefaultSearchProviderImageURL": "https://start.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
-  "DefaultSearchProviderKeyword": "d",
-  "DefaultSearchProviderName": "DuckDuckGo",
-  "DefaultSearchProviderNewTabURL": "https://start.duckduckgo.com/chrome_newtab?addon=newext",
-  "DefaultSearchProviderSearchURL": "https://start.duckduckgo.com/?q={searchTerms}&addon=newext",
-  "DefaultSearchProviderSuggestURL": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
-  "NewTabPageLocation": "https://start.duckduckgo.com/chrome_newtab?addon=newext"
+	"DefaultSearchProviderEnabled": true,
+	"DefaultSearchProviderImageURL": "https://start.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
+	"DefaultSearchProviderKeyword": "d",
+	"DefaultSearchProviderName": "DuckDuckGo",
+	"DefaultSearchProviderNewTabURL": "https://start.duckduckgo.com/chrome_newtab?addon=newext",
+	"DefaultSearchProviderSearchURL": "https://start.duckduckgo.com/?q={searchTerms}&addon=newext",
+	"DefaultSearchProviderSuggestURL": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
+	"NewTabPageLocation": "https://start.duckduckgo.com/chrome_newtab?addon=newext"
 }

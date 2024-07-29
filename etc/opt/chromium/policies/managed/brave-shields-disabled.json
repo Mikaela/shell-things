@@ -1,6 +1,6 @@
 {
-  "BraveShieldsDisabledForUrls": [
-    "https://www.ecosia.org"
-  ],
-  "BraveShieldsDisabledForUrls_comment": "Managing tracking protection is left for the user unless there is a heavy reason to do otherwise."
+	"BraveShieldsDisabledForUrls": [
+		"https://www.ecosia.org"
+	],
+	"BraveShieldsDisabledForUrls_comment": "Managing tracking protection is left for the user unless there is a heavy reason to do otherwise."
 }

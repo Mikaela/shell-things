@@ -1,9 +1,9 @@
 {
-  "ForcedLanguages": [
-    "en-FI",
-    "en-US",
-    "en",
-    "ru-RU",
-    "ru"
-  ]
+	"ForcedLanguages": [
+		"en-FI",
+		"en-US",
+		"en",
+		"ru-RU",
+		"ru"
+	]
 }

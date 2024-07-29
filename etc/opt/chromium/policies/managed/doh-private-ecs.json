@@ -1,4 +1,4 @@
 {
-  "DnsOverHttpsMode": "automatic",
-  "DnsOverHttpsTemplates": "https://unfiltered.adguard-dns.com/dns-query?dns https://open.dns0.eu/?dns"
+	"DnsOverHttpsMode": "automatic",
+	"DnsOverHttpsTemplates": "https://unfiltered.adguard-dns.com/dns-query?dns https://open.dns0.eu/?dns"
 }

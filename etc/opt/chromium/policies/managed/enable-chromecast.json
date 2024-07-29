@@ -1,7 +1,7 @@
 {
-  "AccessCodeCastDeviceDuration": 86400,
-  "AccessCodeCastEnabled": true,
-  "EnableMediaRouter": true,
-  "ShowCastIconInToolbar": true,
-  "ShowCastSessionsStartedByOtherDevices": true
+	"AccessCodeCastDeviceDuration": 86400,
+	"AccessCodeCastEnabled": true,
+	"EnableMediaRouter": true,
+	"ShowCastIconInToolbar": true,
+	"ShowCastSessionsStartedByOtherDevices": true
 }

@@ -1,4 +1,4 @@
 {
-  "DnsOverHttpsMode": "automatic",
-  "DnsOverHttpsTemplates": "https://kids.dns0.eu/?dns"
+	"DnsOverHttpsMode": "automatic",
+	"DnsOverHttpsTemplates": "https://kids.dns0.eu/?dns"
 }

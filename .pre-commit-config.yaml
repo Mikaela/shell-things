@@ -41,7 +41,14 @@ repos:
         args:
           # Remember also: --no-sort-keys
           # ASCII excludes the älphäbet amongst others
-          [--autofix, --no-ensure-ascii, --top-keys, "Name,name"]
+          [
+            --autofix,
+            --indent,
+            "\t",
+            --no-ensure-ascii,
+            --top-keys,
+            "Name,name",
+          ]
 
   # Markdown Table of Contents generation.
   - repo: https://github.com/thlorenz/doctoc

@@ -1,42 +1,42 @@
 [
-  {
-    "name": "Darkman toggle",
-    "command": "darkman toggle"
-  },
-  {
-    "name": "Lock screen",
-    "command": "loginctl lock-session"
-  },
-  {
-    "name": "Power off",
-    "command": "systemctl poweroff"
-  },
-  {
-    "name": "Reboot",
-    "command": "systemctl reboot"
-  },
-  {
-    "name": "Screenshot [all monitors]",
-    "command": "spectacle --background --pointer"
-  },
-  {
-    "name": "Screenshot active window",
-    "command": "spectacle --background --pointer --activewindow"
-  },
-  {
-    "name": "Suspend",
-    "command": "systemctl suspend"
-  },
-  {
-    "name": "Top#5 memory eaters",
-    "command": "kdeconnect-cli -d $(kdeconnect-cli -a --id-only) --ping-msg \"$(ps -eo pid,%mem,cmd --sort=-%mem | head -n 6)\""
-  },
-  {
-    "name": "Unlock",
-    "command": "loginctl unlock-session"
-  },
-  {
-    "name": "Do [Not] Disturb",
-    "command": "qdbus org.kde.kglobalaccel /component/plasmashell invokeShortcut \"toggle do not disturb\""
-  }
+	{
+		"name": "Darkman toggle",
+		"command": "darkman toggle"
+	},
+	{
+		"name": "Lock screen",
+		"command": "loginctl lock-session"
+	},
+	{
+		"name": "Power off",
+		"command": "systemctl poweroff"
+	},
+	{
+		"name": "Reboot",
+		"command": "systemctl reboot"
+	},
+	{
+		"name": "Screenshot [all monitors]",
+		"command": "spectacle --background --pointer"
+	},
+	{
+		"name": "Screenshot active window",
+		"command": "spectacle --background --pointer --activewindow"
+	},
+	{
+		"name": "Suspend",
+		"command": "systemctl suspend"
+	},
+	{
+		"name": "Top#5 memory eaters",
+		"command": "kdeconnect-cli -d $(kdeconnect-cli -a --id-only) --ping-msg \"$(ps -eo pid,%mem,cmd --sort=-%mem | head -n 6)\""
+	},
+	{
+		"name": "Unlock",
+		"command": "loginctl unlock-session"
+	},
+	{
+		"name": "Do [Not] Disturb",
+		"command": "qdbus org.kde.kglobalaccel /component/plasmashell invokeShortcut \"toggle do not disturb\""
+	}
 ]

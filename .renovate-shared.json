@@ -1,30 +1,30 @@
 {
-  "extends": [
-    "config:recommended",
-    "group:allDigest",
-    "group:recommended"
-  ],
-  "git-submodules": {
-    "enabled": true
-  },
-  "mode": "full",
-  "packageRules": [
-    {
-      "automerge": false,
-      "matchPackagePatterns": [
-        "*"
-      ]
-    },
-    {
-      "groupName": "all pre-commit updates",
-      "matchUpdateTypes": [
-        "pre-commit"
-      ]
-    }
-  ],
-  "pre-commit": {
-    "enabled": true
-  },
-  "schedule": [],
-  "timezone": "Europe/Helsinki"
+	"extends": [
+		"config:recommended",
+		"group:allDigest",
+		"group:recommended"
+	],
+	"git-submodules": {
+		"enabled": true
+	},
+	"mode": "full",
+	"packageRules": [
+		{
+			"automerge": false,
+			"matchPackagePatterns": [
+				"*"
+			]
+		},
+		{
+			"groupName": "all pre-commit updates",
+			"matchUpdateTypes": [
+				"pre-commit"
+			]
+		}
+	],
+	"pre-commit": {
+		"enabled": true
+	},
+	"schedule": [],
+	"timezone": "Europe/Helsinki"
 }

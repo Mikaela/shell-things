@@ -1,1020 +1,1020 @@
 {
-  "policies": {
-    "3rdparty": {
-      "Extensions": {
-        "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
-          "checkForDNTPolicy": true,
-          "disabledSites": [
-            "challenges.cloudflare.com",
-            "*.challenges.cloudflare.com",
-            "chrome-extension-scheme",
-            "ecosia.org",
-            "*.ecosia.org",
-            "keyoxide.org",
-            "moz-extension-scheme",
-            "research.cloudflare.com",
-            "*.research.cloudflare.com"
-          ],
-          "learnInIncognito": true,
-          "learnLocally": true,
-          "sendDNTSignal": true,
-          "showCounter": true,
-          "showIntroPage": false,
-          "socialWidgetReplacementEnabled": true
-        },
-        "jid1-ZAdIEUB7XOzOJw@jetpack": {
-          "hasSeenPostInstall": true
-        },
-        "uBOLite@raymondhill.net": {
-          "disableFirstRunPage": true,
-          "noFiltering": [
-            "ecosia.org",
-            "cloudflare.com"
-          ]
-        },
-        "uBlock0@raymondhill.net": {
-          "toAdd": {
-            "trustedSiteDirectives": [
-              "chrome-extension-scheme",
-              "challenges.cloudflare.com",
-              "ecosia.org",
-              "firefox.com",
-              "mozilla.net",
-              "mozilla.org",
-              "moz-extension-scheme",
-              "research.cloudflare.com"
-            ]
-          },
-          "toOverwrite": {
-            "filterLists": [
-              "user-filters",
-              "ublock-badware",
-              "ublock-abuse",
-              "ublock-unbreak",
-              "urlhaus-1",
-              "https://www.eff.org/files/effdntlist.txt",
-              "https://gitea.blesmrt.net/mikaela/gist/raw/branch/master/DNS/blocklist.txt",
-              "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
-              "https://raw.githubusercontent.com/jjjxu/NSO_Pegasus_Blocklist/master/Pegasus-Hosts-Formatted.txt",
-              "https://dl.red.flag.domains/adguard/red.flag.domains.txt",
-              "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/malware/domains",
-              "https://big.oisd.nl",
-              "curben-phishing",
-              "ublock-filters",
-              "easylist",
-              "ublock-quick-fixes",
-              "ublock-privacy",
-              "easyprivacy",
-              "FIN-0",
-              "fanboy-cookiemonster",
-              "ublock-cookies-easylist",
-              "adguard-cookies",
-              "ublock-cookies-adguard",
-              "ublock-quick-fixes",
-              "ublock-annoyances",
-              "adguard-popup-overlays"
-            ]
-          }
-        },
-        "{446900e4-71c2-419f-a6a7-df9c091e268b}": {
-          "environment": {
-            "base": "https://vault.bitwarden.eu",
-            "notifications": "https://notifications.bitwarden.eu"
-          }
-        }
-      }
-    },
-    "AutofillAddressEnabled": false,
-    "AutofillCreditCardEnabled": false,
-    "BlockAboutAddons": false,
-    "BlockAboutConfig": false,
-    "BlockAboutProfiles": false,
-    "BlockAboutSupport": false,
-    "Certificates": {
-      "ImportEnterpriseRoots": false
-    },
-    "Containers": {
-      "Default": [
-        {
-          "name": "ff",
-          "color": "white",
-          "icon": "chill"
-        },
-        {
-          "name": "Fedi",
-          "color": "green",
-          "icon": "tree"
-        },
-        {
-          "name": "Git",
-          "color": "pink",
-          "icon": "briefcase"
-        },
-        {
-          "name": "Google",
-          "color": "orange",
-          "icon": "chill"
-        },
-        {
-          "name": "HSL",
-          "color": "blue",
-          "icon": "vacation"
-        },
-        {
-          "name": "IM",
-          "color": "purple",
-          "icon": "chill"
-        },
-        {
-          "name": "LinkedIn",
-          "color": "cyan",
-          "icon": "briefcase"
-        },
-        {
-          "name": "WhatsApp",
-          "color": "green",
-          "icon": "pet"
-        }
-      ]
-    },
-    "DNSOverHTTPS": {
-      "Enabled": false,
-      "ExcludedDomains": [
-        "http.badssl.com",
-        "norwegianwifi.com"
-      ],
-      "Fallback": true,
-      "Locked": true,
-      "ProviderURL": "https://dns0.eu/",
-      "ProviderURL_outside_europe_aminda_comment": "Swap to https://unfiltered.adguard-dns.com/dns-query if device is expected to cross continents from Europe?",
-      "ProviderURL_with_ECS_comment": "If changing this to something with non-private ECS, remember to disable ECS in preferences of TRR!"
-    },
-    "DisableEncryptedClientHello": false,
-    "DisableFirefoxAccounts": false,
-    "DisableFirefoxScreenshots": false,
-    "DisableFirefoxStudies": true,
-    "DisableForgetButton": false,
-    "DisablePocket": true,
-    "DisableSecurityBypass": {
-      "InvalidCertificate": true,
-      "SafeBrowsing": false
-    },
-    "DisplayBookmarksToolbar": "never",
-    "DontCheckDefaultBrowser": true,
-    "EnableTrackingProtection": {
-      "Comment": "Managing tracking protection is left for the user unless there is a heavy reason to do otherwise.",
-      "Cryptomining": true,
-      "EmailTracking": true,
-      "Exceptions": [
-        "https://www.ecosia.org"
-      ],
-      "Fingerprinting": true,
-      "Locked": false,
-      "Value": true
-    },
-    "EncryptedMediaExtensions": {
-      "Enabled": true,
-      "Locked": false
-    },
-    "ExtensionSettings": {
-      "@contain-facebook": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/facebook-container/latest.xpi",
-        "installation_mode": "force_installed"
-      },
-      "@testpilot-containers": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/multi-account-container/latest.xpi",
-        "installation_mode": "normal_installed"
-      },
-      "jid1-MnnxcxisBPnSXQ-eff@jetpack": {
-        "comment": "While this won't sync and requires manually enabling the other one when the policy is missing, it's less confusing for the automatic configuration not existing. Additionally I have some suspicion towards Mozilla Anonym.",
-        "install_url": "https://www.eff.org/files/privacy-badger-latest.xpi",
-        "installation_mode": "force_installed"
-      },
-      "jid1-MnnxcxisBPnSXQ@jetpack": {
-        "blocked_install_message": "Already force_installed through EFF.",
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi",
-        "installation_mode": "blocked"
-      },
-      "offline-qr-code@rugk.github.io": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/offline-qr-code-generator/latest.xpi",
-        "installation_mode": "force_installed"
-      },
-      "optout@google.com": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/interest-advertising-opt-out/latest.xpi",
-        "installation_mode": "force_installed"
-      },
-      "plasma-browser-integration@kde.org": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/plasma-integration/latest.xpi",
-        "installation_mode": "force_installed"
-      },
-      "regrets-reporter@mozillafoundation.org": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/regretsreporter/latest.xpi",
-        "installation_mode": "force_installed"
-      },
-      "uBOLite@raymondhill.net": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin-lite/latest.xpi",
-        "installation_mode": "normal_installed"
-      },
-      "uBlock0@raymondhill.net": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
-        "installation_mode": "force_installed"
-      },
-      "{2f182d41-fd03-4a6d-938d-081419586c37}": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/google-analytics-opt-out/latest.xpi",
-        "installation_mode": "force_installed"
-      },
-      "{3c078156-979c-498b-8990-85f7987dd929}": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/sidebery/latest.xpi",
-        "installation_mode": "normal_installed"
-      },
-      "{446900e4-71c2-419f-a6a7-df9c091e268b}": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi",
-        "installation_mode": "force_installed"
-      },
-      "{48748554-4c01-49e8-94af-79662bf34d50}": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-pass/latest.xpi",
-        "installation_mode": "force_installed"
-      },
-      "{8e41107d-2be2-454d-b4b8-c3d7e54d77de}": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/igplus-extension/latest.xpi",
-        "installation_mode": "normal_installed"
-      },
-      "{b11bea1f-a888-4332-8d8a-cec2be7d24b9}": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/torproject-snowflake/latest.xpi",
-        "installation_mode": "normal_installed"
-      },
-      "{c607c8df-14a7-4f28-894f-29e8722976af}": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/temporary-containers/latest.xpi",
-        "installation_mode": "normal_installed"
-      },
-      "{d04b0b40-3dab-4f0b-97a6-04ec3eddbfb0}": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ecosia-the-green-search/latest.xpi",
-        "installation_mode": "normal_installed"
-      }
-    },
-    "FirefoxHome": {
-      "Highlights": false,
-      "Locked": false,
-      "Pocket": false,
-      "Search": true,
-      "Snippets": false,
-      "SponsoredPocket": false,
-      "SponsoredTopSites": false,
-      "TopSites": false
-    },
-    "FirefoxSuggest": {
-      "ImproveSuggest": false,
-      "Locked": false,
-      "SponsoredSuggestions": false,
-      "WebSuggestions": false
-    },
-    "Homepage": {
-      "Locked": false,
-      "StartPage": "previous-session",
-      "URL": "about:mozilla"
-    },
-    "LegacySameSiteCookieBehaviorEnabled": false,
-    "NetworkPrediction": true,
-    "NewTabPage": false,
-    "OverrideFirstRunPage": "about:mozilla|https://addons.mozilla.org/firefox/addon/noscript/",
-    "PDFjs": {
-      "EnablePermissions": false,
-      "Enabled": true
-    },
-    "PasswordManagerEnabled": false,
-    "Preferences": {
-      "app.update.download.attempts": {
-        "Comment": "If this is what it looks like, it will stop the prompts to download Firefox manually.",
-        "Status": "clear"
-      },
-      "autoadmin.failover_to_cached": {
-        "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "autoadmin.global_config_url": {
-        "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
-        "Type": "string",
-        "Value": "https://gitea.blesmrt.net/mikaela/shell-things/raw/branch/master/conf/firefox-forbidden-policies.js"
-      },
-      "autoadmin.offline_failover": {
-        "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "autoadmin.refresh_interval": {
-        "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
-        "Type": "number",
-        "Value": 120
-      },
-      "browser.aboutConfig.showWarning": {
-        "Status": "default",
-        "Type": "boolean",
-        "Value": false
-      },
-      "browser.cache.disk.enable": {
-        "Status": "user",
-        "Type": "boolean",
-        "Value": false
-      },
-      "browser.cache.memory.enable": {
-        "Status": "user",
-        "Type": "boolean",
-        "Value": true
-      },
-      "browser.contentblocking.category": {
-        "Comment": "The best option would be strict, but amongst other things that disables system font visibility and may cause accessibility issues for me. There is also other content blocking already such as PrivacyBadger and uBlock Origin.",
-        "Status": "locked",
-        "Type": "string",
-        "Value": "standard"
-      },
-      "browser.contentblocking.report.hide_vpn_banner": {
-        "Status": "default",
-        "Type": "boolean",
-        "Value": true
-      },
-      "browser.contentblocking.report.lockwise.enabled": {
-        "Status": "default",
-        "Type": "boolean",
-        "Value": false
-      },
-      "browser.contentblocking.report.show_mobile_app": {
-        "Status": "default",
-        "Type": "boolean",
-        "Value": false
-      },
-      "browser.contentblocking.report.vpn.enabled": {
-        "Status": "default",
-        "Type": "boolean",
-        "Value": false
-      },
-      "browser.crashReports.unsubmittedCheck.autoSubmit2": {
-        "Comment": "Automatically sending crash reports, but letting the user say no.",
-        "Status": "default",
-        "Type": "boolean",
-        "Value": true
-      },
-      "browser.discovery.enabled": {
-        "Comment": "This means personalized extension recommendations in extension management.",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": false
-      },
-      "browser.display.use_document_fonts": {
-        "Comment": "Are webpages allowed to set their own fonts by default? 0 blocks them breaking Mastodon buttons etc.",
-        "Status": "clear",
-        "Type": "number",
-        "Value": 0
-      },
-      "browser.preferences.moreFromMozilla": {
-        "Status": "default",
-        "Type": "boolean",
-        "Value": false
-      },
-      "browser.safebrowsing.blockedURIs.enabled": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "browser.safebrowsing.downloads.remote.url": {
-        "Status": "clear"
-      },
-      "browser.safebrowsing.malware.enabled": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "browser.safebrowsing.phishing.enabled": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "browser.safebrowsing.provider.google.gethashURL": {
-        "Status": "clear"
-      },
-      "browser.safebrowsing.provider.google.lists": {
-        "Status": "clear"
-      },
-      "browser.safebrowsing.provider.google.updateURL": {
-        "Status": "clear"
-      },
-      "browser.safebrowsing.provider.google4.dataSharingURL": {
-        "Status": "clear"
-      },
-      "browser.safebrowsing.provider.google4.gethashURL": {
-        "Status": "clear"
-      },
-      "browser.safebrowsing.provider.google4.updateURL": {
-        "Status": "clear"
-      },
-      "browser.safebrowsing.provider.mozilla.gethashURL": {
-        "Status": "clear"
-      },
-      "browser.safebrowsing.provider.mozilla.lists": {
-        "Status": "clear"
-      },
-      "browser.safebrowsing.provider.mozilla.lists.base": {
-        "Status": "clear"
-      },
-      "browser.safebrowsing.provider.mozilla.lists.content": {
-        "Status": "clear"
-      },
-      "browser.safebrowsing.provider.mozilla.updateURL": {
-        "Status": "clear"
-      },
-      "browser.tabs.closeWindowWithLastTab": {
-        "Status": "default",
-        "Type": "boolean",
-        "Value": false
-      },
-      "browser.tabs.inTitlebar": {
-        "Status": "default",
-        "Type": "number",
-        "Value": 0
-      },
-      "browser.tabs.unloadOnLowMemory": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "browser.translation.neverForLanguages": {
-        "Status": "default",
-        "Type": "string",
-        "Value": "en, fi"
-      },
-      "browser.translations.neverTranslateLanguages": {
-        "Status": "default",
-        "Type": "string",
-        "Value": "en, fi"
-      },
-      "browser.urlbar.trimHttps": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": false
-      },
-      "browser.urlbar.trimURL": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": false
-      },
-      "cookiebanners.bannerClicking.enabled": {
-        "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "cookiebanners.service.mode": {
-        "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
-        "Type": "number",
-        "Value": 2
-      },
-      "cookiebanners.service.mode.privateBrowsing": {
-        "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
-        "Type": "number",
-        "Value": 2
-      },
-      "dom.block_download_insecure": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "dom.private-attribution.submission.enabled": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": false
-      },
-      "dom.security.https_only_mode": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "extensions.htmlaboutaddons.recommendations.enabled": {
-        "Comment": "This means the same, but without personalization.",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": false
-      },
-      "extensions.webextensions.restrictedDomains": {
-        "Comment": "Don't protect Mozilla domains from privacy extensions. Always reset it to modified/empty so I can access the original value if I ever need it.",
-        "Status": "user",
-        "Type": "string",
-        "Value": ""
-      },
-      "font.default.el": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "default",
-        "Type": "string",
-        "Value": "serif"
-      },
-      "font.default.x-cyrillic": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "default",
-        "Type": "string",
-        "Value": "serif"
-      },
-      "font.default.x-western": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "default",
-        "Type": "string",
-        "Value": "serif"
-      },
-      "font.name-list.monospace.x-cyrillic": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "clear",
-        "Type": "string",
-        "Value": "Noto Shanns Mono, monospace"
-      },
-      "font.name-list.monospace.x-western": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "clear",
-        "Type": "string",
-        "Value": "Noto Shanns Mono, monospace"
-      },
-      "font.name-list.sans-serif.x-cyrillic": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "clear",
-        "Type": "string",
-        "Value": "Noto Sans, sans-serif"
-      },
-      "font.name-list.sans-serif.x-western": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "clear",
-        "Type": "string",
-        "Value": "Noto Sans, sans-serif"
-      },
-      "font.name-list.serif.x-cyrillic": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "clear",
-        "Type": "string",
-        "Value": "Noto Serif, serif"
-      },
-      "font.name-list.serif.x-western": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "clear",
-        "Type": "string",
-        "Value": "Noto Serif, serif"
-      },
-      "font.name.monospace.el": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "default",
-        "Type": "string",
-        "Value": "Liberation Mono"
-      },
-      "font.name.monospace.x-cyrillic": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "default",
-        "Type": "string",
-        "Value": "Liberation Mono"
-      },
-      "font.name.monospace.x-western": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "default",
-        "Type": "string",
-        "Value": "Liberation Mono"
-      },
-      "font.name.sans-serif.el": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "default",
-        "Type": "string",
-        "Value": "Liberation Sans"
-      },
-      "font.name.sans-serif.x-cyrillic": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "default",
-        "Type": "string",
-        "Value": "Liberation Sans"
-      },
-      "font.name.sans-serif.x-western": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "default",
-        "Type": "string",
-        "Value": "Liberation Sans"
-      },
-      "font.name.serif.el": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "default",
-        "Type": "string",
-        "Value": "Liberation Serif"
-      },
-      "font.name.serif.x-cyrillic": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "default",
-        "Type": "string",
-        "Value": "Liberation Serif"
-      },
-      "font.name.serif.x-western": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "default",
-        "Type": "string",
-        "Value": "Liberation Serif"
-      },
-      "font.system.whitelist": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "default",
-        "Type": "string",
-        "Value": "Liberation Serif, Tinos, Times New Roman, Liberation Sans, Arimo, Arial, Liberation Mono, Cousine, Courier New, Noto Sans, Noto Serif, Noto Mono, OpenDyslexic, Noto Emoji, Noto Color Emoji, Comic Neue"
-      },
-      "general.config.obscure_value": {
-        "Comment": "Required for autoconfig.",
-        "Status": "locked",
-        "Type": "number",
-        "Value": 0
-      },
-      "geo.provider.network.url": {
-        "Comment": "See geoclue below.",
-        "Comment_beacondb": "Firefox only sends connected AP that won't work due to _nomap and the server side requires more than one as well. beacondb/beacondb#8",
-        "Comment_positon": "https://github.com/microg/GmsCore/issues/2237#issuecomment-2169193229",
-        "Status": "locked",
-        "Type": "string",
-        "Value": "",
-        "Value_beacondb": "https://beacondb.net/v1/geolocate",
-        "Value_positon": "https://api.positon.xyz/?key=74600654-2aec-11ef-aa95-3b7218da6865"
-      },
-      "geo.provider.use_geoclue": {
-        "Comment": "/etc/geolocation, gpsd and global WPS configuration.",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "geo.provider.use_gpsd": {
-        "Comment": "My geoclue should be using gpsd already.",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": false
-      },
-      "image.animation.mode": {
-        "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "default",
-        "Type": "string",
-        "Value": "once"
-      },
-      "intl.accept_languages": {
-        "Status": "user",
-        "Type": "string",
-        "Value": "fi-FI, fi, en-FI, en-US, en, ru-RU, ru"
-      },
-      "javascript.use_us_english_locale": {
-        "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "default",
-        "Type": "boolean",
-        "Value": true
-      },
-      "layout.css.always_underline_links": {
-        "Comment": "Underscore links by default, disabling allowed",
-        "Status": "default",
-        "Type": "boolean",
-        "Value": true
-      },
-      "layout.css.devPixelsPerPx": {
-        "Comment": "ui.textScaleFactor 90 does practically the same with less side effects.",
-        "Status": "clear",
-        "Type": "string",
-        "Value": "1.5"
-      },
-      "layout.css.font-variant-emoji.enabled": {
-        "Comment": "Experimental, disabled by default.",
-        "Status": "default",
-        "Value": true
-      },
-      "layout.css.prefers-color-scheme.content-override": {
-        "Comment": "Dark theme by default, disabling allowed",
-        "Status": "clear",
-        "Type": "number",
-        "Value": 0
-      },
-      "media.autoplay.default": {
-        "Comment": "Not even autoplaying silently?",
-        "Status": "default",
-        "Type": "number",
-        "Value": 5
-      },
-      "network.IDN_show_punycode": {
-        "Comment": "Protection against identically looking unicode domain names",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "network.dns.echconfig.enabled": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "network.dns.http3_echconfig.enabled": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "network.dns.native_https_query": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "network.dns.native_https_query_in_automation": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "network.dns.native_https_query_win10": {
-        "Comment": "This is here just as a reminder that it exists. I don't have a Windows 10 and it will likely switch to true when it exists.",
-        "Status": "clear"
-      },
-      "network.dns.preferIPv6": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "network.dns.use_https_rr_as_altsvc": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "network.http.referer.XOriginTrimmingPolicy": {
-        "Status": "clear"
-      },
-      "network.http.referer.defaultPolicy": {
-        "Status": "clear"
-      },
-      "network.http.speculative-parallel-limit": {
-        "Status": "clear"
-      },
-      "network.predictor.enable-prefetch": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "network.predictor.enabled": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "network.prefetch-next": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "network.trr.disable-ECS": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": false
-      },
-      "network.trr.display_fallback_warning": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "network.trr.early-AAAA": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "network.trr.exclude-etc-hosts": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": false
-      },
-      "network.trr.useGET": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "pdfjs.enableScripting": {
-        "Comment": "I don't see a good reason for allowing scripts in pdf files in a web browser.",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": false
-      },
-      "pdfjs.forcePageColors": {
-        "Status": "default",
-        "Type": "boolean",
-        "Value": true
-      },
-      "pdfjs.isEvalSupported": {
-        "Comment": "CVE-2024-4367 and hardening. I don't think pdf files should be that clever.",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": false
-      },
-      "pdfjs.pageColorsBackground": {
-        "Status": "default",
-        "Type": "string",
-        "Value": "#000000"
-      },
-      "pdfjs.pageColorsForeground": {
-        "Status": "default",
-        "Type": "string",
-        "Value": "#ffb700"
-      },
-      "privacy.donottrackheader.enabled": {
-        "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "privacy.donottrackheader.value": {
-        "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
-        "Type": "number",
-        "Value": 1
-      },
-      "privacy.fingerprintingProtection": {
-        "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "privacy.fingerprintingProtection.overrides": {
-        "Comment": "Preference not allowed for stability reasons. :( https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc",
-        "Status": "locked",
-        "Type": "string",
-        "Value": "+AllTargets,-KeyboardEvents,-SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-NavigatorUserAgent,-JSDateTimeUTC,-HttpUserAgent"
-      },
-      "privacy.fingerprintingProtection.pbmode": {
-        "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "privacy.globalprivacycontrol.enabled": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "privacy.resistFingerprinting": {
-        "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": false
-      },
-      "privacy.resistFingerprinting.block_mozAddonManage": {
-        "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "clear",
-        "Type": "boolean",
-        "Value": true
-      },
-      "privacy.resistFingerprinting.letterboxing": {
-        "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "privacy.resistFingerprinting.pbmode": {
-        "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "clear",
-        "Type": "boolean",
-        "Value": false
-      },
-      "privacy.userContext.enabled": {
-        "Comment": "Tab containers",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "privacy.userContext.extension": {
-        "Comment": "Displays in settings which extension requires container tabs. None. it's this policy. Preference not allowed for stability reasons.",
-        "Status": "locked",
-        "Type": "string",
-        "Value": ""
-      },
-      "privacy.userContext.ui.enabled": {
-        "Comment": "Tab containers UI without extensions",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "reader.parse-on-load.force-enabled": {
-        "Comment": "Preference not allowed for stability reasons. :(",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "security.OCSP.require": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "security.insecure_connection_text.enabled": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "security.insecure_connection_text.pbmode.enabled": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "security.ssl.enable_ocsp_must_staple": {
-        "Comment": "Preference not allowed for security reasons. :(",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "security.ssl.enable_ocsp_stapling": {
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "security.tls.ech.grease_http3": {
-        "Comment": "Seems to be required for http3. This defaults to true on Nightly 128 and false on 115.11.0esr. However again not allowed to be deployed here for security :()",
-        "Status": "locked",
-        "Type": "boolean",
-        "Value": true
-      },
-      "sidebar.revamp": {
-        "Comment": "Preference not allowed for stability reasons.",
-        "Status": "default",
-        "Type": "boolean",
-        "Value": true
-      },
-      "ui.systemUsesDarkTheme": {
-        "Comment": "Another defaulting to dark theme.",
-        "Status": "clear",
-        "Type": "number",
-        "Value": 1
-      },
-      "ui.textScaleFactor": {
-        "Status": "default",
-        "Type": "number",
-        "Value": 90
-      },
-      "widget.wayland.fractional-scale.enabled": {
-        "Status": "clear"
-      }
-    },
-    "PromptForDownloadLocation": true,
-    "RequestedLocales": "fi-FI, fi, en-FI, en-US, en, ru-RU, ru",
-    "SearchEngines": {
-      "Add": [
-        {
-          "Name": "DuckDuckGo Lite",
-          "Alias": "dl",
-          "Description": "Minimal, ad-free version of DuckDuckGo",
-          "IconURL": "https://start.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
-          "Method": "POST",
-          "PostData": "q={searchTerms}",
-          "SuggestURLTemplate": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
-          "URLTemplate": "https://duckduckgo.com/lite/?q={searchTerms}"
-        },
-        {
-          "Name": "DuckDuckGo Start",
-          "Alias": "d",
-          "Description": "DuckDuckGo Start page version",
-          "IconURL": "https://start.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
-          "Method": "GET",
-          "SuggestURLTemplate": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
-          "URLTemplate": "https://start.duckduckgo.com/?q={searchTerms}"
-        },
-        {
-          "Name": "Ecosia",
-          "Alias": "e",
-          "Description": "Ecosia Search Engine",
-          "IconURL": "https://cdn-static.ecosia.org/static/icons/favicon.ico",
-          "Method": "GET",
-          "SuggestURLTemplate": "https://ac.ecosia.org/autocomplete?q={searchTerms}",
-          "URLTemplate": "https://www.ecosia.org/search?q={searchTerms}&addon=firefoxgpo"
-        },
-        {
-          "Name": "Brave Search",
-          "Alias": "b",
-          "Description": "Brave Search",
-          "IconURL": "https://cdn.search.brave.com/serp/v2/_app/immutable/assets/favicon.acxxetWH.ico",
-          "Method": "GET",
-          "SuggestURLTemplate": "https://search.brave.com/api/suggest?q={searchTerms}",
-          "URLTemplate": "https://search.brave.com/search?q={searchTerms}"
-        },
-        {
-          "Name": "Brave Search Goggles",
-          "Alias": "bg",
-          "Description": "Brave Search Goggles",
-          "IconURL": "https://cdn.search.brave.com/serp/v2/_app/immutable/assets/favicon.acxxetWH.ico",
-          "Method": "GET",
-          "SuggestURLTemplate": "https://search.brave.com/api/suggest?q={searchTerms}",
-          "URLTemplate": "https://search.brave.com/goggles?q={searchTerms}"
-        }
-      ],
-      "Default": "Ecosia"
-    },
-    "SearchSuggestEnabled": true,
-    "SecurityDevices": {
-      "Add": {
-        "Fujitsu mPollux DigiSignApplication": "/usr/lib64/libcryptoki.so"
-      }
-    },
-    "ShowHomeButton": true,
-    "StartDownloadsInTempDirectory": true,
-    "UserMessaging": {
-      "ExtensionRecommendations": false,
-      "FeatureRecommendations": false,
-      "Locked": false,
-      "MoreFromMozilla": false,
-      "SkipOnboarding": false,
-      "UrlbarInterventions": false
-    },
-    "WindowsSSO": true
-  }
+	"policies": {
+		"3rdparty": {
+			"Extensions": {
+				"jid1-MnnxcxisBPnSXQ-eff@jetpack": {
+					"checkForDNTPolicy": true,
+					"disabledSites": [
+						"challenges.cloudflare.com",
+						"*.challenges.cloudflare.com",
+						"chrome-extension-scheme",
+						"ecosia.org",
+						"*.ecosia.org",
+						"keyoxide.org",
+						"moz-extension-scheme",
+						"research.cloudflare.com",
+						"*.research.cloudflare.com"
+					],
+					"learnInIncognito": true,
+					"learnLocally": true,
+					"sendDNTSignal": true,
+					"showCounter": true,
+					"showIntroPage": false,
+					"socialWidgetReplacementEnabled": true
+				},
+				"jid1-ZAdIEUB7XOzOJw@jetpack": {
+					"hasSeenPostInstall": true
+				},
+				"uBOLite@raymondhill.net": {
+					"disableFirstRunPage": true,
+					"noFiltering": [
+						"ecosia.org",
+						"cloudflare.com"
+					]
+				},
+				"uBlock0@raymondhill.net": {
+					"toAdd": {
+						"trustedSiteDirectives": [
+							"chrome-extension-scheme",
+							"challenges.cloudflare.com",
+							"ecosia.org",
+							"firefox.com",
+							"mozilla.net",
+							"mozilla.org",
+							"moz-extension-scheme",
+							"research.cloudflare.com"
+						]
+					},
+					"toOverwrite": {
+						"filterLists": [
+							"user-filters",
+							"ublock-badware",
+							"ublock-abuse",
+							"ublock-unbreak",
+							"urlhaus-1",
+							"https://www.eff.org/files/effdntlist.txt",
+							"https://gitea.blesmrt.net/mikaela/gist/raw/branch/master/DNS/blocklist.txt",
+							"https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
+							"https://raw.githubusercontent.com/jjjxu/NSO_Pegasus_Blocklist/master/Pegasus-Hosts-Formatted.txt",
+							"https://dl.red.flag.domains/adguard/red.flag.domains.txt",
+							"https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/malware/domains",
+							"https://big.oisd.nl",
+							"curben-phishing",
+							"ublock-filters",
+							"easylist",
+							"ublock-quick-fixes",
+							"ublock-privacy",
+							"easyprivacy",
+							"FIN-0",
+							"fanboy-cookiemonster",
+							"ublock-cookies-easylist",
+							"adguard-cookies",
+							"ublock-cookies-adguard",
+							"ublock-quick-fixes",
+							"ublock-annoyances",
+							"adguard-popup-overlays"
+						]
+					}
+				},
+				"{446900e4-71c2-419f-a6a7-df9c091e268b}": {
+					"environment": {
+						"base": "https://vault.bitwarden.eu",
+						"notifications": "https://notifications.bitwarden.eu"
+					}
+				}
+			}
+		},
+		"AutofillAddressEnabled": false,
+		"AutofillCreditCardEnabled": false,
+		"BlockAboutAddons": false,
+		"BlockAboutConfig": false,
+		"BlockAboutProfiles": false,
+		"BlockAboutSupport": false,
+		"Certificates": {
+			"ImportEnterpriseRoots": false
+		},
+		"Containers": {
+			"Default": [
+				{
+					"name": "ff",
+					"color": "white",
+					"icon": "chill"
+				},
+				{
+					"name": "Fedi",
+					"color": "green",
+					"icon": "tree"
+				},
+				{
+					"name": "Git",
+					"color": "pink",
+					"icon": "briefcase"
+				},
+				{
+					"name": "Google",
+					"color": "orange",
+					"icon": "chill"
+				},
+				{
+					"name": "HSL",
+					"color": "blue",
+					"icon": "vacation"
+				},
+				{
+					"name": "IM",
+					"color": "purple",
+					"icon": "chill"
+				},
+				{
+					"name": "LinkedIn",
+					"color": "cyan",
+					"icon": "briefcase"
+				},
+				{
+					"name": "WhatsApp",
+					"color": "green",
+					"icon": "pet"
+				}
+			]
+		},
+		"DNSOverHTTPS": {
+			"Enabled": false,
+			"ExcludedDomains": [
+				"http.badssl.com",
+				"norwegianwifi.com"
+			],
+			"Fallback": true,
+			"Locked": true,
+			"ProviderURL": "https://dns0.eu/",
+			"ProviderURL_outside_europe_aminda_comment": "Swap to https://unfiltered.adguard-dns.com/dns-query if device is expected to cross continents from Europe?",
+			"ProviderURL_with_ECS_comment": "If changing this to something with non-private ECS, remember to disable ECS in preferences of TRR!"
+		},
+		"DisableEncryptedClientHello": false,
+		"DisableFirefoxAccounts": false,
+		"DisableFirefoxScreenshots": false,
+		"DisableFirefoxStudies": true,
+		"DisableForgetButton": false,
+		"DisablePocket": true,
+		"DisableSecurityBypass": {
+			"InvalidCertificate": true,
+			"SafeBrowsing": false
+		},
+		"DisplayBookmarksToolbar": "never",
+		"DontCheckDefaultBrowser": true,
+		"EnableTrackingProtection": {
+			"Comment": "Managing tracking protection is left for the user unless there is a heavy reason to do otherwise.",
+			"Cryptomining": true,
+			"EmailTracking": true,
+			"Exceptions": [
+				"https://www.ecosia.org"
+			],
+			"Fingerprinting": true,
+			"Locked": false,
+			"Value": true
+		},
+		"EncryptedMediaExtensions": {
+			"Enabled": true,
+			"Locked": false
+		},
+		"ExtensionSettings": {
+			"@contain-facebook": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/facebook-container/latest.xpi",
+				"installation_mode": "force_installed"
+			},
+			"@testpilot-containers": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/multi-account-container/latest.xpi",
+				"installation_mode": "normal_installed"
+			},
+			"jid1-MnnxcxisBPnSXQ-eff@jetpack": {
+				"comment": "While this won't sync and requires manually enabling the other one when the policy is missing, it's less confusing for the automatic configuration not existing. Additionally I have some suspicion towards Mozilla Anonym.",
+				"install_url": "https://www.eff.org/files/privacy-badger-latest.xpi",
+				"installation_mode": "force_installed"
+			},
+			"jid1-MnnxcxisBPnSXQ@jetpack": {
+				"blocked_install_message": "Already force_installed through EFF.",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi",
+				"installation_mode": "blocked"
+			},
+			"offline-qr-code@rugk.github.io": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/offline-qr-code-generator/latest.xpi",
+				"installation_mode": "force_installed"
+			},
+			"optout@google.com": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/interest-advertising-opt-out/latest.xpi",
+				"installation_mode": "force_installed"
+			},
+			"plasma-browser-integration@kde.org": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/plasma-integration/latest.xpi",
+				"installation_mode": "force_installed"
+			},
+			"regrets-reporter@mozillafoundation.org": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/regretsreporter/latest.xpi",
+				"installation_mode": "force_installed"
+			},
+			"uBOLite@raymondhill.net": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin-lite/latest.xpi",
+				"installation_mode": "normal_installed"
+			},
+			"uBlock0@raymondhill.net": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
+				"installation_mode": "force_installed"
+			},
+			"{2f182d41-fd03-4a6d-938d-081419586c37}": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/google-analytics-opt-out/latest.xpi",
+				"installation_mode": "force_installed"
+			},
+			"{3c078156-979c-498b-8990-85f7987dd929}": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/sidebery/latest.xpi",
+				"installation_mode": "normal_installed"
+			},
+			"{446900e4-71c2-419f-a6a7-df9c091e268b}": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi",
+				"installation_mode": "force_installed"
+			},
+			"{48748554-4c01-49e8-94af-79662bf34d50}": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-pass/latest.xpi",
+				"installation_mode": "force_installed"
+			},
+			"{8e41107d-2be2-454d-b4b8-c3d7e54d77de}": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/igplus-extension/latest.xpi",
+				"installation_mode": "normal_installed"
+			},
+			"{b11bea1f-a888-4332-8d8a-cec2be7d24b9}": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/torproject-snowflake/latest.xpi",
+				"installation_mode": "normal_installed"
+			},
+			"{c607c8df-14a7-4f28-894f-29e8722976af}": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/temporary-containers/latest.xpi",
+				"installation_mode": "normal_installed"
+			},
+			"{d04b0b40-3dab-4f0b-97a6-04ec3eddbfb0}": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/ecosia-the-green-search/latest.xpi",
+				"installation_mode": "normal_installed"
+			}
+		},
+		"FirefoxHome": {
+			"Highlights": false,
+			"Locked": false,
+			"Pocket": false,
+			"Search": true,
+			"Snippets": false,
+			"SponsoredPocket": false,
+			"SponsoredTopSites": false,
+			"TopSites": false
+		},
+		"FirefoxSuggest": {
+			"ImproveSuggest": false,
+			"Locked": false,
+			"SponsoredSuggestions": false,
+			"WebSuggestions": false
+		},
+		"Homepage": {
+			"Locked": false,
+			"StartPage": "previous-session",
+			"URL": "about:mozilla"
+		},
+		"LegacySameSiteCookieBehaviorEnabled": false,
+		"NetworkPrediction": true,
+		"NewTabPage": false,
+		"OverrideFirstRunPage": "about:mozilla|https://addons.mozilla.org/firefox/addon/noscript/",
+		"PDFjs": {
+			"EnablePermissions": false,
+			"Enabled": true
+		},
+		"PasswordManagerEnabled": false,
+		"Preferences": {
+			"app.update.download.attempts": {
+				"Comment": "If this is what it looks like, it will stop the prompts to download Firefox manually.",
+				"Status": "clear"
+			},
+			"autoadmin.failover_to_cached": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"autoadmin.global_config_url": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "locked",
+				"Type": "string",
+				"Value": "https://gitea.blesmrt.net/mikaela/shell-things/raw/branch/master/conf/firefox-forbidden-policies.js"
+			},
+			"autoadmin.offline_failover": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"autoadmin.refresh_interval": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "locked",
+				"Type": "number",
+				"Value": 120
+			},
+			"browser.aboutConfig.showWarning": {
+				"Status": "default",
+				"Type": "boolean",
+				"Value": false
+			},
+			"browser.cache.disk.enable": {
+				"Status": "user",
+				"Type": "boolean",
+				"Value": false
+			},
+			"browser.cache.memory.enable": {
+				"Status": "user",
+				"Type": "boolean",
+				"Value": true
+			},
+			"browser.contentblocking.category": {
+				"Comment": "The best option would be strict, but amongst other things that disables system font visibility and may cause accessibility issues for me. There is also other content blocking already such as PrivacyBadger and uBlock Origin.",
+				"Status": "locked",
+				"Type": "string",
+				"Value": "standard"
+			},
+			"browser.contentblocking.report.hide_vpn_banner": {
+				"Status": "default",
+				"Type": "boolean",
+				"Value": true
+			},
+			"browser.contentblocking.report.lockwise.enabled": {
+				"Status": "default",
+				"Type": "boolean",
+				"Value": false
+			},
+			"browser.contentblocking.report.show_mobile_app": {
+				"Status": "default",
+				"Type": "boolean",
+				"Value": false
+			},
+			"browser.contentblocking.report.vpn.enabled": {
+				"Status": "default",
+				"Type": "boolean",
+				"Value": false
+			},
+			"browser.crashReports.unsubmittedCheck.autoSubmit2": {
+				"Comment": "Automatically sending crash reports, but letting the user say no.",
+				"Status": "default",
+				"Type": "boolean",
+				"Value": true
+			},
+			"browser.discovery.enabled": {
+				"Comment": "This means personalized extension recommendations in extension management.",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
+			},
+			"browser.display.use_document_fonts": {
+				"Comment": "Are webpages allowed to set their own fonts by default? 0 blocks them breaking Mastodon buttons etc.",
+				"Status": "clear",
+				"Type": "number",
+				"Value": 0
+			},
+			"browser.preferences.moreFromMozilla": {
+				"Status": "default",
+				"Type": "boolean",
+				"Value": false
+			},
+			"browser.safebrowsing.blockedURIs.enabled": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"browser.safebrowsing.downloads.remote.url": {
+				"Status": "clear"
+			},
+			"browser.safebrowsing.malware.enabled": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"browser.safebrowsing.phishing.enabled": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"browser.safebrowsing.provider.google.gethashURL": {
+				"Status": "clear"
+			},
+			"browser.safebrowsing.provider.google.lists": {
+				"Status": "clear"
+			},
+			"browser.safebrowsing.provider.google.updateURL": {
+				"Status": "clear"
+			},
+			"browser.safebrowsing.provider.google4.dataSharingURL": {
+				"Status": "clear"
+			},
+			"browser.safebrowsing.provider.google4.gethashURL": {
+				"Status": "clear"
+			},
+			"browser.safebrowsing.provider.google4.updateURL": {
+				"Status": "clear"
+			},
+			"browser.safebrowsing.provider.mozilla.gethashURL": {
+				"Status": "clear"
+			},
+			"browser.safebrowsing.provider.mozilla.lists": {
+				"Status": "clear"
+			},
+			"browser.safebrowsing.provider.mozilla.lists.base": {
+				"Status": "clear"
+			},
+			"browser.safebrowsing.provider.mozilla.lists.content": {
+				"Status": "clear"
+			},
+			"browser.safebrowsing.provider.mozilla.updateURL": {
+				"Status": "clear"
+			},
+			"browser.tabs.closeWindowWithLastTab": {
+				"Status": "default",
+				"Type": "boolean",
+				"Value": false
+			},
+			"browser.tabs.inTitlebar": {
+				"Status": "default",
+				"Type": "number",
+				"Value": 0
+			},
+			"browser.tabs.unloadOnLowMemory": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"browser.translation.neverForLanguages": {
+				"Status": "default",
+				"Type": "string",
+				"Value": "en, fi"
+			},
+			"browser.translations.neverTranslateLanguages": {
+				"Status": "default",
+				"Type": "string",
+				"Value": "en, fi"
+			},
+			"browser.urlbar.trimHttps": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
+			},
+			"browser.urlbar.trimURL": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
+			},
+			"cookiebanners.bannerClicking.enabled": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"cookiebanners.service.mode": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "locked",
+				"Type": "number",
+				"Value": 2
+			},
+			"cookiebanners.service.mode.privateBrowsing": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "locked",
+				"Type": "number",
+				"Value": 2
+			},
+			"dom.block_download_insecure": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"dom.private-attribution.submission.enabled": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
+			},
+			"dom.security.https_only_mode": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"extensions.htmlaboutaddons.recommendations.enabled": {
+				"Comment": "This means the same, but without personalization.",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
+			},
+			"extensions.webextensions.restrictedDomains": {
+				"Comment": "Don't protect Mozilla domains from privacy extensions. Always reset it to modified/empty so I can access the original value if I ever need it.",
+				"Status": "user",
+				"Type": "string",
+				"Value": ""
+			},
+			"font.default.el": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "default",
+				"Type": "string",
+				"Value": "serif"
+			},
+			"font.default.x-cyrillic": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "default",
+				"Type": "string",
+				"Value": "serif"
+			},
+			"font.default.x-western": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "default",
+				"Type": "string",
+				"Value": "serif"
+			},
+			"font.name-list.monospace.x-cyrillic": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "clear",
+				"Type": "string",
+				"Value": "Noto Shanns Mono, monospace"
+			},
+			"font.name-list.monospace.x-western": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "clear",
+				"Type": "string",
+				"Value": "Noto Shanns Mono, monospace"
+			},
+			"font.name-list.sans-serif.x-cyrillic": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "clear",
+				"Type": "string",
+				"Value": "Noto Sans, sans-serif"
+			},
+			"font.name-list.sans-serif.x-western": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "clear",
+				"Type": "string",
+				"Value": "Noto Sans, sans-serif"
+			},
+			"font.name-list.serif.x-cyrillic": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "clear",
+				"Type": "string",
+				"Value": "Noto Serif, serif"
+			},
+			"font.name-list.serif.x-western": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "clear",
+				"Type": "string",
+				"Value": "Noto Serif, serif"
+			},
+			"font.name.monospace.el": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "default",
+				"Type": "string",
+				"Value": "Liberation Mono"
+			},
+			"font.name.monospace.x-cyrillic": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "default",
+				"Type": "string",
+				"Value": "Liberation Mono"
+			},
+			"font.name.monospace.x-western": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "default",
+				"Type": "string",
+				"Value": "Liberation Mono"
+			},
+			"font.name.sans-serif.el": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "default",
+				"Type": "string",
+				"Value": "Liberation Sans"
+			},
+			"font.name.sans-serif.x-cyrillic": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "default",
+				"Type": "string",
+				"Value": "Liberation Sans"
+			},
+			"font.name.sans-serif.x-western": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "default",
+				"Type": "string",
+				"Value": "Liberation Sans"
+			},
+			"font.name.serif.el": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "default",
+				"Type": "string",
+				"Value": "Liberation Serif"
+			},
+			"font.name.serif.x-cyrillic": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "default",
+				"Type": "string",
+				"Value": "Liberation Serif"
+			},
+			"font.name.serif.x-western": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "default",
+				"Type": "string",
+				"Value": "Liberation Serif"
+			},
+			"font.system.whitelist": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "default",
+				"Type": "string",
+				"Value": "Liberation Serif, Tinos, Times New Roman, Liberation Sans, Arimo, Arial, Liberation Mono, Cousine, Courier New, Noto Sans, Noto Serif, Noto Mono, OpenDyslexic, Noto Emoji, Noto Color Emoji, Comic Neue"
+			},
+			"general.config.obscure_value": {
+				"Comment": "Required for autoconfig.",
+				"Status": "locked",
+				"Type": "number",
+				"Value": 0
+			},
+			"geo.provider.network.url": {
+				"Comment": "See geoclue below.",
+				"Comment_beacondb": "Firefox only sends connected AP that won't work due to _nomap and the server side requires more than one as well. beacondb/beacondb#8",
+				"Comment_positon": "https://github.com/microg/GmsCore/issues/2237#issuecomment-2169193229",
+				"Status": "locked",
+				"Type": "string",
+				"Value": "",
+				"Value_beacondb": "https://beacondb.net/v1/geolocate",
+				"Value_positon": "https://api.positon.xyz/?key=74600654-2aec-11ef-aa95-3b7218da6865"
+			},
+			"geo.provider.use_geoclue": {
+				"Comment": "/etc/geolocation, gpsd and global WPS configuration.",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"geo.provider.use_gpsd": {
+				"Comment": "My geoclue should be using gpsd already.",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
+			},
+			"image.animation.mode": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "default",
+				"Type": "string",
+				"Value": "once"
+			},
+			"intl.accept_languages": {
+				"Status": "user",
+				"Type": "string",
+				"Value": "fi-FI, fi, en-FI, en-US, en, ru-RU, ru"
+			},
+			"javascript.use_us_english_locale": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "default",
+				"Type": "boolean",
+				"Value": true
+			},
+			"layout.css.always_underline_links": {
+				"Comment": "Underscore links by default, disabling allowed",
+				"Status": "default",
+				"Type": "boolean",
+				"Value": true
+			},
+			"layout.css.devPixelsPerPx": {
+				"Comment": "ui.textScaleFactor 90 does practically the same with less side effects.",
+				"Status": "clear",
+				"Type": "string",
+				"Value": "1.5"
+			},
+			"layout.css.font-variant-emoji.enabled": {
+				"Comment": "Experimental, disabled by default.",
+				"Status": "default",
+				"Value": true
+			},
+			"layout.css.prefers-color-scheme.content-override": {
+				"Comment": "Dark theme by default, disabling allowed",
+				"Status": "clear",
+				"Type": "number",
+				"Value": 0
+			},
+			"media.autoplay.default": {
+				"Comment": "Not even autoplaying silently?",
+				"Status": "default",
+				"Type": "number",
+				"Value": 5
+			},
+			"network.IDN_show_punycode": {
+				"Comment": "Protection against identically looking unicode domain names",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"network.dns.echconfig.enabled": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"network.dns.http3_echconfig.enabled": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"network.dns.native_https_query": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"network.dns.native_https_query_in_automation": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"network.dns.native_https_query_win10": {
+				"Comment": "This is here just as a reminder that it exists. I don't have a Windows 10 and it will likely switch to true when it exists.",
+				"Status": "clear"
+			},
+			"network.dns.preferIPv6": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"network.dns.use_https_rr_as_altsvc": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"network.http.referer.XOriginTrimmingPolicy": {
+				"Status": "clear"
+			},
+			"network.http.referer.defaultPolicy": {
+				"Status": "clear"
+			},
+			"network.http.speculative-parallel-limit": {
+				"Status": "clear"
+			},
+			"network.predictor.enable-prefetch": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"network.predictor.enabled": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"network.prefetch-next": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"network.trr.disable-ECS": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
+			},
+			"network.trr.display_fallback_warning": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"network.trr.early-AAAA": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"network.trr.exclude-etc-hosts": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
+			},
+			"network.trr.useGET": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"pdfjs.enableScripting": {
+				"Comment": "I don't see a good reason for allowing scripts in pdf files in a web browser.",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
+			},
+			"pdfjs.forcePageColors": {
+				"Status": "default",
+				"Type": "boolean",
+				"Value": true
+			},
+			"pdfjs.isEvalSupported": {
+				"Comment": "CVE-2024-4367 and hardening. I don't think pdf files should be that clever.",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
+			},
+			"pdfjs.pageColorsBackground": {
+				"Status": "default",
+				"Type": "string",
+				"Value": "#000000"
+			},
+			"pdfjs.pageColorsForeground": {
+				"Status": "default",
+				"Type": "string",
+				"Value": "#ffb700"
+			},
+			"privacy.donottrackheader.enabled": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"privacy.donottrackheader.value": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "locked",
+				"Type": "number",
+				"Value": 1
+			},
+			"privacy.fingerprintingProtection": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"privacy.fingerprintingProtection.overrides": {
+				"Comment": "Preference not allowed for stability reasons. :( https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc",
+				"Status": "locked",
+				"Type": "string",
+				"Value": "+AllTargets,-KeyboardEvents,-SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-NavigatorUserAgent,-JSDateTimeUTC,-HttpUserAgent"
+			},
+			"privacy.fingerprintingProtection.pbmode": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"privacy.globalprivacycontrol.enabled": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"privacy.resistFingerprinting": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
+			},
+			"privacy.resistFingerprinting.block_mozAddonManage": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "clear",
+				"Type": "boolean",
+				"Value": true
+			},
+			"privacy.resistFingerprinting.letterboxing": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"privacy.resistFingerprinting.pbmode": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "clear",
+				"Type": "boolean",
+				"Value": false
+			},
+			"privacy.userContext.enabled": {
+				"Comment": "Tab containers",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"privacy.userContext.extension": {
+				"Comment": "Displays in settings which extension requires container tabs. None. it's this policy. Preference not allowed for stability reasons.",
+				"Status": "locked",
+				"Type": "string",
+				"Value": ""
+			},
+			"privacy.userContext.ui.enabled": {
+				"Comment": "Tab containers UI without extensions",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"reader.parse-on-load.force-enabled": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"security.OCSP.require": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"security.insecure_connection_text.enabled": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"security.insecure_connection_text.pbmode.enabled": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"security.ssl.enable_ocsp_must_staple": {
+				"Comment": "Preference not allowed for security reasons. :(",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"security.ssl.enable_ocsp_stapling": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"security.tls.ech.grease_http3": {
+				"Comment": "Seems to be required for http3. This defaults to true on Nightly 128 and false on 115.11.0esr. However again not allowed to be deployed here for security :()",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"sidebar.revamp": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "default",
+				"Type": "boolean",
+				"Value": true
+			},
+			"ui.systemUsesDarkTheme": {
+				"Comment": "Another defaulting to dark theme.",
+				"Status": "clear",
+				"Type": "number",
+				"Value": 1
+			},
+			"ui.textScaleFactor": {
+				"Status": "default",
+				"Type": "number",
+				"Value": 90
+			},
+			"widget.wayland.fractional-scale.enabled": {
+				"Status": "clear"
+			}
+		},
+		"PromptForDownloadLocation": true,
+		"RequestedLocales": "fi-FI, fi, en-FI, en-US, en, ru-RU, ru",
+		"SearchEngines": {
+			"Add": [
+				{
+					"Name": "DuckDuckGo Lite",
+					"Alias": "dl",
+					"Description": "Minimal, ad-free version of DuckDuckGo",
+					"IconURL": "https://start.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
+					"Method": "POST",
+					"PostData": "q={searchTerms}",
+					"SuggestURLTemplate": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
+					"URLTemplate": "https://duckduckgo.com/lite/?q={searchTerms}"
+				},
+				{
+					"Name": "DuckDuckGo Start",
+					"Alias": "d",
+					"Description": "DuckDuckGo Start page version",
+					"IconURL": "https://start.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
+					"Method": "GET",
+					"SuggestURLTemplate": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
+					"URLTemplate": "https://start.duckduckgo.com/?q={searchTerms}"
+				},
+				{
+					"Name": "Ecosia",
+					"Alias": "e",
+					"Description": "Ecosia Search Engine",
+					"IconURL": "https://cdn-static.ecosia.org/static/icons/favicon.ico",
+					"Method": "GET",
+					"SuggestURLTemplate": "https://ac.ecosia.org/autocomplete?q={searchTerms}",
+					"URLTemplate": "https://www.ecosia.org/search?q={searchTerms}&addon=firefoxgpo"
+				},
+				{
+					"Name": "Brave Search",
+					"Alias": "b",
+					"Description": "Brave Search",
+					"IconURL": "https://cdn.search.brave.com/serp/v2/_app/immutable/assets/favicon.acxxetWH.ico",
+					"Method": "GET",
+					"SuggestURLTemplate": "https://search.brave.com/api/suggest?q={searchTerms}",
+					"URLTemplate": "https://search.brave.com/search?q={searchTerms}"
+				},
+				{
+					"Name": "Brave Search Goggles",
+					"Alias": "bg",
+					"Description": "Brave Search Goggles",
+					"IconURL": "https://cdn.search.brave.com/serp/v2/_app/immutable/assets/favicon.acxxetWH.ico",
+					"Method": "GET",
+					"SuggestURLTemplate": "https://search.brave.com/api/suggest?q={searchTerms}",
+					"URLTemplate": "https://search.brave.com/goggles?q={searchTerms}"
+				}
+			],
+			"Default": "Ecosia"
+		},
+		"SearchSuggestEnabled": true,
+		"SecurityDevices": {
+			"Add": {
+				"Fujitsu mPollux DigiSignApplication": "/usr/lib64/libcryptoki.so"
+			}
+		},
+		"ShowHomeButton": true,
+		"StartDownloadsInTempDirectory": true,
+		"UserMessaging": {
+			"ExtensionRecommendations": false,
+			"FeatureRecommendations": false,
+			"Locked": false,
+			"MoreFromMozilla": false,
+			"SkipOnboarding": false,
+			"UrlbarInterventions": false
+		},
+		"WindowsSSO": true
+	}
 }
