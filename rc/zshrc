@@ -31,7 +31,7 @@ fi
 if hash lsb_release 2> /dev/null; then
 	(
 		export LC_ALL="en_DK.UTF-8"
-		hostname --all-fqdns
+		hostname --all-fqdns &
 		hostname --all-ip-addresses
 		printf "\n"
 		printf "$(uptime --pretty)\t$(uptime)\n"
