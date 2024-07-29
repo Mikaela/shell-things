@@ -96,44 +96,44 @@
     "Containers": {
       "Default": [
         {
+          "name": "ff",
           "color": "white",
-          "icon": "chill",
-          "name": "ff"
+          "icon": "chill"
         },
         {
+          "name": "Fedi",
           "color": "green",
-          "icon": "tree",
-          "name": "Fedi"
+          "icon": "tree"
         },
         {
+          "name": "Git",
           "color": "pink",
-          "icon": "briefcase",
-          "name": "Git"
+          "icon": "briefcase"
         },
         {
+          "name": "Google",
           "color": "orange",
-          "icon": "chill",
-          "name": "Google"
+          "icon": "chill"
         },
         {
+          "name": "HSL",
           "color": "blue",
-          "icon": "vacation",
-          "name": "HSL"
+          "icon": "vacation"
         },
         {
+          "name": "IM",
           "color": "purple",
-          "icon": "chill",
-          "name": "IM"
+          "icon": "chill"
         },
         {
+          "name": "LinkedIn",
           "color": "cyan",
-          "icon": "briefcase",
-          "name": "LinkedIn"
+          "icon": "briefcase"
         },
         {
+          "name": "WhatsApp",
           "color": "green",
-          "icon": "pet",
-          "name": "WhatsApp"
+          "icon": "pet"
         }
       ]
     },
@@ -951,48 +951,48 @@
     "SearchEngines": {
       "Add": [
         {
+          "Name": "DuckDuckGo Lite",
           "Alias": "dl",
           "Description": "Minimal, ad-free version of DuckDuckGo",
           "IconURL": "https://start.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
           "Method": "POST",
-          "Name": "DuckDuckGo Lite",
           "PostData": "q={searchTerms}",
           "SuggestURLTemplate": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
           "URLTemplate": "https://duckduckgo.com/lite/?q={searchTerms}"
         },
         {
+          "Name": "DuckDuckGo Start",
           "Alias": "d",
           "Description": "DuckDuckGo Start page version",
           "IconURL": "https://start.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
           "Method": "GET",
-          "Name": "DuckDuckGo Start",
           "SuggestURLTemplate": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
           "URLTemplate": "https://start.duckduckgo.com/?q={searchTerms}"
         },
         {
+          "Name": "Ecosia",
           "Alias": "e",
           "Description": "Ecosia Search Engine",
           "IconURL": "https://cdn-static.ecosia.org/static/icons/favicon.ico",
           "Method": "GET",
-          "Name": "Ecosia",
           "SuggestURLTemplate": "https://ac.ecosia.org/autocomplete?q={searchTerms}",
           "URLTemplate": "https://www.ecosia.org/search?q={searchTerms}&addon=firefoxgpo"
         },
         {
+          "Name": "Brave Search",
           "Alias": "b",
           "Description": "Brave Search",
           "IconURL": "https://cdn.search.brave.com/serp/v2/_app/immutable/assets/favicon.acxxetWH.ico",
           "Method": "GET",
-          "Name": "Brave Search",
           "SuggestURLTemplate": "https://search.brave.com/api/suggest?q={searchTerms}",
           "URLTemplate": "https://search.brave.com/search?q={searchTerms}"
         },
         {
+          "Name": "Brave Search Goggles",
           "Alias": "bg",
           "Description": "Brave Search Goggles",
           "IconURL": "https://cdn.search.brave.com/serp/v2/_app/immutable/assets/favicon.acxxetWH.ico",
           "Method": "GET",
-          "Name": "Brave Search Goggles",
           "SuggestURLTemplate": "https://search.brave.com/api/suggest?q={searchTerms}",
           "URLTemplate": "https://search.brave.com/goggles?q={searchTerms}"
         }

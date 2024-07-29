@@ -1,34 +1,34 @@
 [
   {
-    "command": "darkman toggle",
-    "name": "Darkman toggle"
+    "name": "Darkman toggle",
+    "command": "darkman toggle"
   },
   {
-    "command": "loginctl lock-session",
-    "name": "Lock screen"
+    "name": "Lock screen",
+    "command": "loginctl lock-session"
   },
   {
-    "command": "systemctl poweroff",
-    "name": "Power off"
+    "name": "Power off",
+    "command": "systemctl poweroff"
   },
   {
-    "command": "systemctl reboot",
-    "name": "Reboot"
+    "name": "Reboot",
+    "command": "systemctl reboot"
   },
   {
-    "command": "spectacle -b",
-    "name": "Screenshot"
+    "name": "Screenshot",
+    "command": "spectacle -b"
   },
   {
-    "command": "systemctl suspend",
-    "name": "Suspend"
+    "name": "Suspend",
+    "command": "systemctl suspend"
   },
   {
-    "command": "kdeconnect-cli -d $(kdeconnect-cli -a --id-only) --ping-msg \"$(ps -eo pid,%mem,cmd --sort=-%mem | head -n 6)\"",
-    "name": "Top#5 memory eaters"
+    "name": "Top#5 memory eaters",
+    "command": "kdeconnect-cli -d $(kdeconnect-cli -a --id-only) --ping-msg \"$(ps -eo pid,%mem,cmd --sort=-%mem | head -n 6)\""
   },
   {
-    "command": "loginctl unlock-session",
-    "name": "Unlock"
+    "name": "Unlock",
+    "command": "loginctl unlock-session"
   }
 ]
