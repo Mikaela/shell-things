@@ -1,0 +1,34 @@
+[
+  {
+    "command": "darkman toggle",
+    "name": "Darkman toggle"
+  },
+  {
+    "command": "loginctl lock-session",
+    "name": "Lock screen"
+  },
+  {
+    "command": "systemctl poweroff",
+    "name": "Power off"
+  },
+  {
+    "command": "systemctl reboot",
+    "name": "Reboot"
+  },
+  {
+    "command": "spectacle -b",
+    "name": "Screenshot"
+  },
+  {
+    "command": "systemctl suspend",
+    "name": "Suspend"
+  },
+  {
+    "command": "kdeconnect-cli -d $(kdeconnect-cli -a --id-only) --ping-msg \"$(ps -eo pid,%mem,cmd --sort=-%mem | head -n 6)\"",
+    "name": "Top#5 memory eaters"
+  },
+  {
+    "command": "loginctl unlock-session",
+    "name": "Unlock"
+  }
+]
