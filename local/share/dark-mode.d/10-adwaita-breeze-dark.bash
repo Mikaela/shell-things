@@ -13,7 +13,7 @@ dbus-send --session --dest=org.kde.GtkConfig --type=method_call /GtkConfig org.k
 xfconf-query --channel xsettings --create --type string --property /Net/ThemeName --set Adwaita-dark
 
 # Plasma
-lookandfeeltool --apply "org.kde.breezedark.desktop"
+lookandfeeltool --platform offscreen --apply "org.kde.breezedark.desktop"
 
 # Kvantum Qt
 #kvantummanager --set KvGnomeDark --noAssign-All

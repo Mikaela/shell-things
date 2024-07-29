@@ -13,7 +13,7 @@ dbus-send --session --dest=org.kde.GtkConfig --type=method_call /GtkConfig org.k
 xfconf-query --channel xsettings --create --type string --property /Net/ThemeName --set Breeze
 
 # Plasma
-lookandfeeltool --apply "org.kde.breeze.desktop"
+lookandfeeltool --platform offscreen --apply "org.kde.breeze.desktop"
 
 # Kvantum Qt
 #sleep 3 && kvantummanager --set KvGnome --noAssign-All
