@@ -16,8 +16,12 @@
     "command": "systemctl reboot"
   },
   {
-    "name": "Screenshot",
-    "command": "spectacle -b"
+    "name": "Screenshot [all monitors]",
+    "command": "spectacle --background --pointer"
+  },
+  {
+    "name": "Screenshot active window",
+    "command": "spectacle --background --pointer --activewindow"
   },
   {
     "name": "Suspend",
