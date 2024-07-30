@@ -2,30 +2,16 @@
 Type=ether
 
 [Link]
-RequiredForOnline=false
-# If something else (like NetworkManager) manages network, uncomment
-#Unmanaged=true
-# Required for mDNS
-#Multicast=true
+# I always mask systemd-networkd-wait-online.service anyway, so everything can
+# be required for online if it wants to be.
+ActivationPolicy=always-up
+# Nothing else is managing addressing etc.
+Unmanaged=false
 
 [Network]
 DHCP=true
-# systemctl enable systemd-resolved && systemctl start systemd-resolved
-# ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
-DNS=
-DNS=::1
-DNS=127.0.0.1
-DNS=127.0.0.53
+IPv6PrivacyExtensions=true
+IPv6LinkLocalAddressGenerationMode=stable-privacy
 DNSSEC=true
-#DNSOverTLS=opportunistic
 DNSOverTLS=true
-# Search domains
 Domains=.
-# Enable systemd-timesyncd with `timedatectl set-ntp true`, may be specified
-# multiple times, but you are using Chrony instead, right?
-#NTP=fi.pool.ntp.org
-#NTP=time.cloudflare.com
-# Enable mDNS/.local for systemd-resolved
-#MulticastDNS=true
-# Windows
-#LLMNR=true

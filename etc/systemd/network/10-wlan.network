@@ -1,35 +1,17 @@
 [Match]
-#Name=*
-# Can be {colon,hyphen,dot}-delimited hexadecimal or IPv{4,6} address
-#MACAddress=
 Type=wlan
 
 [Link]
-# Takes "ipv4", "ipv6", "both", or "any" (default).
-#RequiredFamilyForOnline=both
-# Always set administrative state to up. Implies RequiredForOnline=true
+# I always mask systemd-networkd-wait-online.service anyway, so everything can
+# be required for online if it wants to be.
 ActivationPolicy=always-up
-# If something else (like iwd EnableNetworkConfiguration=true) manages network,
-# uncomment
-#Unmanaged=true
-# Required for mDNS
-#Multicast=true
+# Nothing else is managing addressing etc.
+Unmanaged=false
 
 [Network]
 DHCP=true
 IPv6PrivacyExtensions=true
 IPv6LinkLocalAddressGenerationMode=stable-privacy
-DNS=
-DNS=::1
-DNS=127.0.0.1
-DNS=127.0.0.53
-# Enable mDNS/.local for systemd-resolved
-#MulticastDNS=true
-# Windows
-#LLMNR=true
-# systemd-resolved configuration
 DNSSEC=true
-#DNSOverTLS=opportunistic
 DNSOverTLS=true
-# Search domains
 Domains=.
