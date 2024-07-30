@@ -29,7 +29,7 @@ chmod -v +w /etc/resolv.conf
 rm -v /etc/resolv.conf
 
 # tee -p = operate in a more appropriate MODE with pipes.
-printf 'nameserver 127.0.0.53\nnameserver 127.0.0.53\nnameserver 127.0.0.53\nsearch .\noptions timeout:2 attempts:2 rotate edns0 trust-ad\n' | tee -p /etc/resolv.conf
+printf 'nameserver 127.0.0.53\nnameserver 127.0.0.53\nnameserver 127.0.0.53\nsearch .\noptions timeout:1 attempts:5 rotate edns0 trust-ad\n' | tee -p /etc/resolv.conf
 
 # Remove all other permissions than everyone reading resolv.conf
 chmod -v a=r /etc/resolv.conf

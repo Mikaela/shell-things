@@ -23,7 +23,7 @@ rm -v /etc/resolv.conf
 # No trust-ad here as chances are these resolvers are unencrypted and the
 # path to them isn't trusted.
 # tee -p = operate in a more appropriate MODE with pipes.
-printf "nameserver %b\nnameserver %b\nnameserver %b\nsearch .\noptions timeout:2 attempts:2 rotate edns0\n" "$1" "$2" "$3" | tee -p /etc/resolv.conf
+printf "nameserver %b\nnameserver %b\nnameserver %b\nsearch .\noptions timeout:1 attempts:5 rotate edns0\n" "$1" "$2" "$3" | tee -p /etc/resolv.conf
 
 # Remove all other permissions than everyone reading resolv.conf
 chmod -v a=r /etc/resolv.conf
