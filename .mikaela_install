@@ -4,7 +4,7 @@
 # stop.
 set -x
 
-git verify-commit HEAD
+git verify-commit HEAD || exit 1
 
 cat .mikaela/bash_aliases >~/.bash_aliases
 cat .mikaela/zsh_aliases >~/.zsh_aliases

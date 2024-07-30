@@ -3,7 +3,7 @@
 set -x
 
 if [ -d ~/src/gitea.blesmrt.net/Mikaela/ssh-allowed_signers ]; then
-	git verify-commit HEAD
+	git verify-commit HEAD || exit 1
 	sleep 3
 else
 	echo "Keys not found, cloning..."

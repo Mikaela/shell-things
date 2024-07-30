@@ -727,7 +727,7 @@ function shell-things {
 		git remote set-url origin https://gitea.blesmrt.net/Mikaela/shell-things.git
 		git fetch --all
 		git pull
-		git verify-commit HEAD
+		git verify-commit HEAD || exit 1
 		sleep 10
 		echo ""
 		echo "shell-things: Installing/Upgrading..."
