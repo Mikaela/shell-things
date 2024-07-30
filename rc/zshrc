@@ -243,6 +243,9 @@ fi
 if [ -f /home/linuxbrew/.linuxbrew/opt/rbenv/bin/rbenv ]; then
 	eval "$(/home/linuxbrew/.linuxbrew/opt/rbenv/bin/rbenv init -)"
 	PATH=/home/linuxbrew/.linuxbrew/opt/rbenv/bin/shims:$PATH
+
+# No OpenSSL? Remember (and substitute the x, y and z)!:
+# rbenv install --  --with-openssl-dir=/home/linuxbrew/.linuxbrew/Cellar/openssl@x/x.y.z/
 elif [ -f ~/.rbenv/bin/rbenv ]; then
 	eval "$(~/.rbenv/bin/rbenv init -)"
 	# Remember! And verify it before running!
