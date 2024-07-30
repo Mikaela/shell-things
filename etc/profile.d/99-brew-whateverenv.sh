@@ -8,10 +8,10 @@
 
 # https://github.com/go-nv/goenv
 if [ -f /home/linuxbrew/.linuxbrew/opt/goenv/bin/goenv ]; then
-	eval "$(/home/linuxbrew/.linuxbrew/opt/goenv/bin/goenv init -)"
+	eval "$(/home/linuxbrew/.linuxbrew/opt/goenv/bin/goenv init -)" > /dev/null 2>&1
 	PATH=/home/linuxbrew/.linuxbrew/opt/goenv/bin/shims:$PATH
 elif [ -f ~/.goenv/bin/goenv ]; then
-	eval "$(~/.goenv/bin/goenv init -)"
+	eval "$(~/.goenv/bin/goenv init -)" > /dev/null 2>&1
 fi
 
 # https://github.com/nvm-sh/nvm
