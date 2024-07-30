@@ -20,45 +20,64 @@ lockPref("cookiebanners.service.mode.privateBrowsing", 2);
 
 // I can set my preferred fonts in an order! :O
 // but obviously this is forbidden in policies.json!
-lockPref("font.default.el", "serif");
-lockPref("font.default.x-cyrillic", "serif");
+//lockPref("font.default.el", "serif");
+//lockPref("font.default.x-cyrillic", "serif");
+clearPref("font.default.el");
+clearPref("font.default.x-cyrillic");
 //lockPref("font.default.x-western", "serif");
-lockPref("font.default.x-western", "sans-serif");
+clearPref("font.default.x-western");
 // lockPref(
 // 	"font.name-list.monospace.x-cyrillic",
 // 	"Noto Shanns Mono, monospace",
 // );
-// lockPref("font.name-list.monospace.x-western", "Noto Shanns Mono, monospace");
-// lockPref("font.name-list.sans-serif.x-cyrillic", "Noto Sans, sans-serif");
+lockPref(
+	"font.name-list.monospace.x-western",
+	"Roboto Mono, Noto Sans Mono, monospace",
+);
+lockPref(
+	"font.name-list.sans-serif.x-cyrillic",
+	"Roboto, Noto Sans, sans-serif",
+);
 lockPref(
 	"font.name-list.sans-serif.x-western",
-	"Comic Neue Angular, Liberation Sans, Arimo, Arial, Noto Sans, sans-serif",
+	"Roboto, Noto Sans, sans-serif",
 );
-// lockPref("font.name-list.serif.x-cyrillic", "Noto Serif, serif");
-// lockPref("font.name-list.serif.x-western", "Noto Serif, serif");
-clearPref("font.name-list.monospace.x-cyrillic");
+lockPref(
+	"font.name-list.serif.x-cyrillic",
+	"Roboto Serif, Noto Serif, serif",
+);
+lockPref("font.name-list.serif.x-western", "Roboto Serif, Noto Serif, serif");
+//clearPref("font.name-list.monospace.x-cyrillic");
 //clearPref("font.name-list.monospace.x-western");
-clearPref("font.name-list.sans-serif.x-cyrillic");
-clearPref("font.name-list.sans-serif.x-western");
-clearPref("font.name-list.serif.x-cyrillic");
-clearPref("font.name-list.serif.x-western");
+//clearPref("font.name-list.sans-serif.x-cyrillic");
+//clearPref("font.name-list.sans-serif.x-western");
+//clearPref("font.name-list.serif.x-cyrillic");
+//clearPref("font.name-list.serif.x-western");
 //
-lockPref("font.name.monospace.el", "Liberation Mono");
-lockPref("font.name.monospace.x-cyrillic", "Liberation Mono");
-lockPref("font.name.monospace.x-western", "Liberation Mono");
+//lockPref("font.name.monospace.el", "Liberation Mono");
+clearPref("font.name.monospace.el", "Liberation Mono");
+//lockPref("font.name.monospace.x-cyrillic", "Liberation Mono");
+clearPref("font.name.monospace.x-cyrillic", "Liberation Mono");
+//lockPref("font.name.monospace.x-western", "Liberation Mono");
+clearPref("font.name.monospace.x-western", "Liberation Mono");
 //
 //lockPref("font.name.sans-serif.el", "Liberation Sans");
 clearPref("font.name.sans-serif.el");
-lockPref("font.name.sans-serif.x-cyrillic", "Liberation Sans");
-lockPref("font.name.sans-serif.x-western", "Liberation Sans");
+//lockPref("font.name.sans-serif.x-cyrillic", "Liberation Sans");
+clearPref("font.name.sans-serif.x-cyrillic", "Liberation Sans");
+//lockPref("font.name.sans-serif.x-western", "Liberation Sans");
+clearPref("font.name.sans-serif.x-western", "Liberation Sans");
 //
-lockPref("font.name.serif.el", "Liberation Serif");
-lockPref("font.name.serif.x-cyrillic", "Liberation Serif");
-lockPref("font.name.serif.x-western", "Liberation Serif");
+//lockPref("font.name.serif.el", "Liberation Serif");
+clearPref("font.name.serif.el", "Liberation Serif");
+//lockPref("font.name.serif.x-cyrillic", "Liberation Serif");
+clearPref("font.name.serif.x-cyrillic", "Liberation Serif");
+//lockPref("font.name.serif.x-western", "Liberation Serif");
+clearPref("font.name.serif.x-western", "Liberation Serif");
 // Allow these fonts regardless of the fingerprinting resistance
 lockPref(
 	"font.system.whitelist",
-	"Liberation Serif, Tinos, Times New Roman, Liberation Sans, Arimo, Arial, Liberation Mono, Cousine, Courier New, Noto Sans, Noto Serif, Noto Mono, OpenDyslexic, Noto Emoji, Noto Color Emoji, Comic Neue, Comic Neue Angular, Comic Neue Angular Light, Comic Neue Angular Light Italic, Comic Neue Light, Twemoji Mozilla, Noto Sans CJK JP, Noto Math, Noto Music",
+	"Liberation Serif, Tinos, Times New Roman, Liberation Sans, Arimo, Arial, Liberation Mono, Cousine, Courier New, Noto Sans, Noto Serif, Noto Mono, OpenDyslexic, Noto Emoji, Noto Color Emoji, Comic Neue, Comic Neue Angular, Comic Neue Angular Light, Comic Neue Angular Light Italic, Comic Neue Light, Twemoji Mozilla, Noto Sans CJK JP, Noto Math, Noto Music, Roboto, Roboto Serif, Roboto Mono, Roboto Flex",
 );
 
 // Play animated images only once, accessibility.
