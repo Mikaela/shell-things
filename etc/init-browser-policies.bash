@@ -50,6 +50,11 @@ mkdir -p /etc/opt/chrome
 setfacl --recursive --modify=u:root:rw,o:rx /etc/opt/chrome
 ln -fnsv /etc/opt/chromium/policies /etc/opt/chrome/policies
 
+# Naggig suspicion of another Google Chrome
+mkdir -p /etc/chrome
+setfacl --recursive --modify=u:root:rw,o:rx /etc/chrome
+ln -fnsv /etc/opt/chromium/policies /etc/chrome/policies
+
 # Microsoft Edge
 # I used to have a separate policy for it so remember to remove this manually
 # if it exists!
