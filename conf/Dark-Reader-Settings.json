@@ -1,0 +1,83 @@
+{
+	"automation": {
+		"behavior": "OnOff",
+		"enabled": true,
+		"mode": "system"
+	},
+	"automationBehaviour": "OnOff",
+	"changeBrowserTheme": true,
+	"customThemes": [],
+	"detectDarkTheme": true,
+	"disabledFor": [],
+	"displayedNews": [
+		"mobile",
+		"thanks-2023"
+	],
+	"enableContextMenus": true,
+	"enableForPDF": true,
+	"enableForProtectedPages": true,
+	"enabled": true,
+	"enabledByDefault": true,
+	"enabledFor": [],
+	"fetchNews": true,
+	"location": {
+		"latitude": null,
+		"longitude": null
+	},
+	"notifyOfNews": false,
+	"presets": [],
+	"previewNewDesign": true,
+	"readNews": [
+		"mobile",
+		"detect-dark-theme",
+		"no-war",
+		"chrome-favorites-2021",
+		"thanks-2021",
+		"5m-users",
+		"v4-9-16",
+		"v4-9",
+		"attention",
+		"dr-5-announcement",
+		"2m-users",
+		"automation",
+		"product-hunt-golden-kitty-2018",
+		"time-settings",
+		"safari",
+		"500k-users",
+		"stylish",
+		"product-hunt",
+		"custom-site-settings",
+		"thanks-for-contribution",
+		"dynamic-theme",
+		"thanks-2023"
+	],
+	"schemeVersion": 0,
+	"syncSettings": true,
+	"syncSitesFixes": true,
+	"theme": {
+		"brightness": 100,
+		"contrast": 100,
+		"darkColorScheme": "Default",
+		"darkSchemeBackgroundColor": "#000000",
+		"darkSchemeTextColor": "#ffb700",
+		"engine": "dynamicTheme",
+		"fontFamily": "system-ui",
+		"grayscale": 0,
+		"immediateModify": true,
+		"lightColorScheme": "Default",
+		"lightSchemeBackgroundColor": "#dcdad7",
+		"lightSchemeTextColor": "#181a1b",
+		"mode": 1,
+		"scrollbarColor": "auto",
+		"selectionColor": "auto",
+		"sepia": 0,
+		"styleSystemControls": true,
+		"stylesheet": "",
+		"textStroke": 0,
+		"useFont": true
+	},
+	"time": {
+		"activation": "18:00",
+		"deactivation": "9:00"
+	}
+}
