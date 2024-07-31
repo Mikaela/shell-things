@@ -27,7 +27,7 @@ printf "WARNING! LibreWolf default profile may be masked!\nhttps://codeberg.org/
 #    existing.
 
 # Firefox ESR
-ln -fnsv /etc/firefox /etc/firefox-esr
+ln -nsfv /etc/firefox /etc/firefox-esr
 
 # Chromium
 mkdir -vp /etc/opt/chromium/policies/{managed,recommended}
@@ -38,28 +38,28 @@ chmod -v a+rx /etc/opt/chromium/policies/{managed,recommended}/
 # Brave
 mkdir -p /etc/brave
 setfacl --recursive --modify=u:root:rw,o:rx /etc/brave
-ln -fnsv /etc/opt/chromium/policies /etc/brave/policies
+ln -nsfv /etc/opt/chromium/policies /etc/brave/policies
 
 # Vivaldi
 mkdir -p /etc/chromium
 setfacl --recursive --modify=u:root:rw,o:rx /etc/chromium
-ln -fnsv /etc/opt/chromium/policies /etc/chromium/policies
+ln -nsfv /etc/opt/chromium/policies /etc/chromium/policies
 
 # Google Chrome
 mkdir -p /etc/opt/chrome
 setfacl --recursive --modify=u:root:rw,o:rx /etc/opt/chrome
-ln -fnsv /etc/opt/chromium/policies /etc/opt/chrome/policies
+ln -nsfv /etc/opt/chromium/policies /etc/opt/chrome/policies
 
 # Naggig suspicion of another Google Chrome
 mkdir -p /etc/chrome
 setfacl --recursive --modify=u:root:rw,o:rx /etc/chrome
-ln -fnsv /etc/opt/chromium/policies /etc/chrome/policies
+ln -nsfv /etc/opt/chromium/policies /etc/chrome/policies
 
 # Microsoft Edge
 # I used to have a separate policy for it so remember to remove this manually
 # if it exists!
 mkdir -p /etc/opt/edge
 setfacl --recursive --modify=u:root:rw,o:rx /etc/opt/edge
-ln -fnsv /etc/opt/chromium/policies /etc/opt/edge/policies
+ln -nsfv /etc/opt/chromium/policies /etc/opt/edge/policies
 
 set +x
