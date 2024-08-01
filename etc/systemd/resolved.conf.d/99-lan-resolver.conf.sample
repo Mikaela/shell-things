@@ -8,5 +8,5 @@
 #DNS=192.168.8.1
 # Mikrotik
 #DNS=192.168.88.1
-
+DNSSEC=true
 # vim: filetype=systemd
