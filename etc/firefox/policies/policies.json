@@ -185,6 +185,10 @@
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/multi-account-container/latest.xpi",
 				"installation_mode": "normal_installed"
 			},
+			"addon@darkreader.org": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/darkreader/latest.xpi",
+				"installation_mode": "normal_installed"
+			},
 			"jid1-MnnxcxisBPnSXQ-eff@jetpack": {
 				"comment": "While this won't sync and requires manually enabling the other one when the policy is missing, it's less confusing for the automatic configuration not existing. Additionally I have some suspicion towards Mozilla Anonym.",
 				"install_url": "https://www.eff.org/files/privacy-badger-latest.xpi",
@@ -234,6 +238,10 @@
 			"{48748554-4c01-49e8-94af-79662bf34d50}": {
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-pass/latest.xpi",
 				"installation_mode": "force_installed"
+			},
+			"{6a65273e-2b26-40f5-b66e-8eed317307da}": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/new-tab-suspende/latest.xpi",
+				"installation_mode": "normal_installed"
 			},
 			"{8e41107d-2be2-454d-b4b8-c3d7e54d77de}": {
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/igplus-extension/latest.xpi",
