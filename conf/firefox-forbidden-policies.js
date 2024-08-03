@@ -121,10 +121,6 @@ lockPref("reader.parse-on-load.force-enabled", true);
 // Ensure OCSP stapling is enabled, especially if the server has it
 lockPref("security.ssl.enable_ocsp_must_staple", true);
 
-// TODO: Consider removing this when ESR updates as only it needs this for
-// ECH, which is otherwise the default=
-lockPref("security.tls.ech.grease_http3", true);
-
 // New sidebar
 lockPref("sidebar.revamp", true);
 
