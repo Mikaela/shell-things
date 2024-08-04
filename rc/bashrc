@@ -922,6 +922,14 @@ adduser-to-group() {
 	usermod -aG "$2" "$1"
 }
 
+# Very lazy ACL aware ls
+unalias ls
+ls() {
+	env ls --all --color=auto --human-readable "$@"
+	getfacl --absolute-names --skip-base "$@"
+}
+alias ll="ls -la"
+
 # Source files for miscannellious modifications.
 
 # acme.sh
