@@ -97,13 +97,9 @@ case "$TERM" in
 	*) ;;
 esac
 
-# enable color support of ls and also add handy aliases
 if hash dircolors 2> /dev/null; then
 	#test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 	eval $(dircolors --bourne-shell)
-	alias ls='ls --color=auto'
-	alias dir='dir --color=auto'
-	alias vdir='vdir --color=auto'
 fi
 alias grep='grep --color=auto'
 alias fgrep='grep -F --color=auto'
@@ -255,8 +251,8 @@ else
 fi
 
 # OS X ls colours (copied from https://apple.stackexchange.com/questions/33677/
-export CLICOLOR=1
-export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+#export CLICOLOR=1
+#export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 # znc uses this variable for figuring out hostname
 #export HOSTNAME=$(hostname --fqdn)
