@@ -933,7 +933,16 @@ ls() {
 		fi
 	fi
 }
-alias ll="ls -la"
+unalias ll
+ll() {
+	env ls -l --all --color=auto --human-readable "$@"
+	if hash getfacl 2> /dev/null; then
+		if [[ -d "$@" || -f "$@" ]]; then
+			printf "\n"
+			getfacl --absolute-names --skip-base "$@"
+		fi
+	fi
+}
 
 # Source files for miscannellious modifications.
 
