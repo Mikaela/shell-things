@@ -908,11 +908,16 @@ adduser-to-group() {
 	usermod -aG "$2" "$1"
 }
 
-# Very lazy ACL aware ls
+# Lazyish ACL aware ls
 unalias ls
 ls() {
 	env ls --all --color=auto --human-readable "$@"
-	getfacl --absolute-names --skip-base "$@"
+	if hash getfacl 2> /dev/null; then
+		if [[ -d "$@" || -f "$@" ]]; then
+			printf "\n"
+			getfacl --absolute-names --skip-base "$@"
+		fi
+	fi
 }
 alias ll="ls -la"
 
