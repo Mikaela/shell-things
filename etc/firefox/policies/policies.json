@@ -159,6 +159,8 @@
 			"InvalidCertificate": true,
 			"SafeBrowsing": false
 		},
+		"DisableTelemetry": true,
+		"DisableTelemetry_comment": "Protesting Mozilla becoming an Advertising company and less trustworthy entity through 'Privacy Preserving Attribution' / Mozilla Anonym. https://github.com/mozilla/policy-templates/issues/1130",
 		"DisplayBookmarksToolbar": "never",
 		"DontCheckDefaultBrowser": true,
 		"EnableTrackingProtection": {
