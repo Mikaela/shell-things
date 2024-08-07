@@ -75,11 +75,11 @@ clearPref("font.name.serif.x-cyrillic");
 //lockPref("font.name.serif.x-western", "Liberation Serif");
 clearPref("font.name.serif.x-western");
 // Allow these fonts regardless of the fingerprinting resistance
-// lockPref(
-// 	"font.system.whitelist",
-// 	"Liberation Serif, Tinos, Times New Roman, Liberation Sans, Arimo, Arial, Liberation Mono, Cousine, Courier New, Noto Sans, Noto Serif, Noto Mono, OpenDyslexic, Noto Emoji, Noto Color Emoji, Comic Neue, Comic Neue Angular, Comic Neue Angular Light, Comic Neue Angular Light Italic, Comic Neue Light, Twemoji Mozilla, Noto Sans CJK JP, Noto Math, Noto Music, Roboto, Roboto Serif, Roboto Mono, Roboto Flex",
-// );
-clearPref("font.system.whitelist");
+lockPref(
+	"font.system.whitelist",
+	"Arimo, Comic Neue, Comic Neue Angular, Comic Neue Angular Light, Comic Neue Angular Light Italic, Comic Neue Light, Cousine, Liberation Mono, Liberation Sans, Liberation Serif, Noto Color Emoji, Noto Emoji, Noto Math, Noto Mono, Noto Sans, Noto Sans CJK JP, Noto Music, Roboto, Roboto Flex, Roboto Mono, Roboto Serif, Tinos, Twemoji Mozilla",
+);
+//clearPref("font.system.whitelist");
 
 // Play animated images only once, accessibility.
 lockPref("image.animation.mode", "once");
