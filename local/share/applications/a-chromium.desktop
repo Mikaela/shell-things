@@ -1,0 +1,24 @@
+[Desktop Entry]
+Version=1.0
+Name=CHROMIUM
+Exec=/usr/bin/env chromium %U
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=chromium-browser
+Categories=Network;WebBrowser;
+MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;
+StartupWMClass=Chromium-browser
+Keywords=web;browser;internet;
+Actions=new-window;new-private-window;
+X-Desktop-File-Install-Version=0.26
+
+[Desktop Action new-window]
+Name=Open a New Window
+Name[fi]=Uusi ikkuna
+Exec=chromium %U
+
+[Desktop Action new-private-window]
+Name=Open a New Private Window
+Name[fi]=Uusi yksityinen ikkuna
+Exec=chromium --incognito %U
