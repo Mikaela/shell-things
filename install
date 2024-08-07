@@ -64,6 +64,9 @@ fi
 if hash corepack 2> /dev/null; then
 	corepack enable --install-directory ~/.local/bin/
 	corepack enable npm --install-directory ~/.local/bin/
+	corepack pnpm config set manage-package-manager-versions=true
+elif hash pnpm 2> /dev/null; then
+	pnpm config set manage-package-manager-versions=true
 else
 	echo "WARNING! corepack is not installed."
 	sleep 3
