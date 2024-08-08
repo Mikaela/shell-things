@@ -3,7 +3,7 @@ Version=1.0
 Type=Application
 NoDisplay=true
 Terminal=true
-Exec=kgx --command="sh --norc -c tmux"
+Exec=kgx --command="bash --norc -c tmux"
 Name=Tmux in Console
 Name[fi]=Tmux Consolessa
 Comment=Command line autostart
