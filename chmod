@@ -29,4 +29,18 @@ chmod -v 700 ~/.ssh
 touch ~/.ssh/authorized_keys
 chmod -v 600 ~/.ssh/authorized_keys
 
+# if we have support for setting ACL, some of this becomes easier (although maybe redundant)
+if hash setfacl 2> /dev/null; then
+	setfacl --modify u:$(id -un):rw,g:$(id -gn):r,o:r ~/.oidentd.conf
+	# The execute permission is a bit silly to  apply recursively, but it's
+	# needed for cd and ls. so perhaps there should be some responsibility
+	# given to others too...
+	setfacl --recursive --modify u:$(id -un):rw,g:$(id -gn):rx,o:rx ~/public_html/
+
+	# Enabling laziness pt. …
+	if [[ -d ~/.shell-things ]]; then
+		setfacl --recursive --modify u:$(id -un):rw,g:$(id -gn):rx,o:rx ~/.shell-things/
+	fi
+fi
+
 set +x
