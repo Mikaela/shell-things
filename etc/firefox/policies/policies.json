@@ -242,8 +242,8 @@
 				"installation_mode": "force_installed"
 			},
 			"{6a65273e-2b26-40f5-b66e-8eed317307da}": {
-				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/new-tab-suspende/latest.xpi",
-				"installation_mode": "normal_installed"
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/new-tab-suspender/latest.xpi",
+				"installation_mode": "force_installed"
 			},
 			"{8e41107d-2be2-454d-b4b8-c3d7e54d77de}": {
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/igplus-extension/latest.xpi",
