@@ -11,7 +11,7 @@ fi
 
 # Firefox and LibreWolf (caution! https://codeberg.org/librewolf/issues/issues/1767)
 mkdir -vp /etc/firefox/policies
-setfacl --recursive --modify=u:root:rw,o:rx /etc/firefox/policies
+setfacl --recursive --modify=u:root:rwX,o:rX /etc/firefox/policies
 chmod -v a+rx /etc/firefox/
 chmod -v a+rx /etc/firefox/policies/
 touch /etc/firefox/policies/policies.json
@@ -31,35 +31,35 @@ ln -nsfv /etc/firefox /etc/firefox-esr
 
 # Chromium
 mkdir -vp /etc/opt/chromium/policies/{managed,recommended}
-setfacl --recursive --modify=u:root:rw,o:rx /etc/firefox/policies
+setfacl --recursive --modify=u:root:rwX,o:rX /etc/firefox/policies
 chmod -v a+rx /etc/opt/chromium/policies/
 chmod -v a+rx /etc/opt/chromium/policies/{managed,recommended}/
 
 # Brave
 mkdir -p /etc/brave
-setfacl --recursive --modify=u:root:rw,o:rx /etc/brave
+setfacl --recursive --modify=u:root:rwX,o:rX /etc/brave
 ln -nsfv /etc/opt/chromium/policies /etc/brave/policies
 
 # Vivaldi
 mkdir -p /etc/chromium
-setfacl --recursive --modify=u:root:rw,o:rx /etc/chromium
+setfacl --recursive --modify=u:root:rwX,o:rX /etc/chromium
 ln -nsfv /etc/opt/chromium/policies /etc/chromium/policies
 
 # Google Chrome
 mkdir -p /etc/opt/chrome
-setfacl --recursive --modify=u:root:rw,o:rx /etc/opt/chrome
+setfacl --recursive --modify=u:root:rwX,o:rX /etc/opt/chrome
 ln -nsfv /etc/opt/chromium/policies /etc/opt/chrome/policies
 
 # Naggig suspicion of another Google Chrome
 mkdir -p /etc/chrome
-setfacl --recursive --modify=u:root:rw,o:rx /etc/chrome
+setfacl --recursive --modify=u:root:rwX,o:rX /etc/chrome
 ln -nsfv /etc/opt/chromium/policies /etc/chrome/policies
 
 # Microsoft Edge
 # I used to have a separate policy for it so remember to remove this manually
 # if it exists!
 mkdir -p /etc/opt/edge
-setfacl --recursive --modify=u:root:rw,o:rx /etc/opt/edge
+setfacl --recursive --modify=u:root:rwX,o:rX /etc/opt/edge
 ln -nsfv /etc/opt/chromium/policies /etc/opt/edge/policies
 
 set +x
