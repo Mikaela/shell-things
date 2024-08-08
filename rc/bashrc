@@ -649,6 +649,10 @@ alias journalfu="journalctl --utc --no-hostname --follow"
 alias journalb="journalctl --no-hostname --boot"
 alias journalbu="journalctl --utc --no-hostname --boot"
 
+# To complement my nordvpn-off wrapper
+alias nordvpn-offf="sudo systemctl stop nordvpnd.service;sudo systemctl stop nordvpnd.socket"
+alias nordvpn-off2=nordvpn-offf
+
 # Allow custom aliases to be put in .aliases or .bash_aliases .
 
 # .aliases
