@@ -9,6 +9,8 @@ else
 	echo "Keys not found, cloning..."
 	mkdir -vp ~/src/gitea.blesmrt.net/Mikaela/
 	git clone https://gitea.blesmrt.net/Mikaela/ssh-allowed_signers.git ~/src/gitea.blesmrt.net/Mikaela/ssh-allowed_signers
+	git verify-commit HEAD || exit 1
+	sleep 3
 fi
 
 export MIKAELA_GREP=$HOME/.MIKAELA_GREP
