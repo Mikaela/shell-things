@@ -1,61 +1,100 @@
 #!/usr/bin/env bash
-# Do not use this script unless you know what you are doing!
+# Do not use this script unless you know what you are doing! Even then this
+# script isn't that much above `curl | bash`ing
 set -x
 
+# If my allowed_signers are present, use them, if not, clone them, and try
+# again. The gitconfig expects them here.
 if [ -d ~/src/gitea.blesmrt.net/Mikaela/ssh-allowed_signers ]; then
 	git verify-commit HEAD || exit 1
 	sleep 3
 else
 	echo "Keys not found, cloning..."
+	# -vp - verbose, parent. This comment won't be repeated.
 	mkdir -vp ~/src/gitea.blesmrt.net/Mikaela/
 	git clone https://gitea.blesmrt.net/Mikaela/ssh-allowed_signers.git ~/src/gitea.blesmrt.net/Mikaela/ssh-allowed_signers
 	git verify-commit HEAD || exit 1
 	sleep 3
 fi
 
+# marker that I have ran the other script that runs things like installing
+# my public keys as authorized. See bottom of this script.
 export MIKAELA_GREP=$HOME/.MIKAELA_GREP
 
+# catting the files around, cat used in hopes of not touching permissions
 cat rc/bashrc > ~/.bashrc
 cat conf/tmux.conf > ~/.tmux.conf
 cat rc/zshrc > ~/.zshrc
 cat rc/profile > ~/.profile
+
+# Git config, legacy support for old location as well.
+# The other script appends sourced file, so if thou aren't I, thou should
+# consider it as well; `git config --global --add include.path '~/yourgitconfig'`
 mkdir -vp ~/.config/git
 cat conf/gitconfig > ~/.config/git/config
 touch ~/.gitconfig
 rm ~/.gitconfig
 ln -nsfv ~/.config/git/config ~/.gitconfig
+# Used for `git init` and `git clone`, will contain pre-commit hooks
 mkdir -vp ~/.git-template
+
+# {n,neo}vim
 cat rc/vimrc > ~/.vimrc
 mkdir -vp ~/.config/nvim/
 cat conf/init.vim > ~/.config/nvim/init.vim
 cat conf/makepkg.conf > ~/.makepkg.conf
+
+# the media player
 mkdir -vp ~/.config/mpv/
 cat conf/mpv.conf > ~/.config/mpv/mpv.conf
+
+# if I am performing ident spoofing already, I don't want to touch it
 if [ ! -f ~/.oidentd.conf ]; then
 	cat conf/oidentd.conf > ~/.oidentd.conf
 fi
+
+# In addition to git, my gnupg configuration should be questioned
 mkdir -vp ~/.gnupg
 cat gpg/gpg.conf > ~/.gnupg/gpg.conf
 cat gpg/gpg-agent.conf > ~/.gnupg/gpg-agent.conf
 cat gpg/dirmngr.conf > ~/.gnupg/dirmngr.conf
+# Issues with GPG? SIGHUP dirmngr
 killall -HUP dirmngr
+
+# I don't remember using these in ages and I don't think they apply to
+# wayland
 #cat rc/xinitrc > ~/.xinitrc
 cat conf/pastebinit.xml > ~/.pastebinit.xml
 cat conf/Xresources > ~/.Xresources
+
+# Nice sysinfo script
 mkdir -vp ~/.inxi
 cat conf/inxi.conf > ~/.inxi/inxi.conf
+
+# laziness
 gpg --quiet --import .mikaela/keys/*.asc &
+
+# Utilized by my ssh_config (not to be confused with sshd_config)
 mkdir -vp ~/.ssh/sockets/
+
+# It will get used later
 mkdir -vp ~/.local/bin/
+
+# Setting permissions
 chmod a+xr chmod
 bash -x ./chmod &
+
+# The submodules contain nice things such as fonts
 git submodule update --init &
 
+# Aforementioned git template directory and pre-commit
 if hash pre-commit 2> /dev/null; then
 	pre-commit init-templatedir ~/.git-template
 	pre-commit gc
 fi
 
+# If symlinks are installed, remove dead/dangling ones from ~/.local/bin
+# so corepack won't get confused if those are present
 if hash symlinks 2> /dev/null; then
 	symlinks -d ~/.local/bin/
 else
@@ -63,32 +102,50 @@ else
 	sleep 3
 fi
 
+# node package manager manager
 if hash corepack 2> /dev/null; then
+	# Will install symlinks for pnpm, yarn, etc., but not npm unless
+	# explicitly requested as below
 	corepack enable --install-directory ~/.local/bin/
 	corepack enable npm --install-directory ~/.local/bin/
+	# pnpm can utilize the same packagemanager field as corepack, even when
+	# used alone
 	corepack pnpm config set manage-package-manager-versions=true
 elif hash pnpm 2> /dev/null; then
+	# see above which is more relevant in this case
 	pnpm config set manage-package-manager-versions=true
 else
 	echo "WARNING! corepack is not installed."
 	sleep 3
 fi
 
+# If running as root, which I am doing regardless of not being supposed to,
 if [ "$(id -u)" == "0" ]; then
+	# Enables laziness on checking whether or not apt is installed
 	mkdir -vp /etc/apt/apt.conf.d/
+	# Enables progress bar and colours for apt/dpkg, which are helpful at
+	# times when guesstimating when will things happen
 	echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
 	echo 'APT::Color "1";' > /etc/apt/apt.conf.d/99color
+
+	# If some locate variant is installed, now is a great time to ensure its
+	# database is up-to-date. This may also enable automated database
+	# updates.
 	if hash updatedb 2> /dev/null; then
 		(updatedb &)
 	fi
 fi
 
+# If the previously mentioned marker is present, include the even more
+# questionable script (yay!) into our current execution
 if [ -f "$MIKAELA_GREP" ]; then
-	bash -x .mikaela_install
+	. .mikaela_install
 fi
 
+# If git-lfs is installed, configure git with it, otherwise this will just
+# error in forked background process which will no longer hurt the current
+# execution.
 (git lfs install | true &)
 
 set +x
-# vim : set ft=sh :
-#chmod 700 $HOME -R
+# vim : set ft=bash :

@@ -1,34 +1,51 @@
 #!/usr/bin/env bash
-# Do not use this script unless you know what you are doing! And even when you
-# are me and know what you are doing, this is a poor practice I really should
-# stop.
+# Do not use this script unless you know what you are doing! And even when
+# thou art I, and know what thou art doing, this is a poor practice I really
+# should stop.
 set -x
 
+# If the latest commit cannot be verified, exit to error.
 git verify-commit HEAD || exit 1
 
+# Place my personal more questionable aliases in place, except that I don't
+# actually use them as I keep forgetting about them.
 cat .mikaela/bash_aliases >~/.bash_aliases
 cat .mikaela/zsh_aliases >~/.zsh_aliases
 
+# I still question whether xinitrc gets read under wayland, but I am not
+# about to start removing this legacy config, just in case of something
+# unexpected.
 cat rc/xinitrc >~/.xinitrc
 
+# My gnupg configuration with questionable options such as always
+# encrypting to me, so paws off.
 mkdir -p ~/.gnupg
 cat .mikaela/gpg.conf >~/.gnupg/gpg.conf
 
+# my name and all in pastes made through pastebinit, if it still even exists
 cat .mikaela/pastebinit.xml >~/.pastebinit.xml
 
+# may change your language to Finnish or do other fun someone else than I
+# wouldn't expect
 cat .mikaela/environment >~/.environment
 
+# my git configuration including the names, addresses, public keys, etc.
 mkdir ~/.config/git
-#cat .mikaela/gitconfig >~/.config/git/config
 git config --global --add include.path '~/.shell-things/.mikaela/gitconfig'
 cat .gitattributes >~/.config/git/attributes
 
+# unless thou art I, thou don't want my authorized_keys on your system.
 mkdir -p ~/.ssh
 cat .mikaela/keys/authorized_keys >~/.ssh/authorized_keys
 cat etc/ssh/ssh_config >~/.ssh/config
 
+# Text editor configuration (with a lot of bloat) that shouldn't be reached
+# anyway since every project should have its own not so bloated editorconfig.
 cat .editorconfig >~/.editorconfig
 
+# Is Firefox installed to the location I generally use? Then apply my
+# autoconfigs. These are very surprising and unexpected unless thou art I,
+# thou have been warned.
 if [ -d ~/.local/firefox/defaults/pref/ ]; then
 	cat conf/autoconfig.js >~/.local/firefox/defaults/pref/autoconfig.js
 	#cat conf/librewolf.overrides.cfg >~/.local/firefox/librewolf.overrides.cfg
@@ -42,6 +59,8 @@ cat conf/firefox-forbidden-policies.js >~/.librewolf/librewolf.overrides.cfg
 #cat conf/librewolf.overrides.cfg >~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg
 cat conf/firefox-forbidden-policies.js >~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg
 
+# Mainly KDE Plasma Integration extension support, but there may be GNOME
+# and similar there too
 mkdir -p ~/.mozilla/native-messaging-hosts
 if [ -d /usr/lib64/mozilla/native-messaging-hosts/ ]; then
 	cp -v /usr/lib64/mozilla/native-messaging-hosts/* ~/.mozilla/native-messaging-hosts
@@ -49,17 +68,20 @@ elif [ -d /usr/lib/mozilla/native-messaging-hosts/ ]; then
 	cp -v /usr/lib/mozilla/native-messaging-hosts/ ~/.mozilla/native-messaging-hosts
 fi
 
+# Desktop menu integration
 mkdir -p ~/.local/share/applications
 ln -nsfv ~/.shell-things/local/share/applications ~/.local/share/applications/shell-things
 mkdir -p ~/.local/share/icons/hicolor/128x128/apps/
 ln -nsfv ~/.local/firefox/browser/chrome/icons/default/default128.png ~/.local/share/icons/hicolor/128x128/apps/a-firefox.png
 
+# Update desktop menu entries
 if hash update-desktop-database 2>/dev/null; then
 	update-desktop-database ~/.local/share/applications
 fi
 
+# Set a marker that this script has been used for the main script to read
 touch ~/.MIKAELA_GREP
 
 set +x
 
-# vim : set ft=sh :
+# vim : set ft=bash :
