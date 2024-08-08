@@ -927,7 +927,7 @@ adduser-to-group() {
 }
 
 # Lazyish ACL aware ls
-unalias ls
+unalias ls > /dev/null 2>&1
 ls() {
 	env ls --all --color=auto --human-readable "$@"
 	if hash getfacl 2> /dev/null; then
@@ -937,7 +937,7 @@ ls() {
 		fi
 	fi
 }
-unalias ll
+unalias ll > /dev/null 2>&1
 ll() {
 	env ls -l --all --color=auto --human-readable "$@"
 	if hash getfacl 2> /dev/null; then
