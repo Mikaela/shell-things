@@ -1,2 +1,2 @@
-omit_dracutmodules+=" plymouth tpm2-tss kernel-modules-extra network-manager network-legacy connman systemd-networkd i18n network net-lib kernel-network-modules qemu qemu-net kernel-modules-asahi nfs asahi-firmware network cifs iscsi nvmf "
+omit_dracutmodules+=" plymouth tpm2-tss systemd-pcrphase kernel-modules-extra network-manager network-legacy connman systemd-networkd i18n network net-lib kernel-network-modules qemu qemu-net kernel-modules-asahi nfs asahi-firmware network cifs iscsi nvmf fcoe fcoe-uefi "
 # vim: filetype=conf
