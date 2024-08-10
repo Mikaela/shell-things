@@ -544,7 +544,7 @@ alias lowernocolon="tr -d ':' | tr 'A-Z' 'a-z'"
 
 # I don't want to reinstall exact same versions that I have
 if hash pacman 2> /dev/null; then
-	alias pacman="LANG=en_DK.UTF-8 pacman --needed"
+	alias pacman="LC_ALL=en_DK.UTF-8 pacman --needed"
 fi
 
 # Sailfish Network status, via IRC
