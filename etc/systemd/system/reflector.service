@@ -1,3 +1,5 @@
+# This file is due for removal once I get
+# https://aminda.eu/blog/english/2015/10/09/arch-reflector.html updated
 [Unit]
 Description=Pacman mirrorlist update
 Requires=network-online.target
