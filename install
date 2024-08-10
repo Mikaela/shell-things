@@ -6,6 +6,7 @@ set -x
 # If my allowed_signers are present, use them, if not, clone them, and try
 # again. The gitconfig expects them here.
 if [ -d ~/src/gitea.blesmrt.net/Mikaela/ssh-allowed_signers ]; then
+	echo "git config --global gpg.ssh.allowedSignersFile ~/src/codeberg.org/Aminda/ssh-allowed_signers/allowed_signers"
 	git verify-commit HEAD || exit 1
 	sleep 3
 else
@@ -13,6 +14,7 @@ else
 	# -vp - verbose, parent. This comment won't be repeated.
 	mkdir -vp ~/src/gitea.blesmrt.net/Mikaela/
 	git clone https://gitea.blesmrt.net/Mikaela/ssh-allowed_signers.git ~/src/gitea.blesmrt.net/Mikaela/ssh-allowed_signers
+	echo "git config --global gpg.ssh.allowedSignersFile ~/src/codeberg.org/Aminda/ssh-allowed_signers/allowed_signers"
 	git verify-commit HEAD || exit 1
 	sleep 3
 fi

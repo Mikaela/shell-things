@@ -733,9 +733,10 @@ function shell-things {
 		echo "shell-things: $SHELL_THINGS_REPO exists, git pulling..."
 		echo ""
 		cd $SHELL_THINGS_REPO
-		git remote set-url origin https://gitea.blesmrt.net/Mikaela/shell-things.git
+		git remote set-url origin https://codeberg.org/Aminda/shell-things.git
 		git fetch --all
 		git pull
+		echo "git config --global gpg.ssh.allowedSignersFile ~/src/codeberg.org/Aminda/ssh-allowed_signers/allowed_signers"
 		git verify-commit HEAD || exit 1
 		sleep 10
 		echo ""
@@ -746,7 +747,7 @@ function shell-things {
 		echo ""
 		echo "shell-things: $SHELL_THINGS_REPO doesn't exist, cloning..."
 		echo ""
-		git clone https://gitea.blesmrt.net/Mikaela/shell-things.git $SHELL_THINGS_REPO
+		git clone https://codeberg.org/Aminda/shell-things.git $SHELL_THINGS_REPO
 		cd $SHELL_THINGS_REPO
 		sleep 10
 		echo ""
@@ -889,7 +890,7 @@ myip6() {
 
 # Easier verifying of SSH signed files: ssh-verify-file whatever@mikaela.info file.txt
 # It's assumed that signature of file.txt is called as file.txt.sig
-sshAllowedSigners=$HOME/src/gitea.blesmrt.net/Mikaela/ssh-allowed_signers/allowed_signers
+sshAllowedSigners=$HOME/src/codeberg.org/Aminda/ssh-allowed_signers/allowed_signers
 ssh-verify-file() {
 	echo "$1 ${2:?Usage: ssh-verify-file <email> <file-to-verify>}" > /dev/null
 	ssh-keygen -Y verify -f $sshAllowedSigners -I $1 -n file -s $2.sig < $2

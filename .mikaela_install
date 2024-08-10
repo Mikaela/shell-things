@@ -5,6 +5,7 @@
 set -x
 
 # If the latest commit cannot be verified, exit to error.
+echo "git config --global gpg.ssh.allowedSignersFile ~/src/codeberg.org/Aminda/ssh-allowed_signers/allowed_signers"
 git verify-commit HEAD || exit 1
 
 # Place my personal more questionable aliases in place, except that I don't
