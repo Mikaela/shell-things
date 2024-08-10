@@ -6,6 +6,7 @@ Wants=sysctl-p--system.service
 Type=oneshot
 TimeoutStartSec=infinity
 Environment=LINUXBREWGROUP=wheel
+ExecStartPre=-/usr/bin/echo 1 > /sys/devices/system/cpu/microcode/reload
 # - means it can fail, without failing those after it.
 # These aren't given --now as THEY WOULD INFINITE LOOP.
 ExecStartPre=-/usr/bin/systemctl enable aminda-nocron-rebootish.service
