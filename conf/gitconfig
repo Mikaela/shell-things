@@ -49,7 +49,7 @@
 	format = ssh
 	#format = x509
 [gpg "ssh"]
-	allowedSignersFile = ~/src/gitea.blesmrt.net/Mikaela/ssh-allowed_signers/allowed_signers
+	allowedSignersFile = ~/src/codeberg.org/Aminda/ssh-allowed_signers/allowed_signers
 #[gpg "x509"]
 #	program = gpgsm
 [tag]
