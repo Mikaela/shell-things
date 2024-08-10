@@ -134,8 +134,12 @@ fi
 if hash lsb_release 2> /dev/null; then
 	(
 		export LC_ALL="en_DK.UTF-8"
-		hostname --all-fqdns &
-		hostname --all-ip-addresses
+		if hash hostname 2> /dev/null; then
+			hostname --all-fqdns &
+			hostname --all-ip-addresses &
+		elif hash hostnamectl 2> /dev/null; then
+			hostnamectl hostname &
+		fi
 		printf "\n"
 		printf "$(uptime --pretty)\t$(uptime)\n"
 		printf "\nPresent:\n"
@@ -253,9 +257,6 @@ fi
 # OS X ls colours (copied from https://apple.stackexchange.com/questions/33677/
 #export CLICOLOR=1
 #export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-
-# znc uses this variable for figuring out hostname
-#export HOSTNAME=$(hostname --fqdn)
 
 # Ensure not leaking queries to upstream nameservers (resolv.conf)
 export LOCALDOMAIN=.
