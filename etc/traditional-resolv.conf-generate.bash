@@ -20,10 +20,9 @@ chmod -v +w /etc/resolv.conf
 # Or it's a symlink to e.g. /run/systemd/resolve/stub-resolv.conf
 rm -v /etc/resolv.conf
 
-# No trust-ad here as chances are these resolvers are unencrypted and the
-# path to them isn't trusted.
+# trust-ad is here, because are you really going to use untrusted remote resolvers?
 # tee -p = operate in a more appropriate MODE with pipes.
-printf "nameserver %b\nnameserver %b\nnameserver %b\nsearch .\noptions timeout:1 attempts:5 rotate edns0\n" "$1" "$2" "$3" | tee -p /etc/resolv.conf
+printf "nameserver %b\nnameserver %b\nnameserver %b\nsearch .\noptions timeout:1 attempts:5 rotate edns0 trust-ad\n" "$1" "$2" "$3" | tee -p /etc/resolv.conf
 
 # Remove all other permissions than everyone reading resolv.conf
 chmod -v a=r /etc/resolv.conf
