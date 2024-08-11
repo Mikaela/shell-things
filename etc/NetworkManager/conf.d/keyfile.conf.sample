@@ -1,0 +1,9 @@
+[keyfile]
+# Disable misbehaving NIC
+#unmanaged-devices=mac:xx:xx:xx:xx:xx:xx
+#hostname=HOSTNAME_TO_SEND_TO_DHCPD
+# When renaming profiles, also rename the file. Comes with the risk of
+# breaking scripts, but I don't have any of those for this to break.
+rename=true
+
+# vim: filetype=NetworkManager.conf
