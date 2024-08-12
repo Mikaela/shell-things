@@ -7,10 +7,10 @@ set +x
 export DISTROID="$(lsb_release -si)"
 
 # Tails persistent directory
-export PERSISTDIR="~/Persistent"
+export PERSISTDIR="$HOME/Persistent"
 
 # This target directory
-export SHELL_THINGS_REPO="~/Persistent/src/codeberg.org/Aminda/shell-things"
+export SHELL_THINGS_REPO="$HOME/Persistent/src/codeberg.org/Aminda/shell-things"
 
 # WARNING!
 printf "USING THESE FILES IS EVEN MORE DANGEROUS ON TAILS THAN IN GENERAL.\n"
@@ -73,17 +73,17 @@ cd
 
 # bash
 ln -nsfv $SHELL_THINGS_REPO/rc/bashrc $PERSISTDIR/dotfiles/.bashrc
-ln -nsfv $SHELL_THINGS_REPO/rc/bashrc ~/.bashrc
+ln -nsfv $SHELL_THINGS_REPO/rc/bashrc $HOME/.bashrc
 # zsh
 ln -nsfv $SHELL_THINGS_REPO/rc/zshrc $PERSISTDIR/dotfiles/.zshrc
-ln -nsfv $SHELL_THINGS_REPO/rc/zshrc ~/.zshrc
+ln -nsfv $SHELL_THINGS_REPO/rc/zshrc $HOME/.zshrc
 # tmux
 ln -nsfv $SHELL_THINGS_REPO/conf/tmux.conf $PERSISTDIR/dotfiles/.tmux.conf
-ln -nsfv $SHELL_THINGS_REPO/conf/tmux.conf ~/.tmux.conf
+ln -nsfv $SHELL_THINGS_REPO/conf/tmux.conf $HOME/.tmux.conf
 # git
 git config --global gpg.ssh.allowedSignersFile $PERSISTDIR/src/codeberg.org/Aminda/ssh-allowed_signers/allowed_signers
 ln -nsfv $SHELL_THINGS_REPO/conf/gitconfig $PERSISTDIR/dotfiles/.gitconfig
-ln -nsfv $SHELL_THINGS_REPO/conf/gitconfig ~/.gitconfig
+ln -nsfv $SHELL_THINGS_REPO/conf/gitconfig $HOME/.gitconfig
 
 # Let's go home
 cd
