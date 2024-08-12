@@ -6,8 +6,9 @@ set +x
 # Tails appears to come with lsb_release and return Tails
 export DISTROID="$(lsb_release -si)"
 
-# Tails persistent directory
+# Tails persistent directories
 export PERSISTDIR="$HOME/Persistent"
+export PERSISTDOTFILESDIR="/live/persistence/TailsData_unlocked/dotfiles"
 
 # This target directory
 export SHELL_THINGS_REPO="$HOME/Persistent/src/codeberg.org/Aminda/shell-things"
@@ -32,10 +33,10 @@ if [[ ! -d "$PERSISTDIR" ]]; then
 fi
 
 # THIS IS YOUR FINAL WARNING!
-if [[ ! -d "$PERSISTDIR/dotfiles" ]]; then
-	printf "\nWARNING! Persistent/dotfiles directory not found, check"
+if [[ ! -d "$PERSISTDOTFILESDIR" ]]; then
+	printf "\nWARNING! $PERSISTDOTFILESDIR directory not found, check"
 	printf "\npersistent storage settings To override:\n"
-	printf "\tmkdir -vp $PERSISTDIR/dotfiles \n\n"
+	printf "\tmkdir -vp $PERSISTDOTFILESDIR \n\n"
 	sleep 3
 	exit 1
 fi
@@ -62,18 +63,18 @@ fi
 cd
 
 # bash
-cp -v $SHELL_THINGS_REPO/rc/bashrc $PERSISTDIR/dotfiles/.bashrc
-ln -nsfv $PERSISTDIR/dotfiles/.bashrc $HOME/
+cp -v $SHELL_THINGS_REPO/rc/bashrc $PERSISTDOTFILESDIR/.bashrc
+ln -nsfv $PERSISTDOTFILESDIR/.bashrc $HOME/
 # zsh
-cp -v $SHELL_THINGS_REPO/rc/zshrc $PERSISTDIR/dotfiles/.zshrc
-ln -nsfv $PERSISTDIR/dotfiles/.zshrc $HOME/
+cp -v $SHELL_THINGS_REPO/rc/zshrc $PERSISTDOTFILESDIR/.zshrc
+ln -nsfv $PERSISTDOTFILESDIR/.zshrc $HOME/
 # tmux
-cp -v $SHELL_THINGS_REPO/conf/tmux.conf $PERSISTDIR/dotfiles/.tmux.conf
-ln -nsfv $PERSISTDIR/dotfiles/.tmux.conf $HOME/
+cp -v $SHELL_THINGS_REPO/conf/tmux.conf $PERSISTDOTFILESDIR/.tmux.conf
+ln -nsfv $PERSISTDOTFILESDIR/.tmux.conf $HOME/
 # git
 git config --global gpg.ssh.allowedSignersFile $PERSISTDIR/src/codeberg.org/Aminda/ssh-allowed_signers/allowed_signers
-cp $SHELL_THINGS_REPO/conf/gitconfig $PERSISTDIR/dotfiles/.gitconfig
-ln -nsfv $PERSISTDIR/dotfiles/.gitconfig $HOME/
+cp $SHELL_THINGS_REPO/conf/gitconfig $PERSISTDOTFILESDIR/.gitconfig
+ln -nsfv $PERSISTDOTFILESDIR/.gitconfig $HOME/
 
 # Hack for directories expecting it to work, although only for this boot
 ln -nsfv $SHELL_THINGS_REPO $HOME/.shell-things
