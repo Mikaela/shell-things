@@ -22,3 +22,9 @@
 	path = submodules/serious-sans
 	url = https://github.com/kaBeech/serious-sans.git
 	branch = main
+[submodule "submodules/ssh-allowed_signers"]
+	path = submodules/ssh-allowed_signers
+	url = https://codeberg.org/Aminda/ssh-allowed_signers.git
+[submodule "submodules/pgp-alt-wot"]
+	path = submodules/pgp-alt-wot
+	url = https://gitea.blesmrt.net/Mikaela/pgp-alt-wot.git
