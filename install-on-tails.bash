@@ -57,27 +57,25 @@ else
 	printf "shell-things: $SHELL_THINGS_REPO doesn't exist, cloning...\n\n"
 	git clone https://codeberg.org/Aminda/shell-things.git $SHELL_THINGS_REPO
 	cd $SHELL_THINGS_REPO
-	sleep 3
-	printf "\nPlease run this script again.\n\t...if you really want to, that is.\n"
 fi
 
 cd
 
 # bash
-ln -nsfv $SHELL_THINGS_REPO/rc/bashrc $PERSISTDIR/dotfiles/.bashrc
-ln -nsfv $SHELL_THINGS_REPO/rc/bashrc $HOME/.bashrc
+cp -v $SHELL_THINGS_REPO/rc/bashrc $PERSISTDIR/dotfiles/.bashrc
+ln -nsfv $PERSISTDIR/dotfiles/.bashrc $HOME/
 # zsh
-ln -nsfv $SHELL_THINGS_REPO/rc/zshrc $PERSISTDIR/dotfiles/.zshrc
-ln -nsfv $SHELL_THINGS_REPO/rc/zshrc $HOME/.zshrc
+cp -v $SHELL_THINGS_REPO/rc/zshrc $PERSISTDIR/dotfiles/.zshrc
+ln -nsfv $PERSISTDIR/dotfiles/.zshrc $HOME/
 # tmux
-ln -nsfv $SHELL_THINGS_REPO/conf/tmux.conf $PERSISTDIR/dotfiles/.tmux.conf
-ln -nsfv $SHELL_THINGS_REPO/conf/tmux.conf $HOME/.tmux.conf
+cp -v $SHELL_THINGS_REPO/conf/tmux.conf $PERSISTDIR/dotfiles/.tmux.conf
+ln -nsfv $PERSISTDIR/dotfiles/.tmux.conf $HOME/
 # git
 git config --global gpg.ssh.allowedSignersFile $PERSISTDIR/src/codeberg.org/Aminda/ssh-allowed_signers/allowed_signers
-ln -nsfv $SHELL_THINGS_REPO/conf/gitconfig $PERSISTDIR/dotfiles/.gitconfig
-ln -nsfv $SHELL_THINGS_REPO/conf/gitconfig $HOME/.gitconfig
+cp $SHELL_THINGS_REPO/conf/gitconfig $PERSISTDIR/dotfiles/.gitconfig
+ln -nsfv $PERSISTDIR/dotfiles/.gitconfig $HOME/
 
-# Hack for directories expecting it to work
+# Hack for directories expecting it to work, although only for this boot
 ln -nsfv $SHELL_THINGS_REPO $HOME/.shell-things
 
 # Let's go home
