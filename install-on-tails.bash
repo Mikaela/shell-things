@@ -41,34 +41,26 @@ if [[ ! -d "$PERSISTDIR/dotfiles" ]]; then
 fi
 
 # This is just a copy-paste of my nastyish function
-if [ -d $SHELL_THINGS_REPO ]; then
+if [ -d "$SHELL_THINGS_REPO" ]; then
 	printf "$SHELL_THINGS_REPO exists, git pulling...\n\n"
 	cd $SHELL_THINGS_REPO
 	git remote set-url origin https://codeberg.org/Aminda/shell-things.git
 	git fetch --all
 	git checkout -b cxefa origin/cxefa
 	git pull
-	printf "\ngit config --global gpg.ssh.allowedSignersFile $PERSISTDIR/src/codeberg.org/Aminda/ssh-allowed_signers/allowed_signers\n"
+	git submodule update --init
+	git config --global gpg.ssh.allowedSignersFile "$SHELL_THINGS_REPO/submodules/ssh-allowed_signers/allowed_signers"
+	sleep 3
 	git verify-commit HEAD || exit 1
 	sleep 3
-	printf "shell-things: Installing/Upgrading..."
 else
 	printf "shell-things: $SHELL_THINGS_REPO doesn't exist, cloning...\n\n"
 	git clone https://codeberg.org/Aminda/shell-things.git $SHELL_THINGS_REPO
 	cd $SHELL_THINGS_REPO
 	sleep 3
-	echo "\nshell-things: Installing/Upgrading...\n"
+	printf "\nPlease run this script again.\n\t...if you really want to, that is.\n"
 fi
 
-# Installing...
-# bash -x ./install
-# echo ""
-# echo "shell-things: Installing finished."
-# echo ""
-#
-# echo ""
-# echo "shell-things: Everything is now done :)"
-# echo ""
 cd
 
 # bash
