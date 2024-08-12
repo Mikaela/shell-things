@@ -1,0 +1,12 @@
+# The usual wheel or sudoers group for weird systems missing it.
+
+# Uncomment for Debian
+#%sudoers ALL=(ALL:ALL) ALL
+# Uncomment for everything else
+#%wheel ALL=(ALL:ALL) ALL
+
+# WARNING: DANGEROUS AND INSECURE! DON'T UNCOMMENT!
+#%sudoers ALL=(ALL:ALL) NOPASSWD: ALL
+#%wheel ALL=(ALL:ALL) NOPASSWD: ALL
+
+# vim: filetype=sudoers
