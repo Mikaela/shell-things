@@ -1,14 +1,20 @@
-# @format
-
 # This CITATION.cff file was generated with cffinit.
-# Visit https://citation-file-format.github.io/cff-initializer-javascript/#/ to generate yours today!
+# Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
 title: My dotfiles
+type: misc
 authors:
   - given-names: Aminda
     family-names: Suomalainen
-    email: suomalainen+git@mikaela.info
-repository-code: "https://gitea.blesmrt.net/Mikaela/shell-things"
-abstract: dotfiles
+    email: suomalainen@mikaela.info
+    orcid: "https://orcid.org/0009-0003-8657-4653"
+repository-code: "https://codeberg.org/Aminda/shell-things"
+abstract: My dotfiles (also known as shell-things)
+keywords:
+  - dotfiles
+  - bash
+  - zsh
+  - etc
+  - linux
 license: BSD-3-Clause
