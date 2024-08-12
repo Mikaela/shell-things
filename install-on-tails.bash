@@ -77,6 +77,9 @@ git config --global gpg.ssh.allowedSignersFile $PERSISTDIR/src/codeberg.org/Amin
 ln -nsfv $SHELL_THINGS_REPO/conf/gitconfig $PERSISTDIR/dotfiles/.gitconfig
 ln -nsfv $SHELL_THINGS_REPO/conf/gitconfig $HOME/.gitconfig
 
+# Hack for directories expecting it to work
+ln -nsfv $SHELL_THINGS_REPO $HOME/.shell-things
+
 # Let's go home
 cd
 
