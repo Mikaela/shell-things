@@ -5,7 +5,7 @@
 
 // WARNING: lockPref() IS NOT ALLOWED HERE!
 
-//pref("autoadmin.global_config_url","https://gitea.blesmrt.net/mikaela/shell-things/raw/branch/master/conf/firefox-forbidden-policies.js");
+//pref("autoadmin.global_config_url","https://codeberg.org/Aminda/shell-things/raw/branch/master/conf/firefox-forbidden-policies.js");
 pref(
 	"autoadmin.global_config_url",
 	"file:///home/aminda/public_html/autoconfig.js",
