@@ -749,7 +749,7 @@ function shell-things {
 		cd $SHELL_THINGS_REPO
 		git remote set-url origin https://codeberg.org/Aminda/shell-things.git
 		git fetch --all
-		git checkout -b cxefa origin/cxefa
+		git checkout -b cxefa origin/cxefa > /dev/null 2>&1
 		git pull
 		echo "git config --global gpg.ssh.allowedSignersFile ~/src/codeberg.org/Aminda/ssh-allowed_signers/allowed_signers"
 		git verify-commit HEAD || exit 1

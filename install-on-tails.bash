@@ -46,7 +46,7 @@ if [ -d "$SHELL_THINGS_REPO" ]; then
 	cd $SHELL_THINGS_REPO
 	git remote set-url origin https://codeberg.org/Aminda/shell-things.git
 	git fetch --all
-	git checkout -b cxefa origin/cxefa
+	git checkout -b cxefa origin/cxefa > /dev/null 2>&1
 	git pull
 	git submodule update --init
 	git config --global gpg.ssh.allowedSignersFile "$SHELL_THINGS_REPO/submodules/ssh-allowed_signers/allowed_signers"
