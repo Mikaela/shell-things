@@ -11,6 +11,7 @@
 # used in my scripts of disconnecting from nordvpn and restoring IPv6
 %nordvpn ALL=NOPASSWD: /bin/systemctl restart iwd.service
 %nordvpn ALL=NOPASSWD: /bin/systemctl restart systemd-networkd.service
+%nordvpn ALL=NOPASSWD: /bin/systemctl restart NetworkManager.service
 # Tells Chrony we are connected and thus maybe connects to IPv6 NTP servers
 %nordvpn ALL=NOPASSWD: /usr/bin/chronyc online
 # Clearing DNS caches once we are disconnected
@@ -22,4 +23,5 @@
 # regenerates keys, so it should probably be here too.
 %nordvpn ALL=NOPASSWD: /bin/systemctl restart tor.service
 %nordvpn ALL=NOPASSWD: /bin/systemctl restart tor-client.service
+
 # vim: filetype=sudoers
