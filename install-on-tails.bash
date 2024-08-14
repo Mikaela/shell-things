@@ -2,7 +2,7 @@
 # Another take on my install script, but using symlinks and with a chance of
 # replacing the other ones.
 
-set +x
+set -x
 # Tails appears to come with lsb_release and return Tails
 export DISTROID="$(lsb_release -si)"
 
@@ -87,5 +87,5 @@ ln -nsfv $SHELL_THINGS_REPO $HOME/.shell-things
 # Let's go home
 cd
 
-set -x
+set +x
 # vim: filetype=bash
