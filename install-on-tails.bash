@@ -75,6 +75,7 @@ ln -nsfv $PERSISTDOTFILESDIR/.tmux.conf $HOME/
 git config --global gpg.ssh.allowedSignersFile $PERSISTDIR/src/codeberg.org/Aminda/ssh-allowed_signers/allowed_signers
 cp $SHELL_THINGS_REPO/conf/gitconfig $PERSISTDOTFILESDIR/.gitconfig
 ln -nsfv $PERSISTDOTFILESDIR/.gitconfig $HOME/
+git config --global gpg.ssh.allowedSignersFile "$SHELL_THINGS_REPO/submodules/ssh-allowed_signers/allowed_signers"
 
 # Ensure existence of netrc & curlrc for easing git over https
 touch $PERSISTDOTFILESDIR/.{netrc,curlrc}
