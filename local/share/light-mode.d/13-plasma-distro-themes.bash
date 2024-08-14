@@ -2,8 +2,8 @@
 
 . ~/.local/share/dark-mode.d/00-do-not-repeat-yourself.bash
 
-if [[ "$DISTROID" == "Kali" ]]; then
+if [[ "$ID" == "kali" ]]; then
 	lookandfeeltool --platform offscreen --apply "Kali-Purple-Light"
-elif [[ "$DISTROID" == "Fedora" ]]; then
+elif [[ "$ID" == "fedora" ]]; then
 	lookandfeeltool --platform offscreen --apply "org.fedoraproject.fedora.desktop"
 fi

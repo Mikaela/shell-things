@@ -2,6 +2,6 @@
 
 . ~/.local/share/dark-mode.d/00-do-not-repeat-yourself.bash
 
-if [[ "$DISTROID" == "Kali" ]]; then
+if [[ "$ID" == "kali" ]]; then
 	lookandfeeltool --platform offscreen --apply "Kali-Purple-Dark"
 fi

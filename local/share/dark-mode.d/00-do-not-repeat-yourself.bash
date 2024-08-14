@@ -2,12 +2,12 @@
 
 set -x
 
-if ! hash lsb_release 2> /dev/null; then
-	ERRORMESSAGE="lsb_release was not found, the wallpaper scripts cannot figure out the distribution"
-	echo "$ERRORMESSAGE"
-	notify-send --app-name=darkman --icon=error "$ERRORMESSAGE"
-	exit 0
-fi
+#if ! hash lsb_release 2> /dev/null; then
+#	ERRORMESSAGE="lsb_release was not found, the wallpaper scripts cannot figure out the distribution"
+#	echo "$ERRORMESSAGE"
+#	notify-send --app-name=darkman --icon=error "$ERRORMESSAGE"
+#	exit 0
+#fi
 
 #if ! hash kvantummanager 2> /dev/null; then
 #	ERRORMESSAGE="kvantummanager wasn't found, Qt theme switching won't work!"
@@ -16,12 +16,16 @@ fi
 #	exit 0
 #fi
 
-export DISTROID="$(lsb_release -si)"
-export DISTROREL="$(lsb_release -sr)"
+#export DISTROID="$(lsb_release -si)"
+#export DISTROREL="$(lsb_release -sr)"
+
+if [ -f /etc/os-release ]; then
+	. /etc/os-release
+fi
 
 export DARKMANGET="$(darkman get)"
 
-printf "Distribution: $DISTROID\nRelease: $DISTROREL\nMode: $DARKMANGET\n"
+printf "Distribution: $ID\nRelease: $VERSION_ID\nMode: $DARKMANGET\n"
 
 if [[ "$DARKMANGET" -eq "light" ]]; then
 	notify-send --app-name="darkman" --urgency=low --icon=weather-clear-night "Teema: $DARKMANGET"
