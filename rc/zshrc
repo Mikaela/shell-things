@@ -25,6 +25,11 @@ fi
 #	Aliases						RJ706I
 #	Functions					ZGC5QQ
 
+# lsb_base ?
+if [ -f /etc/os-release ]; then
+	. /etc/os-release
+fi
+
 # Kind of my welcome screen when I open a terminal?
 # Existence of lsb_release implies both being on Linux and me having touched
 # the system, so I can do away with a lot of checks for Darwin

@@ -25,6 +25,11 @@ fi
 #	Aliases						RJ706I
 #	Functions					ZGC5QQ
 
+# lsb_base ?
+if [ -f /etc/os-release ]; then
+	. /etc/os-release
+fi
+
 #####	Defaults etc...				M0TZLS	#####
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
