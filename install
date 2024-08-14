@@ -5,16 +5,16 @@ set -x
 
 # If my allowed_signers are present, use them, if not, clone them, and try
 # again. The gitconfig expects them here.
-if [ -d ~/src/codeberg.org/Aminda/ssh-allowed_signers ]; then
-	echo "git config --global gpg.ssh.allowedSignersFile ~/src/codeberg.org/Aminda/ssh-allowed_signers/allowed_signers"
+if [ -d $HOME/src/codeberg.org/Aminda/ssh-allowed_signers ]; then
+	echo "git config --global gpg.ssh.allowedSignersFile $HOME/src/codeberg.org/Aminda/ssh-allowed_signers/allowed_signers"
 	git verify-commit HEAD || exit 1
 	sleep 3
 else
 	echo "Keys not found, cloning..."
 	# -vp - verbose, parent. This comment won't be repeated.
-	mkdir -vp ~/src/codeberg.org/Aminda/
-	git clone https://codeberg.org/Aminda/ssh-allowed_signers.git ~/src/codeberg.org/Aminda/ssh-allowed_signers
-	echo "git config --global gpg.ssh.allowedSignersFile ~/src/codeberg.org/Aminda/ssh-allowed_signers/allowed_signers"
+	mkdir -vp $HOME/src/codeberg.org/Aminda/
+	git clone https://codeberg.org/Aminda/ssh-allowed_signers.git $HOME/src/codeberg.org/Aminda/ssh-allowed_signers
+	echo "git config --global gpg.ssh.allowedSignersFile $HOME/src/codeberg.org/Aminda/ssh-allowed_signers/allowed_signers"
 	git verify-commit HEAD || exit 1
 	sleep 3
 fi
@@ -23,64 +23,64 @@ fi
 # my public keys as authorized. See bottom of this script.
 export MIKAELA_GREP=$HOME/.MIKAELA_GREP
 
-# catting the files around, cat used in hopes of not touching permissions
-cat rc/bashrc > ~/.bashrc
-cat conf/tmux.conf > ~/.tmux.conf
-cat rc/zshrc > ~/.zshrc
-cat rc/profile > ~/.profile
+# Copying files in places
+cp -v rc/bashrc $HOME/.bashrc
+cp -v conf/tmux.conf $HOME/.tmux.conf
+cp -v rc/zshrc $HOME/.zshrc
+cp -v rc/profile $HOME/.profile
 
 # Git config, legacy support for old location as well.
 # The other script appends sourced file, so if thou aren't I, thou should
-# consider it as well; `git config --global --add include.path '~/yourgitconfig'`
-mkdir -vp ~/.config/git
-cat conf/gitconfig > ~/.config/git/config
-touch ~/.gitconfig
-rm ~/.gitconfig
-ln -nsfv ~/.config/git/config ~/.gitconfig
+# consider it as well; `git config --global --add include.path '$HOME/yourgitconfig'`
+mkdir -vp $HOME/.config/git
+cp -v conf/gitconfig $HOME/.config/git/config
+touch $HOME/.gitconfig
+rm $HOME/.gitconfig
+ln -nsfv $HOME/.config/git/config $HOME/.gitconfig
 # Used for `git init` and `git clone`, will contain pre-commit hooks
-mkdir -vp ~/.git-template
+mkdir -vp $HOME/.git-template
 
 # {n,neo}vim
-cat rc/vimrc > ~/.vimrc
-mkdir -vp ~/.config/nvim/
-cat conf/init.vim > ~/.config/nvim/init.vim
-cat conf/makepkg.conf > ~/.makepkg.conf
+cp -v rc/vimrc $HOME/.vimrc
+mkdir -vp $HOME/.config/nvim/
+cp -v conf/init.vim $HOME/.config/nvim/init.vim
+cp -v conf/makepkg.conf $HOME/.makepkg.conf
 
 # the media player
-mkdir -vp ~/.config/mpv/
-cat conf/mpv.conf > ~/.config/mpv/mpv.conf
+mkdir -vp $HOME/.config/mpv/
+cp -v conf/mpv.conf $HOME/.config/mpv/mpv.conf
 
 # if I am performing ident spoofing already, I don't want to touch it
-if [ ! -f ~/.oidentd.conf ]; then
-	cat conf/oidentd.conf > ~/.oidentd.conf
+if [ ! -f $HOME/.oidentd.conf ]; then
+	cp -v conf/oidentd.conf $HOME/.oidentd.conf
 fi
 
 # In addition to git, my gnupg configuration should be questioned
-mkdir -vp ~/.gnupg
-cat gpg/gpg.conf > ~/.gnupg/gpg.conf
-cat gpg/gpg-agent.conf > ~/.gnupg/gpg-agent.conf
-cat gpg/dirmngr.conf > ~/.gnupg/dirmngr.conf
+mkdir -vp $HOME/.gnupg
+cp -v gpg/gpg.conf $HOME/.gnupg/gpg.conf
+cp -v gpg/gpg-agent.conf $HOME/.gnupg/gpg-agent.conf
+cp -v gpg/dirmngr.conf $HOME/.gnupg/dirmngr.conf
 # Issues with GPG? SIGHUP dirmngr
 killall -HUP dirmngr
 
 # I don't remember using these in ages and I don't think they apply to
 # wayland
-#cat rc/xinitrc > ~/.xinitrc
-cat conf/pastebinit.xml > ~/.pastebinit.xml
-cat conf/Xresources > ~/.Xresources
+#cp -v rc/xinitrc $HOME/.xinitrc
+cp -v conf/pastebinit.xml $HOME/.pastebinit.xml
+cp -v conf/Xresources $HOME/.Xresources
 
 # Nice sysinfo script
-mkdir -vp ~/.inxi
-cat conf/inxi.conf > ~/.inxi/inxi.conf
+mkdir -vp $HOME/.inxi
+cp -v conf/inxi.conf $HOME/.inxi/inxi.conf
 
 # laziness
 gpg --quiet --import .mikaela/keys/*.asc &
 
 # Utilized by my ssh_config (not to be confused with sshd_config)
-mkdir -vp ~/.ssh/sockets/
+mkdir -vp $HOME/.ssh/sockets/
 
 # It will get used later
-mkdir -vp ~/.local/bin/
+mkdir -vp $HOME/.local/bin/
 
 # Setting permissions
 chmod a+xr chmod
@@ -91,14 +91,14 @@ git submodule update --init &
 
 # Aforementioned git template directory and pre-commit
 if hash pre-commit 2> /dev/null; then
-	pre-commit init-templatedir ~/.git-template
+	pre-commit init-templatedir $HOME/.git-template
 	pre-commit gc
 fi
 
-# If symlinks are installed, remove dead/dangling ones from ~/.local/bin
+# If symlinks are installed, remove dead/dangling ones from $HOME/.local/bin
 # so corepack won't get confused if those are present
 if hash symlinks 2> /dev/null; then
-	symlinks -d ~/.local/bin/
+	symlinks -d $HOME/.local/bin/
 else
 	echo "WARNING! Executable named symlinks not found in PATH."
 	sleep 3
@@ -108,8 +108,8 @@ fi
 if hash corepack 2> /dev/null; then
 	# Will install symlinks for pnpm, yarn, etc., but not npm unless
 	# explicitly requested as below
-	corepack enable --install-directory ~/.local/bin/
-	corepack enable npm --install-directory ~/.local/bin/
+	corepack enable --install-directory $HOME/.local/bin/
+	corepack enable npm --install-directory $HOME/.local/bin/
 	# pnpm can utilize the same packagemanager field as corepack, even when
 	# used alone
 	corepack pnpm config set manage-package-manager-versions=true

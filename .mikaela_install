@@ -10,55 +10,55 @@ git verify-commit HEAD || exit 1
 
 # Place my personal more questionable aliases in place, except that I don't
 # actually use them as I keep forgetting about them.
-cat .mikaela/bash_aliases >~/.bash_aliases
-cat .mikaela/zsh_aliases >~/.zsh_aliases
+cp -v .mikaela/bash_aliases $HOME/.bash_aliases
+cp -v .mikaela/zsh_aliases $HOME/.zsh_aliases
 
 # I still question whether xinitrc gets read under wayland, but I am not
 # about to start removing this legacy config, just in case of something
 # unexpected.
-cat rc/xinitrc >~/.xinitrc
+cp -v rc/xinitrc $HOME/.xinitrc
 
 # My gnupg configuration with questionable options such as always
 # encrypting to me, so paws off.
 mkdir -p ~/.gnupg
-cat .mikaela/gpg.conf >~/.gnupg/gpg.conf
+cp -v .mikaela/gpg.conf $HOME/.gnupg/gpg.conf
 
 # my name and all in pastes made through pastebinit, if it still even exists
-cat .mikaela/pastebinit.xml >~/.pastebinit.xml
+cp -v .mikaela/pastebinit.xml $HOME/.pastebinit.xml
 
 # may change your language to Finnish or do other fun someone else than I
 # wouldn't expect
-cat .mikaela/environment >~/.environment
+cp -v .mikaela/environment $HOME/.environment
 
 # my git configuration including the names, addresses, public keys, etc.
 mkdir ~/.config/git
 git config --global --add include.path '~/.shell-things/.mikaela/gitconfig'
-cat .gitattributes >~/.config/git/attributes
+cp -v .gitattributes $HOME/.config/git/attributes
 
 # unless thou art I, thou don't want my authorized_keys on your system.
 mkdir -p ~/.ssh
-cat .mikaela/keys/authorized_keys >~/.ssh/authorized_keys
-cat etc/ssh/ssh_config >~/.ssh/config
+cp -v .mikaela/keys/authorized_keys $HOME/.ssh/authorized_keys
+cp -v etc/ssh/ssh_config $HOME/.ssh/config
 
 # Text editor configuration (with a lot of bloat) that shouldn't be reached
 # anyway since every project should have its own not so bloated editorconfig.
-cat .editorconfig >~/.editorconfig
+cp -v .editorconfig $HOME/.editorconfig
 
 # Is Firefox installed to the location I generally use? Then apply my
 # autoconfigs. These are very surprising and unexpected unless thou art I,
 # thou have been warned.
 if [ -d ~/.local/firefox/defaults/pref/ ]; then
-	cat conf/autoconfig.js >~/.local/firefox/defaults/pref/autoconfig.js
-	#cat conf/librewolf.overrides.cfg >~/.local/firefox/librewolf.overrides.cfg
-	cat conf/firefox-forbidden-policies.js >~/.local/firefox/firefox-forbidden-policies.js
+	cp -v conf/autoconfig.js $HOME/.local/firefox/defaults/pref/autoconfig.js
+	#cp -v conf/librewolf.overrides.cfg $HOME/.local/firefox/librewolf.overrides.cfg
+	cp -v conf/firefox-forbidden-policies.js $HOME/.local/firefox/firefox-forbidden-policies.js
 fi
-#cat conf/librewolf.overrides.cfg >~/public_html/autoconfig.js
-cat conf/firefox-forbidden-policies.js >~/public_html/autoconfig.js
+#cp -v conf/librewolf.overrides.cfg $HOME/public_html/autoconfig.js
+cp -v conf/firefox-forbidden-policies.js $HOME/public_html/autoconfig.js
 mkdir -p ~/.librewolf/ ~/.var/app/io.gitlab.librewolf-community/.librewolf/
-#cat conf/librewolf.overrides.cfg >~/.librewolf/librewolf.overrides.cfg
-cat conf/firefox-forbidden-policies.js >~/.librewolf/librewolf.overrides.cfg
-#cat conf/librewolf.overrides.cfg >~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg
-cat conf/firefox-forbidden-policies.js >~/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg
+#cp -v conf/librewolf.overrides.cfg $HOME/.librewolf/librewolf.overrides.cfg
+cp -v conf/firefox-forbidden-policies.js $HOME/.librewolf/librewolf.overrides.cfg
+#cp -v conf/librewolf.overrides.cfg $HOME/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg
+cp -v conf/firefox-forbidden-policies.js $HOME/.var/app/io.gitlab.librewolf-community/.librewolf/librewolf.overrides.cfg
 
 # Mainly KDE Plasma Integration extension support, but there may be GNOME
 # and similar there too
