@@ -219,7 +219,7 @@ fi
 TZ=$(date +%Z)
 
 # Sets PATH. To add another path, add :</path/to/new/path> to string below.
-PATH=$HOME/.local/bin:$HOME/bin:$HOME/go/bin:$HOME/.local/share/flatpak/exports/bin:/var/lib/flatpak/exports/bin:/usr/local/bin:/usr/local/sbin:/usr/local/games:/snap/bin:/usr/bin:/usr/sbin:/usr/games:/bin:/sbin:/games:$PATH
+PATH=$HOME/.local/bin:$HOME/bin:$HOME/Persistent/.local/bin:$HOME/Persistent/bin:$HOME/go/bin:$HOME/.local/share/flatpak/exports/bin:/var/lib/flatpak/exports/bin:/usr/local/bin:/usr/local/sbin:/usr/local/games:/snap/bin:/usr/bin:/usr/sbin:/usr/games:/bin:/sbin:/games:$PATH
 
 # Colours to less
 # Copied from https://nion.modprobe.de/blog/archives/572-less-colors-for-man-pages.html
