@@ -76,6 +76,11 @@ git config --global gpg.ssh.allowedSignersFile $PERSISTDIR/src/codeberg.org/Amin
 cp $SHELL_THINGS_REPO/conf/gitconfig $PERSISTDOTFILESDIR/.gitconfig
 ln -nsfv $PERSISTDOTFILESDIR/.gitconfig $HOME/
 
+# Ensure existence of netrc & curlrc for easing git over https
+touch $PERSISTDOTFILESDIR/.{netrc,curlrc}
+ln -nsfv $PERSISTDOTFILESDIR/.netrc $HOME/
+ln -nsfv $PERSISTDOTFILESDIR/.curlrc $HOME/
+
 # Hack for directories expecting it to work, although only for this boot
 ln -nsfv $SHELL_THINGS_REPO $HOME/.shell-things
 
