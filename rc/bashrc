@@ -561,11 +561,6 @@ alias connman-wlans='grep -E "Name|Passphrase" /var/lib/connman/wifi*/settings -
 # Meant for SSL certificates (IRC))
 alias lowernocolon="tr -d ':' | tr 'A-Z' 'a-z'"
 
-# I don't want to reinstall exact same versions that I have
-if hash pacman 2> /dev/null; then
-	alias pacman="LC_ALL=en_DK.UTF-8 pacman --needed"
-fi
-
 # Sailfish Network status, via IRC
 alias sailfish-nstatus='dbus-send --system --type=method_call --print-reply --dest=net.connman / net.connman.Manager.GetServices|less'
 
