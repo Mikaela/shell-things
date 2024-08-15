@@ -7,44 +7,44 @@ set -x
 # You don't want to make this verbose.
 chmod g-rwx,o-rwx "$HOME" -R
 
-touch ~/.oidentd.conf
+touch $HOME/.oidentd.conf
 
-chmod -v u+rw,g-wx+r,o-wx+r ~/.oidentd.conf
+chmod -v u+rw,g-wx+r,o-wx+r $HOME/.oidentd.conf
 
-touch ~/.ICEauthority
-chmod -v o-rw+x,g-rw+x ~
+touch $HOME/.ICEauthority
+chmod -v o-rw+x,g-rw+x $HOME
 
-mkdir -p ~/public_html/
-chmod -v -R 755 ~/public_html/
+mkdir -p $HOME/public_html/
+chmod -v -R 755 $HOME/public_html/
 
-touch ~/.face
-touch ~/.forward
-touch ~/.netrc
-chmod -v a+r-wx,u+rw ~/.face
-chmod -v a+r-wx,u+rw ~/.forward
-chmod -v 600 ~/.netrc
+touch $HOME/.face
+touch $HOME/.forward
+touch $HOME/.netrc
+chmod -v a+r-wx,u+rw $HOME/.face
+chmod -v a+r-wx,u+rw $HOME/.forward
+chmod -v 600 $HOME/.netrc
 
-mkdir -p ~/.ssh
-chmod -v 700 ~/.ssh
-touch ~/.ssh/authorized_keys
-chmod -v 600 ~/.ssh/authorized_keys
+mkdir -p $HOME/.ssh
+chmod -v 700 $HOME/.ssh
+touch $HOME/.ssh/authorized_keys
+chmod -v 600 $HOME/.ssh/authorized_keys
 
 mkdir -p "$HOME/AppImages"
 chmod a+rx "$HOME/AppImages/" "$HOME/AppImages/*.appimage"
 
 # if we have support for setting ACL, some of this becomes easier (although maybe redundant)
 if hash setfacl 2> /dev/null; then
-	setfacl --modify u:$(id -un):rw,g:$(id -gn):r,o:r ~/.oidentd.conf
+	setfacl --modify u:$(id -un):rw,g:$(id -gn):r,o:r $HOME/.oidentd.conf
 	setfacl --modify=u:$(id -un):rwX,g:$(id -gn):rX,o:rX "$HOME/AppImages/"
-	setfacl --recursive --modify u:$(id -un):rwX,g:$(id -gn):rX,o:rX ~/public_html/
+	setfacl --recursive --modify u:$(id -un):rwX,g:$(id -gn):rX,o:rX $HOME/public_html/
 
 	for appimage in $(find $HOME/AppImages/*.appimage); do
 		setfacl --modify=u:$(id -un):rwX,g:$(id -gn):rX,o:rX $appimage
 	done
 
 	# Enabling laziness pt. …
-	if [[ -d ~/.shell-things ]]; then
-		setfacl --recursive --modify u:$(id -un):rwX,g:$(id -gn):rX,o:rX ~/.shell-things/
+	if [[ -d $HOME/.shell-things ]]; then
+		setfacl --recursive --modify u:$(id -un):rwX,g:$(id -gn):rX,o:rX $HOME/.shell-things/
 	fi
 fi
 
