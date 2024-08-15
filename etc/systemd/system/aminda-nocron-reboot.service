@@ -21,14 +21,23 @@ ExecStartPre=-/usr/bin/systemctl start firewalld.service
 ExecStart=-/usr/bin/systemctl enable --now systemd-zram-setup@zram0.service
 # Ensure we really allow ICMPv6 on FEDORA (or firewalld). Also other essential services.
 ExecStart=-/usr/bin/firewall-cmd --add-protocol=ipv6-icmp
+ExecStart=-/usr/bin/firewall-cmd --add-protocol=ipv6-icmp --zone=home
 ExecStart=-/usr/bin/firewall-cmd --add-service=ssh --permanent
+ExecStart=-/usr/bin/firewall-cmd --add-service=ssh --permanent --zone=home
 ExecStart=-/usr/bin/firewall-cmd --add-service=mosh --permanent
+ExecStart=-/usr/bin/firewall-cmd --add-service=mosh --permanent --zone=home
 ExecStart=-/usr/bin/firewall-cmd --add-service=ntp --permanent
+ExecStart=-/usr/bin/firewall-cmd --add-service=ntp --permanent --zone=home
 ExecStart=-/usr/bin/firewall-cmd --add-service=syncthing --permanent
+ExecStart=-/usr/bin/firewall-cmd --add-service=syncthing --permanent --zone=home
 ExecStart=-/usr/bin/firewall-cmd --add-service=mdns --permanent
+ExecStart=-/usr/bin/firewall-cmd --add-service=mdns --permanent --zone=home
 ExecStart=-/usr/bin/firewall-cmd --add-service=kdeconnect --permanent
+ExecStart=-/usr/bin/firewall-cmd --add-service=kdeconnect --permanent --zone=home
 ExecStart=-/usr/bin/firewall-cmd --permanent --add-port=9001/udp
+ExecStart=-/usr/bin/firewall-cmd --permanent --add-port=9001/udp --zone=home
 ExecStart=-/usr/bin/firewall-cmd --permanent --add-port=6771/udp
+ExecStart=-/usr/bin/firewall-cmd --permanent --add-port=6771/udp --zone=home
 # 3rd party Xbox controller initialization. See Mikaela/gist/gayming/
 #ExecStart=-/root/fixcontroller.py
 # This is actually in the delayed variant of this service, but anyway
