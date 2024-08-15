@@ -29,10 +29,18 @@ chmod -v 700 ~/.ssh
 touch ~/.ssh/authorized_keys
 chmod -v 600 ~/.ssh/authorized_keys
 
+mkdir -p "$HOME/AppImages"
+chmod a+rx "$HOME/AppImages/" "$HOME/AppImages/*.appimage"
+
 # if we have support for setting ACL, some of this becomes easier (although maybe redundant)
 if hash setfacl 2> /dev/null; then
 	setfacl --modify u:$(id -un):rw,g:$(id -gn):r,o:r ~/.oidentd.conf
+	setfacl --modify=u:$(id -un):rwX,g:$(id -gn):rX,o:rX "$HOME/AppImages/"
 	setfacl --recursive --modify u:$(id -un):rwX,g:$(id -gn):rX,o:rX ~/public_html/
+
+	for appimage in $(find $HOME/AppImages/*.appimage); do
+		setfacl --modify=u:$(id -un):rwX,g:$(id -gn):rX,o:rX $appimage
+	done
 
 	# Enabling laziness pt. …
 	if [[ -d ~/.shell-things ]]; then
