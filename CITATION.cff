@@ -2,7 +2,7 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: My dotfiles
+title: "My dotfiles"
 type: misc
 authors:
   - given-names: Aminda
@@ -10,7 +10,7 @@ authors:
     email: suomalainen@mikaela.info
     orcid: "https://orcid.org/0009-0003-8657-4653"
 repository-code: "https://codeberg.org/Aminda/shell-things"
-abstract: My dotfiles (also known as shell-things)
+abstract: "My dotfiles (also known as shell-things)"
 keywords:
   - dotfiles
   - bash
