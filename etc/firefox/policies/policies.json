@@ -643,7 +643,7 @@
 				"Status": "locked",
 				"Type": "string",
 				"Value": "",
-				"Value_beacondb": "https://beacondb.net/v1/geolocate",
+				"Value_beacondb": "https://api.beacondb.net/v1/geolocate",
 				"Value_positon": "https://api.positon.xyz/?key=74600654-2aec-11ef-aa95-3b7218da6865"
 			},
 			"geo.provider.use_geoclue": {
