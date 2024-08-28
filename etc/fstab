@@ -3,10 +3,12 @@
 # that works even if disks are added and removed. See fstab(5).
 
 ## swap file creation and auto-mount
-# # fallocate -l 4G /swap
-# # chmod 600 /swap
-# # mkswap /swap
-# # swapon /swap
+# btrfs? # btrfs filesystem mkswapfile --size 4G /swap # proceed to step 4.
+# Otherwise:
+# 1. # fallocate -l 4G /swap
+# 2. # chmod 600 /swap
+# 3. # mkswap /swap
+# 4. # swapon /swap
 # and to /etc/fstab:
 /swap   none    swap    sw  0   0
 # Note that swap shouldn't be used if there is encryption present.
