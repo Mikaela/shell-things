@@ -70,7 +70,7 @@ repos:
 
   # GitHub Actions etc. configuration validity checking
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.29.1
+    rev: 0.29.2
     hooks:
       #- id: check-jsonschema
       - id: check-dependabot
@@ -95,7 +95,7 @@ repos:
 
   # .editorconfig validity checking
   - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
-    rev: "2.7.3"
+    rev: "3.0.3"
     hooks:
       - id: editorconfig-checker
         alias: ec
