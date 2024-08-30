@@ -1,0 +1,1 @@
+deb [signed-by=/etc/apt/keyrings/fpf-apt-tools-archive-keyring.gpg] https://packages.freedom.press/apt-tools-prod testing main
