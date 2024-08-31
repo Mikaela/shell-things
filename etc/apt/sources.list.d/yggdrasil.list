@@ -1,1 +1,2 @@
+# https://yggdrasil-network.github.io/installation-linux-deb.html
 deb [signed-by=/usr/local/apt-keys/yggdrasil-keyring.gpg] https://neilalexander.s3.dualstack.eu-west-2.amazonaws.com/deb/ debian yggdrasil
