@@ -1,4 +1,4 @@
 #  Because the curlbashing bothers me
 # https://repo.nordvpn.com/gpg/nordvpn_public.asc
-deb https://repo.nordvpn.com/deb/nordvpn/debian stable main
-deb-src https://repo.nordvpn.com/deb/nordvpn/debian stable main
+deb [signed-by=/usr/local/share/keyrings/nordvpn.gpg] https://repo.nordvpn.com/deb/nordvpn/debian stable main
+deb-src [signed-by=/usr/local/share/keyrings/nordvpn.gpg] https://repo.nordvpn.com/deb/nordvpn/debian stable main
