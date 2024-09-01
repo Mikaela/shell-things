@@ -53,6 +53,8 @@ cp -v conf/makepkg.conf $HOME/.makepkg.conf
 # the media player
 mkdir -vp $HOME/.config/mpv/
 cp -v conf/mpv.conf $HOME/.config/mpv/mpv.conf
+mkdir -vp $HOME/.var/app/io.mpv.Mpv/config/mpv
+cp -v conf/mpv.conf $HOME/.var/app/io.mpv.Mpv/config/mpv/mpv.conf
 
 # if I am performing ident spoofing already, I don't want to touch it
 if [ ! -f $HOME/.oidentd.conf ]; then
