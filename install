@@ -142,6 +142,25 @@ if [ "$(id -u)" == "0" ]; then
 	if hash updatedb 2> /dev/null; then
 		(updatedb &)
 	fi
+
+	# If LaTeX fonts are available, make them available for the rest of the
+	# system too.
+	if [ -d "/usr/share/texlive/texmf-dist/fonts/" ]; then
+		mkdir -p /usr/local/share/fonts
+		ln -nsfv /usr/share/texlive/texmf-dist/fonts /usr/local/share/fonts/texlive
+	fi
+fi
+
+# Make the submoduled fonts available to the system
+if [ -d "$HOME/.shell-things" ]; then
+	mkdir -p $HOME/.local/share/fonts
+	ln -nsfv $HOME/.shell-things/submodules/comicneue/Fonts $HOME/.local/share/fonts/comicneue
+	ln -nsfv $HOME/.shell-things/submodules/comic-shanns-mono/fonts $HOME/.local/share/fonts/comic-shanns-mono
+	ln -nsfv $HOME/.shell-things/submodules/opendyslexic/compiled $HOME/.local/share/fonts/opendyslexic
+	ln -nsfv $HOME/.shell-things/submodules/serious-sans/SeriousShanns $HOME/.local/share/fonts/
+fi
+if hash fc-cache 2> /dev/null; then
+	fc-cache
 fi
 
 # If the previously mentioned marker is present, include the even more
