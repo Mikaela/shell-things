@@ -160,7 +160,7 @@ if [ -d "$HOME/.shell-things" ]; then
 	ln -nsfv $HOME/.shell-things/submodules/serious-sans/SeriousShanns $HOME/.local/share/fonts/
 fi
 if hash fc-cache 2> /dev/null; then
-	fc-cache
+	(fc-cache &)
 fi
 
 # If the previously mentioned marker is present, include the even more
