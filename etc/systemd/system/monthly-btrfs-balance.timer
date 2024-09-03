@@ -1,0 +1,10 @@
+[Unit]
+Description=Run full BTRFS balancing monthly
+
+[Timer]
+OnCalendar=monthly
+Persistent=true
+RemainAfterElapse=false
+
+[Install]
+WantedBy=timers.target

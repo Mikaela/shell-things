@@ -1,0 +1,13 @@
+[Unit]
+Description=Monthly BTRFS full balancing
+
+[Service]
+Type=oneshot
+TimeoutStartSec=infinity
+ExecStart=/usr/sbin/btrfs balance start --full-balance /
+User=root
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
