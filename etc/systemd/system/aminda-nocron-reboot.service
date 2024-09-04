@@ -50,6 +50,7 @@ ExecStart=-/usr/bin/systemctl enable --now chrony.service
 ExecStart=-/usr/bin/systemctl enable --now chronyd.service
 ExecStart=-/usr/bin/systemctl enable --now systemd-oomd.service systemd-oomd.socket
 ExecStart=-/bin/chown -R root:${LINUXBREWGROUP} /home/linuxbrew -R
+ExecStart=-/bin/chmod -R u+rw,g+rw,o+r /home/linuxbrew
 ExecStart=-/bin/setfacl -R -m g:${LINUXBREWGROUP}:rwX,o:rX /home/linuxbrew
 User=root
 StandardOutput=journal
