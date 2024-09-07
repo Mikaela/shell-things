@@ -1,5 +1,5 @@
 /** @format */
 
 {
-	extends: ["local>Mikaela/shell-things:.renovate-shared"],
+	extends: ["github>Mikaela/shell-things:.renovate-shared"],
 }
