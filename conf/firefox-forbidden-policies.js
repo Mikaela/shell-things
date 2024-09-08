@@ -40,7 +40,7 @@ lockPref(
 );
 lockPref(
 	"font.name-list.sans-serif.x-western",
-	"Roboto, Noto Sans, sans-serif",
+	"Comic Neue, Roboto, Noto Sans, sans-serif",
 );
 lockPref(
 	"font.name-list.serif.x-cyrillic",
