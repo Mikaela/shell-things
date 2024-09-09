@@ -24,7 +24,8 @@ lockPref("font.default.el", "serif");
 lockPref("font.default.x-cyrillic", "serif");
 //clearPref("font.default.el");
 //clearPref("font.default.x-cyrillic");
-lockPref("font.default.x-western", "serif");
+//lockPref("font.default.x-western", "serif");
+lockPref("font.default.x-western", "sans-serif");
 //clearPref("font.default.x-western");
 lockPref(
 	"font.name-list.monospace.x-cyrillic",
