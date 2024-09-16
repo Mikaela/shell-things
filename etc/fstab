@@ -3,9 +3,9 @@
 # that works even if disks are added and removed. See fstab(5).
 
 ## swap file creation and auto-mount
-# btrfs? # btrfs filesystem mkswapfile --size 4G /swap # proceed to step 4.
+# btrfs? # btrfs filesystem mkswapfile --size 8G /swap # proceed to step 4.
 # Otherwise:
-# 1. # fallocate -l 4G /swap
+# 1. # fallocate -l 8G /swap
 # 2. # chmod 600 /swap
 # 3. # mkswap /swap
 # 4. # swapon /swap
