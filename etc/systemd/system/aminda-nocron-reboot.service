@@ -5,6 +5,7 @@ Wants=sysctl-p--system.service
 [Service]
 Type=oneshot
 TimeoutStartSec=infinity
+Environment=LINUXBREWUSER=root
 Environment=LINUXBREWGROUP=wheel
 ExecStartPre=-/usr/bin/echo 1 > /sys/devices/system/cpu/microcode/reload
 # - means it can fail, without failing those after it.
@@ -49,7 +50,7 @@ ExecStart=-/usr/bin/systemctl enable --now unbound.service
 ExecStart=-/usr/bin/systemctl enable --now chrony.service
 ExecStart=-/usr/bin/systemctl enable --now chronyd.service
 ExecStart=-/usr/bin/systemctl enable --now systemd-oomd.service systemd-oomd.socket
-ExecStart=-/bin/chown -R root:${LINUXBREWGROUP} /home/linuxbrew -R
+ExecStart=-/bin/chown -R ${LINUXBREWUSER}:${LINUXBREWGROUP} /home/linuxbrew -R
 ExecStart=-/bin/chmod -R u+rw,g+rw,o+r /home/linuxbrew
 ExecStart=-/bin/setfacl -R -m g:${LINUXBREWGROUP}:rwX,o:rX /home/linuxbrew
 User=root
