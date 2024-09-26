@@ -57,26 +57,21 @@ if hash lsb_release 2> /dev/null; then
 
 	# Only print motivational phrases if username is aminda or mikaela
 	if [[ $(whoami) == aminda ]] || [[ $(whoami) == mikaela ]]; then
-		(
-			printf "\n"
-			# Tavun OM värähtely poistaa ylpeyttä, MA kateutta, NI takertumista. PE leikkaa tietämättömyyden läpi, ME hälventää ahneuden ja rintakehässä värähtelevä HUNG muuntaa vihan.
-			# Kuinka asiat ovat (s. 74-75) - Lama Ole Nydahl
-			printf "\tAferoj emas funkcii sin mem... \t OM MANI PEME HUNG...\n"
-			#printf "\tAlways remember the existence of spotlight effect...\n"
-			#(printf "\u26A7\ufe0e Aferoj emas funkcii sin mem.\n\tFaru jogon, sentu, ne provu perfektecon.\n\t\tDancu kiel neniu rigardas, kvankam estu vidita kaj aŭdata.\nOM MANI PEME HUNG\n")
-			#(printf "\u26A7\ufe0e Any movement at any time is better than nothing.\n")
-			#(printf "\u2744\ufe0e Take the cold showers, hot ones are a disservice. And walk in cold, which is no excuse just like rain.\n\tOtherwise there will be dry skin and the vagus nerve will be upset leading to anxiety, depression and poor mental health.\n\t\tBesides the environment thanks.\n")
-			# Tempus Finis -  Takeharu Ishimoto
-			#(printf "\u1f54a\ufe0e \tFine fortasse nihil est vobis dire\n\tFine fortasse nihil est vobis Lucrari\n\tFine fortasse nihil est tamen\n")
-			#(printf "\u26A7\ufe0e Your adventure begins in the dead of night.\n\u26A7\ufe0e Your road won't be easy, but a rising sun awaits your journey's end.\n\n")
-			#(printf "\u26A7\ufe0e The darker than black is, the brighter the moon is\n")
-			#(printf "\u26A7\ufe0e Agoraphobia/social anxiety advice: \n\tAct like you belong! Like you own the place, but keep everyone comfortable! Remember the Spotlight Effect!\n \t\tMaybe even wear hi-viz so you really belong anywhere \U1F61D \n\t\t\tAnd as always, fake it till you make it!\n")
-			# (printf "\n\u26A7\ufe0e\tThat's what I am, that's what I'll always be\n\u26A7\ufe0e\tI don't wanna be silent 'cause this is my destiny\n\u26A7\ufe0e\tThat's what I was, that's what feels good to me\n\u26A7\ufe0e\tAnd nothing will change me, that's what I'm meant to be.\n\u26A7\ufe0e\t\t­—Conchita Wurst: That's What I Am\n\n")
-			#(printf "https://en.m.wikipedia.org/wiki/First_they_came_...#Text\n")
-			#printf "\tMay your heart be your guiding key ;)"
-			#printf "\n"
-			(printf "\nFoci:\n\tFluff the SPOTLIGHT EFFECT!\n\t\tWalk the haters off the plank, let them face\n\t\tthe cutlass, the pistol, or the stick.\n\tLeave the world a better place than you found it.\n\t\tLet everyone bloom remembering the Paradox of Tolerance.\n\t\t\tAllow people to discuss touch between friends.\n\t\t\tRemember that you, too, are people.\n\tMay your heart be your guiding key ;)\n")
-		)
+		if hash python3 2> /dev/null; then
+			(
+				# Motivational messages
+				# Tavun OM värähtely poistaa ylpeyttä, MA kateutta, NI takertumista. PE leikkaa tietämättömyyden läpi, ME hälventää ahneuden ja rintakehässä värähtelevä HUNG muuntaa vihan.
+				# Kuinka asiat ovat (s. 74-75) - Lama Ole Nydahl
+				python3 -c 'print("""
+Aferoj emas funkcii sin mem...\tOM MANI PEME HUNG...
+
+\t\t\tFoci
+\tFluff the SPOTLIGHT EFFECT!
+\tLeave the world a better place than you found it.
+\tMay your heart be your guiding key ;)
+""")'
+			)
+		fi
 	elif [[ "$(id -u)" == "0" ]]; then
 		# This comes from Charybdis IRCd
 		(printf "\nWe would like to take this moment to remind you that we accept\nabsolutely no liability for the insanity you're about to endure.\n\n")
