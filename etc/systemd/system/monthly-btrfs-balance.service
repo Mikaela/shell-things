@@ -4,7 +4,8 @@ Description=Monthly BTRFS full balancing
 [Service]
 Type=oneshot
 TimeoutStartSec=infinity
-ExecStart=/usr/sbin/btrfs balance start --full-balance /
+# Contained in `systemd-path search-binaries-default`
+ExecStart=btrfs balance start --full-balance /
 User=root
 StandardOutput=journal
 StandardError=journal

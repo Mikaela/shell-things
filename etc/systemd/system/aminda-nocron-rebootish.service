@@ -4,19 +4,20 @@ Description=Aminda's cronless tasks to do a bit after booting
 [Service]
 Type=oneshot
 TimeoutStartSec=infinity
+# Remember `systemd-path search-binaries-default`
 # - means it can fail, without failing those after it
 # Another attempt at ensuring Yggdrasil works with nordvpnd
-ExecStartPre=-/usr/bin/systemctl enable --now aminda-nocron-reboot.service
-ExecStartPre=-/usr/bin/systemctl enable --now aminda-nocron-reboot.timer
-ExecStartPre=-/usr/bin/systemctl enable --now monthly-btrfs-balance.timer
-ExecStartPre=-/usr/sbin/sysctl net.ipv6.conf.all.disable_ipv6=0
-ExecStartPre=-/usr/bin/systemctl enable --now tlp
-ExecStart=-/usr/bin/systemctl restart yggdrasil.service
-ExecStart=-/bin/firewall-cmd --reload
+ExecStartPre=-systemctl enable --now aminda-nocron-reboot.service
+ExecStartPre=-systemctl enable --now aminda-nocron-reboot.timer
+ExecStartPre=-systemctl enable --now monthly-btrfs-balance.timer
+ExecStartPre=-sysctl net.ipv6.conf.all.disable_ipv6=0
+ExecStartPre=-systemctl enable --now tlp
+ExecStart=-systemctl restart yggdrasil.service
+ExecStart=-firewall-cmd --reload
 # If they somehow managed to not start already
-ExecStart=-/usr/bin/systemctl enable --now unbound.service
-ExecStart=-/usr/bin/systemctl enable --now systemd-resolved.service
-ExecStart=-/usr/sbin/tlp setcharge
+ExecStart=-systemctl enable --now unbound.service
+ExecStart=-systemctl enable --now systemd-resolved.service
+ExecStart=-tlp setcharge
 User=root
 StandardOutput=journal
 StandardError=journal

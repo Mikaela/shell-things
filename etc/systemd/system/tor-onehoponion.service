@@ -3,8 +3,9 @@ Description=Tor one hop onion service host
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/tor -f /etc/tor/torrc-onehoponion
-ExecReload=/bin/kill -HUP $MAINPID
+# Contained in `systemd-path search-binaries-default`
+ExecStart=tor -f /etc/tor/torrc-onehoponion
+ExecReload=kill -HUP $MAINPID
 Restart=always
 User=debian-tor
 

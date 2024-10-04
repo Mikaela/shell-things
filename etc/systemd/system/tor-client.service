@@ -3,8 +3,9 @@ Description=Tor client
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/tor -f /etc/tor/torrc-client
-ExecReload=/bin/kill -HUP $MAINPID
+# Contained in `systemd-path search-binaries-default`
+ExecStart=tor -f /etc/tor/torrc-client
+ExecReload=kill -HUP $MAINPID
 Restart=always
 User=debian-tor
 

@@ -3,4 +3,5 @@ Description=Matterbridge restarter
 
 [Service]
 Type=oneshot
-ExecStart=/bin/systemctl restart matterbridge.service --quiet
+# Contained in `systemd-path search-binaries-default`
+ExecStart=systemctl restart matterbridge.service --quiet

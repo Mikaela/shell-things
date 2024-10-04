@@ -3,5 +3,6 @@ Description=install flatpak updates and uninstall unused flatpaks
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/flatpak update --assumeyes --noninteractive
-ExecStartPost=/usr/bin/flatpak uninstall --unused --assumeyes --noninteractive
+# Contained in `systemd-path search-binaries-default`
+ExecStart=flatpak update --assumeyes --noninteractive
+ExecStartPost=flatpak uninstall --unused --assumeyes --noninteractive

@@ -3,4 +3,5 @@ Description=Gitea restarter
 
 [Service]
 Type=oneshot
-ExecStart=/bin/systemctl restart gitea.service --quiet
+# Contained in `systemd-path search-binaries-default`
+ExecStart=systemctl restart gitea.service --quiet
