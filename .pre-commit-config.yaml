@@ -15,7 +15,7 @@ default_language_version:
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     hooks:
       - id: trailing-whitespace
         args: ["--markdown-linebreak-ext", "md,markdown"]
@@ -48,6 +48,7 @@ repos:
             --top-keys,
             "Name,name",
           ]
+      - id: check-illegal-windows-names
 
   - repo: https://github.com/pre-commit-ci/pre-commit-ci-config
     rev: v1.6.1
@@ -70,7 +71,7 @@ repos:
 
   # GitHub Actions etc. configuration validity checking
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.29.2
+    rev: 0.29.3
     hooks:
       #- id: check-jsonschema
       - id: check-dependabot
