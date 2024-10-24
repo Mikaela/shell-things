@@ -323,6 +323,8 @@ fi
 
 # https://github.com/Homebrew/brew
 if [ -d /home/linuxbrew/.linuxbrew/bin ]; then
+	# https://www.junian.net/dev/macos-fix-zsh-compinit-insecure-directories/
+	(compaudit | xargs chmod g-w > /dev/null 2>&1 &)
 	eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 fi
 
