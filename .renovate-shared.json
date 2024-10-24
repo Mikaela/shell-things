@@ -25,6 +25,5 @@
 	"pre-commit": {
 		"enabled": true
 	},
-	"schedule": [],
 	"timezone": "Europe/Helsinki"
 }
