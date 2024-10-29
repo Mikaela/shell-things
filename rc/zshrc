@@ -116,7 +116,9 @@ bindkey -e
 
 # Use modern completion system
 autoload -Uz compinit
-compinit
+# -i = exclude insecure directories, -u would disable security checks
+# https://github.com/zsh-users/zsh/blob/zsh-5.9/Completion/compinit#L67-L72
+compinit -i
 
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete _correct _approximate
