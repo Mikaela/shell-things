@@ -109,10 +109,10 @@ packages:
       }
     engines: { node: ">=16.0.0" }
 
-  tslib@2.8.0:
+  tslib@2.8.1:
     resolution:
       {
-        integrity: sha512-jWVzBLplnCmoaTr13V9dYbiQ99wvZRd0vNWaDRg+aVYRcjDF3nDksxFDE/+fkXnKhpnUUkmx5pK/v8mCtLVqZA==,
+        integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==,
       }
 
 snapshots:
@@ -169,6 +169,6 @@ snapshots:
 
   sh-syntax@0.4.2:
     dependencies:
-      tslib: 2.8.0
+      tslib: 2.8.1
 
-  tslib@2.8.0: {}
+  tslib@2.8.1: {}
