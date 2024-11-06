@@ -125,6 +125,8 @@ lockPref("security.ssl.enable_ocsp_must_staple", true);
 
 // New sidebar
 lockPref("sidebar.revamp", true);
+lockPref("sidebar.verticalTabs", true);
+lockPref("sidebar.visibility", "always-show");
 
 // No making configuration on the last line of the file!
 //

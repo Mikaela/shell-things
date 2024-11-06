@@ -961,6 +961,18 @@
 				"Type": "boolean",
 				"Value": true
 			},
+			"sidebar.verticalTabs": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"sidebar.visibility": {
+				"Comment": "Preference not allowed for stability reasons.",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": "always-show"
+			},
 			"ui.systemUsesDarkTheme": {
 				"Comment": "Another defaulting to dark theme.",
 				"Status": "clear",
