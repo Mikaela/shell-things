@@ -138,16 +138,14 @@
 			]
 		},
 		"DNSOverHTTPS": {
-			"Enabled": false,
+			"Enabled": true,
 			"ExcludedDomains": [
 				"http.badssl.com",
 				"norwegianwifi.com"
 			],
 			"Fallback": true,
 			"Locked": true,
-			"ProviderURL": "https://dns0.eu/",
-			"ProviderURL_outside_europe_aminda_comment": "Swap to https://unfiltered.adguard-dns.com/dns-query if device is expected to cross continents from Europe?",
-			"ProviderURL_with_ECS_comment": "If changing this to something with non-private ECS, remember to disable ECS in preferences of TRR!"
+			"ProviderURL": "https://dns11.quad9.net/dns-query"
 		},
 		"DisableEncryptedClientHello": false,
 		"DisableFirefoxAccounts": false,
