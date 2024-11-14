@@ -8,6 +8,14 @@
 	pullen = pull --no-ff
 	verify = verify-commit HEAD
 
+#[gpg]
+	#format = ssh
+	#format = x509
+[gpg "ssh"]
+	allowedSignersFile = ~/src/codeberg.org/Aminda/ssh-allowed_signers/allowed_signers
+#[gpg "x509"]
+#	program = gpgsm
+
 [core]
 	editor = nvim
 	autocrlf = input
@@ -45,13 +53,6 @@
 #	 diff = diff-highlight | less
 [interactive]
 #	 diffFilter = diff-highlight
-[gpg]
-	format = ssh
-	#format = x509
-[gpg "ssh"]
-	allowedSignersFile = ~/src/codeberg.org/Aminda/ssh-allowed_signers/allowed_signers
-#[gpg "x509"]
-#	program = gpgsm
 [tag]
 	forceSignAnnotated = true
 [pull]
@@ -85,3 +86,5 @@
 # Don't complain about this path
 [safe]
 	directory = /home/linuxbrew/.linuxbrew
+
+# vim: filetype=gitconfig
