@@ -138,7 +138,8 @@
 			]
 		},
 		"DNSOverHTTPS": {
-			"Enabled": true,
+			"Comment": "Seems to break badly on s-guest-free while Unbound/resoled work.",
+			"Enabled": false,
 			"ExcludedDomains": [
 				"http.badssl.com",
 				"norwegianwifi.com"
