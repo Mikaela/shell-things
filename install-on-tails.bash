@@ -49,7 +49,8 @@ if [ -d "$SHELL_THINGS_REPO" ]; then
 	git fetch --all
 	git checkout -b cxefa origin/cxefa > /dev/null 2>&1
 	git pull
-	git submodule update --init
+	git submodule update &
+	git gc &
 	git config --global gpg.ssh.allowedSignersFile "$SHELL_THINGS_REPO/submodules/ssh-allowed_signers/allowed_signers"
 	sleep 3
 	git verify-commit HEAD || exit 1

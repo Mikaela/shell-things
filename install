@@ -93,7 +93,8 @@ chmod a+xr chmod
 bash -x ./chmod &
 
 # The submodules contain nice things such as fonts
-git submodule update --init &
+git submodule update &
+git gc &
 
 # Aforementioned git template directory and pre-commit
 if hash pre-commit 2> /dev/null; then
