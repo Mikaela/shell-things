@@ -8,14 +8,14 @@ importers:
   .:
     devDependencies:
       "@aminda/global-prettier-config":
-        specifier: 2024.1.0
-        version: 2024.1.0
+        specifier: 2025.1.0
+        version: 2025.1.0
 
 packages:
-  "@aminda/global-prettier-config@2024.1.0":
+  "@aminda/global-prettier-config@2025.1.0":
     resolution:
       {
-        integrity: sha512-0OMqZ3OlDZ4K4bUBNAGki7SY0ry1lutxmtyqINds+DiW7TfqPsVTzIjPz9UIGYTZHf1DoJvKWDjPTn28VL/6uA==,
+        integrity: sha512-8xSL+2rG5Qc4nDTz1SLwQMKC+j2ET7y7Ez+j3ZaKz4EKC9IjG4LgRGq3cHp5fWwTPnuH33zGWkUbvS+Qu+QnJA==,
       }
 
   "@prettier/plugin-ruby@4.0.4":
@@ -116,7 +116,7 @@ packages:
       }
 
 snapshots:
-  "@aminda/global-prettier-config@2024.1.0":
+  "@aminda/global-prettier-config@2025.1.0":
     dependencies:
       "@prettier/plugin-ruby": 4.0.4(prettier@3.4.2)
       "@prettier/plugin-xml": 3.4.1(prettier@3.4.2)
