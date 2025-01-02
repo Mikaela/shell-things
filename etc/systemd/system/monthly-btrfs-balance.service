@@ -1,6 +1,7 @@
 [Unit]
 Description=Monthly BTRFS full balancing
 After=aminda-duperemove.service
+Conflicts=aminda-duperemove.service
 
 [Service]
 Type=oneshot
