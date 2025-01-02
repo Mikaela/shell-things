@@ -1,5 +1,8 @@
 [Unit]
 Description=Monthly BTRFS full balancing
+After=aminda-duperemove.service
+Restart=on-failure
+RestartSec=5s
 
 [Service]
 Type=oneshot
