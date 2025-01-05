@@ -41,7 +41,7 @@ lockPref(
 );
 lockPref(
 	"font.name-list.sans-serif.x-western",
-	"Comic Neue, Roboto, Noto Sans, sans-serif",
+	"Inclusive Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
 );
 lockPref(
 	"font.name-list.serif.x-cyrillic",
@@ -78,7 +78,7 @@ clearPref("font.name.serif.x-western");
 // Allow these fonts regardless of the fingerprinting resistance
 lockPref(
 	"font.system.whitelist",
-	"Arimo, Comic Neue, Comic Neue Angular, Comic Neue Angular Light, Comic Neue Angular Light Italic, Comic Neue Light, Cousine, Liberation Mono, Liberation Sans, Liberation Serif, Noto Color Emoji, Noto Emoji, Noto Math, Noto Mono, Noto Sans, Noto Sans CJK JP, Noto Music, Roboto, Roboto Flex, Roboto Mono, Roboto Serif, Tinos, Twemoji Mozilla",
+	"Arimo, Comic Neue, Comic Neue Angular, Comic Neue Angular Light, Comic Neue Angular Light Italic, Comic Neue Light, Cousine, Inclusive Sans, Liberation Mono, Liberation Sans, Liberation Serif, Noto Color Emoji, Noto Emoji, Noto Math, Noto Mono, Noto Sans, Noto Sans CJK JP, Noto Music, Roboto, Roboto Flex, Roboto Mono, Roboto Serif, Tinos, Twemoji Mozilla",
 );
 //clearPref("font.system.whitelist");
 
