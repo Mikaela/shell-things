@@ -159,7 +159,16 @@ if [ -d "$HOME/.shell-things" ]; then
 	ln -nsfv $HOME/.shell-things/submodules/comic-shanns-mono/fonts $HOME/.local/share/fonts/comic-shanns-mono
 	ln -nsfv $HOME/.shell-things/submodules/opendyslexic/compiled $HOME/.local/share/fonts/opendyslexic
 	ln -nsfv $HOME/.shell-things/submodules/serious-sans/SeriousShanns $HOME/.local/share/fonts/
+	ln -nsfv $HOME/.shell-things/submodules/Inclusive-Sans/fonts $HOME/.local/share/fonts/Inclusive-Sans
+	# Font cleanup
+	if hash symlinks 2> /dev/null; then
+		symlinks -d $HOME/.local/share/fonts/
+	else
+		echo "WARNING! Executable named symlinks not found in PATH."
+		sleep 3
+	fi
 fi
+
 if hash fc-cache 2> /dev/null; then
 	(fc-cache &)
 fi
