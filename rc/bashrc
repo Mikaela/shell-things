@@ -166,13 +166,20 @@ if hash lsb_release 2> /dev/null; then
 				# Motivational messages
 				# Tavun OM värähtely poistaa ylpeyttä, MA kateutta, NI takertumista. PE leikkaa tietämättömyyden läpi, ME hälventää ahneuden ja rintakehässä värähtelevä HUNG muuntaa vihan.
 				# Kuinka asiat ovat (s. 74-75) - Lama Ole Nydahl
+				# Illusions I & II - Richard Bach were quoted as well
 				python3 -c 'print("""
 Aferoj emas funkcii sin mem...\tOM MANI PEME HUNG...
 
-\t\t\tFoci
-\tFluff the SPOTLIGHT EFFECT!
-\tLeave the world a better place than you found it.
-\tMay your heart be your guiding key ;)
+\tHere is a test to find whether your mission on earth is finished:
+\t\tIf you’re alive, it isn’t.
+\tYou are a perfect expression of perfect Love, here and now.
+
+\t\t\tMemoru ankauh
+\t- Know fear. Face fears. Fluff the SPOTLIGHT EFFECT!
+\t- Act Like You Belong. And you shall belong.
+\t- Leave the world a better place than you found it.
+\t- May your heart be your guiding key ;)
+\t- MEMENTO VIVERE
 """)'
 			)
 		fi
