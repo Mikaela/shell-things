@@ -14,6 +14,8 @@
 						"challenges.cloudflare.com",
 						"ecosia.org",
 						"firefox.com",
+						"google.com",
+						"mail.google.com",
 						"mozilla.net",
 						"mozilla.org",
 						"moz-extension-scheme",
@@ -55,7 +57,9 @@
 				"disableFirstRunPage": true,
 				"noFiltering": [
 					"ecosia.org",
-					"cloudflare.com"
+					"cloudflare.com",
+					"google.com",
+					"mail.google.com"
 				]
 			},
 			"mlojlfildnehdpnlmpkeiiglhhkofhpb": {
