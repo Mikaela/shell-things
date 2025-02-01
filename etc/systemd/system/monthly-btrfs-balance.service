@@ -1,12 +1,12 @@
 [Unit]
 Description=Monthly BTRFS full balancing
 After=aminda-duperemove.service
-Conflicts=aminda-duperemove.service
 
 [Service]
 Type=oneshot
 TimeoutStartSec=infinity
 # Contained in `systemd-path search-binaries-default`
+ExecStartPre=-btrfs balance cancel /
 ExecStart=btrfs balance start --full-balance /
 User=root
 StandardOutput=journal
