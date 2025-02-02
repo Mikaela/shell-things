@@ -446,6 +446,11 @@
 				"Type": "boolean",
 				"Value": false
 			},
+			"browser.tabs.closeTabByDblclick": {
+				"Status": "default",
+				"Type": "boolean",
+				"Value": true
+			},
 			"browser.tabs.closeWindowWithLastTab": {
 				"Status": "default",
 				"Type": "boolean",
@@ -963,7 +968,7 @@
 			},
 			"sidebar.verticalTabs": {
 				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "locked",
+				"Status": "default",
 				"Type": "boolean",
 				"Value": true
 			},
