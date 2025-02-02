@@ -3,14 +3,18 @@
 
 cff-version: 1.2.0
 title: "My dotfiles"
+message: >-
+  If you use these files, please consider citing them using the metadata from
+  this file.
 type: misc
 authors:
   - given-names: Aminda
     family-names: Suomalainen
-    email: suomalainen@mikaela.info
     orcid: "https://orcid.org/0009-0003-8657-4653"
+    email: suomalainen@aminda.eu
 repository-code: "https://codeberg.org/Aminda/shell-things"
-abstract: "My dotfiles (also known as shell-things)"
+abstract: >-
+  "My dotfiles (also known as shell-things)"
 keywords:
   - dotfiles
   - bash
