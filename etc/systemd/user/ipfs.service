@@ -6,8 +6,7 @@ After=network.target mullvad-connect.service
 
 # IMPORTANT! If you are running on a VPS/dedicated/similar
 # `ipfs init --profile=server` or immediately after setting it up
-# `ipfs profile apply server`.
-# I would probably recommend `ipfs init --profile=badgerds && ipfs profile apply server`
+# `ipfs config profile apply server`.
 # REF: https://github.com/ipfs/go-ipfs/issues/4343 "Running IPFS on VPS
 #      (closed in favour of https://github.com/ipfs/go-ipfs/issues/6932
 #      "[META] Private Addresses In Public")
