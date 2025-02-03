@@ -886,9 +886,9 @@
 				"Type": "boolean",
 				"Value": false
 			},
-			"privacy.resistFingerprinting.block_mozAddonManage": {
+			"privacy.resistFingerprinting.block_mozAddonManager": {
 				"Comment": "Preference not allowed for stability reasons. :(",
-				"Status": "clear",
+				"Status": "locked",
 				"Type": "boolean",
 				"Value": true
 			},
