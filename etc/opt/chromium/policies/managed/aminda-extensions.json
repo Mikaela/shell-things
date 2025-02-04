@@ -97,7 +97,17 @@
 				"sendDNTSignal": true,
 				"showCounter": true,
 				"showIntroPage": false,
-				"socialWidgetReplacementEnabled": true
+				"socialWidgetReplacementEnabled": true,
+				"trackingDomains": [
+					{
+						"action": "block",
+						"domain": "youtube.com"
+					},
+					{
+						"action": "block",
+						"domain": "youtube-nocookie.com"
+					}
+				]
 			}
 		}
 	},
