@@ -35,24 +35,6 @@
 				"jid1-ZAdIEUB7XOzOJw@jetpack": {
 					"hasSeenPostInstall": true
 				},
-				"uBOLite@raymondhill.net": {
-					"disableFirstRunPage": true,
-					"noFiltering": [
-						"ecosia.org",
-						"cloudflare.com",
-						"google.com",
-						"mail.google.com"
-					],
-					"rulesets": [
-						"+default",
-						"+badware",
-						"+openphish-domains",
-						"+urlhaus-full",
-						"+fin-0",
-						"+annoyances-cookies",
-						"+annoyances-overlays"
-					]
-				},
 				"uBlock0@raymondhill.net": {
 					"toAdd": {
 						"trustedSiteDirectives": [
@@ -237,8 +219,8 @@
 				"installation_mode": "force_installed"
 			},
 			"uBOLite@raymondhill.net": {
-				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin-lite/latest.xpi",
-				"installation_mode": "normal_installed"
+				"blocked_install_message": "Unmaintained on addons.mozilla.org",
+				"installation_mode": "blocked"
 			},
 			"uBlock0@raymondhill.net": {
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
