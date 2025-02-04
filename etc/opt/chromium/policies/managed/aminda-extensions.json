@@ -57,6 +57,15 @@
 					"cloudflare.com",
 					"google.com",
 					"mail.google.com"
+				],
+				"rulesets": [
+					"+default",
+					"+badware",
+					"+openphish-domains",
+					"+urlhaus-full",
+					"+fin-0",
+					"+annoyances-cookies",
+					"+annoyances-overlays"
 				]
 			},
 			"mlojlfildnehdpnlmpkeiiglhhkofhpb": {
