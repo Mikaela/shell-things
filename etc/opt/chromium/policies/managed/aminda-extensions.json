@@ -100,12 +100,12 @@
 				"socialWidgetReplacementEnabled": true,
 				"trackingDomains": [
 					{
-						"action": "block",
-						"domain": "youtube.com"
+						"domain": "youtube.com",
+						"action": "block"
 					},
 					{
-						"action": "block",
-						"domain": "youtube-nocookie.com"
+						"domain": "youtube-nocookie.com",
+						"action": "block"
 					}
 				]
 			}
