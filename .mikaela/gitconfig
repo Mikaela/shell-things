@@ -1,6 +1,7 @@
 [user]
 	name = Aminda Suomalainen
 	email = suomalainen@aminda.eu
+	signingkey = 0x99392F62BAE30723
 	# Email stored on my FINEID
 	#email = suomalainen@mikaela.info
 	# Aminda Suomalainen FINEID 20.12.2021-20.12.2026
