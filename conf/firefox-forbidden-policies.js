@@ -20,40 +20,40 @@ lockPref("cookiebanners.service.mode.privateBrowsing", 2);
 
 // I can set my preferred fonts in an order! :O
 // but obviously this is forbidden in policies.json!
-lockPref("font.default.el", "serif");
-lockPref("font.default.x-cyrillic", "serif");
-//clearPref("font.default.el");
-//clearPref("font.default.x-cyrillic");
+//lockPref("font.default.el", "serif");
+//lockPref("font.default.x-cyrillic", "serif");
+clearPref("font.default.el");
+clearPref("font.default.x-cyrillic");
 //lockPref("font.default.x-western", "serif");
-lockPref("font.default.x-western", "sans-serif");
-//clearPref("font.default.x-western");
-lockPref(
-	"font.name-list.monospace.x-cyrillic",
-	"Roboto Mono, Noto Sans Mono, monospace",
-);
-lockPref(
-	"font.name-list.monospace.x-western",
-	"Roboto Mono, Noto Sans Mono, monospace",
-);
-lockPref(
-	"font.name-list.sans-serif.x-cyrillic",
-	"Roboto, Noto Sans, sans-serif",
-);
-lockPref(
-	"font.name-list.sans-serif.x-western",
-	"Inclusive Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
-);
-lockPref(
-	"font.name-list.serif.x-cyrillic",
-	"Roboto Serif, Noto Serif, serif",
-);
-lockPref("font.name-list.serif.x-western", "Roboto Serif, Noto Serif, serif");
-//clearPref("font.name-list.monospace.x-cyrillic");
-//clearPref("font.name-list.monospace.x-western");
-//clearPref("font.name-list.sans-serif.x-cyrillic");
-//clearPref("font.name-list.sans-serif.x-western");
-//clearPref("font.name-list.serif.x-cyrillic");
-//clearPref("font.name-list.serif.x-western");
+//lockPref("font.default.x-western", "sans-serif");
+// clearPref("font.default.x-western");
+// lockPref(
+// 	"font.name-list.monospace.x-cyrillic",
+// 	"Roboto Mono, Noto Sans Mono, monospace",
+// );
+// lockPref(
+// 	"font.name-list.monospace.x-western",
+// 	"Roboto Mono, Noto Sans Mono, monospace",
+// );
+// lockPref(
+// 	"font.name-list.sans-serif.x-cyrillic",
+// 	"Roboto, Noto Sans, sans-serif",
+// );
+// lockPref(
+// 	"font.name-list.sans-serif.x-western",
+// 	"Inclusive Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
+// );
+// lockPref(
+// 	"font.name-list.serif.x-cyrillic",
+// 	"Roboto Serif, Noto Serif, serif",
+// );
+// lockPref("font.name-list.serif.x-western", "Roboto Serif, Noto Serif, serif");
+clearPref("font.name-list.monospace.x-cyrillic");
+clearPref("font.name-list.monospace.x-western");
+clearPref("font.name-list.sans-serif.x-cyrillic");
+clearPref("font.name-list.sans-serif.x-western");
+clearPref("font.name-list.serif.x-cyrillic");
+clearPref("font.name-list.serif.x-western");
 //
 //lockPref("font.name.monospace.el", "Liberation Mono");
 clearPref("font.name.monospace.el");
@@ -76,11 +76,11 @@ clearPref("font.name.serif.x-cyrillic");
 //lockPref("font.name.serif.x-western", "Liberation Serif");
 clearPref("font.name.serif.x-western");
 // Allow these fonts regardless of the fingerprinting resistance
-lockPref(
-	"font.system.whitelist",
-	"Arimo, Comic Neue, Comic Neue Angular, Comic Neue Angular Light, Comic Neue Angular Light Italic, Comic Neue Light, Cousine, Inclusive Sans, Liberation Mono, Liberation Sans, Liberation Serif, Noto Color Emoji, Noto Emoji, Noto Math, Noto Mono, Noto Sans, Noto Sans CJK JP, Noto Music, Roboto, Roboto Flex, Roboto Mono, Roboto Serif, Tinos, Twemoji Mozilla",
-);
-//clearPref("font.system.whitelist");
+// lockPref(
+// 	"font.system.whitelist",
+// 	"Arimo, Comic Neue, Comic Neue Angular, Comic Neue Angular Light, Comic Neue Angular Light Italic, Comic Neue Light, Cousine, Inclusive Sans, Liberation Mono, Liberation Sans, Liberation Serif, Noto Color Emoji, Noto Emoji, Noto Math, Noto Mono, Noto Sans, Noto Sans CJK JP, Noto Music, Roboto, Roboto Flex, Roboto Mono, Roboto Serif, Tinos, Twemoji Mozilla",
+// );
+clearPref("font.system.whitelist");
 
 // Play animated images only once, accessibility.
 lockPref("image.animation.mode", "once");
@@ -101,7 +101,7 @@ lockPref("privacy.fingerprintingProtection", true);
 //lockPref("privacy.fingerprintingProtection", false);
 pref(
 	"privacy.fingerprintingProtection.overrides",
-	"+AllTargets,-KeyboardEvents,-SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-NavigatorUserAgent,-JSDateTimeUTC,-HttpUserAgent",
+	"+AllTargets,-KeyboardEvents,+SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-NavigatorUserAgent,-JSDateTimeUTC,-HttpUserAgent",
 );
 //clearPref("privacy.fingerprintingProtection.overrides");
 lockPref("privacy.fingerprintingProtection.pbmode", true);

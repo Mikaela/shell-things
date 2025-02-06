@@ -339,7 +339,7 @@
 			},
 			"browser.contentblocking.category": {
 				"Comment": "The best option would be strict, but amongst other things that disables system font visibility and may cause accessibility issues for me. There is also other content blocking already such as PrivacyBadger and uBlock Origin.",
-				"Status": "locked",
+				"Status": "clear",
 				"Type": "string",
 				"Value": "standard"
 			},
@@ -547,120 +547,6 @@
 				"Type": "string",
 				"Value": ""
 			},
-			"font.default.el": {
-				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "default",
-				"Type": "string",
-				"Value": "serif"
-			},
-			"font.default.x-cyrillic": {
-				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "default",
-				"Type": "string",
-				"Value": "serif"
-			},
-			"font.default.x-western": {
-				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "default",
-				"Type": "string",
-				"Value": "serif"
-			},
-			"font.name-list.monospace.x-cyrillic": {
-				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "clear",
-				"Type": "string",
-				"Value": "Noto Shanns Mono, monospace"
-			},
-			"font.name-list.monospace.x-western": {
-				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "clear",
-				"Type": "string",
-				"Value": "Noto Shanns Mono, monospace"
-			},
-			"font.name-list.sans-serif.x-cyrillic": {
-				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "clear",
-				"Type": "string",
-				"Value": "Noto Sans, sans-serif"
-			},
-			"font.name-list.sans-serif.x-western": {
-				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "clear",
-				"Type": "string",
-				"Value": "Noto Sans, sans-serif"
-			},
-			"font.name-list.serif.x-cyrillic": {
-				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "clear",
-				"Type": "string",
-				"Value": "Noto Serif, serif"
-			},
-			"font.name-list.serif.x-western": {
-				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "clear",
-				"Type": "string",
-				"Value": "Noto Serif, serif"
-			},
-			"font.name.monospace.el": {
-				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "default",
-				"Type": "string",
-				"Value": "Liberation Mono"
-			},
-			"font.name.monospace.x-cyrillic": {
-				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "default",
-				"Type": "string",
-				"Value": "Liberation Mono"
-			},
-			"font.name.monospace.x-western": {
-				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "default",
-				"Type": "string",
-				"Value": "Liberation Mono"
-			},
-			"font.name.sans-serif.el": {
-				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "default",
-				"Type": "string",
-				"Value": "Liberation Sans"
-			},
-			"font.name.sans-serif.x-cyrillic": {
-				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "default",
-				"Type": "string",
-				"Value": "Liberation Sans"
-			},
-			"font.name.sans-serif.x-western": {
-				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "default",
-				"Type": "string",
-				"Value": "Liberation Sans"
-			},
-			"font.name.serif.el": {
-				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "default",
-				"Type": "string",
-				"Value": "Liberation Serif"
-			},
-			"font.name.serif.x-cyrillic": {
-				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "default",
-				"Type": "string",
-				"Value": "Liberation Serif"
-			},
-			"font.name.serif.x-western": {
-				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "default",
-				"Type": "string",
-				"Value": "Liberation Serif"
-			},
-			"font.system.whitelist": {
-				"Comment": "Preference not allowed for stability reasons.",
-				"Status": "default",
-				"Type": "string",
-				"Value": "Liberation Serif, Tinos, Times New Roman, Liberation Sans, Arimo, Arial, Liberation Mono, Cousine, Courier New, Noto Sans, Noto Serif, Noto Mono, OpenDyslexic, Noto Emoji, Noto Color Emoji, Comic Neue"
-			},
 			"general.config.obscure_value": {
 				"Comment": "Required for autoconfig.",
 				"Status": "locked",
@@ -691,7 +577,7 @@
 				"Value": "once"
 			},
 			"intl.accept_languages": {
-				"Status": "user",
+				"Status": "clear",
 				"Type": "string",
 				"Value": "fi-FI, fi, en-FI, en-US, en, ru-RU, ru"
 			},
@@ -868,7 +754,7 @@
 				"Comment": "Preference not allowed for stability reasons. :( https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc",
 				"Status": "locked",
 				"Type": "string",
-				"Value": "+AllTargets,-KeyboardEvents,-SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-NavigatorUserAgent,-JSDateTimeUTC,-HttpUserAgent"
+				"Value": "+AllTargets,-KeyboardEvents,+SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-NavigatorUserAgent,-JSDateTimeUTC,-HttpUserAgent"
 			},
 			"privacy.fingerprintingProtection.pbmode": {
 				"Comment": "Preference not allowed for stability reasons. :(",
@@ -1047,7 +933,7 @@
 			],
 			"Default": "Ecosia"
 		},
-		"SearchSuggestEnabled": true,
+		"SearchSuggestEnabled": false,
 		"SecurityDevices": {
 			"Add": {
 				"Fujitsu mPollux DigiSignApplication": "/usr/lib64/libcryptoki.so"
