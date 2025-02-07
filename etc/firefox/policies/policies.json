@@ -23,6 +23,10 @@
 					"socialWidgetReplacementEnabled": true,
 					"trackingDomains": [
 						{
+							"domain": "accounts.google.com",
+							"action": "allow"
+						},
+						{
 							"domain": "youtube.com",
 							"action": "block"
 						},
