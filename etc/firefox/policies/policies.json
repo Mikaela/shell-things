@@ -778,10 +778,10 @@
 				"Value": false
 			},
 			"privacy.resistFingerprinting.block_mozAddonManager": {
-				"Comment": "Preference not allowed for stability reasons. :(",
-				"Status": "locked",
+				"Comment": "Preference not allowed for stability reasons. Breaks extension install when true, at least on Android.",
+				"Status": "clear",
 				"Type": "boolean",
-				"Value": true
+				"Value": false
 			},
 			"privacy.resistFingerprinting.letterboxing": {
 				"Comment": "Preference not allowed for stability reasons. :(",

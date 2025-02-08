@@ -109,8 +109,9 @@ lockPref("privacy.fingerprintingProtection.pbmode", true);
 // (Incompatible with the above)
 lockPref("privacy.resistFingerprinting", false);
 //clearPref("privacy.resistFingerprinting");
-lockPref("privacy.resistFingerprinting.block_mozAddonManager", true);
-//clearPref("privacy.resistFingerprinting.block_mozAddonManage");
+// Breaks installing extensions when true at least on Android
+//lockPref("privacy.resistFingerprinting.block_mozAddonManager", false);
+clearPref("privacy.resistFingerprinting.block_mozAddonManage");
 // Letterboxing from Tor Browser, I like it in general.
 lockPref("privacy.resistFingerprinting.letterboxing", true);
 // Still Incompatible with the above
