@@ -972,7 +972,7 @@ if [ -f ~/.bash_custom ]; then
 	source ~/.bash_custom
 fi
 
-# vim: filetype=bash
-
 #TODO: FIXME:
 TERM=xterm-256color
+
+# vim: filetype=bash

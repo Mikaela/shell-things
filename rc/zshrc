@@ -965,7 +965,7 @@ if [ -f ~/.warnings ]; then
 	source ~/.warnings
 fi
 
-# vim: filetype=zsh
-
 #TODO: FIXME:
 TERM=xterm-256color
+
+# vim: filetype=zsh
