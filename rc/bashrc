@@ -973,3 +973,6 @@ if [ -f ~/.bash_custom ]; then
 fi
 
 # vim: filetype=bash
+
+#TODO: FIXME:
+TERM=xterm-256color

@@ -966,3 +966,6 @@ if [ -f ~/.warnings ]; then
 fi
 
 # vim: filetype=zsh
+
+#TODO: FIXME:
+TERM=xterm-256color
