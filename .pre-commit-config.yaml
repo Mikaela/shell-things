@@ -91,7 +91,7 @@ repos:
     hooks:
       - id: prettier
         name: prettier
-        entry: corepack pnpx prettier --cache --ignore-unknown --write
+        entry: corepack npx prettier --cache --ignore-unknown --write
         language: system
 
   # .editorconfig validity checking
