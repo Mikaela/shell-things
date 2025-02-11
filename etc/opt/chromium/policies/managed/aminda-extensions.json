@@ -33,20 +33,13 @@
 						"https://gitea.blesmrt.net/mikaela/gist/raw/branch/master/DNS/blocklist.txt",
 						"https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
 						"https://big.oisd.nl",
-						"curben-phishing",
 						"ublock-filters",
 						"easylist",
 						"ublock-quick-fixes",
 						"ublock-privacy",
 						"easyprivacy",
 						"FIN-0",
-						"fanboy-cookiemonster",
-						"ublock-cookies-easylist",
-						"adguard-cookies",
-						"ublock-cookies-adguard",
-						"ublock-quick-fixes",
-						"ublock-annoyances",
-						"adguard-popup-overlays"
+						"ublock-quick-fixes"
 					]
 				}
 			},
