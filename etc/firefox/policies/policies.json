@@ -5,15 +5,7 @@
 				"jid1-MnnxcxisBPnSXQ-eff@jetpack": {
 					"checkForDNTPolicy": true,
 					"disabledSites": [
-						"challenges.cloudflare.com",
-						"*.challenges.cloudflare.com",
-						"chrome-extension-scheme",
-						"ecosia.org",
-						"*.ecosia.org",
-						"keyoxide.org",
-						"moz-extension-scheme",
-						"research.cloudflare.com",
-						"*.research.cloudflare.com"
+						"www.ecosia.org"
 					],
 					"learnInIncognito": true,
 					"learnLocally": true,
@@ -44,7 +36,7 @@
 						"trustedSiteDirectives": [
 							"chrome-extension-scheme",
 							"challenges.cloudflare.com",
-							"ecosia.org",
+							"www.ecosia.org",
 							"firefox.com",
 							"google.com",
 							"mail.google.com",

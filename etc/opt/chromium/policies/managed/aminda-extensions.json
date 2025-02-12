@@ -12,7 +12,7 @@
 					"trustedSiteDirectives": [
 						"chrome-extension-scheme",
 						"challenges.cloudflare.com",
-						"ecosia.org",
+						"www.ecosia.org",
 						"firefox.com",
 						"google.com",
 						"mail.google.com",
@@ -46,7 +46,7 @@
 			"ddkjiahejlhfcafbddmgiahcphecmpfh": {
 				"disableFirstRunPage": true,
 				"noFiltering": [
-					"ecosia.org",
+					"www.ecosia.org",
 					"cloudflare.com",
 					"google.com",
 					"mail.google.com"
@@ -84,15 +84,7 @@
 			"pkehgijcmpdhfbdbbnkijodmdjhbjlgp": {
 				"checkForDNTPolicy": true,
 				"disabledSites": [
-					"challenges.cloudflare.com",
-					"*.challenges.cloudflare.com",
-					"chrome-extension-scheme",
-					"ecosia.org",
-					"*.ecosia.org",
-					"keyoxide.org",
-					"moz-extension-scheme",
-					"research.cloudflare.com",
-					"*.research.cloudflare.com"
+					"www.ecosia.org"
 				],
 				"learnInIncognito": true,
 				"learnLocally": true,
