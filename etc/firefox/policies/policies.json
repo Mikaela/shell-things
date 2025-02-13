@@ -19,6 +19,14 @@
 							"action": "allow"
 						},
 						{
+							"domain": "google.com",
+							"action": "block"
+						},
+						{
+							"domain": "recaptcha.net",
+							"action": "block"
+						},
+						{
 							"domain": "vimeo.com",
 							"action": "block"
 						},
