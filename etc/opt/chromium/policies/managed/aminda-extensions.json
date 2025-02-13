@@ -100,6 +100,14 @@
 						"action": "allow"
 					},
 					{
+						"domain": "vimeo.com",
+						"action": "block"
+					},
+					{
+						"domain": "vimeocdn.com",
+						"action": "block"
+					},
+					{
 						"domain": "youtube.com",
 						"action": "block"
 					},
