@@ -30,7 +30,7 @@
 						"ublock-unbreak",
 						"urlhaus-1",
 						"https://www.eff.org/files/effdntlist.txt",
-						"https://gitea.blesmrt.net/mikaela/gist/raw/branch/master/DNS/blocklist.txt",
+						"https://raw.githubusercontent.com/mikaela/gist/master/DNS/blocklist.txt",
 						"https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
 						"https://big.oisd.nl",
 						"ublock-filters",
