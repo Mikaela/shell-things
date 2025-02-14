@@ -37,6 +37,8 @@ repos:
       - id: mixed-line-ending
         args: [--fix=auto]
       - id: pretty-format-json
+        # TODO: Does uBlock Origin really demand this?
+        #exclude: ^etc\/firefox\/policies\/policies.json|etc\/opt\/chromium\/policies\/managed\/aminda-extensions.json$
         args:
           # Remember also: --no-sort-keys
           # ASCII excludes the älphäbet amongst others

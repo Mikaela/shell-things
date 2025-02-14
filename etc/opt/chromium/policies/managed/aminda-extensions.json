@@ -41,9 +41,28 @@
 						"FIN-0",
 						"ublock-quick-fixes",
 						"plowe-0",
-						"adguard-spyware-url"
+						"adguard-spyware-url",
+						"adguard-mobile"
 					]
-				}
+				},
+				"userSettings": [
+					[
+						"cloudStorageEnabled",
+						"true"
+					],
+					[
+						"collapseBlocked",
+						"true"
+					],
+					[
+						"ignoreGenericCosmeticFilters",
+						"true"
+					],
+					[
+						"prefetchingDisabled",
+						"false"
+					]
+				]
 			},
 			"ddkjiahejlhfcafbddmgiahcphecmpfh": {
 				"disableFirstRunPage": true,
