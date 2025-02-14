@@ -99,6 +99,14 @@
 							"true"
 						],
 						[
+							"parseAllABPHideFilters",
+							"false"
+						],
+						[
+							"suspendUntilListsAreLoaded",
+							"false"
+						],
+						[
 							"prefetchingDisabled",
 							"false"
 						]
