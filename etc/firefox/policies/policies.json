@@ -319,7 +319,7 @@
 			"URL": "about:mozilla"
 		},
 		"LegacySameSiteCookieBehaviorEnabled": false,
-		"NetworkPrediction": true,
+		"NetworkPrediction": false,
 		"NewTabPage": false,
 		"OverrideFirstRunPage": "about:mozilla|https://addons.mozilla.org/firefox/addon/noscript/",
 		"PDFjs": {
