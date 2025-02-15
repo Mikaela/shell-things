@@ -68,7 +68,7 @@
 					],
 					[
 						"prefetchingDisabled",
-						"false"
+						"true"
 					]
 				]
 			},
@@ -264,5 +264,6 @@
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		}
 	},
+	"NetworkPredictionOptions": 2,
 	"PasswordManagerEnabled": false
 }

@@ -108,7 +108,7 @@
 						],
 						[
 							"prefetchingDisabled",
-							"false"
+							"true"
 						]
 					]
 				},
@@ -695,24 +695,6 @@
 			},
 			"network.http.referer.defaultPolicy": {
 				"Status": "clear"
-			},
-			"network.http.speculative-parallel-limit": {
-				"Status": "clear"
-			},
-			"network.predictor.enable-prefetch": {
-				"Status": "locked",
-				"Type": "boolean",
-				"Value": true
-			},
-			"network.predictor.enabled": {
-				"Status": "locked",
-				"Type": "boolean",
-				"Value": true
-			},
-			"network.prefetch-next": {
-				"Status": "locked",
-				"Type": "boolean",
-				"Value": true
 			},
 			"network.trr.disable-ECS": {
 				"Status": "locked",
