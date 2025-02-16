@@ -126,6 +126,10 @@
 						"action": "allow"
 					},
 					{
+						"domain": "tunnus.almamedia.fi",
+						"action": "cookieblock"
+					},
+					{
 						"domain": "google.com",
 						"action": "block"
 					},
