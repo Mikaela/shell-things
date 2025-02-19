@@ -20,61 +20,37 @@ lockPref("cookiebanners.service.mode.privateBrowsing", 2);
 
 // I can set my preferred fonts in an order! :O
 // but obviously this is forbidden in policies.json!
-//lockPref("font.default.el", "serif");
-//lockPref("font.default.x-cyrillic", "serif");
-clearPref("font.default.el");
-clearPref("font.default.x-cyrillic");
-//lockPref("font.default.x-western", "serif");
-//lockPref("font.default.x-western", "sans-serif");
-// clearPref("font.default.x-western");
-// lockPref(
-// 	"font.name-list.monospace.x-cyrillic",
-// 	"Roboto Mono, Noto Sans Mono, monospace",
-// );
-// lockPref(
-// 	"font.name-list.monospace.x-western",
-// 	"Roboto Mono, Noto Sans Mono, monospace",
-// );
-// lockPref(
-// 	"font.name-list.sans-serif.x-cyrillic",
-// 	"Roboto, Noto Sans, sans-serif",
-// );
-// lockPref(
-// 	"font.name-list.sans-serif.x-western",
-// 	"Inclusive Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
-// );
-// lockPref(
-// 	"font.name-list.serif.x-cyrillic",
-// 	"Roboto Serif, Noto Serif, serif",
-// );
-// lockPref("font.name-list.serif.x-western", "Roboto Serif, Noto Serif, serif");
-clearPref("font.name-list.monospace.x-cyrillic");
-clearPref("font.name-list.monospace.x-western");
-clearPref("font.name-list.sans-serif.x-cyrillic");
-clearPref("font.name-list.sans-serif.x-western");
-clearPref("font.name-list.serif.x-cyrillic");
-clearPref("font.name-list.serif.x-western");
+lockPref(
+	"font.name-list.monospace.x-cyrillic",
+	"Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
+);
+lockPref(
+	"font.name-list.monospace.x-western",
+	"Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
+);
+lockPref(
+	"font.name-list.sans-serif.x-cyrillic",
+	"Inclusive Sans, Roboto, Liberation Sans, Noto Sans, sans-serif",
+);
+lockPref(
+	"font.name-list.sans-serif.x-western",
+	"Inclusive Sans, Liberation Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
+);
+lockPref(
+	"font.name-list.serif.x-cyrillic",
+	"Liberation Serif, Roboto Serif, Noto Serif, serif",
+);
+lockPref(
+	"font.name-list.serif.x-western",
+	"Liberation Serif, Roboto Serif, Noto Serif, serif",
+);
+// clearPref("font.name-list.monospace.x-cyrillic");
+// clearPref("font.name-list.monospace.x-western");
+// clearPref("font.name-list.sans-serif.x-cyrillic");
+// clearPref("font.name-list.sans-serif.x-western");
+// clearPref("font.name-list.serif.x-cyrillic");
+// clearPref("font.name-list.serif.x-western");
 //
-//lockPref("font.name.monospace.el", "Liberation Mono");
-clearPref("font.name.monospace.el");
-//lockPref("font.name.monospace.x-cyrillic", "Liberation Mono");
-clearPref("font.name.monospace.x-cyrillic");
-//lockPref("font.name.monospace.x-western", "Liberation Mono");
-clearPref("font.name.monospace.x-western");
-//
-//lockPref("font.name.sans-serif.el", "Liberation Sans");
-clearPref("font.name.sans-serif.el");
-//lockPref("font.name.sans-serif.x-cyrillic", "Liberation Sans");
-clearPref("font.name.sans-serif.x-cyrillic");
-//lockPref("font.name.sans-serif.x-western", "Liberation Sans");
-clearPref("font.name.sans-serif.x-western");
-//
-//lockPref("font.name.serif.el", "Liberation Serif");
-clearPref("font.name.serif.el");
-//lockPref("font.name.serif.x-cyrillic", "Liberation Serif");
-clearPref("font.name.serif.x-cyrillic");
-//lockPref("font.name.serif.x-western", "Liberation Serif");
-clearPref("font.name.serif.x-western");
 // Allow these fonts regardless of the fingerprinting resistance
 // lockPref(
 // 	"font.system.whitelist",
