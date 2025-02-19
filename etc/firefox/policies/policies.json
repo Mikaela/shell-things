@@ -408,12 +408,6 @@
 				"Type": "boolean",
 				"Value": false
 			},
-			"browser.display.use_document_fonts": {
-				"Comment": "Are webpages allowed to set their own fonts by default? 0 blocks them breaking Mastodon buttons etc.",
-				"Status": "clear",
-				"Type": "number",
-				"Value": 0
-			},
 			"browser.preferences.moreFromMozilla": {
 				"Status": "default",
 				"Type": "boolean",
@@ -429,9 +423,6 @@
 				"Type": "boolean",
 				"Value": true
 			},
-			"browser.safebrowsing.downloads.remote.url": {
-				"Status": "clear"
-			},
 			"browser.safebrowsing.malware.enabled": {
 				"Status": "locked",
 				"Type": "boolean",
@@ -441,39 +432,6 @@
 				"Status": "locked",
 				"Type": "boolean",
 				"Value": true
-			},
-			"browser.safebrowsing.provider.google.gethashURL": {
-				"Status": "clear"
-			},
-			"browser.safebrowsing.provider.google.lists": {
-				"Status": "clear"
-			},
-			"browser.safebrowsing.provider.google.updateURL": {
-				"Status": "clear"
-			},
-			"browser.safebrowsing.provider.google4.dataSharingURL": {
-				"Status": "clear"
-			},
-			"browser.safebrowsing.provider.google4.gethashURL": {
-				"Status": "clear"
-			},
-			"browser.safebrowsing.provider.google4.updateURL": {
-				"Status": "clear"
-			},
-			"browser.safebrowsing.provider.mozilla.gethashURL": {
-				"Status": "clear"
-			},
-			"browser.safebrowsing.provider.mozilla.lists": {
-				"Status": "clear"
-			},
-			"browser.safebrowsing.provider.mozilla.lists.base": {
-				"Status": "clear"
-			},
-			"browser.safebrowsing.provider.mozilla.lists.content": {
-				"Status": "clear"
-			},
-			"browser.safebrowsing.provider.mozilla.updateURL": {
-				"Status": "clear"
 			},
 			"browser.sessionstore.warnOnQuit": {
 				"Status": "locked",
@@ -639,10 +597,8 @@
 				"Value": true
 			},
 			"layout.css.prefers-color-scheme.content-override": {
-				"Comment": "Dark theme by default, disabling allowed",
-				"Status": "clear",
-				"Type": "number",
-				"Value": 0
+				"Comment": "Clear ensures system color scheme (darkman)",
+				"Status": "clear"
 			},
 			"media.autoplay.default": {
 				"Comment": "Not even autoplaying silently?",
@@ -676,10 +632,6 @@
 				"Type": "boolean",
 				"Value": true
 			},
-			"network.dns.native_https_query_win10": {
-				"Comment": "This is here just as a reminder that it exists. I don't have a Windows 10 and it will likely switch to true when it exists.",
-				"Status": "clear"
-			},
 			"network.dns.preferIPv6": {
 				"Status": "locked",
 				"Type": "boolean",
@@ -689,12 +641,6 @@
 				"Status": "locked",
 				"Type": "boolean",
 				"Value": true
-			},
-			"network.http.referer.XOriginTrimmingPolicy": {
-				"Status": "clear"
-			},
-			"network.http.referer.defaultPolicy": {
-				"Status": "clear"
 			},
 			"network.trr.disable-ECS": {
 				"Status": "locked",
@@ -789,12 +735,6 @@
 				"Type": "boolean",
 				"Value": false
 			},
-			"privacy.resistFingerprinting.block_mozAddonManager": {
-				"Comment": "Preference not allowed for stability reasons. Breaks extension install when true, at least on Android.",
-				"Status": "clear",
-				"Type": "boolean",
-				"Value": false
-			},
 			"privacy.resistFingerprinting.letterboxing": {
 				"Comment": "Preference not allowed for stability reasons. :(",
 				"Status": "locked",
@@ -882,18 +822,14 @@
 				"Value": "always-show"
 			},
 			"ui.systemUsesDarkTheme": {
-				"Comment": "Another defaulting to dark theme.",
-				"Status": "clear",
-				"Type": "number",
-				"Value": 1
+				"Comment": "Another theme option that should be let to system, thus clear.",
+				"Status": "clear"
 			},
 			"ui.textScaleFactor": {
+				"Comment": "Use this instead of layout.css.devPixelsPerPx",
 				"Status": "default",
 				"Type": "number",
 				"Value": 90
-			},
-			"widget.wayland.fractional-scale.enabled": {
-				"Status": "clear"
 			}
 		},
 		"PromptForDownloadLocation": true,
