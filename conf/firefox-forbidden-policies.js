@@ -77,7 +77,7 @@ lockPref("privacy.fingerprintingProtection", true);
 //lockPref("privacy.fingerprintingProtection", false);
 pref(
 	"privacy.fingerprintingProtection.overrides",
-	"+AllTargets,-KeyboardEvents,+SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,+NavigatorUserAgent,-JSDateTimeUTC,+HttpUserAgent",
+	"+AllTargets,-KeyboardEvents,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-JSDateTimeUTC",
 );
 //clearPref("privacy.fingerprintingProtection.overrides");
 lockPref("privacy.fingerprintingProtection.pbmode", true);

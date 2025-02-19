@@ -371,10 +371,9 @@
 				"Value": true
 			},
 			"browser.contentblocking.category": {
-				"Comment": "The best option would be strict, but amongst other things that disables system font visibility and may cause accessibility issues for me. There is also other content blocking already such as PrivacyBadger and uBlock Origin.",
-				"Status": "clear",
+				"Status": "user",
 				"Type": "string",
-				"Value": "standard"
+				"Value": "strict"
 			},
 			"browser.contentblocking.report.hide_vpn_banner": {
 				"Status": "default",
@@ -575,13 +574,13 @@
 				"Value": "once"
 			},
 			"intl.accept_languages": {
-				"Status": "clear",
+				"Status": "user",
 				"Type": "string",
-				"Value": "fi-FI, fi, en-FI, en-US, en, ru-RU, ru"
+				"Value": "en-US, en"
 			},
 			"javascript.use_us_english_locale": {
 				"Comment": "Preference not allowed for stability reasons. :(",
-				"Status": "default",
+				"Status": "user",
 				"Type": "boolean",
 				"Value": true
 			},
@@ -722,7 +721,7 @@
 				"Comment": "Preference not allowed for stability reasons. :( https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc",
 				"Status": "locked",
 				"Type": "string",
-				"Value": "+AllTargets,-KeyboardEvents,+SpeechSynthesis,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,+NavigatorUserAgent,-JSDateTimeUTC,+HttpUserAgent"
+				"Value": "+AllTargets,-KeyboardEvents,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-JSDateTimeUTC"
 			},
 			"privacy.fingerprintingProtection.pbmode": {
 				"Comment": "Preference not allowed for stability reasons. :(",
@@ -839,7 +838,7 @@
 			}
 		},
 		"PromptForDownloadLocation": true,
-		"RequestedLocales": "fi-FI, fi, en-FI, en-US, en, ru-RU, ru",
+		"RequestedLocales": "en-US, en",
 		"SearchEngines": {
 			"Add": [
 				{
