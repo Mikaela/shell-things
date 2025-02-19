@@ -408,6 +408,12 @@
 				"Type": "boolean",
 				"Value": false
 			},
+			"browser.ml.chat.provider": {
+				"Comment": "While not officially supported, defaulting to Ecosia will at least remind me that AI is a severe concern regarding fighting against climate change.",
+				"Status": "user",
+				"Type": "string",
+				"Value": "https://www.ecosia.org/chat"
+			},
 			"browser.preferences.moreFromMozilla": {
 				"Status": "default",
 				"Type": "boolean",
