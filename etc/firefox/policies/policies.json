@@ -57,10 +57,7 @@
 							"chrome-extension-scheme",
 							"challenges.cloudflare.com",
 							"www.ecosia.org",
-							"firefox.com",
 							"mail.google.com",
-							"mozilla.net",
-							"mozilla.org",
 							"moz-extension-scheme",
 							"research.cloudflare.com"
 						]
@@ -196,8 +193,8 @@
 			"InvalidCertificate": true,
 			"SafeBrowsing": false
 		},
-		"DisableTelemetry": true,
-		"DisableTelemetry_comment": "Protesting Mozilla becoming an Advertising company and less trustworthy entity through 'Privacy Preserving Attribution' / Mozilla Anonym. https://github.com/mozilla/policy-templates/issues/1130",
+		"DisableTelemetry": false,
+		"DisableTelemetry_comment": "I am upset about https://github.com/mozilla/policy-templates/issues/1130 but dom.private-attribution.submission.enabled;false is a workaround and it's too much akin to voting to disable especially among technical users who tend to disable it.",
 		"DisplayBookmarksToolbar": "never",
 		"DontCheckDefaultBrowser": true,
 		"EnableTrackingProtection": {
@@ -323,7 +320,7 @@
 		"LegacySameSiteCookieBehaviorEnabled": false,
 		"NetworkPrediction": false,
 		"NewTabPage": false,
-		"OverrideFirstRunPage": "about:mozilla|https://addons.mozilla.org/firefox/addon/noscript/",
+		"OverrideFirstRunPage": "about:mozilla|about:telemetry",
 		"PDFjs": {
 			"EnablePermissions": false,
 			"Enabled": true
@@ -562,6 +559,7 @@
 				"Value": true
 			},
 			"dom.private-attribution.submission.enabled": {
+				"Comment": "Mozilla Anonym so-called Privacy Preserving Advertisement Attribution",
 				"Status": "locked",
 				"Type": "boolean",
 				"Value": false
