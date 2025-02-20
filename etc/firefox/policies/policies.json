@@ -15,10 +15,6 @@
 					"socialWidgetReplacementEnabled": true,
 					"trackingDomains": [
 						{
-							"domain": "accounts.google.com",
-							"action": "allow"
-						},
-						{
 							"domain": "tunnus.almamedia.fi",
 							"action": "cookieblock"
 						},
