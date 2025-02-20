@@ -570,7 +570,8 @@
 				"Value": "once"
 			},
 			"intl.accept_languages": {
-				"Status": "user",
+				"Comment": "Cleared for Firefox default depending on locale. I am revealing timezone and as most users don't visit fingerprinting sites, this may result in fitting the local mass better.",
+				"Status": "clear",
 				"Type": "string",
 				"Value": "en-US, en"
 			},
