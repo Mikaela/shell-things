@@ -77,6 +77,7 @@
 							"adguard-spyware-url",
 							"https://www.eff.org/files/effdntlist.txt",
 							"https://big.oisd.nl",
+							"ublock-annoyances",
 							"https://ads-for-open-source.readthedocs.io/en/latest/_static/lists/opensource-ads.txt"
 						]
 					},
