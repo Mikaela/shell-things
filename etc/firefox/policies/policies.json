@@ -567,6 +567,12 @@
 				"Type": "string",
 				"Value": "once"
 			},
+			"image.animation_mode": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "default",
+				"Type": "string",
+				"Value": "once"
+			},
 			"intl.accept_languages": {
 				"Comment": "Cleared for Firefox default depending on locale. I am revealing timezone and as most users don't visit fingerprinting sites, this may result in fitting the local mass better.",
 				"Status": "clear",

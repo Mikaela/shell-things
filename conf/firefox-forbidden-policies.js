@@ -58,8 +58,9 @@ lockPref(
 // );
 clearPref("font.system.whitelist");
 
-// Play animated images only once, accessibility.
+// Play animated images only once, accessibility. TODO: Which is the correct one? Update policies.json too!
 lockPref("image.animation.mode", "once");
+lockPref("image.animation_mode", "once");
 
 // Spoof en-US as language to scripts
 lockPref("javascript.use_us_english_locale", true);
