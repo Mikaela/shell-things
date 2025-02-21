@@ -2,7 +2,7 @@
 	"policies": {
 		"3rdparty": {
 			"Extensions": {
-				"jid1-MnnxcxisBPnSXQ-eff@jetpack": {
+				"jid1-MnnxcxisBPnSXQ@jetpack": {
 					"checkForDNTPolicy": true,
 					"disabledSites": [
 						"www.ecosia.org"
@@ -224,14 +224,14 @@
 				"installation_mode": "normal_installed"
 			},
 			"jid1-MnnxcxisBPnSXQ-eff@jetpack": {
-				"comment": "While this won't sync and requires manually enabling the other one when the policy is missing, it's less confusing for the automatic configuration not existing. Additionally I have some suspicion towards Mozilla Anonym.",
+				"blocked_install_message": "Already installed from AMO",
 				"install_url": "https://www.eff.org/files/privacy-badger-latest.xpi",
-				"installation_mode": "force_installed"
+				"installation_mode": "blocked"
 			},
 			"jid1-MnnxcxisBPnSXQ@jetpack": {
-				"blocked_install_message": "Already force_installed through EFF.",
+				"comment": "While this will not sync the changes specified in this policy, the core features of pre-training and widget replacements will.",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi",
-				"installation_mode": "blocked"
+				"installation_mode": "force_installed"
 			},
 			"offline-qr-code@rugk.github.io": {
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/offline-qr-code-generator/latest.xpi",
