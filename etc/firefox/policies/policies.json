@@ -313,7 +313,7 @@
 		},
 		"LegacySameSiteCookieBehaviorEnabled": false,
 		"NetworkPrediction": false,
-		"NewTabPage": false,
+		"NewTabPage": true,
 		"OverrideFirstRunPage": "about:mozilla|about:telemetry",
 		"PDFjs": {
 			"EnablePermissions": false,
