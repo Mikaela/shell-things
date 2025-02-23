@@ -15,7 +15,8 @@
 						"www.ecosia.org",
 						"mail.google.com",
 						"moz-extension-scheme",
-						"research.cloudflare.com"
+						"research.cloudflare.com",
+						"pp-attester-turnstile.research.cloudflare.com"
 					]
 				},
 				"toOverwrite": {
@@ -73,7 +74,8 @@
 				"noFiltering": [
 					"www.ecosia.org",
 					"cloudflare.com",
-					"mail.google.com"
+					"mail.google.com",
+					"pp-attester-turnstile.research.cloudflare.com"
 				],
 				"rulesets": [
 					"+default",
@@ -108,7 +110,8 @@
 			"pkehgijcmpdhfbdbbnkijodmdjhbjlgp": {
 				"checkForDNTPolicy": true,
 				"disabledSites": [
-					"www.ecosia.org"
+					"www.ecosia.org",
+					"pp-attester-turnstile.research.cloudflare.com"
 				],
 				"learnInIncognito": true,
 				"learnLocally": true,

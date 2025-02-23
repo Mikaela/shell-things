@@ -5,7 +5,8 @@
 				"jid1-MnnxcxisBPnSXQ@jetpack": {
 					"checkForDNTPolicy": true,
 					"disabledSites": [
-						"www.ecosia.org"
+						"www.ecosia.org",
+						"pp-attester-turnstile.research.cloudflare.com"
 					],
 					"learnInIncognito": true,
 					"learnLocally": true,
@@ -55,7 +56,8 @@
 							"www.ecosia.org",
 							"mail.google.com",
 							"moz-extension-scheme",
-							"research.cloudflare.com"
+							"research.cloudflare.com",
+							"pp-attester-turnstile.research.cloudflare.com"
 						]
 					},
 					"toOverwrite": {
@@ -199,7 +201,8 @@
 			"Cryptomining": true,
 			"EmailTracking": true,
 			"Exceptions": [
-				"https://www.ecosia.org"
+				"https://www.ecosia.org",
+				"https://pp-attester-turnstile.research.cloudflare.com"
 			],
 			"Fingerprinting": true,
 			"Locked": false,

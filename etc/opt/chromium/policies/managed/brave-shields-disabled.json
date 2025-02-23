@@ -1,6 +1,7 @@
 {
 	"BraveShieldsDisabledForUrls": [
-		"https://www.ecosia.org"
+		"https://www.ecosia.org",
+		"https://pp-attester-turnstile.research.cloudflare.com"
 	],
 	"BraveShieldsDisabledForUrls_comment": "Managing tracking protection is left for the user unless there is a heavy reason to do otherwise."
 }
