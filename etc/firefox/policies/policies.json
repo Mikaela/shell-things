@@ -72,11 +72,10 @@
 							"ublock-unbreak",
 							"urlhaus-1",
 							"user-filters",
-							"https://raw.githubusercontent.com/mikaela/gist/master/DNS/blocklist.txt",
+							"https://raw.githubusercontent.com/Mikaela/gist/master/DNS/blocklist.txt",
 							"https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
 							"adguard-spyware-url",
 							"https://www.eff.org/files/effdntlist.txt",
-							"https://big.oisd.nl",
 							"ublock-annoyances",
 							"adguard-generic",
 							"https://ads-for-open-source.readthedocs.io/en/latest/_static/lists/opensource-ads.txt"
