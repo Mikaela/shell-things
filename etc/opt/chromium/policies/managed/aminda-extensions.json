@@ -8,6 +8,12 @@
 				"hasSeenPostInstall": true
 			},
 			"cjpalhdlnbpafiamejdnhcphjbkeiagm": {
+				"advancedSettings": [
+					[
+						"uiPopupConfig",
+						"+captions"
+					]
+				],
 				"toAdd": {
 					"trustedSiteDirectives": [
 						"chrome-extension-scheme",
@@ -43,6 +49,10 @@
 					]
 				},
 				"userSettings": [
+					[
+						"advancedUserEnabled",
+						"true"
+					],
 					[
 						"cloudStorageEnabled",
 						"true"

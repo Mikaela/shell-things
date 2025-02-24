@@ -49,6 +49,12 @@
 					"hasSeenPostInstall": true
 				},
 				"uBlock0@raymondhill.net": {
+					"advancedSettings": [
+						[
+							"uiPopupConfig",
+							"+captions"
+						]
+					],
 					"toAdd": {
 						"trustedSiteDirectives": [
 							"chrome-extension-scheme",
@@ -84,6 +90,10 @@
 						]
 					},
 					"userSettings": [
+						[
+							"advancedUserEnabled",
+							"true"
+						],
 						[
 							"cloudStorageEnabled",
 							"true"
