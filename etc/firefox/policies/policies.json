@@ -326,7 +326,7 @@
 		"LegacySameSiteCookieBehaviorEnabled": false,
 		"NetworkPrediction": false,
 		"NewTabPage": true,
-		"OverrideFirstRunPage": "about:mozilla|https://addons.mozilla.org/firefox/addon/noscript/",
+		"OverrideFirstRunPage": "about:mozilla|https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide",
 		"PDFjs": {
 			"EnablePermissions": false,
 			"Enabled": true
