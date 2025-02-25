@@ -10,6 +10,10 @@
 			"cjpalhdlnbpafiamejdnhcphjbkeiagm": {
 				"advancedSettings": [
 					[
+						"trustedListPrefixes",
+						"-"
+					],
+					[
 						"uiPopupConfig",
 						"+captions"
 					]

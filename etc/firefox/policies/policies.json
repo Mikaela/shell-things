@@ -51,6 +51,10 @@
 				"uBlock0@raymondhill.net": {
 					"advancedSettings": [
 						[
+							"trustedListPrefixes",
+							"-"
+						],
+						[
 							"uiPopupConfig",
 							"+captions"
 						]
