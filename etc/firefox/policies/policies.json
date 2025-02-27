@@ -603,6 +603,18 @@
 				"Type": "string",
 				"Value": "en-US, en"
 			},
+			"intl.multilingual.downloadEnabled": {
+				"Comment": "Allow downloading additional languages?",
+				"Status": "default",
+				"Type": "boolean",
+				"Value": true
+			},
+			"intl.multilingual.enabled": {
+				"Comment": "Allow changing language from settings.",
+				"Status": "default",
+				"Type": "boolean",
+				"Value": true
+			},
 			"javascript.use_us_english_locale": {
 				"Comment": "Preference not allowed for stability reasons. :(",
 				"Status": "user",
