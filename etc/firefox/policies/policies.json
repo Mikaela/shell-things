@@ -225,13 +225,14 @@
 			"Value": true
 		},
 		"EncryptedMediaExtensions": {
-			"Enabled": true,
+			"Enabled": false,
 			"Locked": false
 		},
 		"ExtensionSettings": {
 			"@contain-facebook": {
+				"blocked_install_message": "Redundant with strict tracking protection and Privacy Badger",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/facebook-container/latest.xpi",
-				"installation_mode": "force_installed"
+				"installation_mode": "blocked"
 			},
 			"@testpilot-containers": {
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/multi-account-containers/latest.xpi",
@@ -647,6 +648,12 @@
 				"Status": "default",
 				"Type": "number",
 				"Value": 5
+			},
+			"media.eme.enabled": {
+				"Comment": "Resets DRM to disabled on start.",
+				"Status": "user",
+				"Type": "boolean",
+				"Value": false
 			},
 			"network.IDN_show_punycode": {
 				"Comment": "Protection against identically looking unicode domain names",
