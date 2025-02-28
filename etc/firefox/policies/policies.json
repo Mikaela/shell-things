@@ -51,12 +51,16 @@
 				"uBlock0@raymondhill.net": {
 					"advancedSettings": [
 						[
+							"filterAuthorMode",
+							"true"
+						],
+						[
 							"trustedListPrefixes",
 							"-"
 						],
 						[
 							"uiPopupConfig",
-							"+captions"
+							"+captions +logger"
 						]
 					],
 					"toAdd": {
