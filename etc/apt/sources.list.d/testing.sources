@@ -1,0 +1,70 @@
+Types: deb deb-src
+URIs: https://deb.debian.org/debian/
+Suites: testing
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb
+URIs: https://deb.debian.org/debian-debug/
+Suites: testing-debug
+Components: main  contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb deb-src
+URIs: tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian/
+Suites: testing
+Components: main contrib non-free non-free-firmware
+Enabled: no
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb
+URIs: tor+http://3lz3irtzg5i4z2sz3qca3oz3sdk3p5a3xlmz3zqwornapeofvoudajid.onion/debian-debug/
+Suites: testing-debug
+Components: main  contrib non-free non-free-firmware
+Enabled: no
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb deb-src
+URIs: https://deb.debian.org/debian-security/
+Suites: testing-security
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb
+URIs: https://deb.debian.org/debian-debug/
+Suites: testing-proposed-updates-debug
+Components: main  contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb deb-src
+URIs: http://security.debian.org/
+Suites: testing-security
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb deb-src
+URIs: tor+http://5ajw6aqf3ep7sijnscdzw77t7xq4xjpsy335yb2wiwgouo7yfxtjlmid.onion/debian-security/
+Suites: testing-security
+Components: main contrib non-free non-free-firmware
+Enabled: no
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb
+URIs: tor+http://3lz3irtzg5i4z2sz3qca3oz3sdk3p5a3xlmz3zqwornapeofvoudajid.onion/debian-debug/
+Suites: testing-proposed-updates-debug
+Components: main  contrib non-free non-free-firmware
+Enabled: no
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb deb-src
+URIs: https://deb.debian.org/debian/
+Suites: testing-updates
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb deb-src
+URIs: tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian/
+Suites: testing-updates
+Components: main contrib non-free non-free-firmware
+Enabled: no
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg

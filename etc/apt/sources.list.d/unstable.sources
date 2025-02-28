@@ -1,0 +1,25 @@
+Types: deb deb-src
+URIs: https://deb.debian.org/debian/
+Suites: unstable
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb
+URIs: https://deb.debian.org/debian-debug/
+Suites: unstable-debug
+Components: main  contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb deb-src
+URIs: tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian/
+Suites: unstable
+Components: main contrib non-free non-free-firmware
+Enabled: no
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb
+URIs: tor+http://3lz3irtzg5i4z2sz3qca3oz3sdk3p5a3xlmz3zqwornapeofvoudajid.onion/debian-debug/
+Suites: unstable-debug
+Components: main  contrib non-free non-free-firmware
+Enabled: no
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
