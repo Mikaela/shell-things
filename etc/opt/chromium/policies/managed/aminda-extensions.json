@@ -51,6 +51,7 @@
 						"user-filters",
 						"https://raw.githubusercontent.com/Mikaela/gist/master/DNS/blocklist.txt",
 						"https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
+						"https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener-AffiliateTagAllowlist.txt",
 						"adguard-spyware-url",
 						"https://www.eff.org/files/effdntlist.txt",
 						"ublock-annoyances",
