@@ -97,6 +97,7 @@
 							"https://www.eff.org/files/effdntlist.txt",
 							"ublock-annoyances",
 							"adguard-generic",
+							"block-lan",
 							"https://ads-for-open-source.readthedocs.io/en/latest/_static/lists/opensource-ads.txt"
 						]
 					},
