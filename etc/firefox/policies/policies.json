@@ -194,15 +194,15 @@
 			]
 		},
 		"DNSOverHTTPS": {
-			"Comment": "Seems to break badly on s-guest-free while Unbound/resoled work.",
-			"Enabled": false,
+			"Comment": "Cloudflare is nowadays the authority on most used domains at radar.cloudflare.com and this also affects everything using most visited domains and I am hoping to boost Finnish domains so PrivacyBadger training will recognise us existing and learn Finnish trackers by default for everyone. Maybe if ther are enough Finnish Cloudflare users, this will work.",
+			"Enabled": true,
 			"ExcludedDomains": [
 				"http.badssl.com",
 				"norwegianwifi.com"
 			],
 			"Fallback": true,
 			"Locked": true,
-			"ProviderURL": "https://dns11.quad9.net/dns-query"
+			"ProviderURL": "https://security.cloudflare-dns.com/dns-query"
 		},
 		"DisableEncryptedClientHello": false,
 		"DisableFirefoxAccounts": false,
