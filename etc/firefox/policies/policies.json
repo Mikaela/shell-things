@@ -152,47 +152,14 @@
 		"Containers": {
 			"Default": [
 				{
-					"name": "ff",
-					"color": "white",
-					"icon": "chill"
-				},
-				{
-					"name": "Fedi",
-					"color": "green",
-					"icon": "tree"
-				},
-				{
-					"name": "Git",
-					"color": "pink",
-					"icon": "briefcase"
-				},
-				{
-					"name": "Google",
-					"color": "orange",
-					"icon": "chill"
-				},
-				{
-					"name": "HSL",
-					"color": "blue",
-					"icon": "vacation"
-				},
-				{
-					"name": "IM",
-					"color": "purple",
-					"icon": "chill"
-				},
-				{
-					"name": "LinkedIn",
-					"color": "cyan",
-					"icon": "briefcase"
-				},
-				{
-					"name": "WhatsApp",
-					"color": "green",
-					"icon": "pet"
+					"name": "0",
+					"color": "toolbar",
+					"icon": "circle"
 				}
 			]
 		},
+		"Containers_color_comment": "blue, turquoise, green, yellow, orange, red, pink, purple, toolbar",
+		"Containers_icons_comment": "fingerprint, briefcase, dollar, cart, vacation, gift, food, fruit, pet, tree, chill, circle, fence",
 		"DNSOverHTTPS": {
 			"Comment": "Cloudflare is nowadays the authority on most used domains at radar.cloudflare.com and this also affects everything using most visited domains and I am hoping to boost Finnish domains so PrivacyBadger training will recognise us existing and learn Finnish trackers by default for everyone. Maybe if ther are enough Finnish Cloudflare users, this will work.",
 			"Enabled": true,
