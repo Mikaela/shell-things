@@ -161,8 +161,9 @@
 		"Containers_color_comment": "blue, turquoise, green, yellow, orange, red, pink, purple, toolbar",
 		"Containers_icons_comment": "fingerprint, briefcase, dollar, cart, vacation, gift, food, fruit, pet, tree, chill, circle, fence",
 		"DNSOverHTTPS": {
-			"Comment": "Cloudflare is nowadays the authority on most used domains at radar.cloudflare.com and this also affects everything using most visited domains and I am hoping to boost Finnish domains so PrivacyBadger training will recognise us existing and learn Finnish trackers by default for everyone. Maybe if ther are enough Finnish Cloudflare users, this will work.",
-			"Enabled": true,
+			"Comment": "Cloudflare is nowadays the authority on most used domains at radar.cloudflare.com and this also affects everything using most visited domains and I am hoping to boost Finnish domains so PrivacyBadger training will recognise us existing and learn Finnish trackers by default for everyone. Maybe if there are enough Finnish Cloudflare users, this will work.",
+			"Comment2": "On second thought, let's not use DoH. It bypasses encrypted system DNS and DNSSEC validation which the browser won't perform and the other end of DoH cannot be fully trusted. See for example https://notes.valdikss.org.ru/jabber.ru-mitm/",
+			"Enabled": false,
 			"ExcludedDomains": [
 				"http.badssl.com",
 				"norwegianwifi.com"
