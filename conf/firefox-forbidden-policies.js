@@ -101,6 +101,11 @@ lockPref("reader.parse-on-load.force-enabled", true);
 // Ensure OCSP stapling is enabled, especially if the server has it
 lockPref("security.ssl.enable_ocsp_must_staple", true);
 
+// Distributed Aggregation Protocol for Privacy Preserving Measurement
+// https://github.com/ietf-wg-ppm/draft-ietf-ppm-dap
+// This should be better for privacy with telemetry enabled.
+lockPref("toolkit.telemetry.dap_enabled", true);
+
 // New sidebar
 lockPref("sidebar.revamp", true);
 lockPref("sidebar.verticalTabs", true);

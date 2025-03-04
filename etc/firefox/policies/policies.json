@@ -182,8 +182,8 @@
 			"InvalidCertificate": true,
 			"SafeBrowsing": false
 		},
-		"DisableTelemetry": true,
-		"DisableTelemetry_comment": "Mozilla Anonym ad attribution is disabled by this policy and starting from 25-04-2025 the promise to never sell user data expires.",
+		"DisableTelemetry": false,
+		"DisableTelemetry_comment": "Mozilla Anonym ad attribution is controlled by this policy (and dom.private-attribution.submission.enabled) and starting from 25-04-2025 the promise to never sell user data expires. And yet I am not convinced disabling telemetry is the right way to protest. https://blog.glyph.im/2023/03/telemetry-is-not-your-enemy.html",
 		"DisplayBookmarksToolbar": "never",
 		"DontCheckDefaultBrowser": true,
 		"EnableTrackingProtection": {
@@ -858,6 +858,12 @@
 				"Status": "locked",
 				"Type": "boolean",
 				"Value": "always-show"
+			},
+			"toolkit.telemetry.dap_enabled": {
+				"Comment": "Preference not allowed for stability reasons. Distributed Aggregation Protocol for making telemetry more private. https://github.com/ietf-wg-ppm/draft-ietf-ppm-dap",
+				"Status": "default",
+				"Type": "boolean",
+				"Value": true
 			},
 			"ui.systemUsesDarkTheme": {
 				"Comment": "Another theme option that should be let to system, thus clear.",
