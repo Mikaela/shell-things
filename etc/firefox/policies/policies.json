@@ -615,8 +615,7 @@
 			"layout.css.devPixelsPerPx": {
 				"Comment": "ui.textScaleFactor 90 does practically the same with less side effects.",
 				"Status": "clear",
-				"Type": "string",
-				"Value": "1.5"
+				"Type": "string"
 			},
 			"layout.css.font-variant-emoji.enabled": {
 				"Comment": "Experimental, disabled by default.",
@@ -626,6 +625,12 @@
 			"layout.css.prefers-color-scheme.content-override": {
 				"Comment": "Clear ensures system color scheme (darkman)",
 				"Status": "clear"
+			},
+			"layout.css.visited_links_enabled": {
+				"Comment": "Don't display visited links with different colour. https://josephpetitti.com/blog/how-css-can-leak-your-browser-history",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
 			},
 			"media.autoplay.default": {
 				"Comment": "Not even autoplaying silently?",
