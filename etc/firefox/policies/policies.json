@@ -450,6 +450,12 @@
 				"Type": "boolean",
 				"Value": false
 			},
+			"browser.tabs.groups.enabled": {
+				"Comment": "TODO: Is this allowed when it lands?",
+				"Status": "default",
+				"Type": "boolean",
+				"Value": true
+			},
 			"browser.tabs.inTitlebar": {
 				"Status": "default",
 				"Type": "number",

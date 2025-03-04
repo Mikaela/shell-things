@@ -106,5 +106,8 @@ lockPref("sidebar.revamp", true);
 lockPref("sidebar.verticalTabs", true);
 lockPref("sidebar.visibility", "always-show");
 
+// Tab groups. TODO: Are these allowed? I am on ESR, so it does nothing yet.
+lockPref("browser.tabs.groups.enabled", true);
+
 // No making configuration on the last line of the file!
 //
