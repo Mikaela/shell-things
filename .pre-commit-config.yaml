@@ -89,6 +89,11 @@ repos:
     hooks:
       - id: reuse
 
+  - repo: https://github.com/get-woke/woke
+    rev: "v0.19.0"
+    hooks:
+      - id: woke-from-source
+
   - repo: local
     hooks:
       - id: prettier
