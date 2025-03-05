@@ -279,9 +279,10 @@
 				"restricted_domains": []
 			},
 			"{2f182d41-fd03-4a6d-938d-081419586c37}": {
+				"blocked_install_message": "Made by third party, likely unnecessary with integrated tracking protection, Privacy Badger, uBlock Origin and IBA opt-out",
 				"default_area": "menupanel",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/google-analytics-opt-out/latest.xpi",
-				"installation_mode": "force_installed",
+				"installation_mode": "blocked",
 				"private_browsing": true,
 				"restricted_domains": []
 			},
