@@ -1,0 +1,7 @@
+{
+	"DefaultSearchProviderEnabled": true,
+	"DefaultSearchProviderImageURL": "https://mullvad.net/favicon.ico",
+	"DefaultSearchProviderKeyword": "ml",
+	"DefaultSearchProviderName": "Mullvad Leta",
+	"DefaultSearchProviderSearchURL": "https://leta.mullvad.net/?q={searchTerms}&engine=brave"
+}
