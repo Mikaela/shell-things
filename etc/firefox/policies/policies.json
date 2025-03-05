@@ -476,15 +476,30 @@
 				"Type": "boolean",
 				"Value": false
 			},
-			"browser.translation.neverForLanguages": {
-				"Status": "default",
-				"Type": "string",
-				"Value": "en, fi"
+			"browser.translations.automaticallyPopup": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
+			},
+			"browser.translations.enable": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
 			},
 			"browser.translations.neverTranslateLanguages": {
-				"Status": "default",
+				"Status": "locked",
 				"Type": "string",
-				"Value": "en, fi"
+				"Value": ""
+			},
+			"browser.translations.panelShown": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"browser.translations.select.enable": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
 			},
 			"browser.urlbar.trimHttps": {
 				"Status": "locked",
