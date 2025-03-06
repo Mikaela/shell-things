@@ -450,6 +450,12 @@
 				"Type": "boolean",
 				"Value": false
 			},
+			"browser.display.use_document_fonts": {
+				"Comment": "Are webpages allowed to set their own fonts by default? 0 forbids them. See also browser.display.use_document_fonts.icon_font_allowlist for what webpages are allowed to set.",
+				"Status": "user",
+				"Type": "number",
+				"Value": 0
+			},
 			"browser.ml.chat.enabled": {
 				"Comment": "Disable AI by default.",
 				"Status": "default",
