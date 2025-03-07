@@ -96,6 +96,7 @@
 							"adguard-spyware-url",
 							"https://www.eff.org/files/effdntlist.txt",
 							"block-lan",
+							"ublock-annoyances",
 							"https://ads-for-open-source.readthedocs.io/en/latest/_static/lists/opensource-ads.txt"
 						]
 					},
@@ -118,7 +119,7 @@
 						],
 						[
 							"parseAllABPHideFilters",
-							"false"
+							"true"
 						],
 						[
 							"suspendUntilListsAreLoaded",
