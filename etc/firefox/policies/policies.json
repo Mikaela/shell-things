@@ -551,8 +551,9 @@
 				"Type": "boolean",
 				"Value": true
 			},
-			"browser.tabs.inTitlebar": {
-				"Status": "clear",
+			"browser.tabs.inTitlebar_commented": {
+				"Comment": "without _commented 0 enables system title bar and 2 is default.",
+				"Status": "default",
 				"Type": "number",
 				"Value": 0
 			},
