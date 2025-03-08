@@ -214,6 +214,14 @@
 				"installation_mode": "normal_installed",
 				"private_browsing": false
 			},
+			"CanvasBlocker@kkapsner.de": {
+				"comment": "Requested by LibreAwoo for those who don't have RFP/FPP, neither of which I can specify through this policy. Additionally its own description says compatible with the Firefox integrated one.",
+				"default_area": "menupanel",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/canvasblocker/latest.xpi",
+				"installation_mode": "force_installed",
+				"private_browsing": true,
+				"restricted_domains": []
+			},
 			"addon@darkreader.org": {
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/darkreader/latest.xpi",
