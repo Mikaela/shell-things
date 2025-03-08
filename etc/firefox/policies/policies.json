@@ -483,6 +483,54 @@
 				"Type": "boolean",
 				"Value": false
 			},
+			"browser.safebrowsing.blockedURIs.enabled": {
+				"Comment": "Disable Google Safe Browsing via LibreAwoo. Handled by system DNS or uBlock Origin.",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
+			},
+			"browser.safebrowsing.downloads.enabled": {
+				"Comment": "Disable Google Safe Browsing via LibreAwoo. Handled by system DNS or uBlock Origin.",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
+			},
+			"browser.safebrowsing.malware.enabled": {
+				"Comment": "Disable Google Safe Browsing via LibreAwoo. Handled by system DNS or uBlock Origin.",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
+			},
+			"browser.safebrowsing.phishing.enabled": {
+				"Comment": "Disable Google Safe Browsing via LibreAwoo. Handled by system DNS or uBlock Origin.",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
+			},
+			"browser.safebrowsing.provider.google.gethashURL": {
+				"Comment": "Disable Google Safe Browsing via LibreAwoo. Handled by system DNS or uBlock Origin.",
+				"Status": "locked",
+				"Type": "string",
+				"Value": ""
+			},
+			"browser.safebrowsing.provider.google.updateURL": {
+				"Comment": "Disable Google Safe Browsing via LibreAwoo. Handled by system DNS or uBlock Origin.",
+				"Status": "locked",
+				"Type": "string",
+				"Value": ""
+			},
+			"browser.safebrowsing.provider.google4.gethashURL": {
+				"Comment": "Disable Google Safe Browsing via LibreAwoo. Handled by system DNS or uBlock Origin.",
+				"Status": "locked",
+				"Type": "string",
+				"Value": ""
+			},
+			"browser.safebrowsing.provider.google4.updateURL": {
+				"Comment": "Disable Google Safe Browsing via LibreAwoo. Handled by system DNS or uBlock Origin.",
+				"Status": "locked",
+				"Type": "string",
+				"Value": ""
+			},
 			"browser.sessionstore.warnOnQuit": {
 				"Status": "locked",
 				"Type": "boolean",
