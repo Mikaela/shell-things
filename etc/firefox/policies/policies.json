@@ -458,8 +458,8 @@
 				"Value": false
 			},
 			"browser.display.use_document_fonts": {
-				"Comment": "Are webpages allowed to set their own fonts by default? 0 forbids them. See also browser.display.use_document_fonts.icon_font_allowlist for what webpages are allowed to set.",
-				"Status": "user",
+				"Comment": "Are webpages allowed to set their own fonts by default? 0 forbids them. See also browser.display.use_document_fonts.icon_font_allowlist for what webpages are allowed to set. If changing this, see also fingerprinting overrides",
+				"Status": "locked",
 				"Type": "number",
 				"Value": 0
 			},
@@ -831,10 +831,10 @@
 				"Value": true
 			},
 			"privacy.fingerprintingProtection.overrides": {
-				"Comment": "Preference not allowed for stability reasons. :( https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc",
+				"Comment": "Preference not allowed for stability reasons. :( https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc - If you adjust this, see also use_document_fonts to not increase fingerprinting surface excessively",
 				"Status": "locked",
 				"Type": "string",
-				"Value": "+AllTargets,-KeyboardEvents,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-JSDateTimeUTC"
+				"Value": "+AllTargets,-KeyboardEvents,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-JSDateTimeUTC,-FontVisibilityBaseSystem"
 			},
 			"privacy.fingerprintingProtection.pbmode": {
 				"Comment": "Preference not allowed for stability reasons. :(",

@@ -76,10 +76,11 @@ lockPref("privacy.fingerprintingProtection", true);
 // Somehow I cannot clearPref this, so...
 //clearPref("privacy.fingerprintingProtection");
 //lockPref("privacy.fingerprintingProtection", false);
-pref(
+lockPref(
 	"privacy.fingerprintingProtection.overrides",
-	"+AllTargets,-KeyboardEvents,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-JSDateTimeUTC",
+	"+AllTargets,-KeyboardEvents,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-JSDateTimeUTC,-FontVisibilityBaseSystem",
 );
+lockPref("browser.display.use_document_fonts", 0);
 //clearPref("privacy.fingerprintingProtection.overrides");
 lockPref("privacy.fingerprintingProtection.pbmode", true);
 //clearPref("privacy.fingerprintingProtection.pbmode");
