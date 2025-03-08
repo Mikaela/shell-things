@@ -22,27 +22,27 @@ lockPref("cookiebanners.service.mode.privateBrowsing", 2);
 // but obviously this is forbidden in policies.json!
 lockPref(
 	"font.name-list.monospace.x-cyrillic",
-	"ui-monospace, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
+	"Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
 );
 lockPref(
 	"font.name-list.monospace.x-western",
-	"ui-monospace, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
+	"Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
 );
 lockPref(
 	"font.name-list.sans-serif.x-cyrillic",
-	"ui-sans-serif, system-ui, Inclusive Sans, Roboto, Liberation Sans, Noto Sans, sans-serif",
+	"Inclusive Sans, Roboto, Liberation Sans, Noto Sans, sans-serif",
 );
 lockPref(
 	"font.name-list.sans-serif.x-western",
-	"ui-sans-serif, system-ui, Inclusive Sans, Liberation Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
+	"Inclusive Sans, Liberation Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
 );
 lockPref(
 	"font.name-list.serif.x-cyrillic",
-	"ui-serif, Liberation Serif, Roboto Serif, Noto Serif, serif",
+	"Liberation Serif, Roboto Serif, Noto Serif, serif",
 );
 lockPref(
 	"font.name-list.serif.x-western",
-	"ui-serif, Liberation Serif, Roboto Serif, Noto Serif, serif",
+	"Liberation Serif, Roboto Serif, Noto Serif, serif",
 );
 // clearPref("font.name-list.monospace.x-cyrillic");
 // clearPref("font.name-list.monospace.x-western");
