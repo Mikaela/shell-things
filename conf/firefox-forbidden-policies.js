@@ -50,51 +50,25 @@ lockPref(
 // clearPref("font.name-list.sans-serif.x-western");
 // clearPref("font.name-list.serif.x-cyrillic");
 // clearPref("font.name-list.serif.x-western");
-//
-// Allow these fonts regardless of the fingerprinting resistance
-// lockPref(
-// 	"font.system.whitelist",
-// 	"Arimo, Comic Neue, Comic Neue Angular, Comic Neue Angular Light, Comic Neue Angular Light Italic, Comic Neue Light, Cousine, Inclusive Sans, Liberation Mono, Liberation Sans, Liberation Serif, Noto Color Emoji, Noto Emoji, Noto Math, Noto Mono, Noto Sans, Noto Sans CJK JP, Noto Music, Roboto, Roboto Flex, Roboto Mono, Roboto Serif, Tinos, Twemoji Mozilla",
-// );
-clearPref("font.system.whitelist");
 
-// Play animated images only once, accessibility. TODO: Which is the correct one? Update policies.json too!
-lockPref("image.animation.mode", "once");
+// Play animated images only once, accessibility.
 lockPref("image.animation_mode", "once");
 
 // Spoof en-US as language to scripts
 lockPref("javascript.use_us_english_locale", true);
 
-// DNT although PrivacyBadger from policy handles this
-lockPref("privacy.donottrackheader.enabled", true);
-lockPref("privacy.donottrackheader.value", 1);
-
-// More tunable privacy.resistfingerprinting. I have lost the privacy game
-// many times before this point, so this is nothing.  For the options,
-// refer to https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc
+// More tunable privacy.resistfingerprinting.
+// Refer to https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc
 lockPref("privacy.fingerprintingProtection", true);
-// Somehow I cannot clearPref this, so...
-//clearPref("privacy.fingerprintingProtection");
-//lockPref("privacy.fingerprintingProtection", false);
+lockPref("privacy.fingerprintingProtection.pbmode", true);
 lockPref(
 	"privacy.fingerprintingProtection.overrides",
 	"+AllTargets,-KeyboardEvents,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-JSDateTimeUTC,-FontVisibilityBaseSystem,-FontVisibilityRestrictGenerics",
 );
 lockPref("browser.display.use_document_fonts", 0);
-//clearPref("privacy.fingerprintingProtection.overrides");
-lockPref("privacy.fingerprintingProtection.pbmode", true);
-//clearPref("privacy.fingerprintingProtection.pbmode");
-// (Incompatible with the above)
-lockPref("privacy.resistFingerprinting", false);
-//clearPref("privacy.resistFingerprinting");
-// Breaks installing extensions when true at least on Android
-//lockPref("privacy.resistFingerprinting.block_mozAddonManager", false);
-clearPref("privacy.resistFingerprinting.block_mozAddonManage");
+
 // Letterboxing from Tor Browser, I like it in general.
 lockPref("privacy.resistFingerprinting.letterboxing", true);
-// Still Incompatible with the above
-//lockPref("privacy.resistFingerprinting.pbmode", false);
-clearPref("privacy.resistFingerprinting.pbmode");
 
 // Enables reading mode for all pages (at least in theory)
 lockPref("reader.parse-on-load.force-enabled", true);

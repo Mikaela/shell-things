@@ -162,6 +162,7 @@
 		"DNSOverHTTPS": {
 			"Comment": "Cloudflare is nowadays the authority on most used domains at radar.cloudflare.com and this also affects everything using most visited domains and I am hoping to boost Finnish domains so PrivacyBadger training will recognise us existing and learn Finnish trackers by default for everyone. Maybe if there are enough Finnish Cloudflare users, this will work.",
 			"Comment2": "On second thought, let's not use DoH. It bypasses encrypted system DNS and DNSSEC validation which the browser won't perform and the other end of DoH cannot be fully trusted. See for example https://notes.valdikss.org.ru/jabber.ru-mitm/",
+			"Comment3": "Yet another concern is lack of private ECS meaning I won't benefit from edge nodes within my ISP resulting in longer paths for data to take and thus higher energy consumption (aminda.eu/n/dns).",
 			"Enabled": false,
 			"ExcludedDomains": [
 				"http.badssl.com",
@@ -186,14 +187,11 @@
 		"DisplayBookmarksToolbar": "never",
 		"DontCheckDefaultBrowser": true,
 		"EnableTrackingProtection": {
-			"Comment": "Managing tracking protection is left for the user unless there is a heavy reason to do otherwise.",
-			"Cryptomining": true,
-			"EmailTracking": true,
+			"Comment": "Strict mode enforced later in the policy.",
 			"Exceptions": [
 				"https://www.ecosia.org",
 				"https://pp-attester-turnstile.research.cloudflare.com"
 			],
-			"Fingerprinting": true,
 			"Locked": false,
 			"Value": true
 		},
@@ -470,8 +468,8 @@
 				"Value": false
 			},
 			"browser.ml.chat.provider": {
-				"Comment": "While not officially supported, defaulting to Ecosia will at least remind me that AI is a severe concern regarding fighting against climate change.",
-				"Status": "user",
+				"Comment": "Ask every time which AI to use, if enabled.",
+				"Status": "clear",
 				"Type": "string",
 				"Value": "https://www.ecosia.org/chat"
 			},
@@ -484,21 +482,6 @@
 				"Status": "locked",
 				"Type": "boolean",
 				"Value": false
-			},
-			"browser.safebrowsing.blockedURIs.enabled": {
-				"Status": "locked",
-				"Type": "boolean",
-				"Value": true
-			},
-			"browser.safebrowsing.malware.enabled": {
-				"Status": "locked",
-				"Type": "boolean",
-				"Value": true
-			},
-			"browser.safebrowsing.phishing.enabled": {
-				"Status": "locked",
-				"Type": "boolean",
-				"Value": true
 			},
 			"browser.sessionstore.warnOnQuit": {
 				"Status": "locked",
@@ -516,13 +499,12 @@
 				"Value": false
 			},
 			"browser.tabs.groups.enabled": {
-				"Comment": "TODO: Is this allowed when it lands?",
 				"Status": "default",
 				"Type": "boolean",
 				"Value": true
 			},
 			"browser.tabs.inTitlebar": {
-				"Status": "default",
+				"Status": "clear",
 				"Type": "number",
 				"Value": 0
 			},
@@ -616,7 +598,7 @@
 				"Value": true
 			},
 			"extensions.htmlaboutaddons.recommendations.enabled": {
-				"Comment": "This means the same, but without personalization.",
+				"Comment": "No personalized add-on recommendations.",
 				"Status": "locked",
 				"Type": "boolean",
 				"Value": false
@@ -725,7 +707,7 @@
 				"Value": false
 			},
 			"network.IDN_show_punycode": {
-				"Comment": "Protection against identically looking unicode domain names",
+				"Comment": "Use punycode when displaying international domain names.",
 				"Status": "locked",
 				"Type": "boolean",
 				"Value": true
@@ -763,7 +745,7 @@
 			"network.trr.disable-ECS": {
 				"Status": "locked",
 				"Type": "boolean",
-				"Value": false
+				"Value": true
 			},
 			"network.trr.display_fallback_warning": {
 				"Status": "locked",
@@ -812,18 +794,6 @@
 				"Type": "string",
 				"Value": "#ffb700"
 			},
-			"privacy.donottrackheader.enabled": {
-				"Comment": "Preference not allowed for stability reasons. :(",
-				"Status": "locked",
-				"Type": "boolean",
-				"Value": true
-			},
-			"privacy.donottrackheader.value": {
-				"Comment": "Preference not allowed for stability reasons. :(",
-				"Status": "locked",
-				"Type": "number",
-				"Value": 1
-			},
 			"privacy.fingerprintingProtection": {
 				"Comment": "Preference not allowed for stability reasons. :(",
 				"Status": "locked",
@@ -847,35 +817,17 @@
 				"Type": "boolean",
 				"Value": true
 			},
-			"privacy.resistFingerprinting": {
-				"Comment": "Preference not allowed for stability reasons. :(",
-				"Status": "locked",
-				"Type": "boolean",
-				"Value": false
-			},
 			"privacy.resistFingerprinting.letterboxing": {
 				"Comment": "Preference not allowed for stability reasons. :(",
 				"Status": "locked",
 				"Type": "boolean",
 				"Value": true
 			},
-			"privacy.resistFingerprinting.pbmode": {
-				"Comment": "Preference not allowed for stability reasons. :(",
-				"Status": "clear",
-				"Type": "boolean",
-				"Value": false
-			},
 			"privacy.userContext.enabled": {
 				"Comment": "Tab containers",
 				"Status": "locked",
 				"Type": "boolean",
 				"Value": true
-			},
-			"privacy.userContext.extension": {
-				"Comment": "Displays in settings which extension requires container tabs. None. it's this policy. Preference not allowed for stability reasons.",
-				"Status": "locked",
-				"Type": "string",
-				"Value": ""
 			},
 			"privacy.userContext.ui.enabled": {
 				"Comment": "Tab containers UI without extensions",
