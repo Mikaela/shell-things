@@ -38,11 +38,11 @@ lockPref(
 );
 lockPref(
 	"font.name-list.serif.x-cyrillic",
-	"Liberation Serif, Roboto Serif, Noto Serif, serif",
+	"Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
 );
 lockPref(
 	"font.name-list.serif.x-western",
-	"Liberation Serif, Roboto Serif, Noto Serif, serif",
+	"Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
 );
 // clearPref("font.name-list.monospace.x-cyrillic");
 // clearPref("font.name-list.monospace.x-western");
