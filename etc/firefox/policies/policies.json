@@ -206,6 +206,12 @@
 				"installation_mode": "blocked",
 				"private_browsing": false
 			},
+			"ATBC@EasonWong": {
+				"default_area": "menupanel",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/adaptive-tab-bar-colour/latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": false
+			},
 			"CanvasBlocker@kkapsner.de": {
 				"comment": "Requested by LibreAwoo for those who don't have RFP/FPP, neither of which I can specify through this policy. Additionally its own description says compatible with the Firefox integrated one.",
 				"default_area": "menupanel",
@@ -219,6 +225,13 @@
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/darkreader/latest.xpi",
 				"installation_mode": "normal_installed",
 				"private_browsing": true
+			},
+			"ipvfoo@pmarks.net": {
+				"default_area": "menupanel",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/ipvfoo/latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": false,
+				"restricted_domains": []
 			},
 			"jid1-MnnxcxisBPnSXQ-eff@jetpack": {
 				"blocked_install_message": "Already installed from AMO",
@@ -271,6 +284,20 @@
 				"private_browsing": true,
 				"restricted_domains": []
 			},
+			"wayback_machine@mozilla.org": {
+				"default_area": "navbar",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/wayback-machine_new/latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": false,
+				"restricted_domains": []
+			},
+			"{157eb9f0-9814-4fcc-b0b7-586b3093c641}": {
+				"default_area": "menupanel",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/updateswh/latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": false,
+				"restricted_domains": []
+			},
 			"{2f182d41-fd03-4a6d-938d-081419586c37}": {
 				"blocked_install_message": "Made by third party, likely unnecessary with integrated tracking protection, Privacy Badger, uBlock Origin and IBA opt-out",
 				"default_area": "menupanel",
@@ -300,6 +327,13 @@
 				"private_browsing": true,
 				"restricted_domains": []
 			},
+			"{6a911b41-b1ee-4d0f-b23b-890229bff0ec}": {
+				"default_area": "navbar",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/http-indicator/latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": false,
+				"restricted_domains": []
+			},
 			"{73a6fe31-595d-460b-a920-fcc0f8843232}": {
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/noscript/latest.xpi",
@@ -318,6 +352,13 @@
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/torproject-snowflake/latest.xpi",
 				"installation_mode": "normal_installed",
 				"private_browsing": true
+			},
+			"{b86e4813-687a-43e6-ab65-0bde4ab75758}": {
+				"default_area": "navbar",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/localcdn-fork-of-decentraleyes/latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": true,
+				"restricted_domains": []
 			},
 			"{d04b0b40-3dab-4f0b-97a6-04ec3eddbfb0}": {
 				"default_area": "menupanel",
