@@ -221,6 +221,12 @@
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
+		"ecanpcehffngcegjmadlcijfolapggal": {
+			"installation_mode": "normal_installed",
+			"override_update_url": true,
+			"toolbar_pin": "force_pinned",
+			"update_url": "https://clients2.google.com/service/update2/crx"
+		},
 		"eimadpbcbfnmbkopoojfekhnkhdbieeh": {
 			"installation_mode": "normal_installed",
 			"override_update_url": true,
@@ -231,6 +237,12 @@
 			"installation_mode": "force_installed",
 			"override_update_url": true,
 			"toolbar_pin": "default_unpinned",
+			"update_url": "https://clients2.google.com/service/update2/crx"
+		},
+		"fpnmgdkabkmnadcjpehmlllkndpkmiak": {
+			"installation_mode": "normal_installed",
+			"override_update_url": true,
+			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"gbiekjoijknlhijdjbaadobpkdhmoebb": {
@@ -249,6 +261,12 @@
 		"gphhapmejobijbbhgpjhcjognlahblep": {
 			"blocked_install_message": "Tämä on KDE-talous, jossa kukaan ei tietääkseni käytä GNOMEa. Tämä lisäosa KDEn vastaavasta poiketen on riippuvainen GNOMEsta.",
 			"installation_mode": "blocked"
+		},
+		"hgcomhbcacfkpffiphlmnlhpppcjgmbl": {
+			"installation_mode": "normal_installed",
+			"override_update_url": true,
+			"toolbar_pin": "force_pinned",
+			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"hojggiaghnldpcknpbciehjcaoafceil": {
 			"installation_mode": "normal_installed",
@@ -284,6 +302,12 @@
 		"odfafepnkmbhccpbejgmiehpchacaeak": {
 			"blocked_install_message": "uBlock Origin pitäisi olla jo asennettu Chrome-kaupasta.",
 			"installation_mode": "blocked"
+		},
+		"palihjnakafgffnompkdfgbgdbcagbko": {
+			"installation_mode": "normal_installed",
+			"override_update_url": true,
+			"toolbar_pin": "default_unpinned",
+			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"pkehgijcmpdhfbdbbnkijodmdjhbjlgp": {
 			"installation_mode": "force_installed",
