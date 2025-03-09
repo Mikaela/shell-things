@@ -5,14 +5,11 @@
 		"mode": "system"
 	},
 	"automationBehaviour": "OnOff",
-	"changeBrowserTheme": true,
+	"changeBrowserTheme": false,
 	"customThemes": [],
 	"detectDarkTheme": true,
 	"disabledFor": [],
-	"displayedNews": [
-		"mobile",
-		"thanks-2023"
-	],
+	"displayedNews": [],
 	"enableContextMenus": true,
 	"enableForPDF": true,
 	"enableForProtectedPages": true,
@@ -27,6 +24,7 @@
 	"notifyOfNews": false,
 	"presets": [],
 	"previewNewDesign": true,
+	"previewNewestDesign": false,
 	"readNews": [
 		"mobile",
 		"detect-dark-theme",
@@ -71,10 +69,10 @@
 		"scrollbarColor": "auto",
 		"selectionColor": "auto",
 		"sepia": 0,
-		"styleSystemControls": true,
+		"styleSystemControls": false,
 		"stylesheet": "",
 		"textStroke": 0,
-		"useFont": true
+		"useFont": false
 	},
 	"time": {
 		"activation": "18:00",
