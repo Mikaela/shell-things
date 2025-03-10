@@ -56,6 +56,13 @@
 						"https://www.eff.org/files/effdntlist.txt",
 						"block-lan",
 						"ublock-annoyances",
+						"adguard-cookies",
+						"ublock-cookies-adguard",
+						"adguard-mobile-app-banners",
+						"adguard-other-annoyances",
+						"adguard-popup-overlays",
+						"adguard-widgets",
+						"https://secure.fanboy.co.nz/fanboy-annoyance.txt",
 						"https://ads-for-open-source.readthedocs.io/en/latest/_static/lists/opensource-ads.txt"
 					]
 				},
