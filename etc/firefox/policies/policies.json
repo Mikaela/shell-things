@@ -73,7 +73,9 @@
 							"accounts.google.com",
 							"moz-extension-scheme",
 							"research.cloudflare.com",
-							"pp-attester-turnstile.research.cloudflare.com"
+							"pp-attester-turnstile.research.cloudflare.com",
+							"accountscenter.facebook.com",
+							"accountscenter.instagram.com"
 						]
 					},
 					"toOverwrite": {

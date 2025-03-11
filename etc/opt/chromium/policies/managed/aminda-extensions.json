@@ -32,7 +32,9 @@
 						"accounts.google.com",
 						"moz-extension-scheme",
 						"research.cloudflare.com",
-						"pp-attester-turnstile.research.cloudflare.com"
+						"pp-attester-turnstile.research.cloudflare.com",
+						"accountscenter.facebook.com",
+						"accountscenter.instagram.com"
 					]
 				},
 				"toOverwrite": {
@@ -105,7 +107,9 @@
 					"mail.google.com",
 					"myaccount.google.com",
 					"accounts.google.com",
-					"pp-attester-turnstile.research.cloudflare.com"
+					"pp-attester-turnstile.research.cloudflare.com",
+					"accountscenter.facebook.com",
+					"accountscenter.instagram.com"
 				],
 				"rulesets": [
 					"+default",
