@@ -59,6 +59,7 @@
 						"block-lan",
 						"ublock-annoyances",
 						"ublock-cookies-adguard",
+						"ublock-cookies-easylist",
 						"https://secure.fanboy.co.nz/fanboy-annoyance.txt",
 						"https://ads-for-open-source.readthedocs.io/en/latest/_static/lists/opensource-ads.txt"
 					]
