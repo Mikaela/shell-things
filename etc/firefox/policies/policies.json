@@ -116,7 +116,7 @@
 						],
 						[
 							"collapseBlocked",
-							"false"
+							"true"
 						],
 						[
 							"ignoreGenericCosmeticFilters",
