@@ -497,10 +497,9 @@
 				"Value": false
 			},
 			"browser.ml.chat.provider": {
-				"Comment": "Ask every time which AI to use, if enabled.",
-				"Status": "clear",
+				"Status": "default",
 				"Type": "string",
-				"Value": "https://www.ecosia.org/chat"
+				"Value": "https://chat.mistral.ai/chat"
 			},
 			"browser.preferences.moreFromMozilla": {
 				"Status": "default",
