@@ -579,6 +579,11 @@
 				"Type": "boolean",
 				"Value": true
 			},
+			"browser.tabs.groups.smart.enabled": {
+				"Status": "default",
+				"Type": "boolean",
+				"Value": true
+			},
 			"browser.tabs.inTitlebar_commented": {
 				"Comment": "without _commented 0 enables system title bar and 2 is default.",
 				"Status": "default",
