@@ -159,8 +159,8 @@ if hash lsb_release 2> /dev/null; then
 		unset LC_ALL
 	)
 
-	# Only print motivational phrases if username is aminda or mikaela
-	if [[ $(whoami) == aminda ]] || [[ $(whoami) == mikaela ]]; then
+	# Only print motivational phrases if username is aminda or mikaela or deck
+	if [[ $(whoami) == aminda ]] || [[ $(whoami) == mikaela ]] || [[ $(whoami) == deck ]]; then
 		if hash python3 2> /dev/null; then
 			(
 				# Motivational messages
