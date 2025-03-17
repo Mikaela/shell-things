@@ -630,6 +630,11 @@
 				"Type": "boolean",
 				"Value": true
 			},
+			"browser.uidensity": {
+				"Status": "default",
+				"Type": "number",
+				"Value": 1
+			},
 			"browser.urlbar.trimHttps": {
 				"Status": "locked",
 				"Type": "boolean",
