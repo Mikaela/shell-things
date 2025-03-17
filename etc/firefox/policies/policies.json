@@ -232,12 +232,30 @@
 				"installation_mode": "normal_installed",
 				"private_browsing": true
 			},
+			"goeuropean@example.com": {
+				"default_area": "menupanel",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/go-european/latest.xpi",
+				"installation_mode": "force_installed",
+				"private_browsing": false
+			},
+			"gps-detect@allanwirth.com": {
+				"default_area": "menupanel",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/gpsdetect/latest.xpi",
+				"installation_mode": "force_installed",
+				"private_browsing": false
+			},
 			"ipvfoo@pmarks.net": {
 				"default_area": "menupanel",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/ipvfoo/latest.xpi",
 				"installation_mode": "normal_installed",
 				"private_browsing": false,
 				"restricted_domains": []
+			},
+			"jid0-3GUEt1r69sQNSrca5p8kx9Ezc3U@jetpack": {
+				"default_area": "navbar",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/terms-of-service-didnt-read/latest.xpi",
+				"installation_mode": "force_installed",
+				"private_browsing": false
 			},
 			"jid1-MnnxcxisBPnSXQ-eff@jetpack": {
 				"blocked_install_message": "Already installed from AMO",
