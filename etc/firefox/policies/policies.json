@@ -623,6 +623,12 @@
 				"Type": "boolean",
 				"Value": false
 			},
+			"browser.taskbarTabs.enabled": {
+				"Comment": "Rumoured PWA support",
+				"Status": "default",
+				"Type": "boolean",
+				"Value": true
+			},
 			"browser.translations.automaticallyPopup": {
 				"Status": "locked",
 				"Type": "boolean",
