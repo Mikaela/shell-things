@@ -344,6 +344,10 @@
 				"private_browsing": true,
 				"restricted_domains": []
 			},
+			"{6003eac6-4b07-4aaf-960b-92fa006cd444}": {
+				"blocked_install_message": "AI hurts climate and sysadmins",
+				"installation_mode": "blocked"
+			},
 			"{6a65273e-2b26-40f5-b66e-8eed317307da}": {
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/new-tab-suspender/latest.xpi",
@@ -509,8 +513,8 @@
 				"Value": 0
 			},
 			"browser.ml.chat.enabled": {
-				"Comment": "Disable AI by default.",
-				"Status": "default",
+				"Comment": "Disable AI.",
+				"Status": "locked",
 				"Type": "boolean",
 				"Value": false
 			},
