@@ -31,9 +31,13 @@ ln -nsfv /etc/firefox /etc/firefox-esr
 
 # Chromium
 mkdir -vp /etc/opt/chromium/policies/{managed,recommended}
-setfacl --recursive --modify=u:root:rwX,o:rX /etc/firefox/policies
+setfacl --recursive --modify=u:root:rwX,o:rX /etc/opt/chromium/policies
 chmod -v a+rx /etc/opt/chromium/policies/
 chmod -v a+rx /etc/opt/chromium/policies/{managed,recommended}/
+# Chromium snap
+mkdir -p /etc/chromium-browser
+setfacl --recursive --modify=u:root:rwX,o:rX /etc/chromium-browser
+ln -nsfv /etc/opt/chromium/policies /etc/chromium-browser/policies
 
 # Brave
 mkdir -p /etc/brave
