@@ -120,6 +120,10 @@
 							"true"
 						],
 						[
+							"colorBlindFriendly",
+							"true"
+						],
+						[
 							"ignoreGenericCosmeticFilters",
 							"true"
 						],
