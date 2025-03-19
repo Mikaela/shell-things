@@ -191,6 +191,7 @@ Aferoj emas funkcii sin mem...\tOM MANI PEME HUNG...
 		# And this from sudo + the general advice for auditability
 		(printf "We trust you have received the usual lecture from the local System\nAdministrator. It usually boils down to these three things:\n\n\t#1) Respect the privacy of others.\n\t#2) Think before you type.\n\t#3) With great power comes great responsibility.\n\nAdditionally you shouldn't be logging in as root directly.\n\n")
 	fi
+	printf "\tMake your tech grayscale painting your life with colours\n"
 fi
 
 #####	Environment					7RS56S	#####
