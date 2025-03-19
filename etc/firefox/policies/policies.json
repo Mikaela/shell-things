@@ -277,6 +277,12 @@
 				"private_browsing": true,
 				"restricted_domains": []
 			},
+			"jsr@javascriptrestrictor": {
+				"default_area": "navbar",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/javascript-restrictor/latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": true
+			},
 			"offline-qr-code@rugk.github.io": {
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/offline-qr-code-generator/latest.xpi",
