@@ -366,13 +366,6 @@
 				"private_browsing": false,
 				"restricted_domains": []
 			},
-			"{73a6fe31-595d-460b-a920-fcc0f8843232}": {
-				"default_area": "navbar",
-				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/noscript/latest.xpi",
-				"installation_mode": "normal_installed",
-				"private_browsing": true,
-				"restricted_domains": []
-			},
 			"{8e41107d-2be2-454d-b4b8-c3d7e54d77de}": {
 				"default_area": "menupanel",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/igplus-extension/latest.xpi",
