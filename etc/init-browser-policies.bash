@@ -9,6 +9,18 @@ if [ "$(id -u)" != "0" ]; then
 	exit 1
 fi
 
+# TODO: Snap based browsers or at least Firefox can supposedly run with less
+# snap sandboxing. Consider these if need arises:
+# sudo snap set firefox confinement=classic
+# https://bugs.launchpad.net/snapd/+bug/1972762
+# sudo snap connect {firefox,chromium,vivaldi}:pcscd
+#
+# OFFTOPIC TODO: more flatseal style management is coming, consider
+# snap refresh snapd --channel=candidate
+# snap install desktop-security-center
+# snap install prompting-client
+# https://discourse.ubuntu.com/t/ubuntu-desktop-s-24-10-dev-cycle-part-5-introducing-permissions-prompting/47963?p-119405-enabling-the-feature
+
 # Firefox and LibreWolf (caution! https://codeberg.org/librewolf/issues/issues/1767)
 mkdir -vp /etc/firefox/policies
 setfacl --recursive --modify=u:root:rwX,o:rX /etc/firefox/policies
