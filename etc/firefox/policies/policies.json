@@ -236,6 +236,12 @@
 				"installation_mode": "normal_installed",
 				"private_browsing": true
 			},
+			"chrome-mask@overengineer.dev": {
+				"default_area": "navbar",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/chrome-mask/latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": true
+			},
 			"goeuropean@example.com": {
 				"default_area": "menupanel",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/go-european/latest.xpi",
