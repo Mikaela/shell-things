@@ -52,7 +52,7 @@
 					"advancedSettings": [
 						[
 							"filterAuthorMode",
-							"true"
+							"false"
 						],
 						[
 							"trustedListPrefixes",
@@ -121,7 +121,7 @@
 						],
 						[
 							"colorBlindFriendly",
-							"true"
+							"false"
 						],
 						[
 							"ignoreGenericCosmeticFilters",
@@ -223,10 +223,11 @@
 				"private_browsing": false
 			},
 			"CanvasBlocker@kkapsner.de": {
-				"comment": "Requested by LibreAwoo for those who don't have RFP/FPP, neither of which I can specify through this policy. Additionally its own description says compatible with the Firefox integrated one.",
+				"blocked_install_message": "Likely overlaps with JShelter in a negative way",
+				"comment": "Requested by LibreAwoo for those who don't have RFP/FPP, neither of which I can specify through this policy. Additionally its own description says compatible with the Firefox integrated one. Anyway I will probably unload it personally.",
 				"default_area": "menupanel",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/canvasblocker/latest.xpi",
-				"installation_mode": "normal_installed",
+				"installation_mode": "blocked",
 				"private_browsing": true,
 				"restricted_domains": []
 			},
@@ -286,7 +287,7 @@
 			"jsr@javascriptrestrictor": {
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/javascript-restrictor/latest.xpi",
-				"installation_mode": "normal_installed",
+				"installation_mode": "force_installed",
 				"private_browsing": true
 			},
 			"offline-qr-code@rugk.github.io": {
@@ -320,7 +321,7 @@
 			"uBlock0@raymondhill.net": {
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
-				"installation_mode": "normal_installed",
+				"installation_mode": "force_installed",
 				"private_browsing": true,
 				"restricted_domains": []
 			},
@@ -434,7 +435,7 @@
 		"LegacySameSiteCookieBehaviorEnabled": false,
 		"NetworkPrediction": false,
 		"NewTabPage": true,
-		"OverrideFirstRunPage": "about:mozilla|https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide",
+		"OverrideFirstRunPage": "about:mozilla|https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide|https://addons.mozilla.org/firefox/addon/noscript/",
 		"PDFjs": {
 			"EnablePermissions": false,
 			"Enabled": true
