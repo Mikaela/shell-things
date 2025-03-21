@@ -244,7 +244,7 @@
 				"private_browsing": true
 			},
 			"goeuropean@example.com": {
-				"default_area": "menupanel",
+				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/go-european/latest.xpi",
 				"installation_mode": "force_installed",
 				"private_browsing": false
