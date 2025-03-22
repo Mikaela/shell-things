@@ -198,7 +198,7 @@
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"ammoloihpcbognfddfjcljgembpibcmb": {
-			"installation_mode": "normal_installed",
+			"installation_mode": "allowed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
@@ -229,6 +229,12 @@
 		},
 		"ddkjiahejlhfcafbddmgiahcphecmpfh": {
 			"installation_mode": "force_installed",
+			"override_update_url": true,
+			"toolbar_pin": "force_pinned",
+			"update_url": "https://clients2.google.com/service/update2/crx"
+		},
+		"doojmbjmlfjjnbmnoijecmcbfeoakpjm": {
+			"installation_mode": "allowed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
