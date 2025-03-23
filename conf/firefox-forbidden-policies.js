@@ -86,5 +86,8 @@ lockPref("sidebar.revamp", true);
 lockPref("sidebar.verticalTabs", true);
 lockPref("sidebar.visibility", "always-show");
 
+// Per process isolation
+lockPref("fission.autostart", true);
+
 // No making configuration on the last line of the file!
 //

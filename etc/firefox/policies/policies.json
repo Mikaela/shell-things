@@ -747,6 +747,12 @@
 				"Type": "string",
 				"Value": ""
 			},
+			"fission.autostart": {
+				"Comment": "Enable fission, site separation per process, security. Preference not allowed for stability reasons. :(",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
 			"general.config.obscure_value": {
 				"Comment": "Required for autoconfig.",
 				"Status": "locked",
@@ -769,6 +775,12 @@
 				"Status": "locked",
 				"Type": "boolean",
 				"Value": false
+			},
+			"gfx.webrender.all": {
+				"Comment": "Enable fission, site separation per process, security",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
 			},
 			"image.animation.mode": {
 				"Comment": "Preference not allowed for stability reasons. :(",
