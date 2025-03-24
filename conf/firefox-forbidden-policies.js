@@ -30,19 +30,19 @@ lockPref(
 );
 lockPref(
 	"font.name-list.sans-serif.x-cyrillic",
-	"Inclusive Sans, Roboto, Liberation Sans, Noto Sans, sans-serif",
+	"OpenDyslexic, Inclusive Sans, Roboto, Liberation Sans, Noto Sans, sans-serif",
 );
 lockPref(
 	"font.name-list.sans-serif.x-western",
-	"Inclusive Sans, Liberation Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
+	"OpenDyslexic, Inclusive Sans, Liberation Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
 );
 lockPref(
 	"font.name-list.serif.x-cyrillic",
-	"Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
+	"OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
 );
 lockPref(
 	"font.name-list.serif.x-western",
-	"Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
+	"OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
 );
 // clearPref("font.name-list.monospace.x-cyrillic");
 // clearPref("font.name-list.monospace.x-western");
