@@ -16,6 +16,9 @@ importers:
       "@prettier/plugin-xml":
         specifier: 3.4.1
         version: 3.4.1(prettier@3.5.3)
+      corepack:
+        specifier: latest
+        version: 0.32.0
       prettier:
         specifier: 3.5.3
         version: 3.5.3
