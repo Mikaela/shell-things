@@ -414,7 +414,7 @@
 			"{d04b0b40-3dab-4f0b-97a6-04ec3eddbfb0}": {
 				"default_area": "menupanel",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/ecosia-the-green-search/latest.xpi",
-				"installation_mode": "normal_installed",
+				"installation_mode": "force_installed",
 				"private_browsing": false
 			}
 		},
@@ -1088,7 +1088,7 @@
 					"URLTemplate": "https://start.duckduckgo.com/?q={searchTerms}"
 				},
 				{
-					"Name": "Ecosia",
+					"Name": "Ecosia search",
 					"Alias": "e",
 					"Description": "Ecosia Search Engine",
 					"IconURL": "https://cdn-static.ecosia.org/static/icons/favicon.ico",
@@ -1123,7 +1123,7 @@
 					"URLTemplate": "https://search.brave.com/goggles?q={searchTerms}"
 				}
 			],
-			"Default": "Ecosia"
+			"Default": "Ecosia search"
 		},
 		"SearchSuggestEnabled": false,
 		"SecurityDevices": {
