@@ -78,11 +78,15 @@ mkdir -p /etc/opt/edge
 setfacl --recursive --modify=u:root:rwX,o:rX /etc/opt/edge
 ln -nsfv /etc/opt/chromium/policies /etc/opt/edge/policies
 
-# Flatpak
+# Firefox Flatpak
 mkdir -vp "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/stable/policies/"
 mkdir -vp "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/beta/policies/"
 cp -v /etc/firefox/policies/policies.json "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/stable/policies/"
 cp -v /etc/firefox/policies/policies.json "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/beta/policies/"
+
+# Chromium Flatpak
+mkdir -vp "/var/lib/flatpak/extension/org.chromium.Chromium.Extension.system-policies/$(uname -m)/1/"
+cp -rv /etc/opt/chromium/policies/ "/var/lib/flatpak/extension/org.chromium.Chromium.Extension.system-policies/$(uname -m)/1/"
 
 # # Firefox Stable
 # mkdir -vp "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/stable/defaults/pref"
