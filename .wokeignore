@@ -1,0 +1,17 @@
+# ASCII armoured GPG content, I don't control words included.
+*.asc
+
+# When you become IRC operator on Charybdis IRCd, it will tell you:
+#   We would like to take this moment to remind you that we accept
+#   absolutely no liability for the INSANITY you're about to endure.
+# I think it's appropiate reminder for logging in as root (which people
+# shouldn't be doing, sudo logs superuser actions better) and thus I wish to
+# keep it in my configuration and I hope everyone doing system administration
+# understands it without getting upset. That is not to say I am not open for
+# alternatives, if you know of an more inclusive saying and are a person,
+# please contact me.
+rc/bashrc
+rc/zshrc
+
+# A certain CAPITALIZED word above is an issue.
+.wokeignore

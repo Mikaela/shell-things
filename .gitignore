@@ -19,6 +19,7 @@
 !.python-version
 !.renovate-shared.json*
 !.reuse
+!.wokeignore
 
 # Certificates (unlikely to happen, but better safe than sorry)
 *.pem

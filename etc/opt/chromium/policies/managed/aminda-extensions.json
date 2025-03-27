@@ -123,20 +123,6 @@
 					"+annoyances-overlays"
 				]
 			},
-			"mlojlfildnehdpnlmpkeiiglhhkofhpb": {
-				"toAdd": {
-					"trustedSiteDirectives": [
-						""
-					]
-				},
-				"toOverwrite": {
-					"filterLists": [
-						"easylist",
-						"adnauseam-filters",
-						"eff-dnt-whitelist"
-					]
-				}
-			},
 			"nngceckbapebfimnlniiiahkandclblb": {
 				"environment": {
 					"base": "https://vault.bitwarden.eu",
