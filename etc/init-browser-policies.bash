@@ -5,8 +5,20 @@ set -x
 
 # Require root or exit
 if [ "$(id -u)" != "0" ]; then
-	echo "This script requires root for managing /etc/" 1>&2
-	exit 1
+	echo "This script requires root for managing /etc/..."
+
+	# Firefox Flatpak
+	mkdir -vp "$HOME/.local/share/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/stable/policies/"
+	mkdir -vp "$HOME/.local/share/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/beta/policies/"
+	cp -v firefox/policies/policies.json "$HOME/.local/share/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/stable/policies/"
+	cp -v firefox/policies/policies.json "$HOME/.local/share/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/beta/policies/"
+
+	# Chromium Flatpak
+	mkdir -vp "$HOME/.local/share/flatpak/extension/org.chromium.Chromium.Extension.system-policies/$(uname -m)/1/managed"
+	mkdir -vp "$HOME/.local/share/flatpak/extension/org.chromium.Chromium.Extension.system-policies/$(uname -m)/1/recommended"
+
+	echo "...but flatpaks were more or less handled."
+	exit 0
 fi
 
 # TODO: Snap based browsers or at least Firefox can supposedly run with less
@@ -81,8 +93,10 @@ ln -nsfv /etc/opt/chromium/policies /etc/opt/edge/policies
 # Firefox Flatpak
 mkdir -vp "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/stable/policies/"
 mkdir -vp "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/beta/policies/"
-cp -v /etc/firefox/policies/policies.json "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/stable/policies/"
-cp -v /etc/firefox/policies/policies.json "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/beta/policies/"
+#cp -v /etc/firefox/policies/policies.json "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/stable/policies/"
+#cp -v /etc/firefox/policies/policies.json "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/beta/policies/"
+cp -v firefox/policies/policies.json "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/stable/policies/"
+cp -v firefox/policies/policies.json "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/beta/policies/"
 
 # Chromium Flatpak
 mkdir -vp "/var/lib/flatpak/extension/org.chromium.Chromium.Extension.system-policies/$(uname -m)/1/"
