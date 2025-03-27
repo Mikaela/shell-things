@@ -98,28 +98,14 @@ mkdir -vp "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -
 cp -v firefox/policies/policies.json "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/stable/policies/"
 cp -v firefox/policies/policies.json "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/beta/policies/"
 
+# Firefox flatpak autoconfig
+cp -v ../conf/autoconfig.js.online /var/lib/flatpak/app/org.mozilla.firefox/current/active/files/lib/firefox/defaults/pref/autoconfig.js
+#cp -v ../conf/firefox-forbidden-policies.js /var/lib/flatpak/app/org.mozilla.firefox/current/active/files/lib/firefox/
+chmod -v a+r /var/lib/flatpak/app/org.mozilla.firefox/current/active/files/lib/firefox/defaults/pref/autoconfig.js
+chmod -v a+r /var/lib/flatpak/app/org.mozilla.firefox/current/active/files/lib/firefox/firefox-forbidden-policies.js
+
 # Chromium Flatpak
 mkdir -vp "/var/lib/flatpak/extension/org.chromium.Chromium.Extension.system-policies/$(uname -m)/1/"
 cp -rv /etc/opt/chromium/policies/ "/var/lib/flatpak/extension/org.chromium.Chromium.Extension.system-policies/$(uname -m)/1/"
-
-# Firefox Stable
-mkdir -vp "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/stable/defaults/pref"
-cp -v ../conf/autoconfig.js "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/stable/defaults/pref/"
-cp -v ../conf/firefox-forbidden-policies.js "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/stable/"
-setfacl --recursive --modify=u:root:rwX,g:root:rwX,o:rX "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/stable/"
-chmod -v a+rx "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/stable/"
-chmod -v a+rx "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/stable/defaults"
-chmod -v a+rx "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/stable/defaults/pref"
-chmod -v 665 "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/stable/defaults/pref/autoconfig.js"
-
-# Firefox Beta
-mkdir -vp "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/beta/defaults/pref"
-cp -v ../conf/autoconfig.js "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/beta/defaults/pref/"
-cp -v ../conf/firefox-forbidden-policies.js "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/beta/"
-setfacl --recursive --modify=u:root:rwX,g:root:rwX,o:rX "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/beta/"
-chmod -v a+rx "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/beta/"
-chmod -v a+rx "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/beta/defaults"
-chmod -v a+rx "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/beta/defaults/pref"
-chmod -v 665 "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/beta/defaults/pref/autoconfig.js"
 
 set +x
