@@ -844,8 +844,14 @@
 				"Type": "boolean",
 				"Value": false
 			},
+			"media.autoplay.blocking_policy": {
+				"Comment": "2 - Click to play media",
+				"Status": "default",
+				"Type": "number",
+				"Value": 2
+			},
 			"media.autoplay.default": {
-				"Comment": "Not even autoplaying silently?",
+				"Comment": "5 blocks autoplay entirely (unless allowed per site from the navbar menu). 2 should open the prompt by default.",
 				"Status": "default",
 				"Type": "number",
 				"Value": 5
