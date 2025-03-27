@@ -395,7 +395,7 @@
 			"{90b8ecca-860a-4f1c-8476-e181df2cf635}": {
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/grayscale-bro/latest.xpi",
-				"installation_mode": "force_installed",
+				"installation_mode": "normal_installed",
 				"private_browsing": true
 			},
 			"{b11bea1f-a888-4332-8d8a-cec2be7d24b9}": {
