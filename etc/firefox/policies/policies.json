@@ -219,8 +219,8 @@
 			"ATBC@EasonWong": {
 				"default_area": "menupanel",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/adaptive-tab-bar-colour/latest.xpi",
-				"installation_mode": "normal_installed",
-				"private_browsing": false
+				"installation_mode": "force_installed",
+				"private_browsing": true
 			},
 			"CanvasBlocker@kkapsner.de": {
 				"blocked_install_message": "Likely overlaps with JShelter in a negative way",
@@ -240,8 +240,8 @@
 			"chrome-mask@overengineer.dev": {
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/chrome-mask/latest.xpi",
-				"installation_mode": "normal_installed",
-				"private_browsing": true
+				"installation_mode": "force_installed",
+				"private_browsing": false
 			},
 			"goeuropean@example.com": {
 				"default_area": "navbar",
@@ -294,7 +294,7 @@
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/offline-qr-code-generator/latest.xpi",
 				"installation_mode": "force_installed",
-				"private_browsing": true,
+				"private_browsing": false,
 				"restricted_domains": []
 			},
 			"optout@google.com": {
@@ -402,7 +402,7 @@
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/torproject-snowflake/latest.xpi",
 				"installation_mode": "normal_installed",
-				"private_browsing": true
+				"private_browsing": false
 			},
 			"{b86e4813-687a-43e6-ab65-0bde4ab75758}": {
 				"default_area": "navbar",
