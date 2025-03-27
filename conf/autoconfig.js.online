@@ -3,14 +3,10 @@
 
 // WARNING: lockPref() IS NOT ALLOWED HERE!
 
-pref(
-	"autoadmin.global_config_url",
-	"https://raw.githubusercontent.com/Mikaela/shell-things/refs/heads/cxefa/conf/firefox-forbidden-policies.js",
-);
-// pref(
-// 	"autoadmin.global_config_url",
-// 	"file:///home/aminda/public_html/autoconfig.js",
-// );
+// prettier-ignore
+pref("autoadmin.global_config_url", "https://raw.githubusercontent.com/Mikaela/shell-things/refs/heads/cxefa/conf/firefox-forbidden-policies.js");
+// prettier-ignore
+//pref("autoadmin.global_config_url", "file:///home/aminda/public_html/autoconfig.js");
 pref("general.config.obscure_value", 0);
 pref("autoadmin.refresh_interval", 120);
 pref("autoadmin.offline_failover", true);
