@@ -38,7 +38,8 @@ mkdir -vp /etc/firefox/policies
 setfacl --recursive --modify=u:root:rwX,g:root:rwX,o:rX /etc/firefox/policies
 chmod -v a+rx /etc/firefox/
 chmod -v a+rx /etc/firefox/policies/
-touch /etc/firefox/policies/policies.json
+#touch /etc/firefox/policies/policies.json
+cp -v firefox/policies/policies.json /etc/firefox/policies/policies.json
 chmod -v a+r /etc/firefox/policies/policies.json
 printf "WARNING! LibreWolf default profile may be masked!\nhttps://codeberg.org/librewolf/issues/issues/1767\n"
 
