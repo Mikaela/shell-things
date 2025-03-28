@@ -234,7 +234,7 @@
 			"addon@darkreader.org": {
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/darkreader/latest.xpi",
-				"installation_mode": "normal_installed",
+				"installation_mode": "allowed",
 				"private_browsing": true
 			},
 			"chrome-mask@overengineer.dev": {
@@ -362,7 +362,7 @@
 				"restricted_domains": []
 			},
 			"{6003eac6-4b07-4aaf-960b-92fa006cd444}": {
-				"blocked_install_message": "AI hurts climate and sysadmins",
+				"blocked_install_message": "AI hurts climate and the crawlers are DDoSing the internet",
 				"installation_mode": "blocked"
 			},
 			"{6a65273e-2b26-40f5-b66e-8eed317307da}": {
@@ -407,7 +407,7 @@
 			"{b86e4813-687a-43e6-ab65-0bde4ab75758}": {
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/localcdn-fork-of-decentraleyes/latest.xpi",
-				"installation_mode": "normal_installed",
+				"installation_mode": "allowed",
 				"private_browsing": true,
 				"restricted_domains": []
 			},
