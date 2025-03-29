@@ -372,7 +372,7 @@
 			"{6a65273e-2b26-40f5-b66e-8eed317307da}": {
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/new-tab-suspender/latest.xpi",
-				"installation_mode": "normal_installed",
+				"installation_mode": "force_installed",
 				"private_browsing": true,
 				"restricted_domains": []
 			},
