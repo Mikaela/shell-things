@@ -34,7 +34,8 @@
 						"research.cloudflare.com",
 						"pp-attester-turnstile.research.cloudflare.com",
 						"accountscenter.facebook.com",
-						"accountscenter.instagram.com"
+						"accountscenter.instagram.com",
+						"www.npmjs.com"
 					]
 				},
 				"toOverwrite": {
