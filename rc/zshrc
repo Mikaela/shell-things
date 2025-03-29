@@ -628,7 +628,7 @@ else
 fi
 
 # https://pnpm.io/installation#using-a-shorter-alias
-alias pn="corepack pnpm"
+alias pn="pnpm"
 
 # github-pages etc.
 if hash bundle 2> /dev/null; then
