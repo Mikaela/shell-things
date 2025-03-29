@@ -1055,12 +1055,18 @@
 				"Type": "boolean",
 				"Value": true
 			},
+			"ui.prefersReducedMotion": {
+				"Comment": "0 for full animation, 1 for reduced motion",
+				"Status": "locked",
+				"Type": "number",
+				"Value": 1
+			},
 			"ui.systemUsesDarkTheme": {
 				"Comment": "Another theme option that should be let to system, thus clear.",
 				"Status": "clear"
 			},
 			"ui.textScaleFactor": {
-				"Comment": "Use this instead of layout.css.devPixelsPerPx",
+				"Comment": "Use this instead of layout.css.devPixelsPerPx. Then zoom 120 % seems great.",
 				"Status": "default",
 				"Type": "number",
 				"Value": 90
