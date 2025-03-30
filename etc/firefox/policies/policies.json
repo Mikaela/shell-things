@@ -312,6 +312,12 @@
 				"private_browsing": true,
 				"restricted_domains": []
 			},
+			"tab-counter@daawesomep.addons.mozilla.org": {
+				"default_area": "navbar",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/tab-counter-webext/latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": false
+			},
 			"uBOLite@raymondhill.net": {
 				"blocked_install_message": "Unmaintained on addons.mozilla.org",
 				"default_area": "navbar",
@@ -390,6 +396,12 @@
 				"private_browsing": true,
 				"restricted_domains": []
 			},
+			"{8620c15f-30dc-4dba-a131-7c5d20cf4a29}": {
+				"default_area": "menupanel",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/nightly-tester-tools/latest.xpi",
+				"installation_mode": "allowed",
+				"private_browsing": true
+			},
 			"{8e41107d-2be2-454d-b4b8-c3d7e54d77de}": {
 				"default_area": "menupanel",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/igplus-extension/latest.xpi",
@@ -414,6 +426,12 @@
 				"installation_mode": "allowed",
 				"private_browsing": true,
 				"restricted_domains": []
+			},
+			"{c2ecdf60-7077-4bfa-b9c2-4892a8ded8c6}": {
+				"default_area": "navbar",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/bionic-reader/latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": true
 			},
 			"{d04b0b40-3dab-4f0b-97a6-04ec3eddbfb0}": {
 				"default_area": "menupanel",
