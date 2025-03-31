@@ -65,18 +65,28 @@
 					],
 					"toAdd": {
 						"trustedSiteDirectives": [
-							"chrome-extension-scheme",
-							"challenges.cloudflare.com",
-							"www.ecosia.org",
-							"mail.google.com",
-							"myaccount.google.com",
-							"accounts.google.com",
-							"moz-extension-scheme",
-							"research.cloudflare.com",
-							"pp-attester-turnstile.research.cloudflare.com",
 							"accountscenter.facebook.com",
 							"accountscenter.instagram.com",
-							"www.npmjs.com"
+							"accounts.google.com",
+							"auth-prod.megical.com",
+							"challenges.cloudflare.com",
+							"chrome-extension-scheme",
+							"kansalainen.kanta.fi",
+							"kanta.fi",
+							"mail.google.com",
+							"moz-extension-scheme",
+							"myaccount.google.com",
+							"omakanta.kanta.fi",
+							"oma.kela.fi",
+							"omavero.vero.fi",
+							"pp-attester-turnstile.research.cloudflare.com",
+							"research.cloudflare.com",
+							"suomi.fi",
+							"tunnistautuminen.suomi.fi",
+							"tunnistus.telia.fi",
+							"www.ecosia.org",
+							"www.npmjs.com",
+							"www.suomi.fi"
 						]
 					},
 					"toOverwrite": {
