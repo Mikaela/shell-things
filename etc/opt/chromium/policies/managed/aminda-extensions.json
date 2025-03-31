@@ -220,6 +220,12 @@
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
+		"donbcfbmhbcapadipfkeojnmajbakjdc": {
+			"installation_mode": "allowed",
+			"override_update_url": true,
+			"toolbar_pin": "default_unpinned",
+			"update_url": "https://clients2.google.com/service/update2/crx"
+		},
 		"doojmbjmlfjjnbmnoijecmcbfeoakpjm": {
 			"installation_mode": "allowed",
 			"override_update_url": true,
