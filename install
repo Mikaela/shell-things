@@ -155,11 +155,11 @@ fi
 # Make the submoduled fonts available to the system
 if [ -d "$HOME/.shell-things" ]; then
 	mkdir -p $HOME/.local/share/fonts
-	ln -nsfv $HOME/.shell-things/submodules/comicneue/Fonts $HOME/.local/share/fonts/comicneue
+	ln -nsfv $HOME/.shell-things/submodules/comicneue/Fonts/OTF $HOME/.local/share/fonts/comicneue
 	ln -nsfv $HOME/.shell-things/submodules/comic-shanns-mono/fonts $HOME/.local/share/fonts/comic-shanns-mono
 	ln -nsfv $HOME/.shell-things/submodules/opendyslexic/compiled $HOME/.local/share/fonts/opendyslexic
-	ln -nsfv $HOME/.shell-things/submodules/serious-sans/SeriousShanns $HOME/.local/share/fonts/
-	ln -nsfv $HOME/.shell-things/submodules/Inclusive-Sans/fonts $HOME/.local/share/fonts/Inclusive-Sans
+	ln -nsfv $HOME/.shell-things/submodules/serious-sans/SeriousShanns $HOME/.local/share/fonts/SeriousShanns
+	ln -nsfv $HOME/.shell-things/submodules/Inclusive-Sans/fonts/variable $HOME/.local/share/fonts/Inclusive-Sans
 	# Font cleanup
 	if hash symlinks 2> /dev/null; then
 		symlinks -d $HOME/.local/share/fonts/
