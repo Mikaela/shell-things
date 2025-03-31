@@ -339,6 +339,13 @@
 				"private_browsing": false,
 				"restricted_domains": []
 			},
+			"zoompage-we@DW-dev": {
+				"default_area": "navbar",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/zoom-page-we/latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": true,
+				"restricted_domains": []
+			},
 			"{157eb9f0-9814-4fcc-b0b7-586b3093c641}": {
 				"default_area": "menupanel",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/updateswh/latest.xpi",
@@ -366,6 +373,13 @@
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/privacy-pass/latest.xpi",
 				"installation_mode": "force_installed",
 				"private_browsing": true,
+				"restricted_domains": []
+			},
+			"{5384767E-00D9-40E9-B72F-9CC39D655D6F}": {
+				"default_area": "menupanel",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/epubreader/latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": false,
 				"restricted_domains": []
 			},
 			"{6003eac6-4b07-4aaf-960b-92fa006cd444}": {
@@ -420,6 +434,12 @@
 				"installation_mode": "normal_installed",
 				"private_browsing": false
 			},
+			"{b5501fd1-7084-45c5-9aa6-567c2fcf5dc6}": {
+				"default_area": "menupanel",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/ruffle_rs/latest.xpi",
+				"installation_mode": "allowed",
+				"private_browsing": false
+			},
 			"{b86e4813-687a-43e6-ab65-0bde4ab75758}": {
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/localcdn-fork-of-decentraleyes/latest.xpi",
@@ -436,6 +456,12 @@
 			"{d04b0b40-3dab-4f0b-97a6-04ec3eddbfb0}": {
 				"default_area": "menupanel",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/ecosia-the-green-search/latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": false
+			},
+			"{ddc62400-f22d-4dd3-8b4a-05837de53c2e}": {
+				"default_area": "navbar",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/read-aloud/latest.xpi",
 				"installation_mode": "normal_installed",
 				"private_browsing": false
 			}
