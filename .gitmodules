@@ -2,32 +2,50 @@
 	path = submodules/jauderho-nts-servers
 	url = https://github.com/jauderho/nts-servers.git
 	branch = main
+	ignore = all
+	shallow = true
 [submodule "submodules/SteamDeckScreenLock"]
 	path = submodules/SteamDeckScreenLock
 	url = https://github.com/RHOPKINS13/SteamDeckScreenLock.git
 	branch = main
+	ignore = all
+	shallow = true
 [submodule "submodules/opendyslexic"]
 	path = submodules/opendyslexic
 	url = https://github.com/antijingoist/opendyslexic.git
 	branch = master
+	ignore = all
+	shallow = true
 [submodule "submodules/comic-shanns-mono"]
 	path = submodules/comic-shanns-mono
 	url = https://github.com/jesusmgg/comic-shanns-mono.git
 	branch = master
+	ignore = all
+	shallow = true
 [submodule "submodules/comicneue"]
 	path = submodules/comicneue
 	url = https://github.com/crozynski/comicneue.git
 	branch = master
+	ignore = all
+	shallow = true
 [submodule "submodules/serious-sans"]
 	path = submodules/serious-sans
 	url = https://github.com/kaBeech/serious-sans.git
 	branch = main
+	ignore = all
+	shallow = true
 [submodule "submodules/ssh-allowed_signers"]
 	path = submodules/ssh-allowed_signers
 	url = https://codeberg.org/Aminda/ssh-allowed_signers.git
+	ignore = all
+	shallow = true
 [submodule "submodules/pgp-alt-wot"]
 	path = submodules/pgp-alt-wot
 	url = https://codeberg.org/Aminda/pgp-alt-wot.git
+	ignore = all
+	shallow = true
 [submodule "submodules/Inclusive-Sans"]
 	path = submodules/Inclusive-Sans
 	url = https://github.com/LivKing/Inclusive-Sans.git
+	ignore = all
+	shallow = true
