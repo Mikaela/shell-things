@@ -214,6 +214,20 @@
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
+		"bkdgflcldnnnapblkhphbgpggdiikppg": {
+			"blocked_install_message": "DuckDuckGo (Chrome Web Store)",
+			"installation_mode": "allowed",
+			"override_update_url": true,
+			"toolbar_pin": "force_pinned",
+			"update_url": "https://clients2.google.com/service/update2/crx"
+		},
+		"caoacbimdbbljakfhgikoodekdnlcgpk": {
+			"blocked_install_message": "DuckDuckGo (Edge)",
+			"installation_mode": "allowed",
+			"override_update_url": true,
+			"toolbar_pin": "force_pinned",
+			"update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
+		},
 		"cbimgpnbgalffiohilfglgkkhpegpjlo": {
 			"blocked_install_message": "QR Code",
 			"installation_mode": "normal_installed",
@@ -330,6 +344,13 @@
 			"toolbar_pin": "default_unpinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
+		"iimpkhokkfekbpmoamlmcndclohnehhk": {
+			"blocked_install_message": "IPvFooBar. ManifestV2 unlike the original.",
+			"installation_mode": "blocked",
+			"override_update_url": true,
+			"toolbar_pin": "force_pinned",
+			"update_url": "https://clients2.google.com/service/update2/crx"
+		},
 		"klmgadmgadfhjgomffmpamppmkajdloc": {
 			"blocked_install_message": "Go European",
 			"installation_mode": "force_installed",
@@ -350,6 +371,13 @@
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
+		},
+		"njdfdhgcmkocbgbhcioffdbicglldapd": {
+			"blocked_install_message": "LocalCDN",
+			"installation_mode": "normal_installed",
+			"override_update_url": true,
+			"toolbar_pin": "force_pinned",
+			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"nngceckbapebfimnlniiiahkandclblb": {
 			"blocked_install_message": "Bitwarden",
