@@ -103,7 +103,7 @@
 					],
 					[
 						"suspendUntilListsAreLoaded",
-						"false"
+						"true"
 					],
 					[
 						"prefetchingDisabled",
