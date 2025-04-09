@@ -313,15 +313,18 @@
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"gecgipfabdickgidpmbicneamekgbaej": {
-			"blocked_install_message": "Chrome Apps Launcher. DEPRECATED. Harhaanjohtava, ei koske PWA vaan vanhentuneita Chrome-sovelluksia.",
+			"blocked_install_message": "Chrome Apps Launcher. Refers to deprecated Chrome apps rather than PWAs",
 			"installation_mode": "blocked",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"gphhapmejobijbbhgpjhcjognlahblep": {
-			"blocked_install_message": "TODO MIKÄ ON TÄMÄ? Tämä on KDE-talous, jossa kukaan ei tietääkseni käytä GNOMEa. Tämä lisäosa KDEn vastaavasta poiketen on riippuvainen GNOMEsta.",
-			"installation_mode": "blocked"
+			"blocked_install_message": "GNOME SHELL INTEGRATION",
+			"installation_mode": "allowed",
+			"override_update_url": true,
+			"toolbar_pin": "default_unpinned",
+			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"hgcomhbcacfkpffiphlmnlhpppcjgmbl": {
 			"blocked_install_message": "HTTP Indicator",
@@ -339,7 +342,7 @@
 		},
 		"hojggiaghnldpcknpbciehjcaoafceil": {
 			"blocked_install_message": "Fedora User Agent",
-			"installation_mode": "normal_installed",
+			"installation_mode": "allowed",
 			"override_update_url": true,
 			"toolbar_pin": "default_unpinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
@@ -388,14 +391,17 @@
 		},
 		"obpoeflheeknapimliioeoefbfaakefn": {
 			"blocked_install_message": "Regrets Reporter (by Mozilla for YouTube)",
-			"installation_mode": "force_installed",
+			"installation_mode": "allowed",
 			"override_update_url": true,
 			"toolbar_pin": "default_unpinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"odfafepnkmbhccpbejgmiehpchacaeak": {
 			"blocked_install_message": "uBlock Origin (Edge). Already force_installed from Chrome",
-			"installation_mode": "blocked"
+			"installation_mode": "blocked",
+			"override_update_url": true,
+			"toolbar_pin": "force_pinned",
+			"update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
 		},
 		"palihjnakafgffnompkdfgbgdbcagbko": {
 			"blocked_install_message": "UpdateSWH",
@@ -406,7 +412,7 @@
 		},
 		"pbnndmlekkboofhnbonilimejonapojg": {
 			"blocked_install_message": "Midnight Lizard",
-			"installation_mode": "normal_installed",
+			"installation_mode": "allowed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
