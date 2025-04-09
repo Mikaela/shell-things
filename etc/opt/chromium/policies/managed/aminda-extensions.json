@@ -201,166 +201,190 @@
 	"ExtensionManifestV2Availability_comment": "0 for default, 1 for disable, 2 for enable, 3 for those extensions specified here.",
 	"ExtensionSettings": {
 		"ajhmfdgkijocedmfjonnpjfojldioehi": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "force_installed",
 			"override_update_url": true,
 			"toolbar_pin": "default_unpinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"ammoloihpcbognfddfjcljgembpibcmb": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "allowed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"cbimgpnbgalffiohilfglgkkhpegpjlo": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "normal_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"cdnapgfjopgaggbmfgbiinmmbdcglnam": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "normal_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"cimiefiiaegbelhefglklhhakcgmhkai": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "force_installed",
 			"override_update_url": true,
 			"toolbar_pin": "default_unpinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"cjpalhdlnbpafiamejdnhcphjbkeiagm": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "force_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"ddkjiahejlhfcafbddmgiahcphecmpfh": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "force_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"donbcfbmhbcapadipfkeojnmajbakjdc": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "allowed",
 			"override_update_url": true,
 			"toolbar_pin": "default_unpinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"doojmbjmlfjjnbmnoijecmcbfeoakpjm": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "allowed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"ecanpcehffngcegjmadlcijfolapggal": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "normal_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"eimadpbcbfnmbkopoojfekhnkhdbieeh": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "allowed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"fllaojicojecljbmefodhfapmkghcbnh": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "force_installed",
 			"override_update_url": true,
 			"toolbar_pin": "default_unpinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"fpnmgdkabkmnadcjpehmlllkndpkmiak": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "normal_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"gbiekjoijknlhijdjbaadobpkdhmoebb": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "force_installed",
 			"override_update_url": true,
 			"toolbar_pin": "default_unpinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"gecgipfabdickgidpmbicneamekgbaej": {
-			"blocked_install_message": "Harhaanjohtava, ei koske PWA vaan vanhentuneita Chrome-sovelluksia.",
+			"blocked_install_message": "TODO MIKÄ ON TÄMÄ? Harhaanjohtava, ei koske PWA vaan vanhentuneita Chrome-sovelluksia.",
 			"installation_mode": "blocked",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"gphhapmejobijbbhgpjhcjognlahblep": {
-			"blocked_install_message": "Tämä on KDE-talous, jossa kukaan ei tietääkseni käytä GNOMEa. Tämä lisäosa KDEn vastaavasta poiketen on riippuvainen GNOMEsta.",
+			"blocked_install_message": "TODO MIKÄ ON TÄMÄ? Tämä on KDE-talous, jossa kukaan ei tietääkseni käytä GNOMEa. Tämä lisäosa KDEn vastaavasta poiketen on riippuvainen GNOMEsta.",
 			"installation_mode": "blocked"
 		},
 		"hgcomhbcacfkpffiphlmnlhpppcjgmbl": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "normal_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"hjdoplcnndgiblooccencgcggcoihigg": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "force_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"hojggiaghnldpcknpbciehjcaoafceil": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "normal_installed",
 			"override_update_url": true,
 			"toolbar_pin": "default_unpinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"klmgadmgadfhjgomffmpamppmkajdloc": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "force_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"mafpmfcccpbjnhfhjnllmmalhifmlcie": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "normal_installed",
 			"override_update_url": true,
 			"toolbar_pin": "default_unpinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"mlojlfildnehdpnlmpkeiiglhhkofhpb": {
-			"blocked_install_message": "AdNauseam on protestityökalu, kun taas Aminda yrittää olla sysadmin.",
+			"blocked_install_message": "AdNauseam (Edge kauppa). Protestityökalu, kun taas Aminda yrittää olla sysadmin.",
 			"installation_mode": "blocked",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
 		},
 		"nngceckbapebfimnlniiiahkandclblb": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "force_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"obpoeflheeknapimliioeoefbfaakefn": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "force_installed",
 			"override_update_url": true,
 			"toolbar_pin": "default_unpinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"odfafepnkmbhccpbejgmiehpchacaeak": {
-			"blocked_install_message": "uBlock Origin pitäisi olla jo asennettu Chrome-kaupasta.",
+			"blocked_install_message": "uBlock Origin (Edge). Pitäisi olla jo asennettu Chrome-kaupasta.",
 			"installation_mode": "blocked"
 		},
 		"palihjnakafgffnompkdfgbgdbcagbko": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "normal_installed",
 			"override_update_url": true,
 			"toolbar_pin": "default_unpinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"pbnndmlekkboofhnbonilimejonapojg": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "normal_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"pkehgijcmpdhfbdbbnkijodmdjhbjlgp": {
+			"blocked_install_message": "TODO",
 			"installation_mode": "force_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
