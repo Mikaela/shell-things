@@ -67,7 +67,7 @@ lockPref(
 	"privacy.fingerprintingProtection.overrides",
 	"+AllTargets,-KeyboardEvents,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-JSDateTimeUTC,-FontVisibilityBaseSystem,-FontVisibilityRestrictGenerics",
 );
-lockPref("browser.display.use_document_fonts", 0);
+pref("browser.display.use_document_fonts", 0);
 
 // Letterboxing from Tor Browser, I like it in general.
 lockPref("privacy.resistFingerprinting.letterboxing", true);
