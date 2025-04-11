@@ -270,6 +270,13 @@
 				"installation_mode": "force_installed",
 				"private_browsing": false
 			},
+			"ipfs-firefox-addon@lidel.org": {
+				"blocked_install_message": "IPFS Companion",
+				"default_area": "navbar",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/ipfs-companion/latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": false
+			},
 			"ipvfoo@pmarks.net": {
 				"blocked_install_message": "IPvFoo. Displays on URL bar, so the icon can be hidden to menupanel.",
 				"default_area": "menupanel",
