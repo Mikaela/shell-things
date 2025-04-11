@@ -20,6 +20,10 @@
 							"action": "cookieblock"
 						},
 						{
+							"domain": "bitwarden.eu",
+							"action": "allow"
+						},
+						{
 							"domain": "google.com",
 							"action": "block"
 						},
