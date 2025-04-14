@@ -1,6 +1,13 @@
 # ASCII armoured GPG content, I don't control words included.
 *.asc
 
+# My browser policies include external uBlock Origin lists, and at the time
+# of writing, two of them contain the term whitelist in their filenames. They
+# are out of my control and I don't think it's worth opening issues on
+# personally.
+etc/opt/chromium/policies/managed/aminda-extensions.json
+etc/firefox/policies/policies.json
+
 # When you become IRC operator on Charybdis IRCd, it will tell you:
 #   We would like to take this moment to remind you that we accept
 #   absolutely no liability for the INSANITY you're about to endure.
@@ -13,5 +20,6 @@
 rc/bashrc
 rc/zshrc
 
-# A certain CAPITALIZED word above is an issue.
+# I keep getting notifications from the words above which again are
+# explanations why they are in this file.
 .wokeignore
