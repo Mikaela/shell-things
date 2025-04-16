@@ -17,3 +17,8 @@ lookandfeeltool --platform offscreen --apply "org.kde.breeze.desktop"
 
 # Kvantum Qt
 #sleep 3 && kvantummanager --set KvGnome --noAssign-All
+
+# Cursors
+gsettings set org.gnome.desktop.interface cursor-theme Oxygen_Yellow
+gsettings set org.mate.peripherals-mouse cursor-theme Oxygen_Yellow
+xfconf-query --channel xsettings --property /Gtk/CursorThemeName --set Oxygen_Yellow
