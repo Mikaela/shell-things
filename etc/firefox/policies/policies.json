@@ -232,6 +232,13 @@
 				"installation_mode": "blocked",
 				"private_browsing": false
 			},
+			"@ublacklist": {
+				"blocked_install_message": "uBlackList",
+				"default_area": "menupanel",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest//latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": true
+			},
 			"ATBC@EasonWong": {
 				"blocked_install_message": "Adaptive Tab Bar Colour",
 				"default_area": "menupanel",
