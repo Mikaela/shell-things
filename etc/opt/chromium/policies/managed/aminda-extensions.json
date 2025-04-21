@@ -264,7 +264,7 @@
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"ddkjiahejlhfcafbddmgiahcphecmpfh": {
-			"blocked_install_message": "uBlock Origin Lite",
+			"blocked_install_message": "uBlock Origin Lite. Force installed simultaneously with uBlock Origin for the transition period after which uBo is removed.",
 			"installation_mode": "force_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
@@ -342,7 +342,7 @@
 		},
 		"hgcomhbcacfkpffiphlmnlhpppcjgmbl": {
 			"blocked_install_message": "HTTP Indicator",
-			"installation_mode": "normal_installed",
+			"installation_mode": "allowed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
@@ -377,7 +377,7 @@
 		},
 		"mafpmfcccpbjnhfhjnllmmalhifmlcie": {
 			"blocked_install_message": "Tor Snowflake",
-			"installation_mode": "normal_installed",
+			"installation_mode": "allowed",
 			"override_update_url": true,
 			"toolbar_pin": "default_unpinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
@@ -391,7 +391,7 @@
 		},
 		"nibjojkomfdiaoajekhjakgkdhaomnch": {
 			"blocked_install_message": "IPFS Companion",
-			"installation_mode": "normal_installed",
+			"installation_mode": "allowed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
@@ -405,7 +405,7 @@
 		},
 		"nlbjncdgjeocebhnmkbbbdekmmmcbfjd": {
 			"blocked_install_message": "RSS Subscription Extension (by Google)",
-			"installation_mode": "force_installed",
+			"installation_mode": "normal_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"

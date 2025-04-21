@@ -286,7 +286,7 @@
 				"blocked_install_message": "IPFS Companion",
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/ipfs-companion/latest.xpi",
-				"installation_mode": "normal_installed",
+				"installation_mode": "allowed",
 				"private_browsing": false
 			},
 			"ipvfoo@pmarks.net": {
@@ -425,7 +425,7 @@
 				"blocked_install_message": "Epub Reader",
 				"default_area": "menupanel",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/epubreader/latest.xpi",
-				"installation_mode": "normal_installed",
+				"installation_mode": "allowed",
 				"private_browsing": false,
 				"restricted_domains": []
 			},
@@ -448,7 +448,7 @@
 				"blocked_install_message": "HTTP Indicator",
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/http-indicator/latest.xpi",
-				"installation_mode": "normal_installed",
+				"installation_mode": "allowed",
 				"private_browsing": false,
 				"restricted_domains": []
 			},
@@ -485,7 +485,7 @@
 				"blocked_install_message": "Tor Snowflake proxy (for prividing the proxy for others)",
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/torproject-snowflake/latest.xpi",
-				"installation_mode": "normal_installed",
+				"installation_mode": "allowed",
 				"private_browsing": false
 			},
 			"{b5501fd1-7084-45c5-9aa6-567c2fcf5dc6}": {
@@ -521,7 +521,7 @@
 				"blocked_install_message": "Read Aloud. Suggested in Mozilla Firefox Accessibility blogpost. Compatible with Epub Reader above.",
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/read-aloud/latest.xpi",
-				"installation_mode": "normal_installed",
+				"installation_mode": "allowed",
 				"private_browsing": false
 			}
 		},
