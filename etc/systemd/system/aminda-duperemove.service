@@ -5,6 +5,9 @@ Description=Aminda's deduplication service
 Type=oneshot
 TimeoutStartSec=infinity
 # Contained in `systemd-path search-binaries-default`
+# I have observed duperemove requesting blkid to be ran as root for
+# generating some cache, so sure.
+ExecStart=-blkid
 ExecStart=-duperemove -rdhq --hashfile=/root/home.hash /home
 ExecStart=-duperemove -rdhq --hashfile=/root/usr-local-bin.hash /usr/local/bin
 ExecStart=-duperemove -rdhq --hashfile=/root/flatpak.hash /var/lib/flatpak
