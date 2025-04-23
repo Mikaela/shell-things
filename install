@@ -164,6 +164,15 @@ if [ "$(id -u)" == "0" ]; then
 		ln -nsfv $HOME/.shell-things/submodules/serious-sans/SeriousShanns/NerdFontPropo /usr/local/share/fonts/
 		ln -nsfv $HOME/.shell-things/submodules/Inclusive-Sans/fonts/variable /usr/local/share/fonts/Inclusive-Sans
 	fi
+
+	# Font cleanup
+	if hash symlinks 2> /dev/null; then
+		symlinks -d /usr/local/share/fonts/
+	else
+		echo "WARNING! Executable named symlinks not found in PATH."
+		sleep 3
+	fi
+
 fi
 
 # Make the submoduled fonts available to the system
