@@ -150,6 +150,20 @@ if [ "$(id -u)" == "0" ]; then
 		mkdir -p /usr/local/share/fonts
 		ln -nsfv /usr/share/texlive/texmf-dist/fonts /usr/local/share/fonts/texlive
 	fi
+
+	# They say to not repeat yourself, but copy-pasting from below is the
+	# easiest way to make the submodule fonts available to the system.
+	if [ -d "$HOME/.shell-things" ]; then
+		mkdir -p /usr/local/share/fonts
+		ln -nsfv $HOME/.shell-things/submodules/comicneue/Fonts/OTF /usr/local/share/fonts/comicneue
+		ln -nsfv $HOME/.shell-things/submodules/comic-shanns-mono/fonts/ComicShannsMono-Regular.otf /usr/local/share/fonts/
+		ln -nsfv $HOME/.shell-things/submodules/opendyslexic/compiled/OpenDyslexic-*.otf /usr/local/share/fonts/
+		ln -nsfv $HOME/.shell-things/submodules/serious-sans/SeriousShanns/otf /usr/local/share/fonts/SeriousShanns
+		ln -nsfv $HOME/.shell-things/submodules/serious-sans/SeriousShanns/NerdFont /usr/local/share/fonts/
+		ln -nsfv $HOME/.shell-things/submodules/serious-sans/SeriousShanns/NerdFontMono /usr/local/share/fonts/
+		ln -nsfv $HOME/.shell-things/submodules/serious-sans/SeriousShanns/NerdFontPropo /usr/local/share/fonts/
+		ln -nsfv $HOME/.shell-things/submodules/Inclusive-Sans/fonts/variable /usr/local/share/fonts/Inclusive-Sans
+	fi
 fi
 
 # Make the submoduled fonts available to the system
