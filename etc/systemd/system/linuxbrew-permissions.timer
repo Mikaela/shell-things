@@ -1,0 +1,10 @@
+[Unit]
+Description=Set linuxbrew permissions hourly
+
+[Timer]
+OnCalendar=hourly
+OnBootSec=0
+Persistent=true
+
+[Install]
+WantedBy=timers.target

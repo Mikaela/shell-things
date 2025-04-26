@@ -1,0 +1,18 @@
+[Unit]
+Description=Linuxbrew permissions for multi-user systems
+
+[Service]
+Type=oneshot
+TimeoutStartSec=infinity
+Environment=LINUXBREWUSER=root
+Environment=LINUXBREWGROUP=wheel
+ExecStart=-chown -R ${LINUXBREWUSER}:${LINUXBREWGROUP} /home/linuxbrew
+ExecStart=-chgrp -R ${LINUXBREWGROUP} /home/linuxbrew
+ExecStart=-chmod -R u+rw,g+rw,o+r /home/linuxbrew
+ExecStart=-setfacl -R -m g:${LINUXBREWGROUP}:rwX,o:rX /home/linuxbrew
+User=root
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

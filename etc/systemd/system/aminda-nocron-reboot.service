@@ -13,6 +13,8 @@ ExecStartPre=-echo 1 > /sys/devices/system/cpu/microcode/reload
 # These aren't given --now as THEY WOULD INFINITE LOOP.
 ExecStartPre=-systemctl enable aminda-nocron-rebootish.service
 ExecStartPre=-systemctl enable  aminda-nocron-rebootish.timer
+ExecStartPre=-systemctl enable linuxbrew-permissions.timer
+ExecStartPre=-systemctl enable --now linuxbrew-permissions.service
 ExecStartPre=-systemctl enable --now unbound.service
 ExecStartPre=-systemctl enable --now systemd-resolved.service
 ExecStartPre=-sysctl net.ipv6.conf.all.disable_ipv6=0
@@ -51,10 +53,6 @@ ExecStart=-systemctl enable --now unbound.service
 ExecStart=-systemctl enable --now chrony.service
 ExecStart=-systemctl enable --now chronyd.service
 ExecStart=-systemctl enable --now systemd-oomd.service systemd-oomd.socket
-ExecStart=-chown -R ${LINUXBREWUSER}:${LINUXBREWGROUP} /home/linuxbrew
-ExecStart=-chgrp -R ${LINUXBREWGROUP} /home/linuxbrew
-ExecStart=-chmod -R u+rw,g+rw,o+r /home/linuxbrew
-ExecStart=-setfacl -R -m g:${LINUXBREWGROUP}:rwX,o:rX /home/linuxbrew
 User=root
 StandardOutput=journal
 StandardError=journal
