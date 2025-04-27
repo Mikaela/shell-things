@@ -1,0 +1,93 @@
+# Passwordless sudo systemctl for Aminda's units. sudo and wheel both
+# specified for Debian & RHEL cross-compatibility.
+%sudo ALL=NOPASSWD: /bin/systemctl start aminda-duperemove.service
+%wheel ALL=NOPASSWD: /bin/systemctl start aminda-duperemove.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart aminda-duperemove.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart aminda-duperemove.service
+
+%sudo ALL=NOPASSWD: /bin/systemctl start aminda-nocron-rebootish.service
+%wheel ALL=NOPASSWD: /bin/systemctl start aminda-nocron-rebootish.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart aminda-nocron-rebootish.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart aminda-nocron-rebootish.service
+
+%sudo ALL=NOPASSWD: /bin/systemctl start flatpak-update.service
+%wheel ALL=NOPASSWD: /bin/systemctl start flatpak-update.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart  flatpak-update.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart flatpak-update.service
+
+%sudo ALL=NOPASSWD: /bin/systemctl start linuxbrew-permissions.service
+%wheel ALL=NOPASSWD: /bin/systemctl start linuxbrew-permissions.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart linuxbrew-permissions.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart linuxbrew-permissions.service
+
+%sudo ALL=NOPASSWD: /bin/systemctl start matterbridge-cleanup.service
+%wheel ALL=NOPASSWD: /bin/systemctl start matterbridge-cleanup.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart matterbridge-cleanup.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart matterbridge-cleanup.service
+
+%sudo ALL=NOPASSWD: /bin/systemctl start matterbridge-restart.service
+%wheel ALL=NOPASSWD: /bin/systemctl start matterbridge-restart.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart matterbridge-restart.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart matterbridge-restart.service
+
+%sudo ALL=NOPASSWD: /bin/systemctl start matterbridge.service
+%wheel ALL=NOPASSWD: /bin/systemctl start matterbridge.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart matterbridge.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart matterbridge.service
+
+%sudo ALL=NOPASSWD: /bin/systemctl start monthly-btrfs-balance.service
+%wheel ALL=NOPASSWD: /bin/systemctl start monthly-btrfs-balance.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart monthly-btrfs-balance.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart monthly-btrfs-balance.service
+
+%sudo ALL=NOPASSWD: /bin/systemctl start reflector.service
+%wheel ALL=NOPASSWD: /bin/systemctl start reflector.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart reflector.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart reflector.service
+
+%sudo ALL=NOPASSWD: /bin/systemctl start syncplay-server.service
+%wheel ALL=NOPASSWD: /bin/systemctl start syncplay-server.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart syncplay-server.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart syncplay-server.service
+
+%sudo ALL=NOPASSWD: /bin/systemctl start sysctl-p--system.service
+%wheel ALL=NOPASSWD: /bin/systemctl start sysctl-p--system.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart sysctl-p--system.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart sysctl-p--system.service
+
+%sudo ALL=NOPASSWD: /bin/systemctl start tor-client.service
+%wheel ALL=NOPASSWD: /bin/systemctl start tor-client.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart tor-client.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart tor-client.service
+
+%sudo ALL=NOPASSWD: /bin/systemctl start tor-onehoponion.service
+%wheel ALL=NOPASSWD: /bin/systemctl start tor-onehoponion.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart tor-onehoponion.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart tor-onehoponion.service
+
+%sudo ALL=NOPASSWD: /bin/systemctl start zeronet.service
+%wheel ALL=NOPASSWD: /bin/systemctl start zeronet.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart zeronet.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart zeronet.service
+
+%sudo ALL=NOPASSWD: /bin/systemctl start znc.service
+%wheel ALL=NOPASSWD: /bin/systemctl start znc.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart znc.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart znc.service
+
+%sudo ALL=NOPASSWD: /bin/systemctl start flatpak-update-user.service
+%wheel ALL=NOPASSWD: /bin/systemctl start flatpak-update-user.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart flatpak-update-user.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart flatpak-update-user.service
+
+%sudo ALL=NOPASSWD: /bin/systemctl start ipfs.service
+%wheel ALL=NOPASSWD: /bin/systemctl start ipfs.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart ipfs.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart ipfs.service
+
+%sudo ALL=NOPASSWD: /bin/systemctl start minidlna.service
+%wheel ALL=NOPASSWD: /bin/systemctl start minidlna.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart minidlna.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart minidlna.service
+
+# vim: filetype=sudoers
