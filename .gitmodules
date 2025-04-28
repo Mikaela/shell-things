@@ -52,3 +52,9 @@
 	branch = main
 	ignore = dirty
 	shallow = true
+[submodule "submodules/steam-devices"]
+	path = submodules/steam-devices
+	url = https://github.com/ValveSoftware/steam-devices.git
+	branch = master
+	ignore = dirty
+	shallow = true
