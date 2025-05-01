@@ -649,6 +649,9 @@ alias journalbu="journalctl --utc --no-hostname --boot"
 alias nordvpn-offf="sudo systemctl stop nordvpnd.service;sudo systemctl stop nordvpnd.socket"
 alias nordvpn-off2=nordvpn-offf
 
+# Consistency in flatpak commands
+alias flatpak="LANG=C.UTF-8 flatpak"
+
 # Allow custom aliases to be put in .aliases or .zsh_aliases .
 
 # .aliases
