@@ -499,7 +499,7 @@
 				"blocked_install_message": "LocalCDN",
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/localcdn-fork-of-decentraleyes/latest.xpi",
-				"installation_mode": "allowed",
+				"installation_mode": "normal_installed",
 				"private_browsing": true,
 				"restricted_domains": []
 			},
