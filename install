@@ -130,6 +130,12 @@ fi
 
 # If running as root, which I am doing regardless of not being supposed to,
 if [ "$(id -u)" == "0" ]; then
+
+	# Fedora Atomic compatibility
+	if [ -d /var/roothome ]; then
+		chmod -v a+x /var/roothome
+	fi
+
 	# Enables laziness on checking whether or not apt is installed
 	mkdir -vp /etc/apt/apt.conf.d/
 	# Enables progress bar and colours for apt/dpkg, which are helpful at
