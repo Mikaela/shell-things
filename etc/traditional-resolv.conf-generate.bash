@@ -27,7 +27,7 @@ printf "nameserver %b\nnameserver %b\nnameserver %b\nsearch .\noptions timeout:1
 # Remove all other permissions than everyone reading resolv.conf
 chmod -v a=r /etc/resolv.conf
 # Make resolv.conf immutable again so it's pretty sure nothing else edits it.
-chattr -V +i /etc/resolv.conf
+#chattr -V +i /etc/resolv.conf
 
 # Let's just see it's ok
 ls -l /etc/resolv.conf
