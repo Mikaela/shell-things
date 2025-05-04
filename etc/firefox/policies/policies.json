@@ -865,6 +865,21 @@
 				"Type": "number",
 				"Value": 0
 			},
+			"general.useragent.extra.firefox": {
+				"Status": "clear"
+			},
+			"general.useragent.extra.productName": {
+				"Status": "clear"
+			},
+			"general.useragent.locale": {
+				"Status": "clear"
+			},
+			"general.useragent.override": {
+				"Status": "clear"
+			},
+			"general.useragent.security": {
+				"Status": "clear"
+			},
 			"geo.provider.network.url": {
 				"Status": "locked",
 				"Type": "string",
