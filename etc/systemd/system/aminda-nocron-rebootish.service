@@ -11,6 +11,8 @@ ExecStartPre=-systemctl enable --now aminda-nocron-reboot.service
 ExecStartPre=-systemctl enable --now aminda-nocron-reboot.timer
 ExecStartPre=-systemctl enable --now aminda-duperemove.service
 ExecStartPre=-systemctl enable --now aminda-duperemove.timer
+# Careless sysadmin workaround. No autostarting service, only timer
+ExecStartPre=-systemctl disable monthly-btrfs-balance.service
 ExecStartPre=-systemctl enable --now monthly-btrfs-balance.timer
 ExecStartPre=-sysctl net.ipv6.conf.all.disable_ipv6=0
 ExecStartPre=-systemctl enable --now tlp
