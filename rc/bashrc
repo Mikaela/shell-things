@@ -145,6 +145,11 @@ if hash lsb_release 2> /dev/null; then
 		elif hash hostnamectl 2> /dev/null; then
 			hostnamectl hostname &
 		fi
+
+		if hash ifconfig 2> /dev/null; then
+			\LC_ALL=C.utf8 \ifconfig | \grep inet | \grep -Ev "127.0.0.1|inet6"
+		fi
+
 		printf "\n"
 		printf "$(uptime --pretty)\t$(uptime)\n"
 		printf "\nPresent:\n"
