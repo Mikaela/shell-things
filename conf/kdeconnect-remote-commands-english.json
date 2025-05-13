@@ -1,6 +1,6 @@
 [
 	{
-		"name": "Darkman toggle",
+		"name": "darkman toggle",
 		"command": "darkman toggle"
 	},
 	{

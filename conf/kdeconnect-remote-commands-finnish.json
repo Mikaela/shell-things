@@ -1,0 +1,42 @@
+[
+	{
+		"name": "darkman toggle",
+		"command": "darkman toggle"
+	},
+	{
+		"name": "Lukitse näyttö",
+		"command": "loginctl lock-session"
+	},
+	{
+		"name": "Sammuta",
+		"command": "systemctl poweroff"
+	},
+	{
+		"name": "Käynnistä uudelleen",
+		"command": "systemctl reboot"
+	},
+	{
+		"name": "Kuvankaappaus [kaikki näytöt]",
+		"command": "spectacle --background --pointer"
+	},
+	{
+		"name": "Kuvankaappaus aktiivisesta ikkunasta",
+		"command": "spectacle --background --pointer --activewindow"
+	},
+	{
+		"name": "Valmiustila",
+		"command": "systemctl suspend"
+	},
+	{
+		"name": "Top#5 muistia käyttävät prosessit",
+		"command": "kdeconnect-cli -d $(kdeconnect-cli -a --id-only) --ping-msg \"$(ps -eo pid,%mem,cmd --sort=-%mem | head -n 6)\""
+	},
+	{
+		"name": "Avaa näyttölukitus",
+		"command": "loginctl unlock-session"
+	},
+	{
+		"name": "[Älä] Häiritse",
+		"command": "qdbus org.kde.kglobalaccel /component/plasmashell invokeShortcut \"toggle do not disturb\""
+	}
+]
