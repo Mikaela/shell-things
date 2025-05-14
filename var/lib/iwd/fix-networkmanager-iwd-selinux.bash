@@ -5,4 +5,5 @@
 
 set -x
 find /var/lib/iwd/*.{psk,open} -exec semanage fcontext -a -t NetworkManager_etc_rw_t '{}' \;
+find /var/lib/iwd/*.{psk,open} -exec restorecon -v '{}' \;
 set +x
