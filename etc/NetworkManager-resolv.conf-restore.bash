@@ -5,6 +5,11 @@ set -x
 # well. I think it's even less likely I use this than the systemd-resolved
 # one, but anyway
 
+if [[ ! -d /sysroot/ostree ]]; then
+	echo "Let's not mess up with Fedora Atomic. Try \$RES_OPTIONS instead? In profile.d?"
+	exit 1
+fi
+
 # I know there are old versions that used something else, but I don't remember
 # that name and they are ancient.
 if ! hash nmcli 2> /dev/null; then

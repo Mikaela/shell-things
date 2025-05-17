@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 set -x
 
+if [[ ! -d /sysroot/ostree ]]; then
+	echo "Let's not mess up with Fedora Atomic. Try \$RES_OPTIONS instead? In profile.d?"
+	exit 1
+fi
+
 # Require root or exit
 if [ "$(id -u)" != "0" ]; then
 	echo "This script requires root. (And the 3 nameserver IPs as arguments)" 1>&2
