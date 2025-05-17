@@ -1,0 +1,11 @@
+# Don't use this file alone, append it to something else.
+server:
+	tls-system-cert: yes
+	qname-minimisation: no
+forward-zone:
+	name: "."
+	forward-tls-upstream: yes
+	# https://appliedprivacy.net/services/dns/ - Vienna, Austria, no ECS
+	forward-addr: 2a02:1b8:10:234::2@443#dot1.applied-privacy.net
+	forward-addr: 146.255.56.98@443#dot1.applied-privacy.net
+# vim: filetype=unbound.conf
