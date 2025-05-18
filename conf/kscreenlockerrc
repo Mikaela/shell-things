@@ -1,0 +1,4 @@
+# ~/.config/kscreenlockerrc
+# Lock screen on login (for combination with autologin)
+[Daemon]
+LockOnStart=true
