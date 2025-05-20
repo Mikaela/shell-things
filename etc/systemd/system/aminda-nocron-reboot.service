@@ -14,6 +14,7 @@ ExecStartPre=-echo 1 > /sys/devices/system/cpu/microcode/reload
 ExecStartPre=-systemctl enable aminda-nocron-rebootish.service
 ExecStartPre=-systemctl enable  aminda-nocron-rebootish.timer
 ExecStartPre=-systemctl enable linuxbrew-permissions.timer
+ExecStartPre=-systemctl enable --now rngd.service
 ExecStartPre=-systemctl enable --now linuxbrew-permissions.service
 ExecStartPre=-systemctl enable --now unbound.service
 ExecStartPre=-systemctl enable --now systemd-resolved.service
