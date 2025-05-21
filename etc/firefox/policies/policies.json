@@ -460,6 +460,13 @@
 				"private_browsing": true,
 				"restricted_domains": []
 			},
+			"{759dbb01-b646-4327-bf9e-69ca2543ef8d}": {
+				"blocked_install_message": "OpenDyslexic",
+				"default_area": "navbar",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/opendyslexic-for-firefox/latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": true
+			},
 			"{8620c15f-30dc-4dba-a131-7c5d20cf4a29}": {
 				"blocked_install_message": "Firefox Nightly Tester Tools",
 				"default_area": "menupanel",
