@@ -748,6 +748,16 @@
 				"Type": "number",
 				"Value": 0
 			},
+			"browser.tabs.insertAfterCurrent": {
+				"Status": "default",
+				"Type": "boolean",
+				"Value": true
+			},
+			"browser.tabs.insertAfterCurrentExceptPinned": {
+				"Status": "default",
+				"Type": "boolean",
+				"Value": true
+			},
 			"browser.tabs.unloadOnLowMemory": {
 				"Status": "locked",
 				"Type": "boolean",
