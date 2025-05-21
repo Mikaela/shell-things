@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Steam autostart in big picture mode
+Name=Steam autostart in tray
 Exec=flatpak run com.valvesoftware.Steam -silent
 Icon=com.valvesoftware.Steam
 Type=Application
