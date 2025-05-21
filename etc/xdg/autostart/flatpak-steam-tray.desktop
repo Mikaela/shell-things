@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Steam autostart in big picture mode
+Exec=flatpak run com.valvesoftware.Steam -silent
+Icon=com.valvesoftware.Steam
+Type=Application
+Hidden=true
