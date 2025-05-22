@@ -1,0 +1,11 @@
+# Fedora Atomic doesn't provide dnf copr
+[yggdrasil]
+name=Copr repo for yggdrasil-go owned by neilalexander
+baseurl=https://download.copr.fedorainfracloud.org/results/neilalexander/yggdrasil-go/fedora-$releasever-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/neilalexander/yggdrasil-go/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
