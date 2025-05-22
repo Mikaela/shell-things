@@ -21,7 +21,7 @@
 
 # Fedora Kinoite on Steam Deck workaround for disappearing network on boot
 # iwd is pulled in by NetworkManager
-@reboot /usr/bin/sleep 15 && /usr/bin/systemctl stop iwd.service --quiet
-@reboot /usr/bin/sleep 20 && /usr/bin/systemctl restart NetworkManager.service
+@reboot /usr/bin/sleep 30 && /usr/bin/systemctl stop iwd.service --quiet
+@reboot /usr/bin/sleep 45 && /usr/bin/systemctl restart NetworkManager.service
 
 # vim: filetype=crontab
