@@ -19,4 +19,9 @@
 @reboot /usr/bin/sleep 300 && /usr/sbin/sysctl net.ipv6.conf.all.disable_ipv6=0 >/dev/null 2>&1
 @reboot /usr/bin/sleep 315 && /usr/bin/systemctl restart yggdrasil.service --quiet
 
+# Fedora Kinoite on Steam Deck workaround for disappearing network on boot
+# iwd is pulled in by NetworkManager
+@reboot /usr/bin/sleep 15 && /usr/bin/systemctl stop iwd.service --quiet
+@reboot /usr/bin/sleep 20 && /usr/bin/systemctl restart NetworkManager.service
+
 # vim: filetype=crontab
