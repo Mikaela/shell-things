@@ -48,4 +48,9 @@ if hash setfacl 2> /dev/null; then
 	fi
 fi
 
+# Fedora Atomic compatibility
+if [ -d /var/roothome ]; then
+	chmod -v a+x /var/roothome
+fi
+
 set +x
