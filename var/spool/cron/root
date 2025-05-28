@@ -23,5 +23,7 @@
 # iwd is pulled in by NetworkManager
 @reboot /usr/bin/sleep 30 && /usr/bin/systemctl stop iwd.service --quiet
 @reboot /usr/bin/sleep 45 && /usr/bin/systemctl restart NetworkManager.service
+# It seems confused on my Steam Deck with Kinoite messing up
+@reboot sleep 30 && systemctl restart hhd@aminda.service
 
 # vim: filetype=crontab
