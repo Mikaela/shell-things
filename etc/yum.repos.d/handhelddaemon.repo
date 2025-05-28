@@ -1,0 +1,12 @@
+# sudo rpm-ostree install hhd adjustor hhd-ui
+# systemctl enable --now hhd@<user>.service
+[copr:copr.fedorainfracloud.org:hhd-dev:hhd]
+name=Copr repo for hhd owned by hhd-dev
+baseurl=https://download.copr.fedorainfracloud.org/results/hhd-dev/hhd/fedora-$releasever-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/hhd-dev/hhd/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
