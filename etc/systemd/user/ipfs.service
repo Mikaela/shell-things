@@ -39,12 +39,6 @@ ExecStart=/home/linuxbrew/.linuxbrew/bin/ipfs daemon --routing=dht --enable-gc -
 #   connections
 #  ipfs config --json Swarm.ConnMgr.LowWater 20 - attempt to keep at least
 #   20 connections
-#  ipfs config --json Swarm.EnableAutoRelay true - if impassable NAT is
-#   detected, connect to the network through relays that have configured
-#   themselves as open (EnableAutoNATService & EnableRelayHop?)
-#  ipfs config --json Experimental.QUIC true - QUIC support, remember to
-#   edit swarm addresses to include /ip4/0.0.0.0/udp/4001/quic
-#   /ip6/::/udp/4001/quic
 #  ipfs config --json Experimental.FilestoreEnabled true - for ipfs add
 #   --nocopy to not store the content twice on disc
 #
