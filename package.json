@@ -1,4 +1,7 @@
 {
+	"dependencies": {
+		"alex": "^11.0.1"
+	},
 	"devDependencies": {
 		"@aminda/global-prettier-config": "2025.21.0",
 		"@prettier/plugin-ruby": "4.0.4",

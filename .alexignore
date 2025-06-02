@@ -23,3 +23,5 @@ rc/zshrc
 # I keep getting notifications from the words above which again are
 # explanations why they are in this file.
 .wokeignore
+.alexignore
+.pre-commit-config.yaml
