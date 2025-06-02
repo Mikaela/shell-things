@@ -1,4 +1,4 @@
-# European/standardizedish English for root
+# Computer English for root
 if [[ "$(id -u)" == "0" ]]; then
 	unset LC_ALL
 	unset LANGUAGE
