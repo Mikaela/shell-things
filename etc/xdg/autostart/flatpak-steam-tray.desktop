@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Steam autostart in tray
-Exec=flatpak run com.valvesoftware.Steam -silent
+Exec=flatpak run com.valvesoftware.Steam -silent -steamdeck
 Icon=com.valvesoftware.Steam
 Type=Application
 Hidden=false
