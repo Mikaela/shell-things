@@ -16,6 +16,7 @@ ExecStartPre=-systemctl disable monthly-btrfs-balance.service
 ExecStartPre=-systemctl enable --now monthly-btrfs-balance.timer
 ExecStartPre=-sysctl net.ipv6.conf.all.disable_ipv6=0
 ExecStartPre=-systemctl enable --now tlp
+ExecStart=-systemctl --global enable systemd-tmpfiles-clean.timer systemd-tmpfiles-setup.service
 ExecStart=-systemctl restart yggdrasil.service
 ExecStart=-firewall-cmd --reload
 # If they somehow managed to not start already
