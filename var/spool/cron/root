@@ -1,3 +1,6 @@
+# symlinks to root home
+@reboot /usr/bin/chmod a+x /root /var/roothome >/dev/null 2>&1
+
 # Workaround it appearing to break SSH especially on family PC
 @reboot /bin/bash -c "/bin/nordvpn set killswitch off;/usr/bin/systemctl disable --now nordvpnd.{service.socket} --quiet"
 

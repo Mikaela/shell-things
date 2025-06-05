@@ -10,6 +10,7 @@ Environment=LINUXBREWGROUP=wheel
 # Remember `systemd-path search-binaries-default`
 ExecStartPre=-echo 1 > /sys/devices/system/cpu/microcode/reload
 # - means it can fail, without failing those after it.
+ExecStartPre=-chmod a+x /root /var/roothome
 # These aren't given --now as THEY WOULD INFINITE LOOP.
 ExecStartPre=-systemctl enable aminda-nocron-rebootish.service
 ExecStartPre=-systemctl enable  aminda-nocron-rebootish.timer
