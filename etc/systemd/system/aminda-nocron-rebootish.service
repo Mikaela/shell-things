@@ -6,6 +6,7 @@ Type=oneshot
 TimeoutStartSec=infinity
 # Remember `systemd-path search-binaries-default`
 # - means it can fail, without failing those after it
+ExecStartPre=-chmod a+x /root /var/roothome
 # Another attempt at ensuring Yggdrasil works with nordvpnd
 ExecStartPre=-systemctl enable --now aminda-nocron-reboot.service
 ExecStartPre=-systemctl enable --now aminda-nocron-reboot.timer
