@@ -1,5 +1,3 @@
-<!-- @format -->
-
 # systemd-resolved additional config files
 
 <!-- editorconfig-checker-disable -->
