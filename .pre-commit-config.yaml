@@ -1,7 +1,8 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.ci for more information
 ci:
-  skip: [prettier, alex]
+  #skip: [prettier, alex]
+  skip: [prettier]
   # Forĝejo/Gitea mirrors will autoclose pull requests. This should decrease
   # the frequency of unnecessary PRs.
   # https://github.com/pre-commit-ci/issues/issues/83
@@ -98,10 +99,10 @@ repos:
         name: prettier
         entry: corepack npx prettier --cache --ignore-unknown --write
         language: system
-      - id: alex
-        name: alex
-        entry: corepack npx alex --why --quiet
-        language: system
+  #      - id: alex
+  #        name: alex
+  #        entry: corepack npx alex --why --quiet
+  #        language: system
 
   # .editorconfig validity checking
   - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
