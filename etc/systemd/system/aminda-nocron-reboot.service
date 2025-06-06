@@ -59,6 +59,7 @@ ExecStart=-systemctl enable --now chrony.service
 ExecStart=-systemctl enable --now chronyd.service
 ExecStart=-systemctl enable --now systemd-oomd.service systemd-oomd.socket
 ExecStart=-systemctl enable firewalld.service
+ExecStart=-systemctl --global enable foot-server.socket
 User=root
 StandardOutput=journal
 StandardError=journal
