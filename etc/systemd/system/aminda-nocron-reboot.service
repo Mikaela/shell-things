@@ -15,6 +15,10 @@ ExecStartPre=-chmod a+x /root /var/roothome
 ExecStartPre=-systemctl enable aminda-nocron-rebootish.service
 ExecStartPre=-systemctl enable  aminda-nocron-rebootish.timer
 ExecStartPre=-systemctl enable linuxbrew-permissions.timer
+# We trust the OS to have reasonable timer times
+ExecStartPre=-systemctl enable dnf-automatic-download.timer
+ExecStartPre=-systemctl enable rpm-ostreed-automatic.timer
+ExecStartPre=-systemctl enable flatpak-update.timer
 # In case we do have cron?
 ExecStartPre=-systemctl enable --now crond.service
 ExecStartPre=-systemctl enable --now linuxbrew-permissions.service
