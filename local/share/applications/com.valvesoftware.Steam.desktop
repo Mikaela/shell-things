@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=SteamDeck
+Exec=gamemoderun flatpak run com.valvesoftware.Steam -steamdeck %U
+Icon=com.valvesoftware.Steam
+Type=Application
+Hidden=false

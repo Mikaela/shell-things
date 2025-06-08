@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Steam autostart in big picture mode
-Exec=flatpak run com.valvesoftware.Steam -tenfoot -steamdeck
+Name=SteamDeck TV
+Exec=gamemoderun flatpak run com.valvesoftware.Steam -tenfoot -steamdeck
 Icon=com.valvesoftware.Steam
 Type=Application
 Hidden=false
