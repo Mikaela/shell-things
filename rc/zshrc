@@ -305,6 +305,11 @@ if [ -d /home/linuxbrew/.linuxbrew/bin ]; then
 	eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 fi
 
+# linuxbrew toolbox compatibility
+if [[ -d /run/host/var/home/linuxbrew && ! -d /home/linuxbrew ]]; then
+	sudo ln -nsfv /run/host/var/home/linuxbrew /home/linuxbrew
+fi
+
 # Removes duplicates from $PATH. Copied from https://unix.stackexchange.com/a/14896
 PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS; printf $a[$1]}')
 
