@@ -139,6 +139,10 @@ if [ "$(id -u)" == "0" ]; then
 		chmod -v a+x /var/roothome
 	fi
 
+	# Desktop entries
+	mkdir -vp /usr/local/share/applications/
+	cp -v local/share/applications/*.desktop /usr/local/share/applications/
+
 	# Enables laziness on checking whether or not apt is installed
 	mkdir -vp /etc/apt/apt.conf.d/
 	# Enables progress bar and colours for apt/dpkg, which are helpful at
