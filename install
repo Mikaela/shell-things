@@ -143,6 +143,21 @@ if [ "$(id -u)" == "0" ]; then
 	mkdir -vp /usr/local/share/applications/
 	cp -v local/share/applications/*.desktop /usr/local/share/applications/
 
+	# Profile configuration. SECURITY WARNING
+	cp -v etc/profile.d/*.sh /etc/profile.d/
+	chmod -v a+r /etc/profile.d/*.sh
+
+	# Kernel configuration. SECURITY WARNING
+	cp -v etc/sysctl.d/*.conf /etc/sysctl.d/
+	chmod -v a+r /etc/sysctl.d/*.conf
+	(sysctl -p --system &)
+
+	# SSHd hardening hopefully. SECURITY WARNING
+	mkdir -vp /etc/ssh/sshd_config.d/
+	chmod -v a+x /etc/ssh/sshd_config.d/
+	cp etc/ssh/sshd_config.d/00-basic-security.conf /etc/ssh/sshd_config.d/
+	chmod -v a+r /etc/ssh/sshd_config.d/*.conf
+
 	# Enables laziness on checking whether or not apt is installed
 	mkdir -vp /etc/apt/apt.conf.d/
 	# Enables progress bar and colours for apt/dpkg, which are helpful at
