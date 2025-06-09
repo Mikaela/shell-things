@@ -432,7 +432,7 @@
 			"{6003eac6-4b07-4aaf-960b-92fa006cd444}": {
 				"blocked_install_message": "Mozilla Orbit. AI hurts climate and the crawlers are DDoSing the internet. However the summary feature sometimes spares my mental health, so begrudgingly it's allowed and won't be normal_installed let alone force_installed.",
 				"default_area": "navbar",
-				"installation_mode": "allowed",
+				"installation_mode": "blocked",
 				"private_browsing": false,
 				"restricted_domains": []
 			},
@@ -650,7 +650,7 @@
 				"Value": 0
 			},
 			"browser.ml.chat.enabled": {
-				"Status": "clear",
+				"Status": "user",
 				"Type": "boolean",
 				"Value": false
 			},
@@ -658,6 +658,11 @@
 				"Status": "default",
 				"Type": "string",
 				"Value": "https://chat.mistral.ai/chat"
+			},
+			"browser.ml.linkPreview.enabled": {
+				"Status": "default",
+				"Type": "boolean",
+				"Value": true
 			},
 			"browser.preferences.moreFromMozilla": {
 				"Status": "default",
