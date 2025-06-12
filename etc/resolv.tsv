@@ -19,6 +19,11 @@ DNS0	https://dns0.eu	dns0.eu	2a0f:fc80::	2a0f:fc81::	193.110.81.0	185.253.5.0	ht
 DNS0 Kids	https://kids.dns0.eu	kids.dns0.eu	2a0f:fc80::1	2a0f:fc81::1	193.110.81.1	185.253.5.1	https://www.dns0.eu/kids.dns0.eu.mobileconfig	private	https://www.dns0.eu/privacy
 DNS0 Open (unfiltered, discouraged)	https://open.dns0.eu	open.dns0.eu	2a0f:fc80::ffff	2a0f:fc81::ffff	193.110.81.254	185.253.5.254	https://dns0.eu/open.dns0.eu.mobileconfig	private	https://www.dns0.eu/privacy
 DNS0 Zero	https://zero.dns0.eu	zero.dns0.eu	2a0f:fc80::9	2a0f:fc81::9	193.110.81.9	185.253.5.9	https://www.dns0.eu/zero.dns0.eu.mobileconfig	private	https://www.dns0.eu/privacy
+DNS4EU Protective	https://protective.joindns4.eu/dns-query	protective.joindns4.eu	2a13:1001::86:54:11:1	2a13:1001::86:54:11:201	86.54.11.1	86.54.11.201		no	I tested with https://dnscheck.tools
+DNS4EU Protective with adblocking	https://noads.joindns4.eu/dns-query	noads.joindns4.eu	2a13:1001::86:54:11:13	2a13:1001::86:54:11:213	86.54.11.13	86.54.11.213		no	I tested with https://dnscheck.tools
+DNS4EU Protective with child protection	https://child.joindns4.eu/dns-query	child.joindns4.eu	2a13:1001::86:54:11:12	2a13:1001::86:54:11:212	86.54.11.12	86.54.11.212		no	
+DNS4EU Protective with child protection and adblocking	https://child-noads.joindns4.eu/dns-query	child-noads.joindns4.eu	2a13:1001::86:54:11:11	2a13:1001::86:54:11:211	86.54.11.11	86.54.11.211		no	
+DNS4EU Unfiltered	https://unfiltered.joindns4.eu/dns-query	unfiltered.joindns4.eu	2a13:1001::86:54:11:100	2a13:1001::86:54:11:200	86.54.11.100	86.54.11.200		no	
 Google DNS (Android DoH3)	https://dns.google/dns-query	dns.google	2001:4860:4860::8888	2001:4860:4860::8844	8.8.8.8	8.8.4.4		yes	https://developers.google.com/speed/public-dns/docs/ecs
 Google DNS64 (Android DoH3)	https://dns64.dns.google/dns-query	dns64.dns.google	2001:4860:4860::6464	2001:4860:4860::64				probably	https://developers.google.com/speed/public-dns/docs/ecs
 Mullvad Adblock	https://adblock.dns.mullvad.net/dns-query	adblock.dns.mullvad.net	2a07:e340::3		194.242.2.3		https://github.com/mullvad/encrypted-dns-profiles	No 2023-03-11	I tested with https://gitea.blesmrt.net/mikaela/scripts/src/branch/master/bash/dns-ecs-debug.bash
