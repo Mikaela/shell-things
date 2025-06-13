@@ -59,6 +59,9 @@ cp -v conf/mpv.conf $HOME/.config/mpv/mpv.conf
 mkdir -vp $HOME/.var/app/io.mpv.Mpv/config/mpv
 cp -v conf/mpv.conf $HOME/.var/app/io.mpv.Mpv/config/mpv/mpv.conf
 
+# systemd
+mkdir -vp $HOME/.config/systemd/user/
+
 # if I am performing ident spoofing already, I don't want to touch it
 if [ ! -f $HOME/.oidentd.conf ]; then
 	cp -v conf/oidentd.conf $HOME/.oidentd.conf
@@ -157,6 +160,11 @@ if [ "$(id -u)" == "0" ]; then
 	chmod -v a+x /etc/ssh/sshd_config.d/
 	cp etc/ssh/sshd_config.d/00-basic-security.conf /etc/ssh/sshd_config.d/
 	chmod -v a+r /etc/ssh/sshd_config.d/*.conf
+
+	# Systemd configuration directories. No configuration placed, so safe.
+	mkdir -vp /etc/systemd/{system,system-preset,user,network}/
+	mkdir -vp /etc/systemd/system/{app.slice.d,service.d}/
+	mkdir -vp /etc/systemd/{coredump,login,oomd,journald,resolved,system,timesyncd}.conf.d/
 
 	# Enables laziness on checking whether or not apt is installed
 	mkdir -vp /etc/apt/apt.conf.d/
