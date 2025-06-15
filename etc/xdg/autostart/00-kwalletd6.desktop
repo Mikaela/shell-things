@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Exec=kwalletd6
+Icon=kwalletd6
+Terminal=false
+Name=KDE Wallet daemon
