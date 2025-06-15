@@ -615,8 +615,8 @@ alias gpg-export-minimal-binary="gpg --no-armor --export-options export-minimal 
 alias netstat-listening-ports="netstat -plntu"
 
 # mpv music & music shuffle
-alias mpvm="mpv --no-video"
-alias mpvms="mpv --no-video --shuffle"
+alias mpvm="mpv --no-resume-playback --no-video"
+alias mpvms="mpv --no-resume-playback --no-video --shuffle"
 
 # Compatibility with my i3 alsactl mess
 if [ -f ~/.config/asound.state ]; then
