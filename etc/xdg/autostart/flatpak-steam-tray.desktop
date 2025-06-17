@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=SteamDeck icon
-Exec=flatpak run com.valvesoftware.Steam -silent -steamdeck
+Exec=flatpak run --env=SteamDeck=1 com.valvesoftware.Steam -silent -steamdeck
 Icon=com.valvesoftware.Steam
 Type=Application
 Hidden=false
