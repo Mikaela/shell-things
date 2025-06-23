@@ -668,6 +668,10 @@ alias nordvpn-off2=nordvpn-offf
 # Consistency in flatpak commands
 alias flatpak="LANG=C.UTF-8 flatpak"
 
+if hash homebrew 2> /dev/null; then
+	alias brew=homebrew
+fi
+
 # Allow custom aliases to be put in .aliases or .zsh_aliases .
 
 # .aliases
