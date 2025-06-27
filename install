@@ -161,16 +161,22 @@ if [ "$(id -u)" == "0" ]; then
 	cp etc/ssh/sshd_config.d/00-basic-security.conf /etc/ssh/sshd_config.d/
 	chmod -v a+r /etc/ssh/sshd_config.d/*.conf
 
-	# Systemd configuration directories. No configuration placed, so safe.
+	# Systemd configuration directories. SECURITY WARNINGS!
 	mkdir -vp /etc/systemd/{system,system-preset,user,network}/
 	mkdir -vp /etc/systemd/system/{app.slice.d,service.d}/
-	mkdir -vp /etc/systemd/system/{ssh,sshd,sshguard,tor,yggdrasil}.service.d/
+	mkdir -vp /etc/systemd/{coredump,login,oomd,journald,resolved,system,timesyncd}.conf.d/
+	mkdir -vp /etc/systemd/system/{ssh,sshd,sshguard,systemd-resolved,systemd-networkd,NetworkManager,iwd,unbound,tor,yggdrasil}.service.d/
+	# SECURITY WARNING!
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/ssh.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/sshd.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/sshguard.service.d/
+	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/systemd-resolved.service.d/
+	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/systemd-networkd.service.d/
+	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/NetworkManager.service.d/
+	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/iwd.service.d/
+	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/unbound.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/tor.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/yggdrasil.service.d/
-	mkdir -vp /etc/systemd/{coredump,login,oomd,journald,resolved,system,timesyncd}.conf.d/
 
 	if hash systemctl 2> /dev/null; then
 		systemctl daemon-reload
