@@ -12,35 +12,35 @@ importers:
         version: 11.0.1
     devDependencies:
       "@aminda/global-prettier-config":
-        specifier: 2025.21.0
-        version: 2025.21.0
+        specifier: 2025.26.0
+        version: 2025.26.0
       "@prettier/plugin-ruby":
         specifier: 4.0.4
-        version: 4.0.4(prettier@3.5.3)
+        version: 4.0.4(prettier@3.6.2)
       "@prettier/plugin-xml":
         specifier: 3.4.1
-        version: 3.4.1(prettier@3.5.3)
+        version: 3.4.1(prettier@3.6.2)
       corepack:
         specifier: latest
-        version: 0.32.0
+        version: 0.33.0
       prettier:
-        specifier: 3.5.3
-        version: 3.5.3
+        specifier: 3.6.2
+        version: 3.6.2
       prettier-plugin-nginx:
         specifier: 1.0.3
         version: 1.0.3
       prettier-plugin-sh:
-        specifier: 0.17.4
-        version: 0.17.4(prettier@3.5.3)
+        specifier: 0.18.0
+        version: 0.18.0(prettier@3.6.2)
       prettier-plugin-toml:
         specifier: 2.0.5
-        version: 2.0.5(prettier@3.5.3)
+        version: 2.0.5(prettier@3.6.2)
 
 packages:
-  "@aminda/global-prettier-config@2025.21.0":
+  "@aminda/global-prettier-config@2025.26.0":
     resolution:
       {
-        integrity: sha512-2r7n24AgkOK5mHHNVagM0DADSWpYv1deF1eC80HMCoXKyuT0TSb+fMvZUfhi8w+S5DCZKzoTvQH3+3wFg7f3bA==,
+        integrity: sha512-Ny0MqK1QGNWRgR1SBbQtoupN0UmK/XYwx4uo12EI8ncEbtH6eyBJzIwes+EtCn/kXu9VzQONqnrryukjbmWOqg==,
       }
 
   "@babel/code-frame@7.27.1":
@@ -186,10 +186,10 @@ packages:
         integrity: sha512-52CcUVNFyfb1A2ALocQw/Dd1BQFNmSdkuC3BkZ6iqhdMfQz7JWOFRuJFloOzjk+6WijU56m9oKXFAXc7o3Towg==,
       }
 
-  "@types/estree@1.0.7":
+  "@types/estree@1.0.8":
     resolution:
       {
-        integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==,
+        integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==,
       }
 
   "@types/hast@2.3.10":
@@ -234,10 +234,10 @@ packages:
         integrity: sha512-ABoYdNQ/kBSsLvZAekMhIPMQ3YUZvavStpKYs7BjLLuKVmIMA0LUgZ7b54zzuWJRbHF80v1cNf4r90Vd6eMQDg==,
       }
 
-  "@types/node@18.19.110":
+  "@types/node@18.19.112":
     resolution:
       {
-        integrity: sha512-WW2o4gTmREtSnqKty9nhqF/vA0GKd0V/rbC0OyjSk9Bz6bzlsXKT+i7WDdS/a0z74rfT2PO4dArVCSnapNLA5Q==,
+        integrity: sha512-i+Vukt9POdS/MBI7YrrkkI5fMfwFtOjphSmt4WXYLfwqsfr6z/HdCx7LqT9M7JktGob8WNgj8nFB4TbGNE4Cog==,
       }
 
   "@types/normalize-package-data@2.4.4":
@@ -279,10 +279,10 @@ packages:
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
 
-  acorn@8.14.1:
+  acorn@8.15.0:
     resolution:
       {
-        integrity: sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==,
+        integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==,
       }
     engines: { node: ">=0.4.0" }
     hasBin: true
@@ -366,10 +366,10 @@ packages:
       }
     engines: { node: ">=14.16" }
 
-  brace-expansion@2.0.1:
+  brace-expansion@2.0.2:
     resolution:
       {
-        integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==,
+        integrity: sha512-Jt0vHyM+jmUBqojB7E1NIYadt0vI0Qxjxd2TErW94wDz+E2LAm5vKMXXwg6ZZBTHPuUlDgQHKXvjGBdfcF1ZDQ==,
       }
 
   bubble-stream-error@0.0.1:
@@ -529,10 +529,10 @@ packages:
         integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==,
       }
 
-  corepack@0.32.0:
+  corepack@0.33.0:
     resolution:
       {
-        integrity: sha512-KhahVUFy7xL8OTty/ToY646hXMQhih8rnvUkA9/qnk/u4QUF2+SbQneX/zZnDxG1NiABFm5ojZCWnIv93oyhhQ==,
+        integrity: sha512-XSX4BNjdwPXjUEk7/2r0vFhs1irwVncJRMyjzDel3PVKWnHQXehciX0WkvDrd1ujLLFJRe8FeZb9ASCqBtF/OA==,
       }
     engines: { node: ^18.17.1 || ^20.10.0 || >=22.11.0 }
     hasBin: true
@@ -590,10 +590,10 @@ packages:
       }
     engines: { node: ^12.20.0 || ^14.13.1 || >=16.0.0 }
 
-  decode-named-character-reference@1.1.0:
+  decode-named-character-reference@1.2.0:
     resolution:
       {
-        integrity: sha512-Wy+JTSbFThEOXQIR2L6mxJvEs+veIzpmqD7ynWxMXGpnk3smkHQOp6forLdHsKpAMW9iJpaBBIxz285t1n1C3w==,
+        integrity: sha512-c6fcElNV6ShtZXmsgNgFFV5tVX2PaV4g+MOAkb8eXHvn6sryJBrZa9r0zV6+dtTyoCKxtDy5tyQ5ZwQuidtd+Q==,
       }
 
   decompress-response@6.0.0:
@@ -662,10 +662,10 @@ packages:
         integrity: sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==,
       }
 
-  end-of-stream@1.4.4:
+  end-of-stream@1.4.5:
     resolution:
       {
-        integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==,
+        integrity: sha512-ooEGc6HP26xXq/N+GCGOT0JKCLDGrq2bQUZrQ7gyrJiZANJ/8YDTxTpQBXGMn+WbIQXNVpyWymm7KYVICQnyOg==,
       }
 
   error-ex@1.3.2:
@@ -1746,10 +1746,10 @@ packages:
       }
     engines: { node: ^12.13.0 || ^14.15.0 || >=16.0.0 }
 
-  normalize-url@8.0.1:
+  normalize-url@8.0.2:
     resolution:
       {
-        integrity: sha512-IO9QvjUMWxPQQhs60oOu10CRkWCiZzSUkzbXGGV9pviYl1fXYcvkzQ5jV9z8Y6un8ARoVRl4EtC6v6jNqbaJ/w==,
+        integrity: sha512-Ee/R3SyN4BuynXcnTaekmaVdbDAEiNrHqjQIA37mHU8G9pf7aaAD4ZX3XjBLo6rsdcxA/gtkcNYZLt30ACgynw==,
       }
     engines: { node: ">=14.16" }
 
@@ -1890,14 +1890,14 @@ packages:
         integrity: sha512-vV5q85s8XnV6NEgvz1gVLfZhmxAxY03MyOYj2ApBpjFkbs00lRsRkTmqO9L39ADuD18z1RRCcfZ3eVxKhI/nqg==,
       }
 
-  prettier-plugin-sh@0.17.4:
+  prettier-plugin-sh@0.18.0:
     resolution:
       {
-        integrity: sha512-aAVKXZ7GTEMZdZsIPSwMwddwPvt2ibMbRGd4OJAP0G7QoeYZV+mPNg2Oln3R53sZ4PVjeAA7Xzi/PuI0QlHHfQ==,
+        integrity: sha512-cW1XL27FOJQ/qGHOW6IHwdCiNWQsAgK+feA8V6+xUTaH0cD3Mh+tFAtBvEEWvuY6hTDzRV943Fzeii+qMOh7nQ==,
       }
     engines: { node: ">=16.0.0" }
     peerDependencies:
-      prettier: ^3.0.3
+      prettier: ^3.6.0
 
   prettier-plugin-toml@2.0.5:
     resolution:
@@ -1908,10 +1908,10 @@ packages:
     peerDependencies:
       prettier: ^3.0.3
 
-  prettier@3.5.3:
+  prettier@3.6.2:
     resolution:
       {
-        integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==,
+        integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==,
       }
     engines: { node: ">=14" }
     hasBin: true
@@ -2704,15 +2704,15 @@ packages:
       }
 
 snapshots:
-  "@aminda/global-prettier-config@2025.21.0":
+  "@aminda/global-prettier-config@2025.26.0":
     dependencies:
-      "@prettier/plugin-ruby": 4.0.4(prettier@3.5.3)
-      "@prettier/plugin-xml": 3.4.1(prettier@3.5.3)
-      corepack: 0.32.0
-      prettier: 3.5.3
+      "@prettier/plugin-ruby": 4.0.4(prettier@3.6.2)
+      "@prettier/plugin-xml": 3.4.1(prettier@3.6.2)
+      corepack: 0.33.0
+      prettier: 3.6.2
       prettier-plugin-nginx: 1.0.3
-      prettier-plugin-sh: 0.17.4(prettier@3.5.3)
-      prettier-plugin-toml: 2.0.5(prettier@3.5.3)
+      prettier-plugin-sh: 0.18.0(prettier@3.6.2)
+      prettier-plugin-toml: 2.0.5(prettier@3.6.2)
 
   "@babel/code-frame@7.27.1":
     dependencies:
@@ -2766,14 +2766,14 @@ snapshots:
       "@pnpm/network.ca-file": 1.0.2
       config-chain: 1.1.13
 
-  "@prettier/plugin-ruby@4.0.4(prettier@3.5.3)":
+  "@prettier/plugin-ruby@4.0.4(prettier@3.6.2)":
     dependencies:
-      prettier: 3.5.3
+      prettier: 3.6.2
 
-  "@prettier/plugin-xml@3.4.1(prettier@3.5.3)":
+  "@prettier/plugin-xml@3.4.1(prettier@3.6.2)":
     dependencies:
       "@xml-tools/parser": 1.0.11
-      prettier: 3.5.3
+      prettier: 3.6.2
 
   "@reteps/dockerfmt@0.3.6": {}
 
@@ -2791,11 +2791,11 @@ snapshots:
 
   "@types/acorn@4.0.6":
     dependencies:
-      "@types/estree": 1.0.7
+      "@types/estree": 1.0.8
 
   "@types/concat-stream@2.0.3":
     dependencies:
-      "@types/node": 18.19.110
+      "@types/node": 18.19.112
 
   "@types/debug@4.1.12":
     dependencies:
@@ -2803,9 +2803,9 @@ snapshots:
 
   "@types/estree-jsx@1.0.5":
     dependencies:
-      "@types/estree": 1.0.7
+      "@types/estree": 1.0.8
 
-  "@types/estree@1.0.7": {}
+  "@types/estree@1.0.8": {}
 
   "@types/hast@2.3.10":
     dependencies:
@@ -2827,7 +2827,7 @@ snapshots:
     dependencies:
       "@types/unist": 2.0.11
 
-  "@types/node@18.19.110":
+  "@types/node@18.19.112":
     dependencies:
       undici-types: 5.26.5
 
@@ -2843,11 +2843,11 @@ snapshots:
 
   abbrev@2.0.0: {}
 
-  acorn-jsx@5.3.2(acorn@8.14.1):
+  acorn-jsx@5.3.2(acorn@8.15.0):
     dependencies:
-      acorn: 8.14.1
+      acorn: 8.15.0
 
-  acorn@8.14.1: {}
+  acorn@8.15.0: {}
 
   alex@11.0.1:
     dependencies:
@@ -2910,7 +2910,7 @@ snapshots:
       widest-line: 4.0.1
       wrap-ansi: 8.1.0
 
-  brace-expansion@2.0.1:
+  brace-expansion@2.0.2:
     dependencies:
       balanced-match: 1.0.2
 
@@ -2932,7 +2932,7 @@ snapshots:
       http-cache-semantics: 4.2.0
       keyv: 4.5.4
       mimic-response: 4.0.0
-      normalize-url: 8.0.1
+      normalize-url: 8.0.2
       responselike: 3.0.0
 
   camelcase-keys@8.0.2:
@@ -2996,7 +2996,7 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  corepack@0.32.0: {}
+  corepack@0.33.0: {}
 
   cross-spawn@7.0.6:
     dependencies:
@@ -3023,7 +3023,7 @@ snapshots:
 
   decamelize@6.0.0: {}
 
-  decode-named-character-reference@1.1.0:
+  decode-named-character-reference@1.2.0:
     dependencies:
       character-entities: 2.0.2
 
@@ -3051,7 +3051,7 @@ snapshots:
 
   emoji-regex@9.2.2: {}
 
-  end-of-stream@1.4.4:
+  end-of-stream@1.4.5:
     dependencies:
       once: 1.4.0
 
@@ -3408,7 +3408,7 @@ snapshots:
     dependencies:
       "@types/mdast": 3.0.15
       "@types/unist": 2.0.11
-      decode-named-character-reference: 1.1.0
+      decode-named-character-reference: 1.2.0
       mdast-util-to-string: 3.2.0
       micromark: 3.2.0
       micromark-util-decode-numeric-character-reference: 1.1.0
@@ -3565,7 +3565,7 @@ snapshots:
 
   micromark-core-commonmark@1.1.0:
     dependencies:
-      decode-named-character-reference: 1.1.0
+      decode-named-character-reference: 1.2.0
       micromark-factory-destination: 1.1.0
       micromark-factory-label: 1.1.0
       micromark-factory-space: 1.1.0
@@ -3649,7 +3649,7 @@ snapshots:
 
   micromark-extension-mdx-expression@1.0.8:
     dependencies:
-      "@types/estree": 1.0.7
+      "@types/estree": 1.0.8
       micromark-factory-mdx-expression: 1.0.9
       micromark-factory-space: 1.1.0
       micromark-util-character: 1.2.0
@@ -3661,7 +3661,7 @@ snapshots:
   micromark-extension-mdx-jsx@1.0.5:
     dependencies:
       "@types/acorn": 4.0.6
-      "@types/estree": 1.0.7
+      "@types/estree": 1.0.8
       estree-util-is-identifier-name: 2.1.0
       micromark-factory-mdx-expression: 1.0.9
       micromark-factory-space: 1.1.0
@@ -3677,7 +3677,7 @@ snapshots:
 
   micromark-extension-mdxjs-esm@1.0.5:
     dependencies:
-      "@types/estree": 1.0.7
+      "@types/estree": 1.0.8
       micromark-core-commonmark: 1.1.0
       micromark-util-character: 1.2.0
       micromark-util-events-to-acorn: 1.2.3
@@ -3689,8 +3689,8 @@ snapshots:
 
   micromark-extension-mdxjs@1.0.1:
     dependencies:
-      acorn: 8.14.1
-      acorn-jsx: 5.3.2(acorn@8.14.1)
+      acorn: 8.15.0
+      acorn-jsx: 5.3.2(acorn@8.15.0)
       micromark-extension-mdx-expression: 1.0.8
       micromark-extension-mdx-jsx: 1.0.5
       micromark-extension-mdx-md: 1.0.1
@@ -3713,7 +3713,7 @@ snapshots:
 
   micromark-factory-mdx-expression@1.0.9:
     dependencies:
-      "@types/estree": 1.0.7
+      "@types/estree": 1.0.8
       micromark-util-character: 1.2.0
       micromark-util-events-to-acorn: 1.2.3
       micromark-util-symbol: 1.1.0
@@ -3767,7 +3767,7 @@ snapshots:
 
   micromark-util-decode-string@1.1.0:
     dependencies:
-      decode-named-character-reference: 1.1.0
+      decode-named-character-reference: 1.2.0
       micromark-util-character: 1.2.0
       micromark-util-decode-numeric-character-reference: 1.1.0
       micromark-util-symbol: 1.1.0
@@ -3777,7 +3777,7 @@ snapshots:
   micromark-util-events-to-acorn@1.2.3:
     dependencies:
       "@types/acorn": 4.0.6
-      "@types/estree": 1.0.7
+      "@types/estree": 1.0.8
       "@types/unist": 2.0.11
       estree-util-visit: 1.2.1
       micromark-util-symbol: 1.1.0
@@ -3816,7 +3816,7 @@ snapshots:
     dependencies:
       "@types/debug": 4.1.12
       debug: 4.4.1
-      decode-named-character-reference: 1.1.0
+      decode-named-character-reference: 1.2.0
       micromark-core-commonmark: 1.1.0
       micromark-factory-space: 1.1.0
       micromark-util-character: 1.2.0
@@ -3842,11 +3842,11 @@ snapshots:
 
   minimatch@5.1.6:
     dependencies:
-      brace-expansion: 2.0.1
+      brace-expansion: 2.0.2
 
   minimatch@9.0.5:
     dependencies:
-      brace-expansion: 2.0.1
+      brace-expansion: 2.0.2
 
   minimist-options@4.1.0:
     dependencies:
@@ -3905,7 +3905,7 @@ snapshots:
       semver: 7.7.2
       validate-npm-package-license: 3.0.4
 
-  normalize-url@8.0.1: {}
+  normalize-url@8.0.2: {}
 
   npm-normalize-package-bin@3.0.1: {}
 
@@ -3946,7 +3946,7 @@ snapshots:
       "@types/unist": 2.0.11
       character-entities-legacy: 3.0.0
       character-reference-invalid: 2.0.1
-      decode-named-character-reference: 1.1.0
+      decode-named-character-reference: 1.2.0
       is-alphanumerical: 2.0.1
       is-decimal: 2.0.1
       is-hexadecimal: 2.0.1
@@ -3992,18 +3992,18 @@ snapshots:
 
   prettier-plugin-nginx@1.0.3: {}
 
-  prettier-plugin-sh@0.17.4(prettier@3.5.3):
+  prettier-plugin-sh@0.18.0(prettier@3.6.2):
     dependencies:
       "@reteps/dockerfmt": 0.3.6
-      prettier: 3.5.3
+      prettier: 3.6.2
       sh-syntax: 0.5.8
 
-  prettier-plugin-toml@2.0.5(prettier@3.5.3):
+  prettier-plugin-toml@2.0.5(prettier@3.6.2):
     dependencies:
       "@taplo/lib": 0.5.0
-      prettier: 3.5.3
+      prettier: 3.6.2
 
-  prettier@3.5.3: {}
+  prettier@3.6.2: {}
 
   proc-log@3.0.0: {}
 
@@ -4021,7 +4021,7 @@ snapshots:
 
   pump@1.0.3:
     dependencies:
-      end-of-stream: 1.4.4
+      end-of-stream: 1.4.5
       once: 1.4.0
 
   pupa@3.1.0:
@@ -4348,7 +4348,7 @@ snapshots:
       "@types/concat-stream": 2.0.3
       "@types/debug": 4.1.12
       "@types/is-empty": 1.2.3
-      "@types/node": 18.19.110
+      "@types/node": 18.19.112
       "@types/unist": 2.0.11
       concat-stream: 2.0.0
       debug: 4.4.1
