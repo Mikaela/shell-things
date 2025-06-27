@@ -164,7 +164,17 @@ if [ "$(id -u)" == "0" ]; then
 	# Systemd configuration directories. No configuration placed, so safe.
 	mkdir -vp /etc/systemd/{system,system-preset,user,network}/
 	mkdir -vp /etc/systemd/system/{app.slice.d,service.d}/
+	mkdir -vp /etc/systemd/system/{ssh,sshd,sshguard,tor,yggdrasil}.service.d/
+	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/ssh.service.d/
+	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/sshd.service.d/
+	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/sshguard.service.d/
+	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/tor.service.d/
+	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/yggdrasil.service.d/
 	mkdir -vp /etc/systemd/{coredump,login,oomd,journald,resolved,system,timesyncd}.conf.d/
+
+	if hash systemctl 2> /dev/null; then
+		systemctl daemon-reload
+	fi
 
 	# Enables laziness on checking whether or not apt is installed
 	mkdir -vp /etc/apt/apt.conf.d/
