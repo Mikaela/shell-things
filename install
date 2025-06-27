@@ -164,7 +164,9 @@ if [ "$(id -u)" == "0" ]; then
 	# Systemd configuration directories. SECURITY WARNINGS!
 	mkdir -vp /etc/systemd/{system,system-preset,user,network}/
 	mkdir -vp /etc/systemd/system/{app.slice.d,service.d}/
+	cp -v etc/systemd/system/app.slice.d/90-cpuquota.conf /etc/systemd/system/app.slice.d/90-cpuquota.conf
 	mkdir -vp /etc/systemd/{coredump,login,oomd,journald,resolved,system,timesyncd}.conf.d/
+	cp -v etc/systemd/oomd.conf.d/20-oomd.conf /etc/systemd/oomd.conf.d/20-oomd.conf
 	mkdir -vp /etc/systemd/system/{ssh,sshd,sshguard,systemd-resolved,systemd-networkd,NetworkManager,iwd,unbound,tor,yggdrasil}.service.d/
 	# SECURITY WARNING!
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/ssh.service.d/
