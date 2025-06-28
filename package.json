@@ -1,11 +1,9 @@
 {
-	"dependencies": {
-		"alex": "^11.0.1"
-	},
 	"devDependencies": {
 		"@aminda/global-prettier-config": "2025.26.0",
 		"@prettier/plugin-ruby": "4.0.4",
 		"@prettier/plugin-xml": "3.4.1",
+		"alex": "^11.0.1",
 		"corepack": "latest",
 		"prettier": "3.6.2",
 		"prettier-plugin-nginx": "1.0.3",

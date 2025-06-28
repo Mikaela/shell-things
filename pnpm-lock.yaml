@@ -6,10 +6,6 @@ settings:
 
 importers:
   .:
-    dependencies:
-      alex:
-        specifier: ^11.0.1
-        version: 11.0.1
     devDependencies:
       "@aminda/global-prettier-config":
         specifier: 2025.26.0
@@ -20,6 +16,9 @@ importers:
       "@prettier/plugin-xml":
         specifier: 3.4.1
         version: 3.4.1(prettier@3.6.2)
+      alex:
+        specifier: ^11.0.1
+        version: 11.0.1
       corepack:
         specifier: latest
         version: 0.33.0
@@ -234,10 +233,10 @@ packages:
         integrity: sha512-ABoYdNQ/kBSsLvZAekMhIPMQ3YUZvavStpKYs7BjLLuKVmIMA0LUgZ7b54zzuWJRbHF80v1cNf4r90Vd6eMQDg==,
       }
 
-  "@types/node@18.19.112":
+  "@types/node@18.19.113":
     resolution:
       {
-        integrity: sha512-i+Vukt9POdS/MBI7YrrkkI5fMfwFtOjphSmt4WXYLfwqsfr6z/HdCx7LqT9M7JktGob8WNgj8nFB4TbGNE4Cog==,
+        integrity: sha512-TmSTE9vyebJ9vSEiU+P+0Sp4F5tMgjiEOZaQUW6wA3ODvi6uBgkHQ+EsIu0pbiKvf9QHEvyRCiaz03rV0b+IaA==,
       }
 
   "@types/normalize-package-data@2.4.4":
@@ -2795,7 +2794,7 @@ snapshots:
 
   "@types/concat-stream@2.0.3":
     dependencies:
-      "@types/node": 18.19.112
+      "@types/node": 18.19.113
 
   "@types/debug@4.1.12":
     dependencies:
@@ -2827,7 +2826,7 @@ snapshots:
     dependencies:
       "@types/unist": 2.0.11
 
-  "@types/node@18.19.112":
+  "@types/node@18.19.113":
     dependencies:
       undici-types: 5.26.5
 
@@ -4348,7 +4347,7 @@ snapshots:
       "@types/concat-stream": 2.0.3
       "@types/debug": 4.1.12
       "@types/is-empty": 1.2.3
-      "@types/node": 18.19.112
+      "@types/node": 18.19.113
       "@types/unist": 2.0.11
       concat-stream: 2.0.0
       debug: 4.4.1
