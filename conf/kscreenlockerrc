@@ -2,3 +2,9 @@
 # Lock screen on login (for combination with autologin)
 [Daemon]
 LockOnStart=true
+
+[Greeter]
+WallpaperPlugin=org.kde.color
+
+[Greeter][Wallpaper][org.kde.color][General]
+Color=0,0,0
