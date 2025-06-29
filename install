@@ -62,6 +62,9 @@ cp -v conf/mpv.conf $HOME/.var/app/io.mpv.Mpv/config/mpv/mpv.conf
 # systemd
 mkdir -vp $HOME/.config/systemd/user/
 
+# Create KDE expected config files
+touch $HOME/.config/k{screenlocker,xkb}rc
+
 # if I am performing ident spoofing already, I don't want to touch it
 if [ ! -f $HOME/.oidentd.conf ]; then
 	cp -v conf/oidentd.conf $HOME/.oidentd.conf
