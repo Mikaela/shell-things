@@ -17,6 +17,10 @@ if [ "$(id -u)" != "0" ]; then
 	mkdir -vp "$HOME/.local/share/flatpak/extension/org.chromium.Chromium.Extension.system-policies/$(uname -m)/1/managed"
 	mkdir -vp "$HOME/.local/share/flatpak/extension/org.chromium.Chromium.Extension.system-policies/$(uname -m)/1/recommended"
 
+	# Chrome Flatpak
+	mkdir -vp "$HOME/.local/share/flatpak/extension/com.google.Chrome.Extension.system-policies/$(uname -m)/1/managed"
+	mkdir -vp "$HOME/.local/share/flatpak/extension/com.google.Chrome.Extension.system-policies/$(uname -m)/1/recommended"
+
 	echo "...but flatpaks were more or less handled."
 	exit 0
 fi
@@ -108,5 +112,9 @@ chmod -v a+r /var/lib/flatpak/app/org.mozilla.firefox/current/active/files/lib/f
 # Chromium Flatpak
 mkdir -vp "/var/lib/flatpak/extension/org.chromium.Chromium.Extension.system-policies/$(uname -m)/1/"
 cp -rv /etc/opt/chromium/policies/ "/var/lib/flatpak/extension/org.chromium.Chromium.Extension.system-policies/$(uname -m)/1/"
+
+# Chrome Flatpak
+mkdir -vp "/var/lib/flatpak/extension/com.google.Chrome.Extension.system-policies/$(uname -m)/1/"
+cp -rv /etc/opt/chromium/policies/ "/var/lib/flatpak/extension/com.google.Chrome.Extension.system-policies/$(uname -m)/1/"
 
 set +x
