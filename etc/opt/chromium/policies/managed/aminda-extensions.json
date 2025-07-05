@@ -271,8 +271,8 @@
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"ddkjiahejlhfcafbddmgiahcphecmpfh": {
-			"blocked_install_message": "uBlock Origin Lite. Force installed simultaneously with uBlock Origin for the transition period after which uBo is removed.",
-			"installation_mode": "force_installed",
+			"blocked_install_message": "uBlock Origin Lite",
+			"installation_mode": "normal_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
