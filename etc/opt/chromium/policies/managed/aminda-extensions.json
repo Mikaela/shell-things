@@ -221,6 +221,13 @@
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
+		"apmicgkbejflkgeljipcebaoeigmangd": {
+			"blocked_install_message": "Keep Awake (Display | System)",
+			"installation_mode": "allowed",
+			"override_update_url": true,
+			"toolbar_pin": "force_pinned",
+			"update_url": "https://clients2.google.com/service/update2/crx"
+		},
 		"bkdgflcldnnnapblkhphbgpggdiikppg": {
 			"blocked_install_message": "DuckDuckGo (Chrome Web Store)",
 			"installation_mode": "allowed",
@@ -378,6 +385,13 @@
 		"ldpochfccmkkmhdbclfhpagapcfdljkj": {
 			"blocked_install_message": "DecentralEyes (ManifestV3?)",
 			"installation_mode": "normal_installed",
+			"override_update_url": true,
+			"toolbar_pin": "force_pinned",
+			"update_url": "https://clients2.google.com/service/update2/crx"
+		},
+		"lncamcnihkpmnbpioiooedpmmpaaohnb": {
+			"blocked_install_message": "Battery Status",
+			"installation_mode": "allowed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
