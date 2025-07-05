@@ -375,6 +375,13 @@
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
+		"ldpochfccmkkmhdbclfhpagapcfdljkj": {
+			"blocked_install_message": "DecentralEyes (ManifestV3?)",
+			"installation_mode": "normal_installed",
+			"override_update_url": true,
+			"toolbar_pin": "force_pinned",
+			"update_url": "https://clients2.google.com/service/update2/crx"
+		},
 		"mafpmfcccpbjnhfhjnllmmalhifmlcie": {
 			"blocked_install_message": "Tor Snowflake",
 			"installation_mode": "allowed",
@@ -397,7 +404,7 @@
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"njdfdhgcmkocbgbhcioffdbicglldapd": {
-			"blocked_install_message": "LocalCDN",
+			"blocked_install_message": "LocalCDN (ManifestV2?)",
 			"installation_mode": "normal_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
