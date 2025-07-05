@@ -145,7 +145,7 @@
 						],
 						[
 							"parseAllABPHideFilters",
-							"true"
+							"false"
 						],
 						[
 							"suspendUntilListsAreLoaded",

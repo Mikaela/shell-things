@@ -100,7 +100,7 @@
 					],
 					[
 						"parseAllABPHideFilters",
-						"true"
+						"false"
 					],
 					[
 						"suspendUntilListsAreLoaded",
