@@ -52,6 +52,43 @@
 				"jid1-ZAdIEUB7XOzOJw@jetpack": {
 					"hasSeenPostInstall": true
 				},
+				"uBOLiteRedux@raymondhill.net": {
+					"disableFirstRunPage": true,
+					"noFiltering": [
+						"accountscenter.facebook.com",
+						"accountscenter.instagram.com",
+						"accounts.google.com",
+						"auth-prod.megical.com",
+						"challenges.cloudflare.com",
+						"chrome-extension-scheme",
+						"kansalainen.kanta.fi",
+						"kanta.fi",
+						"klarna.com",
+						"moz-extension-scheme",
+						"myaccount.google.com",
+						"omakanta.kanta.fi",
+						"oma.kela.fi",
+						"omavero.vero.fi",
+						"pp-attester-turnstile.research.cloudflare.com",
+						"research.cloudflare.com",
+						"suomi.fi",
+						"tunnistautuminen.suomi.fi",
+						"tunnistus.telia.fi",
+						"www.ecosia.org",
+						"www.npmjs.com",
+						"www.suomi.fi"
+					],
+					"rulesets": [
+						"+default",
+						"+badware",
+						"+block-lan",
+						"+openphish-domains",
+						"+urlhaus-full",
+						"+fin-0",
+						"+annoyances-cookies",
+						"+annoyances-overlays"
+					]
+				},
 				"uBlock0@raymondhill.net": {
 					"advancedSettings": [
 						[
@@ -362,6 +399,13 @@
 				"blocked_install_message": "uBlock Origin Lite. Unmaintained on addons.mozilla.org",
 				"default_area": "navbar",
 				"installation_mode": "blocked",
+				"private_browsing": true,
+				"restricted_domains": []
+			},
+			"uBOLiteRedux@raymondhill.net": {
+				"blocked_install_message": "uBlock Origin Lite. Self-distributed",
+				"default_area": "navbar",
+				"installation_mode": "allowed",
 				"private_browsing": true,
 				"restricted_domains": []
 			},
