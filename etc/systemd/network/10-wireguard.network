@@ -3,3 +3,7 @@ Type=wireguard
 
 [Link]
 Unmanaged=true
+
+[Network]
+LLMNR=false
+MulticastDNS=false

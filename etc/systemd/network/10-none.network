@@ -4,3 +4,7 @@ Type=none
 
 [Link]
 Unmanaged=true
+
+[Network]
+LLMNR=false
+MulticastDNS=false
