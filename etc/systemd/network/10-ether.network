@@ -9,8 +9,10 @@ ActivationPolicy=always-up
 Unmanaged=false
 
 [Network]
-LLMNR=resolve
-MulticastDNS=resolve
+#LLMNR=resolve
+#MulticastDNS=resolve
+LLMNR=true
+MulticastDNS=true
 DHCP=true
 IPv6PrivacyExtensions=true
 IPv6LinkLocalAddressGenerationMode=stable-privacy
