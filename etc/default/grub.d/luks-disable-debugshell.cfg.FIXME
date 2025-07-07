@@ -1,0 +1,8 @@
+# Disable access to emergency root/debug shell upon wrong password entered.
+# https://insinuator.net/2025/07/insecure-boot-injecting-initramfs-from-a-debug-shell/
+
+# Debian
+#GRUB_CMDLINE_LINUX_DEFAULT="$GRUB_CMDLINE_LINUX_DEFAULT panic=0"
+
+# Fedora
+#GRUB_CMDLINE_LINUX_DEFAULT="$GRUB_CMDLINE_LINUX_DEFAULT rd.shell=0 rd.emergency=halt"
