@@ -116,6 +116,7 @@
 				"defaultFiltering": "basic",
 				"disableFirstRunPage": true,
 				"noFiltering": [
+					"-all-urls",
 					"accountscenter.facebook.com",
 					"accountscenter.instagram.com",
 					"accounts.google.com",
@@ -140,15 +141,10 @@
 					"www.suomi.fi"
 				],
 				"rulesets": [
+					"-*",
 					"+default",
-					"+badware",
 					"+block-lan",
-					"+adguard-spyware-url",
-					"+openphish-domains",
-					"+urlhaus-full",
-					"+fin-0",
-					"+dpollock-0",
-					"+stevenblack-hosts"
+					"+fin-0"
 				],
 				"showBlockedCount": true
 			},
