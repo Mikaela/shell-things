@@ -53,6 +53,7 @@
 					"hasSeenPostInstall": true
 				},
 				"uBOLiteRedux@raymondhill.net": {
+					"defaultFiltering": "basic",
 					"disableFirstRunPage": true,
 					"noFiltering": [
 						"accountscenter.facebook.com",
@@ -82,12 +83,14 @@
 						"+default",
 						"+badware",
 						"+block-lan",
+						"+adguard-spyware-url",
 						"+openphish-domains",
 						"+urlhaus-full",
 						"+fin-0",
-						"+annoyances-cookies",
-						"+annoyances-overlays"
-					]
+						"+dpollock-0",
+						"+stevenblack-hosts"
+					],
+					"showBlockedCount": true
 				},
 				"uBlock0@raymondhill.net": {
 					"advancedSettings": [
@@ -608,7 +611,7 @@
 		"LegacySameSiteCookieBehaviorEnabled": false,
 		"NetworkPrediction": false,
 		"NewTabPage": true,
-		"OverrideFirstRunPage": "about:mozilla|https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide|https://addons.mozilla.org/firefox/addon/noscript/",
+		"OverrideFirstRunPage": "about:mozilla|https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide|https://addons.mozilla.org/firefox/addon/noscript/|https://github.com/uBlockOrigin/uBOL-home/blob/main/README.md#ubo-lite",
 		"PDFjs": {
 			"EnablePermissions": false,
 			"Enabled": true

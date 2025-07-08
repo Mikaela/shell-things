@@ -113,6 +113,7 @@
 				]
 			},
 			"ddkjiahejlhfcafbddmgiahcphecmpfh": {
+				"defaultFiltering": "basic",
 				"disableFirstRunPage": true,
 				"noFiltering": [
 					"accountscenter.facebook.com",
@@ -142,12 +143,14 @@
 					"+default",
 					"+badware",
 					"+block-lan",
+					"+adguard-spyware-url",
 					"+openphish-domains",
 					"+urlhaus-full",
 					"+fin-0",
-					"+annoyances-cookies",
-					"+annoyances-overlays"
-				]
+					"+dpollock-0",
+					"+stevenblack-hosts"
+				],
+				"showBlockedCount": true
 			},
 			"nngceckbapebfimnlniiiahkandclblb": {
 				"environment": {
