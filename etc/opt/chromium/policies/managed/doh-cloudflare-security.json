@@ -1,4 +1,4 @@
 {
-	"DnsOverHttpsMode": "automatic",
+	"DnsOverHttpsMode": "secure",
 	"DnsOverHttpsTemplates": "https://security.cloudflare-dns.com/dns-query?dns"
 }

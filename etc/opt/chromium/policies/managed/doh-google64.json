@@ -1,4 +1,4 @@
 {
-	"DnsOverHttpsMode": "automatic",
+	"DnsOverHttpsMode": "secure",
 	"DnsOverHttpsTemplates": "https://dns64.dns.google/dns-query?dns"
 }

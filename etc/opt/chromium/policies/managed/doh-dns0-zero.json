@@ -1,4 +1,4 @@
 {
-	"DnsOverHttpsMode": "automatic",
+	"DnsOverHttpsMode": "secure",
 	"DnsOverHttpsTemplates": "https://zero.dns0.eu/"
 }

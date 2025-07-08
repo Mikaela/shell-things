@@ -1,4 +1,4 @@
 {
-	"DnsOverHttpsMode": "automatic",
+	"DnsOverHttpsMode": "secure",
 	"DnsOverHttpsTemplates": "https://protective.joindns4.eu/dns-query?dns"
 }
