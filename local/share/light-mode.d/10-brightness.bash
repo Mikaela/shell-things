@@ -1,0 +1,1 @@
+../dark-mode.d/10-brightness.bash
