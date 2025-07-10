@@ -19,3 +19,11 @@ else
 	echo "$ERRORMESSAGE"
 	notify-send --app-name="darkman" --icon=error "$ERRORMESSAGE"
 fi
+
+if hash qdbus-qt6 2> /dev/null; then
+	QTDBUSBIN=qdbus-qt6
+elif hash qdbus6 2> /dev/null; then
+	QTDBUSBIN=qdbus6
+else
+	QTDBUSBIN=qdbus
+fi
