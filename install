@@ -170,18 +170,23 @@ if [ "$(id -u)" == "0" ]; then
 	cp -v etc/systemd/system/app.slice.d/90-cpuquota.conf /etc/systemd/system/app.slice.d/90-cpuquota.conf
 	mkdir -vp /etc/systemd/{coredump,login,oomd,journald,resolved,system,timesyncd}.conf.d/
 	cp -v etc/systemd/oomd.conf.d/20-oomd.conf /etc/systemd/oomd.conf.d/20-oomd.conf
-	mkdir -vp /etc/systemd/system/{ssh,sshd,sshguard,systemd-resolved,systemd-networkd,NetworkManager,iwd,unbound,tor,yggdrasil}.service.d/
+	mkdir -vp /etc/systemd/system/{ssh,sshd,sshguard,systemd-resolved,systemd-networkd,NetworkManager,iwd,unbound,tor,oidentd,yggdrasil}.service.d/
+	mkdir -vp /etc/systemd/system/{ssh,sshd,oidentd}.socket.d/
 	# SECURITY WARNING!
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/ssh.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/sshd.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/sshguard.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/systemd-resolved.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/systemd-networkd.service.d/
+	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/oidentd.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/NetworkManager.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/iwd.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/unbound.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/tor.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/yggdrasil.service.d/
+	cp -v etc/systemd/system/socket.d/dualstack-bind.conf /etc/systemd/system/ssh.socket.d/
+	cp -v etc/systemd/system/socket.d/dualstack-bind.conf /etc/systemd/system/sshd.socket.d/
+	cp -v etc/systemd/system/socket.d/dualstack-bind.conf /etc/systemd/system/oidentd.socket.d/
 
 	if hash systemctl 2> /dev/null; then
 		systemctl daemon-reload
