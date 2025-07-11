@@ -55,8 +55,9 @@ ExecStart=-firewall-cmd --permanent --add-port=6771/udp --zone=home
 #ExecStart=-/root/fixcontroller.py
 # This is actually in the delayed variant of this service, but anyway
 ExecStart=-systemctl enable --now yggdrasil.service
-ExecStart=-systemctl enable --now ssh.service
-ExecStart=-systemctl enable --now sshd.service
+ExecStart=-systemctl enable --now avahi-daemon.socket
+ExecStart=-systemctl enable --now ssh.socket
+ExecStart=-systemctl enable --now sshd.socket
 ExecStart=-systemctl enable --now sshguard.service
 ExecStart=-systemctl enable --now unbound.service
 ExecStart=-systemctl enable --now chrony.service
