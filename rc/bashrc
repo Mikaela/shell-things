@@ -167,31 +167,8 @@ if hash lsb_release 2> /dev/null; then
 
 	# Only print motivational phrases if username is aminda or mikaela or deck
 	if [[ $(whoami) == aminda ]] || [[ $(whoami) == mikaela ]] || [[ $(whoami) == deck ]]; then
-		if hash python3 2> /dev/null; then
-			(
-				# Motivational messages
-				# Tavun OM värähtely poistaa ylpeyttä, MA kateutta, NI takertumista. PE leikkaa tietämättömyyden läpi, ME hälventää ahneuden ja rintakehässä värähtelevä HUNG muuntaa vihan.
-				# Kuinka asiat ovat (s. 74-75) - Lama Ole Nydahl
-				# Illusions I & II - Richard Bach were quoted as well
-				python3 -c 'print("""
-Aferoj emas funkcii sin mem...\tOM MANI PEME HUNG...
-
-\tHere is a test to find whether your mission on earth is finished:
-\t\tIf you’re alive, it isn’t.
-\tYou are a perfect expression of perfect Love, here and now.
-
-\t\t\tMemoru ankauh
-\t- Know fear. Face fears. Fluff the SPOTLIGHT EFFECT! Break the
-\t  SPIRAL OF SILENCE!
-\t- Act Like You Belong. And you shall belong.
-\t- Leave the world a better place than you found it. Remember
-\t  EMPATHY, SYMPATHY and COMPASSION! Let them lead you to KINDNESS!
-\t- May your heart be your guiding key ;)
-\t- MEMENTO VIVERE
-""")'
-			)
-			printf "\tMake your tech grayscale painting your life with colours\n"
-
+		if [ -f $HOME/.shell-things/.mikaela/motivational-message.txt ]; then
+			tail -n +1 $HOME/.shell-things/.mikaela/motivational-message.txt | grep -v '#'
 		fi
 	elif [[ "$(id -u)" == "0" ]]; then
 		# This comes from Charybdis IRCd
