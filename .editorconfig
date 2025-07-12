@@ -87,8 +87,8 @@ trim_trailing_whitespace = false
 max_line_length = unset
 
 # RFC 678
-#[*.txt]
-#max_line_length = 72
+[*.txt]
+max_line_length = 72
 
 # Windows line-endings for Windows
 [*.{reg,bat,ahk}]
