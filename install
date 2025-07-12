@@ -173,6 +173,9 @@ if [ "$(id -u)" == "0" ]; then
 	mkdir -vp /etc/systemd/system/{ssh,sshd,sshguard,systemd-resolved,systemd-networkd,NetworkManager,iwd,unbound,tor,oidentd,yggdrasil}.service.d/
 	mkdir -vp /etc/systemd/system/{ssh,sshd,oidentd}.socket.d/
 	# SECURITY WARNING!
+	cp -v etc/systemd/system/service.d/rngd-wanted.conf /etc/systemd/system/service.d/
+	cp -v etc/systemd/system/socket.d/dualstack-bind.conf /etc/systemd/system/socket.d/
+	# SECURITY WARNING!
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/ssh.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/sshd.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/sshguard.service.d/
