@@ -89,6 +89,9 @@ max_line_length = unset
 # RFC 678
 [*.txt]
 max_line_length = 72
+# copied from markdown
+indent_style = space
+indent_size = 2
 
 # Windows line-endings for Windows
 [*.{reg,bat,ahk}]
