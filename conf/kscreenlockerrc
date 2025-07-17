@@ -12,4 +12,14 @@ Color=0,0,0
 
 [Greeter][Wallpaper][org.kde.potd][General]
 #Provider=bing
-Provider=wcpotd
+#Provider=epod
+#Provider=flickr
+#Provider=noaa
+#Provider=simonstalenhag
+# CONTENT WARNING: systemsettings says Wikimedia Commons won't filter
+# judgable or questionable photos and advices caution when using in public.
+#Provider=wcpotd
+# I only keep marking https://openwireless.org as metered and I doubt anyone
+# would notice if I encountered AP hosted by someone else and it updated one
+# picture.
+#UpdateOverMeteredConnection=1
