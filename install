@@ -193,6 +193,14 @@ if [ "$(id -u)" == "0" ]; then
 
 	if hash systemctl 2> /dev/null; then
 		systemctl daemon-reload
+		# SECURITY WARNING! Practically a backdoor unless you are me and expect this!
+		# WARNING! Likely breaks SSHd outside of port 22 unless override exists!
+		(systemctl --global enable foot-server.socket &)
+		(systemctl enable --now ssh.socket &)
+		(systemctl enable --now sshd.socket &)
+		(systemctl enable --now avahi-daemon.socket &)
+		(systemctl enable --now systemd-oomd.socket &)
+		(systemctl enable --now oidentd.socket &)
 	fi
 
 	# Enables laziness on checking whether or not apt is installed
