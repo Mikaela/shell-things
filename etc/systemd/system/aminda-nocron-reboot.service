@@ -47,6 +47,8 @@ ExecStart=-firewall-cmd --add-service=mdns --permanent
 ExecStart=-firewall-cmd --add-service=mdns --permanent --zone=home
 ExecStart=-firewall-cmd --add-service=kdeconnect --permanent
 ExecStart=-firewall-cmd --add-service=kdeconnect --permanent --zone=home
+ExecStart=-firewall-cmd --add-service=ident --permanent
+ExecStart=-firewall-cmd --add-service=ident --permanent --zone=home
 ExecStart=-firewall-cmd --permanent --add-port=9001/udp
 ExecStart=-firewall-cmd --permanent --add-port=9001/udp --zone=home
 ExecStart=-firewall-cmd --permanent --add-port=6771/udp
