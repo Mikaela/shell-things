@@ -20,38 +20,38 @@ lockPref("cookiebanners.service.mode.privateBrowsing", 2);
 
 // I can set my preferred fonts in an order! :O
 // but obviously this is forbidden in policies.json!
-lockPref(
-	"font.name-list.monospace.x-cyrillic",
-	"Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
-);
-lockPref(
-	"font.name-list.monospace.x-western",
-	"Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
-);
-// REMEMBER! OpenDyslexic won't work here for some reason, use the extension
-// once it returns to Firefox! https://github.com/OpenDyslexic/extension/issues/75
-lockPref(
-	"font.name-list.sans-serif.x-cyrillic",
-	"OpenDyslexic, Inclusive Sans, Roboto, Liberation Sans, Noto Sans, sans-serif",
-);
-lockPref(
-	"font.name-list.sans-serif.x-western",
-	"OpenDyslexic, Inclusive Sans, Liberation Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
-);
-lockPref(
-	"font.name-list.serif.x-cyrillic",
-	"OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
-);
-lockPref(
-	"font.name-list.serif.x-western",
-	"OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
-);
-// clearPref("font.name-list.monospace.x-cyrillic");
-// clearPref("font.name-list.monospace.x-western");
-// clearPref("font.name-list.sans-serif.x-cyrillic");
-// clearPref("font.name-list.sans-serif.x-western");
-// clearPref("font.name-list.serif.x-cyrillic");
-// clearPref("font.name-list.serif.x-western");
+// lockPref(
+// 	"font.name-list.monospace.x-cyrillic",
+// 	"Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
+// );
+// lockPref(
+// 	"font.name-list.monospace.x-western",
+// 	"Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
+// );
+// // REMEMBER! OpenDyslexic won't work here for some reason, use the extension
+// // once it returns to Firefox! https://github.com/OpenDyslexic/extension/issues/75
+// lockPref(
+// 	"font.name-list.sans-serif.x-cyrillic",
+// 	"OpenDyslexic, Inclusive Sans, Roboto, Liberation Sans, Noto Sans, sans-serif",
+// );
+// lockPref(
+// 	"font.name-list.sans-serif.x-western",
+// 	"OpenDyslexic, Inclusive Sans, Liberation Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
+// );
+// lockPref(
+// 	"font.name-list.serif.x-cyrillic",
+// 	"OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
+// );
+// lockPref(
+// 	"font.name-list.serif.x-western",
+// 	"OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
+// );
+clearPref("font.name-list.monospace.x-cyrillic");
+clearPref("font.name-list.monospace.x-western");
+clearPref("font.name-list.sans-serif.x-cyrillic");
+clearPref("font.name-list.sans-serif.x-western");
+clearPref("font.name-list.serif.x-cyrillic");
+clearPref("font.name-list.serif.x-western");
 
 // Play animated images only once, accessibility.
 lockPref("image.animation_mode", "once");
@@ -65,7 +65,7 @@ lockPref("privacy.fingerprintingProtection", true);
 lockPref("privacy.fingerprintingProtection.pbmode", true);
 lockPref(
 	"privacy.fingerprintingProtection.overrides",
-	"+AllTargets,-KeyboardEvents,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-JSDateTimeUTC,-FontVisibilityBaseSystem,-FontVisibilityRestrictGenerics",
+	"+AllTargets,-KeyboardEvents,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-JSDateTimeUTC",
 );
 pref("browser.display.use_document_fonts", 0);
 
