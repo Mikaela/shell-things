@@ -141,6 +141,30 @@
 					[
 						"prefetchingDisabled",
 						"true"
+					],
+					[
+						"firstInstall",
+						"false"
+					],
+					[
+						"hidingAds",
+						"true"
+					],
+					[
+						"clickingAds",
+						"true"
+					],
+					[
+						"blockingMalware",
+						"true"
+					],
+					[
+						"disableHidingForDNT",
+						"true"
+					],
+					[
+						"disableClickingForDNT",
+						"true"
 					]
 				]
 			},
