@@ -51,7 +51,7 @@
 					],
 					[
 						"trustedListPrefixes",
-						"-"
+						"adnauseam- ublock-"
 					],
 					[
 						"uiPopupConfig",
@@ -95,7 +95,7 @@
 						"https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener-AffiliateTagAllowlist.txt",
 						"https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
 						"https://secure.fanboy.co.nz/fanboy-annoyance.txt",
-						"https://www.eff.org/files/effdntlist.txt",
+						"eff-dnt-whitelist",
 						"https://big.oisd.nl",
 						"ublock-abuse",
 						"ublock-badware",
