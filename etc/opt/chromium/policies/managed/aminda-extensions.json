@@ -7,7 +7,43 @@
 			"caoacbimdbbljakfhgikoodekdnlcgpk": {
 				"hasSeenPostInstall": true
 			},
-			"cjpalhdlnbpafiamejdnhcphjbkeiagm": {
+			"ddkjiahejlhfcafbddmgiahcphecmpfh": {
+				"defaultFiltering": "basic",
+				"disableFirstRunPage": true,
+				"noFiltering": [
+					"-all-urls",
+					"accountscenter.facebook.com",
+					"accountscenter.instagram.com",
+					"accounts.google.com",
+					"auth-prod.megical.com",
+					"challenges.cloudflare.com",
+					"chrome-extension-scheme",
+					"kansalainen.kanta.fi",
+					"kanta.fi",
+					"klarna.com",
+					"moz-extension-scheme",
+					"myaccount.google.com",
+					"omakanta.kanta.fi",
+					"oma.kela.fi",
+					"omavero.vero.fi",
+					"pp-attester-turnstile.research.cloudflare.com",
+					"research.cloudflare.com",
+					"suomi.fi",
+					"tunnistautuminen.suomi.fi",
+					"tunnistus.telia.fi",
+					"www.ecosia.org",
+					"www.npmjs.com",
+					"www.suomi.fi"
+				],
+				"rulesets": [
+					"-*",
+					"+default",
+					"+block-lan",
+					"+fin-0"
+				],
+				"showBlockedCount": true
+			},
+			"mlojlfildnehdpnlmpkeiiglhhkofhpb": {
 				"advancedSettings": [
 					[
 						"filterAuthorMode",
@@ -66,7 +102,11 @@
 						"ublock-filters",
 						"ublock-privacy",
 						"ublock-quick-fixes",
-						"ublock-unbreak"
+						"ublock-unbreak",
+						"user-filters",
+						"adnauseam-filters",
+						"easyprivacy",
+						"urlhaus-1"
 					]
 				},
 				"userSettings": [
@@ -103,42 +143,6 @@
 						"true"
 					]
 				]
-			},
-			"ddkjiahejlhfcafbddmgiahcphecmpfh": {
-				"defaultFiltering": "basic",
-				"disableFirstRunPage": true,
-				"noFiltering": [
-					"-all-urls",
-					"accountscenter.facebook.com",
-					"accountscenter.instagram.com",
-					"accounts.google.com",
-					"auth-prod.megical.com",
-					"challenges.cloudflare.com",
-					"chrome-extension-scheme",
-					"kansalainen.kanta.fi",
-					"kanta.fi",
-					"klarna.com",
-					"moz-extension-scheme",
-					"myaccount.google.com",
-					"omakanta.kanta.fi",
-					"oma.kela.fi",
-					"omavero.vero.fi",
-					"pp-attester-turnstile.research.cloudflare.com",
-					"research.cloudflare.com",
-					"suomi.fi",
-					"tunnistautuminen.suomi.fi",
-					"tunnistus.telia.fi",
-					"www.ecosia.org",
-					"www.npmjs.com",
-					"www.suomi.fi"
-				],
-				"rulesets": [
-					"-*",
-					"+default",
-					"+block-lan",
-					"+fin-0"
-				],
-				"showBlockedCount": true
 			},
 			"nngceckbapebfimnlniiiahkandclblb": {
 				"environment": {
@@ -256,7 +260,7 @@
 		},
 		"cjpalhdlnbpafiamejdnhcphjbkeiagm": {
 			"blocked_install_message": "uBlock Origin",
-			"installation_mode": "force_installed",
+			"installation_mode": "allowed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
@@ -403,7 +407,7 @@
 		},
 		"mlojlfildnehdpnlmpkeiiglhhkofhpb": {
 			"blocked_install_message": "AdNauseam (Edge). Protest tool requiring weakening security and incompatible with other forced extensions.",
-			"installation_mode": "blocked",
+			"installation_mode": "normal_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
@@ -445,7 +449,7 @@
 		},
 		"odfafepnkmbhccpbejgmiehpchacaeak": {
 			"blocked_install_message": "uBlock Origin (Edge). Already force_installed from Chrome",
-			"installation_mode": "blocked",
+			"installation_mode": "allowed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
