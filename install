@@ -174,7 +174,7 @@ if [ "$(id -u)" == "0" ]; then
 	mkdir -vp /etc/systemd/system/{ssh,sshd,oidentd}.socket.d/
 	# SECURITY WARNING!
 	cp -v etc/systemd/system/service.d/rngd-wanted.conf /etc/systemd/system/service.d/
-	cp -v etc/systemd/system/socket.d/dualstack-bind.conf /etc/systemd/system/socket.d/
+	cp -v etc/systemd/system/socket.d/{dualstack-bind,freebind,upheld}.conf /etc/systemd/system/socket.d/
 	# SECURITY WARNING!
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/ssh.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/sshd.service.d/
@@ -187,9 +187,10 @@ if [ "$(id -u)" == "0" ]; then
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/unbound.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/tor.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/yggdrasil.service.d/
-	cp -v etc/systemd/system/socket.d/dualstack-bind.conf /etc/systemd/system/ssh.socket.d/
-	cp -v etc/systemd/system/socket.d/dualstack-bind.conf /etc/systemd/system/sshd.socket.d/
-	cp -v etc/systemd/system/socket.d/dualstack-bind.conf /etc/systemd/system/oidentd.socket.d/
+	#cp -v etc/systemd/system/socket.d/dualstack-bind.conf /etc/systemd/system/ssh.socket.d/
+	#cp -v etc/systemd/system/socket.d/dualstack-bind.conf /etc/systemd/system/sshd.socket.d/
+	#cp -v etc/systemd/system/socket.d/dualstack-bind.conf /etc/systemd/system/oidentd.socket.d/
+	rm -v /etc/systemd/system/*.socket.d/dualstack-bind.conf
 
 	if hash systemctl 2> /dev/null; then
 		systemctl daemon-reload
