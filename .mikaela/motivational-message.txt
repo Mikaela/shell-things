@@ -2,6 +2,8 @@
 # or mikaela, or alternatively something hardware specific such as deck.
 # The reading command is:
 # tail -n +1 $HOME/.shell-things/.mikaela/motivational-message.txt | grep -v '#'
+# Older motivational messages are stored in case bringing them back is
+# desired later. Don't forget, this is a living document.
 
 Aferoj emas funkcii sin mem...  OM MANI PEME HUNG...
 # Tavun OM värähtely poistaa ylpeyttä, MA kateutta, NI takertumista. PE
@@ -9,27 +11,39 @@ Aferoj emas funkcii sin mem...  OM MANI PEME HUNG...
 # värähtelevä HUNG muuntaa vihan.
 #   Kuinka asiat ovat (s. 74-75) - Lama Ole Nydahl
 #
-# Illusions I & II - Richard Bach
 # Here is a test to find whether your mission on earth is finished:
 #   If you’re alive, it isn’t.
 # You are a perfect expression of perfect Love, here and now.
+# Illusions I & II - Richard Bach
 
   "They say that I must learn to kill before I can feel safe. But I,
     I'd rather kill myself then turn into their slave."
 # The Rasmus: In the Shadows
 
-      Memoru ankauh
-  - Know fear. Face fears. Don't obey in advance! Fluff the SPOTLIGHT
-    EFFECT! Break the SPIRAL OF SILENCE!
-    - Be the gay propawganda they are so afraid of! Wear pride, be
-      genderqueer, unshaved, unashamedly braless!
-  - Act Like You Belong. And you shall belong.
-  - Leave the world a better place than you found it. Remember
-    EMPATHY, SYMPATHY and COMPASSION! Let them lead you to KINDNESS!
-    - Remember your own boundaries too, you too are allowed to say no
-      and continue walking past without explaining yourself! They are
-      afraid of your judgment too employed right now or not.
-- May your heart be your guiding key ;)
-- MEMENTO VIVERE
+MEMENTO VIVERE! Advice, total nonsense or something between:
 
-Make your tech grayscale painting your life with colours
+* Stand out! Otherwise there is no diversity, no comfort zone, just
+  nazis as not standing out means obeying in advance. Act Like You
+  Belong and Belong You Shall.
+* Know fear. Face {it,them}. Break the Spiral of Silence. "Fear is the
+  tool of tyrants"
+  * Be their fears. Queer propawganda to remind them we are people.
+    Naturist to remind they are the same as us under their covers.
+#      Memoru ankauh
+#  - Know fear. Face fears. Don't obey in advance! Fluff the SPOTLIGHT
+#    EFFECT! Break the SPIRAL OF SILENCE!
+#    - Be the gay propawganda they are so afraid of! Wear pride, be
+#      genderqueer, unshaved, unashamedly braless!
+#  - Act Like You Belong. And you shall belong.
+* Leave the world a better place than you found it. Remember
+  EMPATHY, SYMPATHY and COMPASSION! Let them lead you to KINDNESS!
+  * Remember them towards everyone. Everyone includes you. Respect your
+    boundaries as well, you can say "no" and continue your path without
+    explanations.
+#    - Remember your own boundaries too, you too are allowed to say no
+#      and continue walking past without explaining yourself! They are
+#      afraid of your judgment too employed right now or not.
+* May your heart be your guiding key ;)
+#
+#Make your tech grayscale painting your life with colours
+
