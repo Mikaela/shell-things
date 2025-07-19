@@ -202,6 +202,15 @@ if [ "$(id -u)" == "0" ]; then
 		(systemctl enable --now avahi-daemon.socket &)
 		(systemctl enable --now systemd-oomd.socket &)
 		(systemctl enable --now oidentd.socket &)
+
+		# sshd is critical and I don't want it to fail due to the service holding the listener
+		if [ -f /etc/systemd/system/sockets.target.wants/ssh.socket ]; then
+			(systemctl disable --now ssh.service &)
+			(systemctl enable --now ssh.socket &)
+		elif [ -f /etc/systemd/system/sockets.target.wants/sshd.socket ]; then
+			(systemctl disable --now sshd.service &)
+			(systemctl enable --now sshd.socket &)
+		fi
 	fi
 
 	# Enables laziness on checking whether or not apt is installed
