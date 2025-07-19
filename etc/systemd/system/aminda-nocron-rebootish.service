@@ -21,6 +21,8 @@ ExecStart=-systemctl --global enable systemd-tmpfiles-clean.timer systemd-tmpfil
 ExecStart=-systemctl restart yggdrasil.service
 ExecStart=-firewall-cmd --reload
 # If they somehow managed to not start already
+ExecStart=-systemctl enable --now ssh.socket
+ExecStart=-systemctl enable --now sshd.socket
 ExecStart=-systemctl enable --now unbound.service
 ExecStart=-systemctl enable --now systemd-resolved.service
 ExecStart=-tlp setcharge
