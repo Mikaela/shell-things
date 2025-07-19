@@ -1,10 +1,14 @@
+# This file is read by my {zsh,bash}rc if current user is either aminda
+# or mikaela, or alternatively something hardware specific such as deck.
+# The reading command is:
+# tail -n +1 $HOME/.shell-things/.mikaela/motivational-message.txt | grep -v '#'
 
-# Motivational messages
+Aferoj emas funkcii sin mem...  OM MANI PEME HUNG...
 # Tavun OM värähtely poistaa ylpeyttä, MA kateutta, NI takertumista. PE
 # leikkaa tietämättömyyden läpi, ME hälventää ahneuden ja rintakehässä
 # värähtelevä HUNG muuntaa vihan.
 #   Kuinka asiat ovat (s. 74-75) - Lama Ole Nydahl
-Aferoj emas funkcii sin mem...  OM MANI PEME HUNG...
+#
 # Illusions I & II - Richard Bach
 # Here is a test to find whether your mission on earth is finished:
 #   If you’re alive, it isn’t.
