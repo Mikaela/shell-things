@@ -635,7 +635,7 @@
 			"browser.contentblocking.category": {
 				"Status": "locked",
 				"Type": "string",
-				"Value": "standard"
+				"Value": "strict"
 			},
 			"browser.contentblocking.report.hide_vpn_banner": {
 				"Status": "default",
