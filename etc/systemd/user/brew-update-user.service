@@ -1,0 +1,7 @@
+[Unit]
+Description=Install linuxbrew updates
+
+[Service]
+Type=oneshot
+ExecStartPre=/usr/local/bin/brew update
+ExecStart=/usr/local/bin/brew upgrade
