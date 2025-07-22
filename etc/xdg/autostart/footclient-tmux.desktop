@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=footclient -m tmux
+Exec=footclient tmux
 Icon=foot
 Terminal=false
 Name=Foot Client running tmux
