@@ -281,6 +281,7 @@ else
 		ln -nsfv /usr/local/share/applications/flatpak-steam-bigpicture.desktop $DESKTOP/
 		ln -nsfv /usr/local/share/applications/a-steam.desktop $DESKTOP/
 		ln -nsfv /usr/local/share/applications/a-signal.desktop $DESKTOP/
+		ln -nsfv /usr/local/share/applications/a-firefox-cups.desktop $DESKTOP/
 		# flatpaks
 		ln -nsfv /var/lib/flatpak/exports/share/applications/com.heroicgameslauncher.hgl.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/com.rafaelmardojai.Blanket.desktop $DESKTOP/

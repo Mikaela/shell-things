@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=CUPS Management Panel
+Name[fi]=Tulostinten hallintapaneeli
+Exec=/usr/bin/env firefox --new-window http://localhost:631/printers/
+Icon=preferences-devices-printer
+Terminal=false
+Type=Application
+StartupNotify=true
+StartupWMClass=firefox
