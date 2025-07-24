@@ -290,6 +290,14 @@ else
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.torproject.torbrowser-launcher.desktop $DESKTOP/
 	fi
 
+	# Ensure a-firefox.desktop has an icon
+	mkdir -p $HOME/.local/share/icons/hicolor/128x128/apps/
+	if [ -f "$HOME/.local/firefox/browser/chrome/icons/default/default128.png" ]; then
+		ln -nsfv $HOME/.local/firefox/browser/chrome/icons/default/default128.png ~/.local/share/icons/hicolor/128x128/apps/a-firefox.png
+	elif [ -f "/usr/share/icons/HighContrast/256x256/apps/firefox.png" ]; then
+		ln -nsfv /usr/share/icons/HighContrast/256x256/apps/firefox.png ~/.local/share/icons/hicolor/128x128/apps/a-firefox.png
+	fi
+
 	# Remove dead symlinks
 	if hash symlinks 2> /dev/null; then
 		symlinks -d $DESKTOP/
