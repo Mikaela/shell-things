@@ -277,7 +277,7 @@ else
 		ln -nsfv /usr/share/applications/org.kde.plasma-welcome.desktop $DESKTOP/
 		# scripts repo
 		ln -nsfv /usr/local/share/applications/a-firefox.desktop $DESKTOP/
-		#ln -nsfv /usr/local/share/applications/a-google-chrome.desktop $DESKTOP/
+		ln -nsfv /usr/local/share/applications/a-google-chrome.desktop $DESKTOP/
 		ln -nsfv /usr/local/share/applications/flatpak-steam-bigpicture.desktop $DESKTOP/
 		ln -nsfv /usr/local/share/applications/a-steam.desktop $DESKTOP/
 		ln -nsfv /usr/local/share/applications/a-signal.desktop $DESKTOP/
@@ -294,6 +294,8 @@ else
 	mkdir -p $HOME/.local/share/icons/hicolor/128x128/apps/
 	if [ -f "$HOME/.local/firefox/browser/chrome/icons/default/default128.png" ]; then
 		ln -nsfv $HOME/.local/firefox/browser/chrome/icons/default/default128.png ~/.local/share/icons/hicolor/128x128/apps/a-firefox.png
+	elif [ -f "/usr/share/icons/hicolor/256x256/apps/firefox.png" ]; then
+		ln -nsfv /usr/share/icons/hicolor/256x256/apps/firefox.png ~/.local/share/icons/hicolor/128x128/apps/a-firefox.png
 	elif [ -f "/usr/share/icons/HighContrast/256x256/apps/firefox.png" ]; then
 		ln -nsfv /usr/share/icons/HighContrast/256x256/apps/firefox.png ~/.local/share/icons/hicolor/128x128/apps/a-firefox.png
 	fi
