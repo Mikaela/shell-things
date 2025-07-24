@@ -256,27 +256,46 @@ if [ "$(id -u)" == "0" ]; then
 		sleep 3
 	fi
 else
+	# rootless-only tasks
+
+	# Figure out the localization of $HOME/Desktop
 	if hash xdg-user-dir 2> /dev/null; then
-		if [ -f /usr/share/applications/footclient.desktop ]; then
-			if hash systemctl 2> /dev/null; then
-				systemctl --user enable --now foot-server.socket
-				ln -nsfv /usr/share/applications/footclient.desktop $(xdg-user-dir DESKTOP)/
-			else
-				ln -nsfv /usr/share/applications/foot.desktop $(xdg-user-dir DESKTOP)/
-			fi
+		DESKTOP=$(xdg-user-dir DESKTOP)
+
+		# Ensure there is foot-server.socket before creating a shortcut for footclient
+		if hash systemctl 2> /dev/null; then
+			systemctl --user enable --now foot-server.socket
+			ln -nsfv /usr/share/applications/footclient.desktop $DESKTOP/
+		else
+			ln -nsfv /usr/share/applications/foot.desktop $DESKTOP/
 		fi
-		if [ -f /usr/share/applications/org.kde.discover.desktop ]; then
-			ln -nsfv /usr/share/applications/org.kde.discover.desktop $(xdg-user-dir DESKTOP)
-		fi
-		if [ -f /usr/share/applications/org.kde.kdeconnect-settings.desktop ]; then
-			ln -nsfv /usr/share/applications/org.kde.kdeconnect-settings.desktop $(xdg-user-dir DESKTOP)/
-		fi
-		if [ -f /usr/share/applications/org.kde.ConfigurePrinter.desktop ]; then
-			ln -nsfv /usr/share/applications/org.kde.ConfigurePrinter.desktop $(xdg-user-dir DESKTOP)/
-		fi
-		if [ -f /usr/share/applications/org.mozilla.firefox.desktop ]; then
-			ln -nsfv /usr/share/applications/org.mozilla.firefox.desktop $(xdg-user-dir DESKTOP)/
-		fi
+
+		# Create desktop shortcuts/symlinks for apps
+		ln -nsfv /usr/share/applications/org.kde.discover.desktop $DESKTOP/
+		ln -nsfv /usr/share/applications/org.kde.kdeconnect-settings.desktop $DESKTOP/
+		#ln -nsfv /usr/share/applications/org.mozilla.firefox.desktop $DESKTOP/
+		ln -nsfv /usr/share/applications/org.kde.plasma-welcome.desktop $DESKTOP/
+		# scripts repo
+		ln -nsfv /usr/local/share/applications/a-firefox.desktop $DESKTOP/
+		#ln -nsfv /usr/local/share/applications/a-google-chrome.desktop $DESKTOP/
+		ln -nsfv /usr/local/share/applications/flatpak-steam-bigpicture.desktop $DESKTOP/
+		ln -nsfv /usr/local/share/applications/a-steam.desktop $DESKTOP/
+		ln -nsfv /usr/local/share/applications/a-signal.desktop $DESKTOP/
+		# flatpaks
+		ln -nsfv /var/lib/flatpak/exports/share/applications/com.heroicgameslauncher.hgl.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/com.rafaelmardojai.Blanket.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/de.haeckerfelix.Shortwave.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/org.pulseaudio.pavucontrol.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/org.telegram.desktop.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/org.torproject.torbrowser-launcher.desktop $DESKTOP/
+	fi
+
+	# Remove dead symlinks
+	if hash symlinks 2> /dev/null; then
+		symlinks -d $DESKTOP/
+	else
+		echo "WARNING! Executable named symlinks not found in PATH."
+		sleep 3
 	fi
 fi
 
