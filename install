@@ -255,7 +255,29 @@ if [ "$(id -u)" == "0" ]; then
 		echo "WARNING! Executable named symlinks not found in PATH."
 		sleep 3
 	fi
-
+else
+	if hash xdg-user-dir 2> /dev/null; then
+		if [ -f /usr/share/applications/footclient.desktop ]; then
+			if hash systemctl 2> /dev/null; then
+				systemctl --user enable --now foot-server.socket
+				ln -nsfv /usr/share/applications/footclient.desktop $(xdg-user-dir DESKTOP)/
+			else
+				ln -nsfv /usr/share/applications/foot.desktop $(xdg-user-dir DESKTOP)/
+			fi
+		fi
+		if [ -f /usr/share/applications/org.kde.discover.desktop ]; then
+			ln -nsfv /usr/share/applications/org.kde.discover.desktop $(xdg-user-dir DESKTOP)
+		fi
+		if [ -f /usr/share/applications/org.kde.kdeconnect-settings.desktop ]; then
+			ln -nsfv /usr/share/applications/org.kde.kdeconnect-settings.desktop $(xdg-user-dir DESKTOP)/
+		fi
+		if [ -f /usr/share/applications/org.kde.ConfigurePrinter.desktop ]; then
+			ln -nsfv /usr/share/applications/org.kde.ConfigurePrinter.desktop $(xdg-user-dir DESKTOP)/
+		fi
+		if [ -f /usr/share/applications/org.mozilla.firefox.desktop ]; then
+			ln -nsfv /usr/share/applications/org.mozilla.firefox.desktop $(xdg-user-dir DESKTOP)/
+		fi
+	fi
 fi
 
 # Make the submoduled fonts available to the system
