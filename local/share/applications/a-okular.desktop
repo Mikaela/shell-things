@@ -1,0 +1,13 @@
+[Desktop Entry]
+Terminal=false
+Name=OKULAR
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=okular --file-forwarding org.kde.okular @@u %U @@
+Icon=org.kde.okular
+Type=Application
+X-DocPath=okular/index.html
+InitialPreference=7
+Categories=Qt;KDE;Graphics;Office;Viewer;
+MimeType=application/pdf;application/vnd.kde.okular-archive;
+X-DBUS-ServiceName=org.kde.okular
+StartupWMClass=okular
+X-Flatpak=org.kde.okular
