@@ -275,6 +275,7 @@ else
 		ln -nsfv /usr/share/applications/org.kde.kdeconnect-settings.desktop $DESKTOP/
 		#ln -nsfv /usr/share/applications/org.mozilla.firefox.desktop $DESKTOP/
 		ln -nsfv /usr/share/applications/org.kde.plasma-welcome.desktop $DESKTOP/
+		ln -nsfv /usr/share/applications/org.kde.dolphin.desktop $DESKTOP/
 		# scripts repo
 		ln -nsfv /usr/local/share/applications/a-firefox.desktop $DESKTOP/
 		ln -nsfv /usr/local/share/applications/a-google-chrome.desktop $DESKTOP/
