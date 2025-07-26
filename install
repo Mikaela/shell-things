@@ -279,10 +279,14 @@ else
 		ln -nsfv /usr/share/applications/kdesystemsettings.desktop $DESKTOP/
 		# scripts repo
 		ln -nsfv /usr/local/share/applications/a-firefox.desktop $DESKTOP/
-		ln -nsfv /usr/local/share/applications/a-google-chrome.desktop $DESKTOP/
+		if [ -f "/usr/bin/google-chrome-stable" ]; then
+			ln -nsfv /usr/local/share/applications/a-google-chrome.desktop $DESKTOP/
+		fi
 		ln -nsfv /usr/local/share/applications/flatpak-steam-bigpicture.desktop $DESKTOP/
 		ln -nsfv /usr/local/share/applications/a-steam.desktop $DESKTOP/
-		ln -nsfv /usr/local/share/applications/a-signal.desktop $DESKTOP/
+		if [ -f "/var/lib/flatpak/exports/bin/org.signal.Signal" ]; then
+			ln -nsfv /usr/local/share/applications/a-signal.desktop $DESKTOP/
+		fi
 		ln -nsfv /usr/local/share/applications/a-firefox-cups.desktop $DESKTOP/
 		# flatpaks
 		ln -nsfv /var/lib/flatpak/exports/share/applications/com.heroicgameslauncher.hgl.desktop $DESKTOP/
