@@ -676,19 +676,19 @@
 				"Value": 0
 			},
 			"browser.ml.chat.enabled": {
-				"Status": "user",
+				"Status": "locked",
 				"Type": "boolean",
 				"Value": false
 			},
 			"browser.ml.chat.provider": {
-				"Status": "default",
+				"Status": "user",
 				"Type": "string",
-				"Value": "https://chat.mistral.ai/chat"
+				"Value": ""
 			},
 			"browser.ml.linkPreview.enabled": {
-				"Status": "default",
+				"Status": "locked",
 				"Type": "boolean",
-				"Value": true
+				"Value": false
 			},
 			"browser.preferences.moreFromMozilla": {
 				"Status": "default",
