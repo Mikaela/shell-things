@@ -282,6 +282,16 @@ else
 		if [ -f "/usr/bin/google-chrome-stable" ]; then
 			ln -nsfv /usr/local/share/applications/a-google-chrome.desktop $DESKTOP/
 		fi
+		if [ -f "/usr/bin/microsoft-edge-stable" ]; then
+			ln -nsfv /usr/local/share/applications/a-microsoft-edge.desktop $DESKTOP/
+		fi
+		if [ -f "/usr/bin/vivaldi-stable" ]; then
+			ln -nsfv /usr/local/share/applications/a-vivaldi.desktop $DESKTOP/
+		fi
+		if [ -f "/usr/bin/librewolf" ]; then
+			ln -nsfv /usr/local/share/applications/libreawoo.desktop $DESKTOP/
+		fi
+
 		ln -nsfv /usr/local/share/applications/flatpak-steam-bigpicture.desktop $DESKTOP/
 		ln -nsfv /usr/local/share/applications/a-steam.desktop $DESKTOP/
 		if [ -f "/var/lib/flatpak/exports/bin/org.signal.Signal" ]; then
