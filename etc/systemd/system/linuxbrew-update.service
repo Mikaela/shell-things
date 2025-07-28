@@ -3,5 +3,6 @@ Description=Install linuxbrew updates
 
 [Service]
 Type=oneshot
+TimeoutStartSec=infinity
 ExecStartPre=/usr/local/bin/brew update
 ExecStart=/usr/local/bin/brew upgrade
