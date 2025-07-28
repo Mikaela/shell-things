@@ -295,6 +295,7 @@ else
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.pulseaudio.pavucontrol.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.telegram.desktop.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.torproject.torbrowser-launcher.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.audiotube.desktop $DESKTOP/
 	fi
 
 	# Ensure a-firefox.desktop has an icon
