@@ -36,10 +36,12 @@ cp -v conf/tmux.conf $HOME/.tmux.conf
 cp -v rc/zshrc $HOME/.zshrc
 cp -v rc/profile $HOME/.profile
 
+# Create configuration directories missed later
+mkdir -vp $HOME/.config/{autostart,foot,git,mpv,nvim,systemd/user,yt-dlp}/
+
 # Git config, legacy support for old location as well.
 # The other script appends sourced file, so if thou aren't I, thou should
 # consider it as well; `git config --global --add include.path '$HOME/yourgitconfig'`
-mkdir -vp $HOME/.config/git
 cp -v conf/gitconfig $HOME/.config/git/config
 touch $HOME/.gitconfig
 rm $HOME/.gitconfig
@@ -49,18 +51,13 @@ mkdir -vp $HOME/.git-template
 
 # {n,neo}vim
 cp -v rc/vimrc $HOME/.vimrc
-mkdir -vp $HOME/.config/nvim/
 cp -v conf/init.vim $HOME/.config/nvim/init.vim
 cp -v conf/makepkg.conf $HOME/.makepkg.conf
 
 # the media player
-mkdir -vp $HOME/.config/mpv/
 cp -v conf/mpv.conf $HOME/.config/mpv/mpv.conf
 mkdir -vp $HOME/.var/app/io.mpv.Mpv/config/mpv
 cp -v conf/mpv.conf $HOME/.var/app/io.mpv.Mpv/config/mpv/mpv.conf
-
-# systemd
-mkdir -vp $HOME/.config/systemd/user/
 
 # Create KDE expected config files
 touch $HOME/.config/k{screenlocker,xkb}rc
