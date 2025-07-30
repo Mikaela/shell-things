@@ -274,6 +274,11 @@ else
 		ln -nsfv /usr/share/applications/org.kde.plasma-welcome.desktop $DESKTOP/
 		ln -nsfv /usr/share/applications/org.kde.dolphin.desktop $DESKTOP/
 		ln -nsfv /usr/share/applications/kdesystemsettings.desktop $DESKTOP/
+		ln -nsfv /usr/share/applications/virtualbox.desktop $DESKTOP/
+		ln -nsfv /usr/share/applications/org.kde.kwrite.desktop $DESKTOP/
+		ln -nsfv /usr/share/applications/mpv.desktop $DESKTOP/
+		ln -nsfv /usr/share/applications/io.github.celluloid_player.Celluloid.desktop $DESKTOP/
+		#ln -nsfv /usr/share/applications/org.kde.haruna.desktop $DESKTOP/
 		# scripts repo
 		ln -nsfv /usr/local/share/applications/a-firefox.desktop $DESKTOP/
 		if [ -f "/usr/bin/google-chrome-stable" ]; then
@@ -303,6 +308,11 @@ else
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.telegram.desktop.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.torproject.torbrowser-launcher.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.audiotube.desktop $DESKTOP/
+		#ln -nsfv /var/lib/flatpak/exports/share/applications/org.videolan.VLC.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.elisa.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/org.libreoffice.LibreOffice.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/app.devsuite.Ptyxis.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.skanpage.desktop $DESKTOP/
 	fi
 
 	# Ensure a-firefox.desktop has an icon
