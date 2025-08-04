@@ -4,9 +4,9 @@ AutoConnect=true
 # MAC address override. Takes priority over AlwaysRandomizeAddress
 #AddressOverride=
 # Disables TKIP and connections without Management Frame Protection
-TransitionDisable=true
+#TransitionDisable=true
 # Disables WPA2-{Personal,Enterprise} and requires WiFi Enhanced Open (OWE)
-DisabledTransitionModes=personal,enterprise,open
+#DisabledTransitionModes=personal,enterprise,open
 
 [Security]
 Passphrase=MySuperSecretPassphraseThatDoesNotReadHere

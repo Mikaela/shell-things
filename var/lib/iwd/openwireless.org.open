@@ -1,9 +1,9 @@
-[Settings]
+#[Settings]
 #AlwaysRandomizeAddress=true
 # Disables connections without Management Frame Protection (and TKIP)
-TransitionDisable=true
+#TransitionDisable=true
 # Requires WiFi Enhanced Open (OWE)
-DisabledTransitionModes=open
+#DisabledTransitionModes=open
 
 [IPv4]
 DNS=127.0.0.1 127.0.0.53
