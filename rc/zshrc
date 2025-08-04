@@ -647,6 +647,7 @@ alias nordvpn-off2=nordvpn-offf
 alias flatpak="LANG=C.UTF-8 flatpak"
 # Search without description
 alias flatpaks="LANG=C.UTF-8 flatpak search --columns=remote,version,application"
+alias flatpakl="LANG=C.UTF-8 flatpak list --columns=origin,version,application"
 
 if hash homebrew 2> /dev/null; then
 	alias brew=homebrew
