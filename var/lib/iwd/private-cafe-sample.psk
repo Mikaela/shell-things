@@ -11,9 +11,9 @@ Passphrase=MySuperSecretPassphraseThatDoesNotReadHere
 
 [IPv4]
 DNS=127.0.0.1 127.0.0.53
-DomainName=.
+#DomainName=.
 
 [IPv6]
 Enabled=true
 DNS=::1
-DomainName=.
+#DomainName=.

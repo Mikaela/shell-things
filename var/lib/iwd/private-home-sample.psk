@@ -25,4 +25,4 @@ DNS=127.0.0.1 127.0.0.53
 [IPv6]
 Enabled=true
 DNS=::1
-DomainName=.
+#DomainName=.
