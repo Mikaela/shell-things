@@ -217,6 +217,16 @@ if [ "$(id -u)" == "0" ]; then
 	echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
 	echo 'APT::Color "1";' > /etc/apt/apt.conf.d/99color
 
+	# Workarounds for Debian binary names
+	# nodejs -> node was traditionally an eternity issue for me
+	if [[ -f /usr/bin/nodejs && ! -f /usr/bin/node ]]; then
+		ln -nsfv /usr/bin/nodejs /usr/local/bin/node
+	fi
+	# batcat? I expect bat everywhere rather than Bacula
+	if [[ -f /usr/bin/batcat && ! -f /usr/bin/btraceback && ! -f bsmtp ]]; then
+		ln -nsfv /usr/bin/batcat /usr/local/bin/bat
+	fi
+
 	# If some locate variant is installed, now is a great time to ensure its
 	# database is up-to-date. This may also enable automated database
 	# updates.
@@ -245,8 +255,9 @@ if [ "$(id -u)" == "0" ]; then
 		ln -nsfv $HOME/.shell-things/submodules/Inclusive-Sans/fonts/variable /usr/local/share/fonts/Inclusive-Sans
 	fi
 
-	# Font cleanup
+	# Symlink cleanup
 	if hash symlinks 2> /dev/null; then
+		symlinks -d /usr/local/bin
 		symlinks -d /usr/local/share/fonts/
 	else
 		echo "WARNING! Executable named symlinks not found in PATH."
