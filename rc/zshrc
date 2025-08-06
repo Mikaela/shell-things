@@ -67,9 +67,9 @@ if hash lsb_release 2> /dev/null; then
 			# Confusion between bat and batcula is not a concern at this
 			# point.
 			if hash bat 2> /dev/null; then
-				bat --force-colorization --italic-text=always --style=plain $HOME/.shell-things/.mikaela/motivational-message.md | \grep -v '#'
+				bat --force-colorization --italic-text=always --style=plain $HOME/.shell-things/.mikaela/motivational-message.md | \grep -v '#' | uniq -u
 			else
-				tail -n +1 $HOME/.shell-things/.mikaela/motivational-message.md | grep -v '#'
+				tail -n +1 $HOME/.shell-things/.mikaela/motivational-message.md | grep -v '#' | uniq -u
 			fi
 		fi
 	elif [[ "$(id -u)" == "0" ]]; then
