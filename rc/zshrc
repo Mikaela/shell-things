@@ -676,7 +676,7 @@ fi
 # and Ubuntu. This will not be done in that case
 if ! hash btraceback 2> /dev/null; then
 	if hash bat 2> /dev/null; then
-		alias cat=bat
+		alias cat="bat -pp"
 		alias multicat=bat
 		alias less="bat --paging=always"
 		export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
