@@ -683,6 +683,31 @@ if [ -f ~/.bash_aliases ]; then
 	source ~/.bash_aliases
 fi
 
+# Replacing cat & co with bat when avilable. These may be best used as last aliases.
+# btraceback and bsmtp are from Batcula, which has the binary bat on Debian
+# and Ubuntu. This will not be done in that case
+if ! hash btraceback 2> /dev/null; then
+	if hash bat 2> /dev/null; then
+		alias cat=bat
+		alias multicat=bat
+		alias less="bat --paging=always"
+		export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
+		# zsh only! not bash!
+		#alias -g -- -h='-h 2>&1 | bat --language=help --style=plain'
+		#alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
+	fi
+	if hash batgrep 2> /dev/null; then
+		alias grep=batgrep
+	fi
+	if hash batman 2> /dev/null; then
+		eval "$(batman --export-env)"
+		alias man=batman
+	fi
+	if hash batpipe 2> /dev/null; then
+		eval "$(batpipe)"
+	fi
+fi
+
 #####	Functions					ZGC5QQ	#####
 
 # GEOIP lookup, improved from the ultimate bashrc https://goo.gl/qGK5j
