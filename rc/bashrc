@@ -167,13 +167,13 @@ if hash lsb_release 2> /dev/null; then
 
 	# Only print motivational phrases if username is aminda or mikaela or deck
 	if [[ $(whoami) == aminda ]] || [[ $(whoami) == mikaela ]] || [[ $(whoami) == deck ]]; then
-		if [ -f $HOME/.shell-things/.mikaela/motivational-message.txt ]; then
+		if [ -f $HOME/.shell-things/.mikaela/motivational-message.md ]; then
 			# Confusion between bat and batcula is not a concern at this
 			# point.
 			if hash bat 2> /dev/null; then
-				bat -l markdown -f --style=plain $HOME/.shell-things/.mikaela/motivational-message.txt | \grep -v '#'
+				bat --force-colorization --italic-text=always --style=plain $HOME/.shell-things/.mikaela/motivational-message.md | \grep -v '#'
 			else
-				tail -n +1 $HOME/.shell-things/.mikaela/motivational-message.txt | grep -v '#'
+				tail -n +1 $HOME/.shell-things/.mikaela/motivational-message.md | grep -v '#'
 			fi
 		fi
 	elif [[ "$(id -u)" == "0" ]]; then
