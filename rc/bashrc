@@ -696,8 +696,10 @@ if ! hash btraceback 2> /dev/null; then
 		#alias -g -- -h='-h 2>&1 | bat --language=help --style=plain'
 		#alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
 	fi
-	if hash batgrep 2> /dev/null; then
-		alias grep=batgrep
+	if hash rg 2> /dev/null; then
+		if hash batgrep 2> /dev/null; then
+			alias grep=batgrep
+		fi
 	fi
 	if hash batman 2> /dev/null; then
 		eval "$(batman --export-env)"
