@@ -13,7 +13,7 @@
 [submodule "submodules/opendyslexic"]
 	path = submodules/opendyslexic
 	url = https://github.com/antijingoist/opendyslexic.git
-	branch = master
+	branch = main
 	ignore = dirty
 	shallow = true
 [submodule "submodules/comic-shanns-mono"]
