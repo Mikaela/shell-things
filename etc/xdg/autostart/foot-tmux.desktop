@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=foot tmux
+Icon=foot
+Terminal=false
+Name=Foot running tmux
+Comment=OOM killing foot-server is fun

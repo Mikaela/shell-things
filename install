@@ -210,6 +210,10 @@ if [ "$(id -u)" == "0" ]; then
 		fi
 	fi
 
+	# SECURITY WARNING, autostarts
+	(rm -v /etc/xdg/autostart/footclient-tmux.desktop &)
+	cp -v etc/xdg/autostart/foot-tmux.desktop /etc/xdg/autostart/
+
 	# Enables laziness on checking whether or not apt is installed
 	mkdir -vp /etc/apt/apt.conf.d/
 	# Enables progress bar and colours for apt/dpkg, which are helpful at
@@ -257,7 +261,8 @@ if [ "$(id -u)" == "0" ]; then
 
 	# Symlink cleanup
 	if hash symlinks 2> /dev/null; then
-		symlinks -d /usr/local/bin
+		symlinks -d /etc/xdg/autostart/
+		symlinks -d /usr/local/bin/
 		symlinks -d /usr/local/share/fonts/
 	else
 		echo "WARNING! Executable named symlinks not found in PATH."
