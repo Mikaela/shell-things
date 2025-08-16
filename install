@@ -286,6 +286,7 @@ else
 		# Create desktop shortcuts/symlinks for apps
 		ln -nsfv /usr/share/applications/org.kde.discover.desktop $DESKTOP/
 		ln -nsfv /usr/share/applications/org.kde.kdeconnect-settings.desktop $DESKTOP/
+		ln -nsfv /usr/share/applications/org.kde.kdeconnect.app.desktop $DESKTOP/
 		#ln -nsfv /usr/share/applications/org.mozilla.firefox.desktop $DESKTOP/
 		ln -nsfv /usr/share/applications/org.kde.plasma-welcome.desktop $DESKTOP/
 		ln -nsfv /usr/share/applications/org.kde.dolphin.desktop $DESKTOP/
@@ -317,6 +318,7 @@ else
 		fi
 		ln -nsfv /usr/local/share/applications/a-firefox-cups.desktop $DESKTOP/
 		# flatpaks
+		ln -nsfv /var/lib/flatpak/exports/share/applications/com.valvesoftware.SteamLink.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/com.heroicgameslauncher.hgl.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/com.rafaelmardojai.Blanket.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/de.haeckerfelix.Shortwave.desktop $DESKTOP/
