@@ -1,3 +1,3 @@
 # Enables mangohud for everything natively supporting it (outside of flatpak?)
 export MANGOHUD=1
-export MANGOHUD_CONFIG='read_cfg,background_alpha=0,battery_time,battery,cpu_temp,display_server,font_size=26,gpu_temp,device_battery_icon,device_battery=gamepad+mouse,fan,horizontal,ram,vram,swap,time,time_no_label,time_format=%T,wine,mangoapp_steam,position=bottom-left'
+export MANGOHUD_CONFIG='read_cfg,background_alpha=0,battery_time,battery,cpu_temp,display_server,font_size=27,gpu_temp,device_battery_icon,device_battery=gamepad+mouse,fan,horizontal,ram,vram,swap,time,time_no_label,time_format=%H%M,wine,mangoapp_steam,position=bottom-left'
