@@ -43,7 +43,13 @@
 				],
 				"showBlockedCount": true
 			},
-			"mlojlfildnehdpnlmpkeiiglhhkofhpb": {
+			"nngceckbapebfimnlniiiahkandclblb": {
+				"environment": {
+					"base": "https://vault.bitwarden.eu",
+					"notifications": "https://notifications.bitwarden.eu"
+				}
+			},
+			"odfafepnkmbhccpbejgmiehpchacaeak": {
 				"advancedSettings": [
 					[
 						"filterAuthorMode",
@@ -51,7 +57,7 @@
 					],
 					[
 						"trustedListPrefixes",
-						"adnauseam- ublock-"
+						"-"
 					],
 					[
 						"uiPopupConfig",
@@ -95,7 +101,7 @@
 						"https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener-AffiliateTagAllowlist.txt",
 						"https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
 						"https://secure.fanboy.co.nz/fanboy-annoyance.txt",
-						"eff-dnt-whitelist",
+						"https://www.eff.org/files/effdntlist.txt",
 						"https://big.oisd.nl",
 						"ublock-abuse",
 						"ublock-badware",
@@ -104,9 +110,9 @@
 						"ublock-quick-fixes",
 						"ublock-unbreak",
 						"user-filters",
-						"adnauseam-filters",
 						"easyprivacy",
-						"urlhaus-1"
+						"urlhaus-1",
+						"plowe-0"
 					]
 				},
 				"userSettings": [
@@ -167,12 +173,6 @@
 						"true"
 					]
 				]
-			},
-			"nngceckbapebfimnlniiiahkandclblb": {
-				"environment": {
-					"base": "https://vault.bitwarden.eu",
-					"notifications": "https://notifications.bitwarden.eu"
-				}
 			},
 			"pkehgijcmpdhfbdbbnkijodmdjhbjlgp": {
 				"checkForDNTPolicy": true,
@@ -283,8 +283,8 @@
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"cjpalhdlnbpafiamejdnhcphjbkeiagm": {
-			"blocked_install_message": "uBlock Origin",
-			"installation_mode": "allowed",
+			"blocked_install_message": "uBlock Origin Chrome",
+			"installation_mode": "blocked",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
@@ -430,8 +430,8 @@
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"mlojlfildnehdpnlmpkeiiglhhkofhpb": {
-			"blocked_install_message": "AdNauseam (Edge). Protest tool requiring weakening security and incompatible with other forced extensions.",
-			"installation_mode": "normal_installed",
+			"blocked_install_message": "AdNauseam (Edge). A lot of effort (one extra click for uBlock Origin Menu).",
+			"installation_mode": "blocked",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
@@ -472,8 +472,8 @@
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"odfafepnkmbhccpbejgmiehpchacaeak": {
-			"blocked_install_message": "uBlock Origin (Edge). Already force_installed from Chrome",
-			"installation_mode": "allowed",
+			"blocked_install_message": "uBlock Origin (Edge)",
+			"installation_mode": "force_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
