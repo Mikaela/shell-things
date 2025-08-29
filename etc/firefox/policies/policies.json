@@ -60,7 +60,7 @@
 						],
 						[
 							"trustedListPrefixes",
-							"adnauseam- ublock-"
+							"-"
 						],
 						[
 							"uiPopupConfig",
@@ -114,7 +114,8 @@
 							"ublock-unbreak",
 							"user-filters",
 							"easyprivacy",
-							"urlhaus-1"
+							"urlhaus-1",
+							"plowe-0"
 						]
 					},
 					"userSettings": [
