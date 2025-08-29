@@ -2,7 +2,57 @@
 	"policies": {
 		"3rdparty": {
 			"Extensions": {
-				"adnauseam@rednoise.org": {
+				"jid1-MnnxcxisBPnSXQ@jetpack": {
+					"checkForDNTPolicy": true,
+					"disabledSites": [
+						"www.ecosia.org",
+						"pp-attester-turnstile.research.cloudflare.com"
+					],
+					"learnInIncognito": true,
+					"learnLocally": true,
+					"sendDNTSignal": true,
+					"showCounter": true,
+					"showIntroPage": false,
+					"socialWidgetReplacementEnabled": true,
+					"trackingDomains": [
+						{
+							"domain": "tunnus.almamedia.fi",
+							"action": "cookieblock"
+						},
+						{
+							"domain": "bitwarden.eu",
+							"action": "allow"
+						},
+						{
+							"domain": "google.com",
+							"action": "block"
+						},
+						{
+							"domain": "recaptcha.net",
+							"action": "block"
+						},
+						{
+							"domain": "vimeo.com",
+							"action": "block"
+						},
+						{
+							"domain": "vimeocdn.com",
+							"action": "block"
+						},
+						{
+							"domain": "youtube.com",
+							"action": "block"
+						},
+						{
+							"domain": "youtube-nocookie.com",
+							"action": "block"
+						}
+					]
+				},
+				"jid1-ZAdIEUB7XOzOJw@jetpack": {
+					"hasSeenPostInstall": true
+				},
+				"uBlock0@raymondhill.net": {
 					"advancedSettings": [
 						[
 							"filterAuthorMode",
@@ -54,7 +104,7 @@
 							"https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener-AffiliateTagAllowlist.txt",
 							"https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
 							"https://secure.fanboy.co.nz/fanboy-annoyance.txt",
-							"eff-dnt-whitelist",
+							"https://www.eff.org/files/effdntlist.txt",
 							"https://big.oisd.nl",
 							"ublock-abuse",
 							"ublock-badware",
@@ -63,7 +113,6 @@
 							"ublock-quick-fixes",
 							"ublock-unbreak",
 							"user-filters",
-							"adnauseam-filters",
 							"easyprivacy",
 							"urlhaus-1"
 						]
@@ -126,56 +175,6 @@
 							"true"
 						]
 					]
-				},
-				"jid1-MnnxcxisBPnSXQ@jetpack": {
-					"checkForDNTPolicy": true,
-					"disabledSites": [
-						"www.ecosia.org",
-						"pp-attester-turnstile.research.cloudflare.com"
-					],
-					"learnInIncognito": true,
-					"learnLocally": true,
-					"sendDNTSignal": true,
-					"showCounter": true,
-					"showIntroPage": false,
-					"socialWidgetReplacementEnabled": true,
-					"trackingDomains": [
-						{
-							"domain": "tunnus.almamedia.fi",
-							"action": "cookieblock"
-						},
-						{
-							"domain": "bitwarden.eu",
-							"action": "allow"
-						},
-						{
-							"domain": "google.com",
-							"action": "block"
-						},
-						{
-							"domain": "recaptcha.net",
-							"action": "block"
-						},
-						{
-							"domain": "vimeo.com",
-							"action": "block"
-						},
-						{
-							"domain": "vimeocdn.com",
-							"action": "block"
-						},
-						{
-							"domain": "youtube.com",
-							"action": "block"
-						},
-						{
-							"domain": "youtube-nocookie.com",
-							"action": "block"
-						}
-					]
-				},
-				"jid1-ZAdIEUB7XOzOJw@jetpack": {
-					"hasSeenPostInstall": true
 				},
 				"{446900e4-71c2-419f-a6a7-df9c091e268b}": {
 					"environment": {
@@ -281,10 +280,10 @@
 				"private_browsing": true
 			},
 			"adnauseam@rednoise.org": {
-				"blocked_install_message": "AdNauseam",
+				"blocked_install_message": "AdNauseam. Hides uBlock Origin configuration one click too far for laziness/comfort",
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/adnauseam/latest.xpi",
-				"installation_mode": "force_installed",
+				"installation_mode": "blocked",
 				"private_browsing": true,
 				"restricted_domains": []
 			},
@@ -403,7 +402,7 @@
 				"blocked_install_message": "uBlock Origin",
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
-				"installation_mode": "blocked",
+				"installation_mode": "force_installed",
 				"private_browsing": true,
 				"restricted_domains": []
 			},
