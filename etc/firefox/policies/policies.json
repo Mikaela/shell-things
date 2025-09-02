@@ -1192,6 +1192,12 @@
 				"Type": "boolean",
 				"Value": true
 			},
+			"sidebar.position_start": {
+				"Comment": "Tab bar on the right (what a logical name?). Preference not allowed for stability reasons :(",
+				"Status": "default",
+				"Type": "boolean",
+				"Value": false
+			},
 			"sidebar.revamp": {
 				"Comment": "Preference not allowed for stability reasons.",
 				"Status": "default",
