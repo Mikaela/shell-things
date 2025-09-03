@@ -33,4 +33,6 @@ _Aferoj emas funkcii sin mem..._ **OM MANI PEME HUNG...**
     boundaries as well, you can say "no" and continue your path without
     explanations.
 
+> Hear... Feel... Think...
+
 > May your heart be your guiding key
