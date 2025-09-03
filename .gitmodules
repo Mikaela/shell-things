@@ -12,7 +12,7 @@
 	shallow = true
 [submodule "submodules/opendyslexic"]
 	path = submodules/opendyslexic
-	url = https://github.com/antijingoist/opendyslexic.git
+	url = https://forge.hackers.town/antijingoist/opendyslexic.git
 	branch = main
 	ignore = dirty
 	shallow = true
