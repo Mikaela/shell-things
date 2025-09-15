@@ -659,6 +659,12 @@ if hash homebrew 2> /dev/null; then
 	alias brew=homebrew
 fi
 
+# When starting Firefox from terminal, display profile manager. It should
+# point to my wrapper script handling other things anyway.
+alias firefox="\firefox --ProfileManager"
+alias ff=firefox
+alias ff6=firefox
+
 # Allow custom aliases to be put in .aliases or .zsh_aliases .
 
 # .aliases
