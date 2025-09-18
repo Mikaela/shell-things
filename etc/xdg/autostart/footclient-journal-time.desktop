@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=footclient -T Time journalctl --no-hostname --follow -u chrony -u chronyd -u systemd-timesyncd -u ntp -u ntpd
+Icon=foot
+Terminal=false
+Name=Time log
+Comment=sysadmin laziness
