@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=footclient -T DNS journalctl --no-hostname --follow -u unbound -u systemd-resolved
+Icon=foot
+Terminal=false
+Name=DNS log
+Comment=sysadmin laziness

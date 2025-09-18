@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=footclient -T Network journalctl --no-hostname --follow -u NetworkManager -u systemd-networkd -u wpa_supplicant -u iwd
+Icon=foot
+Terminal=false
+Name=Network log
+Comment=sysadmin laziness
