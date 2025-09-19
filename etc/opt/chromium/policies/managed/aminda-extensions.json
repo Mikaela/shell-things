@@ -33,7 +33,8 @@
 					"tunnistus.telia.fi",
 					"www.ecosia.org",
 					"www.npmjs.com",
-					"www.suomi.fi"
+					"www.suomi.fi",
+					"arctia.fi"
 				],
 				"rulesets": [
 					"-*",
@@ -87,7 +88,8 @@
 						"tunnistus.telia.fi",
 						"www.ecosia.org",
 						"www.npmjs.com",
-						"www.suomi.fi"
+						"www.suomi.fi",
+						"arctia.fi"
 					]
 				},
 				"toOverwrite": {
@@ -178,7 +180,8 @@
 				"checkForDNTPolicy": true,
 				"disabledSites": [
 					"www.ecosia.org",
-					"pp-attester-turnstile.research.cloudflare.com"
+					"pp-attester-turnstile.research.cloudflare.com",
+					"arctia.fi"
 				],
 				"learnInIncognito": true,
 				"learnLocally": true,
