@@ -692,7 +692,7 @@ if ! hash btraceback 2> /dev/null; then
 	fi
 	if hash rg 2> /dev/null; then
 		if hash batgrep 2> /dev/null; then
-			alias grep=batgrep
+			alias bgrep=batgrep
 		fi
 	fi
 	if hash batman 2> /dev/null; then
