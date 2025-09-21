@@ -264,14 +264,14 @@
 				"blocked_install_message": "Adaptive Tab Bar Colour",
 				"default_area": "menupanel",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/adaptive-tab-bar-colour/latest.xpi",
-				"installation_mode": "force_installed",
+				"installation_mode": "normal_installed",
 				"private_browsing": true
 			},
 			"CanvasBlocker@kkapsner.de": {
 				"blocked_install_message": "CanbasBlocker. Requested by LibreAwoo for those who don't have RFP/FPP, neither of which I can specify through this policy, while the description says it's compatible with the default one. However incompatible with JShelter (I think).",
 				"default_area": "menupanel",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/canvasblocker/latest.xpi",
-				"installation_mode": "blocked",
+				"installation_mode": "allowed",
 				"private_browsing": true,
 				"restricted_domains": []
 			},
@@ -294,7 +294,7 @@
 				"blocked_install_message": "Chrome Mask",
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/chrome-mask/latest.xpi",
-				"installation_mode": "force_installed",
+				"installation_mode": "normal_installed",
 				"private_browsing": false
 			},
 			"goeuropean@example.com": {
@@ -331,7 +331,7 @@
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/terms-of-service-didnt-read/latest.xpi",
 				"installation_mode": "force_installed",
-				"private_browsing": false
+				"private_browsing": true
 			},
 			"jid1-MnnxcxisBPnSXQ-eff@jetpack": {
 				"blocked_install_message": "PrivacyBadger (eff.org). Already installed from AMO",
@@ -507,7 +507,7 @@
 				"blocked_install_message": "IG Plus. Options to disable algorhitms and other annoyances while begrudgingly using instagram.com",
 				"default_area": "menupanel",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/igplus-extension/latest.xpi",
-				"installation_mode": "normal_installed",
+				"installation_mode": "allowed",
 				"private_browsing": false
 			},
 			"{90b8ecca-860a-4f1c-8476-e181df2cf635}": {
@@ -521,7 +521,7 @@
 				"blocked_install_message": "Tor Snowflake proxy (for prividing the proxy for others)",
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/torproject-snowflake/latest.xpi",
-				"installation_mode": "allowed",
+				"installation_mode": "normal_installed",
 				"private_browsing": false
 			},
 			"{b5501fd1-7084-45c5-9aa6-567c2fcf5dc6}": {
@@ -535,7 +535,7 @@
 				"blocked_install_message": "LocalCDN",
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/localcdn-fork-of-decentraleyes/latest.xpi",
-				"installation_mode": "normal_installed",
+				"installation_mode": "allowed",
 				"private_browsing": true,
 				"restricted_domains": []
 			},
