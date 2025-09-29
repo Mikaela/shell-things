@@ -282,6 +282,10 @@ else
 	if hash xdg-user-dir 2> /dev/null; then
 		DESKTOP=$(xdg-user-dir DESKTOP)
 
+		if [ -d ~/.config/autostart ]; then
+			ln -nsfv ~/.config/autostart/*.desktop $DESKTOP/
+		fi
+
 		# Ensure there is foot-server.socket before creating a shortcut for footclient
 		if hash systemctl 2> /dev/null; then
 			systemctl --user enable --now foot-server.socket
