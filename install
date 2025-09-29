@@ -219,6 +219,7 @@ if [ "$(id -u)" == "0" ]; then
 		cp -v etc/xdg/autostart/footclient-journal-dns.desktop /etc/xdg/autostart/
 		cp -v etc/xdg/autostart/footclient-journal-network.desktop /etc/xdg/autostart/
 		cp -v etc/xdg/autostart/footclient-journal-time.desktop /etc/xdg/autostart/
+		cp -v etc/xdg/autostart/easyeffects-service.desktop /etc/xdg/autostart/
 	fi
 
 	# Enables laziness on checking whether or not apt is installed
