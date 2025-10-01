@@ -189,11 +189,19 @@ if [ "$(id -u)" == "0" ]; then
 	#cp -v etc/systemd/system/socket.d/dualstack-bind.conf /etc/systemd/system/oidentd.socket.d/
 	rm -v /etc/systemd/system/*.socket.d/dualstack-bind.conf
 
-	# STRANGE BEHAVIOUR WARNING IF NOT ME. This is now how I assume Kinoite
-	if [ -f /usr/etc/rpm-ostreed.conf ]; then
-		cp -v etc/systemd/system/{aminda-duperemove,aminda-nocron-reboot,aminda-nocron-rebootish,flatpak-update,monthly-btrfs-balance,sysctl-p--system}.service /etc/systemd/system/
-		cp -v etc/systemd/system/{aminda-duperemove,aminda-nocron-reboot,aminda-nocron-rebootish,flatpak-update,monthly-btrfs-balance,sysctl-p--system}.timer /etc/systemd/system/
+	# SECURITY WARNING! Automatic flatpak updates
+	if hash flatpak 2> /dev/null; then
+		cp -v etc/systemd/system/flatpak-update.{timer,service} /etc/systemd/system/
+	fi
 
+	# STRANGE BEHAVIOUR WARNING IF NOT ME.
+	cp -v etc/systemd/system/{aminda-nocron-reboot,aminda-nocron-rebootish,sysctl-p--system}.service /etc/systemd/system/
+	cp -v etc/systemd/system/{aminda-nocron-reboot,aminda-nocron-rebootish,sysctl-p--system}.timer /etc/systemd/system/
+	# This is now how I assume Kinoite
+	if [ -f /usr/etc/rpm-ostreed.conf ]; then
+		cp -v etc/systemd/system/{aminda-duperemove,monthly-btrfs-balance}.service /etc/systemd/system/
+		cp -v etc/systemd/system/{aminda-duperemove,monthly-btrfs-balance}.timer /etc/systemd/system/
+		# As we are Kinoite/Atomic and known to use BTRFS
 		cp -v etc/systemd/system/aminda-duperemove.service.d/{90-btrfs-balance,91-fedora-atomic}.conf /etc/systemd/system/aminda-duperemove.service.d/
 		cp -v etc/systemd/system/monthly-btrfs-balance.service.d/fedora-atomic.conf /etc/systemd/system/monthly-btrfs-balance.service.d/
 	fi
@@ -217,6 +225,13 @@ if [ "$(id -u)" == "0" ]; then
 		elif [ -f /etc/systemd/system/sockets.target.wants/sshd.socket ]; then
 			(systemctl disable --now sshd.service &)
 			(systemctl enable --now sshd.socket &)
+		fi
+
+		# Aminda weirdness
+		(systemctl enable --now {aminda-nocron-reboot,aminda-nocron-rebootish,sysctl-p--system}.timer &)
+
+		if hash flatpak 2> /dev/null; then
+			(systemctl enable flatpak-update.timer &)
 		fi
 
 		if [ -f /usr/etc/rpm-ostreed.conf ]; then
