@@ -222,12 +222,14 @@ if [ "$(id -u)" == "0" ]; then
 		cp -v etc/xdg/autostart/easyeffects-service.desktop /etc/xdg/autostart/
 	fi
 
-	# Enables laziness on checking whether or not apt is installed
-	mkdir -vp /etc/apt/apt.conf.d/
-	# Enables progress bar and colours for apt/dpkg, which are helpful at
-	# times when guesstimating when will things happen
-	echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
-	echo 'APT::Color "1";' > /etc/apt/apt.conf.d/99color
+	# If apt is installed, enable progress bar and colors
+	if hash apt-get 2> /dev/null; then
+		mkdir -vp /etc/apt/apt.conf.d/
+		# Enables progress bar and colours for apt/dpkg, which are helpful at
+		# times when guesstimating when will things happen
+		echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
+		echo 'APT::Color "1";' > /etc/apt/apt.conf.d/99color
+	fi
 
 	# Workarounds for Debian binary names
 	# nodejs -> node was traditionally an eternity issue for me
