@@ -672,8 +672,8 @@
 				"Value": false
 			},
 			"browser.display.use_document_fonts": {
-				"Comment": "Are webpages allowed to set their own fonts by default? 0 forbids them. See also browser.display.use_document_fonts.icon_font_allowlist for what webpages are allowed to set. If changing this, see also fingerprinting overrides",
-				"Status": "locked",
+				"Comment": "Are webpages allowed to set their own fonts by default? 0 forbids them. See also browser.display.use_document_fonts.icon_font_allowlist for what webpages are allowed to set. If changing this, see also fingerprinting overrides. Status user for unhindered developer tools access.",
+				"Status": "user",
 				"Type": "number",
 				"Value": 0
 			},
