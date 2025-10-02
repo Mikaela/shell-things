@@ -409,8 +409,8 @@ if [ -d "$HOME/.shell-things" ]; then
 	ln -nsfv $HOME/.shell-things/submodules/serious-sans/SeriousShanns/NerdFontMono $HOME/.local/share/fonts/
 	ln -nsfv $HOME/.shell-things/submodules/serious-sans/SeriousShanns/NerdFontPropo $HOME/.local/share/fonts/
 	ln -nsfv $HOME/.shell-things/submodules/Inclusive-Sans/fonts/variable $HOME/.local/share/fonts/Inclusive-Sans
-	ln -nsfv $HOME/.shell-things/submodules/atkinson-hyperlegible/fonts/otf $HOME/.local/share/atkinson-hyperlegible
-	ln -nsfv $HOME/.shell-things/submodules/atkinson-hyperlegible-next/fonts/variable $HOME/.local/share/atkinson-hyperlegible-next
+	ln -nsfv $HOME/.shell-things/submodules/atkinson-hyperlegible/fonts/otf $HOME/.local/share/fonts/atkinson-hyperlegible
+	ln -nsfv $HOME/.shell-things/submodules/atkinson-hyperlegible-next/fonts/variable $HOME/.local/share/fonts/atkinson-hyperlegible-next
 	ln -nsfv $HOME/.shell-things/submodules/atkinson-hyperlegible-next-mono/fonts/variable $HOME/.local/share/fonts/atkinson-hyperlegible-next-mono
 	# Font cleanup
 	if hash symlinks 2> /dev/null; then
