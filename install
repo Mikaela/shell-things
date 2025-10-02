@@ -296,6 +296,9 @@ if [ "$(id -u)" == "0" ]; then
 		ln -nsfv $HOME/.shell-things/submodules/serious-sans/SeriousShanns/NerdFontMono /usr/local/share/fonts/
 		ln -nsfv $HOME/.shell-things/submodules/serious-sans/SeriousShanns/NerdFontPropo /usr/local/share/fonts/
 		ln -nsfv $HOME/.shell-things/submodules/Inclusive-Sans/fonts/variable /usr/local/share/fonts/Inclusive-Sans
+		ln -nsfv $HOME/.shell-things/submodules/atkinson-hyperlegible/fonts/otf /usr/local/share/fonts/atkinson-hyperlegible
+		ln -nsfv $HOME/.shell-things/submodules/atkinson-hyperlegible-next/fonts/variable /usr/local/share/fonts/atkinson-hyperlegible-next
+		ln -nsfv $HOME/.shell-things/submodules/atkinson-hyperlegible-next-mono/fonts/variable /usr/local/share/fonts/atkinson-hyperlegible-next-mono
 	fi
 
 	# Symlink cleanup
@@ -399,15 +402,16 @@ fi
 if [ -d "$HOME/.shell-things" ]; then
 	mkdir -p $HOME/.local/share/fonts
 	ln -nsfv $HOME/.shell-things/submodules/comicneue/Fonts/OTF $HOME/.local/share/fonts/comicneue
-	#ln -nsfv $HOME/.shell-things/submodules/comic-shanns-mono/fonts $HOME/.local/share/fonts/comic-shanns-mono
 	ln -nsfv $HOME/.shell-things/submodules/comic-shanns-mono/fonts/ComicShannsMono-Regular.otf $HOME/.local/share/fonts/
-	#ln -nsfv $HOME/.shell-things/submodules/opendyslexic/compiled $HOME/.local/share/fonts/opendyslexic
 	ln -nsfv $HOME/.shell-things/submodules/opendyslexic/compiled/OpenDyslexic-*.otf $HOME/.local/share/fonts/
 	ln -nsfv $HOME/.shell-things/submodules/serious-sans/SeriousShanns/otf $HOME/.local/share/fonts/SeriousShanns
 	ln -nsfv $HOME/.shell-things/submodules/serious-sans/SeriousShanns/NerdFont $HOME/.local/share/fonts/
 	ln -nsfv $HOME/.shell-things/submodules/serious-sans/SeriousShanns/NerdFontMono $HOME/.local/share/fonts/
 	ln -nsfv $HOME/.shell-things/submodules/serious-sans/SeriousShanns/NerdFontPropo $HOME/.local/share/fonts/
 	ln -nsfv $HOME/.shell-things/submodules/Inclusive-Sans/fonts/variable $HOME/.local/share/fonts/Inclusive-Sans
+	ln -nsfv $HOME/.shell-things/submodules/atkinson-hyperlegible/fonts/otf $HOME/.local/share/atkinson-hyperlegible
+	ln -nsfv $HOME/.shell-things/submodules/atkinson-hyperlegible-next/fonts/variable $HOME/.local/share/atkinson-hyperlegible-next
+	ln -nsfv $HOME/.shell-things/submodules/atkinson-hyperlegible-next-mono/fonts/variable $HOME/.local/share/fonts/atkinson-hyperlegible-next-mono
 	# Font cleanup
 	if hash symlinks 2> /dev/null; then
 		symlinks -d $HOME/.local/share/fonts/

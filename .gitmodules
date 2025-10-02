@@ -58,3 +58,21 @@
 	branch = master
 	ignore = dirty
 	shallow = true
+[submodule "submodules/atkinson-hyperlegible"]
+	path = submodules/atkinson-hyperlegible
+	url = https://github.com/googlefonts/atkinson-hyperlegible.git
+	branch = main
+	ignore = dirty
+	shallow = true
+[submodule "submodules/atkinson-hyperlegible-next"]
+	path = submodules/atkinson-hyperlegible-next
+	url = https://github.com/googlefonts/atkinson-hyperlegible-next.git
+	branch = main
+	ignore = dirty
+	shallow = true
+[submodule "submodules/atkinson-hyperlegible-next-mono"]
+	path = submodules/atkinson-hyperlegible-next-mono
+	url = https://github.com/googlefonts/atkinson-hyperlegible-next-mono.git
+	branch = main
+	ignore = dirty
+	shallow = true
