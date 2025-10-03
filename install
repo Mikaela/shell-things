@@ -39,6 +39,9 @@ cp -v rc/profile $HOME/.profile
 # Create configuration directories missed later
 mkdir -vp $HOME/.config/{autostart,foot,git,MangoHud,mpv,nvim,systemd/user,yt-dlp}/
 
+# terminfo just in case it needs to be copied to remote system
+mkdir -vp $HOME/.terminfo/{A..z}
+
 # Git config, legacy support for old location as well.
 # The other script appends sourced file, so if thou aren't I, thou should
 # consider it as well; `git config --global --add include.path '$HOME/yourgitconfig'`
