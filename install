@@ -156,6 +156,11 @@ if [ "$(id -u)" == "0" ]; then
 	mkdir -vp /usr/local/share/applications/
 	cp -v local/share/applications/*.desktop /usr/local/share/applications/
 
+	# Additional configuration for sudo SECURITY WARNING DANGER ALARM BELLS!
+	if [ -d /etc/sudoers.d ]; then
+		cp -v etc/sudoers.d/{lecture,password-feedback,always-ask-password,envkeep-extras} /etc/sudoers.d/
+	fi
+
 	# Profile configuration. SECURITY WARNING
 	cp -v etc/profile.d/*.sh /etc/profile.d/
 	chmod -v a+r /etc/profile.d/*.sh
