@@ -89,7 +89,11 @@ mkdir -vp $HOME/.inxi
 cp -v conf/inxi.conf $HOME/.inxi/inxi.conf
 
 # laziness
-gpg --quiet --import .mikaela/keys/*.asc &
+if [ -d submodules/pgp-alt-wot/me ]; then
+	gpg --quiet --import submodules/pgp-alt-wot/me/*.asc &
+else
+	gpg --quiet --import .mikaela/keys/*.asc &
+fi
 
 # Utilized by my ssh_config (not to be confused with sshd_config)
 mkdir -vp $HOME/.ssh/sockets/
