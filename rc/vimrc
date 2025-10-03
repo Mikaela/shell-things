@@ -112,3 +112,6 @@ set textwidth=78
 " Marginal/line just before that. Set separately so it gets affected by
 " editorconfig and modelines?
 set colorcolumn=-1
+
+" Enable truecolor support
+set termguicolors
