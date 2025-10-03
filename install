@@ -165,7 +165,7 @@ if [ "$(id -u)" == "0" ]; then
 	# SSHd hardening hopefully. SECURITY WARNING
 	mkdir -vp /etc/ssh/sshd_config.d/
 	chmod -v a+x /etc/ssh/sshd_config.d/
-	cp etc/ssh/sshd_config.d/00-basic-security.conf /etc/ssh/sshd_config.d/
+	cp etc/ssh/sshd_config.d/{00-basic-security.conf,01-acceptenv.conf} /etc/ssh/sshd_config.d/
 	chmod -v a+r /etc/ssh/sshd_config.d/*.conf
 
 	# Systemd configuration directories. SECURITY WARNINGS!
