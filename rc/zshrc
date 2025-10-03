@@ -1011,9 +1011,6 @@ if [ -f ~/.warnings ]; then
 	source ~/.warnings
 fi
 
-#TODO: FIXME:
-TERM=xterm-256color
-
 # If $TMUX, then TERM is tmux-256color
 if [ -v TMUX ]; then
 	TERM=tmux-256color
