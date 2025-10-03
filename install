@@ -37,7 +37,7 @@ cp -v rc/zshrc $HOME/.zshrc
 cp -v rc/profile $HOME/.profile
 
 # Create configuration directories missed later
-mkdir -vp $HOME/.config/{autostart,foot,git,mpv,nvim,systemd/user,yt-dlp}/
+mkdir -vp $HOME/.config/{autostart,foot,git,MangoHud,mpv,nvim,systemd/user,yt-dlp}/
 
 # Git config, legacy support for old location as well.
 # The other script appends sourced file, so if thou aren't I, thou should
@@ -53,6 +53,9 @@ mkdir -vp $HOME/.git-template
 cp -v rc/vimrc $HOME/.vimrc
 cp -v conf/init.vim $HOME/.config/nvim/init.vim
 cp -v conf/makepkg.conf $HOME/.makepkg.conf
+
+# system information overlay
+cp -v conf/MangoHud.conf $HOME/.config/MangoHud/
 
 # the media player
 cp -v conf/mpv.conf $HOME/.config/mpv/mpv.conf
