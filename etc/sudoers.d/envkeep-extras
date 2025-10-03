@@ -1,2 +1,2 @@
 # Remember these environment variables
-env_keep += "TERM COLORTERM"
+Defaults	env_keep += "TERM COLORTERM"
