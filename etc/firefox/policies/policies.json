@@ -797,6 +797,12 @@
 				"Type": "boolean",
 				"Value": true
 			},
+			"browser.tabs.min_inactive_duration_before_unload": {
+				"Comment": "Presumed to be ms, allow tabs to be unloaded after one minute of inactivity (default ten)",
+				"Status": "default",
+				"Type": "number",
+				"Value": 60000
+			},
 			"browser.tabs.unloadOnLowMemory": {
 				"Status": "locked",
 				"Type": "boolean",
