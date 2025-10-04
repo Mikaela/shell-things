@@ -264,6 +264,7 @@ if [ "$(id -u)" == "0" ]; then
 		cp -v etc/xdg/autostart/footclient-journal-network.desktop /etc/xdg/autostart/
 		cp -v etc/xdg/autostart/footclient-journal-time.desktop /etc/xdg/autostart/
 		cp -v etc/xdg/autostart/easyeffects-service.desktop /etc/xdg/autostart/
+		ln -nsfv /usr/local/share/applications/a-firefox.desktop /etc/xdg/autostart/
 	fi
 
 	# If apt is installed, enable progress bar and colors
