@@ -765,6 +765,12 @@
 				"Type": "boolean",
 				"Value": false
 			},
+			"browser.tabs.fadeOutUnloadedTabs": {
+				"Comment": "By default only explicitly unloaded tabs appear faded",
+				"Status": "default",
+				"Type": "boolean",
+				"Value": true
+			},
 			"browser.tabs.groups.enabled": {
 				"Status": "default",
 				"Type": "boolean",
