@@ -20,38 +20,41 @@ lockPref("cookiebanners.service.mode.privateBrowsing", 2);
 
 // I can set my preferred fonts in an order! :O
 // but obviously this is forbidden in policies.json!
-// lockPref(
-// 	"font.name-list.monospace.x-cyrillic",
-// 	"Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
-// );
-// lockPref(
-// 	"font.name-list.monospace.x-western",
-// 	"Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
-// );
-// // REMEMBER! OpenDyslexic won't work here for some reason, use the extension
-// // once it returns to Firefox! https://github.com/OpenDyslexic/extension/issues/75
-// lockPref(
-// 	"font.name-list.sans-serif.x-cyrillic",
-// 	"OpenDyslexic, Inclusive Sans, Roboto, Liberation Sans, Noto Sans, sans-serif",
-// );
-// lockPref(
-// 	"font.name-list.sans-serif.x-western",
-// 	"OpenDyslexic, Inclusive Sans, Liberation Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
-// );
-// lockPref(
-// 	"font.name-list.serif.x-cyrillic",
-// 	"OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
-// );
-// lockPref(
-// 	"font.name-list.serif.x-western",
-// 	"OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
-// );
-clearPref("font.name-list.monospace.x-cyrillic");
-clearPref("font.name-list.monospace.x-western");
-clearPref("font.name-list.sans-serif.x-cyrillic");
-clearPref("font.name-list.sans-serif.x-western");
-clearPref("font.name-list.serif.x-cyrillic");
-clearPref("font.name-list.serif.x-western");
+lockPref(
+	"font.name-list.monospace.x-cyrillic",
+	"Atkinson Hyperlegible Mono, Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
+);
+lockPref(
+	"font.name-list.monospace.x-western",
+	"Atkinson Hyperlegible Mono, Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
+);
+// REMEMBER! OpenDyslexic won't work here for some reason, use the extension
+// once it returns to Firefox! https://github.com/OpenDyslexic/extension/issues/75
+// TODO: Is the above correct when -FontVisibilityRestrictGenerics ?
+lockPref(
+	"font.name-list.sans-serif.x-cyrillic",
+	"Atkinson Hyperlegible Next, OpenDyslexic, Inclusive Sans, Roboto, Liberation Sans, Noto Sans, sans-serif",
+);
+lockPref(
+	"font.name-list.sans-serif.x-western",
+	"Atkinson Hyperlegible Next, OpenDyslexic, Inclusive Sans, Liberation Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
+);
+lockPref(
+	"font.name-list.serif.x-cyrillic",
+	"Atkinson Hyperlegible Next, OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
+);
+lockPref(
+	"font.name-list.serif.x-western",
+	"Atkinson Hyperlegible Next, OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
+);
+
+// Uncomment when giving up on messing up with fonts
+//clearPref("font.name-list.monospace.x-cyrillic");
+//clearPref("font.name-list.monospace.x-western");
+//clearPref("font.name-list.sans-serif.x-cyrillic");
+//clearPref("font.name-list.sans-serif.x-western");
+//clearPref("font.name-list.serif.x-cyrillic");
+//clearPref("font.name-list.serif.x-western");
 
 // Play animated images only once, accessibility.
 lockPref("image.animation_mode", "once");
@@ -63,9 +66,10 @@ lockPref("javascript.use_us_english_locale", true);
 // Refer to https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc
 lockPref("privacy.fingerprintingProtection", true);
 lockPref("privacy.fingerprintingProtection.pbmode", true);
+// -FontVisibilityRestrictGenerics should allow fonts set in preferences to appear
 lockPref(
 	"privacy.fingerprintingProtection.overrides",
-	"+AllTargets,-KeyboardEvents,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-JSDateTimeUTC",
+	"+AllTargets,-KeyboardEvents,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-JSDateTimeUTC,-FontVisibilityRestrictGenerics",
 );
 pref("browser.display.use_document_fonts", 0);
 
