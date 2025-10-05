@@ -8,7 +8,7 @@
 lockPref("autoadmin.failover_to_cached", true);
 lockPref(
 	"autoadmin.global_config_url",
-	"https://codeberg.org/Aminda/shell-things/raw/branch/cxefa/conf/firefox-forbidden-policies.js",
+	"https://raw.githubusercontent.com/Mikaela/shell-things/refs/heads/cxefa/conf/firefox-forbidden-policies.js",
 );
 lockPref("autoadmin.offline_failover", true);
 lockPref("autoadmin.refresh_interval", 120);
