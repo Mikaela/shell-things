@@ -1143,7 +1143,7 @@
 				"Comment": "Preference not allowed for stability reasons. :( https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc - If you adjust this, see also use_document_fonts to not increase fingerprinting surface excessively",
 				"Status": "locked",
 				"Type": "string",
-				"Value": "+AllTargets,-KeyboardEvents,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-JSDateTimeUTC"
+				"Value": "+AllTargets,-KeyboardEvents,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-JSDateTimeUTC,-FontVisibilityRestrictGenerics"
 			},
 			"privacy.fingerprintingProtection.pbmode": {
 				"Comment": "Preference not allowed for stability reasons. :(",
