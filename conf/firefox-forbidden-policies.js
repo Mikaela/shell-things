@@ -69,7 +69,7 @@ lockPref("privacy.fingerprintingProtection.pbmode", true);
 // -FontVisibilityRestrictGenerics should allow fonts set in preferences to appear
 lockPref(
 	"privacy.fingerprintingProtection.overrides",
-	"+AllTargets,-KeyboardEvents,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-JSDateTimeUTC,-FontVisibilityRestrictGenerics",
+	"+AllTargets,-KeyboardEvents,-CSSPrefersColorScheme,-CSSPrefersReducedMotion,-JSDateTimeUTC,-FontVisibilityRestrictGenerics,-FontVisibilityBaseSystem,-FontVisibilityLangPack",
 );
 pref("browser.display.use_document_fonts", 0);
 
