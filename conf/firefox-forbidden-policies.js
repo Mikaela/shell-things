@@ -39,22 +39,22 @@ lockPref(
 	"font.name-list.sans-serif.x-western",
 	"Atkinson Hyperlegible Next, OpenDyslexic, Inclusive Sans, Liberation Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
 );
-lockPref(
-	"font.name-list.serif.x-cyrillic",
-	"Atkinson Hyperlegible Next, OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
-);
-lockPref(
-	"font.name-list.serif.x-western",
-	"Atkinson Hyperlegible Next, OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
-);
+// lockPref(
+// 	"font.name-list.serif.x-cyrillic",
+// 	"Atkinson Hyperlegible Next, OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
+// );
+// lockPref(
+// 	"font.name-list.serif.x-western",
+// 	"Atkinson Hyperlegible Next, OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
+// );
 
 // Uncomment when giving up on messing up with fonts
 //clearPref("font.name-list.monospace.x-cyrillic");
 //clearPref("font.name-list.monospace.x-western");
 //clearPref("font.name-list.sans-serif.x-cyrillic");
 //clearPref("font.name-list.sans-serif.x-western");
-//clearPref("font.name-list.serif.x-cyrillic");
-//clearPref("font.name-list.serif.x-western");
+clearPref("font.name-list.serif.x-cyrillic");
+clearPref("font.name-list.serif.x-western");
 
 // Play animated images only once, accessibility.
 lockPref("image.animation_mode", "once");
