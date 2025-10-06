@@ -168,13 +168,13 @@ fi
 (ulimit -c unlimited &)
 
 # More colours
-if [[ $TERM == 'xterm' ]]; then
-	export TERM=xterm-256color
-fi
+#if [[ $TERM == 'xterm' ]]; then
+#	export TERM=xterm-256color
+#fi
 
-if [[ $TERM == 'screen' ]]; then
-	export TERM=screen-256color
-fi
+#if [[ $TERM == 'screen' ]]; then
+#	export TERM=screen-256color
+#fi
 
 # Sets the default editor.
 #export EDITOR=nvim # MIKAELA_GREP MIKAELA_GREP_ENVIRONMENT
@@ -345,7 +345,7 @@ alias rscp='rsync -h --progress -avz '
 alias rscpr='rsync -h --progress -azvv '
 
 # TMUX specific
-alias tmux="TERM=tmux-256color \tmux -2u"
+#alias tmux="TERM=tmux-256color \tmux -2u"
 alias attach="tmux attach-session"
 alias detach="tmux detach"
 
@@ -1012,8 +1012,8 @@ if [ -f ~/.warnings ]; then
 fi
 
 # If $TMUX, then TERM is tmux-256color
-if [ -v TMUX ]; then
-	TERM=tmux-256color
-fi
+#if [ -v TMUX ]; then
+#	TERM=tmux-256color
+#fi
 
 # vim: filetype=zsh

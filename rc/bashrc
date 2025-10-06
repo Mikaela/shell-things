@@ -62,9 +62,9 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
 fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
-case "$TERM" in
-	xterm-color) color_prompt=yes ;;
-esac
+#case "$TERM" in
+#	xterm-color) color_prompt=yes ;;
+#esac
 
 force_color_prompt=yes
 
@@ -95,12 +95,12 @@ else
 fi
 
 # If this is an xterm set the title to user@host:dir
-case "$TERM" in
-	xterm* | *rxvt*)
-		PS1="\[\e]0;\u@\h: \w\a\]$PS1"
-		;;
-	*) ;;
-esac
+#case "$TERM" in
+#	xterm* | *rxvt*)
+#		PS1="\[\e]0;\u@\h: \w\a\]$PS1"
+#		;;
+#	*) ;;
+#esac
 
 if hash dircolors 2> /dev/null; then
 	#test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -203,13 +203,13 @@ fi
 (ulimit -c unlimited &)
 
 # More colours
-if [[ $TERM == 'xterm' ]]; then
-	export TERM=xterm-256color
-fi
+#if [[ $TERM == 'xterm' ]]; then
+#	export TERM=xterm-256color
+#fi
 
-if [[ $TERM == 'screen' ]]; then
-	export TERM=screen-256color
-fi
+#if [[ $TERM == 'screen' ]]; then
+#	export TERM=screen-256color
+#fi
 
 # Things after this are just examples and should be put to some other file, which is sourced above.
 
@@ -381,7 +381,7 @@ alias rscp='rsync -h --progress -avz '
 alias rscpr='rsync -h --progress -azvv '
 
 # TMUX specific
-alias tmux="TERM=tmux-256color \tmux -2u"
+#alias tmux="TERM=tmux-256color \tmux -2u"
 alias attach="tmux attach-session"
 alias detach="tmux detach"
 
@@ -1019,8 +1019,8 @@ if [ -f ~/.bash_custom ]; then
 fi
 
 # If $TMUX, then TERM is tmux-256color
-if [ -v TMUX ]; then
-	TERM=tmux-256color
-fi
+#if [ -v TMUX ]; then
+#	TERM=tmux-256color
+#fi
 
 # vim: filetype=bash
