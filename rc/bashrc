@@ -95,12 +95,12 @@ else
 fi
 
 # If this is an xterm set the title to user@host:dir
-#case "$TERM" in
-#	xterm* | *rxvt*)
-#		PS1="\[\e]0;\u@\h: \w\a\]$PS1"
-#		;;
-#	*) ;;
-#esac
+case "$TERM" in
+	xterm* | *rxvt* | foot*)
+		PS1="\[\e]0;\u@\h: \w\a\]$PS1"
+		;;
+	*) ;;
+esac
 
 if hash dircolors 2> /dev/null; then
 	#test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
