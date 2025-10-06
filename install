@@ -58,7 +58,14 @@ cp -v conf/init.vim $HOME/.config/nvim/init.vim
 cp -v conf/makepkg.conf $HOME/.makepkg.conf
 
 # system information overlay
-cp -v conf/MangoHud.conf $HOME/.config/MangoHud/
+if [ ! -f $HOME/.config/MangoHud/MangoHud.conf ]; then
+	cp -v conf/MangoHud.conf $HOME/.config/MangoHud/
+fi
+
+# wayland native terminal
+if [ ! -f $HOME/.config/foot/foot.ini ]; then
+	cp -v conf/foot/foot.ini $HOME/.config/foot/foot.ini
+fi
 
 # the media player
 cp -v conf/mpv.conf $HOME/.config/mpv/mpv.conf
