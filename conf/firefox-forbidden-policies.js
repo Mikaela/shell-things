@@ -33,19 +33,19 @@ lockPref(
 // TODO: Is the above correct when -FontVisibilityRestrictGenerics ?
 lockPref(
 	"font.name-list.sans-serif.x-cyrillic",
-	"Atkinson Hyperlegible Next, OpenDyslexic, Inclusive Sans, Roboto, Liberation Sans, Noto Sans, sans-serif",
+	"Atkinson Hyperlegible Next, Atkinson Hyperlegible, OpenDyslexic, Inclusive Sans, Roboto, Liberation Sans, Noto Sans, sans-serif",
 );
 lockPref(
 	"font.name-list.sans-serif.x-western",
-	"Atkinson Hyperlegible Next, OpenDyslexic, Inclusive Sans, Liberation Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
+	"Atkinson Hyperlegible Next, Atkinson Hyperlegible, OpenDyslexic, Inclusive Sans, Liberation Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
 );
 // lockPref(
 // 	"font.name-list.serif.x-cyrillic",
-// 	"Atkinson Hyperlegible Next, OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
+// 	"Atkinson Hyperlegible Next, Atkinson Hyperlegible, OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
 // );
 // lockPref(
 // 	"font.name-list.serif.x-western",
-// 	"Atkinson Hyperlegible Next, OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
+// 	"Atkinson Hyperlegible Next, Atkinson Hyperlegible, OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
 // );
 
 // Uncomment when giving up on messing up with fonts
