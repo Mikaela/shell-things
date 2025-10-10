@@ -682,10 +682,30 @@
 				"Type": "boolean",
 				"Value": false
 			},
+			"browser.ml.chat.menu": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
+			},
+			"browser.ml.chat.page": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
+			},
 			"browser.ml.chat.provider": {
 				"Status": "user",
 				"Type": "string",
 				"Value": ""
+			},
+			"browser.ml.chat.sidebar": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
+			},
+			"browser.ml.enable": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": false
 			},
 			"browser.ml.linkPreview.enabled": {
 				"Status": "locked",
