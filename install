@@ -364,6 +364,8 @@ else
 		ln -nsfv /usr/share/applications/org.kde.kwrite.desktop $DESKTOP/
 		ln -nsfv /usr/share/applications/mpv.desktop $DESKTOP/
 		ln -nsfv /usr/share/applications/io.github.celluloid_player.Celluloid.desktop $DESKTOP/
+		ln -nsfv /usr/share/applications/org.kde.kinfocenter.desktop $DESKTOP/
+		ln -nsfv /usr/share/applications/org.kde.plasma-systemmonitor.desktop $DESKTOP/
 		#ln -nsfv /usr/share/applications/org.kde.haruna.desktop $DESKTOP/
 		# scripts repo
 		ln -nsfv /usr/local/share/applications/a-firefox.desktop $DESKTOP/
