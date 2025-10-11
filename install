@@ -367,6 +367,9 @@ else
 		#ln -nsfv /usr/share/applications/org.kde.haruna.desktop $DESKTOP/
 		# scripts repo
 		ln -nsfv /usr/local/share/applications/a-firefox.desktop $DESKTOP/
+		if [ -f "/usr/bin/chromium-browser" ]; then
+			ln -nsfv /usr/local/share/applications/a-chromium.desktop $DESKTOP/
+		fi
 		if [ -f "/usr/bin/google-chrome-stable" ]; then
 			ln -nsfv /usr/local/share/applications/a-google-chrome.desktop $DESKTOP/
 		fi
