@@ -37,7 +37,7 @@ cp -v rc/zshrc $HOME/.zshrc
 cp -v rc/profile $HOME/.profile
 
 # Create configuration directories missed later
-mkdir -vp $HOME/.config/{autostart,foot,git,MangoHud,mpv,nvim,systemd/user,yt-dlp}/
+mkdir -vp $HOME/.config/{autostart,bat,foot,git,MangoHud,mpv,nvim,systemd/user,yt-dlp}/
 
 # terminfo just in case it needs to be copied to remote system
 mkdir -vp $HOME/.terminfo/{A..z}
@@ -65,6 +65,15 @@ fi
 # wayland native terminal
 if [ ! -f $HOME/.config/foot/foot.ini ]; then
 	cp -v conf/foot/foot.ini $HOME/.config/foot/foot.ini
+fi
+
+#  A cat(1) clone with wings.
+if hash bat 2> /dev/null; then
+	mkdir -vp $(bat --config-dir)
+	if [ ! -f $(bat --config-file) ]; then
+		bat --generate-config-file
+		cat conf/bat.conf >> $(bat --config-file)
+	fi
 fi
 
 # the media player
