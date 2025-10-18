@@ -186,6 +186,10 @@ if [ "$(id -u)" == "0" ]; then
 	chmod -v a+r /etc/sysctl.d/*.conf
 	(sysctl -p --system &)
 
+	# udev configuration. SECURITY WARNING
+	mkdir -vp /etc/udev/rules.d/
+	ln -nsfv $HOME/.shell-things/submodules/steam-devices/*.rules /etc/udev/rules.d/
+
 	# SSHd hardening hopefully. SECURITY WARNING
 	mkdir -vp /etc/ssh/sshd_config.d/
 	chmod -v a+x /etc/ssh/sshd_config.d/
@@ -337,6 +341,7 @@ if [ "$(id -u)" == "0" ]; then
 	# Symlink cleanup
 	if hash symlinks 2> /dev/null; then
 		symlinks -d /etc/xdg/autostart/
+		symlinks -d /etc/udev/rules.d/
 		symlinks -d /usr/local/bin/
 		symlinks -d /usr/local/share/fonts/
 	else
