@@ -76,3 +76,15 @@
 	branch = main
 	ignore = dirty
 	shallow = true
+[submodule "submodules/nicoverbruggen-ebook-fonts"]
+	path = submodules/nicoverbruggen-ebook-fonts
+	url = https://github.com/nicoverbruggen/ebook-fonts.git
+	branch = main
+	ignore = dirty
+	shallow = true
+[submodule "submodules/microsoft-fonts"]
+	path = submodules/microsoft-fonts
+	url = https://github.com/microsoft/fonts.git
+	branch = master
+	ignore = dirty
+	shallow = true

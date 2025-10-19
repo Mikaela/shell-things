@@ -336,6 +336,9 @@ if [ "$(id -u)" == "0" ]; then
 		ln -nsfv $HOME/.shell-things/submodules/atkinson-hyperlegible/fonts/otf /usr/local/share/fonts/atkinson-hyperlegible
 		ln -nsfv $HOME/.shell-things/submodules/atkinson-hyperlegible-next/fonts/variable /usr/local/share/fonts/atkinson-hyperlegible-next
 		ln -nsfv $HOME/.shell-things/submodules/atkinson-hyperlegible-next-mono/fonts/variable /usr/local/share/fonts/atkinson-hyperlegible-next-mono
+		ln -nsfv $HOME/.shell-things/submodules/nicoverbruggen-ebook-fonts/fonts /usr/local/share/fonts/nicoverbruggen-ebook-fonts
+		ln -nsfv $HOME/.shell-things/submodules/microsoft-fonts/Symbols/*.ttf /usr/local/share/fonts/
+		ln -nsfv $HOME/.shell-things/submodules/microsoft-fonts/Symbols/*.otf /usr/local/share/fonts/
 	fi
 
 	# Symlink cleanup
@@ -455,6 +458,10 @@ if [ -d "$HOME/.shell-things" ]; then
 	ln -nsfv $HOME/.shell-things/submodules/atkinson-hyperlegible/fonts/otf $HOME/.local/share/fonts/atkinson-hyperlegible
 	ln -nsfv $HOME/.shell-things/submodules/atkinson-hyperlegible-next/fonts/variable $HOME/.local/share/fonts/atkinson-hyperlegible-next
 	ln -nsfv $HOME/.shell-things/submodules/atkinson-hyperlegible-next-mono/fonts/variable $HOME/.local/share/fonts/atkinson-hyperlegible-next-mono
+	ln -nsfv $HOME/.shell-things/submodules/nicoverbruggen-ebook-fonts/fonts $HOME/.local/share/fonts/nicoverbruggen-ebook-fonts
+	ln -nsfv $HOME/.shell-things/submodules/microsoft-fonts/Symbols/*.ttf $HOME/.local/share/fonts/
+	ln -nsfv $HOME/.shell-things/submodules/microsoft-fonts/Symbols/*.otf $HOME/.local/share/fonts/
+
 	# Font cleanup
 	if hash symlinks 2> /dev/null; then
 		symlinks -d $HOME/.local/share/fonts/
