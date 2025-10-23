@@ -340,7 +340,9 @@ if [ "$(id -u)" == "0" ]; then
 		ln -nsfv $HOME/.shell-things/submodules/microsoft-fonts/Symbols/*.ttf /usr/local/share/fonts/
 		ln -nsfv $HOME/.shell-things/submodules/microsoft-fonts/Symbols/*.otf /usr/local/share/fonts/
 		ln -nsfv $HOME/.shell-things/submodules/source-sans/VF/*.otf /usr/local/share/fonts/
+		ln -nsfv $HOME/.shell-things/submodules/source-sans/OTF/ /usr/local/share/fonts/source-sans
 		ln -nsfv $HOME/.shell-things/submodules/source-serif/VAR/*.otf /usr/local/share/fonts/
+		ln -nsfv $HOME/.shell-things/submodules/source-serif/OTF /usr/local/share/fonts/source-serif
 	fi
 
 	# Symlink cleanup
@@ -464,7 +466,9 @@ if [ -d "$HOME/.shell-things" ]; then
 	ln -nsfv $HOME/.shell-things/submodules/microsoft-fonts/Symbols/*.ttf $HOME/.local/share/fonts/
 	ln -nsfv $HOME/.shell-things/submodules/microsoft-fonts/Symbols/*.otf $HOME/.local/share/fonts/
 	ln -nsfv $HOME/.shell-things/submodules/source-sans/VF/*.otf $HOME/.local/share/fonts/
+	ln -nsfv $HOME/.shell-things/submodules/source-sans/OTF/ $HOME/.local/share/fonts/source-sans
 	ln -nsfv $HOME/.shell-things/submodules/source-serif/VAR/*.otf $HOME/.local/share/fonts/
+	ln -nsfv $HOME/.shell-things/submodules/source-serif/OTF $HOME/.local/share/fonts/source-serif
 
 	# Font cleanup
 	if hash symlinks 2> /dev/null; then
