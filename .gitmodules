@@ -88,3 +88,15 @@
 	branch = master
 	ignore = dirty
 	shallow = true
+[submodule "submodules/source-sans"]
+	path = submodules/source-sans
+	url = https://github.com/adobe-fonts/source-sans.git
+	branch = release
+	ignore = dirty
+	shallow = true
+[submodule "submodules/source-serif"]
+	path = submodules/source-serif
+	url = https://github.com/adobe-fonts/source-serif.git
+	branch = release
+	ignore = dirty
+	shallow = true
