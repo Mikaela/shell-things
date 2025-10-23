@@ -20,38 +20,38 @@ lockPref("cookiebanners.service.mode.privateBrowsing", 2);
 
 // I can set my preferred fonts in an order! :O
 // but obviously this is forbidden in policies.json!
-//lockPref(
-//	"font.name-list.monospace.x-cyrillic",
-//	"Atkinson Hyperlegible Mono, Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
-//);
+// Remember to allow fonts in privacy.fingerprintingProtection overrides and forbid document fonts to defeat font fingerprinting kind of
+lockPref(
+	"font.name-list.monospace.x-cyrillic",
+	"Atkinson Hyperlegible Mono, Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
+);
 lockPref(
 	"font.name-list.monospace.x-western",
 	"Atkinson Hyperlegible Mono, Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
 );
-// Forcing document fonts defeats font fingerprinting, don't worry.
-//lockPref(
-//	"font.name-list.sans-serif.x-cyrillic",
-//	"Atkinson Hyperlegible Next, Atkinson Hyperlegible, Inclusive Sans, Roboto, Liberation Sans, Noto Sans, sans-serif",
-//);
+lockPref(
+	"font.name-list.sans-serif.x-cyrillic",
+	"Atkinson Hyperlegible Next, Atkinson Hyperlegible, OpenDyslexic, Inclusive Sans, SourceSans3VF, Roboto, Liberation Sans, Noto Sans, sans-serif",
+);
 lockPref(
 	"font.name-list.sans-serif.x-western",
-	"Atkinson Hyperlegible Next, Atkinson Hyperlegible, Inclusive Sans, Roboto, Liberation Sans, Noto Sans, sans-serif",
+	"Atkinson Hyperlegible Next, Atkinson Hyperlegible, OpenDyslexic, Inclusive Sans, SourceSans3VF, Liberation Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
 );
-//lockPref(
-//	"font.name-list.serif.x-cyrillic",
-// 	"OpenDyslexic, Liberation Serif, Roboto Serif, Noto Serif, serif",
-// );
+lockPref(
+	"font.name-list.serif.x-cyrillic",
+	"Source Serif 4 Variable, Liberation Serif, Roboto Serif, Noto Serif, serif",
+);
 lockPref(
 	"font.name-list.serif.x-western",
-	"OpenDyslexic, Liberation Serif, Roboto Serif, Noto Serif, serif",
+	"Source Serif 4 Variable, Liberation Serif, Roboto Serif, Noto Serif, serif",
 );
 
 // Uncomment when giving up on messing up with fonts
-clearPref("font.name-list.monospace.x-cyrillic");
+//clearPref("font.name-list.monospace.x-cyrillic");
 //clearPref("font.name-list.monospace.x-western");
-clearPref("font.name-list.sans-serif.x-cyrillic");
+//clearPref("font.name-list.sans-serif.x-cyrillic");
 //clearPref("font.name-list.sans-serif.x-western");
-clearPref("font.name-list.serif.x-cyrillic");
+//clearPref("font.name-list.serif.x-cyrillic");
 //clearPref("font.name-list.serif.x-western");
 
 // Play animated images only once, accessibility.
