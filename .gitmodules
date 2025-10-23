@@ -100,3 +100,9 @@
 	branch = release
 	ignore = dirty
 	shallow = true
+[submodule "submodules/source-code-pro"]
+	path = submodules/source-code-pro
+	url = https://github.com/adobe-fonts/source-code-pro.git
+	branch = release
+	ignore = dirty
+	shallow = true
