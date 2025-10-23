@@ -286,7 +286,7 @@
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"cjpalhdlnbpafiamejdnhcphjbkeiagm": {
-			"blocked_install_message": "uBlock Origin Chrome",
+			"blocked_install_message": "uBlock Origin (Chrome, no longer exists, see uBlock Origin (Edge))",
 			"installation_mode": "blocked",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
@@ -429,7 +429,7 @@
 			"blocked_install_message": "Tor Snowflake",
 			"installation_mode": "normal_installed",
 			"override_update_url": true,
-			"toolbar_pin": "default_unpinned",
+			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"mlojlfildnehdpnlmpkeiiglhhkofhpb": {
@@ -475,7 +475,7 @@
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"odfafepnkmbhccpbejgmiehpchacaeak": {
-			"blocked_install_message": "uBlock Origin (Edge)",
+			"blocked_install_message": "uBlock Origin (Edge). Must be force_installed for tracking URL cleanup",
 			"installation_mode": "force_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
