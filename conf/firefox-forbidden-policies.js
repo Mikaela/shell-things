@@ -20,41 +20,39 @@ lockPref("cookiebanners.service.mode.privateBrowsing", 2);
 
 // I can set my preferred fonts in an order! :O
 // but obviously this is forbidden in policies.json!
-lockPref(
-	"font.name-list.monospace.x-cyrillic",
-	"Atkinson Hyperlegible Mono, Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
-);
+//lockPref(
+//	"font.name-list.monospace.x-cyrillic",
+//	"Atkinson Hyperlegible Mono, Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
+//);
 lockPref(
 	"font.name-list.monospace.x-western",
 	"Atkinson Hyperlegible Mono, Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
 );
-// REMEMBER! OpenDyslexic won't work here for some reason, use the extension
-// once it returns to Firefox! https://github.com/OpenDyslexic/extension/issues/75
-// TODO: Is the above correct when -FontVisibilityRestrictGenerics ?
-lockPref(
-	"font.name-list.sans-serif.x-cyrillic",
-	"Atkinson Hyperlegible Next, Atkinson Hyperlegible, OpenDyslexic, Inclusive Sans, Roboto, Liberation Sans, Noto Sans, sans-serif",
-);
+// Forcing document fonts defeats font fingerprinting, don't worry.
+//lockPref(
+//	"font.name-list.sans-serif.x-cyrillic",
+//	"Atkinson Hyperlegible Next, Atkinson Hyperlegible, Inclusive Sans, Roboto, Liberation Sans, Noto Sans, sans-serif",
+//);
 lockPref(
 	"font.name-list.sans-serif.x-western",
-	"Atkinson Hyperlegible Next, Atkinson Hyperlegible, OpenDyslexic, Inclusive Sans, Liberation Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
+	"Atkinson Hyperlegible Next, Atkinson Hyperlegible, Inclusive Sans, Roboto, Liberation Sans, Noto Sans, sans-serif",
 );
-// lockPref(
-// 	"font.name-list.serif.x-cyrillic",
-// 	"Atkinson Hyperlegible Next, Atkinson Hyperlegible, OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
+//lockPref(
+//	"font.name-list.serif.x-cyrillic",
+// 	"OpenDyslexic, Liberation Serif, Roboto Serif, Noto Serif, serif",
 // );
-// lockPref(
-// 	"font.name-list.serif.x-western",
-// 	"Atkinson Hyperlegible Next, Atkinson Hyperlegible, OpenDyslexic, Inclusive Sans, Liberation Serif, Roboto Serif, Noto Serif, serif",
-// );
+lockPref(
+	"font.name-list.serif.x-western",
+	"OpenDyslexic, Liberation Serif, Roboto Serif, Noto Serif, serif",
+);
 
 // Uncomment when giving up on messing up with fonts
-//clearPref("font.name-list.monospace.x-cyrillic");
+clearPref("font.name-list.monospace.x-cyrillic");
 //clearPref("font.name-list.monospace.x-western");
-//clearPref("font.name-list.sans-serif.x-cyrillic");
+clearPref("font.name-list.sans-serif.x-cyrillic");
 //clearPref("font.name-list.sans-serif.x-western");
 clearPref("font.name-list.serif.x-cyrillic");
-clearPref("font.name-list.serif.x-western");
+//clearPref("font.name-list.serif.x-western");
 
 // Play animated images only once, accessibility.
 lockPref("image.animation_mode", "once");
