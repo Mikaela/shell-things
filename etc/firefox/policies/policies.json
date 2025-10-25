@@ -973,12 +973,6 @@
 				"Type": "boolean",
 				"Value": true
 			},
-			"geo.provider.use_gpsd": {
-				"Comment": "My geoclue should be using gpsd already.",
-				"Status": "locked",
-				"Type": "boolean",
-				"Value": false
-			},
 			"gfx.webrender.all": {
 				"Comment": "Enable fission, site separation per process, security",
 				"Status": "locked",
@@ -1012,12 +1006,6 @@
 			"intl.multilingual.enabled": {
 				"Comment": "Allow changing language from settings.",
 				"Status": "default",
-				"Type": "boolean",
-				"Value": true
-			},
-			"javascript.use_us_english_locale": {
-				"Comment": "Preference not allowed for stability reasons. :(",
-				"Status": "user",
 				"Type": "boolean",
 				"Value": true
 			},
@@ -1179,6 +1167,12 @@
 			"privacy.resistFingerprinting.letterboxing": {
 				"Comment": "Preference not allowed for stability reasons. :(",
 				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"privacy.spoof_english": {
+				"Comment": "Preference not allowed for stability reasons. :(",
+				"Status": "user",
 				"Type": "boolean",
 				"Value": true
 			},
