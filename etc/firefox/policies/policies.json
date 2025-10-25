@@ -1173,8 +1173,8 @@
 			"privacy.spoof_english": {
 				"Comment": "Preference not allowed for stability reasons. :(",
 				"Status": "user",
-				"Type": "boolean",
-				"Value": true
+				"Type": "number",
+				"Value": 2
 			},
 			"privacy.userContext.enabled": {
 				"Comment": "Tab containers",
