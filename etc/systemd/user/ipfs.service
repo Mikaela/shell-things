@@ -30,7 +30,7 @@ ExecStart=/home/linuxbrew/.linuxbrew/bin/ipfs daemon --routing=dht --enable-gc -
 # --enable-namesys-pubsub - real time previously cached ipns updates
 #
 # My specific config:
-#  ipfs config Reprovider.Strategy pinned - advertise only pinned files
+#  ipfs config Provide.Strategy "pinned+mfs" - advertise only pinned files
 #   to the network to reduce connections instead of also cached content
 #   (which they will still be able to download, see ipfs/go-ipfs#4145)
 #  ipfs config Swarm.ConnMgr.GracePeriod 1s - to get rid of excess
