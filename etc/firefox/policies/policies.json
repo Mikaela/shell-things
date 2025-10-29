@@ -405,7 +405,7 @@
 				"blocked_install_message": "uBlock Origin. Must be force_installed or will be again the next time I notice copy-pasting is full of tracking parameters",
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
-				"installation_mode": "force_installed",
+				"installation_mode": "normal_installed",
 				"private_browsing": true,
 				"restricted_domains": []
 			},
