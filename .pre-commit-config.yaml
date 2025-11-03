@@ -84,7 +84,7 @@ repos:
 
   # Easierish licensing when attempting reuse compliancy
   - repo: https://github.com/fsfe/reuse-tool
-    rev: v6.1.2
+    rev: v6.2.0
     hooks:
       - id: reuse
 
@@ -106,7 +106,7 @@ repos:
 
   # .editorconfig validity checking
   - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
-    rev: "3.4.0"
+    rev: "3.4.1"
     hooks:
       - id: editorconfig-checker
         alias: ec
