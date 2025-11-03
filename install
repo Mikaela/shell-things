@@ -62,6 +62,12 @@ if [ ! -f $HOME/.config/MangoHud/MangoHud.conf ]; then
 	cp -v conf/MangoHud.conf $HOME/.config/MangoHud/
 fi
 
+# Default cursor font
+if [[ ! -f $HOME/.local/share/icons/default/index.theme && -f /usr/share/icons/Oxygen_Yellow/index.theme ]]; then
+	mkdir -vp $HOME/.local/share/icons/default/
+	cp -v local/share/icons/default/index.theme $HOME/.local/share/icons/default/
+fi
+
 # wayland native terminal
 if [ ! -f $HOME/.config/foot/foot.ini ]; then
 	cp -v conf/foot/foot.ini $HOME/.config/foot/foot.ini
