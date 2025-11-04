@@ -74,10 +74,21 @@ mkdir -p /etc/brave
 setfacl --recursive --modify=u:root:rwX,g:root:rwX,o:rX /etc/brave
 ln -nsfv /etc/opt/chromium/policies /etc/brave/policies
 
-# Vivaldi
-mkdir -p /etc/chromium
-setfacl --recursive --modify=u:root:rwX,g:root:rwX,o:rX /etc/chromium
-ln -nsfv /etc/opt/chromium/policies /etc/chromium/policies
+# Fedora chromium package and for some reason Vivaldi
+if [ -d /usr/etc ]; then
+	echo "We may be on Fedora Atomic, time for the next if to not break things..."
+	if [ -d /usr/etc/chromium ]; then
+		cp --verbose --recursive --update /usr/etc/chromium/ --target-directory=/etc/
+		cp -v /etc/opt/chromium/policies/managed/*.json /etc/chromium/policies/managed/
+		cp -v /etc/opt/chromium/policies/recommended/*.json /etc/chromium/policies/recommended/
+		setfacl --recursive --modify=u:root:rwX,g:root:rwX,o:rX /etc/chromium
+	fi
+# if we are not on Fedora Atomic, this won't break things.
+else
+	mkdir -p /etc/chromium
+	setfacl --recursive --modify=u:root:rwX,g:root:rwX,o:rX /etc/chromium
+	ln -nsfv /etc/opt/chromium/policies /etc/chromium/policies
+fi
 
 # Google Chrome
 mkdir -p /etc/opt/chrome
