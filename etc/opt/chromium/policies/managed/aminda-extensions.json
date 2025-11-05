@@ -371,7 +371,7 @@
 		},
 		"hdlehfdjcalidklijenibmpcdgjfmafn": {
 			"blocked_install_message": "Revolut Shopper",
-			"installation_mode": "allowed",
+			"installation_mode": "normal_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
