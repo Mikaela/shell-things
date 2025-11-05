@@ -11,7 +11,8 @@ WallpaperPlugin=org.kde.potd
 Color=0,0,0
 
 [Greeter][Wallpaper][org.kde.potd][General]
-#Provider=bing
+FillMode=1
+Provider=bing
 #Provider=epod
 #Provider=flickr
 #Provider=noaa
@@ -22,4 +23,4 @@ Color=0,0,0
 # I only keep marking https://openwireless.org as metered and I doubt anyone
 # would notice if I encountered AP hosted by someone else and it updated one
 # picture.
-#UpdateOverMeteredConnection=1
+UpdateOverMeteredConnection=1
