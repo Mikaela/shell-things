@@ -11,7 +11,7 @@ WallpaperPlugin=org.kde.potd
 Color=0,0,0
 
 [Greeter][Wallpaper][org.kde.potd][General]
-FillMode=1
+FillMode=2
 Provider=bing
 #Provider=epod
 #Provider=flickr
