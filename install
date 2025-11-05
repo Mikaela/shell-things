@@ -235,6 +235,16 @@ if [ "$(id -u)" == "0" ]; then
 		cp -v etc/systemd/system/flatpak-update.{timer,service} /etc/systemd/system/
 	fi
 
+	# SECURITY AND PRIVACY WARNING! May change WiFi positioning service
+	# endpoint plus enables data submission.
+	if [ -d /etc/geoclue/conf.d/ ]; then
+		cp etc/geoclue/conf.d/80-beacondb.conf /etc/geoclue/conf.d/
+		chmod -v a+r /etc/geoclue/conf.d/*.conf
+		touch /etc/geolocation
+		chown -v geoclue:geoclue /etc/geolocation
+		chmod -v 600 /etc/geolocation
+	fi
+
 	# STRANGE BEHAVIOUR WARNING IF NOT ME.
 	cp -v etc/systemd/system/{aminda-nocron-reboot,aminda-nocron-rebootish,sysctl-p--system}.service /etc/systemd/system/
 	cp -v etc/systemd/system/{aminda-nocron-reboot,aminda-nocron-rebootish,sysctl-p--system}.timer /etc/systemd/system/
