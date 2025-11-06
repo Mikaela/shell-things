@@ -1300,14 +1300,6 @@
 					"URLTemplate": "https://www.ecosia.org/search?q={searchTerms}&addon=firefoxgpo"
 				},
 				{
-					"Name": "Mullvad Leta",
-					"Alias": "ml",
-					"Description": "A privacy focused search engine provided by Mullvad.",
-					"IconURL": "https://mullvad.net/favicon.ico",
-					"Method": "GET",
-					"URLTemplate": "https://leta.mullvad.net/?q={searchTerms}&engine=brave"
-				},
-				{
 					"Name": "Brave Search",
 					"Alias": "b",
 					"Description": "Brave Search",
