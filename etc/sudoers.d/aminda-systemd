@@ -91,7 +91,7 @@
 %wheel ALL=NOPASSWD: /bin/systemctl restart minidlna.service
 
 # Except that this is for KDE Connect
-%sudo ALL=NOPASSWD: /bin/systemctl start bluetooth.service bluetoothd.service
-%wheel ALL=NOPASSWD: /bin/systemctl start bluetooth.service bluetoothd.service
+%sudo ALL=NOPASSWD: /bin/systemctl restart bluetooth.service bluetoothd.service
+%wheel ALL=NOPASSWD: /bin/systemctl restart bluetooth.service bluetoothd.service
 
 # vim: filetype=sudoers
