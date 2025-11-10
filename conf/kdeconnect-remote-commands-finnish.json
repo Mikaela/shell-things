@@ -16,6 +16,10 @@
 		"command": "systemctl reboot"
 	},
 	{
+		"name": "Bluetoothin uudelleenkäynnistys",
+		"command": "sudo systemctl restart bluetooth.service bluetoothd.service"
+	},
+	{
 		"name": "Kuvankaappaus [kaikki näytöt]",
 		"command": "spectacle --background --pointer"
 	},

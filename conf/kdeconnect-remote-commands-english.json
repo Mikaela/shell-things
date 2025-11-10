@@ -16,6 +16,10 @@
 		"command": "systemctl reboot"
 	},
 	{
+		"name": "Restart bluetooth",
+		"command": "sudo systemctl restart bluetooth.service bluetoothd.service"
+	},
+	{
 		"name": "Screenshot [all monitors]",
 		"command": "spectacle --background --pointer"
 	},
