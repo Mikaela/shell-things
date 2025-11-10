@@ -383,6 +383,13 @@
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
+		"hhinaapppaileiechjoiifaancjggfjm": {
+			"blocked_install_message": "Web Scrobbler",
+			"installation_mode": "normal_installed",
+			"override_update_url": true,
+			"toolbar_pin": "default_unpinned",
+			"update_url": "https://clients2.google.com/service/update2/crx"
+		},
 		"hjdoplcnndgiblooccencgcggcoihigg": {
 			"blocked_install_message": "Terms of Service; Didn't Read",
 			"installation_mode": "force_installed",

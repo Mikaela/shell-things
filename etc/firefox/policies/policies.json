@@ -496,6 +496,13 @@
 				"installation_mode": "normal_installed",
 				"private_browsing": true
 			},
+			"{799c0914-748b-41df-a25c-22d008f9e83f}": {
+				"blocked_install_message": "Web Scrobbler",
+				"default_area": "menupanel",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/web-scrobbler/latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": false
+			},
 			"{8620c15f-30dc-4dba-a131-7c5d20cf4a29}": {
 				"blocked_install_message": "Firefox Nightly Tester Tools",
 				"default_area": "menupanel",
