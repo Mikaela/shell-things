@@ -98,6 +98,7 @@
 						"block-lan",
 						"easylist",
 						"FIN-0",
+						"https://raw.githubusercontent.com/Mikaela/gist/master/DNS/blocklist.txt",
 						"https://ads-for-open-source.readthedocs.io/en/latest/_static/lists/opensource-ads.txt",
 						"https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt",
 						"https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener-AffiliateTagAllowlist.txt",
