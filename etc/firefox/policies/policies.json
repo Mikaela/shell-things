@@ -316,7 +316,7 @@
 				"blocked_install_message": "IPFS Companion",
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/ipfs-companion/latest.xpi",
-				"installation_mode": "allowed",
+				"installation_mode": "normal_installed",
 				"private_browsing": false
 			},
 			"ipvfoo@pmarks.net": {
