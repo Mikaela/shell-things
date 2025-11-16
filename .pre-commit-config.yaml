@@ -47,7 +47,7 @@ repos:
             "\t",
             --no-ensure-ascii,
             --top-keys,
-            "Name,name,domain",
+            "Name,name,domain,url",
           ]
       - id: check-illegal-windows-names
 
