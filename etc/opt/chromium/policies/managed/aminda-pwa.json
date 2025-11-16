@@ -1,0 +1,169 @@
+{
+	"WebAppInstallForceList": [
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://web.telegram.org/a/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://latest.glowing-bear.org/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://preview.duolingo.com/nojs/splash"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://helmet.finna.fi/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://music.youtube.com/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://www.iltalehti.fi/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://www.helsinginuutiset.fi/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://app.mtvuutiset.fi/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://oma.posti.fi/app/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://www.verkkokauppa.com/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://guide.suomenlinna.fi/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://sauna.social"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://chat.pikaviestin.fi/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://cinny.pikaviestin.fi/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://jarkkaa.fi/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://calendar.google.com/calendar/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://resq-club.com/app/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://www.kotipizza.fi/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://menu.unicafe.fi/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://www.fiksuruoka.fi/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://messages.google.com/web/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://web.whatsapp.com/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://fluffychat.im/web/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://hydrogen.element.io/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window",
+			"url": "https://xivtodo.com/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "tab",
+			"url": "http://http.badssl.com/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "tab",
+			"url": "https://one.one.one.one/help/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "tab",
+			"url": "https://mullvad.net/check"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "tab",
+			"url": "https://junalahdot.fi/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "tab",
+			"url": "https://www.junat.net/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "tab",
+			"url": "https://www.perille.fi/fi/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "tab",
+			"url": "https://www.pikavuorot.fi/"
+		},
+		{
+			"create_desktop_shortcut": false,
+			"default_launch_container": "tab",
+			"url": "https://www.sanakirja.org/"
+		}
+	]
+}
