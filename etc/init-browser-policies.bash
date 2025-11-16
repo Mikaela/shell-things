@@ -60,7 +60,7 @@ ln -nsfv /etc/firefox /etc/firefox-esr
 
 # Chromium
 mkdir -vp /etc/opt/chromium/policies/{managed,recommended}
-cp opt/chromium/policies/managed/aminda-extensions.json /etc/opt/chromium/policies/managed/
+cp opt/chromium/policies/managed/aminda-{extensions,pwa}.json /etc/opt/chromium/policies/managed/
 setfacl --recursive --modify=u:root:rwX,g:root:rwX,o:rX /etc/opt/chromium/policies
 chmod -v a+rx /etc/opt/chromium/policies/
 chmod -v a+rx /etc/opt/chromium/policies/{managed,recommended}/
