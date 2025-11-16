@@ -281,6 +281,16 @@
 			"default_launch_container": "tab"
 		},
 		{
+			"url": "http://localhost:631",
+			"create_desktop_shortcut": false,
+			"default_launch_container": "tab"
+		},
+		{
+			"url": "http://localhost:8080",
+			"create_desktop_shortcut": false,
+			"default_launch_container": "tab"
+		},
+		{
 			"url": "chrome://apps",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
