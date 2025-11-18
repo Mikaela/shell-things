@@ -276,6 +276,11 @@
 			"default_launch_container": "window"
 		},
 		{
+			"url": "https://www.messenger.com/",
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window"
+		},
+		{
 			"url": "https://www.instagram.com/",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
