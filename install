@@ -245,6 +245,18 @@ if [ "$(id -u)" == "0" ]; then
 		chmod -v 600 /etc/geolocation
 	fi
 
+	# DANGER of breaking wireless NETWORKS.
+	# TODO: I am not brave enough for this.
+	#if [ -f /usr/lib/systemd/system/iwd.service ]; then
+	#	if [ -f /usr/lib/systemd/system/NetworkManager.service ]; then
+	#		if [ -d /etc/NetworkManager/conf.d ]; then
+	#			cp -v etc/NetworkManager/conf.d/iwd.conf /etc/NetworkManager/conf.d/
+	#			cp -v etc/systemd/system/NetworkManager.service.d/iwd-needed.conf /etc/systemd/system/NetworkManager.service.d/
+	#			systemctl unmask iwd.service
+	#		fi
+	#	fi
+	#fi
+
 	# STRANGE BEHAVIOUR WARNING IF NOT ME.
 	cp -v etc/systemd/system/{aminda-nocron-reboot,aminda-nocron-rebootish,sysctl-p--system}.service /etc/systemd/system/
 	cp -v etc/systemd/system/{aminda-nocron-reboot,aminda-nocron-rebootish,sysctl-p--system}.timer /etc/systemd/system/
