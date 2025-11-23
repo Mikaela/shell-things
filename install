@@ -73,6 +73,13 @@ if [ ! -f $HOME/.config/foot/foot.ini ]; then
 	cp -v conf/foot/foot.ini $HOME/.config/foot/foot.ini
 fi
 
+# KDE crash reporter. I don't want to keep giving it permission to download
+# debug symbols and send reports, just do it automatically.
+if [ ! -f $HOME/.config/drkonqirc.bak ]; then
+	cp -v $HOME/.config/drkonqirc $HOME/.config/drkonqirc.bak
+	cp -v rc/drkonqirc $HOME/.config/drkonqirc
+fi
+
 #  A cat(1) clone with wings.
 if hash bat 2> /dev/null; then
 	mkdir -vp $(bat --config-dir)
