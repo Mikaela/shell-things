@@ -1000,10 +1000,10 @@
 				"Value": "once"
 			},
 			"intl.accept_languages": {
-				"Comment": "Cleared for Firefox default depending on locale. I am revealing timezone and as most users don't visit fingerprinting sites, this may result in fitting the local mass better.",
-				"Status": "clear",
+				"Comment": "This is a bad idea.",
+				"Status": "user",
 				"Type": "string",
-				"Value": "en-US, en"
+				"Value": ""
 			},
 			"intl.multilingual.downloadEnabled": {
 				"Comment": "Allow downloading additional languages?",
