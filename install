@@ -315,9 +315,9 @@ if [ "$(id -u)" == "0" ]; then
 	cp -v etc/xdg/autostart/foot-tmux.desktop /etc/xdg/autostart/
 	if hash journalctl 2> /dev/null; then
 		cp -v etc/xdg/autostart/footclient-journal.desktop /etc/xdg/autostart/
-		cp -v etc/xdg/autostart/footclient-journal-dns.desktop /etc/xdg/autostart/
-		cp -v etc/xdg/autostart/footclient-journal-network.desktop /etc/xdg/autostart/
-		cp -v etc/xdg/autostart/footclient-journal-time.desktop /etc/xdg/autostart/
+		#cp -v etc/xdg/autostart/footclient-journal-dns.desktop /etc/xdg/autostart/
+		#cp -v etc/xdg/autostart/footclient-journal-network.desktop /etc/xdg/autostart/
+		#cp -v etc/xdg/autostart/footclient-journal-time.desktop /etc/xdg/autostart/
 	fi
 	cp -v etc/xdg/autostart/easyeffects-service.desktop /etc/xdg/autostart/
 	ln -nsfv /usr/local/share/applications/a-firefox.desktop /etc/xdg/autostart/
