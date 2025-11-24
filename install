@@ -322,6 +322,7 @@ if [ "$(id -u)" == "0" ]; then
 	cp -v etc/xdg/autostart/easyeffects-service.desktop /etc/xdg/autostart/
 	ln -nsfv /usr/local/share/applications/a-firefox.desktop /etc/xdg/autostart/
 	ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.kteatime.desktop /etc/xdg/autostart/
+	ln -nsfv /usr/local/share/applications/plasma-update.desktop /etc/xdg/autostart/
 
 	# If apt is installed, enable progress bar and colors
 	if hash apt-get 2> /dev/null; then
@@ -442,6 +443,9 @@ else
 		fi
 		if [ -f "/usr/bin/librewolf" ]; then
 			ln -nsfv /usr/local/share/applications/libreawoo.desktop $DESKTOP/
+		fi
+		if hash plasma-discover 2> /dev/null; then
+			ln -nsfv /usr/local/share/applications/plasma-update.desktop $DESKTOP/
 		fi
 
 		ln -nsfv /usr/local/share/applications/flatpak-steam-bigpicture.desktop $DESKTOP/
