@@ -286,6 +286,11 @@
 			"default_launch_container": "window"
 		},
 		{
+			"url": "https://open.spotify.com/?pwa=1",
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window"
+		},
+		{
 			"url": "https://app.treet.fi/",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
