@@ -1,0 +1,10 @@
+{
+	"DefaultSearchProviderEnabled": true,
+	"DefaultSearchProviderImageURL": "https://noai.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
+	"DefaultSearchProviderKeyword": "d",
+	"DefaultSearchProviderName": "DuckDuckGo",
+	"DefaultSearchProviderNewTabURL": "https://noai.duckduckgo.com/chrome_newtab?addon=newext&atb",
+	"DefaultSearchProviderSearchURL": "https://noai.duckduckgo.com/?q={searchTerms}&addon=newext&atb",
+	"DefaultSearchProviderSuggestURL": "https://noai.duckduckgo.com/ac/?q={searchTerms}&type=list",
+	"NewTabPageLocation": "https://noai.duckduckgo.com/chrome_newtab?addon=newext&atb"
+}

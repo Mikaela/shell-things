@@ -1287,7 +1287,16 @@
 					"Method": "POST",
 					"PostData": "q={searchTerms}",
 					"SuggestURLTemplate": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
-					"URLTemplate": "https://duckduckgo.com/lite/?q={searchTerms}"
+					"URLTemplate": "https://duckduckgo.com/lite/?q={searchTerms}&atb"
+				},
+				{
+					"Name": "DuckDuckGo No AI",
+					"Alias": "dnai",
+					"Description": "DuckDuckGo AIless version",
+					"IconURL": "https://noai.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
+					"Method": "GET",
+					"SuggestURLTemplate": "https://noai.duckduckgo.com/ac/?q={searchTerms}&type=list",
+					"URLTemplate": "https://noai.duckduckgo.com/?q={searchTerms}&atb"
 				},
 				{
 					"Name": "DuckDuckGo Start",
@@ -1296,7 +1305,7 @@
 					"IconURL": "https://start.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
 					"Method": "GET",
 					"SuggestURLTemplate": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
-					"URLTemplate": "https://start.duckduckgo.com/?q={searchTerms}"
+					"URLTemplate": "https://start.duckduckgo.com/?q={searchTerms}&atb"
 				},
 				{
 					"Name": "Ecosia search",
