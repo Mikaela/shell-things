@@ -351,6 +351,13 @@
 				"private_browsing": true,
 				"restricted_domains": []
 			},
+			"jid1-ZAdIEUB7XOzOJw@jetpack": {
+				"blocked_install_message": "DuckDuckGo extension. For when the anxiety of defaulting to Google is greater than installing and unloading (on other than ESR/Nightly).",
+				"default_area": "navbar",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/duckduckgo-for-firefox/latest.xpi",
+				"installation_mode": "allowed",
+				"private_browsing": false
+			},
 			"jsr@javascriptrestrictor": {
 				"blocked_install_message": "JS Shelter",
 				"default_area": "navbar",
@@ -559,7 +566,7 @@
 				"blocked_install_message": "Ecosia Search Engine. The policy to customize them is available only for ESR and Nightly, but both use the same name so ESR and Nightly can unload it without anything changing.",
 				"default_area": "menupanel",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/ecosia-the-green-search/latest.xpi",
-				"installation_mode": "normal_installed",
+				"installation_mode": "allowed",
 				"private_browsing": false
 			},
 			"{ddc62400-f22d-4dd3-8b4a-05837de53c2e}": {
@@ -1336,7 +1343,7 @@
 					"URLTemplate": "https://search.brave.com/goggles?q={searchTerms}"
 				}
 			],
-			"Default": "Ecosia search"
+			"Default": "DuckDuckGo No AI"
 		},
 		"SearchSuggestEnabled": false,
 		"SecurityDevices": {
