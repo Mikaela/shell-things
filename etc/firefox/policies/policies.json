@@ -1295,7 +1295,7 @@
 					"Method": "POST",
 					"PostData": "q={searchTerms}",
 					"SuggestURLTemplate": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
-					"URLTemplate": "https://duckduckgo.com/lite/?q={searchTerms}&atb"
+					"URLTemplate": "https://duckduckgo.com/lite/?atb&q={searchTerms}"
 				},
 				{
 					"Name": "DuckDuckGo No AI",
@@ -1304,7 +1304,7 @@
 					"IconURL": "https://noai.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
 					"Method": "GET",
 					"SuggestURLTemplate": "https://noai.duckduckgo.com/ac/?q={searchTerms}&type=list",
-					"URLTemplate": "https://noai.duckduckgo.com/?q={searchTerms}&atb"
+					"URLTemplate": "https://noai.duckduckgo.com/?atb&q={searchTerms}"
 				},
 				{
 					"Name": "DuckDuckGo Start",
@@ -1313,7 +1313,7 @@
 					"IconURL": "https://start.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
 					"Method": "GET",
 					"SuggestURLTemplate": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
-					"URLTemplate": "https://start.duckduckgo.com/?q={searchTerms}&atb"
+					"URLTemplate": "https://start.duckduckgo.com/?atb&q={searchTerms}"
 				},
 				{
 					"Name": "Ecosia search",
@@ -1322,7 +1322,7 @@
 					"IconURL": "https://cdn-static.ecosia.org/static/icons/favicon.ico",
 					"Method": "GET",
 					"SuggestURLTemplate": "https://ac.ecosia.org/autocomplete?q={searchTerms}",
-					"URLTemplate": "https://www.ecosia.org/search?q={searchTerms}&addon=firefoxgpo"
+					"URLTemplate": "https://www.ecosia.org/search?addon=firefoxgpo&q={searchTerms}"
 				},
 				{
 					"Name": "Brave Search",

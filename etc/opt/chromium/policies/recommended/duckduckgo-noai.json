@@ -4,7 +4,7 @@
 	"DefaultSearchProviderKeyword": "d",
 	"DefaultSearchProviderName": "DuckDuckGo",
 	"DefaultSearchProviderNewTabURL": "https://noai.duckduckgo.com/chrome_newtab?addon=newext&atb",
-	"DefaultSearchProviderSearchURL": "https://noai.duckduckgo.com/?q={searchTerms}&addon=newext&atb",
+	"DefaultSearchProviderSearchURL": "https://noai.duckduckgo.com/?addon=newext&atb&q={searchTerms}",
 	"DefaultSearchProviderSuggestURL": "https://noai.duckduckgo.com/ac/?q={searchTerms}&type=list",
 	"NewTabPageLocation": "https://noai.duckduckgo.com/chrome_newtab?addon=newext&atb"
 }
