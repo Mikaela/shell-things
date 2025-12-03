@@ -231,6 +231,11 @@
 			"default_launch_container": "tab"
 		},
 		{
+			"url": "https://www.maisa.fi/",
+			"create_desktop_shortcut": false,
+			"default_launch_container": "tab"
+		},
+		{
 			"url": "https://www.kanta.fi/",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "tab"
@@ -362,6 +367,11 @@
 		},
 		{
 			"url": "https://discord.com/app",
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window"
+		},
+		{
+			"url": "https://meet.jit.si",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
