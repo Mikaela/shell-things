@@ -106,6 +106,16 @@
 			"default_launch_container": "window"
 		},
 		{
+			"url": "https://teams.live.com/",
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window"
+		},
+		{
+			"url": "https://app.zoom.us/",
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window"
+		},
+		{
 			"url": "https://ntfy.sh/app",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
