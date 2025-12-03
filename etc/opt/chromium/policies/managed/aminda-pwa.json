@@ -26,6 +26,11 @@
 			"default_launch_container": "window"
 		},
 		{
+			"url": "https://www.youtube.com/",
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window"
+		},
+		{
 			"url": "https://music.youtube.com/",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
