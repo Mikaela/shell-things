@@ -1,2 +1,2 @@
 # Remember these environment variables
-Defaults	env_keep += "TERM COLORTERM"
+Defaults	env_keep += "TERM COLORTERM NC_debug"
