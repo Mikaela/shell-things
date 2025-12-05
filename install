@@ -279,6 +279,7 @@ if [ "$(id -u)" == "0" ]; then
 	if hash systemctl 2> /dev/null; then
 		systemctl daemon-reload
 		(systemctl --global enable darkman.service &)
+		(systemctl --global enable systemd-tmpfiles-setup.service &)
 		# SECURITY WARNING! Practically a backdoor unless you are me and expect this!
 		# WARNING! Likely breaks SSHd outside of port 22 unless override exists!
 		(systemctl --global enable foot-server.socket &)
