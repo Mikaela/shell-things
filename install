@@ -37,7 +37,7 @@ cp -v rc/zshrc $HOME/.zshrc
 cp -v rc/profile $HOME/.profile
 
 # Create configuration directories missed later
-mkdir -vp $HOME/.config/{autostart,bat,foot,git,MangoHud,mpv,nvim,systemd/user,yt-dlp}/
+mkdir -vp $HOME/.config/{autostart,bat,foot,git,MangoHud,mpv,nvim,user-tmpfiles.d,systemd/user,yt-dlp}/
 
 # terminfo just in case it needs to be copied to remote system
 mkdir -vp $HOME/.terminfo/{A..z}
