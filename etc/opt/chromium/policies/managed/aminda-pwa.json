@@ -376,6 +376,16 @@
 			"default_launch_container": "window"
 		},
 		{
+			"url": "https://app.revolut.com/",
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window"
+		},
+		{
+			"url": "https://app.n26.com/",
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window"
+		},
+		{
 			"url": "https://www.kela.fi/",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "tab"
