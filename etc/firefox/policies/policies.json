@@ -1294,7 +1294,7 @@
 					"IconURL": "https://start.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
 					"Method": "POST",
 					"PostData": "q={searchTerms}",
-					"SuggestURLTemplate": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
+					"SuggestURLTemplate": "https://start.duckduckgo.com/ac/?type=list&q={searchTerms}",
 					"URLTemplate": "https://duckduckgo.com/lite/?atb&q={searchTerms}"
 				},
 				{
@@ -1303,7 +1303,7 @@
 					"Description": "DuckDuckGo AIless version",
 					"IconURL": "https://noai.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
 					"Method": "GET",
-					"SuggestURLTemplate": "https://noai.duckduckgo.com/ac/?q={searchTerms}&type=list",
+					"SuggestURLTemplate": "https://noai.duckduckgo.com/ac/?type=list&q={searchTerms}",
 					"URLTemplate": "https://noai.duckduckgo.com/?atb&q={searchTerms}"
 				},
 				{
@@ -1312,7 +1312,7 @@
 					"Description": "DuckDuckGo Start page version",
 					"IconURL": "https://start.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
 					"Method": "GET",
-					"SuggestURLTemplate": "https://start.duckduckgo.com/ac/?q={searchTerms}&type=list",
+					"SuggestURLTemplate": "https://start.duckduckgo.com/ac/?type=list&q={searchTerms}",
 					"URLTemplate": "https://start.duckduckgo.com/?atb&q={searchTerms}"
 				},
 				{

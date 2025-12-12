@@ -4,7 +4,7 @@
 	"DefaultSearchProviderKeyword": "ecosia.org",
 	"DefaultSearchProviderName": "Ecosia",
 	"DefaultSearchProviderNewTabURL": "https://www.ecosia.org/newtab/?addon=chromegpo",
-	"DefaultSearchProviderSearchURL": "https://www.ecosia.org/search?q={searchTerms}&addon=chromegpo",
+	"DefaultSearchProviderSearchURL": "https://www.ecosia.org/search?addon=chromegpo&q={searchTerms}",
 	"DefaultSearchProviderSuggestURL": "https://ac.ecosia.org/autocomplete?q={searchTerms}",
 	"NewTabPageLocation": "https://www.ecosia.org/newtab/?addon=chromegpo"
 }
