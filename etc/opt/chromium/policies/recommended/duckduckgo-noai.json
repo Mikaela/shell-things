@@ -3,8 +3,8 @@
 	"DefaultSearchProviderImageURL": "https://noai.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
 	"DefaultSearchProviderKeyword": "d",
 	"DefaultSearchProviderName": "DuckDuckGo",
-	"DefaultSearchProviderNewTabURL": "https://noai.duckduckgo.com/chrome_newtab?addon=newext&atb",
-	"DefaultSearchProviderSearchURL": "https://noai.duckduckgo.com/?addon=newext&atb&q={searchTerms}",
+	"DefaultSearchProviderNewTabURL": "https://noai.duckduckgo.com/chrome_newtab?addon=newext&atb&ka=s&ku=1&kt=monospace&kbj=1&kn=1&kak=-1&kax=-1&kpsb=-1",
+	"DefaultSearchProviderSearchURL": "https://noai.duckduckgo.com/?addon=newext&atb&ka=s&ku=1&kt=monospace&kbj=1&kn=1&kak=-1&kax=-1&kpsb=-1&q={searchTerms}",
 	"DefaultSearchProviderSuggestURL": "https://noai.duckduckgo.com/ac/?type=list&q={searchTerms}",
-	"NewTabPageLocation": "https://noai.duckduckgo.com/chrome_newtab?addon=newext&atb"
+	"NewTabPageLocation": "https://noai.duckduckgo.com/chrome_newtab?addon=newext&atb&ka=s&ku=1&kt=monospace&kbj=1&kn=1&kak=-1&kax=-1&kpsb=-1"
 }
