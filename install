@@ -403,6 +403,8 @@ else
 
 		if [ -d ~/.config/autostart ]; then
 			ln -nsfv ~/.config/autostart/*.desktop $DESKTOP/
+			# laziness
+			ln -nsfv ~/.config/autostart/*.desktop ~/.local/share/applications/
 		fi
 
 		# Ensure there is foot-server.socket before creating a shortcut for footclient
