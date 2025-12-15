@@ -58,7 +58,9 @@ Other links I have found important and my files are based on:
 
 - https://wiki.archlinux.org/index.php/Systemd-resolved
   - Also provides the serious issues systemd-resolved+DNSSEC issues,
-    https://github.com/systemd/systemd/issues/10579 &
-    https://github.com/systemd/systemd/issues/9867
+    <del>https://github.com/systemd/systemd/issues/10579</del>
+    https://github.com/systemd/systemd/issues/36001 &
+    <del>https://github.com/systemd/systemd/issues/9867</del>
+    https://github.com/systemd/systemd/issues/35126
 - request for strict DoT: https://github.com/systemd/systemd/issues/10755
 - vulnerable to MITM: https://github.com/systemd/systemd/issues/9397
