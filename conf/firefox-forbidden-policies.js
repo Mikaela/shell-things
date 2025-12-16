@@ -58,7 +58,8 @@ lockPref(
 lockPref("image.animation_mode", "once");
 
 // Spoof en-US as language to scripts
-lockPref("privacy.spoof_english", 2);
+//lockPref("privacy.spoof_english", 2);
+clearPref("privacy.spoof_english");
 
 // More tunable privacy.resistfingerprinting.
 // Refer to https://searchfox.org/mozilla-central/source/toolkit/components/resistfingerprinting/RFPTargets.inc
