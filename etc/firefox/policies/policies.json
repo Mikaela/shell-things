@@ -1008,8 +1008,8 @@
 				"Value": "once"
 			},
 			"intl.accept_languages": {
-				"Comment": "Languages requested from webpage. Exercise in frustation, leave reset for system locale.",
-				"Status": "clear",
+				"Comment": "This is a bad idea.",
+				"Status": "default",
 				"Type": "string",
 				"Value": ""
 			},
@@ -1188,7 +1188,7 @@
 			},
 			"privacy.spoof_english": {
 				"Comment": "Preference not allowed for stability reasons. :(",
-				"Status": "clear",
+				"Status": "user",
 				"Type": "number",
 				"Value": 2
 			},
