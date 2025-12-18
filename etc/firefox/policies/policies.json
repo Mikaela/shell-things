@@ -1288,16 +1288,6 @@
 		"SearchEngines": {
 			"Add": [
 				{
-					"Name": "DuckDuckGo Lite",
-					"Alias": "dl",
-					"Description": "Minimal, ad-free version of DuckDuckGo",
-					"IconURL": "https://start.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
-					"Method": "POST",
-					"PostData": "q={searchTerms}",
-					"SuggestURLTemplate": "https://start.duckduckgo.com/ac/?type=list&q={searchTerms}",
-					"URLTemplate": "https://duckduckgo.com/lite/?atb&q={searchTerms}"
-				},
-				{
 					"Name": "DuckDuckGo No AI",
 					"Alias": "dnai",
 					"Description": "DuckDuckGo AIless version",
@@ -1305,15 +1295,6 @@
 					"Method": "GET",
 					"SuggestURLTemplate": "https://noai.duckduckgo.com/ac/?type=list&q={searchTerms}",
 					"URLTemplate": "https://noai.duckduckgo.com/?atb&ka=s&ku=1&kt=monospace&kbj=1&kn=1&kak=-1&kax=-1&kpsb=-1&q={searchTerms}"
-				},
-				{
-					"Name": "DuckDuckGo Start",
-					"Alias": "d",
-					"Description": "DuckDuckGo Start page version",
-					"IconURL": "https://start.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
-					"Method": "GET",
-					"SuggestURLTemplate": "https://start.duckduckgo.com/ac/?type=list&q={searchTerms}",
-					"URLTemplate": "https://start.duckduckgo.com/?atb&ka=s&ku=1&kt=monospace&kbj=1&kn=1&kak=-1&kax=-1&kpsb=-1&q={searchTerms}"
 				},
 				{
 					"Name": "Ecosia search",
