@@ -56,7 +56,7 @@
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://sauna.social",
+			"url": "https://sauna.social/",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
@@ -397,6 +397,11 @@
 		},
 		{
 			"url": "https://arrstatus.com/",
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window"
+		},
+		{
+			"url": "https://www.404media.co/",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
