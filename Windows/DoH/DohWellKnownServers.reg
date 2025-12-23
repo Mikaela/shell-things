@@ -103,3 +103,27 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2620:fe::fe:12]
 "Template"="https://dns12.quad9.net/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\86.54.11.1]
+"Template"="https://protective.joindns4.eu/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\86.54.11.201]
+"Template"="https://protective.joindns4.eu/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a13:1001::86:54:11:1]
+"Template"="https://protective.joindns4.eu/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a13:1001::86:54:11:201]
+"Template"="https://protective.joindns4.eu/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\86.54.11.13]
+"Template"="https://noads.joindns4.eu/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\86.54.11.213]
+"Template"="https://noads.joindns4.eu/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a13:1001::86:54:11:13]
+"Template"="https://noads.joindns4.eu/dns-query"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\DohWellKnownServers\2a13:1001::86:54:11:213]
+"Template"="https://noads.joindns4.eu/dns-query"
