@@ -14,13 +14,3 @@ Actions=new-window;new-private-window;Guest;
 Name=New Window
 Name[fi]=Uusi ikkuna
 Exec=/usr/bin/env brave-beta
-
-[Desktop Action new-private-window]
-Name=New Incognito Window
-Name[fi]=Uusi incognito-ikkuna
-Exec=/usr/bin/env brave-beta --incognito
-
-[Desktop Action Guest]
-Name=Guest session
-Name[fi]=Vierasistunto
-Exec=/usr/bin/env brave-beta --guest
