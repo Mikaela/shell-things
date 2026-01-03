@@ -38,10 +38,12 @@
 					"arctia.fi"
 				],
 				"rulesets": [
-					"-*",
 					"+default",
+					"+adguard-spyware-url",
+					"+annoyances-ai",
+					"+annoyances-cookies",
+					"+annoyances-overlays",
 					"+block-lan",
-					"+fanboy-ai-suggestions",
 					"+fin-0"
 				],
 				"showBlockedCount": true
