@@ -41,6 +41,7 @@
 					"-*",
 					"+default",
 					"+block-lan",
+					"+fanboy-ai-suggestions",
 					"+fin-0"
 				],
 				"showBlockedCount": true
@@ -117,6 +118,7 @@
 						"user-filters",
 						"easyprivacy",
 						"urlhaus-1",
+						"fanboy-ai-suggestions",
 						"plowe-0"
 					]
 				},
