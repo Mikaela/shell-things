@@ -18,7 +18,7 @@
 					"auth-prod.megical.com",
 					"challenges.cloudflare.com",
 					"chrome-extension-scheme",
-					"duckduckgo.com",
+					"noai.duckduckgo.com",
 					"kansalainen.kanta.fi",
 					"kanta.fi",
 					"klarna.com",
@@ -32,10 +32,8 @@
 					"suomi.fi",
 					"tunnistautuminen.suomi.fi",
 					"tunnistus.telia.fi",
-					"www.ecosia.org",
 					"www.npmjs.com",
-					"www.suomi.fi",
-					"arctia.fi"
+					"www.suomi.fi"
 				],
 				"rulesets": [
 					"+default",
@@ -90,10 +88,8 @@
 						"suomi.fi",
 						"tunnistautuminen.suomi.fi",
 						"tunnistus.telia.fi",
-						"www.ecosia.org",
 						"www.npmjs.com",
-						"www.suomi.fi",
-						"arctia.fi"
+						"www.suomi.fi"
 					]
 				},
 				"toOverwrite": {
@@ -186,9 +182,7 @@
 			"pkehgijcmpdhfbdbbnkijodmdjhbjlgp": {
 				"checkForDNTPolicy": true,
 				"disabledSites": [
-					"www.ecosia.org",
-					"pp-attester-turnstile.research.cloudflare.com",
-					"arctia.fi"
+					"pp-attester-turnstile.research.cloudflare.com"
 				],
 				"learnInIncognito": true,
 				"learnLocally": true,

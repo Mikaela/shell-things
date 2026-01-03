@@ -5,9 +5,7 @@
 				"jid1-MnnxcxisBPnSXQ@jetpack": {
 					"checkForDNTPolicy": true,
 					"disabledSites": [
-						"www.ecosia.org",
-						"pp-attester-turnstile.research.cloudflare.com",
-						"arctia.fi"
+						"pp-attester-turnstile.research.cloudflare.com"
 					],
 					"learnInIncognito": true,
 					"learnLocally": true,
@@ -89,10 +87,8 @@
 							"suomi.fi",
 							"tunnistautuminen.suomi.fi",
 							"tunnistus.telia.fi",
-							"www.ecosia.org",
 							"www.npmjs.com",
-							"www.suomi.fi",
-							"arctia.fi"
+							"www.suomi.fi"
 						]
 					},
 					"toOverwrite": {
