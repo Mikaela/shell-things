@@ -1,87 +1,87 @@
 {
 	"WebAppInstallForceList": [
 		{
-			"url": "https://web.telegram.org/a/",
+			"url": "https://web.telegram.org/a",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://latest.glowing-bear.org/",
+			"url": "https://latest.glowing-bear.org",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://preview.duolingo.com/",
+			"url": "https://preview.duolingo.com",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://helmet.finna.fi/",
+			"url": "https://helmet.finna.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://kyyti.finna.fi/",
+			"url": "https://kyyti.finna.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://www.youtube.com/",
+			"url": "https://www.youtube.com",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://music.youtube.com/",
+			"url": "https://music.youtube.com",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://www.iltalehti.fi/",
+			"url": "https://www.iltalehti.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://www.helsinginuutiset.fi/",
+			"url": "https://www.helsinginuutiset.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://oma.posti.fi/app/",
+			"url": "https://oma.posti.fi/app",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://www.verkkokauppa.com/",
+			"url": "https://www.verkkokauppa.com",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://sauna.social/",
+			"url": "https://sauna.social",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://chat.pikaviestin.fi/",
+			"url": "https://chat.pikaviestin.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://cinny.pikaviestin.fi/",
+			"url": "https://cinny.pikaviestin.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://jarkkaa.fi/",
+			"url": "https://jarkkaa.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://calendar.google.com/calendar/",
+			"url": "https://calendar.google.com/calendar",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://mail.google.com/mail/",
+			"url": "https://mail.google.com/mail",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
@@ -91,27 +91,27 @@
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://app.languagedrops.com/",
+			"url": "https://app.languagedrops.com",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://app.memrise.com/",
+			"url": "https://app.memrise.com",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://teams.microsoft.com/",
+			"url": "https://teams.microsoft.com",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://teams.live.com/",
+			"url": "https://teams.live.com",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://app.zoom.us/",
+			"url": "https://app.zoom.us",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
@@ -121,57 +121,57 @@
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://webchat.disroot.org/",
+			"url": "https://webchat.disroot.org",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://www.twitch.tv/",
+			"url": "https://www.twitch.tv",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://resq-club.com/app/",
+			"url": "https://resq-club.com/app",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://www.kotipizza.fi/",
+			"url": "https://www.kotipizza.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://menu.unicafe.fi/",
+			"url": "https://menu.unicafe.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://www.fiksuruoka.fi/",
+			"url": "https://www.fiksuruoka.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://messages.google.com/web/",
+			"url": "https://messages.google.com/web",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://web.whatsapp.com/",
+			"url": "https://web.whatsapp.com",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://fluffychat.im/web/",
+			"url": "https://fluffychat.im/web",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://hydrogen.element.io/",
+			"url": "https://hydrogen.element.io",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://xivtodo.com/",
+			"url": "https://xivtodo.com",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
@@ -181,12 +181,12 @@
 			"default_launch_container": "window"
 		},
 		{
-			"url": "http://http.badssl.com/",
+			"url": "http://http.badssl.com",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "tab"
 		},
 		{
-			"url": "https://one.one.one.one/help/",
+			"url": "https://one.one.one.one/help",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "tab"
 		},
@@ -196,32 +196,32 @@
 			"default_launch_container": "tab"
 		},
 		{
-			"url": "https://junalahdot.fi/",
+			"url": "https://junalahdot.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "tab"
 		},
 		{
-			"url": "https://www.junat.net/",
+			"url": "https://www.junat.net",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://www.perille.fi/fi/",
+			"url": "https://www.perille.fi/fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "tab"
 		},
 		{
-			"url": "https://www.pikavuorot.fi/",
+			"url": "https://www.pikavuorot.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "tab"
 		},
 		{
-			"url": "https://www.sanakirja.org/",
+			"url": "https://www.sanakirja.org",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "tab"
 		},
 		{
-			"url": "https://www.op.fi/",
+			"url": "https://www.op.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "tab"
 		},
@@ -231,17 +231,17 @@
 			"default_launch_container": "tab"
 		},
 		{
-			"url": "https://www.maisa.fi/",
+			"url": "https://www.maisa.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "tab"
 		},
 		{
-			"url": "https://www.kanta.fi/",
+			"url": "https://www.kanta.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "tab"
 		},
 		{
-			"url": "https://www.suomi.fi/",
+			"url": "https://www.suomi.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "tab"
 		},
@@ -251,32 +251,32 @@
 			"default_launch_container": "tab"
 		},
 		{
-			"url": "https://www.traficom.fi/",
+			"url": "https://www.traficom.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://digitransit.fi/",
+			"url": "https://digitransit.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://kotka.digitransit.fi/",
+			"url": "https://kotka.digitransit.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://opas.waltti.fi/",
+			"url": "https://opas.waltti.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://kelareitit.digitransit.fi/",
+			"url": "https://kelareitit.digitransit.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://kouvola.digitransit.fi/",
+			"url": "https://kouvola.digitransit.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
@@ -286,22 +286,22 @@
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://web.peatus.ee/",
+			"url": "https://web.peatus.ee",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://www.facebook.com/",
+			"url": "https://www.facebook.com",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://www.messenger.com/",
+			"url": "https://www.messenger.com",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://www.instagram.com/",
+			"url": "https://www.instagram.com",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
@@ -311,17 +311,17 @@
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://app.treet.fi/",
+			"url": "https://app.treet.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://porssisahko.fi/",
+			"url": "https://porssisahko.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://tldr.inbrowser.app/",
+			"url": "https://tldr.inbrowser.app",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
@@ -331,7 +331,7 @@
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://inbrowser.app/",
+			"url": "https://inbrowser.app",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
@@ -346,7 +346,7 @@
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://authenticator.inbrowser.app/",
+			"url": "https://authenticator.inbrowser.app",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
@@ -376,42 +376,42 @@
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://app.revolut.com/",
+			"url": "https://app.revolut.com",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://app.n26.com/",
+			"url": "https://app.n26.com",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://dnscheck.tools/",
+			"url": "https://dnscheck.tools",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://github.com/",
+			"url": "https://github.com",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://arrstatus.com/",
+			"url": "https://arrstatus.com",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://www.404media.co/",
+			"url": "https://www.404media.co",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://www.kela.fi/",
+			"url": "https://www.kela.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "tab"
 		},
 		{
-			"url": "https://www.kansalliskirjasto.fi/",
+			"url": "https://www.kansalliskirjasto.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "tab"
 		},
