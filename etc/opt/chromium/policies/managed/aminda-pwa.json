@@ -171,6 +171,11 @@
 			"default_launch_container": "window"
 		},
 		{
+			"url": "https://develop.element.io",
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window"
+		},
+		{
 			"url": "https://xivtodo.com",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "window"
