@@ -467,6 +467,8 @@ else
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.telegram.desktop.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.torproject.torbrowser-launcher.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.audiotube.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/jp.nonbili.noutube $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/rocks.shy.VacuumTube $DESKTOP/
 		#ln -nsfv /var/lib/flatpak/exports/share/applications/org.videolan.VLC.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.elisa.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.libreoffice.LibreOffice.desktop $DESKTOP/
