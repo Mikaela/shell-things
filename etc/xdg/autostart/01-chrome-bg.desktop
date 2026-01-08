@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+StartupNotify=false
+Terminal=false
+Icon=google-chrome-stable
+Exec=chrome --profile-directory=Default --no-startup-window
+Name=Google Chrome in the background
+Name[fi]=Google Chrome taustalla

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+StartupNotify=false
+Terminal=false
+Icon=vivaldi
+Exec=vivaldi --profile-directory=Default --no-startup-window
+Name=Vivaldi in the background
+Name[fi]=Vivaldi taustalla
