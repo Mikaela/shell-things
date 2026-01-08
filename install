@@ -438,12 +438,14 @@ else
 		fi
 		if [ -f "/usr/bin/google-chrome-stable" ]; then
 			ln -nsfv /usr/local/share/applications/a-google-chrome.desktop $DESKTOP/
+			ln -nsfv /usr/local/share/applications/chrome-apps.desktop $DESKTOP/
 		fi
 		if [ -f "/usr/bin/microsoft-edge-stable" ]; then
 			ln -nsfv /usr/local/share/applications/a-microsoft-edge.desktop $DESKTOP/
 		fi
 		if [ -f "/usr/bin/vivaldi-stable" ]; then
 			ln -nsfv /usr/local/share/applications/a-vivaldi.desktop $DESKTOP/
+			ln -nsfv /usr/local/share/applications/vivaldi-apps.desktop $DESKTOP/
 		fi
 		if [ -f "/usr/bin/librewolf" ]; then
 			ln -nsfv /usr/local/share/applications/libreawoo.desktop $DESKTOP/
