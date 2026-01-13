@@ -1,3 +1,9 @@
+#include stignore
+# Since this is kind of my template gitignore and sometimes I end up
+# Syncthinging git repos or parts of them and then I like to
+# ln -s .gitignore .stignore
+# And since .stignore is not syncthinged, it's generally not named that.
+
 ~
 # All dotfiles
 .*
