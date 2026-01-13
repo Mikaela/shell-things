@@ -203,6 +203,11 @@ if [ "$(id -u)" == "0" ]; then
 	mkdir -vp /etc/udev/rules.d/
 	ln -nsfv $HOME/.shell-things/submodules/steam-devices/*.rules /etc/udev/rules.d/
 
+	# SECURITY device/module configuration. SECURITY WARNING
+	if [ -d /etc/pkcs11/modules/ ]; then
+		etc/pkcs11/modules/*.module /etc/pkcs11/modules/
+	fi
+
 	# SSHd hardening hopefully. SECURITY WARNING
 	mkdir -vp /etc/ssh/sshd_config.d/
 	chmod -v a+x /etc/ssh/sshd_config.d/
