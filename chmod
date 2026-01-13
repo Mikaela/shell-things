@@ -32,6 +32,13 @@ chmod -v 600 $HOME/.ssh/authorized_keys
 mkdir -p "$HOME/AppImages"
 chmod a+rx "$HOME/AppImages/" "$HOME/AppImages/*.appimage"
 
+if [ -d "$HOME/.config/autostart-scripts" ]; then
+	chmod -v +x "$HOME/.config/autostart-scripts/*"
+fi
+if [ -d "$HOME/.config/old-autostart-scripts" ]; then
+	chmod -v +x "$HOME/.config/old-autostart-scripts/*"
+fi
+
 # if we have support for setting ACL, some of this becomes easier (although maybe redundant)
 if hash setfacl 2> /dev/null; then
 	setfacl --modify u:$(id -un):rw,g:$(id -gn):r,o:r $HOME/.oidentd.conf
