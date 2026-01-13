@@ -1326,6 +1326,7 @@
 		"SearchSuggestEnabled": false,
 		"SecurityDevices": {
 			"Add": {
+				"Atostek ID": "/usr/lib64/Atostek-ID-PKCS11.so",
 				"Debian OpenSC onepin": "/usr/lib/x86_64-linux-gnu/onepin-opensc-pkcs11.so",
 				"Fedora OpenSC onepin": "/usr/lib64/onepin-opensc-pkcs11.so",
 				"Fujitsu mPollux DigiSignApplication": "/usr/lib64/libcryptoki.so"

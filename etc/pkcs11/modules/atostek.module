@@ -1,0 +1,2 @@
+module: /usr/lib64/Atostek-ID-PKCS11.so
+managed: no
