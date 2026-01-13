@@ -205,7 +205,7 @@ if [ "$(id -u)" == "0" ]; then
 
 	# SECURITY device/module configuration. SECURITY WARNING
 	if [ -d /etc/pkcs11/modules/ ]; then
-		etc/pkcs11/modules/*.module /etc/pkcs11/modules/
+		cp -v etc/pkcs11/modules/*.module /etc/pkcs11/modules/
 	fi
 
 	# SSHd hardening hopefully. SECURITY WARNING
