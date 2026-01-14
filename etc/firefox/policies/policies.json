@@ -590,6 +590,13 @@
 			"SponsoredSuggestions": false,
 			"WebSuggestions": false
 		},
+		"GenerativeAI": {
+			"Chatbot": false,
+			"Enabled": false,
+			"LinkPreviews": false,
+			"Locked": true,
+			"TabGroups": false
+		},
 		"Homepage": {
 			"Locked": false,
 			"StartPage": "previous-session",
