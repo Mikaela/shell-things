@@ -586,6 +586,7 @@
 		"FirefoxSuggest": {
 			"ImproveSuggest": false,
 			"Locked": false,
+			"OnlineEnabled": false,
 			"SponsoredSuggestions": false,
 			"WebSuggestions": false
 		},
