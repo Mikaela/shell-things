@@ -598,7 +598,7 @@
 			"Enabled": false,
 			"LinkPreviews": false,
 			"Locked": true,
-			"TabGroups": false
+			"TabGroups": true
 		},
 		"Homepage": {
 			"Locked": false,
@@ -701,40 +701,10 @@
 				"Type": "number",
 				"Value": 0
 			},
-			"browser.ml.chat.enabled": {
-				"Status": "locked",
-				"Type": "boolean",
-				"Value": false
-			},
-			"browser.ml.chat.menu": {
-				"Status": "locked",
-				"Type": "boolean",
-				"Value": false
-			},
-			"browser.ml.chat.page": {
-				"Status": "locked",
-				"Type": "boolean",
-				"Value": false
-			},
 			"browser.ml.chat.provider": {
 				"Status": "user",
 				"Type": "string",
 				"Value": ""
-			},
-			"browser.ml.chat.sidebar": {
-				"Status": "locked",
-				"Type": "boolean",
-				"Value": false
-			},
-			"browser.ml.enable": {
-				"Status": "locked",
-				"Type": "boolean",
-				"Value": false
-			},
-			"browser.ml.linkPreview.enabled": {
-				"Status": "locked",
-				"Type": "boolean",
-				"Value": false
 			},
 			"browser.preferences.moreFromMozilla": {
 				"Status": "default",
