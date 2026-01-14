@@ -488,8 +488,13 @@ alias cwho="who -H -w -u"
 #alias inxi-update="inxi -U"
 
 # FINEID to ssh-agent
-alias fineid="ssh-add -s /usr/lib64/libcryptoki.so"
-
+if [ -f "/usr/lib64/libcryptoki.so" ]; then
+	alias fineid="ssh-add -s /usr/lib64/libcryptoki.so"
+elif [ -f "/usr/lib64/Atostek-ID-PKCS11.so" ]; then
+	alias fineid="ssh-add -s /usr/lib64/Atostek-ID-PKCS11.so"
+else
+	alias fineid="echo 'No FINEID library found'"
+fi
 # OS X
 # What is this?
 #alias osx-server-caching-interface="serveradmin settings caching:Interface ="
