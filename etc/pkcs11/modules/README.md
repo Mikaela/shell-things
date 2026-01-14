@@ -8,6 +8,10 @@ Central configuration for PKCS#11 plugin using software and smartcards.
 Remember also
 [my FINEID notes in the gist/ repo](https://gitea.blesmrt.net/mikaela/gist/src/branch/master/fineid)
 
+## atostek.module
+
+Successor of `libcryptoki.module` based on that.
+
 ## libcryptoki.module
 
 According to the manual (2nd link) the full path shouldn't be required, but
@@ -16,3 +20,9 @@ the 1st link disagrees and works for me, so thus
 
 Additionally the DVV card reader software does the management, so
 `managed: no`.
+
+It has since became replaced by Atostek ID, but apparently both module
+definitions can co-exist as long as both software aren't installed or running
+simultaneously. Fujitsu mPollux DigiSignApplication, which provides
+`libcryptoki.so`, is supported until the end of 2026 if I have understood
+information available at time of writing correctly.
