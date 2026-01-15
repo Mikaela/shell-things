@@ -407,6 +407,13 @@
 			"toolbar_pin": "default_unpinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
+		"iaiomicjabeggjcfkbimgmglanimpnae": {
+			"blocked_install_message": "Tab Session Manager",
+			"installation_mode": "normal_installed",
+			"override_update_url": true,
+			"toolbar_pin": "force_pinned",
+			"update_url": "https://clients2.google.com/service/update2/crx"
+		},
 		"iimpkhokkfekbpmoamlmcndclohnehhk": {
 			"blocked_install_message": "IPvFooBar. ManifestV2 unlike the original.",
 			"installation_mode": "blocked",

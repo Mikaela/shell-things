@@ -274,6 +274,13 @@
 				"private_browsing": true,
 				"restricted_domains": []
 			},
+			"Tab-Session-Manager@sienori": {
+				"blocked_install_message": "Tab Session Manager",
+				"default_area": "navbar",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/tab-session-manager/latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": true
+			},
 			"addon@darkreader.org": {
 				"blocked_install_message": "DarkReader",
 				"default_area": "navbar",
