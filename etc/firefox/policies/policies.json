@@ -954,6 +954,12 @@
 				"Type": "number",
 				"Value": 0
 			},
+			"general.smoothScroll": {
+				"Comment": "This seems to have no effect even without errors. See autoconfig.",
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
 			"general.useragent.extra.firefox": {
 				"Status": "clear"
 			},

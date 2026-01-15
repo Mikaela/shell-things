@@ -18,6 +18,9 @@ lockPref("cookiebanners.bannerClicking.enabled", true);
 lockPref("cookiebanners.service.mode", 2);
 lockPref("cookiebanners.service.mode.privateBrowsing", 2);
 
+// Enable smooth scrolling. Has no effect in policy for some reason
+lockPref("general.smoothScroll", true);
+
 // I can set my preferred fonts in an order! :O
 // but obviously this is forbidden in policies.json!
 // Remember to allow fonts in privacy.fingerprintingProtection overrides and forbid document fonts to defeat font fingerprinting kind of
