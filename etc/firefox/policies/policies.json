@@ -764,6 +764,12 @@
 				"Type": "string",
 				"Value": ""
 			},
+			"browser.sessionstore.restore_pinned_tabs_on_demand": {
+				"Comment": "Lazy-load pinned tabs.",
+				"Status": "default",
+				"Type": "boolean",
+				"Value": true
+			},
 			"browser.sessionstore.warnOnQuit": {
 				"Status": "locked",
 				"Type": "boolean",
