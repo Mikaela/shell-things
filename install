@@ -483,6 +483,7 @@ else
 		ln -nsfv /var/lib/flatpak/exports/share/applications/app.devsuite.Ptyxis.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.skanpage.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.kclock.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/com.calibre_ebook.calibre.desktop $DESKTOP/
 	fi
 
 	# Ensure a-firefox.desktop has an icon
