@@ -477,7 +477,7 @@ else
 		ln -nsfv /var/lib/flatpak/exports/share/applications/jp.nonbili.noutube.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/rocks.shy.VacuumTube.desktop $DESKTOP/
 		#ln -nsfv /var/lib/flatpak/exports/share/applications/org.videolan.VLC.desktop $DESKTOP/
-		#ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.elisa.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.elisa.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.libreoffice.LibreOffice.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.onlyoffice.desktopeditors.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/app.devsuite.Ptyxis.desktop $DESKTOP/
@@ -485,7 +485,8 @@ else
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.kclock.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/com.calibre_ebook.calibre.desktop $DESKTOP/
 		# snaps
-		ln -nsfv /var/lib/snapd/desktop/applications/vlc_vlc.desktop $DESKTOP/
+		# No libdvdcss!
+		#ln -nsfv /var/lib/snapd/desktop/applications/vlc_vlc.desktop $DESKTOP/
 	fi
 
 	# Ensure a-firefox.desktop has an icon
