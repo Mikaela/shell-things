@@ -455,6 +455,9 @@ else
 		if [ -f "/usr/bin/librewolf" ]; then
 			ln -nsfv /usr/local/share/applications/libreawoo.desktop $DESKTOP/
 		fi
+		if [[ -f $HOME/.local/share/icons/hicolor/128x128/apps/syncplay.png && -f /usr/local/bin/syncplay ]]; then
+			ln -nsfv /usr/local/share/applications/a-syncplay.desktop $DESKTOP
+		fi
 		if hash plasma-discover 2> /dev/null; then
 			ln -nsfv /usr/local/share/applications/plasma-update.desktop $DESKTOP/
 		fi
