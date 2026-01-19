@@ -106,3 +106,15 @@
 	branch = release
 	ignore = dirty
 	shallow = true
+[submodule "submodules/ubuntu-sans-mono"]
+	path = submodules/ubuntu-sans-mono
+	url = https://github.com/canonical/Ubuntu-Sans-Mono-fonts.git
+	branch = main
+	ignore = dirty
+	shallow = true
+[submodule "submodules/ubuntu-sans"]
+	path = submodules/ubuntu-sans
+	url = https://github.com/canonical/Ubuntu-Sans-fonts.git
+	branch = main
+	ignore = dirty
+	shallow = true
