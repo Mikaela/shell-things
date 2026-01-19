@@ -388,6 +388,8 @@ if [ "$(id -u)" == "0" ]; then
 		ln -nsfv $HOME/.shell-things/submodules/source-serif/OTF /usr/local/share/fonts/source-serif
 		ln -nsfv $HOME/.shell-things/submodules/source-code-pro/VF/*.otf /usr/local/share/fonts/
 		ln -nsfv $HOME/.shell-things/submodules/source-code-pro/OTF/ /usr/local/share/fonts/source-code-pro
+		ln -nsfv $HOME/.shell-things/submodules/ubuntu-sans/fonts/variable /usr/local/share/fonts/ubuntu-sans
+		ln -nsfv $HOME/.shell-things/submodules/ubuntu-sans-mono/fonts/variable /usr/local/share/fonts/ubuntu-sans-mono
 	fi
 
 	# Symlink cleanup
@@ -534,6 +536,8 @@ if [ -d "$HOME/.shell-things" ]; then
 	ln -nsfv $HOME/.shell-things/submodules/source-serif/OTF $HOME/.local/share/fonts/source-serif
 	ln -nsfv $HOME/.shell-things/submodules/source-code-pro/VF/*.otf $HOME/.local/share/fonts/
 	ln -nsfv $HOME/.shell-things/submodules/source-code-pro/OTF/ $HOME/.local/share/fonts/source-code-pro
+	ln -nsfv $HOME/.shell-things/submodules/ubuntu-sans/fonts/variable $HOME/.local/share/fonts/ubuntu-sans
+	ln -nsfv $HOME/.shell-things/submodules/ubuntu-sans-mono/fonts/variable $HOME/.local/share/fonts/ubuntu-sans-mono
 
 	# Font cleanup
 	if hash symlinks 2> /dev/null; then
