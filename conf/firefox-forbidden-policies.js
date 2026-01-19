@@ -26,19 +26,19 @@ lockPref("general.smoothScroll", true);
 // Remember to allow fonts in privacy.fingerprintingProtection overrides and forbid document fonts to defeat font fingerprinting kind of
 lockPref(
 	"font.name-list.monospace.x-cyrillic",
-	"Atkinson Hyperlegible Mono, Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
+	"Atkinson Hyperlegible Mono, Ubuntu Sans Mono, Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
 );
 lockPref(
 	"font.name-list.monospace.x-western",
-	"Atkinson Hyperlegible Mono, Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
+	"Atkinson Hyperlegible Mono, Ubuntu Sans Mono, Comic Shanns Mono, Roboto Mono, Liberation Mono, Noto Sans Mono, monospace",
 );
 lockPref(
 	"font.name-list.sans-serif.x-cyrillic",
-	"Atkinson Hyperlegible Next, Atkinson Hyperlegible, OpenDyslexic, Inclusive Sans, SourceSans3VF, Roboto, Liberation Sans, Noto Sans, sans-serif",
+	"Atkinson Hyperlegible Next, Atkinson Hyperlegible, Ubuntu Sans, OpenDyslexic, Inclusive Sans, SourceSans3VF, Roboto, Liberation Sans, Noto Sans, sans-serif",
 );
 lockPref(
 	"font.name-list.sans-serif.x-western",
-	"Atkinson Hyperlegible Next, Atkinson Hyperlegible, OpenDyslexic, Inclusive Sans, SourceSans3VF, Liberation Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
+	"Atkinson Hyperlegible Next, Atkinson Hyperlegible, Ubuntu Sans, OpenDyslexic, Inclusive Sans, SourceSans3VF, Liberation Sans, Comic Neue, Roboto, Noto Sans, sans-serif",
 );
 lockPref(
 	"font.name-list.serif.x-cyrillic",
