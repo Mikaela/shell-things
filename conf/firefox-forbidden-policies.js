@@ -42,11 +42,11 @@ lockPref(
 );
 lockPref(
 	"font.name-list.serif.x-cyrillic",
-	"Source Serif 4 Variable, Liberation Serif, Roboto Serif, Noto Serif, serif",
+	"Lora, Source Serif 4 Variable, Liberation Serif, Roboto Serif, Noto Serif, serif",
 );
 lockPref(
 	"font.name-list.serif.x-western",
-	"Source Serif 4 Variable, Liberation Serif, Roboto Serif, Noto Serif, serif",
+	"Lora, Source Serif 4 Variable, Liberation Serif, Roboto Serif, Noto Serif, serif",
 );
 
 // Uncomment when giving up on messing up with fonts
