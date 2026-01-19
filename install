@@ -390,6 +390,7 @@ if [ "$(id -u)" == "0" ]; then
 		ln -nsfv $HOME/.shell-things/submodules/source-code-pro/OTF/ /usr/local/share/fonts/source-code-pro
 		ln -nsfv $HOME/.shell-things/submodules/ubuntu-sans/fonts/variable /usr/local/share/fonts/ubuntu-sans
 		ln -nsfv $HOME/.shell-things/submodules/ubuntu-sans-mono/fonts/variable /usr/local/share/fonts/ubuntu-sans-mono
+		ln -nsfv $HOME/.shell-things/submodules/lora-font/fonts/variable /usr/local/share/fonts/lora
 	fi
 
 	# Symlink cleanup
@@ -538,6 +539,7 @@ if [ -d "$HOME/.shell-things" ]; then
 	ln -nsfv $HOME/.shell-things/submodules/source-code-pro/OTF/ $HOME/.local/share/fonts/source-code-pro
 	ln -nsfv $HOME/.shell-things/submodules/ubuntu-sans/fonts/variable $HOME/.local/share/fonts/ubuntu-sans
 	ln -nsfv $HOME/.shell-things/submodules/ubuntu-sans-mono/fonts/variable $HOME/.local/share/fonts/ubuntu-sans-mono
+	ln -nsfv $HOME/.shell-things/submodules/lora-font/fonts/variable $HOME/.local/share/fonts/lora
 
 	# Font cleanup
 	if hash symlinks 2> /dev/null; then

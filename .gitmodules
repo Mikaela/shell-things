@@ -118,3 +118,9 @@
 	branch = main
 	ignore = dirty
 	shallow = true
+[submodule "submodules/lora-font"]
+	path = submodules/lora-font
+	url = https://github.com/cyrealtype/Lora-Cyrillic.git
+	branch = main
+	ignore = dirty
+	shallow = true
