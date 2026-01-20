@@ -183,7 +183,21 @@ if [ "$(id -u)" == "0" ]; then
 
 	# Desktop entries
 	mkdir -vp /usr/local/share/applications/
-	cp -v local/share/applications/*.desktop /usr/local/share/applications/
+	# These are bound to exist on my systems
+	cp -v local/share/applications/{a-signal,a-syncplay,plasma-update,a-firefox-cups,a-firefox,a-chromium}.desktop /usr/local/share/applications/
+	# If Steam is installed, chances are these work
+	if [ -f /var/lib/flatpak/exports/bin/com.valvesoftware.Steam ]; then
+		cp -v local/share/applications/{a-steam,com.valvesoftware.Steam,flatpak-steam-bigpicture,flatpak-steam-tray}.desktop /usr/local/share/applications/
+	fi
+	if [ -f /var/lib/flatpak/exports/bin/org.briarproject.Briar ]; then
+		cp -v local/share/applications/briar.desktop /usr/local/share/applications/
+	fi
+	if [ -f /usr/bin/librewolf ]; then
+		cp -v local/share/applications/libreawoo.desktop /usr/local/share/applications/
+	fi
+	if [ -f /usr/bin/vivaldi ]; then
+		cp -v local/share/applications/vivaldi.desktop /usr/local/share/applications/
+	fi
 
 	# Additional configuration for sudo SECURITY WARNING DANGER ALARM BELLS!
 	if [ -d /etc/sudoers.d ]; then
