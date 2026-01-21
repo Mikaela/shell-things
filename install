@@ -453,8 +453,12 @@ else
 		ln -nsfv /usr/share/applications/org.kde.kinfocenter.desktop $DESKTOP/
 		ln -nsfv /usr/share/applications/org.kde.plasma-systemmonitor.desktop $DESKTOP/
 		#ln -nsfv /usr/share/applications/org.kde.haruna.desktop $DESKTOP/
-		ln -nsfv /usr/share/applications/org.torproject.torbrowser-launcher.desktop $DESKTOP/
-		ln -nsfv /usr/share/applications/org.torproject.torbrowser-launcher.settings.desktop $DESKTOP/
+		if [[ -f /usr/share/applications/org.torproject.torbrowser-launcher.desktop ]]; then
+			ln -nsfv /usr/share/applications/org.torproject.torbrowser-launcher.desktop $DESKTOP/
+			ln -nsfv /usr/share/applications/org.torproject.torbrowser-launcher.settings.desktop $DESKTOP/
+		else
+			ln -nsfv /var/lib/flatpak/exports/share/applications/org.torproject.torbrowser-launcher.desktop $DESKTOP/
+		fi
 		# scripts repo
 		ln -nsfv /usr/local/share/applications/a-firefox.desktop $DESKTOP/
 		#if [ -f "/usr/bin/chromium-browser" ]; then
@@ -494,7 +498,6 @@ else
 		ln -nsfv /var/lib/flatpak/exports/share/applications/de.haeckerfelix.Shortwave.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.pulseaudio.pavucontrol.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.telegram.desktop.desktop $DESKTOP/
-		ln -nsfv /var/lib/flatpak/exports/share/applications/org.torproject.torbrowser-launcher.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.audiotube.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/jp.nonbili.noutube.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/rocks.shy.VacuumTube.desktop $DESKTOP/
