@@ -453,6 +453,8 @@ else
 		ln -nsfv /usr/share/applications/org.kde.kinfocenter.desktop $DESKTOP/
 		ln -nsfv /usr/share/applications/org.kde.plasma-systemmonitor.desktop $DESKTOP/
 		#ln -nsfv /usr/share/applications/org.kde.haruna.desktop $DESKTOP/
+		ln -nsfv /usr/share/applications/org.torproject.torbrowser-launcher.desktop $DESKTOP/
+		ln -nsfv /usr/share/applications/org.torproject.torbrowser-launcher.settings.desktop $DESKTOP/
 		# scripts repo
 		ln -nsfv /usr/local/share/applications/a-firefox.desktop $DESKTOP/
 		#if [ -f "/usr/bin/chromium-browser" ]; then
