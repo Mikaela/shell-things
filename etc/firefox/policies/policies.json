@@ -566,6 +566,13 @@
 				"installation_mode": "normal_installed",
 				"private_browsing": true
 			},
+			"{cd991b18-7647-45fb-a71f-cdeec82e0edf}": {
+				"blocked_install_message": "Keep Awake (Screen Only). For cases where there is no KDE Connect to keep screen on.",
+				"default_area": "navbar",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/keep-awake-screen-only/latest.xpi",
+				"installation_mode": "allowed",
+				"private_browsing": true
+			},
 			"{d04b0b40-3dab-4f0b-97a6-04ec3eddbfb0}": {
 				"blocked_install_message": "Ecosia Search Engine. The policy to customize them is available only for ESR and Nightly, but both use the same name so ESR and Nightly can unload it without anything changing.",
 				"default_area": "menupanel",

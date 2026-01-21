@@ -247,7 +247,7 @@
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"apmicgkbejflkgeljipcebaoeigmangd": {
-			"blocked_install_message": "Keep Awake (Display | System)",
+			"blocked_install_message": "Keep Awake (Display | System). For cases where there is no KDE Connect to keep screen on.",
 			"installation_mode": "allowed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
