@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=footclient -T htop htop
+Icon=foot
+Terminal=false
+Name=System log
+Comment=sysadmin laziness
