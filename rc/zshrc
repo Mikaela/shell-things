@@ -206,9 +206,15 @@ if [ -f ~/.gnupg/sshcontrol ]; then
 	gpg-connect-agent updatestartuptty /bye > /dev/null 2>&1
 # otherwise use the normal ssh-agent
 else
-	# if the output is going to /dev/null, it's non/existence doesn't matter
-	(ssh-agent -a /tmp/$USER.sshagent > /dev/null 2>&1)
-	export SSH_AUTH_SOCK=/tmp/$USER.sshagent
+	if hash xdg-user-dir 2> /dev/null; then
+		# if the output is going to /dev/null, it's non/existence doesn't matter
+		(ssh-agent -a $(xdg-user-dir RUNTIME)/sshagent > /dev/null 2>&1)
+		export SSH_AUTH_SOCK=$(xdg-user-dir RUNTIME)/sshagent
+	else
+		# if the output is going to /dev/null, it's non/existence doesn't matter
+		(ssh-agent -a /tmp/$USER.sshagent > /dev/null 2>&1)
+		export SSH_AUTH_SOCK=/tmp/$USER.sshagent
+	fi
 fi
 
 # If we are on Linux, enable apt progress bar and colours
@@ -1019,9 +1025,9 @@ if [ -f ~/.warnings ]; then
 	source ~/.warnings
 fi
 
-# If $TMUX, then TERM is tmux-256color
-#if [ -v TMUX ]; then
-#	TERM=tmux-256color
-#fi
+# Note if my xdg runtime dir setting is broken.
+if ! hash xdg-user-dir 2> /dev/null; then
+	echo "WARNING! xdg-user-dir not found."
+fi
 
 # vim: filetype=zsh
