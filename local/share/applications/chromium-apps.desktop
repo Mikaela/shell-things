@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=PWAs from Chromium
+Name[fi]=PWAt Chromiumilla
+Exec=chromium --profile-directory=Default --app-id=gdaidcenalcnoknjmiehdkgkcpndkigh
+Icon=chrome-gdaidcenalcnoknjmiehdkgkcpndkigh-Default
+StartupWMClass=crx_gdaidcenalcnoknjmiehdkgkcpndkigh
