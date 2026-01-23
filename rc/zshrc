@@ -1029,8 +1029,8 @@ fi
 if ! hash xdg-user-dir 2> /dev/null; then
 	echo "!!!"
 	echo "WARNING! xdg-user-dir not found."
-	echo "Install package xdg-user-dirs on Arch, Fedora."
-	echo ""
+	echo "Install package xdg-user-dirs on Arch, Debian, Fedora."
+	echo "!!!"
 fi
 
 # vim: filetype=zsh
