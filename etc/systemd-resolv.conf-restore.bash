@@ -4,7 +4,7 @@ set -x
 # I just had a feeling I should also have a quick script to quickly restore
 # systemd-resolved handling of the file.
 
-if [[ ! -d /sysroot/ostree ]]; then
+if [[ -d /sysroot/ostree ]]; then
 	echo "Let's not mess up with Fedora Atomic. Try \$RES_OPTIONS instead? In profile.d?"
 	exit 1
 fi

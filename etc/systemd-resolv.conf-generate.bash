@@ -5,7 +5,7 @@ set -x
 # systemd-resolved as a DNS server. And then it also took parts of the
 # restore script.
 
-if [[ ! -d /sysroot/ostree ]]; then
+if [[ -d /sysroot/ostree ]]; then
 	echo "Let's not mess up with Fedora Atomic. Try \$RES_OPTIONS instead? In profile.d?"
 	exit 1
 fi
@@ -37,7 +37,7 @@ rm -v /etc/resolv.conf
 printf 'nameserver 127.0.0.53\nnameserver 127.0.0.53\nnameserver 127.0.0.53\nsearch .\noptions timeout:1 attempts:5 rotate edns0 trust-ad\n' | tee -p /etc/resolv.conf
 
 # Are we on Fedora Atomic?
-if [[ ! -d /sysroot/ostree ]]; then
+if [[ -d /sysroot/ostree ]]; then
 	# Remove all other permissions than everyone reading resolv.conf
 	chmod -v a=r /etc/resolv.conf
 	# Make resolv.conf immutable again so it's pretty sure nothing else edits it

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -x
 
-if [[ ! -d /sysroot/ostree ]]; then
+if [[ -d /sysroot/ostree ]]; then
 	echo "Let's not mess up with Fedora Atomic. Try \$RES_OPTIONS instead? In profile.d?"
 	exit 1
 fi

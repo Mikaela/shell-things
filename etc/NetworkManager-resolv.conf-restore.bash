@@ -5,7 +5,7 @@ set -x
 # well. I think it's even less likely I use this than the systemd-resolved
 # one, but anyway
 
-if [[ ! -d /sysroot/ostree ]]; then
+if [[ -d /sysroot/ostree ]]; then
 	echo "Let's not mess up with Fedora Atomic. Try \$RES_OPTIONS instead? In profile.d?"
 	exit 1
 fi
