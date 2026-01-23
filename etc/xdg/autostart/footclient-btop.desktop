@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
-Exec=footclient -T htop htop
+Exec=footclient -m -T btop btop
 Icon=foot
 Terminal=false
-Name=htop system monitor
+Name=btop system monitor
 Comment=sysadmin laziness
