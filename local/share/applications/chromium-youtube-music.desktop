@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=YouTube Music
+Exec=chromium --profile-directory=Default --app-id=cinhimbnkkaeohfgghhklpknlkffjgod --app-run-on-os-login-mode=windowed
+Icon=chrome-cinhimbnkkaeohfgghhklpknlkffjgod-Default
+StartupWMClass=crx_cinhimbnkkaeohfgghhklpknlkffjgod
