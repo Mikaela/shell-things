@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Yle Areena
+Exec=chromium --profile-directory=Default --app-id=dnmhnkielnkjombalknpglekhfbijpki
+Icon=chrome-dnmhnkielnkjombalknpglekhfbijpki-Default
+StartupWMClass=crx_dnmhnkielnkjombalknpglekhfbijpki
