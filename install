@@ -347,6 +347,7 @@ if [ "$(id -u)" == "0" ]; then
 	fi
 	cp -v etc/xdg/autostart/easyeffects-service.desktop /etc/xdg/autostart/
 	ln -nsfv /usr/local/share/applications/a-firefox.desktop /etc/xdg/autostart/
+	cp -v etc/xdg/autostart/01-chromium-bg.desktop /etc/xdg/autostart/
 	ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.kteatime.desktop /etc/xdg/autostart/
 	ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.kclock.desktop /etc/xdg/autostart/
 	ln -nsfv /usr/local/share/applications/plasma-update.desktop /etc/xdg/autostart/
