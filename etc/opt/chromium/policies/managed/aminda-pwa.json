@@ -441,6 +441,31 @@
 			"default_launch_container": "window"
 		},
 		{
+			"url": "https://mattermost.europeanpirates.eu",
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window"
+		},
+		{
+			"url": "https://pre-release.mattermost.com",
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window"
+		},
+		{
+			"url": "https://mattermost.globalpirates.net",
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window"
+		},
+		{
+			"url": "https://citysec.disobey.fi",
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window"
+		},
+		{
+			"url": "https://community.internetfreedomfestival.org",
+			"create_desktop_shortcut": false,
+			"default_launch_container": "window"
+		},
+		{
 			"url": "https://www.kela.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "tab"
