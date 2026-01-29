@@ -8,10 +8,10 @@ TimeoutStartSec=infinity
 # I have observed duperemove requesting blkid to be ran as root for
 # generating some cache, so sure.
 ExecStart=-blkid
-ExecStart=-duperemove -rdhq --hashfile=/root/home.hash /home
-ExecStart=-duperemove -rdhq --hashfile=/root/usr-local-bin.hash /usr/local/bin
-ExecStart=-duperemove -rdhq --hashfile=/root/flatpak.hash /var/lib/flatpak
-ExecStart=-duperemove -rdhq --hashfile=/root/snap.hash /var/lib/snapd
+ExecStart=-duperemove -rdhq --io-threads=1 --cpu-threads=1 --hashfile=/root/home.hash /home
+ExecStart=-duperemove -rdhq --io-threads=1 --cpu-threads=1 --hashfile=/root/usr-local-bin.hash /usr/local/bin
+ExecStart=-duperemove -rdhq --io-threads=1 --cpu-threads=1 --hashfile=/root/flatpak.hash /var/lib/flatpak
+ExecStart=-duperemove -rdhq --io-threads=1 --cpu-threads=1 --hashfile=/root/snap.hash /var/lib/snapd
 User=root
 StandardOutput=journal
 StandardError=journal
