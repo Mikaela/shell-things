@@ -527,6 +527,7 @@ else
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.skanpage.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.kclock.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/com.calibre_ebook.calibre.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/com.github.wwmm.easyeffects.desktop $DESKTOP/
 		# snaps
 		# No libdvdcss!
 		#ln -nsfv /var/lib/snapd/desktop/applications/vlc_vlc.desktop $DESKTOP/
