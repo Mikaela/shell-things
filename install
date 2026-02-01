@@ -345,7 +345,12 @@ if [ "$(id -u)" == "0" ]; then
 		#cp -v etc/xdg/autostart/footclient-journal-network.desktop /etc/xdg/autostart/
 		#cp -v etc/xdg/autostart/footclient-journal-time.desktop /etc/xdg/autostart/
 	fi
-	cp -v etc/xdg/autostart/easyeffects-service.desktop /etc/xdg/autostart/
+	# TODO: Remove this in the future when everything has migrated to the new
+	# name. (2026-02-01)
+	if -f [ /etc/xdg/autostart/easyeffects-service.desktop ]; then
+		rm /etc/xdg/autostart/easyeffects-service.desktop
+	fi
+	cp -v etc/xdg/autostart/com.github.wwmm.easyeffects.desktop /etc/xdg/autostart/
 	ln -nsfv /usr/local/share/applications/a-firefox.desktop /etc/xdg/autostart/
 	cp -v etc/xdg/autostart/01-chromium-bg.desktop /etc/xdg/autostart/
 	ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.kteatime.desktop /etc/xdg/autostart/
