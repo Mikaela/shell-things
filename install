@@ -449,9 +449,8 @@ else
 		if hash systemctl 2> /dev/null; then
 			systemctl --user enable --now foot-server.socket
 			ln -nsfv /usr/share/applications/footclient.desktop $DESKTOP/
-		else
-			ln -nsfv /usr/share/applications/foot.desktop $DESKTOP/
 		fi
+		ln -nsfv /usr/share/applications/foot.desktop $DESKTOP/
 
 		# Create desktop shortcuts/symlinks for apps
 		ln -nsfv /usr/share/applications/org.kde.discover.desktop $DESKTOP/
