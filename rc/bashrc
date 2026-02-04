@@ -161,7 +161,7 @@ if hash lsb_release 2> /dev/null; then
 		fi
 
 		printf "\n"
-		df / $HOME --human-readable --output=source,fstype,size,used,avail,pcent | uniq
+		df / $HOME --human-readable --output=source,fstype,size,used,avail,pcent | grep -v overlay | uniq
 		unset LC_ALL
 	)
 
