@@ -184,7 +184,7 @@ if [ "$(id -u)" == "0" ]; then
 	# Desktop entries
 	mkdir -vp /usr/local/share/applications/
 	# These are bound to exist on my systems
-	cp -v local/share/applications/{a-signal,a-syncplay,plasma-update,a-firefox-cups,a-firefox,a-chromium,chromium-{apps,youtube-music,yle-areena,discord,gmessages,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}}.desktop /usr/local/share/applications/
+	cp -v local/share/applications/{a-signal,a-syncplay,plasma-update,a-firefox-cups,a-firefox-gmail,a-firefox,a-chromium,chromium-{apps,youtube-music,yle-areena,discord,gmessages,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}}.desktop /usr/local/share/applications/
 	# If Steam is installed, chances are these work
 	if [ -f /var/lib/flatpak/exports/bin/com.valvesoftware.Steam ]; then
 		cp -v local/share/applications/{a-steam,com.valvesoftware.Steam,flatpak-steam-bigpicture,flatpak-steam-tray}.desktop /usr/local/share/applications/
@@ -508,6 +508,7 @@ else
 			ln -nsfv /usr/local/share/applications/a-signal.desktop $DESKTOP/
 		fi
 		ln -nsfv /usr/local/share/applications/a-firefox-cups.desktop $DESKTOP/
+		ln -nsfv /usr/local/share/applications/a-firefox-gmail.desktop $DESKTOP/
 		# flatpaks
 		ln -nsfv /var/lib/flatpak/exports/share/applications/com.valvesoftware.SteamLink.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/com.heroicgameslauncher.hgl.desktop $DESKTOP/

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=GMail in Firefox
+Name[fi]=GMail Firefoxissa
+Exec=/usr/bin/env firefox --new-window https://mail.google.com
+Icon=internet-mail
+Terminal=false
+Type=Application
+StartupNotify=true
+StartupWMClass=firefox
