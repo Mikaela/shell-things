@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=foot -T WeeChat weechat
+Icon=foot
+Terminal=false
+Name=WeeChat IRC client
+Name[fi]=WeeChat IRC-asiakasohjelma
