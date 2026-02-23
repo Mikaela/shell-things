@@ -90,7 +90,7 @@ lockPref("toolkit.telemetry.dap_enabled", true);
 
 // New sidebar
 lockPref("sidebar.revamp", true);
-lockPref("sidebar.verticalTabs", true);
+defaultPref("sidebar.verticalTabs", true);
 lockPref("sidebar.position_start", false);
 lockPref("sidebar.visibility", "always-show");
 
