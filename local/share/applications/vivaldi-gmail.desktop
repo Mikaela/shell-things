@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Gmail in Vivaldi
+Name[fi]=Gmail Vivaldissa
+Exec=vivaldi --profile-directory=Default --app-id=fmgjjmmmlfnkbppncabfkddbjimcfncm --app-run-on-os-login-mode=windowed
+Icon=vivaldi-fmgjjmmmlfnkbppncabfkddbjimcfncm-Default
+StartupWMClass=crx_fmgjjmmmlfnkbppncabfkddbjimcfncm
