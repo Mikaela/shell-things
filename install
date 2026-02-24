@@ -3,10 +3,6 @@
 # script isn't that much above `curl | bash`ing
 set -x
 
-# Workaround Chromium selectively understanding --disk-cache-dir=nul
-ln -nsfv /dev/null $HOME/nul
-ln -nsfv /dev/null $HOME/null
-
 # Of course LaTeX templates exist
 mkdir -vp ~/texmf/tex/latex/local
 
@@ -476,7 +472,7 @@ else
 		# scripts repo
 		ln -nsfv /usr/local/share/applications/a-firefox.desktop $DESKTOP/
 		if [ -f "/usr/bin/chromium-browser" ]; then
-			#ln -nsfv /usr/local/share/applications/a-chromium.desktop $DESKTOP/
+			ln -nsfv /usr/local/share/applications/a-chromium.desktop $DESKTOP/
 			if [ -f /etc/chromium/policies/managed/aminda-pwa.json ]; then
 				ln -nsfv /usr/local/share/applications/chromium-{apps,youtube-music,yle-areena,discord,gmessages,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}.desktop $DESKTOP/
 			fi
