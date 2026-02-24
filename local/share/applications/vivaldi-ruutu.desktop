@@ -4,6 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Ruutu
-Exec=vivaldi-browser --profile-directory=Default --app-id=jmjofilifpemeghokphhabmgchgjkbee
+Exec=vivaldi --profile-directory=Default --app-id=jmjofilifpemeghokphhabmgchgjkbee
 Icon=vivaldi-jmjofilifpemeghokphhabmgchgjkbee-Default
 StartupWMClass=crx_jmjofilifpemeghokphhabmgchgjkbee

@@ -4,6 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Radioplayer.fi
-Exec=vivaldi-browser --profile-directory=Default --app-id=ogkbncihofkjlbihfadplhmilcnpekhm
+Exec=vivaldi --profile-directory=Default --app-id=ogkbncihofkjlbihfadplhmilcnpekhm
 Icon=vivaldi-ogkbncihofkjlbihfadplhmilcnpekhm-Default
 StartupWMClass=crx_ogkbncihofkjlbihfadplhmilcnpekhm

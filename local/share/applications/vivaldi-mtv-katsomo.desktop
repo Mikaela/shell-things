@@ -4,6 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=MTV Katsomo
-Exec=vivaldi-browser --profile-directory=Default --app-id=ineafkdjdmmdocoipaekbccldinobikn
+Exec=vivaldi --profile-directory=Default --app-id=ineafkdjdmmdocoipaekbccldinobikn
 Icon=vivaldi-ineafkdjdmmdocoipaekbccldinobikn-Default
 StartupWMClass=crx_ineafkdjdmmdocoipaekbccldinobikn
