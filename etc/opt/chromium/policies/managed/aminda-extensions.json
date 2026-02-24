@@ -229,6 +229,8 @@
 	},
 	"BrowserGuestModeEnabled": false,
 	"BrowserGuestModeEnabled_comment": "Extensions are not available for guest mode either just like with incognito. So use Firefox for temporary incognito browsing or even Tor Browser preferably.",
+	"DefaultLocalFontsSetting": 3,
+	"DefaultLocalFontsSetting_comment": "Ask whether websites can access local fonts. Yes, this is misplaced.",
 	"ExtensionManifestV2Availability": 3,
 	"ExtensionManifestV2Availability_comment": "0 for default, 1 for disable, 2 for enable, 3 for those extensions specified here.",
 	"ExtensionSettings": {
