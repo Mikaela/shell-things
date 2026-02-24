@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Google Messages
+Name[fi]=Google Viestit
+Exec=vivaldi-browser --profile-directory=Default --app-id=hpfldicfbfomlpcikngkocigghgafkph
+Icon=vivaldi-hpfldicfbfomlpcikngkocigghgafkph-Default
+StartupWMClass=crx_hpfldicfbfomlpcikngkocigghgafkph

@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=WhatsApp Web
+Exec=vivaldi --profile-directory=Default --app-id=hnpfjngllnobngcgfapefoaidbinmjnm --app-run-on-os-login-mode=windowed
+Icon=vivaldi-hnpfjngllnobngcgfapefoaidbinmjnm-Default
+StartupWMClass=crx_hnpfjngllnobngcgfapefoaidbinmjnm

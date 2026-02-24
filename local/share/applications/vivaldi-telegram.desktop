@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Telegram Web
+Exec=vivaldi --profile-directory=Default --app-id=ibblmnobmgdmpoeblocemifbpglakpoi --app-run-on-os-login-mode=windowed
+Icon=vivaldi-ibblmnobmgdmpoeblocemifbpglakpoi-Default
+StartupWMClass=crx_ibblmnobmgdmpoeblocemifbpglakpoi
