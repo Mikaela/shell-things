@@ -1011,12 +1011,6 @@
 				"Type": "string",
 				"Value": "once"
 			},
-			"intl.accept_languages": {
-				"Comment": "This is a bad idea.",
-				"Status": "default",
-				"Type": "string",
-				"Value": ""
-			},
 			"intl.multilingual.downloadEnabled": {
 				"Comment": "Allow downloading additional languages?",
 				"Status": "default",
@@ -1288,7 +1282,7 @@
 			}
 		},
 		"PromptForDownloadLocation": true,
-		"RequestedLocales": "en-US, en",
+		"RequestedLocales": "fi, en-FI, en",
 		"SearchEngines": {
 			"Add": [
 				{
