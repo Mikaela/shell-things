@@ -7,4 +7,4 @@ Icon=preferences-devices-printer
 Terminal=false
 Type=Application
 StartupNotify=true
-StartupWMClass=firefox
+#StartupWMClass=firefox
