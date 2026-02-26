@@ -815,8 +815,8 @@
 				"Type": "boolean",
 				"Value": true
 			},
-			"browser.tabs.inTitlebar_commented": {
-				"Comment": "without _commented 0 enables system title bar and 2 is default.",
+			"browser.tabs.inTitlebar": {
+				"Comment": "When set to 0 system title bar is enabled. 2 is the default. Set to 2 for family tech support reasons since apparently less technial users scan for the system title bar for close/maximize/minimize buttons.",
 				"Status": "default",
 				"Type": "number",
 				"Value": 0
