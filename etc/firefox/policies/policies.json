@@ -662,6 +662,16 @@
 				"Type": "boolean",
 				"Value": false
 			},
+			"browser.ai.control.pdfjsAltText": {
+				"Status": "default",
+				"Type": "string",
+				"Value": "enabled"
+			},
+			"browser.ai.control.translations": {
+				"Status": "default",
+				"Type": "string",
+				"Value": "enabled"
+			},
 			"browser.cache.disk.enable": {
 				"Status": "user",
 				"Type": "boolean",
@@ -1125,6 +1135,11 @@
 			},
 			"network.trr.useGET": {
 				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
+			"pdfjs.enableAltText": {
+				"Status": "default",
 				"Type": "boolean",
 				"Value": true
 			},
