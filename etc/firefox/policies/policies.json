@@ -478,6 +478,12 @@
 				"private_browsing": false,
 				"restricted_domains": []
 			},
+			"{5b22cb75-8e43-4f2a-bb9b-1da0655ae564}": {
+				"blocked_install_message": "Archive Page. archive.{is,today,md} etc. extension. May turn malicious. https://en.wikipedia.org/wiki/Wikipedia:Requests_for_comment/Archive.is_RFC_5",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/facebook-container/latest.xpi",
+				"installation_mode": "blocked",
+				"private_browsing": false
+			},
 			"{6a65273e-2b26-40f5-b66e-8eed317307da}": {
 				"blocked_install_message": "New Tab Suspender. More useful than the Firefox integrated one, which this policy should also enable (if not, autoconfig does, I don't remember and not checking right now, TODO!)",
 				"default_area": "navbar",
