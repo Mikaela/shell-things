@@ -1,5 +1,5 @@
 {
 	"DisablePrintPreview": true,
-	"PrintingEnabled": false,
+	"PrintingEnabled": true,
 	"aminda_printing_comment": "Chromium only prints mess and even if system dialog happened to fix that, it wouldn't disobey document fonts in print"
 }

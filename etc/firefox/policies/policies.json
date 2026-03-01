@@ -1302,7 +1302,7 @@
 				"Value": 90
 			}
 		},
-		"PrintingEnabled": false,
+		"PrintingEnabled": true,
 		"PrintingEnabled_comment": "The first print is a mess, second succeeds. Apparently Chrome is innocent. Thus printing is banned entirely in web browsers, save your pdfs before attempting to print them in case that helps.",
 		"PromptForDownloadLocation": true,
 		"RequestedLocales": "fi, en-FI, en",
@@ -1358,6 +1358,8 @@
 		},
 		"ShowHomeButton": true,
 		"StartDownloadsInTempDirectory": true,
+		"UseSystemPrintDialog": true,
+		"UseSystemPrintDialog_comment": "See PrintingEnabled_comment. Maybe system print dialog works without mess?",
 		"UserMessaging": {
 			"ExtensionRecommendations": false,
 			"FeatureRecommendations": false,
