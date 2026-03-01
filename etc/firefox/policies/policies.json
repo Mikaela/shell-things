@@ -526,7 +526,7 @@
 				"blocked_install_message": "Firefox Nightly Tester Tools",
 				"default_area": "menupanel",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/nightly-tester-tools/latest.xpi",
-				"installation_mode": "allowed",
+				"installation_mode": "force_installed",
 				"private_browsing": true
 			},
 			"{8e41107d-2be2-454d-b4b8-c3d7e54d77de}": {
