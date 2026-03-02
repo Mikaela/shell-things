@@ -475,6 +475,7 @@ else
 		ln -nsfv /usr/share/applications/org.kde.kinfocenter.desktop $DESKTOP/
 		ln -nsfv /usr/share/applications/org.kde.plasma-systemmonitor.desktop $DESKTOP/
 		ln -nsfv /usr/share/applications/org.kde.kfind.desktop $DESKTOP/
+		ln -nsfv /usr/share/applications/org.kde.partitionmanager.desktop $DESKTOP/
 		#ln -nsfv /usr/share/applications/org.kde.haruna.desktop $DESKTOP/
 		if [[ -f /usr/share/applications/org.torproject.torbrowser-launcher.desktop ]]; then
 			ln -nsfv /usr/share/applications/org.torproject.torbrowser-launcher.desktop $DESKTOP/
@@ -542,6 +543,7 @@ else
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.kclock.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/com.calibre_ebook.calibre.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/com.github.wwmm.easyeffects.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/org.fedoraproject.MediaWriter.desktop $DESKTOP/
 		# snaps
 		# No libdvdcss!
 		#ln -nsfv /var/lib/snapd/desktop/applications/vlc_vlc.desktop $DESKTOP/
