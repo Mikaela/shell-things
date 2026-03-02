@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Exec=foot -T NCurses\ Disk\ Usage ncdu
+Icon=foot
+Terminal=false
+Name=ncdu - NCurses Disk Usage
+Name[fi]=ncdu -levynkäytön analysoija
