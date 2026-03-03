@@ -531,7 +531,7 @@ else
 		ln -nsfv /var/lib/flatpak/exports/share/applications/com.rafaelmardojai.Blanket.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/de.haeckerfelix.Shortwave.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.pulseaudio.pavucontrol.desktop $DESKTOP/
-		#ln -nsfv /var/lib/flatpak/exports/share/applications/org.telegram.desktop.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/org.telegram.desktop.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.audiotube.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/jp.nonbili.noutube.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/rocks.shy.VacuumTube.desktop $DESKTOP/
@@ -548,6 +548,7 @@ else
 		# snaps
 		# No libdvdcss!
 		#ln -nsfv /var/lib/snapd/desktop/applications/vlc_vlc.desktop $DESKTOP/
+		ln -nsfv /var/lib/snapd/desktop/applications/discord_discord.desktop $DESKTOP/
 	fi
 
 	# Ensure a-firefox.desktop has an icon
