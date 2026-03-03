@@ -3,7 +3,8 @@
 Version=1.0
 Terminal=false
 Type=Application
-Name=Discord
+Name=Discord in Vivaldi
+Name[fi]=Discord Vivaldissa
 Exec=vivaldi --profile-directory=Default --app-id=pliiebkcmokkgndfalahlmimanmbjlab --app-run-on-os-login-mode=windowed
 Icon=vivaldi-pliiebkcmokkgndfalahlmimanmbjlab-Default
 StartupWMClass=crx_pliiebkcmokkgndfalahlmimanmbjlab

@@ -3,7 +3,8 @@
 Version=1.0
 Terminal=false
 Type=Application
-Name=Discord
+Name=Discord in Chromium
+Name[fi]=Discord Chromiumissa
 Exec=chromium --profile-directory=Default --app-id=pliiebkcmokkgndfalahlmimanmbjlab --app-run-on-os-login-mode=windowed
 Icon=chrome-pliiebkcmokkgndfalahlmimanmbjlab-Default
 StartupWMClass=crx_pliiebkcmokkgndfalahlmimanmbjlab
