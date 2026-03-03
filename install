@@ -58,6 +58,13 @@ if [ ! -f $HOME/.config/MangoHud/MangoHud.conf ]; then
 	cp -v conf/MangoHud.conf $HOME/.config/MangoHud/
 fi
 
+# Discord snap inter process communication
+if [ -f /var/lib/snapd/snap/bin/discord ]; then
+	#if [ ! -f $HOME/.config/user-tmpfiles.d/discord-rpc.conf ]; then
+	cp -v conf/user-tmpfiles.d/discord-rpc.conf $HOME/.config/user-tmpfiles.d/
+	#fi
+fi
+
 # Default cursor font
 if [[ ! -f $HOME/.local/share/icons/default/index.theme && -f /usr/share/icons/Oxygen_Yellow/index.theme ]]; then
 	mkdir -vp $HOME/.local/share/icons/default/
