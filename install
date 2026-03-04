@@ -189,9 +189,9 @@ if [ "$(id -u)" == "0" ]; then
 	# These are bound to exist on my systems
 	cp -v local/share/applications/{a-signal,a-syncplay,plasma-update,a-firefox-cups,a-firefox-gmail,a-firefox,foot-ncdu}.desktop /usr/local/share/applications/
 	if [ -f "/usr/bin/vivaldi-stable" ]; then
-		cp -v local/share/applications/{a-vivaldi,vivaldi-{apps,youtube-music,yle-areena,discord,gmail,gmessages,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}}.desktop /usr/local/share/applications/
+		cp -v local/share/applications/{a-vivaldi,vivaldi-{apps,youtube-music,yle-areena,discord,gmail,gmessages,google-calendar,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}}.desktop /usr/local/share/applications/
 	elif [ -f "/usr/bin/chromium-browser" ]; then
-		cp -v local/share/applications/{a-chromium,chromium-{apps,youtube-music,yle-areena,discord,gmail,gmessages,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}}.desktop /usr/local/share/applications/
+		cp -v local/share/applications/{a-chromium,chromium-{apps,youtube-music,yle-areena,discord,gmail,gmessages,google-calendar,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}}.desktop /usr/local/share/applications/
 	fi
 	# If Steam is installed, chances are these work
 	if [ -f /var/lib/flatpak/exports/bin/com.valvesoftware.Steam ]; then
@@ -495,12 +495,12 @@ else
 		if [ -f "/usr/bin/vivaldi-stable" ]; then
 			ln -nsfv /usr/local/share/applications/a-vivaldi.desktop $DESKTOP/
 			if [ -f /etc/chromium/policies/managed/aminda-pwa.json ]; then
-				ln -nsfv /usr/local/share/applications/vivaldi-{apps,youtube-music,yle-areena,discord,gmail,gmessages,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}.desktop $DESKTOP/
+				ln -nsfv /usr/local/share/applications/vivaldi-{apps,youtube-music,yle-areena,discord,gmail,gmessages,google-calendar,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}.desktop $DESKTOP/
 			fi
 		elif [ -f "/usr/bin/chromium-browser" ]; then
 			ln -nsfv /usr/local/share/applications/a-chromium.desktop $DESKTOP/
 			if [ -f /etc/chromium/policies/managed/aminda-pwa.json ]; then
-				ln -nsfv /usr/local/share/applications/chromium-{apps,youtube-music,yle-areena,discord,gmail,gmessages,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}.desktop $DESKTOP/
+				ln -nsfv /usr/local/share/applications/chromium-{apps,youtube-music,yle-areena,discord,gmail,gmessages,google-calendar,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}.desktop $DESKTOP/
 			fi
 		fi
 		if [ -f "/usr/bin/google-chrome-stable" ]; then
