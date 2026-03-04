@@ -5,6 +5,6 @@ Terminal=false
 Type=Application
 Name=Google Messages
 Name[fi]=Google Viestit
-Exec=vivaldi --profile-directory=Default --app-id=hpfldicfbfomlpcikngkocigghgafkph
+Exec=vivaldi --profile-directory=Default --app-id=hpfldicfbfomlpcikngkocigghgafkph --app-run-on-os-login-mode=windowed
 Icon=vivaldi-hpfldicfbfomlpcikngkocigghgafkph-Default
 StartupWMClass=crx_hpfldicfbfomlpcikngkocigghgafkph

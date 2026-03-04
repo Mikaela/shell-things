@@ -4,6 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Twitch
-Exec=vivaldi --profile-directory=Default --app-id=comkdlimbkhemidbbpchhepidbmjpnhh
+Exec=vivaldi --profile-directory=Default --app-id=comkdlimbkhemidbbpchhepidbmjpnhh --app-run-on-os-login-mode=windowed
 Icon=vivaldi-comkdlimbkhemidbbpchhepidbmjpnhh-Default
 StartupWMClass=crx_comkdlimbkhemidbbpchhepidbmjpnhh

@@ -5,6 +5,6 @@ Terminal=false
 Type=Application
 Name=Google Calendar
 Name[fi]=Google Kalenteri
-Exec=chromium--profile-directory=Default --app-id=kjbdgfilnfhdoflbpgamdcdgpehopbep --app-run-on-os-login-mode=windowed
+Exec=chromium --profile-directory=Default --app-id=kjbdgfilnfhdoflbpgamdcdgpehopbep --app-run-on-os-login-mode=windowed
 Icon=chrome-kjbdgfilnfhdoflbpgamdcdgpehopbep-Default
 StartupWMClass=crx_kjbdgfilnfhdoflbpgamdcdgpehopbep

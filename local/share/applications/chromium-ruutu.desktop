@@ -4,6 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Ruutu
-Exec=chromium-browser --profile-directory=Default --app-id=jmjofilifpemeghokphhabmgchgjkbee
+Exec=chromium --profile-directory=Default --app-id=jmjofilifpemeghokphhabmgchgjkbee --app-run-on-os-login-mode=windowed
 Icon=chrome-jmjofilifpemeghokphhabmgchgjkbee-Default
 StartupWMClass=crx_jmjofilifpemeghokphhabmgchgjkbee

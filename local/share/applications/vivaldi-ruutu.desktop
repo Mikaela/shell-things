@@ -4,6 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Ruutu
-Exec=vivaldi --profile-directory=Default --app-id=jmjofilifpemeghokphhabmgchgjkbee
+Exec=vivaldi --profile-directory=Default --app-id=jmjofilifpemeghokphhabmgchgjkbee --app-run-on-os-login-mode=windowed
 Icon=vivaldi-jmjofilifpemeghokphhabmgchgjkbee-Default
 StartupWMClass=crx_jmjofilifpemeghokphhabmgchgjkbee

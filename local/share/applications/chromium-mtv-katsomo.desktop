@@ -4,6 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=MTV Katsomo
-Exec=chromium-browser --profile-directory=Default --app-id=ineafkdjdmmdocoipaekbccldinobikn
+Exec=chromium --profile-directory=Default --app-id=ineafkdjdmmdocoipaekbccldinobikn --app-run-on-os-login-mode=windowed
 Icon=chrome-ineafkdjdmmdocoipaekbccldinobikn-Default
 StartupWMClass=crx_ineafkdjdmmdocoipaekbccldinobikn

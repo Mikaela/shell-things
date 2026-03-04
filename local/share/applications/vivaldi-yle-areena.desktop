@@ -4,6 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Yle Areena
-Exec=vivaldi --profile-directory=Default --app-id=dnmhnkielnkjombalknpglekhfbijpki
+Exec=vivaldi --profile-directory=Default --app-id=dnmhnkielnkjombalknpglekhfbijpki --app-run-on-os-login-mode=windowed
 Icon=vivaldi-dnmhnkielnkjombalknpglekhfbijpki-Default
 StartupWMClass=crx_dnmhnkielnkjombalknpglekhfbijpki

@@ -4,6 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Radioplayer.fi
-Exec=chromium-browser --profile-directory=Default --app-id=memomhmokkeeilmkambhmkobjfggidnj
+Exec=chromium --profile-directory=Default --app-id=memomhmokkeeilmkambhmkobjfggidnj --app-run-on-os-login-mode=windowed
 Icon=chrome-memomhmokkeeilmkambhmkobjfggidnj-Default
 StartupWMClass=crx_memomhmokkeeilmkambhmkobjfggidnj

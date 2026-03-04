@@ -5,6 +5,6 @@ Terminal=false
 Type=Application
 Name=Vivaldi Applications
 Name[fi]=Vivaldi sovellukset
-Exec=vivaldi --profile-directory=Default --app-id=gdaidcenalcnoknjmiehdkgkcpndkigh
+Exec=vivaldi --profile-directory=Default --app-id=gdaidcenalcnoknjmiehdkgkcpndkigh --app-run-on-os-login-mode=windowed
 Icon=vivaldi-gdaidcenalcnoknjmiehdkgkcpndkigh-Default
 StartupWMClass=crx_gdaidcenalcnoknjmiehdkgkcpndkigh
