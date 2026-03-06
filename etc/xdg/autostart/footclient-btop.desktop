@@ -4,4 +4,5 @@ Exec=footclient -m -T btop btop
 Icon=foot
 Terminal=false
 Name=btop system monitor
+Name[fi]=btop -järjestelmänvalvonta
 Comment=sysadmin laziness

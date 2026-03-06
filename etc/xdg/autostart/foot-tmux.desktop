@@ -3,5 +3,6 @@ Type=Application
 Exec=foot -m tmux
 Icon=foot
 Terminal=false
-Name=Foot running tmux
+Name=New tmux session in foo terminal
+Name[fi]=Uusi tmux-istunto foo-päätteessä
 Comment=OOM killing foot-server is fun

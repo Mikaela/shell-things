@@ -4,4 +4,5 @@ Exec=footclient -T htop htop
 Icon=foot
 Terminal=false
 Name=htop system monitor
+Name[fi]=htop -järjestelmänvalvonta
 Comment=sysadmin laziness
