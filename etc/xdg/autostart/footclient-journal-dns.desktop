@@ -4,4 +4,5 @@ Exec=footclient -T DNS journalctl --no-hostname --follow -u unbound -u systemd-r
 Icon=foot
 Terminal=false
 Name=DNS log
+Name[fi]=DNS-loki
 Comment=sysadmin laziness

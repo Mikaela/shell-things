@@ -4,4 +4,5 @@ Exec=footclient -T Network journalctl --no-hostname --follow -u NetworkManager -
 Icon=foot
 Terminal=false
 Name=Network log
+Name[fi]=Verkkoloki
 Comment=sysadmin laziness

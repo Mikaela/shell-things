@@ -4,4 +4,5 @@ Exec=footclient -T System journalctl --no-hostname --follow
 Icon=foot
 Terminal=false
 Name=System log
+Name[fi]=Järjestelmäloki
 Comment=sysadmin laziness

@@ -4,4 +4,5 @@ Exec=footclient -T Time journalctl --no-hostname --follow -u chrony -u chronyd -
 Icon=foot
 Terminal=false
 Name=Time log
+Name[fi]=Aikaloki
 Comment=sysadmin laziness
