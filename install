@@ -524,6 +524,7 @@ else
 			ln -nsfv /usr/local/share/applications/plasma-update.desktop $DESKTOP/
 		fi
 
+		ln -nsfv /etc/xdg/autostart/foot*.desktop $DESKTOP/
 		ln -nsfv /usr/local/share/applications/foot-ncdu.desktop $DESKTOP/
 		ln -nsfv /usr/local/share/applications/flatpak-steam-bigpicture.desktop $DESKTOP/
 		ln -nsfv /usr/local/share/applications/a-steam.desktop $DESKTOP/
