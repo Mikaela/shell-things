@@ -53,6 +53,8 @@ offer.
   will be used when it won't work anymore and then the next is used as long as
   it works and then it's back to the beginning.
   - https://github.com/systemd/systemd/issues/16322#issuecomment-724143641
+- While systemd-resolved can do mDNS (multicast DNS), it cannot do DNS-SD
+  (service discovery). Thus no local CUPS printing.
 
 Other links I have found important and my files are based on:
 

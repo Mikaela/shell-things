@@ -1,5 +1,0 @@
-# Enable resolver and responder, practically replacing avahi-daemon
-[Resolve]
-LLMNR=true
-MulticastDNS=true
-# vim: filetype=systemd
