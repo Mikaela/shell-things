@@ -1027,6 +1027,12 @@
 				"Type": "string",
 				"Value": "once"
 			},
+			"intl.accept_languages": {
+				"Comment": "PRIVACY ISSUE. I am tired and want service in Finnish",
+				"Status": "default",
+				"Type": "string",
+				"Value": "fi, en-FI, en"
+			},
 			"intl.multilingual.downloadEnabled": {
 				"Comment": "Allow downloading additional languages?",
 				"Status": "default",
@@ -1305,7 +1311,7 @@
 		"PrintingEnabled": true,
 		"PrintingEnabled_comment": "The first print is a mess, second succeeds. Apparently Chrome is innocent. Thus printing is banned entirely in web browsers, save your pdfs before attempting to print them in case that helps.",
 		"PromptForDownloadLocation": true,
-		"RequestedLocales": "fi, en-FI, en",
+		"RequestedLocales_commentedOut": "en-US, en",
 		"SearchEngines": {
 			"Add": [
 				{
