@@ -96,8 +96,6 @@
 					"filterLists": [
 						"adguard-spyware-url",
 						"block-lan",
-						"easylist",
-						"FIN-0",
 						"https://raw.githubusercontent.com/Mikaela/gist/master/DNS/blocklist.txt",
 						"https://ads-for-open-source.readthedocs.io/en/latest/_static/lists/opensource-ads.txt",
 						"https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt",
@@ -107,7 +105,6 @@
 						"https://secure.fanboy.co.nz/fanboy-annoyance.txt",
 						"https://www.eff.org/files/effdntlist.txt",
 						"https://easylist-downloads.adblockplus.org/exceptionrules.txt",
-						"https://big.oisd.nl",
 						"ublock-abuse",
 						"ublock-badware",
 						"ublock-filters",
@@ -115,10 +112,7 @@
 						"ublock-quick-fixes",
 						"ublock-unbreak",
 						"user-filters",
-						"easyprivacy",
-						"urlhaus-1",
-						"fanboy-ai-suggestions",
-						"plowe-0"
+						"fanboy-ai-suggestions"
 					]
 				},
 				"userSettings": [
