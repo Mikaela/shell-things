@@ -115,7 +115,12 @@
 							"ublock-quick-fixes",
 							"ublock-unbreak",
 							"user-filters",
-							"fanboy-ai-suggestions"
+							"fanboy-ai-suggestions",
+							"easylist",
+							"easyprivacy",
+							"urlhaus-1",
+							"plowe-0",
+							"FIN-0"
 						]
 					},
 					"userSettings": [
@@ -141,7 +146,7 @@
 						],
 						[
 							"parseAllABPHideFilters",
-							"false"
+							"true"
 						],
 						[
 							"suspendUntilListsAreLoaded",
