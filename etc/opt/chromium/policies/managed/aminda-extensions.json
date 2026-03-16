@@ -139,7 +139,7 @@
 					],
 					[
 						"ignoreGenericCosmeticFilters",
-						"true"
+						"false"
 					],
 					[
 						"parseAllABPHideFilters",
@@ -147,7 +147,7 @@
 					],
 					[
 						"suspendUntilListsAreLoaded",
-						"true"
+						"false"
 					],
 					[
 						"prefetchingDisabled",
