@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=SteamDeck TV
-Exec=systemd-inhibit --who com.valvesoftware.Steam gamemoderun flatpak run --env=SteamDeck=1 com.valvesoftware.Steam -tenfoot -steamdeck
+Exec=systemd-inhibit --who steam gamemoderun flatpak run --env=SteamDeck=1 com.valvesoftware.Steam -tenfoot -steamdeck
 Icon=com.valvesoftware.Steam
 Type=Application
 Hidden=false
