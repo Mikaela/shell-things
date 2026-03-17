@@ -195,7 +195,7 @@ if [ "$(id -u)" == "0" ]; then
 	fi
 	# If Steam is installed, chances are these work
 	if [ -f /var/lib/flatpak/exports/bin/com.valvesoftware.Steam ]; then
-		cp -v local/share/applications/{a-steam,com.valvesoftware.Steam,flatpak-steam-bigpicture,flatpak-steam-tray}.desktop /usr/local/share/applications/
+		cp -v local/share/applications/{a-steam,com.valvesoftware.Steam,flatpak-steam-bigpicture,flatpak-steam-tray,com.heroicgameslauncher.hgl}.desktop /usr/local/share/applications/
 	fi
 	if [ -f /var/lib/flatpak/exports/bin/org.briarproject.Briar ]; then
 		cp -v local/share/applications/briar.desktop /usr/local/share/applications/
@@ -531,6 +531,7 @@ else
 		ln -nsfv /usr/local/share/applications/foot-ncdu.desktop $DESKTOP/
 		ln -nsfv /usr/local/share/applications/flatpak-steam-bigpicture.desktop $DESKTOP/
 		ln -nsfv /usr/local/share/applications/a-steam.desktop $DESKTOP/
+		ln -nsfv /usr/local/share/applications/com.heroicgameslauncher.hgl.desktop $DESKTOP/
 		if [ -f "/var/lib/flatpak/exports/bin/org.signal.Signal" ]; then
 			ln -nsfv /usr/local/share/applications/a-signal.desktop $DESKTOP/
 		fi
@@ -538,7 +539,7 @@ else
 		ln -nsfv /usr/local/share/applications/a-firefox-gmail.desktop $DESKTOP/
 		# flatpaks
 		ln -nsfv /var/lib/flatpak/exports/share/applications/com.valvesoftware.SteamLink.desktop $DESKTOP/
-		ln -nsfv /var/lib/flatpak/exports/share/applications/com.heroicgameslauncher.hgl.desktop $DESKTOP/
+		#ln -nsfv /var/lib/flatpak/exports/share/applications/com.heroicgameslauncher.hgl.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/com.rafaelmardojai.Blanket.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/de.haeckerfelix.Shortwave.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.pulseaudio.pavucontrol.desktop $DESKTOP/
