@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2020 Aminda Suomalainen <suomalainen+git@mikaela.info>
+# SPDX-FileCopyrightText: 2026 Aminda Suomalainen <suomalainen+git@aminda.eu>
 # SPDX-FileCopyrightText: 2023 Mike Cifelli <26522946+macifell@users.noreply.github.com>
 #
 # SPDX-License-Identifier: BSD-3-Clause
@@ -14,7 +14,7 @@
 # NOTE: NTS support requires Chrony 4.0 or newer!
 
 # Cloudflare NTS, anycast, works probably anywhere. No leap second smearing.
-pool time.cloudflare.com maxsources 2 iburst nts xleave prefer
+pool time.cloudflare.com maxsources 2 iburst nts xleave
 
 # Finland, https://ntp.miuku.net
 server ntp.miuku.net iburst nts xleave
