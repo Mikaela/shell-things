@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Heroic Games Launcher
-Exec=systemd-inhibit --who heroic gamemoderun flatpak run com.heroicgameslauncher.hgl
+Exec=systemd-inhibit --what shutdown --who heroic gamemoderun flatpak run com.heroicgameslauncher.hgl
 Terminal=false
 SingleMainWindow=true
 Type=Application
