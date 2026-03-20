@@ -234,6 +234,11 @@ if [ "$(id -u)" == "0" ]; then
 			fi
 		fi
 	fi
+	if [ -d /etc/modprobe.d/ ]; then
+		if [ ! -f /etc/modprobe.d/fix-bluetooth.conf ]; then
+			cp etc/modprobe.d/fix-bluetooth.conf /etc/modprobe.d/fix-bluetooth.conf
+		fi
+	fi
 
 	# udev configuration. SECURITY WARNING
 	mkdir -vp /etc/udev/rules.d/
