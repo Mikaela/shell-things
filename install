@@ -484,7 +484,7 @@ else
 			ln -nsfv /usr/share/applications/footclient.desktop $DESKTOP/
 		fi
 		ln -nsfv /usr/share/applications/foot.desktop $DESKTOP/
-		ln -nsfv /usr/share/applications/foot-systemd-inhibit.desktop $DESKTOP/
+		ln -nsfv /usr/local/share/applications/foot-systemd-inhibit.desktop $DESKTOP/
 
 		# Create desktop shortcuts/symlinks for apps
 		ln -nsfv /usr/share/applications/org.kde.discover.desktop $DESKTOP/
