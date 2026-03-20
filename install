@@ -225,6 +225,16 @@ if [ "$(id -u)" == "0" ]; then
 	chmod -v a+r /etc/sysctl.d/*.conf
 	(sysctl -p --system &)
 
+	# We are doing kernel module configuration now? SECURITY WARNING!!!!1
+	if [ -d /etc/modules-load.d/ ]; then
+		if [[ ! -f /dev/ntsync && -f /lib/modules/$(uname -r)/kernel/drivers/misc/ntsync.ko.xz ]]; then
+			modprobe ntsync
+			if [ ! -f /etc/modules-load.d/60-ntsync.conf ]; then
+				cp etc/modules-load.d/60-ntsync.conf /etc/modules-load.d/
+			fi
+		fi
+	fi
+
 	# udev configuration. SECURITY WARNING
 	mkdir -vp /etc/udev/rules.d/
 	ln -nsfv $HOME/.shell-things/submodules/steam-devices/*.rules /etc/udev/rules.d/
