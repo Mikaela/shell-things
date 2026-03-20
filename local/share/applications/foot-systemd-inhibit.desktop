@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Exec=systemd-inhibit --what shutdown:sleep --who watch --why Terminal\ blocking\ shutdown\ sleep foot -T Staying\ running watch systemd-inhibit --list --no-pager
+Icon=foot
+Terminal=false
+Name=Block automatic shutdown/reboot/sleep
+Name[fi]=Automaattisen boottauksen esto
+Comment=as to not require firefox

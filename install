@@ -187,7 +187,7 @@ if [ "$(id -u)" == "0" ]; then
 	# Desktop entries
 	mkdir -vp /usr/local/share/applications/
 	# These are bound to exist on my systems
-	cp -v local/share/applications/{a-signal,a-syncplay,plasma-update,a-firefox-cups,a-firefox-gmail,a-firefox,foot-ncdu}.desktop /usr/local/share/applications/
+	cp -v local/share/applications/{a-signal,a-syncplay,plasma-update,a-firefox-cups,a-firefox-gmail,a-firefox,foot-ncdu,foot-systemd-inhibit}.desktop /usr/local/share/applications/
 	if [ -f "/usr/bin/vivaldi-stable" ]; then
 		cp -v local/share/applications/{a-vivaldi,vivaldi-{apps,youtube-music,yle-areena,discord,gmail,gmessages,google-calendar,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}}.desktop /usr/local/share/applications/
 	elif [ -f "/usr/bin/chromium-browser" ]; then
@@ -469,6 +469,7 @@ else
 			ln -nsfv /usr/share/applications/footclient.desktop $DESKTOP/
 		fi
 		ln -nsfv /usr/share/applications/foot.desktop $DESKTOP/
+		ln -nsfv /usr/share/applications/foot-systemd-inhibit.desktop $DESKTOP/
 
 		# Create desktop shortcuts/symlinks for apps
 		ln -nsfv /usr/share/applications/org.kde.discover.desktop $DESKTOP/
