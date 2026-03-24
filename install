@@ -194,8 +194,13 @@ if [ "$(id -u)" == "0" ]; then
 		cp -v local/share/applications/{a-chromium,chromium-{apps,youtube-music,yle-areena,discord,gmail,gmessages,google-calendar,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}}.desktop /usr/local/share/applications/
 	fi
 	# If Steam is installed, chances are these work
-	if [ -f /var/lib/flatpak/exports/bin/com.valvesoftware.Steam ]; then
+	if [ -f /usr/share/steam ]; then
+		cp -v local/share/applications/{steam-bigpicture,steam-tray}.desktop /usr/local/share/applications/
+	elif [ -f /var/lib/flatpak/exports/bin/com.valvesoftware.Steam ]; then
 		cp -v local/share/applications/{a-steam,com.valvesoftware.Steam,flatpak-steam-bigpicture,flatpak-steam-tray,com.heroicgameslauncher.hgl}.desktop /usr/local/share/applications/
+	fi
+	if [ -f /var/lib/flatpak/exports/bin/com.heroicgameslauncher.hgl ]; then
+		cp -v local/share/applications/com.heroicgameslauncher.hgl.desktop /usr/local/share/applications/
 	fi
 	if [ -f /var/lib/flatpak/exports/bin/org.briarproject.Briar ]; then
 		cp -v local/share/applications/briar.desktop /usr/local/share/applications/
@@ -545,6 +550,7 @@ else
 
 		ln -nsfv /etc/xdg/autostart/foot*.desktop $DESKTOP/
 		ln -nsfv /usr/local/share/applications/foot-ncdu.desktop $DESKTOP/
+		ln -nsfv /usr/local/share/applications/steam-bigpicture.desktop $DESKTOP/
 		ln -nsfv /usr/local/share/applications/flatpak-steam-bigpicture.desktop $DESKTOP/
 		ln -nsfv /usr/local/share/applications/a-steam.desktop $DESKTOP/
 		ln -nsfv /usr/local/share/applications/com.heroicgameslauncher.hgl.desktop $DESKTOP/

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=SteamDeck icon
+Exec=systemd-inhibit --what shutdown --who steam steam -silent -steamdeck
+Icon=com.valvesoftware.Steam
+Type=Application
+Hidden=false
