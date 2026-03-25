@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=SteamDeck
-Exec=gamemoderun flatpak run --env=SteamDeck=1 com.valvesoftware.Steam -steamdeck steam://open/games
+Exec=flatpak run --env=SteamDeck=1 com.valvesoftware.Steam -steamdeck steam://open/games
 Icon=com.valvesoftware.Steam
 Type=Application
 Hidden=false

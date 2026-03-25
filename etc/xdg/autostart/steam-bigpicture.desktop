@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=SteamDeck TV
-Exec=systemd-inhibit --what shutdown --who steam gamemoderun steam -tenfoot -steamdeck
+Exec=systemd-inhibit --what shutdown --who steam steam -tenfoot -steamdeck
 Icon=com.valvesoftware.Steam
 Type=Application
 Hidden=false
