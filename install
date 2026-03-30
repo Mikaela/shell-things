@@ -318,6 +318,13 @@ if [ "$(id -u)" == "0" ]; then
 	# STRANGE BEHAVIOUR WARNING IF NOT ME.
 	cp -v etc/systemd/system/{aminda-nocron-reboot,aminda-nocron-rebootish,sysctl-p--system}.service /etc/systemd/system/
 	cp -v etc/systemd/system/{aminda-nocron-reboot,aminda-nocron-rebootish,sysctl-p--system}.timer /etc/systemd/system/
+	if [ -d /etc/unbound/conf.d ]; then
+		cp -v etc/unbound/unbound.conf.d/{blocklist,cache-size,expired-stale-serving-rfc8767,local-tlds,logging,min-ttl-hour,please-hijack-me,prefer-ip6}.conf /etc/unbound/conf.d/
+		chmod -v a+r /etc/unbound/conf.d/*.conf
+	elif [ -d /etc/unbound/unbound.conf.d ]; then
+		cp -v etc/unbound/unbound.conf.d/{blocklist,cache-size,expired-stale-serving-rfc8767,local-tlds,logging,min-ttl-hour,please-hijack-me,prefer-ip6}.conf /etc/unbound/unbound.conf.d/
+		chmod -v a+r /etc/unbound/unbound.conf.d/*.conf
+	fi
 	# This is now how I assume Kinoite
 	if [ -f /usr/etc/rpm-ostreed.conf ]; then
 		cp -v etc/systemd/system/{aminda-duperemove,monthly-btrfs-balance}.service /etc/systemd/system/
