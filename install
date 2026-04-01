@@ -230,6 +230,11 @@ if [ "$(id -u)" == "0" ]; then
 	chmod -v a+r /etc/sysctl.d/*.conf
 	(sysctl -p --system &)
 
+	# my script to avoid scheduling btrfs balancing
+	if hash bat 2> /dev/null; then
+		btrfs-enable-dynamic-periodic-reclaim
+	fi
+
 	# We are doing kernel module configuration now? SECURITY WARNING!!!!1
 	if [ -d /etc/modules-load.d/ ]; then
 		if [[ ! -f /dev/ntsync && -f /lib/modules/$(uname -r)/kernel/drivers/misc/ntsync.ko.xz ]]; then
