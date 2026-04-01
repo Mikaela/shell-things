@@ -266,7 +266,7 @@ if [ "$(id -u)" == "0" ]; then
 	cp -v etc/systemd/system/app.slice.d/90-cpuquota.conf /etc/systemd/system/app.slice.d/90-cpuquota.conf
 	mkdir -vp /etc/systemd/{coredump,login,oomd,journald,resolved,system,timesyncd}.conf.d/
 	cp -v etc/systemd/oomd.conf.d/20-oomd.conf /etc/systemd/oomd.conf.d/20-oomd.conf
-	mkdir -vp /etc/systemd/system/{aminda-duperemove,aminda-nocron-reboot,ssh,sshd,sshguard,systemd-resolved,systemd-networkd,monthly-btrfs-balance,NetworkManager,iwd,unbound,tor,oidentd,yggdrasil}.service.d/
+	mkdir -vp /etc/systemd/system/{aminda-duperemove,aminda-nocron-reboot,ssh,sshd,sshguard,systemd-resolved,systemd-networkd,NetworkManager,iwd,unbound,tor,oidentd,yggdrasil}.service.d/
 	mkdir -vp /etc/systemd/system/{ssh,sshd,oidentd}.socket.d/
 	# SECURITY WARNING!
 	cp -v etc/systemd/system/service.d/rngd-wanted.conf /etc/systemd/system/service.d/
@@ -327,11 +327,10 @@ if [ "$(id -u)" == "0" ]; then
 	fi
 	# This is now how I assume Kinoite
 	if [ -f /usr/etc/rpm-ostreed.conf ]; then
-		cp -v etc/systemd/system/{aminda-duperemove,monthly-btrfs-balance}.service /etc/systemd/system/
-		cp -v etc/systemd/system/{aminda-duperemove,monthly-btrfs-balance}.timer /etc/systemd/system/
-		# As we are Kinoite/Atomic and known to use BTRFS
-		cp -v etc/systemd/system/aminda-duperemove.service.d/{90-btrfs-balance,91-fedora-atomic}.conf /etc/systemd/system/aminda-duperemove.service.d/
-		cp -v etc/systemd/system/monthly-btrfs-balance.service.d/fedora-atomic.conf /etc/systemd/system/monthly-btrfs-balance.service.d/
+		cp -v etc/systemd/system/aminda-duperemove.service /etc/systemd/system/
+		cp -v etc/systemd/system/aminda-duperemove.timer /etc/systemd/system/
+		cp -v etc/systemd/system/aminda-duperemove.service.d/{91-fedora-atomic}.conf /etc/systemd/system/aminda-duperemove.service.d/
+		#cp -v etc/systemd/system/monthly-btrfs-balance.service.d/fedora-atomic.conf /etc/systemd/system/monthly-btrfs-balance.service.d/
 	fi
 
 	if hash systemctl 2> /dev/null; then
@@ -367,7 +366,7 @@ if [ "$(id -u)" == "0" ]; then
 		fi
 
 		if [ -f /usr/etc/rpm-ostreed.conf ]; then
-			(systemctl enable {aminda-duperemove,monthly-btrfs-balance}.timer &)
+			(systemctl enable aminda-duperemove.timer &)
 		fi
 
 	fi
