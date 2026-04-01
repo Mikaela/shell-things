@@ -334,7 +334,7 @@ if [ "$(id -u)" == "0" ]; then
 	if [ -f /usr/etc/rpm-ostreed.conf ]; then
 		cp -v etc/systemd/system/aminda-duperemove.service /etc/systemd/system/
 		cp -v etc/systemd/system/aminda-duperemove.timer /etc/systemd/system/
-		cp -v etc/systemd/system/aminda-duperemove.service.d/{91-fedora-atomic}.conf /etc/systemd/system/aminda-duperemove.service.d/
+		cp -v etc/systemd/system/aminda-duperemove.service.d/91-fedora-atomic.conf /etc/systemd/system/aminda-duperemove.service.d/
 		#cp -v etc/systemd/system/monthly-btrfs-balance.service.d/fedora-atomic.conf /etc/systemd/system/monthly-btrfs-balance.service.d/
 	fi
 
