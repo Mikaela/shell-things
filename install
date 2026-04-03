@@ -58,6 +58,12 @@ if [ ! -f $HOME/.config/MangoHud/MangoHud.conf ]; then
 	cp -v conf/MangoHud.conf $HOME/.config/MangoHud/
 fi
 
+# Arch Wiki gaming for better positional audio?
+# although does this even apply to pipewire?
+if [ ! -f $HOME/.alsoftrc ]; then
+	echo "hrtf = true" > ~/.alsoftrc
+fi
+
 # Discord snap inter process communication
 if [ -f /var/lib/snapd/snap/bin/discord ]; then
 	#if [ ! -f $HOME/.config/user-tmpfiles.d/discord-rpc.conf ]; then
