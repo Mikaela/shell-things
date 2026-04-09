@@ -1215,7 +1215,7 @@
 			"pdfjs.pageColorsForeground": {
 				"Status": "default",
 				"Type": "string",
-				"Value": "#ADFF2F"
+				"Value": "#FFFFFF"
 			},
 			"privacy.fingerprintingProtection": {
 				"Comment": "Preference not allowed for stability reasons. :(",
