@@ -190,6 +190,36 @@
 				}
 			}
 		},
+		"AIControls": {
+			"Default": {
+				"Locked": false,
+				"Value": "blocked"
+			},
+			"LinkPreviewKeyPoints": {
+				"Locked": false,
+				"Value": "blocked"
+			},
+			"PDFAltText": {
+				"Locked": false,
+				"Value": "available"
+			},
+			"SidebarChatbot": {
+				"Locked": false,
+				"Value": "blocked"
+			},
+			"SmartTabGroups": {
+				"Locked": false,
+				"Value": "blocked"
+			},
+			"SmartWindow": {
+				"Locked": false,
+				"Value": "blocked"
+			},
+			"Translations": {
+				"Locked": false,
+				"Value": "available"
+			}
+		},
 		"AutofillAddressEnabled": false,
 		"AutofillCreditCardEnabled": false,
 		"BlockAboutAddons": false,
@@ -622,13 +652,14 @@
 			"Enabled": false,
 			"LinkPreviews": false,
 			"Locked": false,
-			"TabGroups": true
+			"TabGroups": false
 		},
 		"Homepage": {
 			"Locked": false,
 			"StartPage": "previous-session",
 			"URL": "about:mozilla"
 		},
+		"IPProtectionAvailable": false,
 		"LegacySameSiteCookieBehaviorEnabled": false,
 		"NetworkPrediction": false,
 		"NewTabPage": true,
