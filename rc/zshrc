@@ -678,6 +678,7 @@ fi
 alias firefox="\firefox --ProfileManager"
 alias ff=firefox
 alias ff6=firefox
+alias thunderbird="\thunderbird --ProfileManager"
 
 # Allow custom aliases to be put in .aliases or .zsh_aliases .
 
