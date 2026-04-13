@@ -218,9 +218,9 @@ if [ "$(id -u)" == "0" ]; then
 		cp -v local/share/applications/vivaldi.desktop /usr/local/share/applications/
 	fi
 
-	# Attempt at classic snaps (symlink /snap to /var/lib/snapd/snap)
+	# SECURITY WARNING! Attempt at automatic symlinking and weird kernel configuration etc.
 	mkdir -vp /etc/tmpfiles.d/
-	cp -v etc/tmpfiles.d/snapd-classic.conf /etc/tmpfiles.d/
+	cp -v etc/tmpfiles.d/{snapd-classic,networking-security-privacy}.conf /etc/tmpfiles.d/
 
 	# Additional configuration for sudo SECURITY WARNING DANGER ALARM BELLS!
 	if [ -d /etc/sudoers.d ]; then
