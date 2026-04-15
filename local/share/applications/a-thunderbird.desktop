@@ -2,7 +2,7 @@
 Version=1.0
 Name=THUNDERBIRD
 Exec=/usr/bin/env thunderbird %U
-Icon=thunderbird
+Icon=a-thunderbird
 Terminal=false
 Type=Application
 MimeType=message/rfc822;x-scheme-handler/mailto;
