@@ -466,11 +466,6 @@
 			"default_launch_container": "window"
 		},
 		{
-			"url": "https://intra.arctia.fi",
-			"create_desktop_shortcut": false,
-			"default_launch_container": "window"
-		},
-		{
 			"url": "https://www.kela.fi",
 			"create_desktop_shortcut": false,
 			"default_launch_container": "tab"
