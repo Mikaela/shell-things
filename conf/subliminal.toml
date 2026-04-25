@@ -1,0 +1,3 @@
+# ~/.config/subliminal/subliminal.toml
+[download]
+language = ["fi", "en"]

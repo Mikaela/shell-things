@@ -33,7 +33,12 @@ cp -v rc/zshrc $HOME/.zshrc
 cp -v rc/profile $HOME/.profile
 
 # Create configuration directories missed later
-mkdir -vp $HOME/.config/{autostart,autostart-scripts,bat,foot,git,MangoHud,mpv,nvim,user-tmpfiles.d,systemd/user,yt-dlp}/
+mkdir -vp $HOME/.config/{autostart,autostart-scripts,bat,foot,git,MangoHud,mpv,nvim,subliminal,user-tmpfiles.d,systemd/user,yt-dlp}/
+
+# Empty files as note to self
+if [ ! -f $HOME/.config/subliminal/subliminal.toml ]; then
+	touch $HOME/.config/subliminal/subliminal.toml
+fi
 
 # terminfo just in case it needs to be copied to remote system
 mkdir -vp $HOME/.terminfo/{A..z}
@@ -598,6 +603,7 @@ else
 		ln -nsfv /var/lib/flatpak/exports/share/applications/com.github.wwmm.easyeffects.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.fedoraproject.MediaWriter.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.jitsi.jitsi-meet.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.itinerary.desktop $DESKTOP/
 		if [ -f "/usr/share/applications/info.mumble.Mumble.desktop" ]; then
 			ln -nsfv /usr/share/applications/info.mumble.Mumble.desktop $DESKTOP/
 		else
