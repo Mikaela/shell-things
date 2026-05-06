@@ -6,3 +6,4 @@ Type=oneshot
 TimeoutStartSec=infinity
 ExecStartPre=/usr/local/bin/brew update
 ExecStart=/usr/local/bin/brew upgrade
+ExecStartPost=/usr/local/bin/brew cleanup
