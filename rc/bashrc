@@ -632,6 +632,8 @@ alias aoedate="TZ=Etc/GMT+12 date"
 # verbosity to common actions
 alias rm="\rm --verbose"
 alias ln="\ln --verbose"
+alias cp="\cp --verbose"
+alias mv="\mv --verbose"
 alias mkdir="\mkdir --verbose"
 alias chattr="\chattr -V"
 alias chmod="\chmod --verbose"
