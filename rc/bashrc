@@ -161,6 +161,11 @@ if hash lsb_release 2> /dev/null; then
 		fi
 
 		printf "\n"
+		if [ -d /var/home/ ]; then
+			echo
+			btrfs filesystem df --iec /var/home/
+			echo
+		fi
 		df / $HOME --human-readable --output=source,fstype,size,used,avail,pcent | grep -v overlay | uniq
 		unset LC_ALL
 	)
