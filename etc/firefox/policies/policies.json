@@ -420,6 +420,13 @@
 				"private_browsing": true,
 				"restricted_domains": []
 			},
+			"peertube-companion@booteille": {
+				"blocked_install_message": "PeerTube Companion. Via https://docs.joinpeertube.org/use/third-party-application#browser-addons",
+				"default_area": "menupanel",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/peertube-companion/latest.xpi",
+				"installation_mode": "force_installed",
+				"private_browsing": true
+			},
 			"plasma-browser-integration@kde.org": {
 				"blocked_install_message": "KDE Plasma Browser/Desktop Integration",
 				"default_area": "menupanel",
