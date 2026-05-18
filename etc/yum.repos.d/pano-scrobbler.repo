@@ -1,0 +1,11 @@
+[copr:copr.fedorainfracloud.org:kawaiidango:pano-scrobbler]
+name=Copr repo for pano-scrobbler owned by kawaiidango
+baseurl=https://download.copr.fedorainfracloud.org/results/kawaiidango/pano-scrobbler/fedora-$releasever-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/kawaiidango/pano-scrobbler/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
+
