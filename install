@@ -70,11 +70,11 @@ if [ ! -f $HOME/.alsoftrc ]; then
 fi
 
 # Discord snap inter process communication
-if [ -f /var/lib/snapd/snap/bin/discord ]; then
-	#if [ ! -f $HOME/.config/user-tmpfiles.d/discord-rpc.conf ]; then
-	cp -v conf/user-tmpfiles.d/discord-rpc.conf $HOME/.config/user-tmpfiles.d/
-	#fi
-fi
+#if [ -f /var/lib/snapd/snap/bin/discord ]; then
+#if [ ! -f $HOME/.config/user-tmpfiles.d/discord-rpc.conf ]; then
+#cp -v conf/user-tmpfiles.d/discord-rpc.conf $HOME/.config/user-tmpfiles.d/
+#fi
+#fi
 
 # Default cursor font
 if [[ ! -f $HOME/.local/share/icons/default/index.theme && -f /usr/share/icons/Oxygen_Yellow/index.theme ]]; then
@@ -530,6 +530,7 @@ else
 		ln -nsfv /usr/share/applications/org.kde.kfind.desktop $DESKTOP/
 		ln -nsfv /usr/share/applications/org.kde.partitionmanager.desktop $DESKTOP/
 		#ln -nsfv /usr/share/applications/org.kde.haruna.desktop $DESKTOP/
+		ln -nsfv /usr/share/applications/discord.desktop $DESKTOP/
 		if [[ -f /usr/share/applications/org.torproject.torbrowser-launcher.desktop ]]; then
 			ln -nsfv /usr/share/applications/org.torproject.torbrowser-launcher.desktop $DESKTOP/
 			ln -nsfv /usr/share/applications/org.torproject.torbrowser-launcher.settings.desktop $DESKTOP/
@@ -604,6 +605,9 @@ else
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.fedoraproject.MediaWriter.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.jitsi.jitsi-meet.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.itinerary.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/im.kaidan.kaidan.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.neochat.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.tokodon.desktop $DESKTOP/
 		if [ -f "/usr/share/applications/info.mumble.Mumble.desktop" ]; then
 			ln -nsfv /usr/share/applications/info.mumble.Mumble.desktop $DESKTOP/
 		else
@@ -612,7 +616,7 @@ else
 		# snaps
 		# No libdvdcss!
 		#ln -nsfv /var/lib/snapd/desktop/applications/vlc_vlc.desktop $DESKTOP/
-		ln -nsfv /var/lib/snapd/desktop/applications/discord_discord.desktop $DESKTOP/
+		#ln -nsfv /var/lib/snapd/desktop/applications/discord_discord.desktop $DESKTOP/
 	fi
 
 	# Ensure a-firefox.desktop has an icon
