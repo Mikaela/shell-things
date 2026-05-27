@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=SteamDeck icon
+Name=SteamDeck icon (flatpak)
 Exec=systemd-inhibit --what shutdown --who steam flatpak run --env=SteamDeck=1 com.valvesoftware.Steam -silent -steamdeck
 Icon=com.valvesoftware.Steam
 Type=Application

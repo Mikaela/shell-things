@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=SteamDeck
+Name=SteamDeck (flatpak)
 Exec=flatpak run --env=SteamDeck=1 com.valvesoftware.Steam -steamdeck steam://open/games
 Icon=com.valvesoftware.Steam
 Type=Application

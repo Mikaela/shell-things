@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=SteamDeck TV
+Name=SteamDeck TV (flatpak)
 Exec=systemd-inhibit --what shutdown --who steam flatpak run --env=SteamDeck=1 com.valvesoftware.Steam -tenfoot -steamdeck
 Icon=com.valvesoftware.Steam
 Type=Application
