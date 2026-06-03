@@ -184,7 +184,8 @@
 			"pkehgijcmpdhfbdbbnkijodmdjhbjlgp": {
 				"checkForDNTPolicy": true,
 				"disabledSites": [
-					"pp-attester-turnstile.research.cloudflare.com"
+					"pp-attester-turnstile.research.cloudflare.com",
+					"point.fi"
 				],
 				"learnInIncognito": true,
 				"learnLocally": true,
@@ -203,6 +204,18 @@
 					},
 					{
 						"domain": "bitwarden.eu",
+						"action": "allow"
+					},
+					{
+						"domain": "op.fi",
+						"action": "allow"
+					},
+					{
+						"domain": "revolut.com",
+						"action": "allow"
+					},
+					{
+						"domain": "s-pankki.fi",
 						"action": "allow"
 					},
 					{
