@@ -391,6 +391,7 @@ if [ "$(id -u)" == "0" ]; then
 	cp -v etc/xdg/autostart/foot-tmux.desktop /etc/xdg/autostart/
 	#cp -v etc/xdg/autostart/footclient-btop.desktop /etc/xdg/autostart/
 	cp -v etc/xdg/autostart/footclient-htop.desktop /etc/xdg/autostart/
+	ln -nsfv /usr/share/applications/conky.desktop /etc/xdg/autostart/
 
 	if hash journalctl 2> /dev/null; then
 		cp -v etc/xdg/autostart/footclient-journal.desktop /etc/xdg/autostart/
