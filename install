@@ -33,7 +33,7 @@ cp -v rc/zshrc $HOME/.zshrc
 cp -v rc/profile $HOME/.profile
 
 # Create configuration directories missed later
-mkdir -vp $HOME/.config/{autostart,autostart-scripts,bat,foot,git,MangoHud,mpv,nvim,subliminal,user-tmpfiles.d,systemd/user,yt-dlp}/
+mkdir -vp $HOME/.config/{autostart,autostart-scripts,bat,conky,foot,git,MangoHud,mpv,nvim,subliminal,user-tmpfiles.d,systemd/user,yt-dlp}/
 
 # Empty files as note to self
 if [ ! -f $HOME/.config/subliminal/subliminal.toml ]; then
@@ -61,6 +61,12 @@ cp -v conf/makepkg.conf $HOME/.makepkg.conf
 # system information overlay
 if [ ! -f $HOME/.config/MangoHud/MangoHud.conf ]; then
 	cp -v conf/MangoHud.conf $HOME/.config/MangoHud/
+	ln -nsfv /usr/share/applications/conky.desktop ~/.config/autostart/conky.desktop
+fi
+
+# system information overlay for desktop (as opposed to vulkan apps)
+if [ ! -f $HOME/.config/conky/conky.conf ]; then
+	cp -v conf/conky/conky.conf $HOME/.config/conky.conf
 fi
 
 # Arch Wiki gaming for better positional audio?
@@ -391,7 +397,6 @@ if [ "$(id -u)" == "0" ]; then
 	cp -v etc/xdg/autostart/foot-tmux.desktop /etc/xdg/autostart/
 	#cp -v etc/xdg/autostart/footclient-btop.desktop /etc/xdg/autostart/
 	cp -v etc/xdg/autostart/footclient-htop.desktop /etc/xdg/autostart/
-	ln -nsfv /usr/share/applications/conky.desktop /etc/xdg/autostart/
 
 	if hash journalctl 2> /dev/null; then
 		cp -v etc/xdg/autostart/footclient-journal.desktop /etc/xdg/autostart/
