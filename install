@@ -61,12 +61,14 @@ cp -v conf/makepkg.conf $HOME/.makepkg.conf
 # system information overlay
 if [ ! -f $HOME/.config/MangoHud/MangoHud.conf ]; then
 	cp -v conf/MangoHud.conf $HOME/.config/MangoHud/
-	ln -nsfv /usr/share/applications/conky.desktop ~/.config/autostart/conky.desktop
 fi
 
 # system information overlay for desktop (as opposed to vulkan apps)
 if [ ! -f $HOME/.config/conky/conky.conf ]; then
 	cp -v conf/conky/conky.conf $HOME/.config/conky.conf
+fi
+if [ -f $HOME/.config/conky/conky.conf ]; then
+	ln -nsfv /usr/share/applications/conky.desktop ~/.config/autostart/conky.desktop
 fi
 
 # Arch Wiki gaming for better positional audio?
