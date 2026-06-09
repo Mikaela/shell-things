@@ -18,7 +18,7 @@ importers:
         version: 3.4.2(prettier@3.8.1)
       corepack:
         specifier: latest
-        version: 0.34.7
+        version: 0.35.0
       prettier:
         specifier: 3.8.1
         version: 3.8.1
@@ -86,12 +86,12 @@ packages:
         integrity: sha512-wy3mC1x4ye+O+QkEinVJkPf5u2vsrDIYW9G7ZuwFl6v/Yu0LwUuT2POsb+NUWApebyxfkQq6+yDfRExbnI5rcw==,
       }
 
-  corepack@0.34.7:
+  corepack@0.35.0:
     resolution:
       {
-        integrity: sha512-d5OLuTNh4zeJK8+u+G10KScqrnHKNNm6NvR4XO28FZyBFMGE60SNCrBetJLyKR9H1xGCG6U2LyswsyPNdO6kxw==,
+        integrity: sha512-9BuIGHDFE7Zieor1CeRsvt7X7AJFEuJ6OnbSbsVprq83ChDFoBh1wP98NeUS9FT3ZwlzFllPElXcz/OiDf0YGw==,
       }
-    engines: { node: ^20.10.0 || ^22.11.0 || >=24.0.0 }
+    engines: { node: ^22.22.2 || ^24.15.0 || >=26.0.0 }
     hasBin: true
 
   prettier-plugin-nginx@1.0.3:
@@ -150,7 +150,7 @@ snapshots:
     dependencies:
       "@prettier/plugin-ruby": 4.0.4(prettier@3.8.1)
       "@prettier/plugin-xml": 3.4.2(prettier@3.8.1)
-      corepack: 0.34.7
+      corepack: 0.35.0
       prettier: 3.8.1
       prettier-plugin-nginx: 1.0.3
       prettier-plugin-sh: 0.18.0(prettier@3.8.1)
@@ -181,7 +181,7 @@ snapshots:
     dependencies:
       regexp-to-ast: 0.5.0
 
-  corepack@0.34.7: {}
+  corepack@0.35.0: {}
 
   prettier-plugin-nginx@1.0.3: {}
 
