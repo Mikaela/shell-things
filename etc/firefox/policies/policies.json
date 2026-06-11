@@ -495,7 +495,7 @@
 			},
 			"{157eb9f0-9814-4fcc-b0b7-586b3093c641}": {
 				"blocked_install_message": "archive.softwareheritage.org extension",
-				"default_area": "menupanel",
+				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/updateswh/latest.xpi",
 				"installation_mode": "normal_installed",
 				"private_browsing": false,
