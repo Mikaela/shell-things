@@ -255,17 +255,16 @@
 		"Containers_color_comment": "blue, turquoise, green, yellow, orange, red, pink, purple, toolbar",
 		"Containers_icons_comment": "fingerprint, briefcase, dollar, cart, vacation, gift, food, fruit, pet, tree, chill, circle, fence",
 		"DNSOverHTTPS": {
-			"Comment": "Cloudflare is nowadays the authority on most used domains at radar.cloudflare.com and this also affects everything using most visited domains and I am hoping to boost Finnish domains so PrivacyBadger training will recognise us existing and learn Finnish trackers by default for everyone. Maybe if there are enough Finnish Cloudflare users, this will work.",
-			"Comment2": "On second thought, let's not use DoH. It bypasses encrypted system DNS and DNSSEC validation which the browser won't perform and the other end of DoH cannot be fully trusted. See for example https://notes.valdikss.org.ru/jabber.ru-mitm/",
-			"Comment3": "Yet another concern is lack of private ECS meaning I won't benefit from edge nodes within my ISP resulting in longer paths for data to take and thus higher energy consumption (aminda.eu/n/dns).",
-			"Enabled": false,
+			"Comment": "On second thought, let's not use DoH. It bypasses encrypted system DNS and DNSSEC validation which the browser won't perform and the other end of DoH cannot be fully trusted. See for example https://notes.valdikss.org.ru/jabber.ru-mitm/",
+			"Comment2": "Firefox has started warning about connections to localhost where adblocking DNS points things, so maybe using DoH in Firefox is a lesser evil",
+			"Enabled": true,
 			"ExcludedDomains": [
 				"http.badssl.com",
 				"norwegianwifi.com"
 			],
-			"Fallback": true,
-			"Locked": true,
-			"ProviderURL": "https://security.cloudflare-dns.com/dns-query"
+			"Fallback": false,
+			"Locked": false,
+			"ProviderURL": "https://dns11.quad9.net/dns-query"
 		},
 		"DisableEncryptedClientHello": false,
 		"DisableFirefoxAccounts": false,
@@ -804,49 +803,49 @@
 			},
 			"browser.safebrowsing.blockedURIs.enabled": {
 				"Comment": "Disable Google Safe Browsing via LibreAwoo. Handled by system DNS or uBlock Origin.",
-				"Status": "locked",
+				"Status": "clear",
 				"Type": "boolean",
 				"Value": false
 			},
 			"browser.safebrowsing.downloads.enabled": {
 				"Comment": "Disable Google Safe Browsing via LibreAwoo. Handled by system DNS or uBlock Origin.",
-				"Status": "locked",
+				"Status": "clear",
 				"Type": "boolean",
 				"Value": false
 			},
 			"browser.safebrowsing.malware.enabled": {
 				"Comment": "Disable Google Safe Browsing via LibreAwoo. Handled by system DNS or uBlock Origin.",
-				"Status": "locked",
+				"Status": "clear",
 				"Type": "boolean",
 				"Value": false
 			},
 			"browser.safebrowsing.phishing.enabled": {
 				"Comment": "Disable Google Safe Browsing via LibreAwoo. Handled by system DNS or uBlock Origin.",
-				"Status": "locked",
+				"Status": "clear",
 				"Type": "boolean",
 				"Value": false
 			},
 			"browser.safebrowsing.provider.google.gethashURL": {
 				"Comment": "Disable Google Safe Browsing via LibreAwoo. Handled by system DNS or uBlock Origin.",
-				"Status": "locked",
+				"Status": "clear",
 				"Type": "string",
 				"Value": ""
 			},
 			"browser.safebrowsing.provider.google.updateURL": {
 				"Comment": "Disable Google Safe Browsing via LibreAwoo. Handled by system DNS or uBlock Origin.",
-				"Status": "locked",
+				"Status": "clear",
 				"Type": "string",
 				"Value": ""
 			},
 			"browser.safebrowsing.provider.google4.gethashURL": {
 				"Comment": "Disable Google Safe Browsing via LibreAwoo. Handled by system DNS or uBlock Origin.",
-				"Status": "locked",
+				"Status": "clear",
 				"Type": "string",
 				"Value": ""
 			},
 			"browser.safebrowsing.provider.google4.updateURL": {
 				"Comment": "Disable Google Safe Browsing via LibreAwoo. Handled by system DNS or uBlock Origin.",
-				"Status": "locked",
+				"Status": "clear",
 				"Type": "string",
 				"Value": ""
 			},
@@ -1184,7 +1183,7 @@
 			"network.trr.disable-ECS": {
 				"Status": "locked",
 				"Type": "boolean",
-				"Value": true
+				"Value": false
 			},
 			"network.trr.display_fallback_warning": {
 				"Status": "locked",
