@@ -1200,6 +1200,11 @@
 				"Type": "boolean",
 				"Value": false
 			},
+			"network.trr.force_http3_first": {
+				"Status": "locked",
+				"Type": "boolean",
+				"Value": true
+			},
 			"network.trr.useGET": {
 				"Status": "locked",
 				"Type": "boolean",
