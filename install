@@ -65,7 +65,7 @@ fi
 
 # system information overlay for desktop (as opposed to vulkan apps)
 if [ ! -f $HOME/.config/conky/conky.conf ]; then
-	cp -v conf/conky/conky.conf $HOME/.config/conky.conf
+	cp -v conf/conky/conky.conf $HOME/.config/conky/conky.conf
 fi
 if [ -f $HOME/.config/conky/conky.conf ]; then
 	ln -nsfv /usr/share/applications/conky.desktop ~/.config/autostart/conky.desktop
