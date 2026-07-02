@@ -459,7 +459,7 @@
 			"uBOLiteRedux@raymondhill.net": {
 				"blocked_install_message": "uBlock Origin Lite. Self-distributed",
 				"default_area": "navbar",
-				"installation_mode": "blocked",
+				"installation_mode": "allowed",
 				"private_browsing": true,
 				"restricted_domains": []
 			},
