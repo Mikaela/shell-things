@@ -123,12 +123,10 @@
 							"https://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/main/list.txt",
 							"ublock-abuse",
 							"ublock-badware",
-							"ublock-privacy",
 							"ublock-quick-fixes",
 							"ublock-unbreak",
 							"user-filters",
 							"fanboy-ai-suggestions",
-							"easyprivacy",
 							"urlhaus-1"
 						]
 					},
