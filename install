@@ -422,6 +422,7 @@ if [ "$(id -u)" == "0" ]; then
 		cp -v etc/xdg/autostart/01-chromium-bg.desktop /etc/xdg/autostart/
 	fi
 	ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.kteatime.desktop /etc/xdg/autostart/
+	ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.publicalerts.desktop /etc/xdg/autostart/
 	ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.kclock.desktop /etc/xdg/autostart/
 	ln -nsfv /usr/local/share/applications/plasma-update.desktop /etc/xdg/autostart/
 	#ln -nsfv /usr/share/applications/org.kde.plasma-systemmonitor.desktop /etc/xdg/autostart/
@@ -607,6 +608,7 @@ else
 		#ln -nsfv /var/lib/flatpak/exports/share/applications/org.onlyoffice.desktopeditors.desktop $DESKTOP/
 		#ln -nsfv /var/lib/flatpak/exports/share/applications/app.devsuite.Ptyxis.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.skanpage.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.publicalerts.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.kclock.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/com.calibre_ebook.calibre.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/com.github.wwmm.easyeffects.desktop $DESKTOP/
