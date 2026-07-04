@@ -1200,10 +1200,10 @@
 				"Value": true
 			},
 			"network.trr.mode": {
-				"Comment": "So TRR will get re-enabled even if user disables it temporarily",
+				"Comment": "Attempt to use DoH first, downgrade to system [DoT]. Reset if user disables entirely. May conflict with other policies I set.",
 				"Status": "user",
 				"Type": "number",
-				"Value": 3
+				"Value": 2
 			},
 			"network.trr.useGET": {
 				"Status": "locked",
