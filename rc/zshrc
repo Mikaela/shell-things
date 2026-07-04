@@ -661,10 +661,12 @@ alias shizuku="adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privile
 
 # journalctl commands I often seem to type by hand
 alias journalf="journalctl --no-hostname --follow"
+alias jf=journalf
 alias journalfu="journalctl --utc --no-hostname --follow"
 alias journalb="journalctl --no-hostname --boot"
 alias journalbu="journalctl --utc --no-hostname --boot"
 alias journalfdns="journalf -u systemd-resolved -u unbound -u avahi-daemon.service -u avahi-daemon.socket"
+alias jfd=journalfdns
 
 # To complement my nordvpn-off wrapper
 alias nordvpn-offf="sudo systemctl stop nordvpnd.service;sudo systemctl stop nordvpnd.socket"
