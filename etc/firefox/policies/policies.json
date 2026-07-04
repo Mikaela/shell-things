@@ -1199,6 +1199,12 @@
 				"Type": "boolean",
 				"Value": true
 			},
+			"network.trr.mode": {
+				"Comment": "So TRR will get re-enabled even if user disables it temporarily",
+				"Status": "user",
+				"Type": "number",
+				"Value": 3
+			},
 			"network.trr.useGET": {
 				"Status": "locked",
 				"Type": "boolean",
