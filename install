@@ -605,6 +605,7 @@ else
 		#ln -nsfv /var/lib/flatpak/exports/share/applications/org.videolan.VLC.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.elisa.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.libreoffice.LibreOffice.desktop $DESKTOP/
+		ln -nsfv /var/lib/flatpak/exports/share/applications/org.gnome.glabels-3.desktop $DESKTOP/
 		#ln -nsfv /var/lib/flatpak/exports/share/applications/org.onlyoffice.desktopeditors.desktop $DESKTOP/
 		#ln -nsfv /var/lib/flatpak/exports/share/applications/app.devsuite.Ptyxis.desktop $DESKTOP/
 		ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.skanpage.desktop $DESKTOP/
