@@ -150,11 +150,11 @@
 						],
 						[
 							"ignoreGenericCosmeticFilters",
-							"false"
+							"true"
 						],
 						[
 							"parseAllABPHideFilters",
-							"true"
+							"false"
 						],
 						[
 							"suspendUntilListsAreLoaded",
