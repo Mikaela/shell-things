@@ -270,14 +270,14 @@
 		},
 		"bkdgflcldnnnapblkhphbgpggdiikppg": {
 			"blocked_install_message": "DuckDuckGo (Chrome Web Store)",
-			"installation_mode": "allowed",
+			"installation_mode": "blocked",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"caoacbimdbbljakfhgikoodekdnlcgpk": {
 			"blocked_install_message": "DuckDuckGo (Edge)",
-			"installation_mode": "allowed",
+			"installation_mode": "blocked",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
@@ -340,7 +340,7 @@
 		},
 		"eedlgdlajadkbbjoobobefphmfkcchfk": {
 			"blocked_install_message": "Ecosia",
-			"installation_mode": "normal_installed",
+			"installation_mode": "blocked",
 			"override_update_url": true,
 			"toolbar_pin": "default_unpinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
@@ -350,6 +350,13 @@
 			"installation_mode": "allowed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
+			"update_url": "https://clients2.google.com/service/update2/crx"
+		},
+		"faoilnlkccdjdkpljainiiimmijofmpd": {
+			"blocked_install_message": "DuckDuckGo No-AI Search (Chrome Web Store)",
+			"installation_mode": "normal_installed",
+			"override_update_url": true,
+			"toolbar_pin": "default_unpinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
 		"fllaojicojecljbmefodhfapmkghcbnh": {

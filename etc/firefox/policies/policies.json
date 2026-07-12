@@ -400,7 +400,7 @@
 				"blocked_install_message": "DuckDuckGo extension. For when the anxiety of defaulting to Google is greater than installing and unloading (on other than ESR/Nightly).",
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/duckduckgo-for-firefox/latest.xpi",
-				"installation_mode": "allowed",
+				"installation_mode": "blocked",
 				"private_browsing": false
 			},
 			"jsr@javascriptrestrictor": {
@@ -409,6 +409,13 @@
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/javascript-restrictor/latest.xpi",
 				"installation_mode": "allowed",
 				"private_browsing": true
+			},
+			"noai@duckduckgo.com": {
+				"blocked_install_message": "DuckDuckGo No-AI Search",
+				"default_area": "menupanel",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/duckduckgo-no-ai-search/latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": false
 			},
 			"offline-qr-code@rugk.github.io": {
 				"blocked_install_message": "Offline QR Code generator",
