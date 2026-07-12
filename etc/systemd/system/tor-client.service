@@ -10,4 +10,4 @@ Restart=always
 User=debian-tor
 
 [Install]
-WantedBy=default.target
+WantedBy=network-online.target
