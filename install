@@ -398,7 +398,7 @@ if [ "$(id -u)" == "0" ]; then
 	# SECURITY WARNING, autostarts
 	cp -v etc/xdg/autostart/foot-tmux.desktop /etc/xdg/autostart/
 	#cp -v etc/xdg/autostart/footclient-btop.desktop /etc/xdg/autostart/
-	cp -v etc/xdg/autostart/footclient-htop.desktop /etc/xdg/autostart/
+	#cp -v etc/xdg/autostart/footclient-htop.desktop /etc/xdg/autostart/
 
 	if hash journalctl 2> /dev/null; then
 		cp -v etc/xdg/autostart/footclient-journal.desktop /etc/xdg/autostart/
@@ -413,14 +413,14 @@ if [ "$(id -u)" == "0" ]; then
 	fi
 	cp -v etc/xdg/autostart/com.github.wwmm.easyeffects.desktop /etc/xdg/autostart/
 	ln -nsfv /usr/local/share/applications/a-firefox.desktop /etc/xdg/autostart/
-	if [ -f "/usr/bin/vivaldi-stable" ]; then
-		cp -v etc/xdg/autostart/01-vivaldi-bg.desktop /etc/xdg/autostart/
-		if [ -f "/etc/xdg/autostart/01-chromium-bg.desktop" ]; then
-			rm /etc/xdg/autostart/01-chromium-bg.desktop
-		fi
-	elif [ -f "/usr/bin/chromium-browser" ]; then
-		cp -v etc/xdg/autostart/01-chromium-bg.desktop /etc/xdg/autostart/
-	fi
+	#if [ -f "/usr/bin/vivaldi-stable" ]; then
+	#cp -v etc/xdg/autostart/01-vivaldi-bg.desktop /etc/xdg/autostart/
+	#if [ -f "/etc/xdg/autostart/01-chromium-bg.desktop" ]; then
+	#rm /etc/xdg/autostart/01-chromium-bg.desktop
+	#fi
+	#elif [ -f "/usr/bin/chromium-browser" ]; then
+	#cp -v etc/xdg/autostart/01-chromium-bg.desktop /etc/xdg/autostart/
+	#fi
 	ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.kteatime.desktop /etc/xdg/autostart/
 	ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.publicalerts.desktop /etc/xdg/autostart/
 	ln -nsfv /var/lib/flatpak/exports/share/applications/org.kde.kclock.desktop /etc/xdg/autostart/
@@ -551,14 +551,14 @@ else
 		ln -nsfv /usr/local/share/applications/a-thunderbird.desktop $DESKTOP/
 		if [ -f "/usr/bin/vivaldi-stable" ]; then
 			ln -nsfv /usr/local/share/applications/a-vivaldi.desktop $DESKTOP/
-			if [ -f /etc/chromium/policies/managed/aminda-pwa.json ]; then
-				ln -nsfv /usr/local/share/applications/vivaldi-{apps,youtube-music,yle-areena,discord,gmail,gmessages,google-calendar,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}.desktop $DESKTOP/
-			fi
+			#if [ -f /etc/chromium/policies/managed/aminda-pwa.json ]; then
+			#ln -nsfv /usr/local/share/applications/vivaldi-{apps,youtube-music,yle-areena,discord,gmail,gmessages,google-calendar,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}.desktop $DESKTOP/
+			#fi
 		elif [ -f "/usr/bin/chromium-browser" ]; then
 			ln -nsfv /usr/local/share/applications/a-chromium.desktop $DESKTOP/
-			if [ -f /etc/chromium/policies/managed/aminda-pwa.json ]; then
-				ln -nsfv /usr/local/share/applications/chromium-{apps,youtube-music,yle-areena,discord,gmail,gmessages,google-calendar,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}.desktop $DESKTOP/
-			fi
+			#if [ -f /etc/chromium/policies/managed/aminda-pwa.json ]; then
+			#ln -nsfv /usr/local/share/applications/chromium-{apps,youtube-music,yle-areena,discord,gmail,gmessages,google-calendar,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}.desktop $DESKTOP/
+			#fi
 		fi
 		if [ -f "/usr/bin/google-chrome-stable" ]; then
 			ln -nsfv /usr/local/share/applications/a-google-chrome.desktop $DESKTOP/
