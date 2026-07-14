@@ -1374,7 +1374,7 @@
 		"SearchEngines": {
 			"Add": [
 				{
-					"Name": "DuckDuckGo No AI",
+					"Name": "DuckDuckGo (No AI)",
 					"Alias": "dnai",
 					"Description": "DuckDuckGo AIless version",
 					"IconURL": "https://noai.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
@@ -1410,7 +1410,7 @@
 					"URLTemplate": "https://search.brave.com/goggles?q={searchTerms}"
 				}
 			],
-			"Default": "DuckDuckGo No AI"
+			"Default": "DuckDuckGo (No AI)"
 		},
 		"SearchSuggestEnabled": false,
 		"SecurityDevices": {
