@@ -1,0 +1,4 @@
+#
+# https://docs.syncthing.net/users/ignoring.html
+# Allow removal of node_modules if it prevents directory deletion
+(?d)node_modules
