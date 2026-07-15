@@ -532,10 +532,10 @@
 				"private_browsing": false
 			},
 			"{6a65273e-2b26-40f5-b66e-8eed317307da}": {
-				"blocked_install_message": "New Tab Suspender. More useful than the Firefox integrated one, which this policy should also enable (if not, autoconfig does, I don't remember and not checking right now, TODO!)",
+				"blocked_install_message": "New Tab Suspender. Automates right clicking tabs and selecting release from memory.",
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/new-tab-suspender/latest.xpi",
-				"installation_mode": "force_installed",
+				"installation_mode": "normal_installed",
 				"private_browsing": true,
 				"restricted_domains": []
 			},
