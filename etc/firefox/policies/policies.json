@@ -473,7 +473,7 @@
 				"blocked_install_message": "web.archive.org official extension",
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/wayback-machine_new/latest.xpi",
-				"installation_mode": "normal_installed",
+				"installation_mode": "force_installed",
 				"private_browsing": false,
 				"restricted_domains": []
 			},
