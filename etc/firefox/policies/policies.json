@@ -669,7 +669,7 @@
 		"Homepage": {
 			"Locked": false,
 			"StartPage": "previous-session",
-			"URL": "about:mozilla"
+			"URL": "about:mozilla|https://noai.duckduckgo.com/?extensioninstalled=1"
 		},
 		"IPProtectionAvailable": false,
 		"LegacySameSiteCookieBehaviorEnabled": false,
@@ -1379,7 +1379,7 @@
 					"IconURL": "https://noai.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
 					"Method": "GET",
 					"SuggestURLTemplate": "https://noai.duckduckgo.com/ac/?type=list&q={searchTerms}",
-					"URLTemplate": "https://noai.duckduckgo.com/?kak=-1&kax=-1&q={searchTerms}"
+					"URLTemplate": "https://noai.duckduckgo.com/?extensioninstalled=1&q={searchTerms}"
 				},
 				{
 					"Name": "Ecosia search",
