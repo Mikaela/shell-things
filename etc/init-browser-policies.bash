@@ -61,6 +61,9 @@ ln -nsfv /etc/firefox /etc/firefox-esr
 # Chromium
 mkdir -vp /etc/opt/chromium/policies/{managed,recommended}
 cp opt/chromium/policies/managed/aminda-{extensions,printing,pwa}.json /etc/opt/chromium/policies/managed/
+if [ -f /etc/opt/chromium/policies/recommended/duckduckgo-noai.json ]; then
+	cp opt/chromium/policies/recommended/duckduckgo-noai.json /etc/opt/chromium/policies/recommended/duckduckgo-noai.json
+fi
 setfacl --recursive --modify=u:root:rwX,g:root:rwX,o:rX /etc/opt/chromium/policies
 chmod -v a+rx /etc/opt/chromium/policies/
 chmod -v a+rx /etc/opt/chromium/policies/{managed,recommended}/
