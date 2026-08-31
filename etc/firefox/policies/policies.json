@@ -350,10 +350,10 @@
 				"private_browsing": false
 			},
 			"ipfs-firefox-addon@lidel.org": {
-				"blocked_install_message": "IPFS Companion",
+				"blocked_install_message": "IPFS Companion. Future uncertain.",
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/ipfs-companion/latest.xpi",
-				"installation_mode": "normal_installed",
+				"installation_mode": "blocked",
 				"private_browsing": false
 			},
 			"ipvfoo@pmarks.net": {
