@@ -1,4 +1,4 @@
 {
 	"DnsOverHttpsMode": "secure",
-	"DnsOverHttpsTemplates": "https://dns.adguard-dns.com/dns-query?dns https://noads.joindns4.eu/dns-query?dns https://base.dns.mullvad.net/dns-query?dns"
+	"DnsOverHttpsTemplates": "https://dns.adguard-dns.com/dns-query?dns https://noads.joindns4.eu/dns-query?dns"
 }

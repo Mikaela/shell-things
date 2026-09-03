@@ -30,7 +30,6 @@
 - [`doh-dns0-zero.json`](#doh-dns0-zerojson)
 - [`doh-google64.json`](#doh-google64json)
 - [`doh-google.json`](#doh-googlejson)
-- [`doh-mullvad-base.json`](#doh-mullvad-basejson)
 - [`doh-quad9-ecs.json`](#doh-quad9-ecsjson)
 - [`doh-quad9.json`](#doh-quad9json)
 - [`doh-unlocked-unset.json`](#doh-unlocked-unsetjson)
@@ -123,13 +122,6 @@ Simply forces DNS-over-HTTPS with DNS0.eu.
 ## `doh-google64.json`
 
 ## `doh-google.json`
-
-## `doh-mullvad-base.json`
-
-Forces DNS-over-HTTPS with Mullvad Base, which features ad, malware & tracker
-blocking.
-
-- https://mullvad.net/en/help/dns-over-https-and-dns-over-tls#specifications
 
 ## `doh-quad9-ecs.json`
 
