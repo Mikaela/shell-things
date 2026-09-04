@@ -212,6 +212,10 @@
 						"action": "allow"
 					},
 					{
+						"domain": "checkout.com",
+						"action": "allow"
+					},
+					{
 						"domain": "vimeo.com",
 						"action": "block"
 					},
