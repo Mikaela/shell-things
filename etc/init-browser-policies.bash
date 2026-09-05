@@ -77,7 +77,7 @@ mkdir -p /etc/brave
 setfacl --recursive --modify=u:root:rwX,g:root:rwX,o:rX /etc/brave
 ln -nsfv /etc/opt/chromium/policies /etc/brave/policies
 
-# Fedora chromium package and for some reason Vivaldi
+# Fedora chromium package and for some reason older Vivaldi versions
 if [ -d /usr/etc ]; then
 	echo "We may be on Fedora Atomic, time for the next if to not break things..."
 	if [ -d /usr/etc/chromium ]; then
@@ -109,6 +109,11 @@ ln -nsfv /etc/opt/chromium/policies /etc/chrome/policies
 mkdir -p /etc/opt/edge
 setfacl --recursive --modify=u:root:rwX,g:root:rwX,o:rX /etc/opt/edge
 ln -nsfv /etc/opt/chromium/policies /etc/opt/edge/policies
+
+# Vivaldi on 2026-09-05
+mkdir -p /etc/vivaldi/
+setfacl --recursive --modify=u:root:rwX,g:root:rwX,o:rX /etc/vivaldi
+ln -nsfv /etc/opt/chromium/policies /etc/vivaldi/policies
 
 # Firefox Flatpak
 mkdir -vp "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/$(uname -m)/stable/policies/"
