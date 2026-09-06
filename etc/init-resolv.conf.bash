@@ -34,6 +34,7 @@ if hash systemctl 2> /dev/null; then
 	# so it will know to not touch resolv.conf as configured earlier
 	systemctl reload NetworkManager.service
 	systemctl disable --now systemd-resolved.service {systemd-resolved-monitor,systemd-resolved-varlink}.socket
+	systemctl mask systemd-resolved.service
 fi
 
 # Let's just see it's ok
