@@ -246,7 +246,8 @@
 		"DNSOverHTTPS": {
 			"Comment": "On second thought, let's not use DoH. It bypasses encrypted system DNS and DNSSEC validation which the browser won't perform and the other end of DoH cannot be fully trusted. See for example https://notes.valdikss.org.ru/jabber.ru-mitm/",
 			"Comment2": "Firefox has started warning about connections to localhost where adblocking DNS points things, so maybe using DoH in Firefox is a lesser evil",
-			"Enabled": true,
+			"Comment3": "Or I could just not block things on DNS level that can be blocked better elsewhere.",
+			"Enabled": false,
 			"ExcludedDomains": [
 				"http.badssl.com",
 				"norwegianwifi.com"
@@ -1202,10 +1203,10 @@
 				"Value": true
 			},
 			"network.trr.mode": {
-				"Comment": "Attempt to use DoH first, downgrade to system [DoT]. Reset if user disables entirely. May conflict with other policies I set.",
+				"Comment": "2 = Attempt to use DoH first, downgrade to system [DoT]. Reset if user disables entirely. May conflict with other policies I set. 5 = off by choise.",
 				"Status": "user",
 				"Type": "number",
-				"Value": 2
+				"Value": 5
 			},
 			"network.trr.useGET": {
 				"Status": "locked",
