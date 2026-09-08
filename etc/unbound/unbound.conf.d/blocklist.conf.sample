@@ -1,3 +1,5 @@
+# WARNING! Firefox may be unhappy with this and ask for permisision to access
+# LAN causing confusion.
 server:
 # Tells Firefox to not automatically use Cloudflare as TRR thus bypassing
 # local encrypted DNS.
