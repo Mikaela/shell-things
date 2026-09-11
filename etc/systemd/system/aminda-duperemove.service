@@ -4,15 +4,7 @@ Description=Aminda's deduplication service
 [Service]
 Type=notify
 TimeoutStartSec=infinity
-# Contained in `systemd-path search-binaries-default`
-ExecStartPre=systemd-notify --ready
-# I have observed duperemove requesting blkid to be ran as root for
-# generating some cache, so sure.
-ExecStart=-blkid
-ExecStart=-duperemove -rdhq --io-threads=1 --cpu-threads=1 --hashfile=/root/home.hash /home
-ExecStart=-duperemove -rdhq --io-threads=1 --cpu-threads=1 --hashfile=/root/usr-local-bin.hash /usr/local/bin
-ExecStart=-duperemove -rdhq --io-threads=1 --cpu-threads=1 --hashfile=/root/flatpak.hash /var/lib/flatpak
-ExecStart=-duperemove -rdhq --io-threads=1 --cpu-threads=1 --hashfile=/root/snap.hash /var/lib/snapd
+ExecStart=/usr/local/bin/aminda-duperemove-service.bash
 User=root
 StandardOutput=journal
 StandardError=journal
