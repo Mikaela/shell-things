@@ -112,7 +112,8 @@
 						"user-filters",
 						"fanboy-ai-suggestions",
 						"curben-phishing",
-						"urlhaus-1"
+						"urlhaus-1",
+						"easylist"
 					]
 				},
 				"userSettings": [
@@ -126,7 +127,7 @@
 					],
 					[
 						"collapseBlocked",
-						"false"
+						"true"
 					],
 					[
 						"colorBlindFriendly",
@@ -134,11 +135,11 @@
 					],
 					[
 						"ignoreGenericCosmeticFilters",
-						"true"
+						"false"
 					],
 					[
 						"parseAllABPHideFilters",
-						"false"
+						"true"
 					],
 					[
 						"suspendUntilListsAreLoaded",
