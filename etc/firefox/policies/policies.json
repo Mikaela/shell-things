@@ -6,7 +6,9 @@
 					"checkForDNTPolicy": true,
 					"disabledSites": [
 						"pp-attester-turnstile.research.cloudflare.com",
-						"point.fi"
+						"point.fi",
+						"youtube.com",
+						"music.youtube.com"
 					],
 					"learnInIncognito": true,
 					"learnLocally": true,
