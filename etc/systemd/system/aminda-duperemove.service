@@ -1,5 +1,9 @@
 [Unit]
 Description=Aminda's deduplication service
+# Well really wants nothing, but I want ssh even if this gets stuck somewhere
+# although I still think this service is innocent. Remember that systemd
+# spawns TTY6 by default.
+Wants=ssh.socket sshd.socket
 
 [Service]
 Type=notify
