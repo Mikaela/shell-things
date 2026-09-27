@@ -35,6 +35,9 @@ if hash systemctl 2> /dev/null; then
 	systemctl reload NetworkManager.service
 	systemctl disable --now systemd-resolved.service {systemd-resolved-monitor,systemd-resolved-varlink}.socket
 	systemctl mask systemd-resolved.service
+	# Since this if exists, we might as well
+	mkdir -vp /etc/systemd/system/network-online.target.wants/
+	ln -nsfv /usr/lib/systemd/system/unbound.service /etc/systemd/system/network-online.target.wants/
 fi
 
 # Let's just see it's ok
