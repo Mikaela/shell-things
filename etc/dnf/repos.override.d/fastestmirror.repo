@@ -1,0 +1,6 @@
+[*]
+# Find the mirror with the lowest ping. While this might be the closest
+# mirror, this won't consider the available bandwidth which may result into
+# slower downloads than the order Fedora provides servers in when this is
+# disabled.
+fastestmirror=true
