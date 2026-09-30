@@ -1,3 +1,3 @@
 [*]
 # Exclude i386 packages
-excludepkgs=*.i386
+excludepkgs=*.i386 *.i686
