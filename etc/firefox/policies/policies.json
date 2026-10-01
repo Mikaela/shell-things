@@ -478,11 +478,19 @@
 				"private_browsing": true,
 				"restricted_domains": []
 			},
+			"wayback_machine@archive.org": {
+				"blocked_install_message": "web.archive.org official extension, maintained version. https://github.com/internetarchive/wayback-machine-webextension/issues/1140#issuecomment-5915560007",
+				"default_area": "navbar",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/wayback-machine-official/latest.xpi",
+				"installation_mode": "normal_installed",
+				"private_browsing": false,
+				"restricted_domains": []
+			},
 			"wayback_machine@mozilla.org": {
-				"blocked_install_message": "web.archive.org official extension",
+				"blocked_install_message": "web.archive.org official extension, old version. https://github.com/internetarchive/wayback-machine-webextension/issues/1140#issuecomment-5915560007",
 				"default_area": "navbar",
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/wayback-machine_new/latest.xpi",
-				"installation_mode": "force_installed",
+				"installation_mode": "blocked",
 				"private_browsing": false,
 				"restricted_domains": []
 			},
