@@ -58,7 +58,7 @@ repos:
 
   # Markdown Table of Contents generation.
   - repo: https://github.com/thlorenz/doctoc
-    rev: v2.4.1
+    rev: v2.5.0
     hooks:
       - id: doctoc
         # https://github.com/Mikaela/gist/blob/master/doctoc.txt
@@ -72,7 +72,7 @@ repos:
 
   # GitHub Actions etc. configuration validity checking
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.37.2
+    rev: 0.38.2
     hooks:
       #- id: check-jsonschema
       - id: check-dependabot
@@ -106,7 +106,7 @@ repos:
 
   # .editorconfig validity checking
   - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
-    rev: "3.6.1"
+    rev: "3.11.1"
     hooks:
       - id: editorconfig-checker
         alias: ec
