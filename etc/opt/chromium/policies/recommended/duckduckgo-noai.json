@@ -3,8 +3,8 @@
 	"DefaultSearchProviderImageURL": "https://noai.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
 	"DefaultSearchProviderKeyword": "d",
 	"DefaultSearchProviderName": "DuckDuckGo (No AI)",
-	"DefaultSearchProviderNewTabURL": "https://noai.duckduckgo.com/chrome_newtab?extensioninstalled=1&atb&kp=-1&kn=1&kf=fw&kaf=1&ka=s&ku=1&kak=-1&kax=-1",
-	"DefaultSearchProviderSearchURL": "https://noai.duckduckgo.com/?q={searchTerms}&extensioninstalled=1&atb&kp=-1&kn=1&kf=fw&kaf=1&ka=s&ku=1&kak=-1&kax=-1",
+	"DefaultSearchProviderNewTabURL": "https://noai.duckduckgo.com/chrome_newtab?extensioninstalled=1&atb&kp=-1&kn=1&kf=fw&kaf=1&ka=s&kt=s&ku=1&kak=-1&kax=-1",
+	"DefaultSearchProviderSearchURL": "https://noai.duckduckgo.com/?q={searchTerms}&extensioninstalled=1&atb&kp=-1&kn=1&kf=fw&kaf=1&ka=s&kt=s&ku=1&kak=-1&kax=-1",
 	"DefaultSearchProviderSuggestURL": "https://noai.duckduckgo.com/ac/?type=list&q={searchTerms}",
-	"NewTabPageLocation": "https://noai.duckduckgo.com/chrome_newtab?extensioninstalled=1&atb&kp=-1&kn=1&kf=fw&kaf=1&ka=s&ku=1&kak=-1&kax=-1"
+	"NewTabPageLocation": "https://noai.duckduckgo.com/chrome_newtab?extensioninstalled=1&atb&kp=-1&kn=1&kf=fw&kaf=1&ka=s&kt=s&ku=1&kak=-1&kax=-1"
 }
