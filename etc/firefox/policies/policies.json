@@ -687,13 +687,13 @@
 		"Homepage": {
 			"Locked": false,
 			"StartPage": "previous-session",
-			"URL": "about:mozilla|https://noai.duckduckgo.com/?extensioninstalled=1&atb&kp=-1&kn=1&kf=fw&kaf=1&ka=s&kt=s&ku=1&kak=-1&kax=-1"
+			"URL": "about:mozilla|https://noai.duckduckgo.com/?extensioninstalled=1&atb&kp=-1&kn=1&kf=fw&kaf=1&ka=s&kt=s&ku=1&kak=-1&kax=-1&kae=t"
 		},
 		"IPProtectionAvailable": false,
 		"LegacySameSiteCookieBehaviorEnabled": false,
 		"NetworkPrediction": false,
 		"NewTabPage": true,
-		"OverrideFirstRunPage": "https://noai.duckduckgo.com/?extensioninstalled=1&atb&kp=-1&kn=1&kf=fw&kaf=1&ka=s&kt=s&ku=1&kak=-1&kax=-1|https://addons.mozilla.org/firefox/addon/noscript/|https://github.com/uBlockOrigin/uBOL-home/blob/main/README.md#ubo-lite",
+		"OverrideFirstRunPage": "https://noai.duckduckgo.com/?extensioninstalled=1&atb&kp=-1&kn=1&kf=fw&kaf=1&ka=s&kt=s&ku=1&kak=-1&kax=-1&kae=t|https://addons.mozilla.org/firefox/addon/noscript/|https://github.com/uBlockOrigin/uBOL-home/blob/main/README.md#ubo-lite",
 		"PDFjs": {
 			"EnablePermissions": false,
 			"Enabled": true
@@ -1397,7 +1397,7 @@
 					"IconURL": "https://noai.duckduckgo.com/static-assets/favicons/DDG-icon_256x256.png",
 					"Method": "GET",
 					"SuggestURLTemplate": "https://noai.duckduckgo.com/ac/?type=list&q={searchTerms}",
-					"URLTemplate": "https://noai.duckduckgo.com/?q={searchTerms}&extensioninstalled=1&atb&kp=-1&kn=1&kf=fw&kaf=1&ka=s&kt=s&ku=1&kak=-1&kax=-1"
+					"URLTemplate": "https://noai.duckduckgo.com/?q={searchTerms}&extensioninstalled=1&atb&kp=-1&kn=1&kf=fw&kaf=1&ka=s&kt=s&ku=1&kak=-1&kax=-1&kae=t"
 				},
 				{
 					"Name": "Ecosia search",
