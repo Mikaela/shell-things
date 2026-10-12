@@ -50,7 +50,7 @@ Other font settings in GNOME-Tweak:
 
 ### Screen mirroring
 
-[Officially unsupported for now]()
+[Officially unsupported for now](<>)
 
 Workarounds:
 
