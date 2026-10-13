@@ -359,12 +359,12 @@ if [ "$(id -u)" == "0" ]; then
 		cp -v etc/unbound/unbound.conf.d/{blocklist,cache-size,expired-stale-serving-rfc8767,local-tlds,logging,min-ttl-hour,please-hijack-me,prefer-ip6}.conf /etc/unbound/unbound.conf.d/
 		chmod -v a+r /etc/unbound/unbound.conf.d/*.conf
 	fi
-	# This is now how I assume Kinoite
-	if [ -f /usr/etc/rpm-ostreed.conf ]; then
+
+	# If my duperemove script is in place, put the unit in place too
+	if [ -f /usr/local/bin/aminda-duperemove-service.bash ]; then
 		cp -v etc/systemd/system/aminda-duperemove.service /etc/systemd/system/
 		cp -v etc/systemd/system/aminda-duperemove.timer /etc/systemd/system/
-		cp -v etc/systemd/system/aminda-duperemove.service.d/91-fedora-atomic.conf /etc/systemd/system/aminda-duperemove.service.d/
-		#cp -v etc/systemd/system/monthly-btrfs-balance.service.d/fedora-atomic.conf /etc/systemd/system/monthly-btrfs-balance.service.d/
+		(systemctl enable aminda-duperemove.timer &)
 	fi
 
 	# pre-login prompt additions

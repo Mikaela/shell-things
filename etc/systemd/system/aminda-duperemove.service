@@ -2,6 +2,9 @@
 Description=Aminda's deduplication service
 # Well really wants nothing, but I want ssh even if this gets stuck somewhere
 Wants=ssh.socket sshd.socket
+# TODO: Fedora 45
+Wants=getty@tty1.service
+#Wants=kmsconvt@tty1.service
 
 [Service]
 Type=notify
