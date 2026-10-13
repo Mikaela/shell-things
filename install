@@ -293,6 +293,11 @@ if [ "$(id -u)" == "0" ]; then
 	cp -v etc/systemd/login.conf.d/ensure-tty.conf /etc/systemd/login.conf.d/ensure-tty.conf
 	mkdir -vp /etc/systemd/system/{aminda-duperemove,aminda-nocron-reboot,ssh,sshd,sshguard,systemd-resolved,systemd-networkd,NetworkManager,iwd,unbound,tor,oidentd,yggdrasil}.service.d/
 	mkdir -vp /etc/systemd/system/{ssh,sshd,oidentd}.socket.d/
+	mkdir -vp /etc/systemd/system/{getty,kmsconvt}@tty{1..12}.service.d/
+	cp -v etc/systemd/system/service.d/type-simple.conf /etc/systemd/system/getty@tty1.service.d/
+	cp -v etc/systemd/system/service.d/type-simple.conf /etc/systemd/system/getty@tty12.service.d/
+	cp -v etc/systemd/system/service.d/type-simple.conf /etc/systemd/system/kmsconvt@tty2.service.d/
+	cp -v etc/systemd/system/service.d/type-simple.conf /etc/systemd/system/kmsconvt@tty11.service.d/
 	# SECURITY WARNING!
 	cp -v etc/systemd/system/service.d/rngd-wanted.conf /etc/systemd/system/service.d/
 	cp -v etc/systemd/system/socket.d/{dualstack-bind,freebind,upheld}.conf /etc/systemd/system/socket.d/
@@ -371,8 +376,6 @@ if [ "$(id -u)" == "0" ]; then
 		(systemctl --global enable systemd-tmpfiles-setup.service &)
 		# experiment
 		(systemctl --global enable gamemoded.service &)
-		(systemctl enable getty@tty1.service &)
-		(systemctl enable getty@tty6.service &)
 		# SECURITY WARNING! Practically a backdoor unless you are me and expect this!
 		# WARNING! Likely breaks SSHd outside of port 22 unless override exists!
 		(systemctl --global enable foot-server.socket &)
