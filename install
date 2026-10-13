@@ -290,6 +290,7 @@ if [ "$(id -u)" == "0" ]; then
 	cp -v etc/systemd/system/app.slice.d/90-cpuquota.conf /etc/systemd/system/app.slice.d/90-cpuquota.conf
 	mkdir -vp /etc/systemd/{coredump,login,oomd,journald,resolved,system,timesyncd}.conf.d/
 	cp -v etc/systemd/oomd.conf.d/20-oomd.conf /etc/systemd/oomd.conf.d/20-oomd.conf
+	cp -v etc/systemd/login.conf.d/ensure-tty.conf /etc/systemd/login.conf.d/ensure-tty.conf
 	mkdir -vp /etc/systemd/system/{aminda-duperemove,aminda-nocron-reboot,ssh,sshd,sshguard,systemd-resolved,systemd-networkd,NetworkManager,iwd,unbound,tor,oidentd,yggdrasil}.service.d/
 	mkdir -vp /etc/systemd/system/{ssh,sshd,oidentd}.socket.d/
 	# SECURITY WARNING!
@@ -370,6 +371,8 @@ if [ "$(id -u)" == "0" ]; then
 		(systemctl --global enable systemd-tmpfiles-setup.service &)
 		# experiment
 		(systemctl --global enable gamemoded.service &)
+		(systemctl enable getty@tty1.service &)
+		(systemctl enable getty@tty6.service &)
 		# SECURITY WARNING! Practically a backdoor unless you are me and expect this!
 		# WARNING! Likely breaks SSHd outside of port 22 unless override exists!
 		(systemctl --global enable foot-server.socket &)
