@@ -358,6 +358,12 @@ if [ "$(id -u)" == "0" ]; then
 		#cp -v etc/systemd/system/monthly-btrfs-balance.service.d/fedora-atomic.conf /etc/systemd/system/monthly-btrfs-balance.service.d/
 	fi
 
+	# pre-login prompt additions
+	if [ -d /etc/issue.d/ ]; then
+		cp etc/issue.d/*.issue /etc/issue.d/
+		chmod -v a+r /etc/issue.d/*.issue
+	fi
+
 	if hash systemctl 2> /dev/null; then
 		systemctl daemon-reload
 		#(systemctl --global enable darkman.service &)
