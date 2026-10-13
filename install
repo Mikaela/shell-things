@@ -286,7 +286,7 @@ if [ "$(id -u)" == "0" ]; then
 
 	# Systemd configuration directories. SECURITY WARNINGS!
 	mkdir -vp /etc/systemd/{system,system-preset,user,network}/
-	mkdir -vp /etc/systemd/system/{app.slice.d,service.d,socket.d,network-online.target.wants}/
+	mkdir -vp /etc/systemd/system/{app.slice.d,service.d,socket.d,multi-user.target.wants,network-online.target.wants}/
 	cp -v etc/systemd/system/app.slice.d/90-cpuquota.conf /etc/systemd/system/app.slice.d/90-cpuquota.conf
 	mkdir -vp /etc/systemd/{coredump,login,oomd,journald,resolved,system,timesyncd}.conf.d/
 	cp -v etc/systemd/oomd.conf.d/20-oomd.conf /etc/systemd/oomd.conf.d/20-oomd.conf
@@ -301,6 +301,11 @@ if [ "$(id -u)" == "0" ]; then
 	mkdir -vp /etc/systemd/system/{getty,kmsconvt}@.service.d/
 	cp -v etc/systemd/system/service.d/type-simple.conf /etc/systemd/system/getty@.service.d/
 	cp -v etc/systemd/system/service.d/type-simple.conf /etc/systemd/system/kmsconvt.service.d/
+	if [ -f /usr/lib/systemd/system/kmsconvt@.service ]; then
+		ln -nsfv /usr/lib/systemd/system/kmsconvt@.service /etc/systemd/system/multi-user.target.wants/kmsconvt@tty1.service
+	elif [ -f /usr/lib/systemd/system/getty@.service ]; then
+		ln -nsfv /usr/lib/systemd/system/getty@.service /etc/systemd/system/multi-user.target.wants/getty@tty1.service
+	fi
 	# SECURITY WARNING!
 	cp -v etc/systemd/system/service.d/rngd-wanted.conf /etc/systemd/system/service.d/
 	cp -v etc/systemd/system/socket.d/{dualstack-bind,freebind,upheld}.conf /etc/systemd/system/socket.d/
