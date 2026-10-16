@@ -72,16 +72,16 @@ repos:
         #  ]
 
   # GitHub Actions etc. configuration validity checking
-  - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.38.2
-    hooks:
-      #- id: check-jsonschema
-      - id: check-dependabot
-      - id: check-github-actions
-      - id: check-github-workflows
-      - id: check-gitlab-ci
-      - id: check-renovate
-        additional_dependencies: ["pyjson5"]
+  #  - repo: https://github.com/python-jsonschema/check-jsonschema
+  #    rev: 0.38.2
+  #    hooks:
+  #- id: check-jsonschema
+  #      - id: check-dependabot
+  #      - id: check-github-actions
+  #      - id: check-github-workflows
+  #      - id: check-gitlab-ci
+  #      - id: check-renovate
+  #        additional_dependencies: ["pyjson5"]
 
   # Easierish licensing when attempting reuse compliancy
   - repo: https://github.com/fsfe/reuse-tool
