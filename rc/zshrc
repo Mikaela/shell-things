@@ -689,6 +689,14 @@ alias ff=firefox
 alias ff6=firefox
 alias thunderbird="\thunderbird --ProfileManager"
 
+# rsgain aliases for what I do with it
+if command -v rsgain > /dev/null 2>&1; then
+	alias rsgain-easy="rsgain easy -m MAX -p no_album --skip-existing"
+	alias rsgain-easy2="rsgain easy -m MAX -p no_album"
+	alias rsgain-easy-album="rsgain easy -m MAX -p no_album --skip-existing"
+	alias rsgain-easy-album2="rsgain easy -m MAX -p no_album"
+fi
+
 # Allow custom aliases to be put in .aliases or .zsh_aliases .
 
 # .aliases
