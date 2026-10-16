@@ -102,7 +102,7 @@ case "$TERM" in
 	*) ;;
 esac
 
-if hash dircolors 2> /dev/null; then
+if command -v dircolors > /dev/null 2>&1; then
 	#test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 	eval $(dircolors --bourne-shell)
 fi
@@ -136,27 +136,27 @@ fi
 # Kind of my welcome screen when I open a terminal?
 # Existence of lsb_release implies both being on Linux and me having touched
 # the system, so I can do away with a lot of checks for Darwin
-if hash lsb_release 2> /dev/null; then
+if command -v lsb_release > /dev/null 2>&1; then
 	(
 		export LC_ALL="C.utf8"
-		if hash hostname 2> /dev/null; then
+		if command -v hostname > /dev/null 2>&1; then
 			hostname --all-fqdns &
 			hostname --all-ip-addresses &
-		elif hash hostnamectl 2> /dev/null; then
+		elif command -v hostnamectl > /dev/null 2>&1; then
 			hostnamectl hostname &
 		fi
 		lsb_release -sd &
 
-		if hash ifconfig 2> /dev/null; then
+		if command -v ifconfig > /dev/null 2>&1; then
 			\LC_ALL=C.utf8 \ifconfig | \grep inet | \grep -Ev "127.0.0.1|inet6"
 		fi
 
 		printf "\n"
 		printf "$(uptime --pretty)\t$(uptime)\n"
 		printf "\nPresent:\n"
-		if hash who 2> /dev/null; then
+		if command -v who > /dev/null 2>&1; then
 			who --heading --mesg --users
-		elif hash last 2> /dev/null; then
+		elif command -v last > /dev/null 2>&1; then
 			last --hostlast --present $(date +%R) --fullnames --system --time-format notime
 		fi
 
@@ -175,7 +175,7 @@ if hash lsb_release 2> /dev/null; then
 		if [ -f $HOME/.shell-things/.mikaela/motivational-message.md ]; then
 			# Confusion between bat and batcula is not a concern at this
 			# point.
-			if hash bat 2> /dev/null; then
+			if command -v bat > /dev/null 2>&1; then
 				bat --force-colorization --style=plain $HOME/.shell-things/.mikaela/motivational-message.md | \grep -v '#' | uniq -u
 			else
 				tail -n +1 $HOME/.shell-things/.mikaela/motivational-message.md | grep -v '#' | uniq -u
@@ -255,7 +255,7 @@ if [ -f ~/.gnupg/sshcontrol ]; then
 	gpg-connect-agent updatestartuptty /bye > /dev/null 2>&1
 # otherwise use the normal ssh-agent
 else
-	if hash xdg-user-dir 2> /dev/null; then
+	if command -v xdg-user-dir > /dev/null 2>&1; then
 		# if the output is going to /dev/null, it's non/existence doesn't matter
 		(ssh-agent -a $(xdg-user-dir RUNTIME)/sshagent > /dev/null 2>&1)
 		export SSH_AUTH_SOCK=$(xdg-user-dir RUNTIME)/sshagent
@@ -308,7 +308,7 @@ if [ "$(id -u)" != "0" ]; then
 	fi
 
 	# Add RubyGems to PATH
-	if hash ruby 2> /dev/null; then
+	if command -v ruby > /dev/null 2>&1; then
 		PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 	fi
 
@@ -360,7 +360,7 @@ alias sudo="\sudo --preserve-env=tmux"
 alias ..="cd .."
 
 # Use htop instead of top if available
-if hash htop 2> /dev/null; then
+if command -v htop > /dev/null 2>&1; then
 	alias top="htop"
 fi
 
@@ -426,7 +426,7 @@ alias sshguard6-unban-all="sudo ip6tables -F sshguard"
 alias rsync-folder="rsync -h --progress -azvv "
 
 # Use GPG2 instead of GPG!
-if hash gpg2 2> /dev/null; then
+if command -v gpg2 > /dev/null 2>&1; then
 	alias gpg=gpg2
 	export KEYBASE_GPG=gpg2
 fi
@@ -478,7 +478,7 @@ alias less="less -R "
 
 # "su -" with/without sudo. Conflicts with SailfishOS, to learn to use sui
 # instead.
-if ! hash ssu 2> /dev/null; then
+if ! command -v ssu > /dev/null 2>&1; then
 	alias ssu="echo 'No.'"
 fi
 alias sui="sudo -i"
@@ -561,7 +561,7 @@ alias venvpypy=pypyvenv
 
 # cp/mv using rsync. rcp appears to be link to scp in my system, so I can
 # safely use this alias.
-if hash rsync 2> /dev/null; then
+if command -v rsync > /dev/null 2>&1; then
 	alias rcp="rsync -a --progress"
 	alias rmv="rsync -a --progress --remove-source-files"
 fi
@@ -645,14 +645,14 @@ alias chmod="\chmod --verbose"
 
 if [ "$(id -u)" != "0" ]; then
 	# https://github.com/nodejs/corepack/blob/v0.28.2/README.md#corepack-enable--name
-	if hash corepack 2> /dev/null; then
+	if command -v corepack > /dev/null 2>&1; then
 		alias yarn="corepack yarn"
 		alias yarnpkg="corepack yarnpkg"
 		alias pnpm="corepack pnpm"
 		alias pnpx="corepack pnpx"
 		alias npm="corepack npm"
 		alias npx="corepack npx"
-		if ! hash prettier 2> /dev/null; then
+		if ! command -v prettier > /dev/null 2>&1; then
 			alias prettier="pnpx prettier --cache --ignore-unknown"
 		fi
 	elif [ "$(id -u)" != "0" ]; then
@@ -664,7 +664,7 @@ fi
 alias pn="pnpm"
 
 # github-pages etc.
-if hash bundle 2> /dev/null; then
+if command -v bundle > /dev/null 2>&1; then
 	alias jekyll="bundle exec jekyll"
 fi
 
@@ -691,7 +691,7 @@ alias flatpak="LANG=C.UTF-8 flatpak"
 alias flatpaks="LANG=C.UTF-8 flatpak search --columns=remote,version,application"
 alias flatpakl="LANG=C.UTF-8 flatpak list --columns=origin,version,application"
 
-if hash homebrew 2> /dev/null; then
+if command -v homebrew > /dev/null 2>&1; then
 	alias brew=homebrew
 fi
 
@@ -717,8 +717,8 @@ fi
 # Replacing cat & co with bat when avilable. These may be best used as last aliases.
 # btraceback and bsmtp are from Batcula, which has the binary bat on Debian
 # and Ubuntu. This will not be done in that case
-if ! hash btraceback 2> /dev/null; then
-	if hash bat 2> /dev/null; then
+if ! command -v btraceback > /dev/null 2>&1; then
+	if command -v bat > /dev/null 2>&1; then
 		alias cat="bat -pp"
 		alias multicat=bat
 		alias less="bat --paging=always"
@@ -727,16 +727,16 @@ if ! hash btraceback 2> /dev/null; then
 		#alias -g -- -h='-h 2>&1 | bat --language=help --style=plain'
 		#alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
 	fi
-	if hash rg 2> /dev/null; then
-		if hash batgrep 2> /dev/null; then
+	if command -v rg > /dev/null 2>&1; then
+		if command -v batgrep > /dev/null 2>&1; then
 			alias bgrep=batgrep
 		fi
 	fi
-	if hash batman 2> /dev/null; then
+	if command -v batman > /dev/null 2>&1; then
 		eval "$(batman --export-env)"
 		alias man=batman
 	fi
-	if hash batpipe 2> /dev/null; then
+	if command -v batpipe > /dev/null 2>&1; then
 		eval "$(batpipe)"
 	fi
 fi
@@ -876,12 +876,12 @@ function shell-things {
 # Use clang if installed. It seems interesting and this is probably good
 # way to test it. This might not be a function, but I don't have any better
 # place for this.
-if hash clang 2> /dev/null; then
+if command -v clang > /dev/null 2>&1; then
 	export CC=clang
 	export HOMEBREW_CC=clang
 fi
 
-if hash clang++ 2> /dev/null; then
+if command -v clang++ > /dev/null 2>&1; then
 	export CXX=clang++
 fi
 
@@ -961,7 +961,7 @@ mtrp() {
 
 # My IPv4 address
 myip4() {
-	if hash dig 2> /dev/null; then
+	if command -v dig > /dev/null 2>&1; then
 		dig +short myip.opendns.com. A @208.67.222.222
 	else
 		curl -L4s https://icanhazip.com/
@@ -970,7 +970,7 @@ myip4() {
 
 # My IPv6 address
 myip6() {
-	if hash dig 2> /dev/null; then
+	if command -v dig > /dev/null 2>&1; then
 		dig +short myip.opendns.com. AAAA @2620:0:ccc::2
 	else
 		curl -L6s https://icanhazip.com/
@@ -986,7 +986,7 @@ ssh-verify-file() {
 }
 
 # I use nvim, while I keep running vim instead
-if hash nvim 2> /dev/null; then
+if command -v nvim > /dev/null 2>&1; then
 	vim() {
 		echo 'using nvim instead'
 		/usr/bin/env nvim "$@"
@@ -1008,7 +1008,7 @@ adduser-to-group() {
 unalias ls > /dev/null 2>&1
 ls() {
 	env ls --all --color=auto --human-readable "$@"
-	if hash getfacl 2> /dev/null; then
+	if command -v getfacl > /dev/null 2>&1; then
 		if [[ -d "$@" || -f "$@" ]]; then
 			printf "\n"
 			getfacl --absolute-names --skip-base "$@"
@@ -1018,7 +1018,7 @@ ls() {
 unalias ll > /dev/null 2>&1
 ll() {
 	env ls -l --all --color=auto --human-readable "$@"
-	if hash getfacl 2> /dev/null; then
+	if command -v getfacl > /dev/null 2>&1; then
 		if [[ -d "$@" || -f "$@" ]]; then
 			printf "\n"
 			getfacl --absolute-names --skip-base "$@"
@@ -1044,7 +1044,7 @@ if [ -f ~/.bash_custom ]; then
 fi
 
 # Note if my xdg runtime dir setting is broken.
-if ! hash xdg-user-dir 2> /dev/null; then
+if ! command -v xdg-user-dir > /dev/null 2>&1; then
 	echo "!!!"
 	echo "WARNING! xdg-user-dir not found."
 	echo "Install package xdg-user-dirs on Arch, Debian, Fedora."
