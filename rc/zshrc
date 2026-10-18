@@ -693,8 +693,8 @@ alias thunderbird="\thunderbird --ProfileManager"
 if command -v rsgain > /dev/null 2>&1; then
 	alias rsgain-easy="rsgain easy -m MAX -p no_album --skip-existing"
 	alias rsgain-easy2="rsgain easy -m MAX -p no_album"
-	alias rsgain-easy-album="rsgain easy -m MAX -p no_album --skip-existing"
-	alias rsgain-easy-album2="rsgain easy -m MAX -p no_album"
+	alias rsgain-easy-album="rsgain easy -m MAX --skip-existing"
+	alias rsgain-easy-album2="rsgain easy -m MAX"
 fi
 
 # Allow custom aliases to be put in .aliases or .zsh_aliases .
