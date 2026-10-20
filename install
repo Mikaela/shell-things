@@ -286,7 +286,7 @@ if [ "$(id -u)" == "0" ]; then
 
 	# Systemd configuration directories. SECURITY WARNINGS!
 	mkdir -vp /etc/systemd/{system,system-preset,user,network}/
-	mkdir -vp /etc/systemd/system/{app.slice.d,service.d,socket.d,multi-user.target.wants,network-online.target.wants}/
+	mkdir -vp /etc/systemd/system/{app.slice.d,basic.target.wants,service.d,socket.d,multi-user.target.wants,network-online.target.wants}/
 	cp -v etc/systemd/system/app.slice.d/90-cpuquota.conf /etc/systemd/system/app.slice.d/90-cpuquota.conf
 	mkdir -vp /etc/systemd/{coredump,login,oomd,journald,resolved,system,timesyncd}.conf.d/
 	cp -v etc/systemd/oomd.conf.d/20-oomd.conf /etc/systemd/oomd.conf.d/20-oomd.conf
@@ -402,9 +402,11 @@ if [ "$(id -u)" == "0" ]; then
 		if [ -f /etc/systemd/system/sockets.target.wants/ssh.socket ]; then
 			(systemctl disable --now ssh.service &)
 			(systemctl enable --now ssh.socket &)
+			ln -nsfv /usr/lib/systemd/system/ssh.socket /etc/systemd/system/basic.target.wants/
 		elif [ -f /etc/systemd/system/sockets.target.wants/sshd.socket ]; then
 			(systemctl disable --now sshd.service &)
 			(systemctl enable --now sshd.socket &)
+			ln -nsfv /usr/lib/systemd/system/sshd.socket /etc/systemd/system/basic.target.wants/
 		fi
 
 		# Aminda weirdness
