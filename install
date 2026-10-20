@@ -291,7 +291,7 @@ if [ "$(id -u)" == "0" ]; then
 	mkdir -vp /etc/systemd/{coredump,login,oomd,journald,resolved,system,timesyncd}.conf.d/
 	cp -v etc/systemd/oomd.conf.d/20-oomd.conf /etc/systemd/oomd.conf.d/20-oomd.conf
 	cp -v etc/systemd/login.conf.d/ensure-tty.conf /etc/systemd/login.conf.d/ensure-tty.conf
-	mkdir -vp /etc/systemd/system/{aminda-duperemove,aminda-nocron-reboot,ssh,sshd,sshguard,systemd-resolved,systemd-networkd,NetworkManager,iwd,unbound,tor,oidentd,yggdrasil}.service.d/
+	mkdir -vp /etc/systemd/system/{aminda-duperemove,aminda-nocron-reboot,geoclue,ssh,sshd,sshguard,systemd-resolved,systemd-networkd,NetworkManager,iwd,unbound,tor,oidentd,yggdrasil}.service.d/
 	mkdir -vp /etc/systemd/system/{ssh,sshd,oidentd}.socket.d/
 	#mkdir -vp /etc/systemd/system/{getty,kmsconvt}@tty{1..12}.service.d/
 	#cp -v etc/systemd/system/service.d/type-simple.conf /etc/systemd/system/getty@tty1.service.d/
@@ -334,6 +334,10 @@ if [ "$(id -u)" == "0" ]; then
 
 	# SECURITY AND PRIVACY WARNING! May change WiFi positioning service
 	# endpoint plus enables data submission.
+	# TODO / FIXME: Geoclue shouldn't be failing anyway so these two lines
+	# shouldn't be necessary!
+	cp -v etc/systemd/system/service.d/restart-on-failure.conf /etc/systemd/system/geoclue.service.d/
+	cp -v etc/systemd/system/geoclue.service.d/debug.conf /etc/systemd/system/geoclue.service.d/
 	if [ -d /etc/geoclue/conf.d/ ]; then
 		cp etc/geoclue/conf.d/80-beacondb.conf /etc/geoclue/conf.d/
 		chmod -v a+r /etc/geoclue/conf.d/*.conf
