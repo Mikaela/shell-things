@@ -320,6 +320,7 @@ if [ "$(id -u)" == "0" ]; then
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/NetworkManager.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/iwd.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/unbound.service.d/
+	cp -v etc/systemd/system/service.d/wantedby-network-online.conf /etc/systemd/system/unbound/wantedby-network-online.conf
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/tor.service.d/
 	cp -v etc/systemd/system/service.d/never-fail.conf /etc/systemd/system/yggdrasil.service.d/
 	#cp -v etc/systemd/system/socket.d/dualstack-bind.conf /etc/systemd/system/ssh.socket.d/
@@ -402,10 +403,16 @@ if [ "$(id -u)" == "0" ]; then
 		if [ -f /etc/systemd/system/sockets.target.wants/ssh.socket ]; then
 			(systemctl disable --now ssh.service &)
 			(systemctl enable --now ssh.socket &)
+			mkdir -p /etc/systemd/system/ssh.socket.d/
+			cp -v etc/systemd/system/service.d/wantedby-basic-target.conf /etc/systemd/system/ssh.socket.d/
+			cp -v etc/systemd/system/service.d/yggdrasil-wanted.conf /etc/systemd/system/ssh.socket.d/
 			ln -nsfv /usr/lib/systemd/system/ssh.socket /etc/systemd/system/basic.target.wants/
 		elif [ -f /etc/systemd/system/sockets.target.wants/sshd.socket ]; then
 			(systemctl disable --now sshd.service &)
 			(systemctl enable --now sshd.socket &)
+			mkdir -p /etc/systemd/system/ssh.socket.d/
+			cp -v etc/systemd/system/service.d/wantedby-basic-target.conf /etc/systemd/system/sshd.socket.d/
+			cp -v etc/systemd/system/service.d/yggdrasil-wanted.conf /etc/systemd/system/sshd.socket.d/
 			ln -nsfv /usr/lib/systemd/system/sshd.socket /etc/systemd/system/basic.target.wants/
 		fi
 
