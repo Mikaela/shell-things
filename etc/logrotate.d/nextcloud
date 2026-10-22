@@ -1,0 +1,12 @@
+/var/www/html/data/audit.log /var/www/html/data/nextcloud.log /var/www/html/data/updater.log
+{
+	# run as the www-data user/group
+	su www-data www-data
+	# store 5 versions
+	rotate 5
+	# run if size increases 333M
+	size 333M
+	# reduce size to 0 instead of recreating file just in case
+	# may result in a few seconds of logging data lost
+	copytruncate
+}
