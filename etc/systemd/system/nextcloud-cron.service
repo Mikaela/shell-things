@@ -1,0 +1,14 @@
+[Unit]
+Description=Run NextCloud cron tasks
+
+[Service]
+Type=oneshot
+WorkingDirectory=/var/www/html/
+# Contained in `systemd-path search-binaries-default`
+ExecStart=php --define apc.enable_cli=1 cron.php
+User=www-data
+StandardOutput=null
+StandardError=null
+
+[Install]
+WantedBy=multi-user.target
