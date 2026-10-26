@@ -1,0 +1,11 @@
+[Unit]
+Description=ntfy client user service
+After=network.target
+
+[Service]
+ExecStart=/home/linuxbrew/.linuxbrew/bin/ntfy subscribe --from-config
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

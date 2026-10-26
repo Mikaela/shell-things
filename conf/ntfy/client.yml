@@ -1,0 +1,15 @@
+# ~/.config/ntfy/client.yml
+# https://github.com/binwiederhier/ntfy/blob/main/client/client.yml
+
+# Base URL used to expand short topic names in the "ntfy publish" and "ntfy subscribe" commands.
+#default-host: https://ntfy.sh
+
+# Default command will execute after "ntfy subscribe" receives a message if no command is provided in subscription below
+default-command: 'notify-send -a "$title" "$message"'
+
+# Subscriptions to topics and their actions. This option is primarily used by the systemd service,
+# or if you can "ntfy subscribe --from-config" directly.
+subscribe:
+  - topic: ntfy.sh/announcements
+  - topic: ntfy.artemislena.eu/announcements
+  - topic: ntfy.sh/stats
