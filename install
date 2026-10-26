@@ -103,7 +103,7 @@ if [ ! -f $HOME/.config/drkonqirc.bak ]; then
 fi
 
 #  A cat(1) clone with wings.
-if hash bat 2> /dev/null; then
+if command -v bat > /dev/null 2>&1; then
 	mkdir -vp $(bat --config-dir)
 	if [ ! -f $(bat --config-file) ]; then
 		bat --generate-config-file
@@ -164,14 +164,14 @@ git submodule update &
 git gc &
 
 # Aforementioned git template directory and pre-commit
-if hash pre-commit 2> /dev/null; then
+if command -v pre-commit > /dev/null 2>&1; then
 	pre-commit init-templatedir $HOME/.git-template
 	pre-commit gc
 fi
 
 # If symlinks are installed, remove dead/dangling ones from $HOME/.local/bin
 # so corepack won't get confused if those are present
-if hash symlinks 2> /dev/null; then
+if command -v symlinks > /dev/null 2>&1; then
 	symlinks -d $HOME/.local/bin/
 else
 	echo "WARNING! Executable named symlinks not found in PATH."
@@ -179,7 +179,7 @@ else
 fi
 
 # node package manager manager
-if hash corepack 2> /dev/null; then
+if command -v corepack > /dev/null 2>&1; then
 	# Will install symlinks for pnpm, yarn, etc., but not npm unless
 	# explicitly requested as below
 	corepack enable --install-directory $HOME/.local/bin/
@@ -187,7 +187,7 @@ if hash corepack 2> /dev/null; then
 	# pnpm can utilize the same packagemanager field as corepack, even when
 	# used alone
 	corepack pnpm config set manage-package-manager-versions=true
-elif hash pnpm 2> /dev/null; then
+elif command -v pnpm > /dev/null 2>&1; then
 	# see above which is more relevant in this case
 	pnpm config set manage-package-manager-versions=true
 else
@@ -250,7 +250,7 @@ if [ "$(id -u)" == "0" ]; then
 	(sysctl -p --system &)
 
 	# my script to avoid scheduling btrfs balancing
-	if hash bat 2> /dev/null; then
+	if command -v bat > /dev/null 2>&1; then
 		btrfs-enable-dynamic-periodic-reclaim
 	fi
 
@@ -329,7 +329,7 @@ if [ "$(id -u)" == "0" ]; then
 	rm -v /etc/systemd/system/*.socket.d/dualstack-bind.conf
 
 	# SECURITY WARNING! Automatic flatpak updates
-	if hash flatpak 2> /dev/null; then
+	if command -v flatpak > /dev/null 2>&1; then
 		cp -v etc/systemd/system/flatpak-update.{timer,service} /etc/systemd/system/
 	fi
 
@@ -383,7 +383,7 @@ if [ "$(id -u)" == "0" ]; then
 		chmod -v a+r /etc/issue.d/*.issue
 	fi
 
-	if hash systemctl 2> /dev/null; then
+	if command -v systemctl > /dev/null 2>&1; then
 		systemctl daemon-reload
 		#(systemctl --global enable darkman.service &)
 		(systemctl --global enable systemd-tmpfiles-setup.service &)
@@ -419,7 +419,7 @@ if [ "$(id -u)" == "0" ]; then
 		# Aminda weirdness
 		(systemctl enable --now {aminda-nocron-reboot,aminda-nocron-rebootish,sysctl-p--system}.timer &)
 
-		if hash flatpak 2> /dev/null; then
+		if command -v flatpak > /dev/null 2>&1; then
 			(systemctl enable flatpak-update.timer &)
 		fi
 
@@ -434,7 +434,7 @@ if [ "$(id -u)" == "0" ]; then
 	#cp -v etc/xdg/autostart/footclient-btop.desktop /etc/xdg/autostart/
 	#cp -v etc/xdg/autostart/footclient-htop.desktop /etc/xdg/autostart/
 
-	if hash journalctl 2> /dev/null; then
+	if command -v journalctl > /dev/null 2>&1; then
 		cp -v etc/xdg/autostart/footclient-journal.desktop /etc/xdg/autostart/
 		#cp -v etc/xdg/autostart/footclient-journal-dns.desktop /etc/xdg/autostart/
 		#cp -v etc/xdg/autostart/footclient-journal-network.desktop /etc/xdg/autostart/
@@ -464,7 +464,7 @@ if [ "$(id -u)" == "0" ]; then
 	chmod -v a+r /etc/xdg/autostart/*.desktop
 
 	# If apt is installed, enable progress bar and colors
-	if hash apt-get 2> /dev/null; then
+	if command -v apt-get > /dev/null 2>&1; then
 		mkdir -vp /etc/apt/apt.conf.d/
 		# Enables progress bar and colours for apt/dpkg, which are helpful at
 		# times when guesstimating when will things happen
@@ -485,7 +485,7 @@ if [ "$(id -u)" == "0" ]; then
 	# If some locate variant is installed, now is a great time to ensure its
 	# database is up-to-date. This may also enable automated database
 	# updates.
-	if hash updatedb 2> /dev/null; then
+	if command -v updatedb > /dev/null 2>&1; then
 		(updatedb &)
 	fi
 
@@ -526,7 +526,7 @@ if [ "$(id -u)" == "0" ]; then
 	fi
 
 	# Symlink cleanup
-	if hash symlinks 2> /dev/null; then
+	if command -v symlinks > /dev/null 2>&1; then
 		symlinks -d /etc/xdg/autostart/
 		symlinks -d /etc/udev/rules.d/
 		symlinks -d /usr/local/bin/
@@ -539,7 +539,7 @@ else
 	# rootless-only tasks
 
 	# Figure out the localization of $HOME/Desktop
-	if hash xdg-user-dir 2> /dev/null; then
+	if command -v xdg-user-dir > /dev/null 2>&1; then
 		DESKTOP=$(xdg-user-dir DESKTOP)
 
 		if [ -d ~/.config/autostart ]; then
@@ -549,7 +549,7 @@ else
 		fi
 
 		# Ensure there is foot-server.socket before creating a shortcut for footclient
-		if hash systemctl 2> /dev/null; then
+		if command -v systemctl > /dev/null 2>&1; then
 			systemctl --user enable --now foot-server.socket
 			ln -nsfv /usr/share/applications/footclient.desktop $DESKTOP/
 		fi
@@ -611,7 +611,7 @@ else
 		if [[ -f $HOME/.local/share/icons/hicolor/128x128/apps/syncplay.png && -f /usr/local/bin/syncplay ]]; then
 			ln -nsfv /usr/local/share/applications/a-syncplay.desktop $DESKTOP
 		fi
-		if hash plasma-discover 2> /dev/null; then
+		if command -v plasma-discover > /dev/null 2>&1; then
 			ln -nsfv /usr/local/share/applications/plasma-update.desktop $DESKTOP/
 		fi
 
@@ -684,7 +684,7 @@ else
 	fi
 
 	# Remove dead symlinks
-	if hash symlinks 2> /dev/null; then
+	if command -v symlinks > /dev/null 2>&1; then
 		symlinks -d $DESKTOP/
 	else
 		echo "WARNING! Executable named symlinks not found in PATH."
@@ -720,7 +720,7 @@ if [ -d "$HOME/.shell-things" ]; then
 	ln -nsfv $HOME/.shell-things/submodules/lora-font/fonts/variable $HOME/.local/share/fonts/lora
 
 	# Font cleanup
-	if hash symlinks 2> /dev/null; then
+	if command -v symlinks > /dev/null 2>&1; then
 		symlinks -d $HOME/.local/share/fonts/
 	else
 		echo "WARNING! Executable named symlinks not found in PATH."
@@ -728,7 +728,7 @@ if [ -d "$HOME/.shell-things" ]; then
 	fi
 fi
 
-if hash fc-cache 2> /dev/null; then
+if command -v fc-cache > /dev/null 2>&1; then
 	(fc-cache &)
 fi
 
