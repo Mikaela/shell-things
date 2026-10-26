@@ -560,7 +560,7 @@ else
 			# More systemd user services
 			if -d ~/.config/systemd/user; then
 				if command -v ntfy > /dev/null 2>&1; then
-					cp conf/systemd/user/ntfy-client.service ~/.config/systemd/user/
+					cp etc/systemd/user/ntfy-client.service ~/.config/systemd/user/
 				fi
 			fi
 			# in case new services were installed
