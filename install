@@ -33,7 +33,7 @@ cp -v rc/zshrc $HOME/.zshrc
 cp -v rc/profile $HOME/.profile
 
 # Create configuration directories missed later
-mkdir -vp $HOME/.config/{autostart,autostart-scripts,bat,conky,foot,git,MangoHud,mpv,nvim,subliminal,user-tmpfiles.d,systemd/user,yt-dlp}/
+mkdir -vp $HOME/.config/{autostart,autostart-scripts,bat,conky,foot,git,MangoHud,mpv,ntfy,nvim,subliminal,user-tmpfiles.d,systemd/user,yt-dlp}/
 
 # Empty files as note to self
 if [ ! -f $HOME/.config/subliminal/subliminal.toml ]; then
@@ -61,6 +61,11 @@ cp -v conf/makepkg.conf $HOME/.makepkg.conf
 # system information overlay
 if [ ! -f $HOME/.config/MangoHud/MangoHud.conf ]; then
 	cp -v conf/MangoHud.conf $HOME/.config/MangoHud/
+fi
+
+# easy push notifications
+if [ ! -f $HOME/.config/ntfy/client.yml ]; then
+	cp -v conf/ntfy/client.yml ~/.config/ntfy/
 fi
 
 # system information overlay for desktop (as opposed to vulkan apps)
@@ -552,6 +557,14 @@ else
 		if command -v systemctl > /dev/null 2>&1; then
 			systemctl --user enable --now foot-server.socket
 			ln -nsfv /usr/share/applications/footclient.desktop $DESKTOP/
+			# More systemd user services
+			if -d ~/.config/systemd/user; then
+				if command -v ntfy > /dev/null 2>&1; then
+					cp conf/systemd/user/ntfy-client.service ~/.config/systemd/user/
+				fi
+			fi
+			# in case new services were installed
+			systemctl --user daemon-reload
 		fi
 		ln -nsfv /usr/share/applications/foot.desktop $DESKTOP/
 		ln -nsfv /usr/local/share/applications/foot-systemd-inhibit.desktop $DESKTOP/
