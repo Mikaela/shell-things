@@ -70,6 +70,7 @@ ExecStart=-systemctl --global enable foot-server.socket
 User=root
 StandardOutput=journal
 StandardError=journal
+SyslogIdentifier=aminda-nocron-reboot
 
 [Install]
 WantedBy=multi-user.target

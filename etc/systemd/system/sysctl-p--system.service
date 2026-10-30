@@ -9,6 +9,7 @@ ExecStart=-sysctl -p --system
 User=root
 StandardOutput=journal
 StandardError=journal
+SyslogIdentifier=sysctl -p --system
 
 [Install]
 WantedBy=multi-user.target

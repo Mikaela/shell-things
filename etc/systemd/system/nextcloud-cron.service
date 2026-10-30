@@ -9,6 +9,7 @@ ExecStart=php --define apc.enable_cli=1 cron.php
 User=www-data
 StandardOutput=null
 StandardError=null
+SyslogIdentifier=NextCloud cron
 
 [Install]
 WantedBy=multi-user.target

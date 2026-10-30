@@ -13,6 +13,7 @@ ExecStart=-setfacl -R -m g:${LINUXBREWGROUP}:rwX,o:rX /home/linuxbrew
 User=root
 StandardOutput=journal
 StandardError=journal
+SyslogIdentifier=brew
 
 [Install]
 WantedBy=multi-user.target

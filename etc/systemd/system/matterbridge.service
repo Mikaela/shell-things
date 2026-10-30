@@ -13,6 +13,7 @@ ExecStart=/home/matterbridge/.local/bin/matterbridge -conf /home/matterbridge/ma
 Restart=always
 RestartSec=5s
 User=matterbridge
+SyslogIdentifier=matterbridge
 
 [Install]
 WantedBy=multi-user.target

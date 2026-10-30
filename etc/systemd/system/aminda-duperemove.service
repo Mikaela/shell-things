@@ -12,6 +12,7 @@ ExecStart=/usr/local/bin/aminda-duperemove-service.bash
 User=root
 StandardOutput=journal
 StandardError=journal
+SyslogIdentifier=aminda-duperemove
 
 [Install]
 WantedBy=multi-user.target

@@ -5,3 +5,4 @@ Description=Gitea restarter
 Type=oneshot
 # Contained in `systemd-path search-binaries-default`
 ExecStart=systemctl restart gitea.service --quiet
+SyslogIdentifier=forgejo

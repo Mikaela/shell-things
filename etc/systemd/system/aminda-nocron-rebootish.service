@@ -29,6 +29,7 @@ ExecStart=-tlp setcharge
 User=root
 StandardOutput=journal
 StandardError=journal
+SyslogIdentifier=aminda-nocron-rebootish
 
 [Install]
 WantedBy=multi-user.target
