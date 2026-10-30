@@ -30,7 +30,7 @@ printf 'search .\noptions attempts:5 edns0 trust-ad\n' | tee -p /etc/resolv.conf
 chmod -v a+r /etc/resolv.conf
 
 # In case systemd exists, configure appropiately
-if hash systemctl 2> /dev/null; then
+if command -v systemctl > /dev/null 2>&1; then
 	# so it will know to not touch resolv.conf as configured earlier
 	systemctl reload NetworkManager.service
 	systemctl disable --now systemd-resolved.service {systemd-resolved-monitor,systemd-resolved-varlink}.socket

@@ -11,7 +11,7 @@ fi
 
 # I know there are old versions that used something else, but I don't remember
 # that name and they are ancient.
-if ! hash resolvectl 2> /dev/null; then
+if ! command -v resolvectl > /dev/null 2>&1; then
 	echo "You don't seem to have systemd-resolved (or resolvectl) installed." 1>&2
 	exit 1
 fi

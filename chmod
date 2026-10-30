@@ -40,7 +40,7 @@ if [ -d "$HOME/.config/old-autostart-scripts" ]; then
 fi
 
 # if we have support for setting ACL, some of this becomes easier (although maybe redundant)
-if hash setfacl 2> /dev/null; then
+if command -v setfacl > /dev/null 2>&1; then
 	setfacl --modify u:$(id -un):rw,g:$(id -gn):r,o:r $HOME/.oidentd.conf
 	setfacl --modify=u:$(id -un):rwX,g:$(id -gn):rX,o:rX "$HOME/AppImages/"
 	setfacl --recursive --modify u:$(id -un):rwX,g:$(id -gn):rX,o:rX $HOME/public_html/
