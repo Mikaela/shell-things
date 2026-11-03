@@ -292,7 +292,10 @@ if [ "$(id -u)" == "0" ]; then
 	# Systemd configuration directories. SECURITY WARNINGS!
 	mkdir -vp /etc/systemd/{system,system-preset,user,network}/
 	mkdir -vp /etc/systemd/system/{app.slice.d,basic.target.wants,service.d,socket.d,multi-user.target.wants,network-online.target.wants}/
-	cp -v etc/systemd/system/app.slice.d/90-cpuquota.conf /etc/systemd/system/app.slice.d/90-cpuquota.conf
+	#cp -v etc/systemd/system/app.slice.d/90-cpuquota.conf /etc/systemd/system/app.slice.d/90-cpuquota.conf
+	if [ -f /etc/systemd/system/app.slice.d/90-cpuquota.conf ]; then
+		rm /etc/systemd/system/app.slice.d/90-cpuquota.conf
+	fi
 	mkdir -vp /etc/systemd/{coredump,login,oomd,journald,resolved,system,timesyncd}.conf.d/
 	cp -v etc/systemd/oomd.conf.d/20-oomd.conf /etc/systemd/oomd.conf.d/20-oomd.conf
 	cp -v etc/systemd/login.conf.d/ensure-tty.conf /etc/systemd/login.conf.d/ensure-tty.conf
