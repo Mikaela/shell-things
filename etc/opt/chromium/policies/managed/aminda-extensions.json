@@ -549,6 +549,7 @@
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		}
 	},
+	"HomepageLocation": "https://aminda.eu/n/aloitussivu.html",
 	"IncognitoModeAvailability": 1,
 	"IncognitoModeAvailability_comment": "Disable incognito mode as per Google instructions. There is no other way to force extensions to be loaded in it.",
 	"NetworkPredictionOptions": 2,
