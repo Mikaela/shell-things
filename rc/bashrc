@@ -139,53 +139,71 @@ fi
 if command -v lsb_release > /dev/null 2>&1; then
 	(
 		export LC_ALL="C.utf8"
-		if command -v hostname > /dev/null 2>&1; then
+		if command -v uu_hostname > /dev/null 2>&1; then
+			uu_hostname --fqdn &
+			uu_hostname --ip-address &
+		elif command -v hostname > /dev/null 2>&1; then
 			hostname --all-fqdns &
 			hostname --all-ip-addresses &
 		elif command -v hostnamectl > /dev/null 2>&1; then
 			hostnamectl hostname &
 		fi
-		lsb_release -sd &
+		lsb_release -sd
 
 		if command -v ifconfig > /dev/null 2>&1; then
-			\LC_ALL=C.utf8 \ifconfig | \grep inet | \grep -Ev "127.0.0.1|inet6"
+			LC_ALL=C.utf8 \ifconfig | \grep inet | \grep -Ev "127.0.0.1|inet6"
 		fi
 
 		printf "\n"
-		printf "$(uptime --pretty)\t$(uptime)\n"
+		if command -v uu_uptime > /dev/null 2>&1; then
+			printf "$(uu_uptime --pretty)\t$(uu_uptime)\n"
+		elif command -v uptime > /dev/null 2>&1; then
+			printf "$(uu_uptime --pretty)\t$(uu_uptime)\n"
+		fi
 		printf "\nPresent:\n"
-		if command -v who > /dev/null 2>&1; then
+		if command -v uu_who > /dev/null 2>&1; then
+			uu_who --heading --mesg --users
+		elif command -v who > /dev/null 2>&1; then
 			who --heading --mesg --users
 		elif command -v last > /dev/null 2>&1; then
 			last --hostlast --present $(date +%R) --fullnames --system --time-format notime
 		fi
-
 		printf "\n"
 		if [ -d /var/home/ ]; then
 			echo
 			btrfs filesystem df --iec /var/home/
 			echo
 		fi
-		df / $HOME --human-readable --output=source,fstype,size,used,avail,pcent | grep -v overlay | uniq
+		if command -v uu_df > /dev/null 2>&1; then
+			uu_df / $HOME --human-readable --output=source,fstype,size,used,avail,pcent | grep -v overlay | uu_uniq
+		else
+			df / $HOME --human-readable --output=source,fstype,size,used,avail,pcent | grep -v overlay | uniq
+		fi
 		unset LC_ALL
 	)
 
 	# Only print motivational phrases if username is aminda or mikaela or deck
-	if [[ $(whoami) == aminda ]] || [[ $(whoami) == mikaela ]] || [[ $(whoami) == deck ]]; then
-		if [ -f $HOME/.shell-things/.mikaela/motivational-message.md ]; then
-			# Confusion between bat and batcula is not a concern at this
-			# point.
-			if command -v bat > /dev/null 2>&1; then
-				bat --force-colorization --style=plain $HOME/.shell-things/.mikaela/motivational-message.md | \grep -v '#' | uniq -u
-			else
-				tail -n +1 $HOME/.shell-things/.mikaela/motivational-message.md | grep -v '#' | uniq -u
-			fi
-		fi
-	elif [[ "$(id -u)" == "0" ]]; then
+	#if [[ $(whoami) == aminda ]] || [[ $(whoami) == mikaela ]] || [[ $(whoami) == deck ]]; then
+	#if [ -f $HOME/.shell-things/.mikaela/motivational-message.md ]; then
+	# Confusion between bat and batcula is not a concern at this
+	# point.
+	#if command -v bat > /dev/null 2>&1; then
+	#bat --force-colorization --style=plain $HOME/.shell-things/.mikaela/motivational-message.md | \grep -v '#' | uniq -u
+	#else
+	#tail -n +1 $HOME/.shell-things/.mikaela/motivational-message.md | grep -v '#' | uniq -u
+	#fi
+	#fi
+	#elif [[ "$(id -u)" == "0" ]]; then
+	if [[ "$(id -u)" == "0" ]]; then
 		# This comes from Charybdis IRCd
-		(printf "\nWe would like to take this moment to remind you that we accept\nabsolutely no liability for the insanity you're about to endure.\n\n")
-		# And this from sudo + the general advice for auditability
-		(printf "We trust you have received the usual lecture from the local System\nAdministrator. It usually boils down to these three things:\n\n\t#1) Respect the privacy of others.\n\t#2) Think before you type.\n\t#3) With great power comes great responsibility.\n\nAdditionally you shouldn't be logging in as root directly.\n\n")
+		if command -v uu_printf > /dev/null 2>&1; then
+			(uu_printf "\nWe would like to take this moment to remind you that we accept\nabsolutely no liability for the insanity you're about to endure.\n\n")
+			# And this from sudo + the general advice for auditability
+			(uu_printf "We trust you have received the usual lecture from the local System\nAdministrator. It usually boils down to these three things:\n\n\t#1) Respect the privacy of others.\n\t#2) Think before you type.\n\t#3) With great power comes great responsibility.\n\nAdditionally you shouldn't be logging in as root directly.\n\n")
+		else
+			(printf "\nWe would like to take this moment to remind you that we accept\nabsolutely no liability for the insanity you're about to endure.\n\n")
+			(printf "We trust you have received the usual lecture from the local System\nAdministrator. It usually boils down to these three things:\n\n\t#1) Respect the privacy of others.\n\t#2) Think before you type.\n\t#3) With great power comes great responsibility.\n\nAdditionally you shouldn't be logging in as root directly.\n\n")
+		fi
 	fi
 fi
 
