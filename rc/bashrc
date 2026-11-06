@@ -158,7 +158,7 @@ if command -v lsb_release > /dev/null 2>&1; then
 		if command -v uu_uptime > /dev/null 2>&1; then
 			printf "$(uu_uptime --pretty)\t$(uu_uptime)\n"
 		elif command -v uptime > /dev/null 2>&1; then
-			printf "$(uu_uptime --pretty)\t$(uu_uptime)\n"
+			printf "$(uptime --pretty)\t$(uptime)\n"
 		fi
 		printf "\nPresent:\n"
 		if command -v uu_who > /dev/null 2>&1; then
