@@ -8,7 +8,7 @@
 				"hasSeenPostInstall": true
 			},
 			"ddkjiahejlhfcafbddmgiahcphecmpfh": {
-				"defaultFiltering": "basic",
+				"defaultFiltering": "complete",
 				"disableFirstRunPage": true,
 				"noFiltering": [
 					"-all-urls",
@@ -52,130 +52,6 @@
 					"base": "https://vault.bitwarden.eu",
 					"notifications": "https://notifications.bitwarden.eu"
 				}
-			},
-			"odfafepnkmbhccpbejgmiehpchacaeak": {
-				"advancedSettings": [
-					[
-						"filterAuthorMode",
-						"false"
-					],
-					[
-						"trustedListPrefixes",
-						"-"
-					],
-					[
-						"uiPopupConfig",
-						"+captions +logger"
-					]
-				],
-				"toAdd": {
-					"trustedSiteDirectives": [
-						"accountscenter.facebook.com",
-						"accountscenter.instagram.com",
-						"accounts.google.com",
-						"auth-prod.megical.com",
-						"challenges.cloudflare.com",
-						"chrome-extension-scheme",
-						"kansalainen.kanta.fi",
-						"kanta.fi",
-						"klarna.com",
-						"moz-extension-scheme",
-						"myaccount.google.com",
-						"omakanta.kanta.fi",
-						"oma.kela.fi",
-						"omavero.vero.fi",
-						"pp-attester-turnstile.research.cloudflare.com",
-						"research.cloudflare.com",
-						"suomi.fi",
-						"tunnistautuminen.suomi.fi",
-						"tunnistus.telia.fi",
-						"www.npmjs.com",
-						"noai.duckduckgo.com",
-						"www.suomi.fi"
-					]
-				},
-				"toOverwrite": {
-					"filterLists": [
-						"adguard-spyware-url",
-						"block-lan",
-						"https://raw.githubusercontent.com/Mikaela/gist/master/DNS/blocklist.txt",
-						"https://ads-for-open-source.readthedocs.io/en/latest/_static/lists/opensource-ads.txt",
-						"https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt",
-						"https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener-AffiliateTagAllowlist.txt",
-						"https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
-						"https://secure.fanboy.co.nz/fanboy-annoyance.txt",
-						"https://www.eff.org/files/effdntlist.txt",
-						"https://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/main/list.txt",
-						"ublock-abuse",
-						"ublock-badware",
-						"ublock-unbreak",
-						"user-filters",
-						"fanboy-ai-suggestions",
-						"curben-phishing",
-						"urlhaus-1",
-						"ublock-filters",
-						"ublock-quick-fixes",
-						"easylist"
-					]
-				},
-				"userSettings": [
-					[
-						"advancedUserEnabled",
-						"true"
-					],
-					[
-						"cloudStorageEnabled",
-						"true"
-					],
-					[
-						"collapseBlocked",
-						"true"
-					],
-					[
-						"colorBlindFriendly",
-						"false"
-					],
-					[
-						"ignoreGenericCosmeticFilters",
-						"false"
-					],
-					[
-						"parseAllABPHideFilters",
-						"true"
-					],
-					[
-						"suspendUntilListsAreLoaded",
-						"false"
-					],
-					[
-						"prefetchingDisabled",
-						"true"
-					],
-					[
-						"firstInstall",
-						"false"
-					],
-					[
-						"hidingAds",
-						"true"
-					],
-					[
-						"clickingAds",
-						"true"
-					],
-					[
-						"blockingMalware",
-						"true"
-					],
-					[
-						"disableHidingForDNT",
-						"true"
-					],
-					[
-						"disableClickingForDNT",
-						"true"
-					]
-				]
 			},
 			"pkehgijcmpdhfbdbbnkijodmdjhbjlgp": {
 				"checkForDNTPolicy": true,
@@ -303,16 +179,9 @@
 			"toolbar_pin": "default_unpinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
-		"cjpalhdlnbpafiamejdnhcphjbkeiagm": {
-			"blocked_install_message": "uBlock Origin (Chrome, no longer exists, see uBlock Origin (Edge))",
-			"installation_mode": "blocked",
-			"override_update_url": true,
-			"toolbar_pin": "force_pinned",
-			"update_url": "https://clients2.google.com/service/update2/crx"
-		},
 		"ddkjiahejlhfcafbddmgiahcphecmpfh": {
 			"blocked_install_message": "uBlock Origin Lite",
-			"installation_mode": "normal_installed",
+			"installation_mode": "force_installed",
 			"override_update_url": true,
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
@@ -471,13 +340,6 @@
 			"toolbar_pin": "force_pinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
 		},
-		"mlojlfildnehdpnlmpkeiiglhhkofhpb": {
-			"blocked_install_message": "AdNauseam (Edge). A lot of effort (one extra click for uBlock Origin Menu).",
-			"installation_mode": "blocked",
-			"override_update_url": true,
-			"toolbar_pin": "force_pinned",
-			"update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
-		},
 		"nibjojkomfdiaoajekhjakgkdhaomnch": {
 			"blocked_install_message": "IPFS Companion. Future uncertain.",
 			"installation_mode": "blocked",
@@ -512,13 +374,6 @@
 			"override_update_url": true,
 			"toolbar_pin": "default_unpinned",
 			"update_url": "https://clients2.google.com/service/update2/crx"
-		},
-		"odfafepnkmbhccpbejgmiehpchacaeak": {
-			"blocked_install_message": "uBlock Origin (Edge). Must be force_installed for tracking URL cleanup",
-			"installation_mode": "force_installed",
-			"override_update_url": true,
-			"toolbar_pin": "force_pinned",
-			"update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
 		},
 		"palihjnakafgffnompkdfgbgdbcagbko": {
 			"blocked_install_message": "UpdateSWH",
