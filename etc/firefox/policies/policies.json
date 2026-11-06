@@ -397,6 +397,13 @@
 				"private_browsing": true,
 				"restricted_domains": []
 			},
+			"jid1-QoFqdK4qzUfGWQ@jetpack": {
+				"blocked_install_message": "Dark Background and Light Text",
+				"default_area": "navbar",
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/dark-background-light-text/latest.xpi",
+				"installation_mode": "allowed",
+				"private_browsing": true
+			},
 			"jid1-ZAdIEUB7XOzOJw@jetpack": {
 				"blocked_install_message": "DuckDuckGo extension. For when the anxiety of defaulting to Google is greater than installing and unloading (on other than ESR/Nightly).",
 				"default_area": "navbar",
