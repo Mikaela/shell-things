@@ -4,9 +4,10 @@
 # & https://serverfault.com/a/333640
 Defaults lecture = always
 
+# TODO: sudo-rs doesn't have this, remove entirely?
 # Don't create .sudo_as_admin_successful to $HOME. It might not strictly
 # be related to lecture (being common global bashrc), but close enough for
 # me considering both have similar effects of printing information.
-Defaults !admin_flag
+#Defaults !admin_flag
 
 # vim: filetype=sudoers
