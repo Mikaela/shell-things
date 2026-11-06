@@ -317,8 +317,12 @@ PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS;
 
 #####	Aliases						RJ706I	#####
 
-# To get sudo work with aliases. And workaround nvim/tmux crash.
-alias sudo="\sudo --preserve-env=tmux"
+# To get sudo work with aliases. Additionally preparation for sudo-rs
+if [ -f /usr/bin/sudo-rs ]; then
+	alias sudo=/usr/bin/sudo-rs
+else
+	alias sudo="\sudo"
+fi
 
 # Moving between directories:
 alias ..="cd .."
