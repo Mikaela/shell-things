@@ -216,9 +216,11 @@ if [ "$(id -u)" == "0" ]; then
 		cp -v local/share/applications/{a-google-chrome,chrome-apps}.desktop /usr/local/share/applications/
 	fi
 	if [ -f "/usr/bin/vivaldi-stable" ]; then
-		cp -v local/share/applications/{a-vivaldi,vivaldi-{apps,youtube-music,yle-areena,discord,gmail,gmessages,google-calendar,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}}.desktop /usr/local/share/applications/
+		#cp -v local/share/applications/{a-vivaldi,vivaldi-{apps,youtube-music,yle-areena,discord,gmail,gmessages,google-calendar,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}}.desktop /usr/local/share/applications/
+		cp -v local/share/applications/{a-vivaldi,vivaldi-apps}.desktop /usr/local/share/applications/
 	elif [ -f "/usr/bin/chromium-browser" ]; then
-		cp -v local/share/applications/{a-chromium,chromium-{apps,youtube-music,yle-areena,discord,gmail,gmessages,google-calendar,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}}.desktop /usr/local/share/applications/
+		#cp -v local/share/applications/{a-chromium,chromium-{apps,youtube-music,yle-areena,discord,gmail,gmessages,google-calendar,telegram,twitch,whatsapp,mtv-katsomo,radioplayer,ruutu}}.desktop /usr/local/share/applications/
+		cp -v local/share/applications/{a-chromium,chromium-apps}.desktop /usr/local/share/applications/
 	fi
 	# If Steam is installed, chances are these work
 	if [ -f /usr/share/steam ]; then
