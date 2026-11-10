@@ -295,9 +295,9 @@ if [ "$(id -u)" != "0" ]; then
 	fi
 
 	# Add RubyGems to PATH
-	if command -v ruby > /dev/null 2>&1; then
-		PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
-	fi
+	#if command -v ruby > /dev/null 2>&1; then
+	#PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+	#fi
 
 	# https://github.com/pyenv/pyenv
 	if [ -f /home/linuxbrew/.linuxbrew/opt/pyenv/bin/pyenv ]; then
