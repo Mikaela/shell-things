@@ -183,16 +183,17 @@ if command -v lsb_release > /dev/null 2>&1; then
 	)
 
 	# Only print motivational phrases if username is aminda or mikaela or deck
-	#if [[ $(whoami) == aminda ]] || [[ $(whoami) == mikaela ]] || [[ $(whoami) == deck ]]; then
-	#if [ -f $HOME/.shell-things/.mikaela/motivational-message.md ]; then
-	# Confusion between bat and batcula is not a concern at this
-	# point.
-	#if command -v bat > /dev/null 2>&1; then
-	#bat --force-colorization --style=plain $HOME/.shell-things/.mikaela/motivational-message.md | \grep -v '#' | uniq -u
-	#else
-	#tail -n +1 $HOME/.shell-things/.mikaela/motivational-message.md | grep -v '#' | uniq -u
-	#fi
-	#fi
+	if [[ $(whoami) == aminda ]] || [[ $(whoami) == mikaela ]] || [[ $(whoami) == deck ]]; then
+		if [ -f $HOME/.shell-things/.mikaela/motivational-message.md ]; then
+			# Confusion between bat and batcula is not a concern at this
+			# point.
+			if command -v bat > /dev/null 2>&1; then
+				grep -v '#' $HOME/.shell-things/.mikaela/motivational-message.md | uniq -u | bat --language=markdown --force-colorization --style=plain -
+			else
+				grep -v '#' $HOME/.shell-things/.mikaela/motivational-message.md | uniq -u
+			fi
+		fi
+	fi
 	#elif [[ "$(id -u)" == "0" ]]; then
 	if [[ "$(id -u)" == "0" ]]; then
 		# This comes from Charybdis IRCd
