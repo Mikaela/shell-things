@@ -85,9 +85,9 @@ if command -v lsb_release > /dev/null 2>&1; then
 			# Confusion between bat and batcula is not a concern at this
 			# point.
 			if command -v bat > /dev/null 2>&1; then
-				grep -v '#' $HOME/.shell-things/.mikaela/motivational-message.md | uniq -u | bat --paging=never --language=markdown --force-colorization --style=plain -
+				bat --paging=never --language=markdown --force-colorization --style=plain $HOME/.shell-things/.mikaela/motivational-message.md
 			else
-				grep -v '#' $HOME/.shell-things/.mikaela/motivational-message.md | uniq -u
+				tail -n +1 $HOME/.shell-things/.mikaela/motivational-message.md
 			fi
 		fi
 	fi
