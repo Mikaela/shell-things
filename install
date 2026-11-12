@@ -753,6 +753,13 @@ if command -v fc-cache > /dev/null 2>&1; then
 	(fc-cache &)
 fi
 
+# unless thou art I, thou don't want my authorized_keys on your system.
+if [ -f ~/.aminda-is-the-only-root ]; then
+	mkdir -p ~/.ssh
+	cp -v .mikaela/keys/authorized_keys $HOME/.ssh/authorized_keys
+	cp -v etc/ssh/ssh_config $HOME/.ssh/config
+fi
+
 # If the previously mentioned marker is present, include the even more
 # questionable script (yay!) into our current execution
 if [ -f "$MIKAELA_GREP" ]; then
