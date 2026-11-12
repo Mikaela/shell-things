@@ -14,13 +14,19 @@ _Aferoj emas funkcii sin mem..._ **OM MANI PEME HUNG...**
 # värähtelevä HUNG muuntaa vihan.
 #   Kuinka asiat ovat (s. 74-75) - Lama Ole Nydahl -->
 
-> They say that I must learn to kill before I can feel safe. But I, I'd rather
-> kill myself then turn into their slave.
+> Trusting your path, you will find what you're made of. Sorting it all
+> between lies and love. Night of the soul is no end, but beginning. Love
+> yourself, make the step!
 
-<!--# The Rasmus: In the Shadows-->
+<!--# Visions of Atlantis: Magic of the Night-->
 
-**MEMENTO VIVERE!** Since remembering the opposite is way too easy with
-depression.
+- **MEMENTO VIVERE!** Since remembering the opposite is way too easy with
+  depression.
+
+> Find your heart in the magic of the night. Diving alone, to the unknown.
+> Deep inside lies the meaning of your life. All the answers will arise.
+
+<!--# Visions of Atlantis: Magic of the Night-->
 
 - **Empathy. Sympathy. Compassion.** Why treat yourself harsher than you would
   others describing the same situation?
@@ -29,6 +35,11 @@ depression.
   Belong You Shall._
 - **Know fear. Face fear. Break the Spiral of Silence.** _"Fear is the tool of
   tyrants"_
+
+> And it's all crystal clear, I was blinded by fear. And it's all crystal
+> clear. My salvation is near
+
+<!--# Visions of Atlantis: Magic of the Night-->
 
 > Hear... Feel... Think...
 
