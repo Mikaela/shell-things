@@ -42,6 +42,18 @@ From book _Kuinka asiat ovat_ (pages 74-75) by _Lama Ole Nydahl_
 
 From the song _Magic of the Night_ by _Visions of Atlantis_
 
+> Every day I fight to stay in the light. I endure the darkness, 'Cause it
+> shows me the stars. And I vow to keep on spreading the light 'Til the day I
+> die
+
+> When I find myself in doubt I look within, And watch my virtues tame their
+> own reverse. They're in balance but it's up to me To tip the scale
+
+> Being the hero is a choice, I believe it with all that I am. A spotless
+> heart's not a gift, But a conquest that's worth striving for
+
+From the song _Light_ by _Ancient Bards_
+
 > MEMENTO VIVERE
 
 Good luck finding who said it originally, considering it's the opposite of
