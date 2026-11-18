@@ -83,6 +83,7 @@
 					],
 					"toAdd": {
 						"trustedSiteDirectives": [
+							"accountscenter.meta.com",
 							"accountscenter.facebook.com",
 							"accountscenter.instagram.com",
 							"accounts.google.com",

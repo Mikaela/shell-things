@@ -12,6 +12,7 @@
 				"disableFirstRunPage": true,
 				"noFiltering": [
 					"-all-urls",
+					"accountscenter.meta.com",
 					"accountscenter.facebook.com",
 					"accountscenter.instagram.com",
 					"accounts.google.com",
