@@ -36,7 +36,10 @@ fi
 if command -v lsb_release > /dev/null 2>&1; then
 	(
 		export LC_ALL="C.utf8"
-		if command -v uu_hostname > /dev/null 2>&1; then
+		if command -v uu-hostname > /dev/null 2>&1; then
+			uu-hostname --fqdn &
+			uu-hostname --ip-address &
+		elif command -v uu_hostname > /dev/null 2>&1; then
 			uu_hostname --fqdn &
 			uu_hostname --ip-address &
 		elif command -v hostname > /dev/null 2>&1; then
@@ -52,13 +55,17 @@ if command -v lsb_release > /dev/null 2>&1; then
 		fi
 
 		printf "\n"
-		if command -v uu_uptime > /dev/null 2>&1; then
+		if command -v uu-uptime > /dev/null 2>&1; then
+			printf "$(uu-uptime --pretty)\t$(uu-uptime)\n"
+		elif command -v uu_uptime > /dev/null 2>&1; then
 			printf "$(uu_uptime --pretty)\t$(uu_uptime)\n"
 		elif command -v uptime > /dev/null 2>&1; then
 			printf "$(uptime --pretty)\t$(uptime)\n"
 		fi
 		printf "\nPresent:\n"
-		if command -v uu_who > /dev/null 2>&1; then
+		if command -v uu-who > /dev/null 2>&1; then
+			uu-who --heading --mesg --users
+		elif command -v uu_who > /dev/null 2>&1; then
 			uu_who --heading --mesg --users
 		elif command -v who > /dev/null 2>&1; then
 			who --heading --mesg --users
@@ -71,7 +78,9 @@ if command -v lsb_release > /dev/null 2>&1; then
 			btrfs filesystem df --iec /var/home/
 			echo
 		fi
-		if command -v uu_df > /dev/null 2>&1; then
+		if command -v uu-df > /dev/null 2>&1; then
+			uu-df / $HOME --human-readable --output=source,fstype,size,used,avail,pcent | grep -v overlay | uu-uniq
+		elif command -v uu_df > /dev/null 2>&1; then
 			uu_df / $HOME --human-readable --output=source,fstype,size,used,avail,pcent | grep -v overlay | uu_uniq
 		else
 			df / $HOME --human-readable --output=source,fstype,size,used,avail,pcent | grep -v overlay | uniq
@@ -94,7 +103,11 @@ if command -v lsb_release > /dev/null 2>&1; then
 	#elif [[ "$(id -u)" == "0" ]]; then
 	if [[ "$(id -u)" == "0" ]]; then
 		# This comes from Charybdis IRCd
-		if command -v uu_printf > /dev/null 2>&1; then
+		if command -v uu-printf > /dev/null 2>&1; then
+			(uu-printf "\nWe would like to take this moment to remind you that we accept\nabsolutely no liability for the insanity you're about to endure.\n\n")
+			# And this from sudo + the general advice for auditability
+			(uu-printf "We trust you have received the usual lecture from the local System\nAdministrator. It usually boils down to these three things:\n\n\t#1) Respect the privacy of others.\n\t#2) Think before you type.\n\t#3) With great power comes great responsibility.\n\nAdditionally you shouldn't be logging in as root directly.\n\n")
+		elif command -v uu_printf > /dev/null 2>&1; then
 			(uu_printf "\nWe would like to take this moment to remind you that we accept\nabsolutely no liability for the insanity you're about to endure.\n\n")
 			# And this from sudo + the general advice for auditability
 			(uu_printf "We trust you have received the usual lecture from the local System\nAdministrator. It usually boils down to these three things:\n\n\t#1) Respect the privacy of others.\n\t#2) Think before you type.\n\t#3) With great power comes great responsibility.\n\nAdditionally you shouldn't be logging in as root directly.\n\n")
@@ -132,7 +145,9 @@ fi
 # Newline before new prompt
 precmd() {
 	precmd() {
-		if command -v uu_printf > /dev/null 2>&1; then
+		if command -v uu-printf > /dev/null 2>&1; then
+			uu-printf "\n"
+		elif command -v uu_printf > /dev/null 2>&1; then
 			uu_printf "\n"
 		else
 			printf "\n"
