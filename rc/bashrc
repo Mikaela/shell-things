@@ -658,6 +658,12 @@ alias netstat-listening-ports="netstat -plntu"
 # mpv music & music shuffle
 alias mpvm="mpv --no-resume-playback --no-video"
 alias mpvms="mpv --no-resume-playback --no-video --shuffle"
+# the same if the flatpak exists
+if command -v io.mpv.Mpv > /dev/null 2>&1; then
+	alias mpv-flatpak="flatpak run io.mpv.Mpv"
+	alias mpvm-flatpak="flatpak run io.mpv.Mpv --no-resume-playback --no-video"
+	alias mpvms-flatpak="flatpak run io.mpv.Mpv --no-resume-playback --no-video --shuffle"
+fi
 
 # Compatibility with my i3 alsactl mess
 if [ -f ~/.config/asound.state ]; then
