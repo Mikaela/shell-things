@@ -654,11 +654,23 @@ alias netstat-listening-ports="netstat -plntu"
 # mpv music & music shuffle
 alias mpvm="mpv --no-resume-playback --no-video"
 alias mpvms="mpv --no-resume-playback --no-video --shuffle"
+alias mpvml="mpv --no-resume-playback --no-video --loop-playlist"
+alias mpvmr=mpvml
+alias mpvmlf="mpv --no-resume-playback --no-video --loop-file"
+alias mpvmrf=mpvmlf
+alias mpvmsl="mpv --no-resume-playback --no-video --shuffle --loop-playlist"
+alias mpvmls=mpvmsl
 # the same if the flatpak exists
 if command -v io.mpv.Mpv > /dev/null 2>&1; then
 	alias mpv-flatpak="flatpak run io.mpv.Mpv"
 	alias mpvm-flatpak="flatpak run io.mpv.Mpv --no-resume-playback --no-video"
 	alias mpvms-flatpak="flatpak run io.mpv.Mpv --no-resume-playback --no-video --shuffle"
+	alias mpvml-flatpak="flatpak run io.mpv.Mpv --no-resume-playback --no-video --loop-playlist"
+	alias mpvmr-flatpak=mpvml-flatpak
+	alias mpvmlf-flatpak="flatpak run io.mpv.Mpv --no-resume-playback --no-video --loop-file"
+	alias mpvmrf-flatpak=mpvmlf-flatpak
+	alias mpvmsl-flatpak="flatpak run io.mpv.Mpv --no-resume-playback --no-video --shuffle --loop-playlist"
+	alias mpvmls-flatpak=mpvmsl-flatpak
 fi
 
 # Compatibility with my i3 alsactl mess
