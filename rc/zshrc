@@ -181,11 +181,12 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-if command -v dircolors > /dev/null 2>&1; then
+if command -v uu-dircolors > /dev/null 2>&1; then
+	eval $(uu-dircolors --bourne-shell)
+elif command -v uu_dircolors > /dev/null 2>&1; then
+	eval $(uu_dircolors --bourne-shell)
+elif command -v dircolors > /dev/null 2>&1; then
 	eval $(dircolors --bourne-shell)
-	#alias ls='ls --color=auto'
-	#alias dir='dir --color=auto'
-	#alias vdir='vdir --color=auto'
 fi
 
 #####	Environment					7RS56S	#####
